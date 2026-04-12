@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GH Ribbon — Global Health Intelligence</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:      #07100a;
+  --surface: #0d1a10;
+  --surface2:#111f14;
+  --border:  #1c2e1f;
+  --accent:  #3dff9a;
+  --muted:   #3a5240;
+  --text:    #b8cfbe;
+  --bright:  #e2f0e6;
+  --who:     #29b6f6;
+  --promed:  #ffd740;
+  --emerg:   #ff7043;
+  --global:  #ab8eff;
+}
+
+html, body { height: 100%; }
+body {
+  font-family: 'Space Mono', monospace;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* ── TOPBAR ─────────────────────────────────── */
+.topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 24px; border-bottom: 1px solid var(--border);
+  background: #030a05; position: sticky; top: 0; z-index: 200;
+}
+.logo-pill {
+  background: var(--accent); color: #030a05;
+  font-family: 'Syne', sans-serif; font-weight: 800;
+  font-size: 12px; padding: 4px 12px; letter-spacing: .12em;
+}
+.logo-sub {
+  font-size: 9px; color: var(--muted);
+  letter-spacing: .14em; text-transform: uppercase; margin-left: 12px;
+}
+.topbar-right { display: flex; align-items: center; gap: 10px; }
+.live-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--accent); animation: pulse 2.5s infinite;
+}
+.live-dot.busy { background: var(--emerg); animation: none; }
+.live-dot.err  { background: #ff4444;      animation: none; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.2} }
+.status-txt { font-size: 9px; color: var(--muted); letter-spacing: .1em; }
+.clock { font-size: 12px; color: var(--accent); letter-spacing: .08em; font-variant-numeric: tabular-nums; }
+.rbtn-top {
+  background: none; border: 1px solid var(--border); color: var(--muted);
+  padding: 4px 11px; font-family: 'Space Mono', monospace; font-size: 9px;
+  cursor: pointer; border-radius: 2px; letter-spacing: .08em; transition: all .15s;
+}
+.rbtn-top:hover  { border-color: var(--accent); color: var(--accent); }
+.rbtn-top:disabled { opacity: .3; cursor: not-allowed; }
+
+/* ── TICKER ─────────────────────────────────── */
+.ticker-wrap {
+  background: #030a05; border-bottom: 2px solid var(--border);
+  height: 54px; overflow: hidden; position: relative;
+}
+.ticker-wrap::before, .ticker-wrap::after {
+  content: ''; position: absolute; top: 0; bottom: 0; width: 100px; z-index: 2; pointer-events: none;
+}
+.ticker-wrap::before { left:0;  background: linear-gradient(to right, #030a05 55%, transparent); }
+.ticker-wrap::after  { right:0; background: linear-gradient(to left,  #030a05 55%, transparent); }
+.ticker-badge {
+  position: absolute; left: 0; top: 0; bottom: 0; width: 62px;
+  background: var(--accent); color: #030a05;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 8px; font-weight: 700; letter-spacing: .2em; z-index: 3;
+}
+.ticker-track {
+  display: flex; align-items: center;
+  padding-left: 74px; white-space: nowrap; height: 54px;
+  animation: scrollT 90s linear infinite;
+}
+.ticker-track:hover { animation-play-state: paused; }
+@keyframes scrollT { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+.t-item {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 0 30px; border-right: 1px solid var(--border);
+  text-decoration: none;
+}
+.t-item:hover .t-hl { color: var(--accent); }
+.t-sep { color: var(--accent); font-size: 11px; flex-shrink: 0; }
+.t-src { font-size: 9px; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; flex-shrink: 0; }
+.t-hl  { font-size: 15px; font-weight: 700; color: var(--bright); transition: color .15s; }
+
+/* ── FILTER BAR ─────────────────────────────── */
+.filter-bar {
+  display: flex; align-items: center; gap: 6px;
+  padding: 8px 24px; border-bottom: 1px solid var(--border);
+  background: var(--surface); flex-wrap: wrap;
+}
+.flbl { font-size: 8px; color: var(--muted); letter-spacing: .16em; text-transform: uppercase; margin-right: 4px; }
+.fbtn {
+  background: none; border: 1px solid var(--border); color: var(--muted);
+  padding: 4px 11px; font-family: 'Space Mono', monospace; font-size: 9px;
+  cursor: pointer; border-radius: 2px; display: flex; align-items: center;
+  gap: 5px; opacity: .4; transition: all .15s; letter-spacing: .08em;
+}
+.fbtn .dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
+.fbtn.on { opacity: 1; }
+.fbtn[data-c="who"].on    { border-color:var(--who);    color:var(--who);    background:rgba(41,182,246,.08); }
+.fbtn[data-c="promed"].on { border-color:var(--promed); color:var(--promed); background:rgba(255,215,64,.08); }
+.fbtn[data-c="emerg"].on  { border-color:var(--emerg);  color:var(--emerg);  background:rgba(255,112,67,.08); }
+.fbtn[data-c="global"].on { border-color:var(--global); color:var(--global); background:rgba(171,142,255,.08); }
+.fbtn[data-c="who"]    .dot { background: var(--who); }
+.fbtn[data-c="promed"] .dot { background: var(--promed); }
+.fbtn[data-c="emerg"]  .dot { background: var(--emerg); }
+.fbtn[data-c="global"] .dot { background: var(--global); }
+
+/* ── MAIN GRID ──────────────────────────────── */
+.main { flex: 1; padding: 20px 24px 36px; }
+.sec-hd { display: flex; align-items: baseline; gap: 10px; margin-bottom: 16px; }
+.sec-title { font-family:'Syne',sans-serif; font-size:10px; font-weight:800; color:var(--muted); letter-spacing:.2em; text-transform:uppercase; }
+.sec-count { font-size:9px; color:var(--muted); opacity:.5; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+
+/* ── CARD ───────────────────────────────────── */
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 2px;
+  padding: 14px; display: flex; flex-direction: column; gap: 9px;
+  text-decoration: none; position: relative; overflow: hidden;
+  transition: border-color .2s, transform .15s, background .15s;
+  animation: fadeUp .35s ease forwards; opacity: 0;
+}
+.card:hover { border-color: var(--accent); background: var(--surface2); transform: translateY(-2px); }
+.card.feat  { grid-column: span 2; }
+.card::after { content:''; position:absolute; top:0; left:0; right:0; height:2px; }
+.card[data-c="who"]::after    { background: var(--who); }
+.card[data-c="promed"]::after { background: var(--promed); }
+.card[data-c="emerg"]::after  { background: var(--emerg); }
+.card[data-c="global"]::after { background: var(--global); }
+@keyframes fadeUp { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
+
+.card-hd  { display:flex; align-items:center; justify-content:space-between; }
+.badge    { font-size:7px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; padding:2px 7px; border-radius:1px; }
+.card[data-c="who"]    .badge { background:rgba(41,182,246,.13);  color:var(--who); }
+.card[data-c="promed"] .badge { background:rgba(255,215,64,.13);  color:var(--promed); }
+.card[data-c="emerg"]  .badge { background:rgba(255,112,67,.13);  color:var(--emerg); }
+.card[data-c="global"] .badge { background:rgba(171,142,255,.13); color:var(--global); }
+.card-date  { font-size:8px; color:var(--muted); }
+.card-title { font-family:'Syne',sans-serif; font-size:13px; font-weight:600; color:var(--bright); line-height:1.45; flex:1; }
+.card.feat .card-title { font-size:16px; }
+.card-sum   { font-size:10px; color:var(--text); line-height:1.75; opacity:.82; }
+.card-foot  { display:flex; justify-content:space-between; align-items:center; margin-top:auto; }
+.card-src   { font-size:8px; color:var(--muted); }
+.card-link  { font-size:9px; color:var(--accent); opacity:.6; transition:opacity .15s; }
+.card:hover .card-link { opacity:1; }
+
+/* ── SKELETON ───────────────────────────────── */
+.skel-card { background:var(--surface); border:1px solid var(--border); border-radius:2px; padding:14px; display:flex; flex-direction:column; gap:10px; }
+.skel { background:linear-gradient(90deg,var(--border) 25%,var(--surface2) 50%,var(--border) 75%); background-size:300% 100%; animation:shimmer 1.8s infinite; border-radius:2px; }
+@keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+
+/* ── STATES ─────────────────────────────────── */
+.state { grid-column:1/-1; padding:40px; text-align:center; font-size:11px; line-height:2.2; color:var(--muted); }
+.state.err { color:#ff5252; }
+
+/* ── FOOTER ─────────────────────────────────── */
+footer {
+  padding:9px 24px; border-top:1px solid var(--border);
+  display:flex; justify-content:space-between;
+  font-size:8px; color:var(--muted); letter-spacing:.09em;
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div style="display:flex;align-items:center">
+    <div class="logo-pill">GH RIBBON</div>
+    <span class="logo-sub">Global Health Intelligence · VWS/IZ</span>
+  </div>
+  <div class="topbar-right">
+    <span class="live-dot" id="dot"></span>
+    <span class="status-txt" id="st">LIVE</span>
+    <span class="clock" id="clk">—</span>
+    <button class="rbtn-top" id="rb" onclick="loadAll()">↻ REFRESH</button>
+  </div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-badge">LIVE</div>
+  <div class="ticker-track" id="tk">
+    <span class="t-item"><span class="t-sep">◆</span><span class="t-hl">Feeds laden…</span></span>
+    <span class="t-item"><span class="t-sep">◆</span><span class="t-hl">Feeds laden…</span></span>
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <span class="flbl">Alert:</span>
+  <button class="fbtn on" data-c="who"    onclick="tog('who')">   <span class="dot"></span>World Health Org</button>
+  <button class="fbtn on" data-c="promed" onclick="tog('promed')"><span class="dot"></span>ProMED</button>
+  <button class="fbtn on" data-c="emerg"  onclick="tog('emerg')"> <span class="dot"></span>Health Emergency</button>
+  <button class="fbtn on" data-c="global" onclick="tog('global')"><span class="dot"></span>Global Health</button>
+</div>
+
+<!-- GRID -->
+<main class="main">
+  <div class="sec-hd">
+    <span class="sec-title">Global Health Intelligence</span>
+    <span class="sec-count" id="cnt">laden…</span>
+  </div>
+  <div class="grid" id="grid"></div>
+</main>
+
+<footer>
+  <span>Google Alerts: World Health Org · ProMED · Health Emergency · Global Health</span>
+  <span id="ft">—</span>
+</footer>
+
+<script>
+const FEEDS = [
+  { url:'https://www.google.com/alerts/feeds/07358569115421849873/153340034560442073',  label:'World Health Org', cat:'who'    },
+  { url:'https://www.google.com/alerts/feeds/07358569115421849873/14881210468558991559', label:'ProMED',           cat:'promed' },
+  { url:'https://www.google.com/alerts/feeds/07358569115421849873/3291854287981540699',  label:'Health Emergency', cat:'emerg'  },
+  { url:'https://www.google.com/alerts/feeds/07358569115421849873/5068632798327940500',  label:'Global Health',    cat:'global' },
+];
+
+let allItems = [];
+let active   = new Set(['who','promed','emerg','global']);
+
+/* clock */
+setInterval(() => {
+  document.getElementById('clk').textContent =
+    new Date().toLocaleTimeString('nl-NL',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+}, 1000);
+
+/* helpers */
+function stripHtml(h) {
+  const d = document.createElement('div'); d.innerHTML = h;
+  return (d.textContent||d.innerText||'').replace(/\s+/g,' ').trim();
+}
+function relDate(s) {
+  if (!s) return '';
+  try {
+    const d = new Date(s); if (isNaN(d)) return '';
+    const m = Math.floor((Date.now()-d)/60000);
+    if (m < 1)    return 'Zojuist';
+    if (m < 60)   return m+'m geleden';
+    if (m < 1440) return Math.floor(m/60)+'u geleden';
+    if (m < 2880) return 'Gisteren';
+    return d.toLocaleDateString('nl-NL',{day:'numeric',month:'short'});
+  } catch { return ''; }
+}
+function esc(u) { return (u||'#').replace(/"/g,'%22').replace(/'/g,'%27'); }
+function interleave(items) {
+  const g = {}; items.forEach(i => { (g[i.cat]=g[i.cat]||[]).push(i); });
+  const gs = Object.values(g), out = [], max = Math.max(...gs.map(a=>a.length));
+  for (let i=0;i<max;i++) gs.forEach(a=>{ if(a[i]) out.push(a[i]); });
+  return out;
+}
+
+/* parse Atom XML — Google Alerts format */
+function parseAtom(xmlText, feed) {
+  const xml = new DOMParser().parseFromString(xmlText, 'application/xml');
+  if (xml.querySelector('parsererror')) throw new Error('XML parse error');
+  const entries = [...xml.querySelectorAll('entry')];
+  if (!entries.length) throw new Error('No entries');
+
+  return entries.slice(0,8).map(e => {
+    const title   = stripHtml(e.querySelector('title')?.textContent || '');
+    const linkEl  = e.querySelector('link');
+    let   url     = linkEl?.getAttribute('href') || linkEl?.textContent?.trim() || '#';
+    const pubRaw  = e.querySelector('published,updated')?.textContent || '';
+    const rawSum  = e.querySelector('content,summary')?.textContent || '';
+    const srcName = e.querySelector('source title')?.textContent || feed.label;
+
+    /* unwrap Google redirect */
+    try {
+      const u = new URL(url);
+      const actual = u.searchParams.get('url') || u.searchParams.get('q');
+      if (actual) url = decodeURIComponent(actual);
+    } catch(_) {}
+
+    return {
+      title:   title.slice(0,140),
+      url:     url.trim(),
+      src:     srcName,
+      cat:     feed.cat,
+      date:    relDate(pubRaw),
+      summary: stripHtml(rawSum).slice(0,280),
+    };
+  }).filter(i => i.title && i.url !== '#');
+}
+
+/* fetch one feed — direct (works from https://) */
+async function fetchFeed(feed) {
+  const res = await fetch(feed.url, { signal: AbortSignal.timeout(10000) });
+  if (!res.ok) throw new Error('HTTP '+res.status);
+  const text = await res.text();
+  return parseAtom(text, feed);
+}
+
+/* load all */
+async function loadAll() {
+  const rb=document.getElementById('rb'), dot=document.getElementById('dot');
+  rb.disabled=true; dot.className='live-dot busy';
+  document.getElementById('st').textContent='FETCHING…';
+  showSkeletons();
+
+  const results = await Promise.allSettled(FEEDS.map(fetchFeed));
+  const fetched  = results.flatMap(r => r.status==='fulfilled' ? r.value : []);
+  allItems = interleave(fetched);
+
+  if (!allItems.length) {
+    dot.className='live-dot err';
+    document.getElementById('st').textContent='ERROR';
+    document.getElementById('grid').innerHTML=
+      '<div class="state err">Feeds konden niet worden geladen.<br><small>Controleer je internetverbinding.</small></div>';
+    document.getElementById('cnt').textContent='0 items';
+  } else {
+    renderCards();
+    renderTicker();
+    dot.className='live-dot';
+    document.getElementById('st').textContent='LIVE';
+  }
+  document.getElementById('ft').textContent = 'Updated '+new Date().toLocaleTimeString('nl-NL');
+  rb.disabled=false;
+}
+
+/* ticker */
+function renderTicker() {
+  const d = [...allItems,...allItems];
+  document.getElementById('tk').innerHTML = d.map(i=>
+    `<a class="t-item" href="${esc(i.url)}" target="_blank">
+       <span class="t-sep">◆</span>
+       <span class="t-src">${i.src}</span>
+       <span class="t-hl">${i.title}</span>
+     </a>`).join('');
+}
+
+/* skeletons */
+function showSkeletons() {
+  document.getElementById('grid').innerHTML = `
+    <div class="skel-card"><div class="skel" style="height:8px;width:40%"></div><div class="skel" style="height:14px;width:88%"></div><div class="skel" style="height:10px;width:100%"></div><div class="skel" style="height:10px;width:65%"></div></div>
+    <div class="skel-card"><div class="skel" style="height:8px;width:40%"></div><div class="skel" style="height:14px;width:88%"></div><div class="skel" style="height:10px;width:100%"></div><div class="skel" style="height:10px;width:65%"></div></div>
+    <div class="skel-card"><div class="skel" style="height:8px;width:40%"></div><div class="skel" style="height:14px;width:88%"></div><div class="skel" style="height:10px;width:100%"></div><div class="skel" style="height:10px;width:65%"></div></div>
+    <div class="skel-card" style="grid-column:span 2"><div class="skel" style="height:8px;width:40%"></div><div class="skel" style="height:18px;width:88%"></div><div class="skel" style="height:10px;width:100%"></div><div class="skel" style="height:10px;width:75%"></div></div>
+    <div class="skel-card"><div class="skel" style="height:8px;width:40%"></div><div class="skel" style="height:14px;width:88%"></div><div class="skel" style="height:10px;width:100%"></div><div class="skel" style="height:10px;width:65%"></div></div>`;
+  document.getElementById('cnt').textContent='laden…';
+}
+
+/* cards */
+const LABELS = {who:'WHO',promed:'PROMED',emerg:'EMERGENCY',global:'GLOBAL HEALTH'};
+function renderCards() {
+  const visible = allItems.filter(i => active.has(i.cat));
+  document.getElementById('cnt').textContent = `${visible.length} items`;
+  if (!visible.length) {
+    document.getElementById('grid').innerHTML =
+      '<div class="state">Geen items — activeer meer categorieën.</div>';
+    return;
+  }
+  document.getElementById('grid').innerHTML = visible.map((item,idx) => `
+    <a class="card${idx===0?' feat':''}" data-c="${item.cat}"
+       href="${esc(item.url)}" target="_blank"
+       style="animation-delay:${idx*.03}s">
+      <div class="card-hd">
+        <span class="badge">${LABELS[item.cat]||item.cat}</span>
+        <span class="card-date">${item.date}</span>
+      </div>
+      <div class="card-title">${item.title}</div>
+      <div class="card-sum">${item.summary}</div>
+      <div class="card-foot">
+        <span class="card-src">${item.src}</span>
+        <span class="card-link">Lees verder ↗</span>
+      </div>
+    </a>`).join('');
+}
+
+/* filter */
+function tog(cat) {
+  const b = document.querySelector(`.fbtn[data-c="${cat}"]`);
+  if (active.has(cat)) { active.delete(cat); b.classList.remove('on'); }
+  else                 { active.add(cat);    b.classList.add('on'); }
+  renderCards();
+}
+
+/* start */
+loadAll();
+setInterval(loadAll, 30*60*1000);
+</script>
+</body>
+</html>
