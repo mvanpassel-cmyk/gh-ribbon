@@ -35,7 +35,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ── TOPBAR ─────────────────────────────────── */
 .topbar {
   display: flex; align-items: center; justify-content: space-between;
   padding: 10px 24px; border-bottom: 1px solid var(--border);
@@ -68,7 +67,6 @@ body {
 .rbtn-top:hover  { border-color: var(--accent); color: var(--accent); }
 .rbtn-top:disabled { opacity: .3; cursor: not-allowed; }
 
-/* ── TICKER ─────────────────────────────────── */
 .ticker-wrap {
   background: #030a05; border-bottom: 2px solid var(--border);
   height: 54px; overflow: hidden; position: relative;
@@ -101,7 +99,6 @@ body {
 .t-src { font-size: 9px; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; flex-shrink: 0; }
 .t-hl  { font-size: 15px; font-weight: 700; color: var(--bright); transition: color .15s; }
 
-/* ── FILTER BAR ─────────────────────────────── */
 .filter-bar {
   display: flex; align-items: center; gap: 6px;
   padding: 8px 24px; border-bottom: 1px solid var(--border);
@@ -125,14 +122,12 @@ body {
 .fbtn[data-c="emerg"]  .dot { background: var(--emerg); }
 .fbtn[data-c="global"] .dot { background: var(--global); }
 
-/* ── MAIN GRID ──────────────────────────────── */
 .main { flex: 1; padding: 20px 24px 36px; }
 .sec-hd { display: flex; align-items: baseline; gap: 10px; margin-bottom: 16px; }
 .sec-title { font-family:'Syne',sans-serif; font-size:10px; font-weight:800; color:var(--muted); letter-spacing:.2em; text-transform:uppercase; }
 .sec-count { font-size:9px; color:var(--muted); opacity:.5; }
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 
-/* ── CARD ───────────────────────────────────── */
 .card {
   background: var(--surface); border: 1px solid var(--border); border-radius: 2px;
   padding: 14px; display: flex; flex-direction: column; gap: 9px;
@@ -164,16 +159,13 @@ body {
 .card-link  { font-size:9px; color:var(--accent); opacity:.6; transition:opacity .15s; }
 .card:hover .card-link { opacity:1; }
 
-/* ── SKELETON ───────────────────────────────── */
 .skel-card { background:var(--surface); border:1px solid var(--border); border-radius:2px; padding:14px; display:flex; flex-direction:column; gap:10px; }
 .skel { background:linear-gradient(90deg,var(--border) 25%,var(--surface2) 50%,var(--border) 75%); background-size:300% 100%; animation:shimmer 1.8s infinite; border-radius:2px; }
 @keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
 
-/* ── STATES ─────────────────────────────────── */
 .state { grid-column:1/-1; padding:40px; text-align:center; font-size:11px; line-height:2.2; color:var(--muted); }
 .state.err { color:#ff5252; }
 
-/* ── FOOTER ─────────────────────────────────── */
 footer {
   padding:9px 24px; border-top:1px solid var(--border);
   display:flex; justify-content:space-between;
@@ -183,7 +175,6 @@ footer {
 </head>
 <body>
 
-<!-- TOPBAR -->
 <div class="topbar">
   <div style="display:flex;align-items:center">
     <div class="logo-pill">GH RIBBON</div>
@@ -197,7 +188,6 @@ footer {
   </div>
 </div>
 
-<!-- TICKER -->
 <div class="ticker-wrap">
   <div class="ticker-badge">LIVE</div>
   <div class="ticker-track" id="tk">
@@ -206,7 +196,6 @@ footer {
   </div>
 </div>
 
-<!-- FILTER BAR -->
 <div class="filter-bar">
   <span class="flbl">Alert:</span>
   <button class="fbtn on" data-c="who"    onclick="tog('who')">   <span class="dot"></span>World Health Org</button>
@@ -215,7 +204,6 @@ footer {
   <button class="fbtn on" data-c="global" onclick="tog('global')"><span class="dot"></span>Global Health</button>
 </div>
 
-<!-- GRID -->
 <main class="main">
   <div class="sec-hd">
     <span class="sec-title">Global Health Intelligence</span>
@@ -237,16 +225,15 @@ const FEEDS = [
   { url:'https://www.google.com/alerts/feeds/07358569115421849873/5068632798327940500',  label:'Global Health',    cat:'global' },
 ];
 
+const PROXY = 'https://corsproxy.io/?';
 let allItems = [];
 let active   = new Set(['who','promed','emerg','global']);
 
-/* clock */
 setInterval(() => {
   document.getElementById('clk').textContent =
     new Date().toLocaleTimeString('nl-NL',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
 }, 1000);
 
-/* helpers */
 function stripHtml(h) {
   const d = document.createElement('div'); d.innerHTML = h;
   return (d.textContent||d.innerText||'').replace(/\s+/g,' ').trim();
@@ -271,13 +258,11 @@ function interleave(items) {
   return out;
 }
 
-/* parse Atom XML — Google Alerts format */
 function parseAtom(xmlText, feed) {
   const xml = new DOMParser().parseFromString(xmlText, 'application/xml');
   if (xml.querySelector('parsererror')) throw new Error('XML parse error');
   const entries = [...xml.querySelectorAll('entry')];
   if (!entries.length) throw new Error('No entries');
-
   return entries.slice(0,8).map(e => {
     const title   = stripHtml(e.querySelector('title')?.textContent || '');
     const linkEl  = e.querySelector('link');
@@ -285,14 +270,11 @@ function parseAtom(xmlText, feed) {
     const pubRaw  = e.querySelector('published,updated')?.textContent || '';
     const rawSum  = e.querySelector('content,summary')?.textContent || '';
     const srcName = e.querySelector('source title')?.textContent || feed.label;
-
-    /* unwrap Google redirect */
     try {
       const u = new URL(url);
       const actual = u.searchParams.get('url') || u.searchParams.get('q');
       if (actual) url = decodeURIComponent(actual);
     } catch(_) {}
-
     return {
       title:   title.slice(0,140),
       url:     url.trim(),
@@ -304,25 +286,23 @@ function parseAtom(xmlText, feed) {
   }).filter(i => i.title && i.url !== '#');
 }
 
-/* fetch one feed — direct (works from https://) */
 async function fetchFeed(feed) {
-  const res = await fetch(feed.url, { signal: AbortSignal.timeout(10000) });
+  const res = await fetch(PROXY + encodeURIComponent(feed.url), {
+    signal: AbortSignal.timeout(12000)
+  });
   if (!res.ok) throw new Error('HTTP '+res.status);
   const text = await res.text();
   return parseAtom(text, feed);
 }
 
-/* load all */
 async function loadAll() {
   const rb=document.getElementById('rb'), dot=document.getElementById('dot');
   rb.disabled=true; dot.className='live-dot busy';
   document.getElementById('st').textContent='FETCHING…';
   showSkeletons();
-
   const results = await Promise.allSettled(FEEDS.map(fetchFeed));
   const fetched  = results.flatMap(r => r.status==='fulfilled' ? r.value : []);
   allItems = interleave(fetched);
-
   if (!allItems.length) {
     dot.className='live-dot err';
     document.getElementById('st').textContent='ERROR';
@@ -339,7 +319,6 @@ async function loadAll() {
   rb.disabled=false;
 }
 
-/* ticker */
 function renderTicker() {
   const d = [...allItems,...allItems];
   document.getElementById('tk').innerHTML = d.map(i=>
@@ -350,7 +329,6 @@ function renderTicker() {
      </a>`).join('');
 }
 
-/* skeletons */
 function showSkeletons() {
   document.getElementById('grid').innerHTML = `
     <div class="skel-card"><div class="skel" style="height:8px;width:40%"></div><div class="skel" style="height:14px;width:88%"></div><div class="skel" style="height:10px;width:100%"></div><div class="skel" style="height:10px;width:65%"></div></div>
@@ -361,7 +339,6 @@ function showSkeletons() {
   document.getElementById('cnt').textContent='laden…';
 }
 
-/* cards */
 const LABELS = {who:'WHO',promed:'PROMED',emerg:'EMERGENCY',global:'GLOBAL HEALTH'};
 function renderCards() {
   const visible = allItems.filter(i => active.has(i.cat));
@@ -388,7 +365,6 @@ function renderCards() {
     </a>`).join('');
 }
 
-/* filter */
 function tog(cat) {
   const b = document.querySelector(`.fbtn[data-c="${cat}"]`);
   if (active.has(cat)) { active.delete(cat); b.classList.remove('on'); }
@@ -396,7 +372,6 @@ function tog(cat) {
   renderCards();
 }
 
-/* start */
 loadAll();
 setInterval(loadAll, 30*60*1000);
 </script>
