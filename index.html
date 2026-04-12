@@ -16,12 +16,15 @@
   --border:  #1c2e1f;
   --accent:  #3dff9a;
   --muted:   #3a5240;
-  --text:    #b8cfbe;
-  --bright:  #e2f0e6;
+  --text:    #c8ddd2;
+  --bright:  #e8f5ee;
   --who:     #29b6f6;
   --promed:  #ffd740;
   --emerg:   #ff7043;
   --global:  #ab8eff;
+  --journal: #e53935;
+  --policy:  #ff8f00;
+  --news:    #26a69a;
 }
 
 html, body { height: 100%; }
@@ -37,100 +40,110 @@ body {
 
 .topbar {
   display: flex; align-items: center; justify-content: space-between;
-  padding: 10px 24px; border-bottom: 1px solid var(--border);
+  padding: 12px 26px; border-bottom: 1px solid var(--border);
   background: #030a05; position: sticky; top: 0; z-index: 200;
 }
 .logo-pill {
   background: var(--accent); color: #030a05;
   font-family: 'Syne', sans-serif; font-weight: 800;
-  font-size: 12px; padding: 4px 12px; letter-spacing: .12em;
+  font-size: 14px; padding: 5px 14px; letter-spacing: .12em;
 }
 .logo-sub {
-  font-size: 9px; color: var(--muted);
-  letter-spacing: .14em; text-transform: uppercase; margin-left: 12px;
+  font-size: 11px; color: var(--muted);
+  letter-spacing: .12em; text-transform: uppercase; margin-left: 14px;
 }
-.topbar-right { display: flex; align-items: center; gap: 10px; }
+.topbar-right { display: flex; align-items: center; gap: 12px; }
 .live-dot {
-  width: 7px; height: 7px; border-radius: 50%;
+  width: 8px; height: 8px; border-radius: 50%;
   background: var(--accent); animation: pulse 2.5s infinite;
 }
 .live-dot.busy { background: var(--emerg); animation: none; }
-.live-dot.err  { background: #ff4444;      animation: none; }
+.live-dot.err  { background: #ff4444; animation: none; }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.2} }
-.status-txt { font-size: 9px; color: var(--muted); letter-spacing: .1em; }
-.clock { font-size: 12px; color: var(--accent); letter-spacing: .08em; font-variant-numeric: tabular-nums; }
-.rbtn-top {
+.status-txt { font-size: 11px; color: var(--muted); letter-spacing: .1em; }
+.clock { font-size: 14px; color: var(--accent); letter-spacing: .08em; font-variant-numeric: tabular-nums; }
+.rbtn {
   background: none; border: 1px solid var(--border); color: var(--muted);
-  padding: 4px 11px; font-family: 'Space Mono', monospace; font-size: 9px;
+  padding: 5px 13px; font-family: 'Space Mono', monospace; font-size: 11px;
   cursor: pointer; border-radius: 2px; letter-spacing: .08em; transition: all .15s;
 }
-.rbtn-top:hover  { border-color: var(--accent); color: var(--accent); }
-.rbtn-top:disabled { opacity: .3; cursor: not-allowed; }
+.rbtn:hover { border-color: var(--accent); color: var(--accent); }
+.rbtn:disabled { opacity: .3; cursor: not-allowed; }
 
 .ticker-wrap {
-  background: #030a05; border-bottom: 2px solid var(--border);
-  height: 54px; overflow: hidden; position: relative;
+  background: #020905;
+  border-bottom: 2px solid var(--border);
+  height: 58px; overflow: hidden; position: relative;
 }
 .ticker-wrap::before, .ticker-wrap::after {
-  content: ''; position: absolute; top: 0; bottom: 0; width: 100px; z-index: 2; pointer-events: none;
+  content: ''; position: absolute; top: 0; bottom: 0; width: 110px; z-index: 2; pointer-events: none;
 }
-.ticker-wrap::before { left:0;  background: linear-gradient(to right, #030a05 55%, transparent); }
-.ticker-wrap::after  { right:0; background: linear-gradient(to left,  #030a05 55%, transparent); }
+.ticker-wrap::before { left: 0;  background: linear-gradient(to right, #020905 55%, transparent); }
+.ticker-wrap::after  { right: 0; background: linear-gradient(to left,  #020905 55%, transparent); }
 .ticker-badge {
-  position: absolute; left: 0; top: 0; bottom: 0; width: 62px;
-  background: var(--accent); color: #030a05;
+  position: absolute; left: 0; top: 0; bottom: 0; width: 66px;
+  background: var(--accent); color: #020905;
   display: flex; align-items: center; justify-content: center;
-  font-size: 8px; font-weight: 700; letter-spacing: .2em; z-index: 3;
+  font-size: 9px; font-weight: 700; letter-spacing: .2em; z-index: 3;
 }
 .ticker-track {
   display: flex; align-items: center;
-  padding-left: 74px; white-space: nowrap; height: 54px;
-  animation: scrollT 90s linear infinite;
+  padding-left: 78px; white-space: nowrap; height: 58px;
+}
+.ticker-track.running {
+  animation: scrollT 120s linear infinite;
 }
 .ticker-track:hover { animation-play-state: paused; }
 @keyframes scrollT { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
 .t-item {
   display: inline-flex; align-items: center; gap: 10px;
-  padding: 0 30px; border-right: 1px solid var(--border);
-  text-decoration: none;
+  padding: 0 32px; border-right: 1px solid var(--border);
+  text-decoration: none; flex-shrink: 0;
 }
 .t-item:hover .t-hl { color: var(--accent); }
-.t-sep { color: var(--accent); font-size: 11px; flex-shrink: 0; }
-.t-src { font-size: 9px; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; flex-shrink: 0; }
-.t-hl  { font-size: 15px; font-weight: 700; color: var(--bright); transition: color .15s; }
+.t-sep { color: var(--accent); font-size: 12px; flex-shrink: 0; }
+.t-src { font-size: 10px; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; flex-shrink: 0; }
+.t-hl  { font-size: 17px; font-weight: 700; color: var(--bright); transition: color .15s; }
 
 .filter-bar {
-  display: flex; align-items: center; gap: 6px;
-  padding: 8px 24px; border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 7px;
+  padding: 9px 26px; border-bottom: 1px solid var(--border);
   background: var(--surface); flex-wrap: wrap;
 }
-.flbl { font-size: 8px; color: var(--muted); letter-spacing: .16em; text-transform: uppercase; margin-right: 4px; }
+.flbl { font-size: 10px; color: var(--muted); letter-spacing: .14em; text-transform: uppercase; margin-right: 4px; }
 .fbtn {
   background: none; border: 1px solid var(--border); color: var(--muted);
-  padding: 4px 11px; font-family: 'Space Mono', monospace; font-size: 9px;
+  padding: 5px 12px; font-family: 'Space Mono', monospace; font-size: 10px;
   cursor: pointer; border-radius: 2px; display: flex; align-items: center;
-  gap: 5px; opacity: .4; transition: all .15s; letter-spacing: .08em;
+  gap: 6px; opacity: .4; transition: all .15s; letter-spacing: .07em;
 }
-.fbtn .dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
+.fbtn .dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
 .fbtn.on { opacity: 1; }
-.fbtn[data-c="who"].on    { border-color:var(--who);    color:var(--who);    background:rgba(41,182,246,.08); }
-.fbtn[data-c="promed"].on { border-color:var(--promed); color:var(--promed); background:rgba(255,215,64,.08); }
-.fbtn[data-c="emerg"].on  { border-color:var(--emerg);  color:var(--emerg);  background:rgba(255,112,67,.08); }
-.fbtn[data-c="global"].on { border-color:var(--global); color:var(--global); background:rgba(171,142,255,.08); }
-.fbtn[data-c="who"]    .dot { background: var(--who); }
-.fbtn[data-c="promed"] .dot { background: var(--promed); }
-.fbtn[data-c="emerg"]  .dot { background: var(--emerg); }
-.fbtn[data-c="global"] .dot { background: var(--global); }
+.fbtn[data-c="who"].on     { border-color:var(--who);    color:var(--who);    background:rgba(41,182,246,.08); }
+.fbtn[data-c="promed"].on  { border-color:var(--promed); color:var(--promed); background:rgba(255,215,64,.08); }
+.fbtn[data-c="emerg"].on   { border-color:var(--emerg);  color:var(--emerg);  background:rgba(255,112,67,.08); }
+.fbtn[data-c="global"].on  { border-color:var(--global); color:var(--global); background:rgba(171,142,255,.08); }
+.fbtn[data-c="journal"].on { border-color:var(--journal);color:var(--journal);background:rgba(229,57,53,.08); }
+.fbtn[data-c="policy"].on  { border-color:var(--policy); color:var(--policy); background:rgba(255,143,0,.08); }
+.fbtn[data-c="news"].on    { border-color:var(--news);   color:var(--news);   background:rgba(38,166,154,.08); }
+.fbtn[data-c="who"]     .dot { background:var(--who); }
+.fbtn[data-c="promed"]  .dot { background:var(--promed); }
+.fbtn[data-c="emerg"]   .dot { background:var(--emerg); }
+.fbtn[data-c="global"]  .dot { background:var(--global); }
+.fbtn[data-c="journal"] .dot { background:var(--journal); }
+.fbtn[data-c="policy"]  .dot { background:var(--policy); }
+.fbtn[data-c="news"]    .dot { background:var(--news); }
+.filter-sep { width: 1px; height: 18px; background: var(--border); margin: 0 4px; }
 
-.main { flex: 1; padding: 20px 24px 36px; }
-.sec-hd { display: flex; align-items: baseline; gap: 10px; margin-bottom: 16px; }
-.sec-title { font-family:'Syne',sans-serif; font-size:10px; font-weight:800; color:var(--muted); letter-spacing:.2em; text-transform:uppercase; }
-.sec-count { font-size:9px; color:var(--muted); opacity:.5; }
-.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.main { flex: 1; padding: 22px 26px 40px; }
+.sec-hd { display: flex; align-items: baseline; gap: 12px; margin-bottom: 18px; }
+.sec-title { font-family:'Syne',sans-serif; font-size:11px; font-weight:800; color:var(--muted); letter-spacing:.2em; text-transform:uppercase; }
+.sec-count { font-size:11px; color:var(--muted); opacity:.5; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 
 .card {
   background: var(--surface); border: 1px solid var(--border); border-radius: 2px;
-  padding: 14px; display: flex; flex-direction: column; gap: 9px;
+  padding: 16px; display: flex; flex-direction: column; gap: 10px;
   text-decoration: none; position: relative; overflow: hidden;
   transition: border-color .2s, transform .15s, background .15s;
   animation: fadeUp .35s ease forwards; opacity: 0;
@@ -138,38 +151,43 @@ body {
 .card:hover { border-color: var(--accent); background: var(--surface2); transform: translateY(-2px); }
 .card.feat  { grid-column: span 2; }
 .card::after { content:''; position:absolute; top:0; left:0; right:0; height:2px; }
-.card[data-c="who"]::after    { background: var(--who); }
-.card[data-c="promed"]::after { background: var(--promed); }
-.card[data-c="emerg"]::after  { background: var(--emerg); }
-.card[data-c="global"]::after { background: var(--global); }
+.card[data-c="who"]::after     { background:var(--who); }
+.card[data-c="promed"]::after  { background:var(--promed); }
+.card[data-c="emerg"]::after   { background:var(--emerg); }
+.card[data-c="global"]::after  { background:var(--global); }
+.card[data-c="journal"]::after { background:var(--journal); }
+.card[data-c="policy"]::after  { background:var(--policy); }
+.card[data-c="news"]::after    { background:var(--news); }
 @keyframes fadeUp { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
 
-.card-hd  { display:flex; align-items:center; justify-content:space-between; }
-.badge    { font-size:7px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; padding:2px 7px; border-radius:1px; }
-.card[data-c="who"]    .badge { background:rgba(41,182,246,.13);  color:var(--who); }
-.card[data-c="promed"] .badge { background:rgba(255,215,64,.13);  color:var(--promed); }
-.card[data-c="emerg"]  .badge { background:rgba(255,112,67,.13);  color:var(--emerg); }
-.card[data-c="global"] .badge { background:rgba(171,142,255,.13); color:var(--global); }
-.card-date  { font-size:8px; color:var(--muted); }
-.card-title { font-family:'Syne',sans-serif; font-size:13px; font-weight:600; color:var(--bright); line-height:1.45; flex:1; }
-.card.feat .card-title { font-size:16px; }
-.card-sum   { font-size:10px; color:var(--text); line-height:1.75; opacity:.82; }
-.card-foot  { display:flex; justify-content:space-between; align-items:center; margin-top:auto; }
-.card-src   { font-size:8px; color:var(--muted); }
-.card-link  { font-size:9px; color:var(--accent); opacity:.6; transition:opacity .15s; }
+.card-hd { display:flex; align-items:center; justify-content:space-between; }
+.badge { font-size:8px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; padding:3px 8px; border-radius:1px; }
+.card[data-c="who"]     .badge { background:rgba(41,182,246,.13);  color:var(--who); }
+.card[data-c="promed"]  .badge { background:rgba(255,215,64,.13);  color:var(--promed); }
+.card[data-c="emerg"]   .badge { background:rgba(255,112,67,.13);  color:var(--emerg); }
+.card[data-c="global"]  .badge { background:rgba(171,142,255,.13); color:var(--global); }
+.card[data-c="journal"] .badge { background:rgba(229,57,53,.13);   color:var(--journal); }
+.card[data-c="policy"]  .badge { background:rgba(255,143,0,.13);   color:var(--policy); }
+.card[data-c="news"]    .badge { background:rgba(38,166,154,.13);  color:var(--news); }
+.card-date  { font-size:10px; color:var(--muted); }
+.card-src   { font-size:11px; color:var(--muted); font-style:italic; }
+.card-title { font-family:'Syne',sans-serif; font-size:15px; font-weight:600; color:var(--bright); line-height:1.45; flex:1; }
+.card.feat .card-title { font-size:18px; }
+.card-sum  { font-size:12px; color:var(--text); line-height:1.8; opacity:.85; }
+.card-link { font-size:11px; color:var(--accent); opacity:.6; transition:opacity .15s; margin-top:auto; }
 .card:hover .card-link { opacity:1; }
 
-.skel-card { background:var(--surface); border:1px solid var(--border); border-radius:2px; padding:14px; display:flex; flex-direction:column; gap:10px; }
+.skel-card { background:var(--surface); border:1px solid var(--border); border-radius:2px; padding:16px; display:flex; flex-direction:column; gap:11px; }
 .skel { background:linear-gradient(90deg,var(--border) 25%,var(--surface2) 50%,var(--border) 75%); background-size:300% 100%; animation:shimmer 1.8s infinite; border-radius:2px; }
 @keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
 
-.state { grid-column:1/-1; padding:40px; text-align:center; font-size:11px; line-height:2.2; color:var(--muted); }
+.state { grid-column:1/-1; padding:50px; text-align:center; font-size:13px; line-height:2.2; color:var(--muted); }
 .state.err { color:#ff5252; }
 
 footer {
-  padding:9px 24px; border-top:1px solid var(--border);
-  display:flex; justify-content:space-between;
-  font-size:8px; color:var(--muted); letter-spacing:.09em;
+  padding:10px 26px; border-top:1px solid var(--border);
+  display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px;
+  font-size:10px; color:var(--muted); letter-spacing:.08em;
 }
 </style>
 </head>
@@ -184,24 +202,32 @@ footer {
     <span class="live-dot" id="dot"></span>
     <span class="status-txt" id="st">LIVE</span>
     <span class="clock" id="clk">—</span>
-    <button class="rbtn-top" id="rb" onclick="loadAll()">↻ REFRESH</button>
+    <button class="rbtn" id="rb" onclick="loadAll()">↻ REFRESH</button>
   </div>
 </div>
 
 <div class="ticker-wrap">
   <div class="ticker-badge">LIVE</div>
   <div class="ticker-track" id="tk">
-    <span class="t-item"><span class="t-sep">◆</span><span class="t-hl">Feeds laden…</span></span>
-    <span class="t-item"><span class="t-sep">◆</span><span class="t-hl">Feeds laden…</span></span>
+    <span class="t-item">
+      <span class="t-sep">◆</span>
+      <span class="t-src">GH RIBBON</span>
+      <span class="t-hl">Feeds laden — even geduld…</span>
+    </span>
   </div>
 </div>
 
 <div class="filter-bar">
-  <span class="flbl">Alert:</span>
-  <button class="fbtn on" data-c="who"    onclick="tog('who')">   <span class="dot"></span>World Health Org</button>
+  <span class="flbl">Alerts:</span>
+  <button class="fbtn on" data-c="who"    onclick="tog('who')">   <span class="dot"></span>WHO</button>
   <button class="fbtn on" data-c="promed" onclick="tog('promed')"><span class="dot"></span>ProMED</button>
-  <button class="fbtn on" data-c="emerg"  onclick="tog('emerg')"> <span class="dot"></span>Health Emergency</button>
+  <button class="fbtn on" data-c="emerg"  onclick="tog('emerg')"> <span class="dot"></span>Emergency</button>
   <button class="fbtn on" data-c="global" onclick="tog('global')"><span class="dot"></span>Global Health</button>
+  <div class="filter-sep"></div>
+  <span class="flbl">RSS:</span>
+  <button class="fbtn on" data-c="journal" onclick="tog('journal')"><span class="dot"></span>Journals</button>
+  <button class="fbtn on" data-c="policy"  onclick="tog('policy')"> <span class="dot"></span>Policy</button>
+  <button class="fbtn on" data-c="news"    onclick="tog('news')">   <span class="dot"></span>News</button>
 </div>
 
 <main class="main">
@@ -213,21 +239,34 @@ footer {
 </main>
 
 <footer>
-  <span>Google Alerts: World Health Org · ProMED · Health Emergency · Global Health</span>
+  <span>Alerts: WHO · ProMED · Health Emergency · Global Health</span>
+  <span>RSS: The Lancet · Lancet Global Health · BMJ · Health Policy Watch · Politico EU · STAT News</span>
   <span id="ft">—</span>
 </footer>
 
 <script>
-const FEEDS = [
-  { url:'https://www.google.com/alerts/feeds/07358569115421849873/153340034560442073',  label:'World Health Org', cat:'who'    },
+const PROXY = 'https://corsproxy.io/?';
+
+const ALERT_FEEDS = [
+  { url:'https://www.google.com/alerts/feeds/07358569115421849873/153340034560442073',  label:'WHO Alert',        cat:'who'    },
   { url:'https://www.google.com/alerts/feeds/07358569115421849873/14881210468558991559', label:'ProMED',           cat:'promed' },
   { url:'https://www.google.com/alerts/feeds/07358569115421849873/3291854287981540699',  label:'Health Emergency', cat:'emerg'  },
   { url:'https://www.google.com/alerts/feeds/07358569115421849873/5068632798327940500',  label:'Global Health',    cat:'global' },
 ];
 
-const PROXY = 'https://corsproxy.io/?';
+const RSS_FEEDS = [
+  { url:'https://www.thelancet.com/rssfeed/lancet_online.xml',   label:'The Lancet',          cat:'journal' },
+  { url:'https://www.thelancet.com/rssfeed/langlo_online.xml',   label:'Lancet Global Health', cat:'journal' },
+  { url:'https://www.bmj.com/rss/current.xml',                   label:'BMJ',                 cat:'journal' },
+  { url:'https://healthpolicy-watch.news/feed/',                  label:'Health Policy Watch', cat:'policy'  },
+  { url:'https://www.politico.eu/feed/?cat=96',                  label:'Politico EU Health',  cat:'policy'  },
+  { url:'https://www.statnews.com/feed/',                        label:'STAT News',           cat:'news'    },
+];
+
+const ALL_FEEDS = [...ALERT_FEEDS, ...RSS_FEEDS];
+
 let allItems = [];
-let active   = new Set(['who','promed','emerg','global']);
+let active   = new Set(['who','promed','emerg','global','journal','policy','news']);
 
 setInterval(() => {
   document.getElementById('clk').textContent =
@@ -252,8 +291,9 @@ function relDate(s) {
 }
 function esc(u) { return (u||'#').replace(/"/g,'%22').replace(/'/g,'%27'); }
 function interleave(items) {
-  const g = {}; items.forEach(i => { (g[i.cat]=g[i.cat]||[]).push(i); });
-  const gs = Object.values(g), out = [], max = Math.max(...gs.map(a=>a.length));
+  const g = {};
+  items.forEach(i => { (g[i.cat]=g[i.cat]||[]).push(i); });
+  const gs = Object.values(g), out = [], max = Math.max(0,...gs.map(a=>a.length));
   for (let i=0;i<max;i++) gs.forEach(a=>{ if(a[i]) out.push(a[i]); });
   return out;
 }
@@ -261,15 +301,15 @@ function interleave(items) {
 function parseAtom(xmlText, feed) {
   const xml = new DOMParser().parseFromString(xmlText, 'application/xml');
   if (xml.querySelector('parsererror')) throw new Error('XML parse error');
-  const entries = [...xml.querySelectorAll('entry')];
+  const entries = [...xml.querySelectorAll('entry, item')];
   if (!entries.length) throw new Error('No entries');
-  return entries.slice(0,8).map(e => {
-    const title   = stripHtml(e.querySelector('title')?.textContent || '');
-    const linkEl  = e.querySelector('link');
-    let   url     = linkEl?.getAttribute('href') || linkEl?.textContent?.trim() || '#';
-    const pubRaw  = e.querySelector('published,updated')?.textContent || '';
-    const rawSum  = e.querySelector('content,summary')?.textContent || '';
-    const srcName = e.querySelector('source title')?.textContent || feed.label;
+  return entries.slice(0,6).map(e => {
+    const title  = stripHtml(e.querySelector('title')?.textContent || '');
+    const linkEl = e.querySelector('link');
+    let   url    = linkEl?.getAttribute('href') || linkEl?.textContent?.trim() || '#';
+    const pubRaw = e.querySelector('published,updated,pubDate')?.textContent || '';
+    const rawSum = e.querySelector('content,summary,description')?.textContent || '';
+    const srcName= e.querySelector('source title')?.textContent || feed.label;
     try {
       const u = new URL(url);
       const actual = u.searchParams.get('url') || u.searchParams.get('q');
@@ -281,65 +321,54 @@ function parseAtom(xmlText, feed) {
       src:     srcName,
       cat:     feed.cat,
       date:    relDate(pubRaw),
-      summary: stripHtml(rawSum).slice(0,280),
+      summary: stripHtml(rawSum).slice(0,300),
     };
-  }).filter(i => i.title && i.url !== '#');
+  }).filter(i => i.title && i.url && i.url !== '#');
 }
 
 async function fetchFeed(feed) {
-  const res = await fetch(PROXY + encodeURIComponent(feed.url), {
-    signal: AbortSignal.timeout(12000)
-  });
-  if (!res.ok) throw new Error('HTTP '+res.status);
-  const text = await res.text();
-  return parseAtom(text, feed);
-}
-
-async function loadAll() {
-  const rb=document.getElementById('rb'), dot=document.getElementById('dot');
-  rb.disabled=true; dot.className='live-dot busy';
-  document.getElementById('st').textContent='FETCHING…';
-  showSkeletons();
-  const results = await Promise.allSettled(FEEDS.map(fetchFeed));
-  const fetched  = results.flatMap(r => r.status==='fulfilled' ? r.value : []);
-  allItems = interleave(fetched);
-  if (!allItems.length) {
-    dot.className='live-dot err';
-    document.getElementById('st').textContent='ERROR';
-    document.getElementById('grid').innerHTML=
-      '<div class="state err">Feeds konden niet worden geladen.<br><small>Controleer je internetverbinding.</small></div>';
-    document.getElementById('cnt').textContent='0 items';
-  } else {
-    renderCards();
-    renderTicker();
-    dot.className='live-dot';
-    document.getElementById('st').textContent='LIVE';
+  try {
+    const res = await fetch(PROXY + encodeURIComponent(feed.url), {
+      signal: AbortSignal.timeout(14000)
+    });
+    if (!res.ok) throw new Error('HTTP '+res.status);
+    const text = await res.text();
+    return parseAtom(text, feed);
+  } catch(e) {
+    console.warn(feed.label+':', e.message);
+    return [];
   }
-  document.getElementById('ft').textContent = 'Updated '+new Date().toLocaleTimeString('nl-NL');
-  rb.disabled=false;
 }
 
-function renderTicker() {
-  const d = [...allItems,...allItems];
-  document.getElementById('tk').innerHTML = d.map(i=>
+function renderTicker(items) {
+  const track = document.getElementById('tk');
+  if (!items.length) return;
+  const doubled = [...items, ...items];
+  track.innerHTML = doubled.map(i =>
     `<a class="t-item" href="${esc(i.url)}" target="_blank">
        <span class="t-sep">◆</span>
        <span class="t-src">${i.src}</span>
        <span class="t-hl">${i.title}</span>
-     </a>`).join('');
+     </a>`
+  ).join('');
+  requestAnimationFrame(() => { track.classList.add('running'); });
 }
 
 function showSkeletons() {
   document.getElementById('grid').innerHTML = `
-    <div class="skel-card"><div class="skel" style="height:8px;width:40%"></div><div class="skel" style="height:14px;width:88%"></div><div class="skel" style="height:10px;width:100%"></div><div class="skel" style="height:10px;width:65%"></div></div>
-    <div class="skel-card"><div class="skel" style="height:8px;width:40%"></div><div class="skel" style="height:14px;width:88%"></div><div class="skel" style="height:10px;width:100%"></div><div class="skel" style="height:10px;width:65%"></div></div>
-    <div class="skel-card"><div class="skel" style="height:8px;width:40%"></div><div class="skel" style="height:14px;width:88%"></div><div class="skel" style="height:10px;width:100%"></div><div class="skel" style="height:10px;width:65%"></div></div>
-    <div class="skel-card" style="grid-column:span 2"><div class="skel" style="height:8px;width:40%"></div><div class="skel" style="height:18px;width:88%"></div><div class="skel" style="height:10px;width:100%"></div><div class="skel" style="height:10px;width:75%"></div></div>
-    <div class="skel-card"><div class="skel" style="height:8px;width:40%"></div><div class="skel" style="height:14px;width:88%"></div><div class="skel" style="height:10px;width:100%"></div><div class="skel" style="height:10px;width:65%"></div></div>`;
-  document.getElementById('cnt').textContent='laden…';
+    <div class="skel-card" style="grid-column:span 2"><div class="skel" style="height:9px;width:35%"></div><div class="skel" style="height:20px;width:90%"></div><div class="skel" style="height:13px;width:100%"></div><div class="skel" style="height:13px;width:80%"></div></div>
+    <div class="skel-card"><div class="skel" style="height:9px;width:35%"></div><div class="skel" style="height:16px;width:90%"></div><div class="skel" style="height:13px;width:100%"></div><div class="skel" style="height:13px;width:70%"></div></div>
+    <div class="skel-card"><div class="skel" style="height:9px;width:35%"></div><div class="skel" style="height:16px;width:90%"></div><div class="skel" style="height:13px;width:100%"></div><div class="skel" style="height:13px;width:70%"></div></div>
+    <div class="skel-card"><div class="skel" style="height:9px;width:35%"></div><div class="skel" style="height:16px;width:90%"></div><div class="skel" style="height:13px;width:100%"></div><div class="skel" style="height:13px;width:70%"></div></div>
+    <div class="skel-card"><div class="skel" style="height:9px;width:35%"></div><div class="skel" style="height:16px;width:90%"></div><div class="skel" style="height:13px;width:100%"></div><div class="skel" style="height:13px;width:70%"></div></div>`;
+  document.getElementById('cnt').textContent = 'laden…';
 }
 
-const LABELS = {who:'WHO',promed:'PROMED',emerg:'EMERGENCY',global:'GLOBAL HEALTH'};
+const CAT_LABEL = {
+  who:'WHO', promed:'PROMED', emerg:'EMERGENCY', global:'GLOBAL HEALTH',
+  journal:'JOURNAL', policy:'POLICY', news:'NEWS'
+};
+
 function renderCards() {
   const visible = allItems.filter(i => active.has(i.cat));
   document.getElementById('cnt').textContent = `${visible.length} items`;
@@ -348,21 +377,47 @@ function renderCards() {
       '<div class="state">Geen items — activeer meer categorieën.</div>';
     return;
   }
-  document.getElementById('grid').innerHTML = visible.map((item,idx) => `
+  document.getElementById('grid').innerHTML = visible.map((item, idx) => `
     <a class="card${idx===0?' feat':''}" data-c="${item.cat}"
        href="${esc(item.url)}" target="_blank"
-       style="animation-delay:${idx*.03}s">
+       style="animation-delay:${idx*.025}s">
       <div class="card-hd">
-        <span class="badge">${LABELS[item.cat]||item.cat}</span>
+        <span class="badge">${CAT_LABEL[item.cat]||item.cat}</span>
         <span class="card-date">${item.date}</span>
       </div>
+      <div class="card-src">${item.src}</div>
       <div class="card-title">${item.title}</div>
-      <div class="card-sum">${item.summary}</div>
-      <div class="card-foot">
-        <span class="card-src">${item.src}</span>
-        <span class="card-link">Lees verder ↗</span>
-      </div>
+      ${item.summary ? `<div class="card-sum">${item.summary}</div>` : ''}
+      <span class="card-link">Lees verder ↗</span>
     </a>`).join('');
+}
+
+async function loadAll() {
+  const rb  = document.getElementById('rb');
+  const dot = document.getElementById('dot');
+  rb.disabled = true;
+  dot.className = 'live-dot busy';
+  document.getElementById('st').textContent = 'FETCHING…';
+  showSkeletons();
+  const track = document.getElementById('tk');
+  track.classList.remove('running');
+  const results = await Promise.allSettled(ALL_FEEDS.map(fetchFeed));
+  const fetched  = results.flatMap(r => r.status==='fulfilled' ? r.value : []);
+  allItems = interleave(fetched);
+  if (!allItems.length) {
+    dot.className = 'live-dot err';
+    document.getElementById('st').textContent = 'ERROR';
+    document.getElementById('grid').innerHTML =
+      '<div class="state err">Feeds konden niet worden geladen.<br><small>Controleer je internetverbinding.</small></div>';
+    document.getElementById('cnt').textContent = '0 items';
+  } else {
+    renderCards();
+    renderTicker(allItems);
+    dot.className = 'live-dot';
+    document.getElementById('st').textContent = 'LIVE';
+  }
+  document.getElementById('ft').textContent = 'Updated ' + new Date().toLocaleTimeString('nl-NL');
+  rb.disabled = false;
 }
 
 function tog(cat) {
@@ -373,7 +428,7 @@ function tog(cat) {
 }
 
 loadAll();
-setInterval(loadAll, 30*60*1000);
+setInterval(loadAll, 30 * 60 * 1000);
 </script>
 </body>
 </html>
