@@ -1,7 +1,7 @@
 {
- "generated": "2026-08-31T07:26:53+00:00",
- "feeds_ok": 8,
- "feeds_tot": 15,
+ "generated": "2026-08-31T08:08:06+00:00",
+ "feeds_ok": 10,
+ "feeds_tot": 26,
  "status": {
   "WHO News": {
    "ok": true,
@@ -18,6 +18,11 @@
    "msg": "12 items",
    "cat": "who"
   },
+  "UN News Health": {
+   "ok": false,
+   "msg": "ValueError: 0 entries (bron gaf geen bruikbare XML terug)",
+   "cat": "who"
+  },
   "ProMED": {
    "ok": false,
    "msg": "ValueError: 0 entries (bron gaf geen bruikbare XML terug)",
@@ -26,6 +31,11 @@
   "CIDRAP": {
    "ok": false,
    "msg": "HTTPError: HTTP Error 404: Not Found",
+   "cat": "promed"
+  },
+  "Eurosurveillance": {
+   "ok": false,
+   "msg": "HTTPError: HTTP Error 403: Forbidden",
    "cat": "promed"
   },
   "Health Emergency": {
@@ -48,6 +58,26 @@
    "msg": "HTTPError: HTTP Error 404: Not Found",
    "cat": "global"
   },
+  "Africa CDC": {
+   "ok": false,
+   "msg": "ValueError: 0 entries (bron gaf geen bruikbare XML terug)",
+   "cat": "global"
+  },
+  "Think Global Health": {
+   "ok": false,
+   "msg": "HTTPError: HTTP Error 404: Not Found",
+   "cat": "global"
+  },
+  "CIDRAP Stewardship": {
+   "ok": false,
+   "msg": "HTTPError: HTTP Error 404: Not Found",
+   "cat": "amr"
+  },
+  "AMR Industry / news": {
+   "ok": true,
+   "msg": "10 items",
+   "cat": "amr"
+  },
   "The Lancet": {
    "ok": true,
    "msg": "12 items",
@@ -60,7 +90,17 @@
   },
   "BMJ": {
    "ok": false,
+   "msg": "HTTPError: HTTP Error 404: Not Found",
+   "cat": "journal"
+  },
+  "BMJ Global Health": {
+   "ok": false,
    "msg": "HTTPError: HTTP Error 429: Too Many Requests",
+   "cat": "journal"
+  },
+  "PLOS Global Public Health": {
+   "ok": true,
+   "msg": "12 items",
    "cat": "journal"
   },
   "Health Policy Watch": {
@@ -68,7 +108,17 @@
    "msg": "10 items",
    "cat": "policy"
   },
+  "Geneva Health Files": {
+   "ok": false,
+   "msg": "HTTPError: HTTP Error 403: Forbidden",
+   "cat": "policy"
+  },
   "Politico EU Health": {
+   "ok": false,
+   "msg": "HTTPError: HTTP Error 403: Forbidden",
+   "cat": "policy"
+  },
+  "Euractiv Health": {
    "ok": false,
    "msg": "HTTPError: HTTP Error 403: Forbidden",
    "cat": "policy"
@@ -77,9 +127,24 @@
    "ok": true,
    "msg": "12 items",
    "cat": "news"
+  },
+  "Devex Global Health": {
+   "ok": false,
+   "msg": "HTTPError: HTTP Error 404: Not Found",
+   "cat": "news"
   }
  },
  "items": [
+  {
+   "title": "World Hepatitis Day 2026: Let's break it down with community at the centre",
+   "url": "https://www.tropicalmedicine.ox.ac.uk/news/world-hepatitis-day-2026-let2019s-break-it-down-with-community-at-the-centre",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-08-31T06:55:30+00:00",
+   "summary": "... the World Health Organization International ... Sustainable by Design: Digital Health Business Models for Equitable Global Health Impact in Low-Income ...",
+   "score": 11
+  },
   {
    "title": "US Africa Media Hub on X: \"Deputy Secretary of State Christopher Landau met with ...",
    "url": "https://x.com/AfricaMediaHub/status/2094310176291529100",
@@ -87,7 +152,18 @@
    "feed": "Global Health",
    "cat": "global",
    "date": "2026-08-31T06:34:33+00:00",
-   "summary": "key issues, including shared global health priorities, economic growth, and ... global health priorities, economic growth, and regional security."
+   "summary": "key issues, including shared global health priorities, economic growth, and ... global health priorities, economic growth, and regional security.",
+   "score": 8
+  },
+  {
+   "title": "African Traditional Medicine Day 2026: from research to reach, advancing health for all",
+   "url": "https://www.who.int/philippines/news/detail-global/31-08-2026-african-traditional-medicine-day-2026--from-research-to-reach--advancing-health-for-all",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-08-31T06:31:52+00:00",
+   "summary": "... health coverage in the African Region,\" the WHO Global Traditional Medicine Centre and the WHO Regional Office for Africa convened a conversation ...",
+   "score": 6
   },
   {
    "title": "[Comment] Cardiac resynchronisation therapy: 30 years of progress",
@@ -96,7 +172,8 @@
    "feed": "The Lancet",
    "cat": "journal",
    "date": "2026-08-31T06:30:02+00:00",
-   "summary": "Cardiac resynchronisation therapy with biventricular pacing (BiV-CRT) revolutionised the treatment of heart failure in patients with left bundle-branch block (LBBB). Its development, founded upon observations that LBBB leads to cardiac impairment,1 progressed to finding that combining a lead implant"
+   "summary": "Cardiac resynchronisation therapy with biventricular pacing (BiV-CRT) revolutionised the treatment of heart failure in patients with left bundle-branch block (LBBB). Its development, founded upon observations that LBBB leads to cardiac impairment,1 progressed to finding that combining a lead implant",
+   "score": 5
   },
   {
    "title": "[Articles] Targeted left ventricular lead placement in biventricular pacing for heart failure: a national, multicentre, double-blind, randomised controlled trial in Denmark",
@@ -105,7 +182,108 @@
    "feed": "The Lancet",
    "cat": "journal",
    "date": "2026-08-31T06:30:02+00:00",
-   "summary": "In patients with heart failure and prolonged QRS, targeted left ventricular lead placement at the site of latest electrical activation did not reduce the composite endpoint of death or unplanned hospitalisation for heart failure compared with conventional lead placement in a posterolateral, non-apic"
+   "summary": "In patients with heart failure and prolonged QRS, targeted left ventricular lead placement at the site of latest electrical activation did not reduce the composite endpoint of death or unplanned hospitalisation for heart failure compared with conventional lead placement in a posterolateral, non-apic",
+   "score": 1
+  },
+  {
+   "title": "Ex- health minister Norman Lamb calls for mental health rethink - BBC",
+   "url": "https://www.bbc.com/news/articles/cjdvl8zyjvjo",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-08-31T06:24:52+00:00",
+   "summary": "Lamb tells the BBC he wants the system to treat people in crisis with kindness and dignity.",
+   "score": 3
+  },
+  {
+   "title": "Alabama woman sues hospital after delivering baby alone in emergency room bathroom",
+   "url": "https://www.al.com/news/2026/08/alabama-woman-sues-hospital-after-delivering-baby-alone-in-emergency-room-bathroom.html",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-08-31T06:24:22+00:00",
+   "summary": "A Tuscaloosa County woman has filed a medical malpractice lawsuit against DCH Northport Medical Center and two nurses, alleging she was left in an ...",
+   "score": 3
+  },
+  {
+   "title": "Community services board, local leaders push for regional crisis receiving center",
+   "url": "https://www.rappnews.com/health/community-services-board-culpeper-leaders-push-for-regional-crisis-receiving-center-93c8f78c",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-08-31T06:19:23+00:00",
+   "summary": "Culpeper leaders are seeking support for a 24/7 crisis center that would offer adults throughout the area behavioral health care closer to home ...",
+   "score": 3
+  },
+  {
+   "title": "Global coral reef coverage risks irreversible decline, new report warns - Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/8/31/global-coral-reef-coverage-risks-irreversible-decline-new-report-warns",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-08-31T06:11:03+00:00",
+   "summary": "... globally . Coral reefs are critical barometers for global ocean health , supporting more than 25 percent of all marine life despite covering less ...",
+   "score": 3
+  },
+  {
+   "title": "Look to Leadership: Expanding access to public service education | The University Record",
+   "url": "https://record.umich.edu/articles/look-to-leadership-expanding-access-to-public-service-education/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-08-31T06:03:13+00:00",
+   "summary": "School of Nursing celebrates 30 years of global health impact · Student move-in brings traffic, parking changes to Ann Arbor campus · School of ...",
+   "score": 8
+  },
+  {
+   "title": "Inmate dies in Ada County Jail during medical emergency | ktvb.com",
+   "url": "https://www.ktvb.com/article/news/local/idaho/inmate-dies-ada-county-jail-during-medical-emergency/277-260ae6bd-76e2-4c41-aa92-c05851af1b31",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-08-31T05:57:08+00:00",
+   "summary": "Deputies and jail staff responded around 10 p.m. Aug. 29 after the man was found experiencing a medical emergency in his cell. Jail health services ...",
+   "score": 3
+  },
+  {
+   "title": "Promoting Mental Health Awareness Among Future Healthcare Professionals",
+   "url": "https://europeansting.com/2026/08/31/promoting-mental-health-awareness-among-future-healthcare-professionals/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-08-31T05:50:04+00:00",
+   "summary": "Which have been seen in the recent years in the form of depression, anxiety, burnout or stress. The World Health Organization (WHO) defines mental ...",
+   "score": 6
+  },
+  {
+   "title": "Radiography of global disorder: all you need to know to start the course informed",
+   "url": "https://en.ara.cat/international/radiography-of-the-global-disorder_130_5836055.html",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-08-31T05:37:55+00:00",
+   "summary": "The persistence of wars, climate change, the health crisis, and migratory flows mark the international situation.",
+   "score": 3
+  },
+  {
+   "title": "New Alerts Site Provides Hub for RazALERTs, Emergency Information | Arkansas News",
+   "url": "https://news.uark.edu/articles/82797/new-alerts-site-provides-hub-for-razalerts-emergency-information",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-08-31T05:00:53+00:00",
+   "summary": "... emergency and non- emergency messages. Previously, the 'RazALERT ... Health , Wellness & Life · Law & Governing · People & Culture · Science ...",
+   "score": 3
+  },
+  {
+   "title": "Mac and cheese powder spills after truck crash - KKTV",
+   "url": "https://www.kktv.com/2026/08/30/mac-cheese-powder-spills-after-truck-crash/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-08-31T04:57:22+00:00",
+   "summary": "Health department: Testing shows Arkansas River water 'highly ... (. Football player dies after medical emergency · News · Weather · Sports · 11 ...",
+   "score": 3
   },
   {
    "title": "Honoured to attend and address the World Health Summit Academic Alliance Expert ... - Facebook",
@@ -114,7 +292,8 @@
    "feed": "Global Health",
    "cat": "global",
    "date": "2026-08-31T04:34:25+00:00",
-   "summary": "The climate emergency has become the defining determinant of global public health , demanding responses that unite science, systems, and society. The ..."
+   "summary": "The climate emergency has become the defining determinant of global public health , demanding responses that unite science, systems, and society. The ...",
+   "score": 3
   },
   {
    "title": "Honoured to attend and address the World Health Summit Academic Alliance Expert ... - Instagram",
@@ -123,7 +302,38 @@
    "feed": "Global Health",
    "cat": "global",
    "date": "2026-08-31T04:34:04+00:00",
-   "summary": "A meaningful dialogue bringing together global experts to explore how climate action, public health and human wellbeing can come together to build a ..."
+   "summary": "A meaningful dialogue bringing together global experts to explore how climate action, public health and human wellbeing can come together to build a ...",
+   "score": 3
+  },
+  {
+   "title": "International overdose awareness day || Health & Wellness - YouTube",
+   "url": "https://www.youtube.com/watch?v=b0S18EI4AwQ",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-08-31T04:28:00+00:00",
+   "summary": "ktnnews #KTNNewsDigital #ktnkenya #KTNTV #KTNHome #KenyaNews Welcome to the 24/7 KTN Kenya News Channel on YouTube – your trusted source for the ...",
+   "score": 5
+  },
+  {
+   "title": "Column: Primary care shortage is a health crisis | Honolulu Star-Advertiser",
+   "url": "https://www.staradvertiser.com/2026/08/30/editorial/island-voices/column-primary-care-shortage-is-a-health-crisis/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-08-31T04:14:58+00:00",
+   "summary": "Column: Primary care shortage is a health crisis . By Dr. Tad Iwanuma ... Patients face monthslong waits, fewer office visits, unanswered phone calls, ...",
+   "score": 3
+  },
+  {
+   "title": "Toledo-area medical team prepares for eighth mission trip to western Ukraine - 13ABC",
+   "url": "https://www.13abc.com/2026/08/30/toledo-area-medical-team-prepares-eighth-mission-trip-western-ukraine/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-08-31T04:06:02+00:00",
+   "summary": "On previous missions, they've treated nearly 2,400 patients and are preparing to see everything from everyday health problems to emergencies . “The ...",
+   "score": 3
   },
   {
    "title": "Mycetoma: The Invisible Disease Beneath India's Soil | The Scientist",
@@ -132,7 +342,8 @@
    "feed": "Global Health",
    "cat": "global",
    "date": "2026-08-31T04:05:06+00:00",
-   "summary": "Even a decade after the World Health Organization (WHO) recognized ... A map of the world showing the global distribution of mycetoma cases."
+   "summary": "Even a decade after the World Health Organization (WHO) recognized ... A map of the world showing the global distribution of mycetoma cases.",
+   "score": 10
   },
   {
    "title": "Sat, 29th, August, 2026: Richard Keane, CEO of Living Positive Victoria; HIV/AIDS and ...",
@@ -141,7 +352,28 @@
    "feed": "Global Health",
    "cat": "global",
    "date": "2026-08-31T03:37:57+00:00",
-   "summary": "Driven by the US: The massive shortfall was driven entirely by steep declines, funding delays, and project cancellations in US international health ..."
+   "summary": "Driven by the US: The massive shortfall was driven entirely by steep declines, funding delays, and project cancellations in US international health ...",
+   "score": 7
+  },
+  {
+   "title": "College football player MicahJo Barnett dies after medical emergency on field - KAKE",
+   "url": "https://www.kake.com/home/college-football-player-micahjo-barnett-dies-after-medical-emergency-on-field/article_254c2a4e-2d56-4805-8c8d-6b70b6f116c4.html",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-08-31T03:24:45+00:00",
+   "summary": "The school announced Barnett's death after William Jewell's football game Saturday was suspended following a medical emergency on the team's sideline, ...",
+   "score": 3
+  },
+  {
+   "title": "Editorial: Social media videos trump public safety messages during wildfires again - This Is Reno",
+   "url": "https://thisisreno.com/2026/08/social-media-disaster-response-critique/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-08-31T03:01:23+00:00",
+   "summary": "Lombardo asks Trump for Hawk Fire emergency declaration · NNPH declares public health emergency after Hawk, Bug and Stallion fires. CALENDAR. Reno ...",
+   "score": 6
   },
   {
    "title": "Global experts reveal how living evidence can shape health policy - Bioengineer.org",
@@ -151,6 +383,26 @@
    "cat": "global",
    "date": "2026-08-31T02:53:53+00:00",
    "summary": "In the critical weeks of the COVID-19 pandemic, a new kind of scientific publication quietly changed how the world made health decisions: the ..."
+  },
+  {
+   "title": "Missouri's William Jewell College running back dies after experiencing medical emergency ...",
+   "url": "https://krdo.com/news/2026/08/30/missouris-william-jewell-college-running-back-dies-after-experiencing-medical-emergency-during-game/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-08-31T02:45:11+00:00",
+   "summary": "By Associated Press (AP) — William Jewell College junior running back MicahJo Barnett died after experiencing a medical emergency on the sideline ...",
+   "score": 3
+  },
+  {
+   "title": "Maine's healthcare affordability crisis is bigger than prior authorization | Opinion",
+   "url": "https://www.centralmaine.com/2026/08/30/maines-healthcare-affordability-crisis-is-bigger-than-prior-authorization-opinion/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-08-31T02:01:43+00:00",
+   "summary": "Prior authorization is one tool health plans use to help address those pressures. At Anthem, only about 3% of non- emergency medical care requires ...",
+   "score": 3
   },
   {
    "title": "Tag: Silvia Serrano Guzmán | Global Health Institute | Georgetown University",
@@ -186,7 +438,8 @@
    "feed": "WHO Alert",
    "cat": "who",
    "date": "2026-08-31T00:40:57+00:00",
-   "summary": "Report details. Primary country. South Sudan. Source. World Health Organization . Format. News and Press Release. Theme. Health. Disaster type. Flood."
+   "summary": "Report details. Primary country. South Sudan. Source. World Health Organization . Format. News and Press Release. Theme. Health. Disaster type. Flood.",
+   "score": 6
   },
   {
    "title": "Officials: Measles exposure reported at Asheville hotel - Fox Carolina",
@@ -240,7 +493,8 @@
    "feed": "WHO Alert",
    "cat": "who",
    "date": "2026-08-30T23:39:43+00:00",
-   "summary": "One such centre might be the World Health Organization's Hub for Pandemic and Epidemic Intelligence in Berlin, he suggests. This type of set-up is ..."
+   "summary": "One such centre might be the World Health Organization's Hub for Pandemic and Epidemic Intelligence in Berlin, he suggests. This type of set-up is ...",
+   "score": 8
   },
   {
    "title": "California Legislature Advances Legislation Mandating Stricter Hydrogen Sulfide Air Standards",
@@ -258,7 +512,8 @@
    "feed": "WHO Alert",
    "cat": "who",
    "date": "2026-08-30T22:33:15+00:00",
-   "summary": "For this reason, improving rehabilitation is a key aim of the World Health Organization and is anchored in the EU Safe Heart Plan. The new ESC ..."
+   "summary": "For this reason, improving rehabilitation is a key aim of the World Health Organization and is anchored in the EU Safe Heart Plan. The new ESC ...",
+   "score": 6
   },
   {
    "title": "College football player MicahJo Barnett dies after medical emergency on field - ABC News",
@@ -303,7 +558,8 @@
    "feed": "WHO Alert",
    "cat": "who",
    "date": "2026-08-30T20:03:22+00:00",
-   "summary": "Sunnybrook is now a World Health Organization Collaborating Centre, enhancing emergency preparedness and infection control expertise."
+   "summary": "Sunnybrook is now a World Health Organization Collaborating Centre, enhancing emergency preparedness and infection control expertise.",
+   "score": 9
   },
   {
    "title": "William Jewell football player MicahJo Barnett dies after medical emergency - YouTube",
@@ -321,7 +577,8 @@
    "feed": "WHO Alert",
    "cat": "who",
    "date": "2026-08-30T19:43:12+00:00",
-   "summary": "The World Health Organization (WHO), through the UNDP/UNFPA/UNICEF/WHO/World Bank Special Programme of Research, Development and Research Training ..."
+   "summary": "The World Health Organization (WHO), through the UNDP/UNFPA/UNICEF/WHO/World Bank Special Programme of Research, Development and Research Training ...",
+   "score": 12
   },
   {
    "title": "Healthcare Development, Humanitarian Intervention, Emergency Response, Bauchi Politics+More",
@@ -357,7 +614,8 @@
    "feed": "STAT News",
    "cat": "news",
    "date": "2026-08-30T18:30:18+00:00",
-   "summary": "Mimrylo, from Takeda and Protagonist, is a new kind of treatment for the blood cancer polycythemia vera."
+   "summary": "Mimrylo, from Takeda and Protagonist, is a new kind of treatment for the blood cancer polycythemia vera.",
+   "score": 1
   },
   {
    "title": "The Headlines: Top stories of the day - Cincinnati - FOX19",
@@ -375,7 +633,8 @@
    "feed": "WHO Alert",
    "cat": "who",
    "date": "2026-08-30T18:07:24+00:00",
-   "summary": "... Association (AHA) and the World Heart Federation (WHF). The Fifth ... While implementation will take time, it will result in better public health ..."
+   "summary": "... Association (AHA) and the World Heart Federation (WHF). The Fifth ... While implementation will take time, it will result in better public health ...",
+   "score": 3
   },
   {
    "title": "WHO in Cameroon - Annual Report 2016 - WHO | Regional Office for Africa",
@@ -384,7 +643,8 @@
    "feed": "WHO Alert",
    "cat": "who",
    "date": "2026-08-30T17:59:01+00:00",
-   "summary": "Skip to main content. EN · FR; PT. World Health Organization — African Region. Donate. Health topics. All topics » · A · B · C · D · E · F · G · H · I."
+   "summary": "Skip to main content. EN · FR; PT. World Health Organization — African Region. Donate. Health topics. All topics » · A · B · C · D · E · F · G · H · I.",
+   "score": 12
   },
   {
    "title": "South Africa Grapples With The Promise and Price of Injectable Lenacapavir to Prevent HIV",
@@ -393,7 +653,8 @@
    "feed": "Health Policy Watch",
    "cat": "policy",
    "date": "2026-08-30T17:37:33+00:00",
-   "summary": "The antiretroviral medicine lenacapavir, delivered via injection every six months, is almost completely effective in preventing HIV. But it is expensive at present, and millions will need to be initiated on it every year to make a dent on HIV transmission in South Africa. CAPE TOWN – South Africa ha"
+   "summary": "The antiretroviral medicine lenacapavir, delivered via injection every six months, is almost completely effective in preventing HIV. But it is expensive at present, and millions will need to be initiated on it every year to make a dent on HIV transmission in South Africa. CAPE TOWN – South Africa ha",
+   "score": 12
   },
   {
    "title": "The Gazan amputees turning to football - Financial Times",
@@ -402,7 +663,8 @@
    "feed": "WHO Alert",
    "cat": "who",
    "date": "2026-08-30T17:31:28+00:00",
-   "summary": "... World Health Organization , more than 5,000 of whom have had one or more limbs amputated. At least 20 per cent are children. Gaza now has the ..."
+   "summary": "... World Health Organization , more than 5,000 of whom have had one or more limbs amputated. At least 20 per cent are children. Gaza now has the ...",
+   "score": 6
   },
   {
    "title": "STAT+: Alnylam defends heart disease drugs after failure of AstraZeneca’s Wainua",
@@ -411,7 +673,8 @@
    "feed": "STAT News",
    "cat": "news",
    "date": "2026-08-30T17:29:05+00:00",
-   "summary": "An AstraZeneca heart disease trial failure has put Alnylam under pressure. It's mounting a defense of its medicines."
+   "summary": "An AstraZeneca heart disease trial failure has put Alnylam under pressure. It's mounting a defense of its medicines.",
+   "score": 1
   },
   {
    "title": "Webinar Beyond Silos: Forming Interprofessional Health Teams - YouTube",
@@ -420,7 +683,8 @@
    "feed": "WHO Alert",
    "cat": "who",
    "date": "2026-08-30T17:14:17+00:00",
-   "summary": "This webinar brought together PAHO and regional experts to examine strategic options aimed at advancing the institutionalization of ..."
+   "summary": "This webinar brought together PAHO and regional experts to examine strategic options aimed at advancing the institutionalization of ...",
+   "score": 3
   },
   {
    "title": "Yemen's newly launched National Health Strategy 2026–2030 aims to build a resilient ...",
@@ -429,7 +693,8 @@
    "feed": "WHO Alert",
    "cat": "who",
    "date": "2026-08-30T16:37:02+00:00",
-   "summary": "Founded in 1948, the World Health Organization (WHO) is the United Nations agency dedicated to promoting health, keeping the world safe and serving ..."
+   "summary": "Founded in 1948, the World Health Organization (WHO) is the United Nations agency dedicated to promoting health, keeping the world safe and serving ...",
+   "score": 6
   },
   {
    "title": "WHO Calls for Higher Taxes on Alcohol and Sugary Drinks. | Nutrition and Dietetics",
@@ -438,7 +703,8 @@
    "feed": "WHO Alert",
    "cat": "who",
    "date": "2026-08-30T16:35:56+00:00",
-   "summary": "The World Health Organization (WHO) has called on countries to increase taxes on alcohol and sugary drinks in order to address the negative impact ..."
+   "summary": "The World Health Organization (WHO) has called on countries to increase taxes on alcohol and sugary drinks in order to address the negative impact ...",
+   "score": 12
   },
   {
    "title": "[Comment] Acute heart failure in Africa: new causes, unchanged outcomes",
@@ -447,7 +713,8 @@
    "feed": "The Lancet",
    "cat": "journal",
    "date": "2026-08-30T16:15:01+00:00",
-   "summary": "More than 15 years ago, the original Sub-Saharan Africa Survey of Heart Failure (THESUS-HF) provided one of the first prospective, multinational descriptions of acute heart failure in sub-Saharan Africa.1 THESUS-HF found that patients with acute heart failure in sub-Saharan Africa were young, with n"
+   "summary": "More than 15 years ago, the original Sub-Saharan Africa Survey of Heart Failure (THESUS-HF) provided one of the first prospective, multinational descriptions of acute heart failure in sub-Saharan Africa.1 THESUS-HF found that patients with acute heart failure in sub-Saharan Africa were young, with n",
+   "score": 1
   },
   {
    "title": "[Articles] Aetiology, management, and outcomes of acute heart failure in 17 African countries (THESUS-HF II): a prospective, multicentre, observational cohort study",
@@ -456,7 +723,8 @@
    "feed": "The Lancet",
    "cat": "journal",
    "date": "2026-08-30T16:15:00+00:00",
-   "summary": "Compared with THESUS-HF, THESUS-HF II suggests an evolving aetiological profile of acute heart failure in Africa, although differences in ascertainment and diagnostic capability might have contributed to the apparent aetiological shift. High mortality in this relatively young cohort highlights the i"
+   "summary": "Compared with THESUS-HF, THESUS-HF II suggests an evolving aetiological profile of acute heart failure in Africa, although differences in ascertainment and diagnostic capability might have contributed to the apparent aetiological shift. High mortality in this relatively young cohort highlights the i",
+   "score": 1
   },
   {
    "title": "New poll: Inside the 2026 wildfire season and how Utahns feel about it - KSL News",
@@ -465,7 +733,8 @@
    "feed": "WHO Alert",
    "cat": "who",
    "date": "2026-08-30T16:12:43+00:00",
-   "summary": "Wildfire smoke has settled over Salt Lake City on Aug. 5. The PM2.5 concentration is currently 5.3 times the World Health Organization annual PM2.5 ..."
+   "summary": "Wildfire smoke has settled over Salt Lake City on Aug. 5. The PM2.5 concentration is currently 5.3 times the World Health Organization annual PM2.5 ...",
+   "score": 6
   },
   {
    "title": "[Editorial] Reimagining maternal cardiovascular health",
@@ -474,7 +743,8 @@
    "feed": "The Lancet",
    "cat": "journal",
    "date": "2026-08-30T14:45:01+00:00",
-   "summary": "Pregnancy places substantial demands on the cardiovascular system, with physiological changes that can exacerbate pre-existing cardiovascular disease or expose cardiovascular vulnerability for the first time. This heightened risk causes a substantial burden of maternal morbidity and mortality. New o"
+   "summary": "Pregnancy places substantial demands on the cardiovascular system, with physiological changes that can exacerbate pre-existing cardiovascular disease or expose cardiovascular vulnerability for the first time. This heightened risk causes a substantial burden of maternal morbidity and mortality. New o",
+   "score": 1
   },
   {
    "title": "[Series] Adverse pregnancy outcomes and long-term cardiovascular disease risk",
@@ -483,7 +753,8 @@
    "feed": "The Lancet",
    "cat": "journal",
    "date": "2026-08-30T14:45:01+00:00",
-   "summary": "Pregnancy provides a unique physiological stress test for the cardiovascular system, during which, adverse pregnancy outcomes (APOs) can unmask latent susceptibility to future disease. Common complications, including hypertensive disorders of pregnancy (HDP), gestational diabetes, and preterm birth "
+   "summary": "Pregnancy provides a unique physiological stress test for the cardiovascular system, during which, adverse pregnancy outcomes (APOs) can unmask latent susceptibility to future disease. Common complications, including hypertensive disorders of pregnancy (HDP), gestational diabetes, and preterm birth ",
+   "score": 1
   },
   {
    "title": "[Comment] Rethinking success after atrial fibrillation ablation: when sham is more than a placebo",
@@ -492,7 +763,8 @@
    "feed": "The Lancet",
    "cat": "journal",
    "date": "2026-08-30T14:30:02+00:00",
-   "summary": "Catheter ablation has revolutionised the management of atrial fibrillation. Over the past two decades, randomised trials have established pulmonary vein isolation (PVI) as the most effective treatment for reducing atrial fibrillation recurrence and improving quality of life,1,2 leading to its recomm"
+   "summary": "Catheter ablation has revolutionised the management of atrial fibrillation. Over the past two decades, randomised trials have established pulmonary vein isolation (PVI) as the most effective treatment for reducing atrial fibrillation recurrence and improving quality of life,1,2 leading to its recomm",
+   "score": 1
   },
   {
    "title": "[Articles] Catheter ablation for symptomatic atrial fibrillation (PVI-SHAM-AF): a randomised, double-blind, sham-controlled, multicentre trial",
@@ -501,7 +773,8 @@
    "feed": "The Lancet",
    "cat": "journal",
    "date": "2026-08-30T14:30:02+00:00",
-   "summary": "Catheter ablation did not demonstrate superiority over a sham procedure for improving atrial fibrillation-related quality of life at 6 months."
+   "summary": "Catheter ablation did not demonstrate superiority over a sham procedure for improving atrial fibrillation-related quality of life at 6 months.",
+   "score": 1
   },
   {
    "title": "[Series] Cardiovascular disease in pregnancy: physiology, global burden, risk stratification, and opportunities in care",
@@ -510,7 +783,8 @@
    "feed": "The Lancet",
    "cat": "journal",
    "date": "2026-08-30T14:15:01+00:00",
-   "summary": "Cardiovascular disease remains one of the leading causes of maternal mortality worldwide and a major driver of long-term morbidity. Yet, pregnancy-related cardiovascular complications are often under-recognised and variably managed across global settings. This three-part Series examines the continuu"
+   "summary": "Cardiovascular disease remains one of the leading causes of maternal mortality worldwide and a major driver of long-term morbidity. Yet, pregnancy-related cardiovascular complications are often under-recognised and variably managed across global settings. This three-part Series examines the continuu",
+   "score": 1
   },
   {
    "title": "[Comment] Stopping β-blockers long after myocardial infarction",
@@ -519,7 +793,8 @@
    "feed": "The Lancet",
    "cat": "journal",
    "date": "2026-08-30T07:30:02+00:00",
-   "summary": "Few areas of cardiovascular pharmacotherapy have changed as much as β-blocker use after myocardial infarction. For decades, β-blockers were prescribed routinely and often indefinitely after myocardial infarction, a practice based on trials from the early 1980s showing reductions in mortality and rec"
+   "summary": "Few areas of cardiovascular pharmacotherapy have changed as much as β-blocker use after myocardial infarction. For decades, β-blockers were prescribed routinely and often indefinitely after myocardial infarction, a practice based on trials from the early 1980s showing reductions in mortality and rec",
+   "score": 3
   },
   {
    "title": "[Articles] Discontinuation of β-blockers in stable patients with previous myocardial infarction, preserved left ventricular ejection fraction, and no heart failure: a pooled analys",
@@ -528,7 +803,8 @@
    "feed": "The Lancet",
    "cat": "journal",
    "date": "2026-08-30T07:30:02+00:00",
-   "summary": "In stable patients with previous myocardial infarction, left ventricular ejection fraction ≥40%, no heart failure, and no other indication for β-blocker therapy, discontinuation met the non-inferiority criteria for the primary and key secondary endpoints. Interpretation of the primary endpoint is li"
+   "summary": "In stable patients with previous myocardial infarction, left ventricular ejection fraction ≥40%, no heart failure, and no other indication for β-blocker therapy, discontinuation met the non-inferiority criteria for the primary and key secondary endpoints. Interpretation of the primary endpoint is li",
+   "score": 3
   },
   {
    "title": "[Articles] Safety and efficacy of the 0/1 h pathway for myocardial infarction in the emergency department: an international, pragmatic, stepped-wedge, cluster-randomised, controlle",
@@ -537,7 +813,8 @@
    "feed": "The Lancet",
    "cat": "journal",
    "date": "2026-08-29T14:15:00+00:00",
-   "summary": "Implementation of the 0/1 h pathway met the prespecified non-inferiority criterion for the 30-day composite safety outcome but did not shorten emergency department length of stay compared with the 0/3 h pathway. In this setting, implementation of the 0/1 h pathway alone should therefore not be expec"
+   "summary": "Implementation of the 0/1 h pathway met the prespecified non-inferiority criterion for the 30-day composite safety outcome but did not shorten emergency department length of stay compared with the 0/3 h pathway. In this setting, implementation of the 0/1 h pathway alone should therefore not be expec",
+   "score": 1
   },
   {
    "title": "STAT+: A Novartis drug cut inflammation. Can it improve heart outcomes?",
@@ -546,7 +823,8 @@
    "feed": "STAT News",
    "cat": "news",
    "date": "2026-08-29T07:32:11+00:00",
-   "summary": "A newly acquired Novartis drug cut signs of inflammation. The test will be whether that can improve people's heart health."
+   "summary": "A newly acquired Novartis drug cut signs of inflammation. The test will be whether that can improve people's heart health.",
+   "score": 1
   },
   {
    "title": "Juul gets OK to sell updated vaping device with age-gating technology",
@@ -555,7 +833,8 @@
    "feed": "STAT News",
    "cat": "news",
    "date": "2026-08-28T19:51:56+00:00",
-   "summary": "Juul has received FDA clearance to sell an updated version of its e-cigarette, which includes an optional age-verification system designed to prevent underage use."
+   "summary": "Juul has received FDA clearance to sell an updated version of its e-cigarette, which includes an optional age-verification system designed to prevent underage use.",
+   "score": 1
   },
   {
    "title": "Opinion: The unintended consequences of the Lindsay Clancy case",
@@ -564,7 +843,8 @@
    "feed": "STAT News",
    "cat": "news",
    "date": "2026-08-28T17:59:54+00:00",
-   "summary": "“We are concerned the [Lindsay] Clancy case could make psychiatrists more reluctant to treat mothers with mental illness,” write reproductive and forensic psychiatrists."
+   "summary": "“We are concerned the [Lindsay] Clancy case could make psychiatrists more reluctant to treat mothers with mental illness,” write reproductive and forensic psychiatrists.",
+   "score": 1
   },
   {
    "title": "STAT+: Up and down the ladder: The latest comings and goings",
@@ -573,7 +853,38 @@
    "feed": "STAT News",
    "cat": "news",
    "date": "2026-08-28T14:34:39+00:00",
-   "summary": "From new hires to departures, promotions and transfers, here are the latest comings and goings in the pharmaceutical industry."
+   "summary": "From new hires to departures, promotions and transfers, here are the latest comings and goings in the pharmaceutical industry.",
+   "score": 1
+  },
+  {
+   "title": "“One less thing to worry about”: Barriers and facilitators of PrEP uptake among MSM in Karachi, Pakistan: A qualitative study",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007151",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-08-28T14:00:00+00:00",
+   "summary": "by Batool Fatima, Sarmad Soomar, Preet Katyara, Shariqa Batool, Syed Faisal Mahmood In Pakistan, MSM represent one of the key populations at risk of HIV, with rising rates of HIV compared to the general population and other key populations. Pre-exposure prophylaxis (PrEP) was rolled out in Pakistan ",
+   "score": 5
+  },
+  {
+   "title": "Mapping the research, policy, and clinical management landscape of post-tuberculosis lung disease: A scoping review",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007150",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-08-28T14:00:00+00:00",
+   "summary": "by Yochanan Hoppenstein, Olena Ivanova, Salome Charalambous Tuberculosis (TB) can result in debilitating long-term health consequences, most notably post-tuberculosis lung disease (PTLD). However, these conditions remain insufficiently integrated into global policy and routine care, contributing to ",
+   "score": 7
+  },
+  {
+   "title": "Centers and peripheries: Spatial analysis of social inequalities in health in Antioquia, 2017–2023",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0006857",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-08-28T14:00:00+00:00",
+   "summary": "by Gino Montenegro-Martínez This study aims to analyze the performance and geographical distribution of health indicators in relation to social indicators in the municipalities of Antioquia. An ecological cross-sectional study was conducted using data on health outcomes, social indicators, and insti",
+   "score": 3
   },
   {
    "title": "STAT+: AstraZeneca and Ionis detail surprise failure of heart disease drug, with Alnylam closely watching",
@@ -582,7 +893,8 @@
    "feed": "STAT News",
    "cat": "news",
    "date": "2026-08-28T13:39:04+00:00",
-   "summary": "Roivant's autoimmune drug approval, Cytokinetics reports full data for heart condition treatment, and more biotech news"
+   "summary": "Roivant's autoimmune drug approval, Cytokinetics reports full data for heart condition treatment, and more biotech news",
+   "score": 1
   },
   {
    "title": "At a federal autism advisory committee meeting, members double down on long-debunked theories",
@@ -591,7 +903,8 @@
    "feed": "STAT News",
    "cat": "news",
    "date": "2026-08-28T13:15:46+00:00",
-   "summary": "RFK Jr.'s vaccine questions in Samoa, former Stanford president rebuts fraud allegations, and more health news from Morning Rounds"
+   "summary": "RFK Jr.'s vaccine questions in Samoa, former Stanford president rebuts fraud allegations, and more health news from Morning Rounds",
+   "score": 3
   },
   {
    "title": "STAT+: Pharmalittle: We’re reading about an AstraZeneca trial failure, a ‘monstrous’ conflict of interest, and more",
@@ -600,7 +913,8 @@
    "feed": "STAT News",
    "cat": "news",
    "date": "2026-08-28T13:04:02+00:00",
-   "summary": "Pharma news from the Pharmalot campus, brought to you by the Pharmalittle newsletter"
+   "summary": "Pharma news from the Pharmalot campus, brought to you by the Pharmalittle newsletter",
+   "score": 1
   },
   {
    "title": "India’s Flagship Air Pollution Programme Is Failing",
@@ -609,7 +923,8 @@
    "feed": "Health Policy Watch",
    "cat": "policy",
    "date": "2026-08-28T13:00:23+00:00",
-   "summary": "BENGALURU – India’s flagship air pollution action plan, the National Clean Air Programme (NCAP), has mostly failed to deliver, according to research presented at the eighth India Clean Air Summit. Officials, scientists, and other experts highlighted the 2019 program’s severe shortcomings and red-fla"
+   "summary": "BENGALURU – India’s flagship air pollution action plan, the National Clean Air Programme (NCAP), has mostly failed to deliver, according to research presented at the eighth India Clean Air Summit. Officials, scientists, and other experts highlighted the 2019 program’s severe shortcomings and red-fla",
+   "score": 8
   },
   {
    "title": "STAT+: Cytokinetics details trial win for what could be its next approval",
@@ -618,7 +933,8 @@
    "feed": "STAT News",
    "cat": "news",
    "date": "2026-08-28T10:15:29+00:00",
-   "summary": "It took Cytokinetics 27 years to win its first drug approval. With the results of a new trial, its second could come much faster."
+   "summary": "It took Cytokinetics 27 years to win its first drug approval. With the results of a new trial, its second could come much faster.",
+   "score": 1
   },
   {
    "title": "STAT+: In autopsy of failed heart disease study, AstraZeneca raises broader questions about silencer drugs",
@@ -627,7 +943,8 @@
    "feed": "STAT News",
    "cat": "news",
    "date": "2026-08-28T09:23:13+00:00",
-   "summary": "AstraZeneca detailed the surprise failure of a closely watched heart disease trial, a study with ripple effects for a competitive billion-dollar market."
+   "summary": "AstraZeneca detailed the surprise failure of a closely watched heart disease trial, a study with ripple effects for a competitive billion-dollar market.",
+   "score": 1
   },
   {
    "title": "Vaccines take center stage at federal autism advisory committee",
@@ -636,7 +953,8 @@
    "feed": "STAT News",
    "cat": "news",
    "date": "2026-08-28T08:30:00+00:00",
-   "summary": "Comments about vaccines overshadowed an advisory committee meeting to discuss a plan for boosting federal funding for autism research."
+   "summary": "Comments about vaccines overshadowed an advisory committee meeting to discuss a plan for boosting federal funding for autism research.",
+   "score": 5
   },
   {
    "title": "[Corrections] Correction to Lancet Glob Health 2026; 14: e702-13",
@@ -645,7 +963,18 @@
    "feed": "Lancet Global Health",
    "cat": "journal",
    "date": "2026-08-28T05:42:03+00:00",
-   "summary": "Gage A, Conrad M, Knight M, et al. Measuring antenatal care timing and content across 131 low-income and middle-income countries, 1995–2023: a systematic analysis of trends. Lancet 2026; 14: e702–13—In figure 2 of this Article, the ranges provided in the keys for panels A and B were incorrect and ha"
+   "summary": "Gage A, Conrad M, Knight M, et al. Measuring antenatal care timing and content across 131 low-income and middle-income countries, 1995–2023: a systematic analysis of trends. Lancet 2026; 14: e702–13—In figure 2 of this Article, the ranges provided in the keys for panels A and B were incorrect and ha",
+   "score": 4
+  },
+  {
+   "title": "Pomegranate phytobiotics offer natural alternative to synthetic veterinary drugs",
+   "url": "https://www.news-medical.net/news/20260827/Pomegranate-phytobiotics-offer-natural-alternative-to-synthetic-veterinary-drugs.aspx",
+   "src": "AMR Industry / news",
+   "feed": "AMR Industry / news",
+   "cat": "amr",
+   "date": "2026-08-27T18:47:15+00:00",
+   "summary": "Researchers have identified a broad range of biological properties in pomegranate with potential for use in medical applications, including antimicrobial, antiparasitic, antioxidant, immunomodulatory, antidiabetic, anti-inflammatory, liver-supporting, and wound-healing effects.",
+   "score": 2
   },
   {
    "title": "Historic Meta Settlement Mandates Safer Social Media for Youth",
@@ -654,7 +983,8 @@
    "feed": "Health Policy Watch",
    "cat": "policy",
    "date": "2026-08-27T18:00:23+00:00",
-   "summary": "Following a landmark agreement in the United States on Wednesday, social media giant Meta agreed to pay up to $18 billion to US states. This historic settlement obliges the company to make Instagram and Facebook safer for children. Scientific research – including a landmark report by an expert panel"
+   "summary": "Following a landmark agreement in the United States on Wednesday, social media giant Meta agreed to pay up to $18 billion to US states. This historic settlement obliges the company to make Instagram and Facebook safer for children. Scientific research – including a landmark report by an expert panel",
+   "score": 4
   },
   {
    "title": "[Articles] Prevalence, characteristics, and clinical course of mpox-related ophthalmic disease (MBOTE-EYE): a prospective cohort study in South Kivu, Democratic Republic of the Con",
@@ -663,7 +993,8 @@
    "feed": "Lancet Global Health",
    "cat": "journal",
    "date": "2026-08-27T16:41:55+00:00",
-   "summary": "Ophthalmic involvement in clade Ib mpox is common and frequently bilateral, with a substantial burden of keratitis and risk of vision loss. Systematic eye examinations should be integrated into mpox care, and targeted ophthalmic therapies should be developed."
+   "summary": "Ophthalmic involvement in clade Ib mpox is common and frequently bilateral, with a substantial burden of keratitis and risk of vision loss. Systematic eye examinations should be integrated into mpox care, and targeted ophthalmic therapies should be developed.",
+   "score": 10
   },
   {
    "title": "The Next Global Health Architecture Must Deliver More Than Reform",
@@ -672,7 +1003,8 @@
    "feed": "Health Policy Watch",
    "cat": "policy",
    "date": "2026-08-27T16:32:20+00:00",
-   "summary": "After months of speculation, prospective candidates in the race to become the next Director-General of the World Health Organization (WHO) are now emerging. At the same time, member states have launched a process to review the global health architecture, with the aim of clarifying roles, strengtheni"
+   "summary": "After months of speculation, prospective candidates in the race to become the next Director-General of the World Health Organization (WHO) are now emerging. At the same time, member states have launched a process to review the global health architecture, with the aim of clarifying roles, strengtheni",
+   "score": 17
   },
   {
    "title": "Four DRC Health Zones Mark 42 Days With No New Ebola Infections",
@@ -681,7 +1013,68 @@
    "feed": "Health Policy Watch",
    "cat": "policy",
    "date": "2026-08-27T15:55:48+00:00",
-   "summary": "Four of the 58 health zones in the Democratic Republic of Congo (DRC) affected by the Ebola Bundibugyo outbreak have had no new cases in the past 42 days, while five others have been case-free for at least three weeks. “The message is that it is definitely possible in that environment to break the t"
+   "summary": "Four of the 58 health zones in the Democratic Republic of Congo (DRC) affected by the Ebola Bundibugyo outbreak have had no new cases in the past 42 days, while five others have been case-free for at least three weeks. “The message is that it is definitely possible in that environment to break the t",
+   "score": 11
+  },
+  {
+   "title": "Reciprocity in global health: How successes from the global south can inform global health interventions in Canada and the U.S",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007208",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-08-27T14:00:00+00:00",
+   "summary": "by Tsitsi B. Masvawure, Mary Ndu, Charity Oga-Omenka Global health has traditionally functioned as a project of high-income countries (HICs) addressing health challenges in low- and middle-income countries (LMICs). This “outward facing” orientation has created conceptual and operational boundaries t",
+   "score": 16
+  },
+  {
+   "title": "Delayed diagnosis as a barrier to Zero Leprosy: Lived experiences from Pakistan",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007184",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-08-27T14:00:00+00:00",
+   "summary": "by Anil Fastenau, Rhea Brüggemann, Abdul Salam, Charlotte Nehring, Maresa Neuerer, Hamideh Ebrahimi, Alexandra Asboeck, Matthew Willis, Sophie C. W. Unterkircher, Fabian Schlumberger, Heleen Neeltje Willemijn Duighuisen Despite progress in leprosy control, delayed diagnosis remains a barrier to achi",
+   "score": 3
+  },
+  {
+   "title": "Women’s knowledge, attitudes and practices related to mother-to-child transmission of HTLV-1 in Peru",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007103",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-08-27T14:00:00+00:00",
+   "summary": "by Juan Macalupu, Francesca Ginocchio, Alejandra Paiva, Paloma Cusihuallpa, Diana Rodríguez-Hurtado, Fernando Mejía-Cordero, Elsa González-Lagos, Eduardo Gotuzzo Human T-cell Lymphotropic Virus type 1 (HTLV-1) can be transmitted from mother to child through breastfeeding and increases the risk of mo",
+   "score": 3
+  },
+  {
+   "title": "Early childhood development under son preference in Vietnam: The role of child gender and birth order",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0006983",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-08-27T14:00:00+00:00",
+   "summary": "by Truc Thi Thanh Nguyen, Wiraporn Pothisiri Vietnam has experienced more than two decades of elevated prenatal sex selection due to persistent son preference, yet little is known about whether gender disparities emerge among surviving children in early childhood. This study examines gender differen",
+   "score": 3
+  },
+  {
+   "title": "Operational epidemiology of the early phase of the 2026 Bundibugyo virus disease outbreak in the Democratic Republic of the Congo and Uganda",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0006680",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-08-27T14:00:00+00:00",
+   "summary": "by Tambe Elvis Akem, Eta Calvin Oben The 2026 Bundibugyo virus disease outbreak in the Democratic Republic of the Congo (DRC) and Uganda occurred in a fragile cross-border setting marked by delayed recognition, diagnostic uncertainty, insecurity, population mobility, community mistrust, and healthca",
+   "score": 9
+  },
+  {
+   "title": "Mental health status and its associated factors among women with fertility issues visiting fertility center in Kathmandu Valley: A cross-sectional study",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0005487",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-08-27T14:00:00+00:00",
+   "summary": "by Pragya Kunwar, Amrita Ghimire, Aakriti Bharati, Amrit Bist, Laxmi Gautam Infertility poses a multidimensional burden, especially for women in low- and middle-income countries, where it is often associated with social stigma, emotional distress, and limited support. This study aimed to assess the ",
+   "score": 6
   },
   {
    "title": "New TB vaccines are moving closer. Is Africa ready?",
@@ -690,7 +1083,8 @@
    "feed": "Health Policy Watch",
    "cat": "policy",
    "date": "2026-08-27T10:34:04+00:00",
-   "summary": "African scientists, institutions and communities are helping advance the development of new TB vaccines. Governments must now work together to prepare national systems, secure fair pricing and ensure scientific progress leads to timely and equitable access. When I visited the University of Cape Town"
+   "summary": "African scientists, institutions and communities are helping advance the development of new TB vaccines. Governments must now work together to prepare national systems, secure fair pricing and ensure scientific progress leads to timely and equitable access. When I visited the University of Cape Town",
+   "score": 8
   },
   {
    "title": "[Corrections] Correction to Health in times of uncertainty in the eastern Mediterranean region, 1990-2013: a systematic analysis for the Global Burden of Disease Study 2013. Lancet",
@@ -699,7 +1093,8 @@
    "feed": "Lancet Global Health",
    "cat": "journal",
    "date": "2026-08-27T09:41:56+00:00",
-   "summary": "Mokdad AH, Forouzanfar MH, Daoud F, et al. Health in times of uncertainty in the eastern Mediterranean region, 1990-2013: a systematic analysis for the Global Burden of Disease Study 2013. Lancet Glob Health 2016; 4: e704-13—On page e701, the description of the younger age group should have been “28"
+   "summary": "Mokdad AH, Forouzanfar MH, Daoud F, et al. Health in times of uncertainty in the eastern Mediterranean region, 1990-2013: a systematic analysis for the Global Burden of Disease Study 2013. Lancet Glob Health 2016; 4: e704-13—On page e701, the description of the younger age group should have been “28",
+   "score": 4
   },
   {
    "title": "[Corrections] Correction to The burden of neurological conditions in north Africa and the Middle East, 1990–2019: a systematic analysis of the Global Burden of Disease Study 2019. ",
@@ -708,7 +1103,8 @@
    "feed": "Lancet Global Health",
    "cat": "journal",
    "date": "2026-08-26T22:30:01+00:00",
-   "summary": "GBD 2019 North Africa and the Middle East Neurology Collaborators. The burden of neurological conditions in north Africa and the Middle East, 1990–2019: a systematic analysis of the Global Burden of Disease Study 2019. Lancet Glob Health 2024; 12: e960–82—In the first paragraph of the Results on pag"
+   "summary": "GBD 2019 North Africa and the Middle East Neurology Collaborators. The burden of neurological conditions in north Africa and the Middle East, 1990–2019: a systematic analysis of the Global Burden of Disease Study 2019. Lancet Glob Health 2024; 12: e960–82—In the first paragraph of the Results on pag",
+   "score": 4
   },
   {
    "title": "Germany Plans More Cuts to Global Health Funding, But Policymakers Push Back on 2027 Draft Budget",
@@ -717,7 +1113,38 @@
    "feed": "Health Policy Watch",
    "cat": "policy",
    "date": "2026-08-26T16:44:32+00:00",
-   "summary": "Under Germany’s tightly constrained draft budget proposal for 2027, the government is set to reduce global health funding substantially. While mandatory assessed contributions to the World Health Organization (WHO) will rise slightly, flexible budgets for pandemic preparedness are planned to be cut "
+   "summary": "Under Germany’s tightly constrained draft budget proposal for 2027, the government is set to reduce global health funding substantially. While mandatory assessed contributions to the World Health Organization (WHO) will rise slightly, flexible budgets for pandemic preparedness are planned to be cut ",
+   "score": 20
+  },
+  {
+   "title": "Expression of Concern: Knowledge, attitudes, and practices of Female Genital Mutilation / Cutting among healthcare providers in two public hospitals in Egypt: A cross-sectional stu",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007200",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-08-26T14:00:00+00:00",
+   "summary": "by The PLOS Global Public Health Editors",
+   "score": 3
+  },
+  {
+   "title": "Effects of community health worker–led interventions on cardiometabolic outcomes in vulnerable populations: A systematic review and meta-analysis",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007191",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-08-26T14:00:00+00:00",
+   "summary": "by Ismaila Ajayi Yusuf, Ihesiulo Alozie, Micah Nnabuko Okwah, Vikash Kumar, Zubeda Idris-Saeed, Hakeem Popoola, Emmanuel Babawale, Daniel Adepoju, Ayotunde Famokunwa, Omolaso Oluwabamise Cardiometabolic diseases (CMDs) disproportionately affect vulnerable populations worldwide. Community health work",
+   "score": 3
+  },
+  {
+   "title": "The Caribbean under the radar? A scoping review of carbapenemase-producing Enterobacterales across the region",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007176",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-08-26T14:00:00+00:00",
+   "summary": "by Saied Ali, Ansara Baig, Rajeev Peeyush Nagassar, Liam P. Burke, Fidelma Fitzpatrick, Deirdre Fitzgerald-Hughes Carbapenemase-producing Enterobacterales (CPE) are a critical antimicrobial resistance (AMR) threat globally. The Caribbean region, despite its high global connectivity, varied healthcar",
+   "score": 6
   },
   {
    "title": "[Comment] Operational bottlenecks in the response to Bundibugyo virus disease outbreak in the Democratic Republic of the Congo: a call to action",
@@ -726,7 +1153,8 @@
    "feed": "Lancet Global Health",
    "cat": "journal",
    "date": "2026-08-26T03:41:56+00:00",
-   "summary": "The ongoing Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo has highlighted the remarkable scientific and public health advances in Ebola outbreak preparedness and response since the west Africa Ebola epidemic in 2014–16. Rapid deployment of experimental vaccines, the"
+   "summary": "The ongoing Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo has highlighted the remarkable scientific and public health advances in Ebola outbreak preparedness and response since the west Africa Ebola epidemic in 2014–16. Rapid deployment of experimental vaccines, the",
+   "score": 16
   },
   {
    "title": "Most Gaza Palestinians Living in Dangerous, Unsanitary and Unhealthy Shelters",
@@ -735,7 +1163,8 @@
    "feed": "Health Policy Watch",
    "cat": "policy",
    "date": "2026-08-25T20:56:01+00:00",
-   "summary": "Nearly a year after Israel and Hamas agreed to a US-brokered cease-fire, some 94% of Gaza’s 2.1 million Palestinian residents lack adequate shelters with 84% facing severe constraints in heating, cooling, cooking, lighting and hygiene and nearly 60% facing “critical” or “catastrophic” shelter needs."
+   "summary": "Nearly a year after Israel and Hamas agreed to a US-brokered cease-fire, some 94% of Gaza’s 2.1 million Palestinian residents lack adequate shelters with 84% facing severe constraints in heating, cooling, cooking, lighting and hygiene and nearly 60% facing “critical” or “catastrophic” shelter needs.",
+   "score": 4
   },
   {
    "title": "Ebola at 100 Days: Lessons, Challenges and Achievements",
@@ -744,7 +1173,8 @@
    "feed": "Health Policy Watch",
    "cat": "policy",
    "date": "2026-08-25T15:27:36+00:00",
-   "summary": "The Democratic Republic of Congo (DRC)’s Ebola outbreak passed the 100-day mark on Monday with over 5,515 confirmed cases and 2,642 deaths – and health experts warn that the response needs to be accelerated to bring the world’s fastest Ebola outbreak under control. While the case fatality rate is al"
+   "summary": "The Democratic Republic of Congo (DRC)’s Ebola outbreak passed the 100-day mark on Monday with over 5,515 confirmed cases and 2,642 deaths – and health experts warn that the response needs to be accelerated to bring the world’s fastest Ebola outbreak under control. While the case fatality rate is al",
+   "score": 11
   },
   {
    "title": "As Taliban Rule Enters Sixth Year, Healthcare for Afghan Women Is Being Dismantled",
@@ -753,7 +1183,8 @@
    "feed": "Health Policy Watch",
    "cat": "policy",
    "date": "2026-08-24T16:55:18+00:00",
-   "summary": "Five years after the Taliban returned to power, Afghanistan’s health system is being squeezed from two directions: shrinking healthcare services and restrictions that are making it increasingly difficult for women to reach them. The consequences are particularly acute for Afghan women. Taliban-impos"
+   "summary": "Five years after the Taliban returned to power, Afghanistan’s health system is being squeezed from two directions: shrinking healthcare services and restrictions that are making it increasingly difficult for women to reach them. The consequences are particularly acute for Afghan women. Taliban-impos",
+   "score": 4
   },
   {
    "title": "[Correspondence] How to find panellists for a global health conference",
@@ -762,7 +1193,8 @@
    "feed": "Lancet Global Health",
    "cat": "journal",
    "date": "2026-08-24T08:41:37+00:00",
-   "summary": "In their Comment, Afifah Rahman-Shepherd and colleagues (May 2, 2026)1 describe the exclusion and tokenism that has existed on global health panels most of us have sat through (or more uncomfortably, helped stage). We want to share how the community health field has made avoiding such issues easier "
+   "summary": "In their Comment, Afifah Rahman-Shepherd and colleagues (May 2, 2026)1 describe the exclusion and tokenism that has existed on global health panels most of us have sat through (or more uncomfortably, helped stage). We want to share how the community health field has made avoiding such issues easier ",
+   "score": 14
   },
   {
    "title": "[Correspondence] Structural silencing and the elephant in the room in global health",
@@ -771,7 +1203,8 @@
    "feed": "Lancet Global Health",
    "cat": "journal",
    "date": "2026-08-24T08:41:37+00:00",
-   "summary": "The recent Comment by Afifah Rahman-Shepherd and colleagues (May 2, 2026)1 incisively unmasks performative inclusivity at global health conferences. However, this tokenism on conference panels reflects a more profound, institutionalised contradiction: the substantive geopolitical exclusion and struc"
+   "summary": "The recent Comment by Afifah Rahman-Shepherd and colleagues (May 2, 2026)1 incisively unmasks performative inclusivity at global health conferences. However, this tokenism on conference panels reflects a more profound, institutionalised contradiction: the substantive geopolitical exclusion and struc",
+   "score": 14
   },
   {
    "title": "[Correspondence] Global health and its crises: laugh, but then what?",
@@ -780,7 +1213,8 @@
    "feed": "Lancet Global Health",
    "cat": "journal",
    "date": "2026-08-24T08:41:37+00:00",
-   "summary": "In their recent Comment (May 2, 2026),1 Afifah Rahman-Shepherd and colleagues invite us to imagine a hypothetical scenario in a global health conference. The situation, plagued by commonplaces—the organisation of the panel attempts to follow representation quotas—ends in some kind of isomorphic mimi"
+   "summary": "In their recent Comment (May 2, 2026),1 Afifah Rahman-Shepherd and colleagues invite us to imagine a hypothetical scenario in a global health conference. The situation, plagued by commonplaces—the organisation of the panel attempts to follow representation quotas—ends in some kind of isomorphic mimi",
+   "score": 14
   },
   {
    "title": "[Correspondence] Beyond geography: conflict, displacement, and structural vulnerability in noma distribution in Nigeria",
@@ -789,7 +1223,8 @@
    "feed": "Lancet Global Health",
    "cat": "journal",
    "date": "2026-08-20T09:41:52+00:00",
-   "summary": "We thank Oyelola A Adegboye and colleagues for their thoughtful comments on our spatial modelling study of noma incidence in northern Nigeria.1 In their Correspondence, the authors argued that our modelling approach did not adequately account for structural determinants such as displacement, food in"
+   "summary": "We thank Oyelola A Adegboye and colleagues for their thoughtful comments on our spatial modelling study of noma incidence in northern Nigeria.1 In their Correspondence, the authors argued that our modelling approach did not adequately account for structural determinants such as displacement, food in",
+   "score": 4
   },
   {
    "title": "[Correspondence] Beyond geography: conflict, displacement, and structural vulnerability in noma distribution in Nigeria",
@@ -798,7 +1233,8 @@
    "feed": "Lancet Global Health",
    "cat": "journal",
    "date": "2026-08-20T09:41:52+00:00",
-   "summary": "The Article by Ramat Oyebunmi Braimah and colleagues1 published in The Lancet Global Health presents the first high-resolution spatial modelling analysis of noma incidence in Nigeria, revealing significant geographical variation and pockets of increased incidence risk in northwest Nigeria. The autho"
+   "summary": "The Article by Ramat Oyebunmi Braimah and colleagues1 published in The Lancet Global Health presents the first high-resolution spatial modelling analysis of noma incidence in Nigeria, revealing significant geographical variation and pockets of increased incidence risk in northwest Nigeria. The autho",
+   "score": 9
   },
   {
    "title": "[Correspondence] Energy chokepoints and diagnostic resilience in global health",
@@ -807,7 +1243,8 @@
    "feed": "Lancet Global Health",
    "cat": "journal",
    "date": "2026-08-19T16:41:49+00:00",
-   "summary": "Geopolitical tensions that expose the fragility of maritime energy corridors should concern global health not only because of fuel prices, but also because of diagnostic capacity. The Strait of Hormuz carries around a quarter of global seaborne oil trade and substantial liquefied natural gas flows.1"
+   "summary": "Geopolitical tensions that expose the fragility of maritime energy corridors should concern global health not only because of fuel prices, but also because of diagnostic capacity. The Strait of Hormuz carries around a quarter of global seaborne oil trade and substantial liquefied natural gas flows.1",
+   "score": 14
   },
   {
    "title": "[Viewpoint] Beyond land tenure and titling: legal recognition as a pivotal determinant of health in urban informal settlements",
@@ -816,7 +1253,38 @@
    "feed": "Lancet Global Health",
    "cat": "journal",
    "date": "2026-08-18T15:41:20+00:00",
-   "summary": "Over 1 billion people across low-income and middle-income countries live in urban informal settlements, where these residents face severe health disparities. In this Viewpoint, we argue that the absence of legal recognition in informal settlements is a foundational cause of the causes of ill health,"
+   "summary": "Over 1 billion people across low-income and middle-income countries live in urban informal settlements, where these residents face severe health disparities. In this Viewpoint, we argue that the absence of legal recognition in informal settlements is a foundational cause of the causes of ill health,",
+   "score": 4
+  },
+  {
+   "title": "Dual-action compounds show promise against aggressive cancer and infections",
+   "url": "https://www.news-medical.net/news/20260818/Dual-action-compounds-show-promise-against-aggressive-cancer-and-infections.aspx",
+   "src": "AMR Industry / news",
+   "feed": "AMR Industry / news",
+   "cat": "amr",
+   "date": "2026-08-18T14:43:00+00:00",
+   "summary": "Cancer patients often face more than the disease itself. Their treatment is frequently complicated by infections and other health conditions, meaning they may need to take several different medications at once.",
+   "score": 2
+  },
+  {
+   "title": "Natural gut molecule could strengthen chickens' immune response against bacterial infections",
+   "url": "https://www.news-medical.net/news/20260812/Natural-gut-molecule-ould-strengthen-chickens-immune-response-against-bacterial-infections.aspx",
+   "src": "AMR Industry / news",
+   "feed": "AMR Industry / news",
+   "cat": "amr",
+   "date": "2026-08-13T03:49:00+00:00",
+   "summary": "A naturally occurring gut molecule that could strengthen chickens' immune response against a wide range of bacterial infections, has been identified by University of Bristol-led research.",
+   "score": 2
+  },
+  {
+   "title": "Aston University study reveals how mānuka honey fights antibiotic resistance",
+   "url": "https://www.news-medical.net/news/20260811/Aston-University-study-reveals-how-manuka-honey-fights-antibiotic-resistance.aspx",
+   "src": "AMR Industry / news",
+   "feed": "AMR Industry / news",
+   "cat": "amr",
+   "date": "2026-08-11T18:11:12+00:00",
+   "summary": "New research at Aston University has shown that a variety of compounds is responsible for the antimicrobial action of mānuka honey, not just the sugar content and methylglyoxal (MGO) alone, as previously thought.",
+   "score": 2
   }
  ]
 }
