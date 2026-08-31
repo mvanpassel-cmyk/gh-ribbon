@@ -25,6 +25,7 @@
   --journal: #e53935;
   --policy:  #ff8f00;
   --news:    #26a69a;
+  --amr:     #ff5c8a;
 }
 
 html, body { height: 100%; }
@@ -126,6 +127,7 @@ body {
 .fbtn[data-c="journal"].on { border-color:var(--journal);color:var(--journal);background:rgba(229,57,53,.08); }
 .fbtn[data-c="policy"].on  { border-color:var(--policy); color:var(--policy); background:rgba(255,143,0,.08); }
 .fbtn[data-c="news"].on    { border-color:var(--news);   color:var(--news);   background:rgba(38,166,154,.08); }
+.fbtn[data-c="amr"].on     { border-color:var(--amr);    color:var(--amr);    background:rgba(255,92,138,.08); }
 .fbtn[data-c="who"]     .dot { background:var(--who); }
 .fbtn[data-c="promed"]  .dot { background:var(--promed); }
 .fbtn[data-c="emerg"]   .dot { background:var(--emerg); }
@@ -133,6 +135,7 @@ body {
 .fbtn[data-c="journal"] .dot { background:var(--journal); }
 .fbtn[data-c="policy"]  .dot { background:var(--policy); }
 .fbtn[data-c="news"]    .dot { background:var(--news); }
+.fbtn[data-c="amr"]     .dot { background:var(--amr); }
 .filter-sep { width: 1px; height: 18px; background: var(--border); margin: 0 4px; }
 
 .main { flex: 1; padding: 22px 26px 40px; }
@@ -158,6 +161,7 @@ body {
 .card[data-c="journal"]::after { background:var(--journal); }
 .card[data-c="policy"]::after  { background:var(--policy); }
 .card[data-c="news"]::after    { background:var(--news); }
+.card[data-c="amr"]::after     { background:var(--amr); }
 @keyframes fadeUp { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
 
 .card-hd { display:flex; align-items:center; justify-content:space-between; }
@@ -169,6 +173,7 @@ body {
 .card[data-c="journal"] .badge { background:rgba(229,57,53,.13);   color:var(--journal); }
 .card[data-c="policy"]  .badge { background:rgba(255,143,0,.13);   color:var(--policy); }
 .card[data-c="news"]    .badge { background:rgba(38,166,154,.13);  color:var(--news); }
+.card[data-c="amr"]     .badge { background:rgba(255,92,138,.13);  color:var(--amr); }
 .card-date  { font-size:10px; color:var(--muted); }
 .card-src   { font-size:11px; color:var(--muted); font-style:italic; }
 .card-title { font-family:'Syne',sans-serif; font-size:15px; font-weight:600; color:var(--bright); line-height:1.45; flex:1; }
@@ -202,6 +207,10 @@ footer {
     <span class="live-dot" id="dot"></span>
     <span class="status-txt" id="st">LIVE</span>
     <span class="clock" id="clk">—</span>
+    <a class="rbtn" id="csv" href="data/archive.csv" download="gh-ribbon-archief.csv"
+       style="text-decoration:none" title="Volledig archief als spreadsheet">⤓ CSV</a>
+    <button class="rbtn" id="tb" onclick="toggleAlles()">TOP 30</button>
+    <a class="rbtn" href="ticker.html" target="_blank" style="text-decoration:none">⬒ TICKER</a>
     <button class="rbtn" id="rb" onclick="loadAll()">↻ REFRESH</button>
   </div>
 </div>
@@ -223,6 +232,7 @@ footer {
   <button class="fbtn on" data-c="promed" onclick="tog('promed')"><span class="dot"></span>ProMED</button>
   <button class="fbtn on" data-c="emerg"  onclick="tog('emerg')"> <span class="dot"></span>Emergency</button>
   <button class="fbtn on" data-c="global" onclick="tog('global')"><span class="dot"></span>Global Health</button>
+  <button class="fbtn on" data-c="amr"    onclick="tog('amr')">   <span class="dot"></span>AMR</button>
   <div class="filter-sep"></div>
   <span class="flbl">RSS:</span>
   <button class="fbtn on" data-c="journal" onclick="tog('journal')"><span class="dot"></span>Journals</button>
@@ -252,7 +262,7 @@ const DATA = 'data/feeds.json';
 
 let allItems = [];
 let feedStatus = {};
-let active = new Set(['who','promed','emerg','global','journal','policy','news']);
+let active = new Set(['who','promed','emerg','global','amr','journal','policy','news']);
 
 setInterval(() => {
   document.getElementById('clk').textContent =
@@ -276,18 +286,56 @@ function relDate(s) {
   return d.toLocaleDateString('nl-NL',{day:'numeric',month:'short'});
 }
 
-// Rond-robin over categorieën, zodat één productieve bron de grid niet kaapt.
-function interleave(items) {
-  const g = {};
-  items.forEach(i => { (g[i.cat]=g[i.cat]||[]).push(i); });
-  const gs = Object.values(g), out = [], max = Math.max(0,...gs.map(a=>a.length));
-  for (let i=0;i<max;i++) gs.forEach(a=>{ if(a[i]) out.push(a[i]); });
-  return out;
+// Rangschikking. De harvester geeft elk item een relevantiescore mee;
+// hier trekken we daar de ouderdom vanaf, zodat een sterk maar stoffig
+// item niet eeuwig bovenaan blijft plakken.
+const MAX_CARDS  = 30;   // bovengrens -- minder mag, opvullen met ruis niet
+const PER_BRON   = 5;    // hard dak per bron
+const MIN_RANK   = 0;    // hieronder valt een item af (te oud of te irrelevant)
+const VERVAL     = 1.2;  // puntenaftrek per dag ouderdom
+
+let toonAlles = false;
+
+function rank(i) {
+  const score = typeof i.score === 'number' ? i.score : 1;
+  if (!i.date) return score;
+  const dagen = (Date.now() - new Date(i.date)) / 86400000;
+  return score - (isNaN(dagen) ? 0 : dagen * VERVAL);
+}
+
+// Beste eerst, beurtelings per bron, met een hard dak per bron.
+// MAX_CARDS is een bovengrens, geen streefgetal: als diversiteit en
+// relevantie maar 22 kaarten opleveren, tonen we er 22. Aanvullen met
+// het beste van de luidruchtigste feed maakt de ribbon juist slechter.
+function prioriteer(items) {
+  const gesorteerd = [...items].sort((a,b) => rank(b) - rank(a));
+  if (toonAlles) return gesorteerd;
+
+  // Te oud of te irrelevant valt af -- tenzij er dan te weinig overblijft.
+  let kandidaten = gesorteerd.filter(i => rank(i) >= MIN_RANK);
+  if (kandidaten.length < 8) kandidaten = gesorteerd;
+
+  const perBron = new Map();
+  for (const i of kandidaten) {
+    const k = i.feed || i.src || '?';
+    if (!perBron.has(k)) perBron.set(k, []);
+    perBron.get(k).push(i);
+  }
+  const groepen = [...perBron.values()].sort((a,b) => rank(b[0]) - rank(a[0]));
+
+  const uit = [];
+  for (let ronde = 0; ronde < PER_BRON && uit.length < MAX_CARDS; ronde++) {
+    for (const g of groepen) {
+      if (ronde < g.length) uit.push(g[ronde]);
+      if (uit.length >= MAX_CARDS) break;
+    }
+  }
+  return uit.sort((a,b) => rank(b) - rank(a));
 }
 
 const CAT_LABEL = {
   who:'WHO', promed:'PROMED', emerg:'EMERGENCY', global:'GLOBAL HEALTH',
-  journal:'JOURNAL', policy:'POLICY', news:'NEWS'
+  amr:'AMR', journal:'JOURNAL', policy:'POLICY', news:'NEWS'
 };
 
 function renderTicker(items) {
@@ -303,14 +351,17 @@ function renderTicker(items) {
 }
 
 function renderCards() {
-  const visible = allItems.filter(i => active.has(i.cat));
-  document.getElementById('cnt').textContent = `${visible.length} items`;
+  const gefilterd = allItems.filter(i => active.has(i.cat));
+  const visible   = prioriteer(gefilterd);
+  document.getElementById('cnt').textContent =
+    toonAlles ? `${visible.length} items`
+              : `top ${visible.length} van ${gefilterd.length}`;
   if (!visible.length) {
     document.getElementById('grid').innerHTML =
       '<div class="state">Geen items — activeer meer categorieën.</div>';
     return;
   }
-  document.getElementById('grid').innerHTML = visible.slice(0,60).map((item, idx) => `
+  document.getElementById('grid').innerHTML = visible.map((item, idx) => `
     <a class="card${idx===0?' feat':''}" data-c="${item.cat}"
        href="${esc(item.url)}" target="_blank" rel="noopener"
        style="animation-delay:${Math.min(idx,20)*.025}s">
@@ -352,9 +403,9 @@ async function loadAll() {
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
     feedStatus = data.status || {};
-    allItems = interleave(data.items || []);
+    allItems = data.items || [];
     renderCards();
-    renderTicker(allItems);
+    renderTicker(prioriteer(allItems));
     renderDiag(data);
     dot.className = 'live-dot';
     st.textContent = 'LIVE';
@@ -373,12 +424,23 @@ async function loadAll() {
   rb.disabled = false;
 }
 
+function toggleAlles() {
+  toonAlles = !toonAlles;
+  document.getElementById('tb').textContent = toonAlles ? 'ALLES' : 'TOP 30';
+  renderCards();
+}
+
 function tog(cat) {
   const b = document.querySelector(`.fbtn[data-c="${cat}"]`);
   if (active.has(cat)) { active.delete(cat); b.classList.remove('on'); }
   else                 { active.add(cat);    b.classList.add('on'); }
   renderCards();
 }
+
+// Toon de CSV-knop alleen als het archief daadwerkelijk bestaat.
+fetch('data/archive.csv', { method: 'HEAD' })
+  .then(r => { if (!r.ok) document.getElementById('csv').style.display = 'none'; })
+  .catch(() => { document.getElementById('csv').style.display = 'none'; });
 
 loadAll();
 setInterval(loadAll, 15 * 60 * 1000);
