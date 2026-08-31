@@ -124,9 +124,13 @@ FEEDS = [
     {"label": "Lancet Global Health", "cat": "journal", "urls": [
         "https://www.thelancet.com/rssfeed/langlo_online.xml"]},
     {"label": "BMJ", "cat": "journal", "urls": [
-        "https://www.bmj.com/rss/current.xml"]},
+        "https://feeds.bmj.com/bmj/recent",
+        "https://www.bmj.com/rss/recent.xml",
+        gnews("site:bmj.com research")]},
     {"label": "BMJ Global Health", "cat": "journal", "urls": [
-        "https://gh.bmj.com/rss/current.xml"]},
+        "https://gh.bmj.com/rss/current.xml",
+        "https://feeds.bmj.com/bmjgh/recent",
+        gnews("site:gh.bmj.com")]},
     {"label": "PLOS Global Public Health", "cat": "journal", "urls": [
         "https://journals.plos.org/globalpublichealth/feed/atom"]},
 
@@ -233,15 +237,28 @@ def iso(entry) -> str:
     return ""
 
 
-_laatste_hit: dict = {}          # host -> tijdstip laatste request
-HOST_PAUZE = 3.0                 # seconden tussen twee requests naar dezelfde host
+_laatste_hit: dict = {}          # domein -> tijdstip laatste request
+HOST_PAUZE = 3.0                 # standaardpauze tussen requests naar hetzelfde domein
+DOMEIN_PAUZE = {                 # uitzonderingen voor strenge uitgevers
+    "bmj.com": 15.0,             # limiteert over al hun subdomeinen samen
+}
+
+
+def domein(url: str) -> str:
+    """www.bmj.com en gh.bmj.com zijn voor rate limiting hetzelfde domein.
+    Daarom knippen we terug naar de laatste twee labels."""
+    host = urllib.parse.urlparse(url).netloc.lower()
+    delen = host.split(".")
+    return ".".join(delen[-2:]) if len(delen) >= 2 else host
 
 
 def download(url: str) -> bytes:
-    """Haalt één URL op. Respecteert een pauze per host, want BMJ gaf 429
-    toen we bmj.com en gh.bmj.com vlak achter elkaar aanriepen."""
-    host = urllib.parse.urlparse(url).netloc
-    wacht = HOST_PAUZE - (time.monotonic() - _laatste_hit.get(host, 0))
+    """Haalt één URL op. Respecteert een pauze per domein, want BMJ gaf 429
+    toen we www.bmj.com en gh.bmj.com vlak achter elkaar aanriepen -- die
+    delen één rate limit."""
+    host = domein(url)
+    pauze = DOMEIN_PAUZE.get(host, HOST_PAUZE)
+    wacht = pauze - (time.monotonic() - _laatste_hit.get(host, 0))
     if wacht > 0:
         time.sleep(wacht)
 
@@ -288,6 +305,11 @@ def harvest(feed) -> tuple[list, str]:
             items = []
             for e in entries[:MAX_PER_FEED]:
                 title = strip_html(e.get("title", ""))
+                # Google News hangt " - Uitgever" achter elke kop. De bron
+                # staat al apart in het <source>-element, dus knip dat eraf.
+                bron_el = e.get("source", {}).get("title", "")
+                if bron_el and title.endswith(" - " + bron_el):
+                    title = title[: -(len(bron_el) + 3)].strip()
                 link = unwrap((e.get("link") or "").strip())
                 if not title or not link.startswith("http"):
                     continue
