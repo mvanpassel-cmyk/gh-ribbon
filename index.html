@@ -245,65 +245,38 @@ footer {
 </footer>
 
 <script>
-// --- CORS-proxies met fallback -------------------------------------------
-// Eén vaste proxy = één single point of failure. Deze lijst wordt op volgorde
-// geprobeerd; zodra er één werkt onthouden we die voor de rest van de sessie.
-const PROXIES = [
-  { name:'allorigins', build: u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u) },
-  { name:'codetabs',   build: u => 'https://api.codetabs.com/v1/proxy/?quest=' + encodeURIComponent(u) },
-  { name:'corsproxy',  build: u => 'https://corsproxy.io/?url=' + encodeURIComponent(u) },
-  { name:'x2u',        build: u => 'https://cors.x2u.in/' + u },
-];
-let preferred = 0;          // index van de laatst werkende proxy
-const feedStatus = {};      // label -> status per feed
-
-const ALERT_FEEDS = [
-  { url:'https://www.google.com/alerts/feeds/07358569115421849873/153340034560442073',  label:'WHO Alert',        cat:'who'    },
-  { url:'https://www.google.com/alerts/feeds/07358569115421849873/14881210468558991559', label:'ProMED',           cat:'promed' },
-  { url:'https://www.google.com/alerts/feeds/07358569115421849873/3291854287981540699',  label:'Health Emergency', cat:'emerg'  },
-  { url:'https://www.google.com/alerts/feeds/07358569115421849873/5068632798327940500',  label:'Global Health',    cat:'global' },
-];
-
-const RSS_FEEDS = [
-  { url:'https://www.thelancet.com/rssfeed/lancet_online.xml',   label:'The Lancet',          cat:'journal' },
-  { url:'https://www.thelancet.com/rssfeed/langlo_online.xml',   label:'Lancet Global Health', cat:'journal' },
-  { url:'https://www.bmj.com/rss/current.xml',                   label:'BMJ',                 cat:'journal' },
-  { url:'https://healthpolicy-watch.news/feed/',                  label:'Health Policy Watch', cat:'policy'  },
-  { url:'https://www.politico.eu/feed/?cat=96',                  label:'Politico EU Health',  cat:'policy'  },
-  { url:'https://www.statnews.com/feed/',                        label:'STAT News',           cat:'news'    },
-];
-
-const ALL_FEEDS = [...ALERT_FEEDS, ...RSS_FEEDS];
+// GH Ribbon — laadt data/feeds.json van dezelfde origin.
+// Geen CORS-proxy, geen time-outs, geen rate limits: het ophalen van de feeds
+// gebeurt server-side in GitHub Actions (zie fetch_feeds.py).
+const DATA = 'data/feeds.json';
 
 let allItems = [];
-let active   = new Set(['who','promed','emerg','global','journal','policy','news']);
+let feedStatus = {};
+let active = new Set(['who','promed','emerg','global','journal','policy','news']);
 
 setInterval(() => {
   document.getElementById('clk').textContent =
     new Date().toLocaleTimeString('nl-NL',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
 }, 1000);
 
-function stripHtml(h) {
-  const d = document.createElement('div'); d.innerHTML = h;
-  return (d.textContent||d.innerText||'').replace(/\s+/g,' ').trim();
-}
-function relDate(s) {
-  if (!s) return '';
-  try {
-    const d = new Date(s); if (isNaN(d)) return '';
-    const m = Math.floor((Date.now()-d)/60000);
-    if (m < 1)    return 'Zojuist';
-    if (m < 60)   return m+'m geleden';
-    if (m < 1440) return Math.floor(m/60)+'u geleden';
-    if (m < 2880) return 'Gisteren';
-    return d.toLocaleDateString('nl-NL',{day:'numeric',month:'short'});
-  } catch { return ''; }
-}
-function esc(u) { return (u||'#').replace(/"/g,'%22').replace(/'/g,'%27'); }
 function htmlesc(s) {
   return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')
                       .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
+function esc(u) { return (u||'#').replace(/"/g,'%22').replace(/'/g,'%27'); }
+
+function relDate(s) {
+  if (!s) return '';
+  const d = new Date(s); if (isNaN(d)) return '';
+  const m = Math.floor((Date.now()-d)/60000);
+  if (m < 1)    return 'Zojuist';
+  if (m < 60)   return m+'m geleden';
+  if (m < 1440) return Math.floor(m/60)+'u geleden';
+  if (m < 2880) return 'Gisteren';
+  return d.toLocaleDateString('nl-NL',{day:'numeric',month:'short'});
+}
+
+// Rond-robin over categorieën, zodat één productieve bron de grid niet kaapt.
 function interleave(items) {
   const g = {};
   items.forEach(i => { (g[i.cat]=g[i.cat]||[]).push(i); });
@@ -312,87 +285,22 @@ function interleave(items) {
   return out;
 }
 
-function parseAtom(xmlText, feed) {
-  const xml = new DOMParser().parseFromString(xmlText, 'application/xml');
-  if (xml.querySelector('parsererror')) throw new Error('XML parse error');
-  const entries = [...xml.querySelectorAll('entry, item')];
-  if (!entries.length) throw new Error('No entries');
-  return entries.slice(0,6).map(e => {
-    const title  = stripHtml(e.querySelector('title')?.textContent || '');
-    const linkEl = e.querySelector('link');
-    let   url    = linkEl?.getAttribute('href') || linkEl?.textContent?.trim() || '#';
-    const pubRaw = e.querySelector('published,updated,pubDate')?.textContent || '';
-    const rawSum = e.querySelector('content,summary,description')?.textContent || '';
-    const srcName= e.querySelector('source title')?.textContent || feed.label;
-    try {
-      const u = new URL(url);
-      const actual = u.searchParams.get('url') || u.searchParams.get('q');
-      if (actual) url = decodeURIComponent(actual);
-    } catch(_) {}
-    return {
-      title:   title.slice(0,140),
-      url:     url.trim(),
-      src:     srcName,
-      cat:     feed.cat,
-      date:    relDate(pubRaw),
-      summary: stripHtml(rawSum).slice(0,300),
-    };
-  }).filter(i => i.title && i.url && i.url !== '#');
-}
-
-const sleep = ms => new Promise(r => setTimeout(r, ms));
-
-async function fetchFeed(feed, idx) {
-  // Kleine spreiding: sommige proxies hebben een limiet van ~5 req/sec.
-  await sleep(idx * 350);
-  const errors = [];
-  for (let n = 0; n < PROXIES.length; n++) {
-    const p = PROXIES[(preferred + n) % PROXIES.length];
-    try {
-      const res = await fetch(p.build(feed.url), { signal: AbortSignal.timeout(15000) });
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      const text = await res.text();
-      const items = parseAtom(text, feed);
-      preferred = PROXIES.indexOf(p);
-      feedStatus[feed.label] = { ok: true, msg: items.length + ' items via ' + p.name };
-      return items;
-    } catch (e) {
-      errors.push(p.name + ': ' + e.message);
-    }
-  }
-  console.warn(feed.label, errors);
-  feedStatus[feed.label] = { ok: false, msg: errors.join(' | ') };
-  return [];
-}
-
-function renderTicker(items) {
-  const track = document.getElementById('tk');
-  if (!items.length) return;
-  const doubled = [...items, ...items];
-  track.innerHTML = doubled.map(i =>
-    `<a class="t-item" href="${esc(i.url)}" target="_blank">
-       <span class="t-sep">◆</span>
-       <span class="t-src">${htmlesc(i.src)}</span>
-       <span class="t-hl">${htmlesc(i.title)}</span>
-     </a>`
-  ).join('');
-  requestAnimationFrame(() => { track.classList.add('running'); });
-}
-
-function showSkeletons() {
-  document.getElementById('grid').innerHTML = `
-    <div class="skel-card" style="grid-column:span 2"><div class="skel" style="height:9px;width:35%"></div><div class="skel" style="height:20px;width:90%"></div><div class="skel" style="height:13px;width:100%"></div><div class="skel" style="height:13px;width:80%"></div></div>
-    <div class="skel-card"><div class="skel" style="height:9px;width:35%"></div><div class="skel" style="height:16px;width:90%"></div><div class="skel" style="height:13px;width:100%"></div><div class="skel" style="height:13px;width:70%"></div></div>
-    <div class="skel-card"><div class="skel" style="height:9px;width:35%"></div><div class="skel" style="height:16px;width:90%"></div><div class="skel" style="height:13px;width:100%"></div><div class="skel" style="height:13px;width:70%"></div></div>
-    <div class="skel-card"><div class="skel" style="height:9px;width:35%"></div><div class="skel" style="height:16px;width:90%"></div><div class="skel" style="height:13px;width:100%"></div><div class="skel" style="height:13px;width:70%"></div></div>
-    <div class="skel-card"><div class="skel" style="height:9px;width:35%"></div><div class="skel" style="height:16px;width:90%"></div><div class="skel" style="height:13px;width:100%"></div><div class="skel" style="height:13px;width:70%"></div></div>`;
-  document.getElementById('cnt').textContent = 'laden…';
-}
-
 const CAT_LABEL = {
   who:'WHO', promed:'PROMED', emerg:'EMERGENCY', global:'GLOBAL HEALTH',
   journal:'JOURNAL', policy:'POLICY', news:'NEWS'
 };
+
+function renderTicker(items) {
+  const track = document.getElementById('tk');
+  if (!items.length) return;
+  track.innerHTML = [...items.slice(0,40), ...items.slice(0,40)].map(i =>
+    `<a class="t-item" href="${esc(i.url)}" target="_blank" rel="noopener">
+       <span class="t-sep">◆</span>
+       <span class="t-src">${htmlesc(i.src)}</span>
+       <span class="t-hl">${htmlesc(i.title)}</span>
+     </a>`).join('');
+  requestAnimationFrame(() => track.classList.add('running'));
+}
 
 function renderCards() {
   const visible = allItems.filter(i => active.has(i.cat));
@@ -402,13 +310,13 @@ function renderCards() {
       '<div class="state">Geen items — activeer meer categorieën.</div>';
     return;
   }
-  document.getElementById('grid').innerHTML = visible.map((item, idx) => `
+  document.getElementById('grid').innerHTML = visible.slice(0,60).map((item, idx) => `
     <a class="card${idx===0?' feat':''}" data-c="${item.cat}"
-       href="${esc(item.url)}" target="_blank"
-       style="animation-delay:${idx*.025}s">
+       href="${esc(item.url)}" target="_blank" rel="noopener"
+       style="animation-delay:${Math.min(idx,20)*.025}s">
       <div class="card-hd">
         <span class="badge">${CAT_LABEL[item.cat]||item.cat}</span>
-        <span class="card-date">${item.date}</span>
+        <span class="card-date">${relDate(item.date)}</span>
       </div>
       <div class="card-src">${htmlesc(item.src)}</div>
       <div class="card-title">${htmlesc(item.title)}</div>
@@ -417,22 +325,8 @@ function renderCards() {
     </a>`).join('');
 }
 
-// --- Cache: laatste geslaagde run overleeft een kapotte proxy --------------
-const CACHE_KEY = 'ghribbon.items.v1';
-function saveCache(items) {
-  try { localStorage.setItem(CACHE_KEY, JSON.stringify({ t: Date.now(), items })); } catch(_) {}
-}
-function loadCache() {
-  try {
-    const raw = localStorage.getItem(CACHE_KEY);
-    if (!raw) return [];
-    const d = JSON.parse(raw);
-    return Array.isArray(d.items) ? d.items : [];
-  } catch(_) { return []; }
-}
-
-// --- Diagnose: laat per feed zien wat er misging ---------------------------
-function renderDiag() {
+// Statusregel onderaan: welke bronnen deden het bij de laatste harvest.
+function renderDiag(meta) {
   let el = document.getElementById('diag');
   if (!el) {
     el = document.createElement('span');
@@ -440,52 +334,42 @@ function renderDiag() {
     el.style.cssText = 'display:block;width:100%;font-size:10px;line-height:1.9;opacity:.75;margin-top:6px';
     document.querySelector('footer').appendChild(el);
   }
-  const ok  = Object.entries(feedStatus).filter(([,v]) => v.ok);
-  const bad = Object.entries(feedStatus).filter(([,v]) => !v.ok);
-  el.innerHTML =
-    `<span style="color:var(--accent)">${ok.length}/${ALL_FEEDS.length} feeds OK</span>` +
-    (bad.length ? ' — mislukt: ' + bad.map(([k]) => htmlesc(k)).join(', ') : '');
+  const bad = Object.entries(feedStatus).filter(([,v]) => !v.ok).map(([k]) => k);
+  el.innerHTML = `<span style="color:var(--accent)">${meta.feeds_ok}/${meta.feeds_tot} bronnen OK</span>` +
+    (bad.length ? ' — stil: ' + bad.map(htmlesc).join(', ') : '');
   el.title = Object.entries(feedStatus).map(([k,v]) => k + ' → ' + v.msg).join('\n');
 }
 
 async function loadAll() {
-  const rb  = document.getElementById('rb');
+  const rb = document.getElementById('rb');
   const dot = document.getElementById('dot');
+  const st = document.getElementById('st');
   rb.disabled = true;
   dot.className = 'live-dot busy';
-  document.getElementById('st').textContent = 'FETCHING…';
-  showSkeletons();
-  const track = document.getElementById('tk');
-  track.classList.remove('running');
-  const results = await Promise.allSettled(ALL_FEEDS.map((f,i) => fetchFeed(f,i)));
-  const fetched  = results.flatMap(r => r.status==='fulfilled' ? r.value : []);
-  allItems = interleave(fetched);
-  renderDiag();
-  if (!allItems.length) {
-    const cached = loadCache();
-    if (cached.length) {
-      allItems = cached;
-      renderCards();
-      renderTicker(allItems);
-      dot.className = 'live-dot busy';
-      document.getElementById('st').textContent = 'CACHE';
-    } else {
-      dot.className = 'live-dot err';
-      document.getElementById('st').textContent = 'ERROR';
-      document.getElementById('grid').innerHTML =
-        '<div class="state err">Geen enkele feed geladen.<br>' +
-        '<small>Alle CORS-proxies gaven een fout. Zie de statusregel onderaan ' +
-        'en de console (F12) voor de exacte reden per feed.</small></div>';
-      document.getElementById('cnt').textContent = '0 items';
-    }
-  } else {
-    saveCache(allItems);
+  st.textContent = 'LADEN…';
+  try {
+    const res = await fetch(DATA + '?t=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    feedStatus = data.status || {};
+    allItems = interleave(data.items || []);
     renderCards();
     renderTicker(allItems);
+    renderDiag(data);
     dot.className = 'live-dot';
-    document.getElementById('st').textContent = 'LIVE';
+    st.textContent = 'LIVE';
+    const age = data.generated ? relDate(data.generated) : '';
+    document.getElementById('ft').textContent =
+      'Harvest ' + (age || new Date().toLocaleTimeString('nl-NL'));
+  } catch (e) {
+    dot.className = 'live-dot err';
+    st.textContent = 'ERROR';
+    document.getElementById('grid').innerHTML =
+      '<div class="state err">data/feeds.json kon niet geladen worden.<br>' +
+      '<small>' + htmlesc(e.message) + ' — draait de Actions-workflow al? ' +
+      'Check de Actions-tab van de repo.</small></div>';
+    document.getElementById('cnt').textContent = '0 items';
   }
-  document.getElementById('ft').textContent = 'Updated ' + new Date().toLocaleTimeString('nl-NL');
   rb.disabled = false;
 }
 
@@ -497,7 +381,7 @@ function tog(cat) {
 }
 
 loadAll();
-setInterval(loadAll, 30 * 60 * 1000);
+setInterval(loadAll, 15 * 60 * 1000);
 </script>
 </body>
 </html>
