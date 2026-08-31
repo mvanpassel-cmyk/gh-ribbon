@@ -47,74 +47,108 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
 #   who | promed | emerg | global | amr | journal | policy | news
 # Een feed die blijft falen kun je gewoon uitcommentariëren.
 # ---------------------------------------------------------------------------
+def gnews(zoekterm: str) -> str:
+    """Google News RSS als vangnet. Werkt waar Cloudflare de directe feed
+    blokkeert (Politico, Euractiv, Eurosurveillance) of waar een site
+    helemaal geen RSS meer aanbiedt. Levert kop + link, geen samenvatting."""
+    return ("https://news.google.com/rss/search?q=" +
+            urllib.parse.quote(zoekterm) + "&hl=en-GB&gl=GB&ceid=GB:en")
+
+
+# ---------------------------------------------------------------------------
+# Bronnen. Elke bron heeft een lijst kandidaat-URL's: de eerste die werkt
+# wint. De laatste is meestal een Google News-zoekopdracht, zodat een bron
+# nooit helemaal stilvalt. In de Actions-log zie je welke kandidaat het werd.
+# ---------------------------------------------------------------------------
 FEEDS = [
-    # --- WHO ---------------------------------------------------------------
-    {"label": "WHO News",                  "cat": "who",
-     "url": "https://www.who.int/rss-feeds/news-english.xml"},
-    {"label": "WHO Disease Outbreak News", "cat": "who",
-     "url": "https://www.who.int/feeds/entity/csr/don/en/rss.xml"},
-    {"label": "WHO Alert",                 "cat": "who",
-     "url": "https://www.google.com/alerts/feeds/07358569115421849873/153340034560442073"},
-    {"label": "UN News Health",            "cat": "who",
-     "url": "https://news.un.org/feed/subscribe/en/news/topic/health/feed/rss.xml"},
+    # --- WHO ----------------------------------------------------------------
+    {"label": "WHO News", "cat": "who", "urls": [
+        "https://www.who.int/rss-feeds/news-english.xml"]},
+    {"label": "WHO Disease Outbreak News", "cat": "who", "urls": [
+        "https://www.who.int/rss-feeds/disease-outbreak-news-english.xml",
+        "https://www.who.int/feeds/entity/csr/don/en/rss.xml",
+        gnews("WHO disease outbreak news")]},
+    {"label": "WHO Alert", "cat": "who", "urls": [
+        "https://www.google.com/alerts/feeds/07358569115421849873/153340034560442073"]},
+    {"label": "UN News Health", "cat": "who", "urls": [
+        "https://news.un.org/feed/subscribe/en/news/topic/health/feed/rss.xml",
+        "https://news.un.org/en/rss/health.xml",
+        gnews("site:news.un.org health")]},
 
-    # --- Outbreak / surveillance -------------------------------------------
-    {"label": "ProMED",                    "cat": "promed",
-     "url": "https://www.google.com/alerts/feeds/07358569115421849873/14881210468558991559"},
-    {"label": "CIDRAP",                    "cat": "promed",
-     "url": "https://www.cidrap.umn.edu/news/rss.xml"},
-    {"label": "Eurosurveillance",          "cat": "promed",
-     "url": "https://www.eurosurveillance.org/rss/current.xml"},
+    # --- Outbreak / surveillance --------------------------------------------
+    {"label": "ProMED", "cat": "promed", "urls": [
+        "https://promedmail.org/feed/",
+        gnews("ProMED-mail outbreak")]},
+    {"label": "CIDRAP Public Health", "cat": "promed", "urls": [
+        "https://www.cidrap.umn.edu/news/91/rss"]},          # geverifieerd
+    {"label": "CIDRAP Pandemic Influenza", "cat": "promed", "urls": [
+        "https://www.cidrap.umn.edu/news/86/rss"]},          # geverifieerd
+    {"label": "Eurosurveillance", "cat": "promed", "urls": [
+        "https://www.eurosurveillance.org/rss/current.xml",
+        gnews("site:eurosurveillance.org")]},
 
-    # --- Health emergencies --------------------------------------------------
-    {"label": "Health Emergency",          "cat": "emerg",
-     "url": "https://www.google.com/alerts/feeds/07358569115421849873/3291854287981540699"},
-    {"label": "ReliefWeb Health",          "cat": "emerg",
-     "url": "https://reliefweb.int/updates/rss.xml?view=headlines"},
+    # --- Health emergencies ---------------------------------------------------
+    {"label": "Health Emergency", "cat": "emerg", "urls": [
+        "https://www.google.com/alerts/feeds/07358569115421849873/3291854287981540699"]},
+    {"label": "ReliefWeb Health", "cat": "emerg", "urls": [
+        "https://reliefweb.int/updates/rss.xml",
+        "https://reliefweb.int/disasters/rss.xml",
+        gnews("site:reliefweb.int health emergency")]},
 
-    # --- Global health --------------------------------------------------------
-    {"label": "Global Health",             "cat": "global",
-     "url": "https://www.google.com/alerts/feeds/07358569115421849873/5068632798327940500"},
-    {"label": "ECDC",                      "cat": "global",
-     "url": "https://www.ecdc.europa.eu/en/rss"},
-    {"label": "Africa CDC",                "cat": "global",
-     "url": "https://africacdc.org/feed/"},
-    {"label": "Think Global Health",       "cat": "global",
-     "url": "https://www.thinkglobalhealth.org/rss.xml"},
+    # --- Global health ----------------------------------------------------------
+    {"label": "Global Health", "cat": "global", "urls": [
+        "https://www.google.com/alerts/feeds/07358569115421849873/5068632798327940500"]},
+    {"label": "ECDC", "cat": "global", "urls": [
+        "https://www.ecdc.europa.eu/en/news-events/rss",
+        "https://www.ecdc.europa.eu/en/rss",
+        gnews("site:ecdc.europa.eu")]},
+    {"label": "Africa CDC", "cat": "global", "urls": [
+        "https://africacdc.org/news/feed/",
+        "https://africacdc.org/feed/",
+        gnews("site:africacdc.org")]},
+    {"label": "Think Global Health", "cat": "global", "urls": [
+        "https://www.thinkglobalhealth.org/rss.xml",
+        "https://www.thinkglobalhealth.org/feed",
+        gnews("site:thinkglobalhealth.org")]},
 
-    # --- AMR (eigen categorie) --------------------------------------------------
-    {"label": "CIDRAP Stewardship",        "cat": "amr",
-     "url": "https://www.cidrap.umn.edu/asp/rss.xml"},
-    {"label": "AMR Industry / news",       "cat": "amr",
-     "url": "https://www.news-medical.net/tag/feed/Antimicrobial-Resistance.aspx"},
+    # --- AMR ----------------------------------------------------------------------
+    {"label": "CIDRAP Stewardship", "cat": "amr", "urls": [
+        "https://www.cidrap.umn.edu/news/48/rss"]},          # geverifieerd
+    {"label": "AMR Industry / news", "cat": "amr", "urls": [
+        "https://www.news-medical.net/tag/feed/Antimicrobial-Resistance.aspx",
+        gnews("antimicrobial resistance policy")]},
 
-    # --- Journals ------------------------------------------------------------------
-    {"label": "The Lancet",                "cat": "journal",
-     "url": "https://www.thelancet.com/rssfeed/lancet_online.xml"},
-    {"label": "Lancet Global Health",      "cat": "journal",
-     "url": "https://www.thelancet.com/rssfeed/langlo_online.xml"},
-    {"label": "BMJ",                       "cat": "journal",
-     "url": "https://www.bmj.com/rss/current.xml"},
-    {"label": "BMJ Global Health",         "cat": "journal",
-     "url": "https://gh.bmj.com/rss/current.xml"},
-    {"label": "PLOS Global Public Health", "cat": "journal",
-     "url": "https://journals.plos.org/globalpublichealth/feed/atom"},
+    # --- Journals --------------------------------------------------------------------
+    {"label": "The Lancet", "cat": "journal", "urls": [
+        "https://www.thelancet.com/rssfeed/lancet_online.xml"]},
+    {"label": "Lancet Global Health", "cat": "journal", "urls": [
+        "https://www.thelancet.com/rssfeed/langlo_online.xml"]},
+    {"label": "BMJ", "cat": "journal", "urls": [
+        "https://www.bmj.com/rss/current.xml"]},
+    {"label": "BMJ Global Health", "cat": "journal", "urls": [
+        "https://gh.bmj.com/rss/current.xml"]},
+    {"label": "PLOS Global Public Health", "cat": "journal", "urls": [
+        "https://journals.plos.org/globalpublichealth/feed/atom"]},
 
-    # --- Policy / governance -----------------------------------------------------------
-    {"label": "Health Policy Watch",       "cat": "policy",
-     "url": "https://healthpolicy-watch.news/feed/"},
-    {"label": "Geneva Health Files",       "cat": "policy",
-     "url": "https://genevahealthfiles.substack.com/feed"},
-    {"label": "Politico EU Health",        "cat": "policy",
-     "url": "https://www.politico.eu/feed/?cat=96"},
-    {"label": "Euractiv Health",           "cat": "policy",
-     "url": "https://www.euractiv.com/sections/health-consumers/feed/"},
+    # --- Policy -----------------------------------------------------------------------------
+    {"label": "Health Policy Watch", "cat": "policy", "urls": [
+        "https://healthpolicy-watch.news/feed/"]},
+    {"label": "Geneva Health Files", "cat": "policy", "urls": [
+        "https://genevahealthfiles.substack.com/feed",
+        gnews("Geneva Health Files pandemic treaty")]},
+    {"label": "Politico EU Health", "cat": "policy", "urls": [
+        "https://www.politico.eu/feed/?cat=96",
+        gnews("site:politico.eu health")]},
+    {"label": "Euractiv Health", "cat": "policy", "urls": [
+        "https://www.euractiv.com/sections/health-consumers/feed/",
+        gnews("site:euractiv.com health")]},
 
-    # --- News -------------------------------------------------------------------------------
-    {"label": "STAT News",                 "cat": "news",
-     "url": "https://www.statnews.com/feed/"},
-    {"label": "Devex Global Health",       "cat": "news",
-     "url": "https://www.devex.com/news.rss"},
+    # --- News ------------------------------------------------------------------------------------
+    {"label": "STAT News", "cat": "news", "urls": [
+        "https://www.statnews.com/feed/"]},
+    {"label": "Devex Global Health", "cat": "news", "urls": [
+        "https://www.devex.com/news/feed",
+        gnews("site:devex.com global health")]},
 ]
 
 
@@ -132,7 +166,8 @@ BRONGEWICHT = {
     "PLOS Global Public Health": 3, "Africa CDC": 3, "UN News Health": 3,
     "Global Health": 3, "Health Emergency": 3, "ReliefWeb Health": 2,
     "Devex Global Health": 2, "ECDC": 2, "Eurosurveillance": 2,
-    "Politico EU Health": 2, "Euractiv Health": 2, "CIDRAP": 2,
+    "Politico EU Health": 2, "Euractiv Health": 2, "CIDRAP Public Health": 2,
+    "CIDRAP Pandemic Influenza": 3,
     "CIDRAP Stewardship": 2, "ProMED": 2, "AMR Industry / news": 2,
     "The Lancet": 1, "BMJ": 1, "STAT News": 1,
 }
@@ -198,56 +233,88 @@ def iso(entry) -> str:
     return ""
 
 
+_laatste_hit: dict = {}          # host -> tijdstip laatste request
+HOST_PAUZE = 3.0                 # seconden tussen twee requests naar dezelfde host
+
+
 def download(url: str) -> bytes:
+    """Haalt één URL op. Respecteert een pauze per host, want BMJ gaf 429
+    toen we bmj.com en gh.bmj.com vlak achter elkaar aanriepen."""
+    host = urllib.parse.urlparse(url).netloc
+    wacht = HOST_PAUZE - (time.monotonic() - _laatste_hit.get(host, 0))
+    if wacht > 0:
+        time.sleep(wacht)
+
     last = None
-    for attempt in range(RETRIES + 1):
+    for poging in range(RETRIES + 1):
+        _laatste_hit[host] = time.monotonic()
         try:
             req = urllib.request.Request(url, headers={
                 "User-Agent": UA,
-                "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
+                "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, text/xml;q=0.9, */*;q=0.8",
                 "Accept-Language": "en-GB,en;q=0.9,nl;q=0.8",
+                "Cache-Control": "no-cache",
             })
             with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
                 return r.read()
-        except (urllib.error.URLError, urllib.error.HTTPError, socket.timeout, OSError) as e:
+        except urllib.error.HTTPError as e:
             last = e
-            if attempt < RETRIES:
-                time.sleep(2 * (attempt + 1))
+            if e.code == 429:                     # rate limit: ruim wachten
+                time.sleep(15 * (poging + 1))
+            elif e.code in (403, 404):            # zinloos om te herhalen
+                raise
+            elif poging < RETRIES:
+                time.sleep(2 * (poging + 1))
+        except (urllib.error.URLError, socket.timeout, OSError) as e:
+            last = e
+            if poging < RETRIES:
+                time.sleep(2 * (poging + 1))
     raise last
 
 
 def harvest(feed) -> tuple[list, str]:
-    raw = download(feed["url"])
-    parsed = feedparser.parse(raw)
-    entries = parsed.entries or []
-    if not entries:
-        raise ValueError("0 entries (bron gaf geen bruikbare XML terug)")
+    """Probeert de kandidaat-URL's op volgorde. De eerste die bruikbare XML
+    oplevert wint. Zo overleeft een bron een verhuisde feed-URL, en hebben
+    de Cloudflare-sites een Google News-vangnet."""
+    kandidaten = feed.get("urls") or [feed["url"]]
+    fouten = []
+    for n, url in enumerate(kandidaten):
+        try:
+            parsed = feedparser.parse(download(url))
+            entries = parsed.entries or []
+            if not entries:
+                raise ValueError("0 entries")
 
-    items = []
-    for e in entries[:MAX_PER_FEED]:
-        title = strip_html(e.get("title", ""))
-        link = unwrap((e.get("link") or "").strip())
-        if not title or not link.startswith("http"):
-            continue
-        summary = strip_html(
-            e.get("summary") or (e.get("content", [{}])[0].get("value") if e.get("content") else "")
-        )
-        src = feed["label"]
-        if e.get("source", {}).get("title"):
-            src = strip_html(e["source"]["title"])
-        items.append({
-            "title":   title[:180],
-            "url":     link,
-            "src":     src,
-            "feed":    feed["label"],
-            "cat":     feed["cat"],
-            "date":    iso(e),
-            "summary": summary[:300],
-        })
-        items[-1]["score"] = score_item(items[-1], feed["label"])
-    if not items:
-        raise ValueError("entries gevonden maar geen bruikbare titel/link")
-    return items, f"{len(items)} items"
+            items = []
+            for e in entries[:MAX_PER_FEED]:
+                title = strip_html(e.get("title", ""))
+                link = unwrap((e.get("link") or "").strip())
+                if not title or not link.startswith("http"):
+                    continue
+                summary = strip_html(
+                    e.get("summary") or (e.get("content", [{}])[0].get("value") if e.get("content") else "")
+                )
+                src = feed["label"]
+                if e.get("source", {}).get("title"):
+                    src = strip_html(e["source"]["title"])
+                items.append({
+                    "title":   title[:180],
+                    "url":     link,
+                    "src":     src,
+                    "feed":    feed["label"],
+                    "cat":     feed["cat"],
+                    "date":    iso(e),
+                    "summary": summary[:300],
+                })
+                items[-1]["score"] = score_item(items[-1], feed["label"])
+            if not items:
+                raise ValueError("entries zonder bruikbare titel/link")
+
+            via = "" if n == 0 else f" (via kandidaat {n + 1})"
+            return items, f"{len(items)} items{via}"
+        except Exception as e:
+            fouten.append(f"[{n + 1}] {type(e).__name__}: {e}")
+    raise RuntimeError(" | ".join(fouten))
 
 
 def load_previous() -> list:
