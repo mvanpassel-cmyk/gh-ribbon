@@ -37,7 +37,11 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  padding-bottom: 58px;   /* ruimte voor de vaste ticker */
 }
+/* Ticker uit: balk weg én de ruimte eronder weg. */
+body.geen-ticker { padding-bottom: 0; }
+body.geen-ticker .ticker-wrap { display: none; }
 
 .topbar {
   display: flex; align-items: center; justify-content: space-between;
@@ -73,8 +77,11 @@ body {
 
 .ticker-wrap {
   background: #020905;
-  border-bottom: 2px solid var(--border);
-  height: 58px; overflow: hidden; position: relative;
+  border-top: 2px solid var(--border);
+  height: 58px; overflow: hidden;
+  /* Vast onderin beeld, CNN-stijl: blijft staan terwijl je door de
+     kaarten scrolt. body krijgt daarom padding-bottom van dezelfde hoogte. */
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 300;
 }
 .ticker-wrap::before, .ticker-wrap::after {
   content: ''; position: absolute; top: 0; bottom: 0; width: 110px; z-index: 2; pointer-events: none;
@@ -209,22 +216,13 @@ footer {
     <span class="clock" id="clk">—</span>
     <a class="rbtn" id="csv" href="data/archive.csv" download="gh-ribbon-archief.csv"
        style="text-decoration:none" title="Volledig archief als spreadsheet">⤓ CSV</a>
+    <button class="rbtn" id="bb" onclick="toggleTicker()" title="Nieuwsbalk onderin aan/uit">▬ BALK</button>
     <button class="rbtn" id="tb" onclick="toggleAlles()">TOP 30</button>
-    <a class="rbtn" href="ticker.html" target="_blank" style="text-decoration:none">⬒ TICKER</a>
+    <a class="rbtn" href="ticker.html" target="_blank" style="text-decoration:none" title="Ticker los openen, bijvoorbeeld voor een tweede scherm">⬒ LOS</a>
     <button class="rbtn" id="rb" onclick="loadAll()">↻ REFRESH</button>
   </div>
 </div>
 
-<div class="ticker-wrap">
-  <div class="ticker-badge">LIVE</div>
-  <div class="ticker-track" id="tk">
-    <span class="t-item">
-      <span class="t-sep">◆</span>
-      <span class="t-src">GH RIBBON</span>
-      <span class="t-hl">Feeds laden — even geduld…</span>
-    </span>
-  </div>
-</div>
 
 <div class="filter-bar">
   <span class="flbl">Alerts:</span>
@@ -249,10 +247,20 @@ footer {
 </main>
 
 <footer>
-  <span>Alerts: WHO · ProMED · Health Emergency · Global Health</span>
-  <span>RSS: The Lancet · Lancet Global Health · BMJ · Health Policy Watch · Politico EU · STAT News</span>
+  <span>27 bronnen · WHO · CIDRAP · ECDC · Africa CDC · Lancet · BMJ · PLOS · Health Policy Watch · Geneva Health Files · Politico · Euractiv · STAT · Devex</span>
   <span id="ft">—</span>
 </footer>
+
+<div class="ticker-wrap">
+  <div class="ticker-badge">LIVE</div>
+  <div class="ticker-track" id="tk">
+    <span class="t-item">
+      <span class="t-sep">◆</span>
+      <span class="t-src">GH RIBBON</span>
+      <span class="t-hl">Feeds laden — even geduld…</span>
+    </span>
+  </div>
+</div>
 
 <script>
 // GH Ribbon — laadt data/feeds.json van dezelfde origin.
@@ -423,6 +431,27 @@ async function loadAll() {
   }
   rb.disabled = false;
 }
+
+// Ticker aan/uit. De keuze blijft staan tussen bezoeken; wie hem uitzet
+// wil hem meestal uit houden.
+const TICKER_KEY = 'ghribbon.ticker';
+
+function pasTickerToe(aan) {
+  document.body.classList.toggle('geen-ticker', !aan);
+  const b = document.getElementById('bb');
+  b.textContent = aan ? '▬ BALK' : '▬ BALK UIT';
+  b.style.opacity = aan ? '' : '.45';
+}
+
+function toggleTicker() {
+  const aan = document.body.classList.contains('geen-ticker');   // was uit
+  pasTickerToe(aan);
+  try { localStorage.setItem(TICKER_KEY, aan ? '1' : '0'); } catch (_) {}
+}
+
+// Bij het laden de opgeslagen keuze herstellen (standaard: aan).
+try { pasTickerToe(localStorage.getItem(TICKER_KEY) !== '0'); }
+catch (_) { pasTickerToe(true); }
 
 function toggleAlles() {
   toonAlles = !toonAlles;
