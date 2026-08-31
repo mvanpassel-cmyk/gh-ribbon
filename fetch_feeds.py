@@ -14,6 +14,7 @@ Ontwerpkeuzes die ertoe doen:
     er misging in plaats van stil leeg te blijven.
 """
 
+import csv
 import json
 import pathlib
 import re
@@ -29,6 +30,7 @@ from html import unescape
 import feedparser
 
 OUT           = pathlib.Path("data/feeds.json")
+ARCHIVE       = pathlib.Path("data/archive.csv")  # groeit dagelijks aan, opent in Excel/Numbers
 MAX_AGE_DAYS  = 21     # ouder dan dit valt uit de cache
 MAX_PER_FEED  = 12     # per bron meenemen
 MAX_TOTAL     = 400    # harde bovengrens op het bestand
@@ -42,54 +44,128 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
 
 # ---------------------------------------------------------------------------
 # Feeds. cat moet overeenkomen met de filterknoppen in index.html:
-#   who | promed | emerg | global | journal | policy | news
+#   who | promed | emerg | global | amr | journal | policy | news
 # Een feed die blijft falen kun je gewoon uitcommentariëren.
 # ---------------------------------------------------------------------------
 FEEDS = [
-    # --- WHO -------------------------------------------------------------
-    {"label": "WHO News",             "cat": "who",
+    # --- WHO ---------------------------------------------------------------
+    {"label": "WHO News",                  "cat": "who",
      "url": "https://www.who.int/rss-feeds/news-english.xml"},
     {"label": "WHO Disease Outbreak News", "cat": "who",
      "url": "https://www.who.int/feeds/entity/csr/don/en/rss.xml"},
-    {"label": "WHO Alert",            "cat": "who",
+    {"label": "WHO Alert",                 "cat": "who",
      "url": "https://www.google.com/alerts/feeds/07358569115421849873/153340034560442073"},
+    {"label": "UN News Health",            "cat": "who",
+     "url": "https://news.un.org/feed/subscribe/en/news/topic/health/feed/rss.xml"},
 
-    # --- Outbreak / ProMED ------------------------------------------------
-    {"label": "ProMED",               "cat": "promed",
+    # --- Outbreak / surveillance -------------------------------------------
+    {"label": "ProMED",                    "cat": "promed",
      "url": "https://www.google.com/alerts/feeds/07358569115421849873/14881210468558991559"},
-    {"label": "CIDRAP",               "cat": "promed",
+    {"label": "CIDRAP",                    "cat": "promed",
      "url": "https://www.cidrap.umn.edu/news/rss.xml"},
+    {"label": "Eurosurveillance",          "cat": "promed",
+     "url": "https://www.eurosurveillance.org/rss/current.xml"},
 
-    # --- Health emergencies ------------------------------------------------
-    {"label": "Health Emergency",     "cat": "emerg",
+    # --- Health emergencies --------------------------------------------------
+    {"label": "Health Emergency",          "cat": "emerg",
      "url": "https://www.google.com/alerts/feeds/07358569115421849873/3291854287981540699"},
-    {"label": "ReliefWeb Health",     "cat": "emerg",
+    {"label": "ReliefWeb Health",          "cat": "emerg",
      "url": "https://reliefweb.int/updates/rss.xml?view=headlines"},
 
-    # --- Global health ------------------------------------------------------
-    {"label": "Global Health",        "cat": "global",
+    # --- Global health --------------------------------------------------------
+    {"label": "Global Health",             "cat": "global",
      "url": "https://www.google.com/alerts/feeds/07358569115421849873/5068632798327940500"},
-    {"label": "ECDC",                 "cat": "global",
+    {"label": "ECDC",                      "cat": "global",
      "url": "https://www.ecdc.europa.eu/en/rss"},
+    {"label": "Africa CDC",                "cat": "global",
+     "url": "https://africacdc.org/feed/"},
+    {"label": "Think Global Health",       "cat": "global",
+     "url": "https://www.thinkglobalhealth.org/rss.xml"},
 
-    # --- Journals ------------------------------------------------------------
-    {"label": "The Lancet",           "cat": "journal",
+    # --- AMR (eigen categorie) --------------------------------------------------
+    {"label": "CIDRAP Stewardship",        "cat": "amr",
+     "url": "https://www.cidrap.umn.edu/asp/rss.xml"},
+    {"label": "AMR Industry / news",       "cat": "amr",
+     "url": "https://www.news-medical.net/tag/feed/Antimicrobial-Resistance.aspx"},
+
+    # --- Journals ------------------------------------------------------------------
+    {"label": "The Lancet",                "cat": "journal",
      "url": "https://www.thelancet.com/rssfeed/lancet_online.xml"},
-    {"label": "Lancet Global Health", "cat": "journal",
+    {"label": "Lancet Global Health",      "cat": "journal",
      "url": "https://www.thelancet.com/rssfeed/langlo_online.xml"},
-    {"label": "BMJ",                  "cat": "journal",
+    {"label": "BMJ",                       "cat": "journal",
      "url": "https://www.bmj.com/rss/current.xml"},
+    {"label": "BMJ Global Health",         "cat": "journal",
+     "url": "https://gh.bmj.com/rss/current.xml"},
+    {"label": "PLOS Global Public Health", "cat": "journal",
+     "url": "https://journals.plos.org/globalpublichealth/feed/atom"},
 
-    # --- Policy ---------------------------------------------------------------
-    {"label": "Health Policy Watch",  "cat": "policy",
+    # --- Policy / governance -----------------------------------------------------------
+    {"label": "Health Policy Watch",       "cat": "policy",
      "url": "https://healthpolicy-watch.news/feed/"},
-    {"label": "Politico EU Health",   "cat": "policy",
+    {"label": "Geneva Health Files",       "cat": "policy",
+     "url": "https://genevahealthfiles.substack.com/feed"},
+    {"label": "Politico EU Health",        "cat": "policy",
      "url": "https://www.politico.eu/feed/?cat=96"},
+    {"label": "Euractiv Health",           "cat": "policy",
+     "url": "https://www.euractiv.com/sections/health-consumers/feed/"},
 
-    # --- News ------------------------------------------------------------------
-    {"label": "STAT News",            "cat": "news",
+    # --- News -------------------------------------------------------------------------------
+    {"label": "STAT News",                 "cat": "news",
      "url": "https://www.statnews.com/feed/"},
+    {"label": "Devex Global Health",       "cat": "news",
+     "url": "https://www.devex.com/news.rss"},
 ]
+
+
+# ---------------------------------------------------------------------------
+# Relevantiescore. Bepaalt welke 30 items de pagina laat zien.
+# Twee componenten: hoe global-health-gericht is de bron, en hoeveel
+# relevante termen staan er in titel (dubbel gewicht) en samenvatting.
+# Trefwoorden aanpassen aan je portefeuille is de makkelijkste manier om
+# de ribbon scherper te krijgen -- pas gerust deze twee tabellen aan.
+# ---------------------------------------------------------------------------
+BRONGEWICHT = {
+    "Health Policy Watch": 4, "Geneva Health Files": 4, "WHO News": 4,
+    "WHO Disease Outbreak News": 4, "Lancet Global Health": 4,
+    "Think Global Health": 4, "BMJ Global Health": 3, "WHO Alert": 3,
+    "PLOS Global Public Health": 3, "Africa CDC": 3, "UN News Health": 3,
+    "Global Health": 3, "Health Emergency": 3, "ReliefWeb Health": 2,
+    "Devex Global Health": 2, "ECDC": 2, "Eurosurveillance": 2,
+    "Politico EU Health": 2, "Euractiv Health": 2, "CIDRAP": 2,
+    "CIDRAP Stewardship": 2, "ProMED": 2, "AMR Industry / news": 2,
+    "The Lancet": 1, "BMJ": 1, "STAT News": 1,
+}
+
+TERMEN = {
+    # kern van de portefeuille
+    5: ["pandemic agreement", "pandemic treaty", "pabs", "igwg", "pandemisch",
+        "international health regulations", "world health assembly", "global health"],
+    3: ["who ", "world health organization", "antimicrobial resistance", " amr ",
+        "pandemic preparedness", "health security", "health emergency", "outbreak",
+        "one health", "universal health coverage", "health financing",
+        "global fund", "gavi", "unitaid", "wto trips", "equity", "low- and middle-income"],
+    2: ["vaccine", "epidemic", "surveillance", "cholera", "mpox", "measles", "polio",
+        "ebola", "influenza", "tuberculosis", "malaria", "hiv", "climate and health",
+        "africa cdc", "ecdc", "hera", "eu health", "european commission",
+        "indonesia", "south africa", "kenya", "india", "china"],
+    # ruis: klinisch/commercieel VS-nieuws dat hier zelden toe doet
+    -3: ["earnings", "ipo", "stock", "shares", "acquisition", "medicare",
+         "medicaid", "obesity drug", "series a", "series b", "funding round"],
+}
+
+
+def score_item(item, feed_label: str) -> int:
+    s = BRONGEWICHT.get(feed_label, 1)
+    titel = (item.get("title") or "").lower()
+    tekst = (item.get("summary") or "").lower()
+    for gewicht, woorden in TERMEN.items():
+        for w in woorden:
+            if w in titel:
+                s += gewicht * 2          # titel telt dubbel
+            elif w in tekst:
+                s += gewicht
+    return s
 
 
 def strip_html(raw: str) -> str:
@@ -168,6 +244,7 @@ def harvest(feed) -> tuple[list, str]:
             "date":    iso(e),
             "summary": summary[:300],
         })
+        items[-1]["score"] = score_item(items[-1], feed["label"])
     if not items:
         raise ValueError("entries gevonden maar geen bruikbare titel/link")
     return items, f"{len(items)} items"
@@ -180,6 +257,35 @@ def load_previous() -> list:
         return json.loads(OUT.read_text()).get("items", [])
     except Exception:
         return []
+
+
+def append_archive(items) -> int:
+    """Append-only dagboek van alles wat langskwam. Dedupe op URL, zodat een
+    item dat drie dagen in een feed blijft staan maar één regel krijgt.
+    utf-8-sig omdat Excel anders de accenten sloopt."""
+    cols = ["datum_gezien", "gepubliceerd", "categorie", "bron", "feed", "titel", "url"]
+    seen = set()
+    if ARCHIVE.exists():
+        try:
+            with ARCHIVE.open(newline="", encoding="utf-8-sig") as f:
+                for row in csv.DictReader(f):
+                    seen.add(row.get("url", ""))
+        except Exception as e:
+            print(f"  archief onleesbaar, begin opnieuw: {e}", file=sys.stderr)
+
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    nieuw = [i for i in items if i.get("url") and i["url"] not in seen]
+
+    write_header = not ARCHIVE.exists()
+    with ARCHIVE.open("a", newline="", encoding="utf-8-sig") as f:
+        w = csv.writer(f)
+        if write_header:
+            w.writerow(cols)
+        for i in nieuw:
+            w.writerow([today, (i.get("date") or "")[:10], i.get("cat", ""),
+                        i.get("src", ""), i.get("feed", ""), i.get("title", ""),
+                        i.get("url", "")])
+    return len(nieuw)
 
 
 def main() -> int:
@@ -228,7 +334,11 @@ def main() -> int:
         "items":     merged,
     }, ensure_ascii=False, indent=1))
 
+    ARCHIVE.parent.mkdir(parents=True, exist_ok=True)
+    toegevoegd = append_archive(fresh)
+
     print(f"\n{ok}/{len(FEEDS)} feeds OK -> {len(merged)} items in {OUT}")
+    print(f"archief: {toegevoegd} nieuwe regels in {ARCHIVE}")
     # Nooit falen op een kapotte bron: dan zou de workflow rood staan en de
     # oude feeds.json blijven hangen. Alleen falen als er niets overblijft.
     return 0 if merged else 1
