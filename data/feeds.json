@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-31T08:08:06+00:00",
+ "generated": "2026-08-31T08:13:23+00:00",
  "feeds_ok": 10,
  "feeds_tot": 26,
  "status": {
@@ -90,7 +90,7 @@
   },
   "BMJ": {
    "ok": false,
-   "msg": "HTTPError: HTTP Error 404: Not Found",
+   "msg": "HTTPError: HTTP Error 429: Too Many Requests",
    "cat": "journal"
   },
   "BMJ Global Health": {
