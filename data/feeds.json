@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-31T07:24:08+00:00",
+ "generated": "2026-08-31T07:26:53+00:00",
  "feeds_ok": 8,
  "feeds_tot": 15,
  "status": {
@@ -60,7 +60,7 @@
   },
   "BMJ": {
    "ok": false,
-   "msg": "HTTPError: HTTP Error 404: Not Found",
+   "msg": "HTTPError: HTTP Error 429: Too Many Requests",
    "cat": "journal"
   },
   "Health Policy Watch": {
