@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-07T23:37:45+00:00",
- "feeds_ok": 27,
+ "generated": "2026-09-08T04:51:11+00:00",
+ "feeds_ok": 25,
  "feeds_tot": 27,
  "status": {
   "WHO News": {
@@ -84,13 +84,13 @@
    "cat": "amr"
   },
   "The Lancet": {
-   "ok": true,
-   "msg": "12 items",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden",
    "cat": "journal"
   },
   "Lancet Global Health": {
-   "ok": true,
-   "msg": "12 items",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden",
    "cat": "journal"
   },
   "BMJ": {
@@ -140,6 +140,166 @@
   }
  },
  "items": [
+  {
+   "title": "Rosanne Cash postpones shows due to medical emergency - Entertainment Weekly",
+   "url": "https://ew.com/rosanne-cash-postpones-shows-due-to-medical-emergency-12110652",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-08T03:01:21+00:00",
+   "summary": "Rosanne Cash postpones shows due to medical emergency . Johnny Cash's eldest daughter, 71, still has several tour dates remaining this year. By.",
+   "score": 3
+  },
+  {
+   "title": "The vaginal microbiome may be an overlooked reservoir of antibiotic resistance",
+   "url": "https://www.news-medical.net/news/20260907/The-vaginal-microbiome-may-be-an-overlooked-reservoir-of-antibiotic-resistance.aspx",
+   "src": "AMR Industry / news",
+   "feed": "AMR Industry / news",
+   "cat": "amr",
+   "date": "2026-09-08T02:21:00+00:00",
+   "summary": "Researchers analyzed 1,957 vaginal metagenomic samples from 1,547 pregnant women and found that bacterial community structure was strongly associated with the diversity and distribution of clinically relevant antibiotic resistance genes. Lactobacillus crispatus-dominated communities carried comparat",
+   "score": 2
+  },
+  {
+   "title": "Ceuta crisis forces Europe’s migrant-rights groups to rethink their playbook",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNYVlsYkJseU1IbzlCWGRVWG9ncFlXM1EyWlZ4NkEteHhrSlJnd24zdmtrSkZ2ZmVwQl9iVGVTU1dMR1k0c3dRXzVRaGxuRXZfd1gwM25jY3M4WlUzU0dUakZVMkE4RDA2T3V4bDRINUUteVZtTXpVel82M3NOTDZKcFN0MTJON2tsQkdadExkTDFxRDB1aklNYjB6OVdZZUtLU1NSeUNVYm5ubWM2?oc=5",
+   "src": "politico.eu",
+   "feed": "Politico EU Health",
+   "cat": "policy",
+   "date": "2026-09-08T02:03:28+00:00",
+   "summary": "Ceuta crisis forces Europe’s migrant-rights groups to rethink their playbook politico.eu",
+   "score": 2
+  },
+  {
+   "title": "Rosanne Cash Postpones Shows Amid an \"Unforeseen Medical Emergency \"",
+   "url": "https://americansongwriter.com/rosanne-cash-postpones-shows-amid-an-unforeseen-medical-emergency/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-08T01:52:06+00:00",
+   "summary": "... medical emergency .” “She is recovering under her doctors' supervision, who have recommended a temporary restriction on travel and performing,” the ...",
+   "score": 6
+  },
+  {
+   "title": "Knife-wielding patient shot multiple times by security at Texas hospital, police say - ABC7 Chicago",
+   "url": "https://abc7chicago.com/story/houston-texas-shooting-knife-wielding-patient-shot-multiple-times-security-memorial-hermann-city-medical-center-police-say/19804178/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-08T01:22:25+00:00",
+   "summary": "There was a Houston, Texas shooting. A knife-wielding patient was shot multiple times by security at Memorial Hermann Memorial City Medical Center ...",
+   "score": 3
+  },
+  {
+   "title": "3 Johns Hopkins hospitals' emergency departments temporarily closed to EMS",
+   "url": "https://www.thebanner.com/community/local-news/johns-hopkins-health-system-hospitals-code-black-5VIMIYXNJVFDLH73YJ6T2CBDAE/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-08T01:11:15+00:00",
+   "summary": "Three hospitals within the Johns Hopkins Health System were under “Code Black” status on Monday, Sept. 7.",
+   "score": 3
+  },
+  {
+   "title": "Burnout isn't new: How 18th-century farming set the stage for modern worker exhaustion",
+   "url": "https://www.cbc.ca/news/canada/london/burnout-isn-t-new-how-18th-century-farming-set-the-stage-for-modern-worker-exhaustion-9.7328400",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-08T01:07:40+00:00",
+   "summary": "Nathan TeBokkel: The World Health Organization defines it as a state of vital exhaustion. It's a kind of detachment from your current surroundings ...",
+   "score": 6
+  },
+  {
+   "title": "Adapting care to an evolving Ebola outbreak in the Democratic Republic of the Congo",
+   "url": "https://afro.who.int/countries/democratic-republic-of-congo/news/adapting-care-evolving-ebola-outbreak-democratic-republic-congo",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-08T00:22:20+00:00",
+   "summary": "Bunia—When Dr Patrick Oparpio, a gynaecologist in Bunia, Ituri Province, Democratic Republic of the Congo, began to experience symptoms like those ...",
+   "score": 13
+  },
+  {
+   "title": "Rosanne Cash Postpones Shows Due to an 'Unexpected Medical Emergency ' - People.com",
+   "url": "https://people.com/rosanne-cash-postpones-shows-unexpected-medical-emergency-12110570",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-07T23:50:51+00:00",
+   "summary": "Rosanne Cash postponed three September shows after a medical emergency required her to limit travel and performing; Her management team made the ...",
+   "score": 3
+  },
+  {
+   "title": "Valley man looking for stranger who might have saved his life during a medical emergency",
+   "url": "https://www.youtube.com/watch?v=fURhuAucbH8",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-07T23:48:56+00:00",
+   "summary": "Ahwatukee man is looking for a person who might have saved his life as he still recovers from a heart attack.",
+   "score": 9
+  },
+  {
+   "title": "Institute for Global Health MPhil/PhD | Study at UCL - University College London",
+   "url": "https://www.ucl.ac.uk/study/prospective-students/graduate/courses/institute-global-health-mphilphd",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-07T23:40:51+00:00",
+   "summary": "Our MPhil/PhD at the UCL Institute for Global Health offers students from a range of backgrounds the opportunity to explore topics within a broad ...",
+   "score": 13
+  },
+  {
+   "title": "Global Health DrPH | Study at UCL - University College London",
+   "url": "https://www.ucl.ac.uk/study/prospective-students/graduate/courses/global-health-drph",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-07T23:40:50+00:00",
+   "summary": "Global Health DrPH. This practice-focused course integrates training in research, policy and leadership. It equips you with advanced analytical and ...",
+   "score": 13
+  },
+  {
+   "title": "Johnny Cash's daughter Rosanne Cash postpones shows due to 'unforseen medical emergency '",
+   "url": "https://pagesix.com/2026/09/07/entertainment/johnny-cashs-daughter-roseanne-cash-postpones-shows-due-to-unforseen-medical-emergency/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-07T23:28:49+00:00",
+   "summary": "Rosanne Cash, the eldest daughter of Johnny Cash, postponed a trio of concert dates due to an \"unexpected medical emergency \" on Monday.",
+   "score": 3
+  },
+  {
+   "title": "Two deaths reported at Burning Man event, organizers say - KLTV.com",
+   "url": "https://www.kltv.com/2026/09/07/two-deaths-reported-burning-man-event-organizers-say/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-07T23:09:16+00:00",
+   "summary": "The Burning Man Project announced the deaths of two people at the 2026 event in the Black Rock Desert.",
+   "score": 3
+  },
+  {
+   "title": "Nearly 1.7 million deaths linked to second-hand smoke in 2023, study finds - France 24",
+   "url": "https://www.france24.com/en/health/20260907-second-hand-smoke-1-7-million-deaths",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-07T23:06:14+00:00",
+   "summary": "Researchers found second-hand smoke remained a major global health risk, with no safe level of exposure. Issued on: 08/09/2026 - 00:53. 2 min ...",
+   "score": 8
+  },
+  {
+   "title": "Wealth redistribution policies to mitigate the impact of development assistance defunding",
+   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00975-X/fulltext?rss=yes",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-07T22:49:08+00:00",
+   "summary": "The implementation of wealth redistribution policies proposed in recent high-level international agreements could mitigate the health consequences of ...",
+   "score": 3
+  },
   {
    "title": "Ebola disease outbreak in the Democratic Republic of the Congo",
    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcjUwMFo1WUtEN0t1RFpuaUh5N0c5UGFOSW1oVGZZbDZFLXYzbUI2MFJmdS0wM294ZDliYXo5dEU1Nk9rOHpOMlJITWpBQmRRV2pJczFTSVg2SmRyNU8tTVZrMGlhcFZuTXhpNW82ZHlzVjZ6SGlCRFpVNmdkdnotUU83dDU0S0pq?oc=5",
@@ -191,16 +351,6 @@
    "score": 1
   },
   {
-   "title": "[Articles] Wealth redistribution policies to mitigate the impact of development assistance defunding: a retrospective evaluation and forecasting analysis up to 2030",
-   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00975-X/fulltext?rss=yes",
-   "src": "The Lancet",
-   "feed": "The Lancet",
-   "cat": "journal",
-   "date": "2026-09-07T22:30:00+00:00",
-   "summary": "The implementation of wealth redistribution policies proposed in recent high-level international agreements could mitigate the health consequences of the current ODA defunding crisis, avert millions of deaths, and support the achievement of the UN Sustainable Development Goals, particularly those re",
-   "score": 1
-  },
-  {
    "title": "CTA Red Line trains running again between Garfield, 95th after person dies on tracks, fire ...",
    "url": "https://www.cbsnews.com/chicago/news/cta-red-line-trains-not-running-between-garfield-95th-medical-emergency/",
    "src": "Health Emergency",
@@ -219,6 +369,16 @@
    "date": "2026-09-07T22:20:27+00:00",
    "summary": "For this year's International Day of Women and Girls in Science, we had the privilege of speaking with Dr. Rella Zoleko Manego, clinician-scientist at ...",
    "score": 19
+  },
+  {
+   "title": "Man airlifted with serious injuries after medical emergency while driving tractor - WZZM 13",
+   "url": "https://www.wzzm13.com/video/news/local/man-airlifted-with-serious-injuries-after-medical-emergency-while-driving-tractor/69-99c7a661-34f2-4b20-9c4a-68519e7619b9",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-07T22:18:42+00:00",
+   "summary": "Man airlifted with serious injuries after medical emergency while driving tractor · Download the 13 ON YOUR SIDE News - WZZM App.",
+   "score": 3
   },
   {
    "title": "Department of Community & Health Systems Science - King's College London",
@@ -249,6 +409,16 @@
    "date": "2026-09-07T21:50:57+00:00",
    "summary": "Rosanne Cash, the eldest daughter of Johnny Cash, is hitting pause on the road after an unexpected medical emergency ... forcing her to postpone ...",
    "score": 3
+  },
+  {
+   "title": "Revealed: Berlin's plan for 'sidelined' EU foreign service",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaXRkNGVnTzRQeGY3d3diYmZoajRvYWFiWi1HYktTOTgxNy1uMHFPYmduVjJVZ1pveXdibC01dXQ2OVdCb3JXX1ZKWEotekkwWTBPREVIY0VoamVYZEdLYzZsVE5meWwzM0lrZm1uQUdpQ21pNFZKclM5ZFpYZWRvdFRXVUJOb3R1bU02Xw?oc=5",
+   "src": "euractiv.com",
+   "feed": "Euractiv Health",
+   "cat": "policy",
+   "date": "2026-09-07T21:50:13+00:00",
+   "summary": "Revealed: Berlin's plan for 'sidelined' EU foreign service euractiv.com",
+   "score": 2
   },
   {
    "title": "Borderline low hemoglobin levels, usually considered normal, are linked to a higher risk of death",
@@ -801,6 +971,16 @@
    "score": 8
   },
   {
+   "title": "AI: Türk urges action before it becomes an ‘existential risk to humanity’",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5SN3ZrbWZFU1loMzlZN1N0dlJyaXpWWm5hc3A1QXB5d0tWdGpvRFo1ZlY5U20wMzVpd1Z0eG9rUWtyc3d5YjhpLVl3LTJYMlRUUzk5bTRFRQ?oc=5",
+   "src": "UN News",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-09-07T14:30:48+00:00",
+   "summary": "AI: Türk urges action before it becomes an ‘existential risk to humanity’ UN News",
+   "score": 3
+  },
+  {
    "title": "Asan Medical Center rolls out VR paediatric emergency training and more briefs",
    "url": "https://www.healthcareitnews.com/news/asia/asan-medical-center-rolls-out-vr-paediatric-emergency-training-and-more-briefs",
    "src": "Health Emergency",
@@ -889,6 +1069,16 @@
    "date": "2026-09-07T13:43:23+00:00",
    "summary": "Health officials say the outbreak stems from gaps in the national ... medical emergency should be declared. Doctors also report a rise in ...",
    "score": 13
+  },
+  {
+   "title": "Le Pen backs tobacco retailers as Europe pushes for tax hikes",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSEhScVA2d05ub19zOGRkb1Z3eE5IbEczSC03YlZmeUZ5WldVTnFHbjlrOWJuZ0lRWjNydllqOHJBSl9PZVpTbEhUWDRwUEVqaVFpVVhxdmxaR3BWMWZ2cWwzdFZKc0U3SFpXMjVfeXBjQVM5dWVQY1RwYkR4OERaS2k1V3hyZHFEWWxZeDZqa1lsVnRnZ293?oc=5",
+   "src": "euractiv.com",
+   "feed": "Euractiv Health",
+   "cat": "policy",
+   "date": "2026-09-07T13:41:23+00:00",
+   "summary": "Le Pen backs tobacco retailers as Europe pushes for tax hikes euractiv.com",
+   "score": 2
   },
   {
    "title": "Could a hospital visit cost more than your holiday? - Zurich Insurance Group",
@@ -3461,6 +3651,16 @@
    "score": 3
   },
   {
+   "title": "Putin signs off on 72-hour ceasefire with Kyiv as US envoys visit",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUnZWNkhOYmFBbGc3a3BISjFmVHk1RUxTQU90LWh5ampZQ1diOFF4ZDljRmtYaWFxMTMwUF92enVHb0hHVk5lVnRRNU4xcUt2dTdIOTVVTG14T1c5MEdxOTVoNmtOQzBRUnNlODNWZ2lHcWZicEpRNnN4V0hGZHllb3Z6SEYyMHIzUHUyZldOZHBxUmhyd2tWZWlDUjVkUDE2elBj?oc=5",
+   "src": "politico.eu",
+   "feed": "Politico EU Health",
+   "cat": "policy",
+   "date": "2026-09-05T15:16:00+00:00",
+   "summary": "Putin signs off on 72-hour ceasefire with Kyiv as US envoys visit politico.eu",
+   "score": 2
+  },
+  {
    "title": "UCLA Faculty Bulletin Board: Awards and honors",
    "url": "https://newsroom.ucla.edu/dept/faculty/ucla-faculty-bulletin-board-awards-and-honors-sept-4-2026",
    "src": "Global Health",
@@ -3569,16 +3769,6 @@
    "date": "2026-09-05T14:18:33+00:00",
    "summary": "The high court denied the defense's emergency request, leading Sullivan to declare a mistrial. ... health and the care available to women after ...",
    "score": 3
-  },
-  {
-   "title": "Putin signs off on 72-hour ceasefire with Kyiv as US envoys visit",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUnZWNkhOYmFBbGc3a3BISjFmVHk1RUxTQU90LWh5ampZQ1diOFF4ZDljRmtYaWFxMTMwUF92enVHb0hHVk5lVnRRNU4xcUt2dTdIOTVVTG14T1c5MEdxOTVoNmtOQzBRUnNlODNWZ2lHcWZicEpRNnN4V0hGZHllb3Z6SEYyMHIzUHUyZldOZHBxUmhyd2tWZWlDUjVkUDE2elBj?oc=5",
-   "src": "politico.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-09-05T14:17:52+00:00",
-   "summary": "Putin signs off on 72-hour ceasefire with Kyiv as US envoys visit politico.eu",
-   "score": 2
   },
   {
    "title": "RFK Jr. Sounds Alarm on Big Tech's Role in Children's Screen Addiction - YouTube",
@@ -3949,196 +4139,6 @@
    "date": "2026-09-05T07:07:34+00:00",
    "summary": "I-35 construction traffic complicates medical emergency , work commute. TxDOT said overnight closures are needed for bridge construction and ...",
    "score": 3
-  },
-  {
-   "title": "National / International Consultancy to Develop the Costed National Community Health Strategy (NCHS) 2027-2031 & Operational Plan Zambia, Lusaka (office based) 3.5 months (595548)",
-   "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxQZ2N6VVdCQlNsVjdWRzdlVHE2eFA3czlGa05jdG1OdHM5SzJZaGV3aUVwMU1tamNxZERNbWFVMlhFT0VXR19uR20waU5qV1d6SzZ3N3pfbk9Wb2lZaEpia09qN281Z1JlVXNMQms1VVFVTzJZQ2cwUXByUS1aX08ybWdBZ05nM1hSNmVaU0EycUVweEliSDNuZWZndkJORWZ5RlExYm9NLUdqdUx2QXF0ZUJrZFluYzluamV2dkVFSlFSQWJjMXlFLXE4WjR5eE15VkFiWDJjSVE5amlQWHRERy14TlhES3JEYTF0WjAzbkVaRk5nYVg0TUpJYjlRa3lPSVE3Y1ZPZGdBd3JWcnl3QVdyTE9la29JbUJVNGN4Y01GWkRpUGZOX1l4aw?oc=5",
-   "src": "devex.com",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-09-05T07:00:00+00:00",
-   "summary": "National / International Consultancy to Develop the Costed National Community Health Strategy (NCHS) 2027-2031 & Operational Plan Zambia, Lusaka (office based) 3.5 months (595548) devex.com",
-   "score": 2
-  },
-  {
-   "title": "Health Wanted: Bioterrorism | Emory University - Rollins School of Public Health",
-   "url": "https://sph.emory.edu/news/health-wanted-bioterrorism",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-05T06:51:17+00:00",
-   "summary": "In Europe (and many other parts of the world ), eggs are not required to go through extensive washing, which leaves the protective coating intact. This ...",
-   "score": 3
-  },
-  {
-   "title": "India flags Abhayrab rabies vaccine batch as substandard, probes if spurious, document shows",
-   "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/india-flags-abhayrab-rabies-vaccine-batch-substandard-probes-if-spurious-2026-09-04/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-05T06:05:35+00:00",
-   "summary": "Global health authorities in the United States, Britain and Australia later issued ​alerts for travellers who may ​have received the vaccine in ⁠India ...",
-   "score": 19
-  },
-  {
-   "title": "Devex on Instagram: \"AI is moving quickly into global health — but scaling it responsibly is a ...",
-   "url": "https://www.instagram.com/p/Dc0SHCgiXjv/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-05T05:27:23+00:00",
-   "summary": "https://www.biihealth.us/ai- health -connect/⁣ ⁣ Nawaf Alghamdi, Director of Data and Artificial Intelligence at the Council of Health Insurance, ...",
-   "score": 13
-  },
-  {
-   "title": "The Application of Pursed-Lip Breathing to Increase Tidal Volume in Patients with Pleural ...",
-   "url": "https://jurnal2.globalhealthsciencegroup.com/index.php/IJGHR/article/view/2672",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-05T04:39:36+00:00",
-   "summary": "... Global Health Research: Vol. 8 No. 2 (2026): Indonesian Journal of Global Health Research; April 2026. Similar Articles. Lilik Sriwiyati, Abu Bakar ...",
-   "score": 10
-  },
-  {
-   "title": "Would you let America back into the world health organization? : r/publichealth - Reddit",
-   "url": "https://www.reddit.com/r/publichealth/comments/1w7358i/would_you_let_america_back_into_the_world_health/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-05T04:38:11+00:00",
-   "summary": "I work in the global health space, the world hasn't changed its opinion of the US's public health institutions. It knows the difference between ...",
-   "score": 14
-  },
-  {
-   "title": "Laguna Beach residents push to keep emergency room open as Providence plans hospital changes",
-   "url": "https://abc7.com/story/laguna-beach-residents-push-keep-emergency-room-open-providence-mission-hospital-plans-changes/19792037/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-05T04:32:38+00:00",
-   "summary": "Residents say losing the emergency department could have serious consequences for people experiencing medical emergencies , particularly in a ...",
-   "score": 3
-  },
-  {
-   "title": "Man suffers medical emergency and dies at Burning Man festival - LA Times",
-   "url": "https://www.latimes.com/california/story/2026-09-04/burning-man-attendee-died-this-week",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-05T04:16:50+00:00",
-   "summary": "A man in his mid-50s died at Burning Man this week after suffering a medical emergency , according to festival organizers.",
-   "score": 3
-  },
-  {
-   "title": "Aging With HIV: Global Report Highlights the Need to Prepare Health Systems - POZ",
-   "url": "https://www.poz.com/article/aging-hiv-global-report-highlights-need-prepare-health-systems",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-05T04:10:49+00:00",
-   "summary": "Healthcare workers may be less likely to discuss sexual health , recommend testing or offer prevention options such as pre-exposure prophylaxis, or ...",
-   "score": 7
-  },
-  {
-   "title": "Mayor Sheffield signs Executive Order declaring Local State of Emergency for area ... - City of Detroit",
-   "url": "https://detroitmi.gov/news/mayor-sheffield-signs-executive-order-declaring-local-state-emergency-area-east-side-impacted",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-05T04:04:24+00:00",
-   "summary": "As of Friday, September 4, 2026, there are continuing threats to the public health , safety, and welfare, as well as property damage in the Affected ...",
-   "score": 3
-  },
-  {
-   "title": "Microplastics transport toxins and antibiotic resistance across ecosystems",
-   "url": "https://www.news-medical.net/news/20260904/Microplastics-transport-toxins-and-antibiotic-resistance-across-ecosystems.aspx",
-   "src": "AMR Industry / news",
-   "feed": "AMR Industry / news",
-   "cat": "amr",
-   "date": "2026-09-05T03:51:00+00:00",
-   "summary": "Microplastics are often viewed as pollutants in their own right, but their environmental impact may extend far beyond the plastic particles themselves.",
-   "score": 2
-  },
-  {
-   "title": "Idaho Supreme Court rules state officials must re-write abortion initiative ballot statements",
-   "url": "https://idahocapitalsun.com/2026/09/04/idaho-supreme-court-rules-state-officials-must-re-write-abortion-initiative-ballot-statements/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-05T03:42:29+00:00",
-   "summary": "... medical emergency , and provide liability protections for healthcare providers.” “A NO vote would make no change to Idaho's current law, which ...",
-   "score": 3
-  },
-  {
-   "title": "Burning Man attendee dies at festival - NBC News",
-   "url": "https://www.nbcnews.com/news/us-news/burning-man-attendee-dies-festival-grounds-rcna596203",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-05T03:32:06+00:00",
-   "summary": "The festivalgoer was described as being in his mid-50s and had a medical emergency at the event, it said in a statement. He “immediately received ...",
-   "score": 3
-  },
-  {
-   "title": "Why Being There Matters: Fogarty Q&A Highlights Benjamin Chi's Global Health Journey",
-   "url": "https://globalhealth.unc.edu/2026/09/why-being-there-matters-fogarty-qa-highlights-benjamin-chis-global-health-journey/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-05T03:09:07+00:00",
-   "summary": "Chi, MD, MSc, reflected on the experiences that shaped his career in global health and the lessons he learned from spending more than a decade living ...",
-   "score": 13
-  },
-  {
-   "title": "Innovations in antibiotic stewardship programs | Springer Nature Link",
-   "url": "https://link.springer.com/collections/adeggagagj",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-05T03:06:31+00:00",
-   "summary": "BMC Global and Public Health is calling for submissions to our Collection on the rise of antimicrobial resistance (AMR) and how it poses a ...",
-   "score": 6
-  },
-  {
-   "title": "Board of County Commissioners launches the month of September with four proclamations",
-   "url": "https://multco.us/news/board-county-commissioners-launches-month-september-four-proclamations",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-05T02:57:37+00:00",
-   "summary": "... Emergency Preparedness Month and National Recovery Month. They also ... Health Services Administration : health , home, community and purpose.",
-   "score": 3
-  },
-  {
-   "title": "News Release – DOH to Conduct Emergency Preparedness Survey in West Hawaiʻi Communities",
-   "url": "https://governor.hawaii.gov/main/news-release-doh-to-conduct-emergency-preparedness-survey-in-west-hawai%CA%BBi-communities/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-05T02:51:45+00:00",
-   "summary": "STATE OF HAWAIʻI KA MOKU ʻĀINA O HAWAIʻI JOSH GREEN, M.D. GOVERNOR KE KIAʻĀINA DEPARTMENT OF HEALTH KA ʻOIHANA OLAKINO KENNETH S. FINK, MD, MGA, ...",
-   "score": 3
-  },
-  {
-   "title": "'Deadliest Catch': Jake Anderson Medical Emergency as Serious Infection Spreads Among Crew",
-   "url": "https://www.tvinsider.com/1284460/deadliest-catch-jake-anderson-medical-emergency-as-serious-infection-spreads-among-crew/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-05T02:48:59+00:00",
-   "summary": "Sig Hansen and his Northwestern crew battled severe storms and challenging conditions. When it comes to a docuseries or reality TV, the focus is ...",
-   "score": 3
-  },
-  {
-   "title": "Heat wave forces school evacuation, triggers health emergency at Carter Middle School",
-   "url": "https://www.wbir.com/video/news/local/knoxville/heat-wave-forces-school-evacuation-triggers-health-emergency-at-carter-middle-school/51-62e32ca2-da32-42da-a946-f72d3aaa3321",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-05T02:16:58+00:00",
-   "summary": "Heat wave forces school evacuation, triggers health emergency at Carter Middle School · Download the Knoxville News from WBIR App.",
-   "score": 9
   }
  ]
 }
