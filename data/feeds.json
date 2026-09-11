@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-10T22:41:03+00:00",
+ "generated": "2026-09-11T01:14:59+00:00",
  "feeds_ok": 27,
  "feeds_tot": 27,
  "status": {
@@ -20,7 +20,7 @@
   },
   "UN News Health": {
    "ok": true,
-   "msg": "12 items (via kandidaat 3)",
+   "msg": "12 items",
    "cat": "who"
   },
   "ProMED": {
@@ -95,12 +95,12 @@
   },
   "BMJ": {
    "ok": true,
-   "msg": "6 items (via kandidaat 2)",
+   "msg": "12 items (via kandidaat 3)",
    "cat": "journal"
   },
   "BMJ Global Health": {
    "ok": true,
-   "msg": "4 items",
+   "msg": "12 items (via kandidaat 3)",
    "cat": "journal"
   },
   "PLOS Global Public Health": {
@@ -141,6 +141,76 @@
  },
  "items": [
   {
+   "title": "Ebola disease outbreak in the Democratic Republic of the Congo",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcjUwMFo1WUtEN0t1RFpuaUh5N0c5UGFOSW1oVGZZbDZFLXYzbUI2MFJmdS0wM294ZDliYXo5dEU1Nk9rOHpOMlJITWpBQmRRV2pJczFTSVg2SmRyNU8tTVZrMGlhcFZuTXhpNW82ZHlzVjZ6SGlCRFpVNmdkdnotUU83dDU0S0pq?oc=5",
+   "src": "European Centre for Disease Prevention and Control (ECDC)",
+   "feed": "WHO Disease Outbreak News",
+   "cat": "who",
+   "date": "2026-09-11T00:11:11+00:00",
+   "summary": "Ebola disease outbreak in the Democratic Republic of the Congo European Centre for Disease Prevention and Control (ECDC)",
+   "score": 16
+  },
+  {
+   "title": "Mental disorders: Updated trends from the GBD 2023 | Institute for Health Metrics and Evaluation",
+   "url": "https://www.healthdata.org/news-events/newsroom/videos/mental-disorders-updated-trends-gbd-2023",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-11T00:05:03+00:00",
+   "summary": "Let's explore the latest Global Burden of Disease study, GBD 2023, which includes the most up to date estimates of mental health burden worldwide. In ...",
+   "score": 3
+  },
+  {
+   "title": "Offline: The tragic fallacy of global health reform - The Lancet",
+   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01853-2/fulltext",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-10T22:56:24+00:00",
+   "summary": "According to the Accra Reset, “The initiative seeks to advance a new architecture for development and global health grounded in sovereignty, ...",
+   "score": 13
+  },
+  {
+   "title": "Global science to promote cooperation and understanding - The Lancet",
+   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01697-1/fulltext",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-10T22:56:24+00:00",
+   "summary": "Multinational collaborations have created a shared understanding of most diseases across populations. The Global Burden of Disease Study made health ...",
+   "score": 3
+  },
+  {
+   "title": "Twenty-five years after 9/11, how public servants stood up to protect and rebuild America",
+   "url": "https://ourpublicservice.org/know-the-facts/blog/9-11-25th-anniversary-public-servants-protect-rebuild-america",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-10T22:37:07+00:00",
+   "summary": "Preparing the nation for biological threats and public health emergencies ... 11, the NPS oversaw the deployment of emergency medical “push packs” to ...",
+   "score": 3
+  },
+  {
+   "title": "Lancet publication marks important advance in influenza prevention for older adults",
+   "url": "https://newsroom.csl.com/2026-09-10-Lancet-Publication-Marks-Important-Advance-in-Influenza-Prevention-for-Older-Adults",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-10T22:35:13+00:00",
+   "summary": "... world evidence. This publication provides the first large-scale evaluation of ... doi:10.1080/14760584.2026.2667732. 4 World Health Organization .",
+   "score": 10
+  },
+  {
+   "title": "Voters to decide whether places of worship should stay open - Spectrum News",
+   "url": "https://spectrumnews1.com/wi/milwaukee/news/2026/09/10/church-religion-covid-health",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-10T21:43:25+00:00",
+   "summary": "... health responses during future emergencies . At the outset of the pandemic, Gov. Tony Evers signed an emergency order halting mass gatherings of 10 ...",
+   "score": 3
+  },
+  {
    "title": "Vaccines Worked for Decades: Why Are Diseases Returning? - Medscape",
    "url": "https://www.medscape.com/viewarticle/vaccines-worked-decades-why-are-diseases-returning-2026a1000xk1",
    "src": "Global Health",
@@ -161,6 +231,16 @@
    "score": 6
   },
   {
+   "title": "MBTA bus crashes into several cars after driver suffers apparent medical emergency",
+   "url": "https://www.cbsnews.com/boston/video/mbta-bus-crashes-into-several-cars-after-driver-suffers-apparent-medical-emergency/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-10T21:31:15+00:00",
+   "summary": "An MBTA bus driver appears to have suffered a medical emergency , causing him to crash into several cars in Medford, Massachusetts.",
+   "score": 3
+  },
+  {
    "title": "MBTA bus slams into cars after driver suffers apparent medical emergency in Medford",
    "url": "https://www.cbsnews.com/boston/news/medford-fellsway-mbta-bus-crash/",
    "src": "Health Emergency",
@@ -169,6 +249,16 @@
    "date": "2026-09-10T21:17:27+00:00",
    "summary": "An MBTA bus driver appears to have suffered a medical emergency Thursday morning, causing him to crash into several cars.",
    "score": 3
+  },
+  {
+   "title": "Finance and Operations Consultant, STRIDES Ebola Outbreak Response, Global Health ...",
+   "url": "https://path.wd1.myworkdayjobs.com/en-US/External/job/Democratic-Republic-of-the-Congo-Remote/Finance-and-Operations-Consultant--STRIDES-Ebola-Outbreak-Response--Global-Health-Programs--GHP-_JR2792",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-10T21:16:39+00:00",
+   "summary": "PATH current employees - please log in and apply Here PATH is a global nonprofit dedicated to achieving health equity. With more than 40 years of ...",
+   "score": 26
   },
   {
    "title": "Two Mount Sinai Researchers Named Inaugural Cumming Global Fellows for Pandemic ...",
@@ -211,6 +301,16 @@
    "score": 16
   },
   {
+   "title": "Support us - Stanford Center for Innovation in Global Health",
+   "url": "https://globalhealth.stanford.edu/support-us-2/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-10T20:46:08+00:00",
+   "summary": "Sign up to learn more about news, events and opportunities with Stanford Global Health .",
+   "score": 13
+  },
+  {
    "title": "Cryptic Congressional Notification is Short on Details about Government-to ... - Emily Bass | Substack",
    "url": "https://emilysbass.substack.com/p/cryptic-congressional-notification",
    "src": "Global Health",
@@ -219,6 +319,16 @@
    "date": "2026-09-10T20:44:37+00:00",
    "summary": "The State Department's brief Congressional Notification1 for three government-to-government awards funded under the America First Global Health ...",
    "score": 8
+  },
+  {
+   "title": "San Francisco rents jump as mayor declares rent emergency - YouTube",
+   "url": "https://www.youtube.com/watch?v=Sn2RZIjQE6I",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-10T20:44:29+00:00",
+   "summary": "San Francisco rents jump as mayor declares rent emergency ... Go to channel Dr Sarah Jenkins || Senior Health and Nutrition · Taking ...",
+   "score": 3
   },
   {
    "title": "One month after the Colombia earthquake, PAHO/WHO continues to support response and ...",
@@ -281,6 +391,16 @@
    "score": 3
   },
   {
+   "title": "Why Alcohol Is the Forgotten Killer - Tom Frieden | Substack",
+   "url": "https://tomfrieden.substack.com/p/why-alcohol-is-the-forgotten-killer?utm_source=substack&utm_medium=email&utm_content=share&action=share",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-10T20:04:35+00:00",
+   "summary": "The World Health Organization's tobacco treaty requires governments to shield tobacco policy from industry interference. It prohibits meetings ...",
+   "score": 6
+  },
+  {
    "title": "STAT+: Right before midterms, Trump dangles $500 refunds for select ACA enrollees",
    "url": "https://www.statnews.com/2026/09/10/trump-affordable-care-act-refund-checks-who-is-eligible/?utm_campaign=rss",
    "src": "STAT News",
@@ -299,6 +419,16 @@
    "date": "2026-09-10T19:55:29+00:00",
    "summary": "The Global Health Advocacy Incubator changes policies to save lives.",
    "score": 13
+  },
+  {
+   "title": "Klapper Family Gift Invites Investment in the Transformative Power of Global Health Education",
+   "url": "https://www.ampathkenya.org/news-blog-feed/2026/9/10/klapper-family-gift-invites-investment-in-the-transformative-power-of-global-health-education",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-10T19:54:13+00:00",
+   "summary": "For generations of Indiana University medical trainees, an experience in Kenya has changed not only how they see the world , but how they see their ...",
+   "score": 17
   },
   {
    "title": "The Human Cost of US Aid Cuts Across the Arab World",
@@ -333,12 +463,12 @@
   {
    "title": "How I Became a Global Oncology Leader - ASCO Connection",
    "url": "https://connection.asco.org/do/how-i-became-global-oncology-leader",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
    "date": "2026-09-10T19:29:51+00:00",
-   "summary": "I was funded by the National Institutes of Health (NIH) Fogarty International Center as an international clinical research fellow, designing and ...",
-   "score": 3
+   "summary": "That work led to consulting for the World Health Organization , speaking at the Scientific Advisory Board of PEPFAR, and being tapped by the United ...",
+   "score": 6
   },
   {
    "title": "Global Scholar uses dance and music to raise funds to treat kids with cancer in Ghana",
@@ -489,16 +619,6 @@
    "date": "2026-09-10T18:33:23+00:00",
    "summary": "One bright spot, in Narra's painful summer. For stories about life in our changing world, subscribe to NPR's Global Health newsletter. NPR does not ...",
    "score": 12
-  },
-  {
-   "title": "Ebola disease outbreak in the Democratic Republic of the Congo",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcjUwMFo1WUtEN0t1RFpuaUh5N0c5UGFOSW1oVGZZbDZFLXYzbUI2MFJmdS0wM294ZDliYXo5dEU1Nk9rOHpOMlJITWpBQmRRV2pJczFTSVg2SmRyNU8tTVZrMGlhcFZuTXhpNW82ZHlzVjZ6SGlCRFpVNmdkdnotUU83dDU0S0pq?oc=5",
-   "src": "ecdc.europa.eu",
-   "feed": "WHO Disease Outbreak News",
-   "cat": "who",
-   "date": "2026-09-10T18:08:23+00:00",
-   "summary": "Ebola disease outbreak in the Democratic Republic of the Congo ecdc.europa.eu",
-   "score": 16
   },
   {
    "title": "Morris County Opens Public Safety Complex Expansion",
@@ -1309,6 +1429,16 @@
    "date": "2026-09-10T11:57:00+00:00",
    "summary": "According to the World Health Organization , air pollution has also been linked to a host of other health conditions. Because energy is generated ...",
    "score": 6
+  },
+  {
+   "title": "Basic Needs Consortium Manager, JWBG (Based in Jerusalem with travel to Gaza)",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNY19lMFFjWTJYWWJveDJlYmlQREp5UGZqZGR3N2Y3X1haTzA4NWFIalFzVE4zdjBNSUJ1cmhya0tvdEJNYnV1TkpQV1I2VmpmZGQtZG16UHBkZVhISXRxOFZpM1dRWlJGVU02UE9yQnIxNTR5dEstWU1ybWVwcU03d2JOMk1JczQxMWNxX3Z3VGVZVDJNazhpSVNLc2xWUQ?oc=5",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-09-10T11:50:12+00:00",
+   "summary": "Basic Needs Consortium Manager, JWBG (Based in Jerusalem with travel to Gaza) ReliefWeb",
+   "score": 2
   },
   {
    "title": "Oz says ‘AI-based avatars’ can help rural communities. Some leaders disagree",
@@ -3381,6 +3511,16 @@
    "score": 11
   },
   {
+   "title": "Senior Research Officer – MSNA – Global, based in Dakar",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWHdoT0tnTkxBUmRhR0RVMFk3eGFOUlh3Y0VUb0I3WXM0X2RSWTZYcWotRGhrUFRhdTVQMFZiZmJQSkJMTEU0aVNzWVlFbS1pVUNCVnphUkJSdWl3ZWtVZDhUdFZtRDh5dzRWVFd4N2ZhMlVYZnFHM0x0MHNPWWJkajVxbk94aU56?oc=5",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-09-09T10:24:44+00:00",
+   "summary": "Senior Research Officer – MSNA – Global, based in Dakar ReliefWeb",
+   "score": 2
+  },
+  {
    "title": "'Changing the Narrative on Suicide' - Preston City Council",
    "url": "https://www.preston.gov.uk/article/13644/Changing-the-Narrative-on-Suicide",
    "src": "WHO Alert",
@@ -3609,6 +3749,16 @@
    "date": "2026-09-09T07:03:40+00:00",
    "summary": "An undergraduate practicum in Kenya helped spark a lifelong interest in global public health . Since then, Nandita Perumal has worked across some ...",
    "score": 5
+  },
+  {
+   "title": "Acceptability, feasibility and perceived benefits of integrating mental health and psychosocial support (MHPSS) into disease outbreak response in Western Uganda: a qualitative proc",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5lSm9Sa19qR25xcUFDTEpxX2NQR1NvVW4tRU1naTNWUnY4UWZROWVvX0V1N0YwN05lTVlDRjFOVDRjbklORnZaZkplendmQnl2REtpZC1VTS1ZS3FibzhXNg?oc=5",
+   "src": "BMJ Public Health",
+   "feed": "BMJ",
+   "cat": "journal",
+   "date": "2026-09-09T07:00:00+00:00",
+   "summary": "Acceptability, feasibility and perceived benefits of integrating mental health and psychosocial support (MHPSS) into disease outbreak response in Western Uganda: a qualitative process evaluation study BMJ Public Health",
+   "score": 7
   },
   {
    "title": "Tobacco use can undermine fertility, UN health agency warns - the United Nations",
@@ -3988,156 +4138,6 @@
    "cat": "emerg",
    "date": "2026-09-08T21:55:59+00:00",
    "summary": "Rosanne Cash, eldest daughter of late country crooner Johnny Cash, has postponed three upcoming shows after suffering an \"unexpected medical emergency",
-   "score": 3
-  },
-  {
-   "title": "WHO says it needs 5,000 more healthworkers to tackle Ebola in DRC - eNCA",
-   "url": "https://www.enca.com/news/who-says-it-needs-5000-more-healthworkers-tackle-ebola-drc",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-08T21:54:49+00:00",
-   "summary": "NEW YORK - The World Health Organization (WHO) said on Tuesday it needed 5,000 extra health workers to help tackle the highly contagious Ebola ...",
-   "score": 16
-  },
-  {
-   "title": "Request for Proposals: Launchpad Funds - Coefficient Giving",
-   "url": "https://coefficientgiving.org/funds/global-health-wellbeing-opportunities/request-for-proposals-launchpad-funds/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-08T21:54:02+00:00",
-   "summary": "Our increased giving in global health and wellbeing is a temporary surge, with two objectives: to smooth funding and pull forward initiatives we ...",
-   "score": 8
-  },
-  {
-   "title": "Strengthening medicines safety and digital health across Southeast Asia - University College London",
-   "url": "https://www.ucl.ac.uk/engage/case-studies/2026/jul/strengthening-medicines-safety-and-digital-health-across-southeast-asia",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-08T21:53:16+00:00",
-   "summary": "Pharmacy Connect is strengthening the academic partnership between UCL School of Pharmacy, SingHealth and the Centre for Global Pharmacy at Duke- ...",
-   "score": 3
-  },
-  {
-   "title": "Fall 2026 registration open for Future Masters of Medicine sessions | Latrobe, PA",
-   "url": "https://www.stvincent.edu/news/2026/09/fall-2026-registration-open-for-future-masters-of-medicine-sessions.html",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-08T21:52:16+00:00",
-   "summary": "... World Health Organization now predicts will exceed 11 million by 2030. In the United States, the National Center for Health Workforce Analysis ...",
-   "score": 6
-  },
-  {
-   "title": "New faculty spotlight: Taylor Vogel-Bladt, DO | Newsroom - UNMC",
-   "url": "https://www.unmc.edu/newsroom/2026/09/08/new-faculty-spotlight-taylor-vogel-bladt-do/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-08T21:47:17+00:00",
-   "summary": "... Emergency Medicine, and attending physician, Nebraska Medicine & Bellevue Medical Center Emergency Departments. Professional interests: My ...",
-   "score": 3
-  },
-  {
-   "title": "Healthcare Failure Mode and Effect Analysis in nursing risk management for emergency ... - Nature",
-   "url": "https://www.nature.com/articles/s41598-026-70689-x",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-08T21:32:47+00:00",
-   "summary": "Spontaneous subarachnoid hemorrhage (sSAH) is a severe neurological emergency . The aim of this study was to evaluate whether Healthcare Failure ...",
-   "score": 3
-  },
-  {
-   "title": "Louisville opens first mental health crisis center - Spectrum News",
-   "url": "https://spectrumnews1.com/ky/louisville/news/2026/09/08/seven-counties-crisis-center",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-08T21:32:39+00:00",
-   "summary": "Louisville's first mental health crisis center is now open, offering walk-in help and a new option beyond jail or the emergency room.",
-   "score": 3
-  },
-  {
-   "title": "Wellston firefighter dies after medical emergency during Lincoln County grass fire",
-   "url": "https://www.newson6.com/tulsa-oklahoma-news/wellston-firefighter-dies-after-medical-emergency-during-lincoln-county-grass-fire",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-08T21:31:38+00:00",
-   "summary": "Wellston firefighter Joe Flake died after experiencing a medical emergency while fighting a large grass fire in Lincoln County.",
-   "score": 3
-  },
-  {
-   "title": "Paul Marsden - The future of global health partnerships - LinkedIn",
-   "url": "https://www.linkedin.com/posts/paul-marsden-4847192a_the-future-of-global-health-partnerships-activity-7502768647795294208-xeOV",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-08T21:27:29+00:00",
-   "summary": "A timely and insightful opinion piece by Ben Simms Margaret Caffrey Jim Campbell MOSES WASSWA MULIMIRA Titilola Banjoko Dr Navina Evans CBE …",
-   "score": 13
-  },
-  {
-   "title": "New Mobile Crisis vehicle expands behavioral health response in Broome County - WBNG",
-   "url": "https://www.wbng.com/2026/09/08/new-mobile-crisis-vehicle-expands-behavioral-health-response-broome-county/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-08T21:26:54+00:00",
-   "summary": "The expanded program took effect April 1 and includes increased staffing and response capacity for community-based behavioral health crisis ...",
-   "score": 3
-  },
-  {
-   "title": "Manager, Environmental Health & Safety in United States - Illinois - Abbott Jobs",
-   "url": "https://www.jobs.abbott/us/en/job/31160417/Manager-Environmental-Health-Safety",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-08T21:21:12+00:00",
-   "summary": "... number of people around the world live fuller lives through better health . WE'RE RECOGNIZED AROUND THE WORLD . img1. DOW JONES SUSTAINABILITY INDEX.",
-   "score": 3
-  },
-  {
-   "title": "STAT+: FDA names acting heads of drug and vaccine centers to permanent roles",
-   "url": "https://www.statnews.com/2026/09/08/fda-names-leaders-cder-cber-michael-davis-karim-mikhail/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-09-08T21:15:40+00:00",
-   "summary": "The moves bring stability to an agency that's been rocked by the exits of top leadership.",
-   "score": 5
-  },
-  {
-   "title": "DRC Races to 'Get Ahead of the Virus' - Africa Defense Forum",
-   "url": "https://adf-magazine.com/2026/09/drc-races-to-get-ahead-of-the-virus/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-08T20:59:28+00:00",
-   "summary": "The outbreak is now considered the fastest-growing one yet in the DRC, according to the World Health Organization (WHO), although the true extent ...",
-   "score": 9
-  },
-  {
-   "title": "Brown County inmate dies after medical emergency at jail, officials say - WLWT",
-   "url": "https://www.wlwt.com/article/investigation-inmate-death-medical-emergency-brown-county-jail/73645118",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-08T20:50:45+00:00",
-   "summary": "Officials are investigating after the death of an inmate following a medical emergency at the Brown County Jail.",
-   "score": 3
-  },
-  {
-   "title": "Utah Toddler and Family Grateful for the Flight Team That Saved Her Life | AHA",
-   "url": "https://www.aha.org/tellingthehospitalstory/stories/utah-toddler-and-family-grateful-flight-team-saved-her-life",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-08T20:49:36+00:00",
-   "summary": "... medical emergency for 3-year-old Estelle Santiago of Midway, Utah. In ... Health, which quickly organized a complex international medical transport.",
    "score": 3
   }
  ]
