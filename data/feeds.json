@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-12T22:25:07+00:00",
+ "generated": "2026-09-13T01:10:00+00:00",
  "feeds_ok": 27,
  "feeds_tot": 27,
  "status": {
@@ -20,7 +20,7 @@
   },
   "UN News Health": {
    "ok": true,
-   "msg": "12 items",
+   "msg": "12 items (via kandidaat 3)",
    "cat": "who"
   },
   "ProMED": {
@@ -100,7 +100,7 @@
   },
   "BMJ Global Health": {
    "ok": true,
-   "msg": "5 items",
+   "msg": "12 items (via kandidaat 3)",
    "cat": "journal"
   },
   "PLOS Global Public Health": {
@@ -141,6 +141,86 @@
  },
  "items": [
   {
+   "title": "Ricin confirmed at Hastings lofts, Pennock Hospital ED - WILX",
+   "url": "https://www.wilx.com/2026/09/13/ricin-confirmed-hastings-lofts-pennock-hospital-ed/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-13T00:16:40+00:00",
+   "summary": "Medical testing was offered to Tyden Lofts residents, staff, and responding emergency personnel concerned about potential exposure. Health officials ...",
+   "score": 3
+  },
+  {
+   "title": "Led Zeppelin tribute show scheduled for tonight cancelled due to medical emergency",
+   "url": "https://www.sootoday.com/local-news/led-zeppelin-tribute-show-scheduled-for-tonight-cancelled-due-to-medical-emergency-12772738",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-12T23:23:43+00:00",
+   "summary": "... medical emergency .' The Centre said that a further announcement would be made when they had more information. If you would like to apply to become ...",
+   "score": 3
+  },
+  {
+   "title": "Wellston firefighter honored after fatal medical emergency during wildfire - KOCO",
+   "url": "https://www.koco.com/article/wellston-firefighter-honored-joe-flake-fatal-medical-emergency-during-wildfire/73701714",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-12T23:17:51+00:00",
+   "summary": "... truck driver who became a firefighter to serve his community, was laid to rest Saturday after dying from a medical emergency during a wildfire.",
+   "score": 6
+  },
+  {
+   "title": "The Twin Towers came down in a cloud of toxic dust. Its health impact has lasted decades",
+   "url": "https://www.cnn.com/2026/09/12/us/twin-towers-9-11-dust-chemicals",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-12T23:08:58+00:00",
+   "summary": "The World Trade Center Health Program offers federal funding for the care of those with certain cancers and health conditions related to 9/11 exposure ...",
+   "score": 3
+  },
+  {
+   "title": "The Five Assumptions That Fail Hospitals During a Chemical Disaster - Global Biodefense",
+   "url": "https://globalbiodefense.com/2026/09/12/the-five-assumptions-that-fail-hospitals-during-a-chemical-disaster/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-12T22:55:53+00:00",
+   "summary": "New planning guidance from the Chemical Hazards Emergency Medical Management program (CHEMM), a resource maintained by the US Department of Health ...",
+   "score": 3
+  },
+  {
+   "title": "Brussels seeks French Guiana exemption from deforestation law",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSXBxRVh2YXZreVpoMkVtSU03RG5ETkhoNUZ4SzFoU2ttV29zd0pKZ3lHTlN0VkV2MkZHbmI0N1dPRjVvQXdPT1FoUzJGY3lHNXpDUkh1dndibzdYai1XVDREOUxvQnVDZVgtNEpsM1kxUGEtdzlSQ3dyUGgzWlZlQWoxb19MSkdDYk5xZWlMOTFMNW92SlZZ?oc=5",
+   "src": "euractiv.com",
+   "feed": "Euractiv Health",
+   "cat": "policy",
+   "date": "2026-09-12T22:44:54+00:00",
+   "summary": "Brussels seeks French Guiana exemption from deforestation law euractiv.com",
+   "score": 2
+  },
+  {
+   "title": "Treatment of Latent Tuberculosis in a Trice - Contagion Live",
+   "url": "https://www.contagionlive.com/view/treatment-of-latent-tuberculosis-in-a-trice",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-12T22:07:46+00:00",
+   "summary": "This new regimen has not been widely used despite the World Health Organization's support for it. With its short duration and comparable ...",
+   "score": 10
+  },
+  {
+   "title": "Officials, advocates seek funds to soften blow of rising healthcare costs - Maryland Matters",
+   "url": "https://marylandmatters.org/2026/09/11/officials-advocates-look-to-new-revenue-to-soften-blow-of-rising-healthcare-costs/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-12T22:05:01+00:00",
+   "summary": "... healthcare programs. “Climate changes, global warming hurts health ,” DeMarco said. “Sends people to the hospital, increases health costs … This ...",
+   "score": 3
+  },
+  {
    "title": "The Average Emergency Room Visit in Florida Lasts 2 Hours 44 Minutes",
    "url": "https://www.bocaratontribune.com/bocaratonnews/2026/09/the-average-emergency-room-visit-in-florida-lasts-2-hours-44-minutes/",
    "src": "Health Emergency",
@@ -159,6 +239,16 @@
    "date": "2026-09-12T21:51:43+00:00",
    "summary": "Physicians consider it a medical emergency . GLP-1 drugs can contribute ... Health. Copyright 2026 Nexstar Media Inc. All rights reserved. This ...",
    "score": 3
+  },
+  {
+   "title": "Colombia Plans to Start Aerial Spraying of Coca Crops Despite Health Worries",
+   "url": "https://www.nytimes.com/2026/09/11/world/americas/colombia-aerial-spraying-coca-crops.html",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-12T21:50:45+00:00",
+   "summary": "Colombia had used the herbicide glyphosate for years, but the government suspended the program in 2015 after the World Health Organization classified ...",
+   "score": 6
   },
   {
    "title": "Macroscope | As US leadership proves unreliable, Asia needs to start focusing on itself",
@@ -209,6 +299,46 @@
    "date": "2026-09-12T21:00:08+00:00",
    "summary": "Vasee was a true friend, collaborator and champion, and very much part of The Global Health Network. He was a driving force in this community from ...",
    "score": 13
+  },
+  {
+   "title": "Political parties unite against Labor's controversial veteran health cap | 9 News Australia",
+   "url": "https://www.youtube.com/watch?v=p6YiekimlkQ",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-12T20:51:53+00:00",
+   "summary": "... the world . #BREAKINGNEWS #9NEWS #AUSTRALIA. Political parties unite against Labor's controversial veteran health cap | 9 News Australia. @9NewsAUS21 ...",
+   "score": 3
+  },
+  {
+   "title": "Ava Van Gelder, MPH Global Health Science and Practice graduate from Tufts University ...",
+   "url": "https://www.reutersconnect.com/item/ava-van-gelder-mph-global-health-science-and-practice-graduate-from-tufts-university-school-of-medicine/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMjk3OTExNjU?lastViewed=dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMjk3OTExMzY&position=2",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-12T20:50:47+00:00",
+   "summary": "Ava Van Gelder, MPH Global Health Science and Practice graduate from Tufts University School of Medicine. Licensable picture: USA TODAY NETWORK.",
+   "score": 13
+  },
+  {
+   "title": "Exclusive: Luke Lindberg chosen to lead World Food Programme - Devex",
+   "url": "https://www.devex.com/news/exclusive-luke-lindberg-chosen-to-lead-world-food-programme-113293",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-12T20:48:41+00:00",
+   "summary": "Health · Food. Fullscreen extended menu. Devex logo ... Together, we're building the world's most influential community driving global progress.",
+   "score": 3
+  },
+  {
+   "title": "Exclusive: Luke Lindberg chosen to lead World Food Programme",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSWg4c09DMzRlSHdySWRhVEdlYUs5RU1GTDVzcThkaktCRWRkb0JhNkduLXR4UlhJM05ic2RzdUhhRWJ3UDZhaEx6WXh0QTFSQUN6cTdGSDRtY21RVTYxcjBVSjV5M3FDLVNHUnM1Y25GdktyNUNjbUxydGktSjlhWklfS2d5QzVvMFFDRkh2V29JeElEVUx2Uw?oc=5",
+   "src": "Devex",
+   "feed": "Devex Global Health",
+   "cat": "news",
+   "date": "2026-09-12T20:48:41+00:00",
+   "summary": "Exclusive: Luke Lindberg chosen to lead World Food Programme Devex",
+   "score": 2
   },
   {
    "title": "Employee at Woods of Terror in Greensboro dies following medical emergency",
@@ -299,16 +429,6 @@
    "date": "2026-09-12T19:47:33+00:00",
    "summary": "... health institutions, and international partners. By ... The launch of the database reflects a larger shift in global health preparedness.",
    "score": 16
-  },
-  {
-   "title": "Brussels seeks French Guiana exemption from deforestation law",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSXBxRVh2YXZreVpoMkVtSU03RG5ETkhoNUZ4SzFoU2ttV29zd0pKZ3lHTlN0VkV2MkZHbmI0N1dPRjVvQXdPT1FoUzJGY3lHNXpDUkh1dndibzdYai1XVDREOUxvQnVDZVgtNEpsM1kxUGEtdzlSQ3dyUGgzWlZlQWoxb19MSkdDYk5xZWlMOTFMNW92SlZZ?oc=5",
-   "src": "euractiv.com",
-   "feed": "Euractiv Health",
-   "cat": "policy",
-   "date": "2026-09-12T19:36:23+00:00",
-   "summary": "Brussels seeks French Guiana exemption from deforestation law euractiv.com",
-   "score": 2
   },
   {
    "title": "New Research Reveals How Seminal Fluid Actively Amplifies Mpox Infectivity",
@@ -409,6 +529,16 @@
    "date": "2026-09-12T18:33:33+00:00",
    "summary": "KFF Health News is a national newsroom that produces in-depth journalism about health ... Global Health · 'I've never seen anything like this' -- A U.S. ...",
    "score": 2
+  },
+  {
+   "title": "Beyond Insulin: Malawi Children's Daily Struggle With Type 1 Diabetes - AfricaBrief",
+   "url": "https://africabrief.substack.com/p/beyond-insulin-malawi-childrens-daily",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-12T18:26:49+00:00",
+   "summary": "Non-communicable diseases are also taking a growing toll, with World Health Organization statistics showing that NCDs account for 32 percent of deaths ...",
+   "score": 6
   },
   {
    "title": "The world's largest health and beauty retailer says AI will make shopping 'more human, not less'",
@@ -1561,16 +1691,6 @@
    "score": 10
   },
   {
-   "title": "Colombia to Start Aerial Spraying of Coca Crops Despite Health Worries",
-   "url": "https://www.nytimes.com/2026/09/11/world/americas/colombia-aerial-spraying-coca-crops.html",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-11T21:50:45+00:00",
-   "summary": "Colombia had used the herbicide glyphosate for years, but the government suspended the program in 2015 after the World Health Organization classified ...",
-   "score": 6
-  },
-  {
    "title": "Health Battles: Global Health News Headlines - Devdiscourse",
    "url": "https://www.devdiscourse.com/article/health/3976243-health-battles-global-health-news-headlines",
    "src": "Global Health",
@@ -2393,11 +2513,11 @@
   {
    "title": "Surge in displacement following fighting in southwest Yemen",
    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBBeE9YandncWR5WDdUYUVrTkhZYVhMVFJpZnNiZUg5N1VhWFVFSjQzR09neFJ6T2NBNHNuVWs0R0ZLeGl3MTFVQ0dZTHdaT2VEeTgwQ2V6Zw?oc=5",
-   "src": "UN News",
+   "src": "news.un.org",
    "feed": "UN News Health",
    "cat": "who",
    "date": "2026-09-11T14:04:57+00:00",
-   "summary": "Surge in displacement following fighting in southwest Yemen UN News",
+   "summary": "Surge in displacement following fighting in southwest Yemen news.un.org",
    "score": 3
   },
   {
@@ -2533,11 +2653,11 @@
   {
    "title": "Terrorist propaganda is outpacing global efforts to stop it, UN report finds",
    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1HY0FaVXFsa25QQ0U4aHVPeE95YTYzQ0JheWpkMzVtQ2UwYTF5U0g3YW9RbzVxVjhBekUwbHN3WmM5REJJZGZxTHFOTHZKTDJaTjUtWnBpSQ?oc=5",
-   "src": "UN News",
+   "src": "news.un.org",
    "feed": "UN News Health",
    "cat": "who",
    "date": "2026-09-11T13:01:34+00:00",
-   "summary": "Terrorist propaganda is outpacing global efforts to stop it, UN report finds UN News",
+   "summary": "Terrorist propaganda is outpacing global efforts to stop it, UN report finds news.un.org",
    "score": 3
   },
   {
@@ -2633,11 +2753,11 @@
   {
    "title": "European Government Relations Adviser",
    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYzZETHQ5MzdUdE9aSUI0cjdhX1R0NFpJQjRtQ3FnVjFLdHA5a0NCR3BYVkZoWU91NHgxa3VIeVYybXlEdFVMcXFIQjhtazdzSTcyaG1qQnAxZE5GVnJBQ3dpNm5lVm94TGljenFZWWJObEs2TC1JcTJFcDR3eWdsaDh6dUYwc1huSHZwR0d0a1g0NkNGdE1ub2tNbHpMYjZISk5zaUd1UQ?oc=5",
-   "src": "jobs.euractiv.com",
+   "src": "Euractiv Jobs",
    "feed": "Euractiv Health",
    "cat": "policy",
    "date": "2026-09-11T10:46:50+00:00",
-   "summary": "European Government Relations Adviser jobs.euractiv.com",
+   "summary": "European Government Relations Adviser Euractiv Jobs",
    "score": 2
   },
   {
@@ -3533,11 +3653,11 @@
   {
    "title": "UN climate chief warns political division is undermining fight against ‘economic security emergency’",
    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAtci1hZUJfa0F0cmU3QTdzWmxxTURZZDNvRlRwVDVFREw2eHdrMFd0UzJXeXJyTGRmSFlDbXFCdXR0UTFZRXJOVWd1dHR4Vk5xbno3LWRyaw?oc=5",
-   "src": "UN News",
+   "src": "news.un.org",
    "feed": "UN News Health",
    "cat": "who",
    "date": "2026-09-10T20:12:32+00:00",
-   "summary": "UN climate chief warns political division is undermining fight against ‘economic security emergency’ UN News",
+   "summary": "UN climate chief warns political division is undermining fight against ‘economic security emergency’ news.un.org",
    "score": 3
   },
   {
@@ -4019,126 +4139,6 @@
    "date": "2026-09-10T16:18:30+00:00",
    "summary": "News anchor reveals surprising diagnosis behind on-air medical emergency that had fans deeply worried. Published: Sep. 10, 2026, 12:15 p.m..",
    "score": -3
-  },
-  {
-   "title": "Pakistan orders Afghan medical students home, bars new Afghan admissions | The Jerusalem Post",
-   "url": "https://www.jpost.com/international/article-908279",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-10T16:16:03+00:00",
-   "summary": "FILE PHOTO: A view shows The World Health Organization (WHO) headquarters in Geneva Saima Wazed resigns from WHO post amid fraud probe. The ruins ...",
-   "score": 9
-  },
-  {
-   "title": "Youth Need Support Systems for Online Harms | Think Global Health",
-   "url": "https://www.thinkglobalhealth.org/article/youth-need-support-systems-for-online-harms",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-10T16:13:16+00:00",
-   "summary": "Recent court rulings have exposed harms caused by social media, but experts say accountability on its own will not counter online violence, ...",
-   "score": 13
-  },
-  {
-   "title": "Mary Lanning Emergency Department Begins Renovation - Midwest Medical Edition",
-   "url": "https://www.midwestmedicaledition.com/articles/mary-lanning-emergency-department-renovation",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-10T16:10:36+00:00",
-   "summary": "Mary Lanning Healthcare begins a five-phase Emergency Department renovation in Hastings, with the ED staying open 24/7 throughout the fall.",
-   "score": 3
-  },
-  {
-   "title": "ECB hikes interest rates to 2.5% amid inflation spike",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRHpTaVBjYXlsajJwd1dDTjc5MXBUQXRDZWUwellhWU5qdTVaMEJ2ZmMzSldDV0NGZlJfRzhpMUpSYXlfaGsxcjBEajEtT0ktT3I5VUNhQzNkNGNRYnV4T21aRDZPWHNNTW43UFFMb3BJbmRocmxYQWJCd1Y3ZjBkLVFFdlFISXpuN1Ew?oc=5",
-   "src": "euractiv.com",
-   "feed": "Euractiv Health",
-   "cat": "policy",
-   "date": "2026-09-10T16:05:26+00:00",
-   "summary": "ECB hikes interest rates to 2.5% amid inflation spike euractiv.com",
-   "score": 2
-  },
-  {
-   "title": "69 members of Congress call on Rubio to help secure release of prominent Palestinian doctor",
-   "url": "https://abcnews.com/International/69-members-congress-call-rubio-secure-release-prominent/story?id=136302560",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-10T15:47:46+00:00",
-   "summary": "Inside Gaza's mental health crisis impacting civilians, aid workers: 'Catastrophic'. Naji Abbas, director of the prisoners and detainees department ...",
-   "score": 3
-  },
-  {
-   "title": "Report calls for support for perinatal mental health in Suffolk - BBC",
-   "url": "https://www.bbc.com/news/articles/c9v9d82njzvo",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-10T15:42:16+00:00",
-   "summary": "She did refer herself to services via the NHS, but due to a medical emergency with her second pregnancy she was not able to make the appointment.",
-   "score": 3
-  },
-  {
-   "title": "Will the UN vote to sustain Haiti's Gang Suppression Force? | Chatham House",
-   "url": "https://www.chathamhouse.org/2026/09/will-un-vote-sustain-haitis-gang-suppression-force",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-10T15:35:27+00:00",
-   "summary": "North Atlantic Treaty Organization (NATO) · United Nations (UN) · World Health Organization (WHO) · World Trade Organization (WTO) · Major powers.",
-   "score": 6
-  },
-  {
-   "title": "City awarded grant with goal of expanding mobile crisis services for Clarksville",
-   "url": "https://clarksvillenow.com/local/city-awarded-grant-with-goal-of-expanding-mobile-crisis-services-for-clarksville/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-10T15:34:30+00:00",
-   "summary": "... emergency departments for behavioral health crises.” CPD and Centerstone were competitively awarded the grant by the Substance Abuse and Mental ...",
-   "score": 3
-  },
-  {
-   "title": "CHOP Nurse Brings Lessons Home From Botswana Fellowship - Northeast Times",
-   "url": "https://northeasttimes.com/2026/09/10/chop-nurse-brings-lessons-home-from-botswana-fellowship/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-10T15:33:08+00:00",
-   "summary": "A Children's Hospital of Philadelphia NICU nurse traveled to Botswana's capital in spring 2024 as part of CHOP's new Global Health Nursing ...",
-   "score": 8
-  },
-  {
-   "title": "AI, Gender Equality, and Self-Healing | Center For Global Development",
-   "url": "https://www.cgdev.org/publication/ai-gender-equality-and-self-healing",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-10T15:31:18+00:00",
-   "summary": "Cuts to funding for public goods such as data from the Demographic and Health Surveys have been particularly devastating on a systemic level, by ...",
-   "score": 3
-  },
-  {
-   "title": "UNC Health center targets 'missing middle' in adolescent behavioral health",
-   "url": "https://www.beckersbehavioralhealth.com/behavioral-health-news/unc-health-center-targets-missing-middle-in-adolescent-behavioral-health/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-10T15:27:23+00:00",
-   "summary": "The World Health Organization defines adolescence as between the ages of 10 and 19. Bridget Fluech, RN, administrative director of behavioral health ...",
-   "score": 6
-  },
-  {
-   "title": "Uptake and feasibility of task-shifting of Xpert MTB/RIF Ultra testing from laboratory technicians to nurses to increase access and reduce time to results: a multicountry mixed met",
-   "url": "http://gh.bmj.com/cgi/content/short/11/9/e019948?rss=1",
-   "src": "BMJ Global Health",
-   "feed": "BMJ Global Health",
-   "cat": "journal",
-   "date": "2026-09-10T15:21:56+00:00",
-   "summary": "Introduction Task-shifting tuberculosis (TB) rapid molecular testing from laboratory technicians to nurses could help decentralise TB diagnosis at primary health centres (PHCs) and allow in-ward testing to shorten treatment decision for very sick patients. We assessed the feasibility of Xpert MTB/RI",
-   "score": 5
   }
  ]
 }
