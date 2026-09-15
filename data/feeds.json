@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-15T18:18:33+00:00",
- "feeds_ok": 26,
+ "generated": "2026-09-15T21:32:56+00:00",
+ "feeds_ok": 27,
  "feeds_tot": 27,
  "status": {
   "WHO News": {
@@ -119,8 +119,8 @@
    "cat": "policy"
   },
   "Politico EU Health": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] ValueError: 0 entries",
+   "ok": true,
+   "msg": "12 items (via kandidaat 2)",
    "cat": "policy"
   },
   "Euractiv Health": {
@@ -141,14 +141,314 @@
  },
  "items": [
   {
-   "title": "International Cooperation on Health Emergency Preparedness - regjeringen.no",
-   "url": "https://www.regjeringen.no/en/topics/health-and-care/helseberedskap/international-cooperation-on-health-emergency-preparedness/id438825/",
+   "title": "IDOC identifies inmate who died after medical emergency on work release - KIVI-TV",
+   "url": "https://www.kivitv.com/news/local-news/in-your-neighborhood/south-boise/idoc-identifies-inmate-who-died-after-medical-emergency-on-work-release-osha-investigating",
    "src": "Health Emergency",
    "feed": "Health Emergency",
    "cat": "emerg",
-   "date": "2026-09-15T17:49:54+00:00",
-   "summary": "Norwegian health emergency preparedness is increasingly influenced by global developments. Infectious diseases, shortages of medicines and ...",
+   "date": "2026-09-15T21:14:56+00:00",
+   "summary": "OSHA is investigating the death of 45-year-old Matthew Henson, who suffered a medical emergency while on work release, according to IDOC.",
    "score": 9
+  },
+  {
+   "title": "Ohio behavioral health crisis centers face staffing shortage | NBC4 WCMH-TV",
+   "url": "https://www.nbc4i.com/news/local-news/ohio-behavioral-health-crisis-centers-face-staffing-shortage/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-15T21:09:31+00:00",
+   "summary": "COLUMBUS, Ohio (WCMH) — New behavioral health crisis centers are opening across Ohio, aimed at providing 24/7 emergency mental health care.",
+   "score": 3
+  },
+  {
+   "title": "UN says it's to early to say Ebola in DR Congo has peaked | CIDRAP",
+   "url": "https://www.cidrap.umn.edu/ebola/un-says-it-s-early-say-ebola-dr-congo-has-peaked",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-15T20:45:50+00:00",
+   "summary": "So far there have been 7,258 confirmed cases and 3,510 deaths across seven provinces. Officials from both the UN and World Health Organization , which ...",
+   "score": 10
+  },
+  {
+   "title": "HHS Announces Supplemental Funding Awards for Faith-Based Prevention in Alabama ...",
+   "url": "https://www.hhs.gov/press-room/hhs-funds-faith-based-substance-use-prevention-alabama-kansas-west-virginia.html",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-15T20:25:47+00:00",
+   "summary": "Emergency Preparedness and Response · Healthy Lifestyle · Mental ... Public Health Emergencies . Human Research Protections. The Belmont Report ...",
+   "score": 3
+  },
+  {
+   "title": "Johann Wadephul on X: \"Dear @drtedros, thank you for welcoming us while stearing @who ...",
+   "url": "https://x.com/AussenMinDE/status/2099953039431926221",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-15T20:24:11+00:00",
+   "summary": "... contribution to global health & fighting #Ebola, protecting people around the globe & in . To us #WHO remains the main actor for global health .",
+   "score": 16
+  },
+  {
+   "title": "LIVE: Von der Leyen's SOTEU speech leaked – EXCLUSIVE",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNeVd4YzNHX0RsSHdSbmtDSVVacU5NV2doYkU4dl8yVVZubUVZSkhRMUQ2RWpGVFQwSEUzZzlaZXBsbUJqUmJkZkVlaFp6anNJZzVpODk4VHBEZjQ5eE9hdWdzbTRJVEVGdU1jWldScXVJVE16SFdTM01uNkRGT3I4czBxZXFUaE1LX25KNVozUWZFWDA?oc=5",
+   "src": "euractiv.com",
+   "feed": "Euractiv Health",
+   "cat": "policy",
+   "date": "2026-09-15T20:19:47+00:00",
+   "summary": "LIVE: Von der Leyen's SOTEU speech leaked – EXCLUSIVE euractiv.com",
+   "score": 2
+  },
+  {
+   "title": "Alyssa Farah Griffin Shares Baby Son's Health Update After Surgery (Exclusive) - People.com",
+   "url": "https://people.com/alyssa-farah-griffin-shares-baby-sons-health-update-after-surgery-exclusive-12122136",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-15T20:10:05+00:00",
+   "summary": "Alyssa Farah Griffin Shares Health Update on Baby Son After Emergency Surgery, Says He'll Wear a Helmet for a Year (Exclusive). 'The View' co-host ...",
+   "score": -3
+  },
+  {
+   "title": "El Nino: what are the global health impacts? - The Naked Scientists",
+   "url": "https://www.thenakedscientists.com/articles/interviews/el-nino-what-are-global-health-impacts",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-15T20:06:38+00:00",
+   "summary": "Rachel Tolhurst, a professor in international public health at Liverpool School of Tropical Medicine, has been telling Chris Smith about it… Rachel - ...",
+   "score": 13
+  },
+  {
+   "title": "Dyslipidaemia - World Health Organization (WHO)",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/dyslipidaemia",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-15T19:52:50+00:00",
+   "summary": "The World Health Organization addresses dyslipidaemia principally as one of the intermediate risk factors for cardiovascular disease within its ...",
+   "score": 9
+  },
+  {
+   "title": "Practical Implications of California's Proposed Revisions to Emergency Medical Services ...",
+   "url": "https://www.littler.com/news-analysis/asap/practical-implications-californias-proposed-revisions-emergency-medical-services",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-15T19:36:11+00:00",
+   "summary": "Cal/OSHA is proposing revisions to emergency medical services and first aid regulations for general industry and construction employers under Title 8, ...",
+   "score": 3
+  },
+  {
+   "title": "DHS Confirms Case of Measles in Marathon County | Wisconsin Department of Health Services",
+   "url": "https://www.dhs.wisconsin.gov/news/releases/091526.htm",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-15T19:30:47+00:00",
+   "summary": "The Wisconsin Department of Health Services (DHS) and Marathon County Health ... Emergency Medical Services · ForwardHealth Community Partners · Funding ...",
+   "score": 7
+  },
+  {
+   "title": "DTF St. Louis has picked up the Emmy for Outstanding Limited or Anthology Series. Did you ...",
+   "url": "https://www.instagram.com/p/DdSqPyqjBr2/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-15T19:24:09+00:00",
+   "summary": "Follow · who's profile picture · World Health Organization . World Health Organization . Follow · skysports's profile picture · Sky Sports. Sky Sports.",
+   "score": 6
+  },
+  {
+   "title": "American Airlines Denies Canadian Family Boarding For Assisting With Staff Medical Emergency",
+   "url": "https://www.thetravel.com/american-airlines-denies-canadian-family-boarding-for-assisting-with-staff-medical-emergency/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-15T19:19:24+00:00",
+   "summary": "Canadian Family Denied Boarding After Assisting Gate Agent With Medical Emergency . Stationary planes at the gates of LaGuardia Airport (LGA), Queens, ...",
+   "score": 3
+  },
+  {
+   "title": "Honors without Borders: AI, Equity, and Empowerment - North Carolina A&T",
+   "url": "https://www.ncat.edu/calendar/2026/09/hwb-ai-equity-empowerment-lessons-from-the-philippines.php",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-15T19:16:45+00:00",
+   "summary": "Honors without Borders: AI, Equity, and Empowerment - Lessons from the Philippines for Global Health · Date: 09/16/2026 · Time: 06:30 PM - 08:00 PM.",
+   "score": 14
+  },
+  {
+   "title": "Board Resolution Declares September 2026 as Suicide Prevention Month | post",
+   "url": "https://www.sdcoe.net/about-sdcoe/news/post/~board/news/post/board-resolution-declares-september-2026-as-suicide-prevention-month",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-15T19:14:54+00:00",
+   "summary": "... Association for Suicide Prevention and the World Health Organization . THEREFORE, BE IT RESOLVED that the San Diego County Board of Education ...",
+   "score": 6
+  },
+  {
+   "title": "US pediatricians report seeing fewer patients because of immigration enforcement worries",
+   "url": "https://www.cidrap.umn.edu/public-health/us-pediatricians-report-seeing-fewer-patients-because-immigration-enforcement-worries",
+   "src": "CIDRAP Public Health",
+   "feed": "CIDRAP Public Health",
+   "cat": "promed",
+   "date": "2026-09-15T19:13:00+00:00",
+   "summary": "Doctors also note that their patients hesitate to apply for government benefits and often keep their children home from school.",
+   "score": 2
+  },
+  {
+   "title": "Country Music Singer Hospitalized with Life-Threatening Medical Emergency",
+   "url": "https://www.wideopencountry.com/country-music-singer-hospitalized-with-life-threatening-medical-emergency/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-15T19:08:42+00:00",
+   "summary": "A country music singer is lucky to be alive after a life-threatening medical emergency . Country music singer Travis Yee shared he had been ...",
+   "score": 3
+  },
+  {
+   "title": "Ways of working for more peaceful futures: A global health humanities roundtable",
+   "url": "https://worldpeacefoundation.org/publication/ways-of-working-for-more-peaceful-futures/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-15T18:59:20+00:00",
+   "summary": "Global health humanities experts explore collaborative approaches to peacebuilding, health equity, and more peaceful futures worldwide.",
+   "score": 16
+  },
+  {
+   "title": "New SWOSU, Oklahoma CareerTech Agreements Create Health Care Degree Pathways",
+   "url": "https://www.swosu.edu/news/?p=new-swosu-oklahoma-careertech-agreements-create-health-care-degree-pathways",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-15T18:51:24+00:00",
+   "summary": "... health science and medical coding. The pathways ... emergency medical technician, advanced emergency medical technician or paramedic licenses.",
+   "score": 3
+  },
+  {
+   "title": "A fourth measles death is reported in Pennsylvania",
+   "url": "https://www.statnews.com/2026/09/15/fourth-measles-death-pennsylvania-acute-disseminated-encephalomyelitis/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-09-15T18:43:59+00:00",
+   "summary": "Pennsylvania officials have reported a fourth measles-associated death within the past month, the latest in an unvaccinated 18-year-old.",
+   "score": 5
+  },
+  {
+   "title": "Mitch McConnell returns to Capitol Hill after monthslong absence - CBS News",
+   "url": "https://www.cbsnews.com/news/mcconnell-returning-to-capitol-hill-3-months-senate-gop/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-15T18:41:58+00:00",
+   "summary": "Three days later, his office announced he had been hospitalized, on the same day that emergency medical personnel went to his home to respond to ...",
+   "score": 3
+  },
+  {
+   "title": "Senator Steve Santarsiero and Representative Tina Davis Announce over $1000000 in Grants",
+   "url": "https://pasenate.com/senator-steve-santarsiero-and-representative-tina-davis-announce-over-1000000-in-grants/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-15T18:40:12+00:00",
+   "summary": "... emergency and commercial traffic moving when our community needs it most. ... health crisis in Bristol Township. Currently, Mental Health ...",
+   "score": 3
+  },
+  {
+   "title": "Lake Mary officer uses patrol car to stop runaway truck during medical emergency | FOX 35 Orlando",
+   "url": "https://www.fox35orlando.com/news/lake-mary-officer-uses-patrol-car-stop-runaway-truck-during-medical-emergency",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-15T18:30:39+00:00",
+   "summary": "The truck had rolled into oncoming traffic after the driver suffered a medical emergency . No one, including the officer and driver, was seriously ...",
+   "score": 3
+  },
+  {
+   "title": "Men are more likely to use tobacco than women almost everywhere in the world",
+   "url": "https://ourworldindata.org/data-insights/men-are-more-likely-to-use-tobacco-than-women-almost-everywhere-in-the-world",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-15T18:21:10+00:00",
+   "summary": "This data is collated and published by the World Health Organization. It's based on adults aged 15 years and older and includes all tobacco ...",
+   "score": 6
+  },
+  {
+   "title": "Gates Foundation pledges $1 billion for AI in global health and education - Quartz",
+   "url": "https://qz.com/gates-foundation-billion-ai-global-health-education-agriculture-091526",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-15T18:20:31+00:00",
+   "summary": "The funding, spread over two years, targets AI tools for healthcare workers, smallholder farmers, and teachers in low-income countries.",
+   "score": 13
+  },
+  {
+   "title": "Health cooperation adds fresh momentum to Vietnam-US relations",
+   "url": "https://en.vietnamplus.vn/health-cooperation-adds-fresh-momentum-to-vietnam-us-relations-post351883.vnp",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-15T18:13:03+00:00",
+   "summary": "Through this MOU, the US Department of State, working with Congress, plans to provide 98.75 million USD in life-saving global health assistance ...",
+   "score": 8
+  },
+  {
+   "title": "Predicting resistance to fluoroquinolones among patients with rifampicin-resistant tuberculosis",
+   "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1004965",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-15T18:08:41+00:00",
+   "summary": "Fluoroquinolones (FQs) are a cornerstone of most all-oral, shorter regimens endorsed by the World Health Organization for the treatment of rifampicin- ...",
+   "score": 10
+  },
+  {
+   "title": "What the Science Really Says About the Health and Climate Risks of Carbon Pollution",
+   "url": "https://time.com/article/2026/09/15/trump-power-plant-emissions-climate-health-impact/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-15T18:06:23+00:00",
+   "summary": "“The health damage is not at local level but global level,” says Zhang. The environmental and health impacts will be felt—despite what the EPA might ...",
+   "score": 3
+  },
+  {
+   "title": "Air pollution spiked after the Trump administration stopped embassy monitoring - NPR",
+   "url": "https://www.npr.org/2026/09/15/nx-s1-5966503/air-pollution-spiked-after-the-trump-administration-stopped-embassy-monitoring",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-15T17:58:13+00:00",
+   "summary": "A new study suggests that led to a 24-33% increase in local pollution levels. Global Health . Air pollution spiked after the Trump administration ...",
+   "score": 8
+  },
+  {
+   "title": "International Cooperation on Health Emergency Preparedness - regjeringen.no",
+   "url": "https://www.regjeringen.no/en/topics/health-and-care/helseberedskap/international-cooperation-on-health-emergency-preparedness/id438825/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-15T17:49:54+00:00",
+   "summary": "The World Health Organization (WHO) plays a leading role. The WHO establishes professional standards, collates knowledge, and coordinates efforts to ...",
+   "score": 15
+  },
+  {
+   "title": "Welsh leader of Farage’s Reform UK quits after arrest",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxObHZxUTVmcmtqTWR2Y2N0c2phUWZJTU5FaGZoakhRS3lFOWprazhKM2FmT1ItWVZzNGJIbHNEUmJyOVVQelYycjVJR191TGhGZWZBdGxuVm5RVkoyVlNNamNCcHlGb0E0YUF3Si1jTjlYZzhyZGphT1l2RDJhc3N2dEhkejhkd0pNdzFZajl2NllybGs?oc=5",
+   "src": "politico.eu",
+   "feed": "Politico EU Health",
+   "cat": "policy",
+   "date": "2026-09-15T17:48:00+00:00",
+   "summary": "Welsh leader of Farage’s Reform UK quits after arrest politico.eu",
+   "score": 2
   },
   {
    "title": "How to Spot the Warning Signs Before a Mental Health Crisis Turns Into an Emergency",
@@ -169,6 +469,16 @@
    "date": "2026-09-15T16:56:23+00:00",
    "summary": "World Rabies Day is observed by the United Nations and endorsed by the World Health Organization , World Organisation for Animal Health, CDC and AVMA, ...",
    "score": 6
+  },
+  {
+   "title": "Immunization Service Delivery & Vaccine Policy (Tenured Associate or Full Professor)",
+   "url": "https://jobs.chronicle.com/job/38035734/immunization-service-delivery-and-vaccine-policy-tenured-associate-or-full-professor-/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-15T16:56:09+00:00",
+   "summary": "The Departments of Community and Global Health and Population Health in the College of Health invite applications for a tenured faculty position ...",
+   "score": 12
   },
   {
    "title": "DRC Ebola response making progress, but more support urgently needed, Senior Ebola ... - OCHA",
@@ -391,6 +701,16 @@
    "score": 6
   },
   {
+   "title": "Devex CheckUp: Doomsday or better health ? Gates bets big on AI",
+   "url": "https://www.devex.com/news/devex-checkup-doomsday-or-better-health-gates-bets-big-on-ai-113270",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-15T14:51:28+00:00",
+   "summary": "... about artificial intelligence, Bill Gates is making a big bet on AI. Plus, drama surrounds Saima Wazed's exit from the World Health Organization .",
+   "score": 6
+  },
+  {
    "title": "Media Tip Sheet: Measles Cases Top Worst National Surge in Three Decades",
    "url": "https://mediarelations.gwu.edu/media-tip-sheet-measles-cases-top-worst-national-surge-three-decades",
    "src": "Global Health",
@@ -551,6 +871,106 @@
    "score": 16
   },
   {
+   "title": "Assessing metrics for evaluating the maternal continuum of care in Ethiopia: A scoping review",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007303",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-09-15T14:00:00+00:00",
+   "summary": "by Abdulaziz Mohammed Hussen, Ibrahim Mohammed Ibrahim, Martin Heine, Tigest Tamrat, Özge Tunçalp, Binyam Tilahun, Diederick E. Grobbee, Joyce L. Browne Despite Ethiopia’s remarkable progress in reducing maternal mortality between 2000 and 2023, more effort is needed to achieve the Sustainable Devel",
+   "score": 3
+  },
+  {
+   "title": "Linkages between lifestyle practices, dietary habits, and premenstrual syndrome among college students",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007266",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-09-15T14:00:00+00:00",
+   "summary": "by Mashael Huwaikem Premenstrual syndrome (PMS) is a common condition characterized by physical, emotional, and behavioral symptoms that occur during the luteal phase of the menstrual cycle. Emerging evidence suggests that dietary and lifestyle factors may be associated with the occurrence and sever",
+   "score": 3
+  },
+  {
+   "title": "Association between male absence and women’s reproductive autonomy in sub-Saharan Africa: A cross-sectional analysis of Demographic and Health Survey Data",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007255",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-09-15T14:00:00+00:00",
+   "summary": "by Alex Bawuah, Ruth O. Ejiwale, Sylvester R. Okeke, Deborah O. Okeke-Obayemi, Sanni Yaya Reproductive decision-making within partnered relationships in sub-Saharan Africa (SSA) is often shaped by patriarchal gender norms, with male partners commonly exerting substantial influence over family planni",
+   "score": 3
+  },
+  {
+   "title": "Urinary incontinence in Ugandan gynecologic outpatient clinics: Prevalence, clinical types, and associated factors",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007221",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-09-15T14:00:00+00:00",
+   "summary": "by John Katongole, Emmanuel Okurut, Daniel Udofia Owu, Theoneste Hakizimana, Prosper Akankwasa, Ester Namutosi, Musa Kasujja Urinary incontinence (UI) is a common but underrecognized condition among women, including within routine gynecologic outpatient care, particularly in low- and middle-income c",
+   "score": 6
+  },
+  {
+   "title": "Understanding type 2 diabetes self-management in the Marshall Islands: A mixed-methods exploration of sociocultural and structural barriers",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007152",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-09-15T14:00:00+00:00",
+   "summary": "by Jun Yoshino, Francyne Wase-Jacklick, Hilia Konou Enos, Ishael Ken, Hirotsugu Aiga, Ken Masuda Type 2 diabetes mellitus (T2DM) poses a critical public health challenge in the Republic of the Marshall Islands, where prevalence rates are among the highest globally. Despite the central role of self-m",
+   "score": 3
+  },
+  {
+   "title": "Implementation strategies for integrating non-communicable disease care into primary healthcare settings in sub-Saharan Africa: A systematic review",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007062",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-09-15T14:00:00+00:00",
+   "summary": "by Hubert Amu, Theodora Yayra Brinsley, Joshua Oppong This sytematic review synthesised evidence on implementation strategies for integrating non-communicable disease (NCD) care into primary healthcare (PHC) in Sub-Saharan Africa (SSA), the barriers and facilitators influencing implementation, the e",
+   "score": 3
+  },
+  {
+   "title": "Building Bridges: A framework for redefining and decolonizing implementation science in low- and middle-income countries",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0006155",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-09-15T14:00:00+00:00",
+   "summary": "by Binod Rayamajhee, Gopiram Syangtan, Bhupendra Lama, Saruna Ghimire, Brian Oldenburg, Uday Narayan Yadav Implementation science (IS) is gaining recognition for its role in enhancing health outcomes by connecting research evidence with practical application. However, most IS frameworks have been de",
+   "score": 9
+  },
+  {
+   "title": "Enablers and barriers to implementing a digital logistics system: A qualitative evaluation of OpenLMIS for Nigeria’s vaccine supply chain",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0005581",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-09-15T14:00:00+00:00",
+   "summary": "by Ifeoluwa Adebola Noiki, Lola Aladesanmi, Suruchi Gupta, Patricia Mechael, Erica Layer, Smisha Agarwal, Dustin Gibson Logistics management information systems (LMIS) strengthen health commodity distribution and decision-making. Nigeria introduced OpenLMIS, an electronic LMIS, in August 2021 to tra",
+   "score": 9
+  },
+  {
+   "title": "Latent tuberculosis infection in focus: Evaluating public concerns, treatment perceptions, and awareness in King Sabatha Dalindyebo Local Municipality, Eastern Cape, South Africa",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0005130",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-09-15T14:00:00+00:00",
+   "summary": "by Lindiwe Modest Faye, Ncomeka Sineke, Ntandazo Dlatu, Urgent Tsuro, Mojisola Clara Hosu, Teke Apalata Latent tuberculosis infection (LTBI) remains an under-recognized component of tuberculosis (TB) prevention in South Africa despite its potential to progress to active disease and contribute to ong",
+   "score": 11
+  },
+  {
+   "title": "Preparing current and emerging health leaders: An innovative competency-based framework for health diplomacy",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0004974",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-09-15T14:00:00+00:00",
+   "summary": "by Esperanza Martinez, Ellen Rosskam, Garry Aslanyan, Lyndsay Baines, Ryuichi Komatsu, Nikica Darabos, Brian Li Han Wong, Nina Viberg, Mariko Hososawa, Ren Minghui, Magda Robalo Correia e Silva, Anders Nordstrom Health diplomacy is increasingly recognized as critical domain of practice for advancing",
+   "score": 3
+  },
+  {
    "title": "STAT+: FDA takes applications for new program to shorten drug approval times",
    "url": "https://www.statnews.com/2026/09/15/fda-launches-program-to-shorten-drug-approval-times/?utm_campaign=rss",
    "src": "STAT News",
@@ -621,6 +1041,16 @@
    "score": -5
   },
   {
+   "title": "Video Production for Project Visibility and Communication",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQZElNMm51U3dPYWtyS19TR0p2QUc5LWJRUHU5ZWZyN1ZSNVA1X2o3RzFRYXZYNU04aWZsM3JsSmlobWZCdG9OazN2Z3F5NWNiSzNQWWNYOWZLYjBOZE9Sc283NkpnNGZSX3RLOFRYNS1iSWN5RXl1d2VYa2pSbjBsa1hmakZRamtiUklvMHdmZkY?oc=5",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-09-15T12:55:02+00:00",
+   "summary": "Video Production for Project Visibility and Communication ReliefWeb",
+   "score": 2
+  },
+  {
    "title": "AbbVie Named Official Pharmaceutical Sponsor of the PGA TOUR and 2026 Presidents Cup ...",
    "url": "https://www.prnewswire.com/news-releases/abbvie-named-official-pharmaceutical-sponsor-of-the-pga-tour-and-2026-presidents-cup-launches-birdies-for-brain-health-campaign-302878405.html",
    "src": "WHO Alert",
@@ -639,6 +1069,16 @@
    "date": "2026-09-15T12:48:31+00:00",
    "summary": "The World Health Organization (WHO) has found that more than 1 billion ... health support in adolescence ( World Health Organisation , 2025a).",
    "score": 6
+  },
+  {
+   "title": "Information Security Analyst",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBrVDZuWVotMV85dllkSTRBUi15YnRGRUJmaWplWFJsMXhCa2tXRERlQXJ3VU1uUTFhNF9DNmk5Yl9rN0Q5dWNlbHpPZmhpUUI0N3pxeFhscmNaOHJfYTMyeHExcWwyQ1RzdlBwa0dqbw?oc=5",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-09-15T12:40:12+00:00",
+   "summary": "Information Security Analyst ReliefWeb",
+   "score": 2
   },
   {
    "title": "Trajectories of child undernutrition in Ethiopia: a multivariate GEE approach",
@@ -1031,16 +1471,6 @@
    "score": 8
   },
   {
-   "title": "Men are more likely to use tobacco than women almost everywhere in the world",
-   "url": "https://ourworldindata.org/data-insights/men-are-more-likely-to-use-tobacco-than-women-almost-everywhere-in-the-world",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-15T06:21:10+00:00",
-   "summary": "This data is collated and published by the World Health Organization . It's based on adults aged 15 years and older and includes all tobacco ...",
-   "score": 6
-  },
-  {
    "title": "Gates Foundation bets $1B on AI to boost global health , agriculture and education",
    "url": "https://www.geekwire.com/2026/gates-foundation-bets-1b-on-ai-to-boost-global-health-agriculture-and-education/",
    "src": "Global Health",
@@ -1069,6 +1499,16 @@
    "date": "2026-09-15T05:41:20+00:00",
    "summary": "Jen is the Global Health Correspondent at Reuters, covering everything from pandemics to the rise of obesity worldwide. Since joining the news agency ...",
    "score": 8
+  },
+  {
+   "title": "Can less paperwork get EU workers moving?",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaFlmd1poOXlxZUFlNGZXWHZDSU9qSVBDNm95bjhKODRKeGVjZFF6NTBqUXE0ZVJsWUNNZUFobGh2aUpVcmNwR3daMWQydUpRRWVWWEtkX1ZpUUktejYtSVNXNWlLd3lMQ1FFaHA5cUZHSlFacWpMMy0wWThhamgwX052b2dHb01FM19hcjhPcUJ5bTR4TWs3dTZNMmVZemhk?oc=5",
+   "src": "politico.eu",
+   "feed": "Politico EU Health",
+   "cat": "policy",
+   "date": "2026-09-15T05:05:00+00:00",
+   "summary": "Can less paperwork get EU workers moving? politico.eu",
+   "score": 2
   },
   {
    "title": "Wiping out measles impossible due to vaccine hesitancy in rich countries, says Gates",
@@ -1168,6 +1608,16 @@
    "cat": "policy",
    "date": "2026-09-15T02:15:30+00:00",
    "summary": "SOTEU: Only one man knows the secret euractiv.com",
+   "score": 2
+  },
+  {
+   "title": "Democracy declining in over half of Europe, study shows",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZGFBN29hUnNlWDJtY2lEaHA2b2w1SlZqLVF4b0wzUE9LaUlXa2R2UmtQZUNZcTlHWmFhRXhaY2E5aG9XT0MxVDRacUQwckp1bnMtQmxLU0FHdjRJWGFjUURIVFIxZ1dlcks1eEtUcml0TEFobUYweTZUTURldy1lMXJkTE4yUTVYQVZTV1FB?oc=5",
+   "src": "euractiv.com",
+   "feed": "Euractiv Health",
+   "cat": "policy",
+   "date": "2026-09-15T02:15:30+00:00",
+   "summary": "Democracy declining in over half of Europe, study shows euractiv.com",
    "score": 2
   },
   {
@@ -2813,11 +3263,11 @@
   {
    "title": "AI jailbreakers test EU safety rules",
    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5QNlR6T3VTcXlWYzRCX0tmNjRpN1RKbEk2bXVUUmxnY0hIWDNBLThqMUpaeU04aXpsbWQtSmxVenpXLTVVRjMzNEszZERBdmxrTFkyQzBTbVVINEpmNnZfOUdpd0h6TXh6ZVNoZVl4MGJJUGMxamc?oc=5",
-   "src": "Euractiv FR",
+   "src": "euractiv.com",
    "feed": "Euractiv Health",
    "cat": "policy",
    "date": "2026-09-14T04:05:49+00:00",
-   "summary": "AI jailbreakers test EU safety rules Euractiv FR",
+   "summary": "AI jailbreakers test EU safety rules euractiv.com",
    "score": 2
   },
   {
@@ -3688,456 +4138,6 @@
    "cat": "emerg",
    "date": "2026-09-13T15:03:36+00:00",
    "summary": "Tom Tiffany released a statement after the plane he was on made an emergency water landing in Lake Wausau ... 2 Your Health · news@wbay.com. WBAY; 115 S ...",
-   "score": 3
-  },
-  {
-   "title": "Nilesh Buddha Reflects on Timor-Leste's Remarkable Progress in Healthcare at RC79 - WHOSEARO",
-   "url": "https://oncodaily.com/voices/whosearo-583788",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-13T14:58:17+00:00",
-   "summary": "World Health Organization South-East Asia (WHOSEARO) shared on LinkedIn: “RC79 – Dili, Timor-Leste. Dr. Nilesh Buddha, Officer-in-Charge, ...",
-   "score": 6
-  },
-  {
-   "title": "Iowa man shares story of recovery after life-threatening stroke - KCCI",
-   "url": "https://www.kcci.com/article/iowa-man-shares-story-of-recovery-after-life-threatening-stroke/73703854",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-13T14:56:21+00:00",
-   "summary": "A routine morning quickly turned into a medical emergency for a Waukee man after he suffered a life-threatening stroke. ... Strube said this health ...",
-   "score": -3
-  },
-  {
-   "title": "Wildfire Map Spotlight: Indonesia forest and peatland fires | IQAir Saudi Arabia",
-   "url": "https://www.iqair.com/sa/newsroom/wildfire-map-spotlight-indonesia-forest-and-peatland-fires-september-2026",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-13T14:52:27+00:00",
-   "summary": "... emergency response period layered on top of it (10). ... Record wildfires in Indonesia trigger health crisis as haze spreads across South East Asia.",
-   "score": 7
-  },
-  {
-   "title": "Affordability crisis opening new opportunities for retail giants, including Lululemon",
-   "url": "https://www.youtube.com/watch?v=ngjqfA5y0ck",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-13T14:46:27+00:00",
-   "summary": "... Global's Heather Yourex-West looks at the trend and the technology ... William Parker Senior Health •253K views · 4:50. Go to channel BBC News · AI ...",
-   "score": 3
-  },
-  {
-   "title": "Living to 100 has become far less unusual in Japan. Japan's population aged 100 or ... - Instagram",
-   "url": "https://www.instagram.com/p/DdOycC0kb05/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-13T14:45:29+00:00",
-   "summary": "[ Global Health Study, life expectancy, Japan longevity, centenarians, health statistics, population ranking] #LifeExpectancy #Japan # GlobalHealth # ...",
-   "score": 8
-  },
-  {
-   "title": "Athlete dies after medical emergency during Ironman 70.3 in Madison - WWSB",
-   "url": "https://www.mysuncoast.com/2026/09/13/athlete-dies-after-medical-emergency-during-ironman-703/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-13T14:35:11+00:00",
-   "summary": "An athlete died after a medical emergency during the swim portion of the Ironman 70.3 in Madison, Wisconsin, officials said.",
-   "score": 3
-  },
-  {
-   "title": "Rep. Tom Tiffany says he sustained minor injuries in emergency plane landing on lake",
-   "url": "https://www.nbcnews.com/news/us-news/wisconsin-tom-tiffany-sustained-minor-injuries-plane-emergency-lake-rcna597456",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-13T14:14:08+00:00",
-   "summary": "... emergency water landing ... Health · Watch · Subscribe. Share & Save —. Save hover state.",
-   "score": 3
-  },
-  {
-   "title": "Most men don't know dairy is linked to prostate cancer risk - ScienceDaily",
-   "url": "https://www.sciencedaily.com/releases/2026/09/260911214259.htm",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-13T14:13:04+00:00",
-   "summary": "The Adventist Health Study-2 ... July 25, 2023 — World-wide obesity has nearly tripled since 1975, according to the World Health Organization .",
-   "score": 6
-  },
-  {
-   "title": "One year after a bipolar episode, Bonobos cofounder sold his company to Walmart for $310 million",
-   "url": "https://fortune.com/2026/09/13/bipolar-episode-bonobos-cofounder-andy-dunnn-walmart-310-million-social-app-pie/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-13T14:11:06+00:00",
-   "summary": "... health crisis in a very big way. He had been grappling with a Bipolar I diagnosis ever since college: a mental health condition marked by extreme ...",
-   "score": -3
-  },
-  {
-   "title": "Most People Don't Think About Culverts. Their Failure Can Be Deadly.",
-   "url": "https://www.nytimes.com/2026/09/13/science/most-people-dont-think-about-culverts-their-failure-can-be-deadly.html",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-13T13:57:13+00:00",
-   "summary": "As a result of the failure, an ambulance trying to reach a person experiencing a medical emergency was forced to take a detour, and a response that ...",
-   "score": 3
-  },
-  {
-   "title": "More Than 1.5 Million Afghans Living With Cancer, Foundation Says - KabulNow",
-   "url": "https://kabulnow.com/2026/09/more-than-1-5-million-afghans-living-with-cancer-foundation-says/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-13T13:40:16+00:00",
-   "summary": "According to the International Agency for Research on Cancer (IARC), an agency of the World Health Organization , an estimated 24,275 new cancer cases ...",
-   "score": 6
-  },
-  {
-   "title": "Democratic Party Lawmaker Proposes Levy on Zero-Calorie Drinks",
-   "url": "https://www.chosun.com/english/industry-en/2026/09/12/UHD4IRBRINHX5J3GWCIW3CLFII/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-13T13:33:39+00:00",
-   "summary": "According to the World Health Organization (WHO), as of July 2024, at least 116 countries impose a sugar tax on sweetened beverages. While some ...",
-   "score": 6
-  },
-  {
-   "title": "Brics is rewriting the Global South's health playbook",
-   "url": "https://www.firstpost.com/opinion/brics-is-rewriting-the-global-souths-health-playbook-14045575.html",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-13T13:25:58+00:00",
-   "summary": "The Delhi declaration places health resilience alongside economic growth, technology and global governance.",
-   "score": 3
-  },
-  {
-   "title": "Tiffany suffers minor injuries after plane makes emergency lake landing - The Hill",
-   "url": "https://thehill.com/homenews/house/6086647-wisconsin-gop-lawmaker-plane-crash/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-13T13:02:21+00:00",
-   "summary": "GOP gubernatorial candidate Rep. Tom Tiffany and his pilot survived an emergency lake landing following a loss of engine power ... HEALTH · OPINION ...",
-   "score": 3
-  },
-  {
-   "title": "WHO Director-General thanks PM Modi, BRICS leaders for commitment to universal health coverage",
-   "url": "https://www.bignewsnetwork.com/news/279304385/who-director-general-thanks-pm-modi-brics-leaders-for-commitment-to-universal-health-coverage",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-13T12:31:30+00:00",
-   "summary": "Director-General of the World Health Organisation (WHO) Tedros Adhanom Ghebreyesus on Sunday expressed gratitude towards Prime Minister Narendra ...",
-   "score": 15
-  },
-  {
-   "title": "Black women are more likely to experience pregnancy trauma and have their pain ignored",
-   "url": "https://www.npr.org/2026/09/13/nx-s1-5944495/black-women-are-more-likely-to-experience-pregnancy-trauma-and-have-their-pain-ignored",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-13T12:24:14+00:00",
-   "summary": "Global Health · 'People are still afraid of those three letters': Fighting the stigma of HIV · Taya Hailstone has been in remission from Hodgkin ...",
-   "score": 10
-  },
-  {
-   "title": "Why Leadership | Global Health Corps",
-   "url": "https://ghcorps.org/why-leadership/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-13T12:14:25+00:00",
-   "summary": "Ebola outbreak, West Africa. Fragmented coordination and the absence of supported local leaders turned a containable outbreak into a regional crisis.",
-   "score": 18
-  },
-  {
-   "title": "GeoVax Chairman and CEO David Dodd to Participate in 2026 Georgia Life Sciences Summit",
-   "url": "https://geovax.com/geovax-chairman-and-ceo-david-dodd-to-participate-in-2026-georgia-life-sciences-summit/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-13T12:07:21+00:00",
-   "summary": "Former Georgia Life Sciences Chair Selected for CEO Spotlight and Private Global Health Policy Roundtable with U.S. Rep. Rich McCormick.",
-   "score": 8
-  },
-  {
-   "title": "The Sunday Edition: Antibiotics | Food Safety News",
-   "url": "https://www.foodsafetynews.com/2026/09/the-sunday-edition-antibiotics/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-13T12:04:24+00:00",
-   "summary": "Civilian access to penicillin started the following June. Today, the World Health Organization's list of medically important antimicrobials identifies ...",
-   "score": 6
-  },
-  {
-   "title": "Commission backs out of conference after Taiwanese participation",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSllFaDM3RzdhekJXNVpNOWM3YkZja0J3enNXbXB1TFlmbHE2TXY0R19Idi1MbEtnVkQ3QTA5SUgtUWphR3NCdkc3TEJHRUMxNUhXQ20zajlWZEhUTXZ2TVJSMnAxZVB4UXVtNmZjdHM5NDlYYkxNNmpialVGQ0hzdnlhSV9ZWk95QmZ6QjhlNDRBejdDc0JadUlwVEZpTUhaQTJ2YmZRUFl1MFp4bzZzM29TZw?oc=5",
-   "src": "euractiv.com",
-   "feed": "Euractiv Health",
-   "cat": "policy",
-   "date": "2026-09-13T11:43:02+00:00",
-   "summary": "Commission backs out of conference after Taiwanese participation euractiv.com",
-   "score": 2
-  },
-  {
-   "title": "Woman Adopts Two Baby Girls—Then a Terrifying Health Crisis Strikes - Newsweek",
-   "url": "https://www.newsweek.com/woman-adopts-two-baby-girls-terrifying-health-crisis-strikes-12401609",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-13T11:15:40+00:00",
-   "summary": "Instead, an unexpected health battle was about to unfold. Debby Erney and her husband Bob finally stood before a judge in 2001 and officially adopted ...",
-   "score": 3
-  },
-  {
-   "title": "BRICS Leaders On Obesity: Why The Growing Health Crisis Needs Urgent Action - NDTV",
-   "url": "https://www.ndtv.com/health/brics-leaders-on-obesity-why-the-growing-health-crisis-needs-urgent-action-12040756",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-13T11:12:19+00:00",
-   "summary": "The BRICS leaders' recognition of obesity and non-communicable diseases as major public health challenges reflects a growing global concern.",
-   "score": 3
-  },
-  {
-   "title": "An Ontario doctor can prescribe a breakthrough cancer drug in three clicks. Globally ... - Toronto Star",
-   "url": "https://www.thestar.com/news/investigations/an-ontario-doctor-can-prescribe-a-breakthrough-cancer-drug-in-three-clicks-globally-other-doctors-are-forced-to-play-god/article_9212645e-01cf-42b9-9183-71bb5569dbfa.html",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-13T11:10:10+00:00",
-   "summary": "Drugmaker Merck & Co says the safe and consistent delivery of Keytruda to patients 'is heavily dependent on health system readiness.'.",
-   "score": 3
-  },
-  {
-   "title": "GLP-1-driven vitamin deficiency linked to rare brain disorder: Study - WWLP",
-   "url": "https://www.wwlp.com/news/national/glp-1-driven-vitamin-deficiency-linked-to-rare-brain-disorder-study/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-13T11:01:59+00:00",
-   "summary": "Physicians consider it a medical emergency . GLP-1 drugs can contribute to vitamin deficiencies by suppressing appetite and reducing food intake ...",
-   "score": 3
-  },
-  {
-   "title": "World Sepsis Day: what do midwives need to know?",
-   "url": "https://rcm.org.uk/blog/2026/09/world-sepsis-day/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-13T10:56:26+00:00",
-   "summary": "Maternal sepsis is defined by the World Health Organisation as a life ... Global Health , 10,2 (2020). 'Analysis of the global burden and key ...",
-   "score": 8
-  },
-  {
-   "title": "Russian drone hits passenger train headed from Kyiv to Warsaw",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORDJ5NFhVRkg0TFdUVzlGX3BuZHBwRG11VXJ5MExCa1RieXNxdndvOU9SaVNwN0RPRG5jRlMwYV9Pb3c5Rm5lMVk0RV93VTkyazVsS0JzV3pHVXNYN2FjMTZhZzd3RGlwdXQ1eDBzUkFHbXZMNDJQZ1pTNFBCMHdsdEkyT3NIdE14TWpqdmhNWk5mckIwNEIwdWZ2b2NNNWdBVmZCSg?oc=5",
-   "src": "politico.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-09-13T10:45:00+00:00",
-   "summary": "Russian drone hits passenger train headed from Kyiv to Warsaw politico.eu",
-   "score": 2
-  },
-  {
-   "title": "AMA moves to classify myopia as a formal disease - Ophthalmology Times",
-   "url": "https://www.ophthalmologytimes.com/view/ama-moves-to-classify-myopia-as-a-formal-disease",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-13T10:29:28+00:00",
-   "summary": "Myopia affects roughly 41.6% of the US population and is projected by the World Health Organization to affect half the global population by 2050 ...",
-   "score": 6
-  },
-  {
-   "title": "US Rep. Tom Tiffany says he sustained minor injuries after plane makes emergency landing",
-   "url": "https://www.reuters.com/world/us/us-rep-tom-tiffany-says-he-sustained-minor-injuries-after-plane-makes-emergency-2026-09-13/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-13T09:57:09+00:00",
-   "summary": "... emergency water landing on a lake in central Wisconsin, sustaining minor injuries ... Future of Health · Future of Money · Take Five · World at Work.",
-   "score": 3
-  },
-  {
-   "title": "Giving surplus a second life, Jerusalem's food rescuers are turning leftovers into a lifeline",
-   "url": "https://www.jpost.com/food-recipes/article-908308",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-13T09:52:50+00:00",
-   "summary": "As the World Health Organization (WHO) states – in case it wasn't patently clear – in its healthy diet guidelines: “Diet plays a critical role in ...",
-   "score": 6
-  },
-  {
-   "title": "Senate chokes clean air reforms - Bangkok Post",
-   "url": "https://www.bangkokpost.com/opinion/opinion/3318605/senate-chokes-clean-air-reforms",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-13T09:38:32+00:00",
-   "summary": "The World Health Organization puts the annual economic cost of PM2.5 pollution at about 2.17 trillion baht, nearly 11% of GDP. Yet instead of ...",
-   "score": 6
-  },
-  {
-   "title": "Oil prices at an 'inflection point' and headed higher: Amrita Sen - YouTube",
-   "url": "https://www.youtube.com/watch?v=qbijogRLCdA",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-13T09:22:10+00:00",
-   "summary": "China's oil 'relief valve' is starting to close, squeezing oil markets: Dan Pickering · Saudi pipeline shutdown deepens global oil supply fears | DW ...",
-   "score": 5
-  },
-  {
-   "title": "Leaders of BRICS countries call for stronger cooperation in health , endorse initiatives on TB",
-   "url": "https://health.economictimes.indiatimes.com/amp/news/policy/leaders-of-brics-countries-call-for-stronger-cooperation-in-health-endorse-initiatives-on-tb/134177013",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-13T08:47:08+00:00",
-   "summary": "The leaders welcomed the outcomes of the 16th BRICS Health Ministers' Meeting held in Chandigarh and identified tuberculosis as a \"critical global ...",
-   "score": 5
-  },
-  {
-   "title": "Trump says he would “love” to see Ireland unified - YouTube",
-   "url": "https://www.youtube.com/watch?v=et5eACtxBYw",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-13T08:36:31+00:00",
-   "summary": "... Global News Channel HERE: http://bit.ly/20fcXDc Follow Global News on X ... Dr Sarah Jenkins || Senior Health and Nutrition•337K views · 34:35.",
-   "score": 3
-  },
-  {
-   "title": "Dr Vanessa Kerry Named WHO Health Resilience Envoy | Healthcare Digital",
-   "url": "https://healthcare-digital.com/news/dr-vanessa-kerry-named-who-health-resilience-envoy",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-13T08:18:57+00:00",
-   "summary": "The World Health Organisation (WHO) has appointed Dr Vanessa Kerry as the WHO Director-General's Special Envoy for Health Resilience, expanding her ...",
-   "score": 9
-  },
-  {
-   "title": "It was wonderful to meet Professor Mohamed Janabi and Dr. @Ntuli Kapologwe during the ...",
-   "url": "https://www.instagram.com/reel/DdLtC6yjLVZ/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-13T08:02:06+00:00",
-   "summary": "The Global Health Leaders from our landscape we are proud ... Day 2 | 2nd International Primary Health Care Conference 2026 Arusha, Tanzania ...",
-   "score": 8
-  },
-  {
-   "title": "Wayne County Public Health confirms 2 measles cases on Saturday - WHEC.com",
-   "url": "https://www.whec.com/top-news/wayne-county-public-health-confirms-2-measles-cases-on-saturday/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-13T07:36:59+00:00",
-   "summary": "To see the recently updated numbers and more, click here. MORE: County health officials warn about possible measles exposure at Strong's emergency ...",
-   "score": 7
-  },
-  {
-   "title": "Ancient, untouched burial site found in Peru - YouTube",
-   "url": "https://www.youtube.com/watch?v=M0DyY6WBZBA",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-13T07:35:26+00:00",
-   "summary": "... Global News on X HERE: http://bit.ly/1Toz8mt Follow Global News on ... William Parker Senior Health •251K views · 26:18. Go to channel Ambrose ...",
-   "score": 3
-  },
-  {
-   "title": "Athlete dies during IRONMAN 70.3 Wisconsin | News | wkow.com",
-   "url": "https://www.wkow.com/news/athlete-dies-during-ironman-70-3-wisconsin/article_1f152eda-f317-4493-9360-11098a067f31.html",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-13T07:19:13+00:00",
-   "summary": "IRONMAN USA - Midwest posted the update on Facebook, saying the athlete experienced a medical emergency . The page continued, \"We extend our ...",
-   "score": 3
-  },
-  {
-   "title": "Athlete dies while competing in IRONMAN 70.3 Wisconsin - WMTV",
-   "url": "https://www.wmtv15news.com/2026/09/13/athlete-dies-while-competing-ironman-703-wisconsin/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-13T07:11:40+00:00",
-   "summary": "... emergency medical services were needed. MFD says UW Lake Rescue had a boat on the water monitoring athletes, and they were able to take the ...",
-   "score": 3
-  },
-  {
-   "title": "Garry Aslanyan: Bridging the Gap Between Evidence and Public Health Impact - Oncodaily",
-   "url": "https://oncodaily.com/voices/garry-aslanyan-584969",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-13T06:12:16+00:00",
-   "summary": "... World Health Organization , shared on LinkedIn: “I think we did it. A full room of delegates at the World Congress on Public Health joined our ...",
-   "score": 6
-  },
-  {
-   "title": "Paramedicine expert steps outside his comfort zone - Continuing Studies",
-   "url": "https://www.sfu.ca/continuing-studies/programs/equity-in-healthcare-certificate/student-stories/keith-tyler.html",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-13T06:08:37+00:00",
-   "summary": "As senior leader of learning design at BC Emergency Health Services, Keith Tyler helps shape the curriculum for 5000 active paramedics.",
-   "score": 3
-  },
-  {
-   "title": "Saudi volunteers pack aid as KSrelief steps up help for Gaza - ARAB NEWS",
-   "url": "https://www.arabnews.jp/en/saudi-arabia/saudi-volunteers-pack-aid-as-ksrelief-steps-up-help-for-gaza-164213",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-13T06:07:48+00:00",
-   "summary": "The World Health Organization , the Food and Agriculture Organization, the UN Children's Fund, and the World Food Programme reported in August 2025 ...",
-   "score": 6
-  },
-  {
-   "title": "Ricin confirmed at Hastings apartment building, residents barred from returning home",
-   "url": "https://www.mlive.com/news/kalamazoo/2026/09/ricin-confirmed-at-hastings-apartment-building-residents-barred-from-returning-home.html",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-13T05:52:49+00:00",
-   "summary": "... Health Pennock Hospital Emergency Department, where initial presumptive tests had indicated ricin's presence. The health department has issued ...",
-   "score": 3
-  },
-  {
-   "title": "Nurses at Boston Medical Center vote to authorize a three-day strike - Facebook",
-   "url": "https://www.facebook.com/Boston25News/posts/nearly-2000-nurses-at-boston-medical-center-voted-to-authorize-a-three-day-strik/1569088765252784/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-13T05:43:14+00:00",
-   "summary": "... medical emergency outside of the hospital. Someone notified hospital staff for help, but Morgan and another nurse crossed the picket line to bring ...",
-   "score": 3
-  },
-  {
-   "title": "Wellston firefighter honored after fatal medical emergency during wildfire - YouTube",
-   "url": "https://www.youtube.com/watch?v=wkEplcxt9K0",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-13T05:18:17+00:00",
-   "summary": "Wellston firefighter honored after fatal medical emergency during wildfire KOCO News 5 is your home for Oklahoma breaking news and weather.",
    "score": 3
   }
  ]
