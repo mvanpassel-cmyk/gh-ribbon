@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-16T17:07:58+00:00",
+ "generated": "2026-09-16T20:17:41+00:00",
  "feeds_ok": 27,
  "feeds_tot": 27,
  "status": {
@@ -95,12 +95,12 @@
   },
   "BMJ": {
    "ok": true,
-   "msg": "6 items (via kandidaat 2)",
+   "msg": "12 items (via kandidaat 3)",
    "cat": "journal"
   },
   "BMJ Global Health": {
    "ok": true,
-   "msg": "9 items",
+   "msg": "12 items (via kandidaat 3)",
    "cat": "journal"
   },
   "PLOS Global Public Health": {
@@ -141,14 +141,224 @@
  },
  "items": [
   {
-   "title": "Bundibugyo Virus Outbreak Shows Signs of Containment in Northeastern DRC – Still Expanding Elsewhere",
+   "title": "Quick takes: More sprouts recalled in Salmonella outbreak, Cyclospora cases slow down, Klomp touts efficacy of MMR shot in Senate hearing",
+   "url": "https://www.cidrap.umn.edu/salmonella/quick-takes-more-sprouts-recalled-salmonella-outbreak-cyclospora-cases-slow-down-klomp",
+   "src": "CIDRAP Public Health",
+   "feed": "CIDRAP Public Health",
+   "cat": "promed",
+   "date": "2026-09-16T20:06:00+00:00",
+   "summary": "The Cyclospora outbreak linked to tainted iceberg lettuce was declared over last week.",
+   "score": 8
+  },
+  {
+   "title": "Two Laboratory Confirmed Cases of Measles in Vernon County | Wisconsin Department of ...",
+   "url": "https://www.dhs.wisconsin.gov/news/releases/091626.htm",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-16T19:36:13+00:00",
+   "summary": "The Wisconsin Department of Health Services (DHS) and the Vernon County Health ... Emergency Medical Services · ForwardHealth Community Partners ...",
+   "score": 7
+  },
+  {
+   "title": "Study suggests carbapenem-resistant Acinetobacter may spread through the air",
+   "url": "https://www.cidrap.umn.edu/healthcare-associated-infections/study-suggests-carbapenem-resistant-acinetobacter-may-spread",
+   "src": "CIDRAP Stewardship",
+   "feed": "CIDRAP Stewardship",
+   "cat": "amr",
+   "date": "2026-09-16T19:25:00+00:00",
+   "summary": "Researchers say airborne dispersal of the healthcare-associated pathogen could present an important mode of spread.",
+   "score": 2
+  },
+  {
+   "title": "HIV self-testing and the global diagnostic gap: Addressing a decade of missed opportunity",
+   "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1005241",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-16T19:24:56+00:00",
+   "summary": "Abbreviations: ART, Antiretroviral therapy;GHSD, Global Health Security and Diplomacy;HIVST, HIV self-testing;LMICs, low- and middle-income ...",
+   "score": 20
+  },
+  {
+   "title": "STAT+: Senators highlight the power Chris Klomp wields at confirmation hearings",
+   "url": "https://www.statnews.com/2026/09/16/senators-highlight-chris-klomp-power-rfk-jr-second-in-command/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-09-16T19:17:40+00:00",
+   "summary": "Chris Klomp has already played a major role in the Trump administration and its Make America Healthy Again agenda.",
+   "score": 1
+  },
+  {
+   "title": "Fact Check Team: Are mothers getting the mental health care they need? - KSNV",
+   "url": "https://news3lv.com/news/nation-world/fact-check-team-are-mothers-getting-the-mental-health-care-they-need-postpartum-lindsay-clancy-treatment",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-16T19:14:56+00:00",
+   "summary": "For someone experiencing a psychiatric emergency , calling 911 or going to an emergency department may be appropriate. The 988 Suicide & Crisis ...",
+   "score": 3
+  },
+  {
+   "title": "There Are 'Encouraging Signs' In DR Congo Ebola Fight — WHO • Channels Television",
+   "url": "https://www.channelstv.com/2026/09/16/breaking-there-are-encouraging-signs-in-dr-congo-ebola-fight-who/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-16T18:56:41+00:00",
+   "summary": "World Health Organization (WHO) Director-General Tedros Adhanom Ghebreyesus. Photo: WHO. The Ebola epidemic in the Democratic Republic of Congo is ...",
+   "score": 18
+  },
+  {
+   "title": "ARVO celebrates 2026 Champalimaud Vision Award winners | Newswise",
+   "url": "https://www.newswise.com/articles/arvo-celebrates-2026-champalimaud-vision-award-winners",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-16T18:37:51+00:00",
+   "summary": "... World Health Organization and the International Agency for the Prevention of Blindness. Among the world's largest scientific and humanitarian ...",
+   "score": 6
+  },
+  {
+   "title": "Child dies after medical emergency at Westlake Elementary School - Thousand Oaks Acorn",
+   "url": "https://www.toacorn.com/articles/child-dies-after-medical-emergency-at-westlake-elementary-school/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-16T18:37:11+00:00",
+   "summary": "First responders immediately began administering emergency medical care, and the child was transported to Los Robles Regional Medical Center, where ...",
+   "score": 3
+  },
+  {
+   "title": "Ethiopia achieves historic World Health Organization (WHO) verification of national ... - Zawya",
+   "url": "https://www.zawya.com/en/press-release/africa-press-releases/ethiopia-achieves-historic-world-health-organization-who-verification-of-national-emergency-medical-team-becoming-first-civilian-national-emergency-medical-team-emt-in-africa-to-attain-international-classification-741425",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-16T18:33:55+00:00",
+   "summary": "... World Health Organization (WHO) verification of its National Emergency Medical Team (EMT), positioning the country as the first civilian Emergency ...",
+   "score": 9
+  },
+  {
+   "title": "Teva Launches LongActingImpact.com to Advance Understanding of Earlier, Effective and ...",
+   "url": "https://ir.tevapharm.com/news-and-events/press-releases/press-release-details/2026/Teva-Launches-LongActingImpact-com-to-Advance-Understanding-of-Earlier-Effective-and-Uninterrupted-Schizophrenia-Care/default.aspx",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-16T18:04:59+00:00",
+   "summary": "https://www.samhsa.gov/mental- health /schizophrenia. Accessed March 2026. Velligan DI, Rao S. The Epidemiology and Global Burden of Schizophrenia. J ...",
+   "score": 3
+  },
+  {
+   "title": "Five things to know about how AI can benefit everyone",
+   "url": "https://www.gatesfoundation.org/ideas/articles/five-ways-ai-accelerate-global-progress",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-16T17:57:19+00:00",
+   "summary": "How can AI help people around the world ? Read the 2026 Goalkeepers Report to discover how AI could accelerate global progress in health and ...",
+   "score": 3
+  },
+  {
+   "title": "EU Powering Global Health Resilience | EEAS - European Union",
+   "url": "https://www.eeas.europa.eu/delegations/un-new-york/eu-powering-global-health-resilience_en",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-16T17:56:13+00:00",
+   "summary": "EU Powering Global Health Resilience. 16.09.2026. On 24 September 2026, European Commissioner for International Partnerships Jozef Síkela. will host a ...",
+   "score": 15
+  },
+  {
+   "title": "FACT SHEET: Republicans Exacerbate Maternal Health Crisis By Stripping Away Health ...",
+   "url": "https://www.protectourcare.org/fact-sheet-republicans-exacerbate-maternal-health-crisis-by-stripping-away-health-insurance-from-mothers-of-color/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-16T17:49:52+00:00",
+   "summary": "Instead of preventing and improving maternal health , Republicans are stripping coverage that mothers rely on, worsening an already deadly crisis .",
+   "score": 3
+  },
+  {
+   "title": "Published by the Global Health Innovative Technology (GHIT) Fund Tanzania is taking ... - Instagram",
+   "url": "https://www.instagram.com/p/DdWKwkJjYN7/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-16T17:30:41+00:00",
+   "summary": "The Tanzania Sickle Cell Disease Alliance (TSDA) was proud to contribute to the 2nd International Primary Health Care Conference (IPHC), held in ...",
+   "score": 13
+  },
+  {
+   "title": "Steamboat Ironman survives sepsis, organ failure and emergency brain surgery - UCHealth",
+   "url": "https://www.uchealth.org/today/steamboat-ironman-survives-sepsis-organ-failure-and-emergency-brain-surgery/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-16T17:10:41+00:00",
+   "summary": "One could argue that in 2023, Eric completed a different sort of Ironman, a grueling health ordeal that required him to keep going and going. First, ...",
+   "score": 3
+  },
+  {
+   "title": "'The View's Alyssa Farah Griffin Gives Health Update on 7-Month-Old Son After Emergency Surgery",
+   "url": "https://www.tvinsider.com/1291192/the-view-alyssa-farah-griffin-son-helmet-emergency-surgery/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-16T17:10:39+00:00",
+   "summary": "What To Know. Alyssa Farah Griffin shared that her son underwent emergency surgery and spent time in the ICU. Four months after the surgery, Farah ...",
+   "score": 3
+  },
+  {
+   "title": "AI in health must be done in a 'European way,' without replacing doctors, von der Leyen says",
+   "url": "https://www.euronews.com/health/2026/09/16/ai-in-health-must-be-done-in-a-european-way-without-replacing-doctors-von-der-leyen-says",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-16T17:10:31+00:00",
+   "summary": "... World Health Organization warned in a recent report. The organisation found that only 8% of its member states have issued a national health ...",
+   "score": 6
+  },
+  {
+   "title": "VP, Head of Global Regulatory Affairs at AstraZeneca",
+   "url": "https://careers.astrazeneca.com/job/boston/vp-head-of-global-regulatory-affairs/43991/100715063408",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-16T17:01:38+00:00",
+   "summary": "As the senior regulatory leader, the VP serves as the primary interface with global health authorities and a key contributor to enterprise governance ...",
+   "score": 8
+  },
+  {
+   "title": "Bundibugyo Virus Outbreak Shows Signs Of Containment In Northeastern DRC",
    "url": "https://healthpolicy-watch.news/bundibugyo-virus-outbreak-shows-signs-of-containment-in-northeastern-drc-still-expanding-elsewhere/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-09-16T16:53:26+00:00",
-   "summary": "The Ebola Bundibugyo virus outbreak is showing initial signs of containment in the Ituri province of northeastern Democratic Republic of Congo – where it first surfaced in April. But in North Kivu province, to the south, the cases are still rising fast – with the number of weekly cases nearly double",
-   "score": 12
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-16T16:57:04+00:00",
+   "summary": "WHO declared the outbreak a Public Health Emergency of International Concern in May. ... Health Emergencies Programme. That is along with a ...",
+   "score": 15
+  },
+  {
+   "title": "Governor Moore announces $1.36 million in awards to expand prevention, reduction of gun violence",
+   "url": "https://health.maryland.gov/newsroom/Pages/Governor%20Moore%20announces%20$1.36%20million%20in%20awards%20to%20expand%20prevention,%20reduction%20of%20gun%20violence.aspx",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-16T16:51:06+00:00",
+   "summary": "Behavioral Health Crisis Service Locator · Department Information · Mental ... Non-Emergency Medical Transportation and DME/DMS · Nursing Home ...",
+   "score": 3
+  },
+  {
+   "title": "WHO expresses cautious optimism about bid to control Ebola outbreak in DRC - STAT News",
+   "url": "https://www.statnews.com/2026/09/16/ebola-outbreak-drc-who-cautious-optimism/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-16T16:32:02+00:00",
+   "summary": "... World Health Organization said Wednesday. In a news conference in Geneva, Tedros Adhanom Ghebreyesus said disease transmission rates are declining ...",
+   "score": 22
   },
   {
    "title": "WHO expresses cautious optimism about bid to control Ebola outbreak in DRC",
@@ -161,6 +371,46 @@
    "score": 17
   },
   {
+   "title": "Ball State University Receives Grant to Strengthen Rural Health Workforce, Access to Care",
+   "url": "https://www.bsu.edu/news/press-center/archives/2026/09/ball-state-university-receives-grant-to-strengthen-rural-health-workforce-access-to-care",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-16T16:22:31+00:00",
+   "summary": "... healthcare providers, county health departments, emergency medical services, mental health and social service organizations, and education and youth ...",
+   "score": 3
+  },
+  {
+   "title": "Rise in nitrous oxide emergencies prompts health warning - MLive.com",
+   "url": "https://www.mlive.com/news/2026/09/rise-in-nitrous-oxide-emergencies-prompts-health-warning.html",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-16T16:22:05+00:00",
+   "summary": "Health emergencies linked to nitrous oxide are on the rise and doctors say what's marketed as harmless fun can quickly become life-threatening.",
+   "score": 3
+  },
+  {
+   "title": "LMPD officers who fatally shot woman experiencing mental health crisis won't be charged",
+   "url": "https://www.youtube.com/watch?v=K_9oXRjugZQ",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-16T16:19:01+00:00",
+   "summary": "LMPD officers who fatally shot woman experiencing mental health crisis won't be charged. @WHAS11NewsNo likes1 view3 minutes ago",
+   "score": 9
+  },
+  {
+   "title": "The Maternal Mental Health Crisis —A Dangerous Blind Spot in US Medicine - JAMA Network",
+   "url": "https://jamanetwork.com/journals/jama/fullarticle/2854311",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-16T16:18:43+00:00",
+   "summary": "... health needs of approximately 3.6 million US births annually. Postpartum psychosis, a medical emergency carrying a high risk for suicide and ...",
+   "score": 3
+  },
+  {
    "title": "Early Data Show Uptick in Suicide Deaths in 2025 Following a Two-Year Decline - KFF",
    "url": "https://www.kff.org/quick-insights/early-data-show-uptick-in-suicide-deaths-in-2025-following-a-two-year-decline/",
    "src": "Global Health",
@@ -169,6 +419,16 @@
    "date": "2026-09-16T16:16:25+00:00",
    "summary": "Global Health Policy · Health Costs · Health Information and Trust · HIV/AIDS · Immigrant Health · LGBTQ · Medicaid · Medicare · Mental Health ...",
    "score": 4
+  },
+  {
+   "title": "WHO sees 'encouraging signs' in Congo Ebola fight, but warns cases in one eastern region ...",
+   "url": "https://www.washingtonpost.com/world/2026/09/16/congo-ebola-bundibugyo-world-health-organization/56f1d052-b1db-11f1-92c2-5c918f4a6127_story.html",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-16T16:11:57+00:00",
+   "summary": "The World Health Organization reports encouraging signs in the fight against an Ebola outbreak in eastern Congo.",
+   "score": 19
   },
   {
    "title": "Rethinking Ethics Capacity: What Does Global Health Need Now? with Nadia Tagoe, PhD",
@@ -221,6 +481,16 @@
    "score": 13
   },
   {
+   "title": "Specialties Honor Roll: Health Law - National Jurist",
+   "url": "https://nationaljurist.com/specialties-honor-roll-health-law/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-16T15:40:51+00:00",
+   "summary": "Students gain additional real- world experience through health ... health organization , on legal issues connected to social determinants of health .",
+   "score": 3
+  },
+  {
    "title": "One Year of “America First Global Health ”: Evidence Shows Trump Administration Policy ...",
    "url": "https://phr.org/news/one-year-of-america-first-global-health-evidence-shows-trump-administration-policy-has-undermined-global-health/",
    "src": "Global Health",
@@ -249,6 +519,16 @@
    "date": "2026-09-16T15:31:50+00:00",
    "summary": "The World Health Organization reports encouraging signs in the fight against an Ebola outbreak in eastern Congo. WHO Director-General Tedros ...",
    "score": 19
+  },
+  {
+   "title": "WHO sees 'encouraging signs' in DR Congo Ebola response but says outbreak 'far from over'",
+   "url": "https://www.france24.com/en/africa/20260916-who-sees-encouraging-signs-in-dr-congo-ebola-response-but-says-outbreak-far-from-over",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-16T15:30:11+00:00",
+   "summary": "The World Health Organization said Wednesday that the fight against the Ebola outbreak in DR Congo was showing “encouraging signs\" but that the ...",
+   "score": 22
   },
   {
    "title": "In conflict-hit Nigeria, military escorts help vaccinators to reach children cut off from healthcare",
@@ -401,6 +681,16 @@
    "score": 3
   },
   {
+   "title": "Delays in tuberculosis diagnosis and treatment in India: A patient journey analysis from Mumbai and Patna during the COVID-19 Pandemic",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007214",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-09-16T14:00:00+00:00",
+   "summary": "by Mohammad Abdullah Heel Kafi, Poshan Thapa, Madhukar Pai, Charity Oga-Omenka Tuberculosis (TB) care for people with TB in India are often fragmented, undermining timely diagnosis and treatment. Understanding patient journeys is critical to strengthening TB care delivery and advancing elimination g",
+   "score": 11
+  },
+  {
    "title": "US measles deaths: Pennsylvania reports third and fourth fatalities",
    "url": "http://www.bmj.com/content/394/bmj-2026-100879.short?rss=1",
    "src": "BMJ",
@@ -551,16 +841,6 @@
    "score": 2
   },
   {
-   "title": "12 takeaways from von der Leyen’s State of the Union",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNb2tNU1hPQmVZcHpFRUVJZ2FRRXlqOFlFVS1QeDdMZ1p4cXRyVUNwdlowRGNId0ZCMmFaUnM4b1N3S2gwT1JZbHlQQWN3cDZBRlhVcENzQzYtSm5PZFNBam42d3NoTm80NW5UamlCdkJvWXpzdHhnQXhxTWlZNzNURXZ2V3lsdWp3MlJBaC1Ubw?oc=5",
-   "src": "politico.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-09-16T12:19:00+00:00",
-   "summary": "12 takeaways from von der Leyen’s State of the Union politico.eu",
-   "score": 2
-  },
-  {
    "title": "EPA repeals major greenhouse gas emission limits for US fossil fuel power plants",
    "url": "http://www.bmj.com/content/394/bmj-2026-100874.short?rss=1",
    "src": "BMJ",
@@ -621,6 +901,26 @@
    "score": 6
   },
   {
+   "title": "12 takeaways from von der Leyen’s State of the Union",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNb2tNU1hPQmVZcHpFRUVJZ2FRRXlqOFlFVS1QeDdMZ1p4cXRyVUNwdlowRGNId0ZCMmFaUnM4b1N3S2gwT1JZbHlQQWN3cDZBRlhVcENzQzYtSm5PZFNBam42d3NoTm80NW5UamlCdkJvWXpzdHhnQXhxTWlZNzNURXZ2V3lsdWp3MlJBaC1Ubw?oc=5",
+   "src": "politico.eu",
+   "feed": "Politico EU Health",
+   "cat": "policy",
+   "date": "2026-09-16T11:20:01+00:00",
+   "summary": "12 takeaways from von der Leyen’s State of the Union politico.eu",
+   "score": 2
+  },
+  {
+   "title": "Turkey sees Greece’s militarization of Aegean Islands as ‘threat’",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZFhYa2RVOTZhWGl4VWZkakMwdFMzRlNNSHk0SnBxQU40emprOEtWdzVSZk9URXhUTVdyazB6T0hFNFFxT0ppemljdnFTSm9HNzBtRGJMd3d2T3BlcEdrNWxzbC1rVnZuQ1ZzUklWN0pVd3hZT3diU0lsSl9XaXU2ek9jek5PMnBfWDRaMTQxSWZfc0Vv?oc=5",
+   "src": "politico.eu",
+   "feed": "Politico EU Health",
+   "cat": "policy",
+   "date": "2026-09-16T10:58:00+00:00",
+   "summary": "Turkey sees Greece’s militarization of Aegean Islands as ‘threat’ politico.eu",
+   "score": 2
+  },
+  {
    "title": "Bill Gates is betting $1 billion that AI can help save global health | Vox",
    "url": "https://www.vox.com/future-perfect/502936/gates-foundation-ai-foreign-aid",
    "src": "Global Health",
@@ -669,16 +969,6 @@
    "date": "2026-09-16T10:01:21+00:00",
    "summary": "Globally, women account for one in four people who use drugs such as heroin, cocaine, and cannabis but bear the greatest burden of harm,1 not because of their drug use but from laws and policies designed to punish them.2 Now, for the first time in decades, the United Nations Commission on Narcotic D",
    "score": 4
-  },
-  {
-   "title": "Turkey sees Greece’s militarization of Aegean Islands as ‘threat’",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZFhYa2RVOTZhWGl4VWZkakMwdFMzRlNNSHk0SnBxQU40emprOEtWdzVSZk9URXhUTVdyazB6T0hFNFFxT0ppemljdnFTSm9HNzBtRGJMd3d2T3BlcEdrNWxzbC1rVnZuQ1ZzUklWN0pVd3hZT3diU0lsSl9XaXU2ek9jek5PMnBfWDRaMTQxSWZfc0Vv?oc=5",
-   "src": "politico.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-09-16T10:00:05+00:00",
-   "summary": "Turkey sees Greece’s militarization of Aegean Islands as ‘threat’ politico.eu",
-   "score": 2
   },
   {
    "title": "Von der Leyen tries to stem tide on global threats ― from Trump to AI and climate",
@@ -1571,6 +1861,16 @@
    "score": 12
   },
   {
+   "title": "Call for MSF to be banned under terrorism law, but charity says it’s target of “disinformation”",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5HdVRhalpMaW9DQ1QxZlVLZ1hrenUwd2NDSnRQX2pSYkdDdnhiNS00QmRVektpX0JmUGxyQkh5SjdXYS1XS3RJaHpxWTQyOGJqZE16Y0xGN1B2d1E?oc=5",
+   "src": "The BMJ",
+   "feed": "BMJ",
+   "cat": "journal",
+   "date": "2026-09-15T16:49:28+00:00",
+   "summary": "Call for MSF to be banned under terrorism law, but charity says it’s target of “disinformation” The BMJ",
+   "score": 1
+  },
+  {
    "title": "DRC Ebola response making progress, but more support urgently needed, Senior Ebola ... - OCHA",
    "url": "https://www.unocha.org/news/drc-ebola-response-making-progress-more-support-urgently-needed-senior-ebola-coordinator-says",
    "src": "WHO Alert",
@@ -2103,11 +2403,11 @@
   {
    "title": "Portuguese-speaking African countries strengthen emergency medical team readiness",
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQ1RGN2JYWkg3aG9TMkUtRUQxVzM4TWRzNGxNN0xOWTk2ekFscDJkOEROdEFHUmhOSGlfNGZwdk5UaGNnV1ZQZkVmcW4tM0o1ekxONktIMDJkekk3c3FhZlB2RkZJRDM4TVVrV1pUSnlWVE5RWUg5aE1Bb0JYdEZyUUREYTRwVVFIUFhMY2hDcVhMdlpOcTFiRDc3WE9IU3hFTE44SDkwNU9TbTRLUGFRY3BDWkRoNGFE?oc=5",
-   "src": "reliefweb.int",
+   "src": "ReliefWeb",
    "feed": "ReliefWeb Health",
    "cat": "emerg",
    "date": "2026-09-15T13:46:15+00:00",
-   "summary": "Portuguese-speaking African countries strengthen emergency medical team readiness reliefweb.int",
+   "summary": "Portuguese-speaking African countries strengthen emergency medical team readiness ReliefWeb",
    "score": 2
   },
   {
@@ -2193,11 +2493,11 @@
   {
    "title": "Information Security Analyst",
    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBrVDZuWVotMV85dllkSTRBUi15YnRGRUJmaWplWFJsMXhCa2tXRERlQXJ3VU1uUTFhNF9DNmk5Yl9rN0Q5dWNlbHpPZmhpUUI0N3pxeFhscmNaOHJfYTMyeHExcWwyQ1RzdlBwa0dqbw?oc=5",
-   "src": "reliefweb.int",
+   "src": "ReliefWeb",
    "feed": "ReliefWeb Health",
    "cat": "emerg",
    "date": "2026-09-15T12:40:12+00:00",
-   "summary": "Information Security Analyst reliefweb.int",
+   "summary": "Information Security Analyst ReliefWeb",
    "score": 2
   },
   {
@@ -2348,6 +2648,26 @@
    "cat": "news",
    "date": "2026-09-15T10:30:00+00:00",
    "summary": "The drug stabilized kidney function and reduced the risk of death and other complications in IgAN patients",
+   "score": 1
+  },
+  {
+   "title": "Diagnosis and management of lower limb cellulitis",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5qQkZpUnJ6NTBQbEhLOE81LWVSR0NQdlVzX1k0ckwtczJRZUcxaTZlTk5QSTc1bl91QnFjSEVDRDNQSnAtSk9leDhqNWZWWG9fbGxvT1lTNXpoUUk?oc=5",
+   "src": "The BMJ",
+   "feed": "BMJ",
+   "cat": "journal",
+   "date": "2026-09-15T10:24:39+00:00",
+   "summary": "Diagnosis and management of lower limb cellulitis The BMJ",
+   "score": 1
+  },
+  {
+   "title": "How patients explain and make sense of their decision for assisted suicide in Switzerland (the Exit Project): qualitative exploratory study",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BelRzNzE1SFJaanR6T3h0dVE0MXZNSm50V0VDODQzQmpDU0xYU0EtUUhsZkx6YWdYZkZiRGlTTVJPaFBwU29DWjhxaXk5QlgxUUN0WlotYnRILVU?oc=5",
+   "src": "The BMJ",
+   "feed": "BMJ",
+   "cat": "journal",
+   "date": "2026-09-15T10:24:35+00:00",
+   "summary": "How patients explain and make sense of their decision for assisted suicide in Switzerland (the Exit Project): qualitative exploratory study The BMJ",
    "score": 1
   },
   {
@@ -2909,6 +3229,16 @@
    "date": "2026-09-15T00:21:38+00:00",
    "summary": "A critical medical emergency at sea prompted a dramatic rescue off the coast of Canada over the weekend, requiring specialized crew to airlift an ...",
    "score": 3
+  },
+  {
+   "title": "Islamic Relief Worldwide ousts Islamic Relief USA from its federation",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZFREUVd5akQ5aXRiTFZqZXZLd1paS2o5dzdrZW96Nm1PRXJac3ZKZ0s5R09FX0RmVEZEdHM5R01WRVhVRXNZWTd6NzVzclViZkU2V3lCdlN3MVE4S3U3WEZMLUZYT3lJT3U1U0hjZl95VFFCNVd4NmR3SWprMW1sd2FERkpzRmM0Y0xkSkV4TTgzVzJUYjRHNWNzVUhDQ2JkQURxVWJn?oc=5",
+   "src": "Devex",
+   "feed": "Devex Global Health",
+   "cat": "news",
+   "date": "2026-09-15T00:14:39+00:00",
+   "summary": "Islamic Relief Worldwide ousts Islamic Relief USA from its federation Devex",
+   "score": 2
   },
   {
    "title": "Natural Hazards Monitoring - 14 September 2026 - PAHO/WHO",
@@ -3809,336 +4139,6 @@
    "date": "2026-09-14T15:51:22+00:00",
    "summary": "For 19 years, MedAdvance has been an annual International Mission Board event that promotes global healthcare strategies to reach the lost.",
    "score": 8
-  },
-  {
-   "title": "Jonathan Wakefield | UBC Research + Innovation",
-   "url": "https://research.ubc.ca/eddie-goldenberg-chairs/jonathan-wakefield",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-14T15:47:25+00:00",
-   "summary": "... health and resources. His methodological innovations and global health applications have transformed how countries and multilateral agencies, such ...",
-   "score": 8
-  },
-  {
-   "title": "Brussels seeks French Guiana exemption from deforestation law",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSXBxRVh2YXZreVpoMkVtSU03RG5ETkhoNUZ4SzFoU2ttV29zd0pKZ3lHTlN0VkV2MkZHbmI0N1dPRjVvQXdPT1FoUzJGY3lHNXpDUkh1dndibzdYai1XVDREOUxvQnVDZVgtNEpsM1kxUGEtdzlSQ3dyUGgzWlZlQWoxb19MSkdDYk5xZWlMOTFMNW92SlZZ?oc=5",
-   "src": "euractiv.com",
-   "feed": "Euractiv Health",
-   "cat": "policy",
-   "date": "2026-09-14T15:14:25+00:00",
-   "summary": "Brussels seeks French Guiana exemption from deforestation law euractiv.com",
-   "score": 2
-  },
-  {
-   "title": "Longevity medicine under scrutiny after death of Greek pop star",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdnRCNEx1TmhvbG1hQ3F5NjdGVkFINVcyY0JNVFpJdGkxcUViTXRsY2loTnlXUXdMYjkyY0R1c3NFWU1tSW5jMll1SEhFd1h4MTdBUk80SEpSb2hDbmlWbE1fU0dQaWFvYVJJdVpXSkx3OUZNZVRRdHdxcElLNUNoTEd1VTFQdW94UjljMExIeW5BT1I1N1dfVEJB?oc=5",
-   "src": "euractiv.com",
-   "feed": "Euractiv Health",
-   "cat": "policy",
-   "date": "2026-09-14T15:13:51+00:00",
-   "summary": "Longevity medicine under scrutiny after death of Greek pop star euractiv.com",
-   "score": 2
-  },
-  {
-   "title": "Record number of Brits have unfavorable view of Nigel Farage",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdVpHRUhVQldkRXJQZXpZQ1d1OFZ1R2FHUDBYa2Q5TjM3QlBEN0FveVlKdFdaQzByY0pNS1AxQUxZSnY0NG5Yemh5Z0RuRFNEVUdWY3RTY0pKOFc0SHIxSnM4V0JBT0tpZnNzc1B1NFlkNzdHMVIySmpkcU5PbzBVbFJ0WHlGNjdwaTk3aFJHYWsxbjg?oc=5",
-   "src": "politico.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-09-14T15:09:00+00:00",
-   "summary": "Record number of Brits have unfavorable view of Nigel Farage politico.eu",
-   "score": 2
-  },
-  {
-   "title": "School meals: Ministers ban deep fried foods as they dish up new standards",
-   "url": "http://www.bmj.com/content/394/bmj-2026-100859.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-09-14T14:51:47+00:00",
-   "summary": "Pizza, hot dogs, muffins, and ice cream will all be restricted in school meals as part of new government standards aimed at tackling childhood obesity.1The rules require fruit and vegetables to be served with every meal, while deep fried foods such as doughnuts, chips, and hash browns will be banned",
-   "score": 1
-  },
-  {
-   "title": "Pennsylvania officials report state’s third death involving measles",
-   "url": "https://www.statnews.com/2026/09/14/third-measles-related-death-pennsylvania-outbreak/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-09-14T14:34:20+00:00",
-   "summary": "A Pennsylvania woman has died from complications associated with measles, the third death in the state this year involving the virus.",
-   "score": 5
-  },
-  {
-   "title": "WHO at the United Nations General Assembly 2026 - World Health Organization (WHO)",
-   "url": "https://www.who.int/news-room/events/detail/2026/09/18/default-calendar/who-at-the-united-nations-general-assembly-2026",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-14T14:04:41+00:00",
-   "summary": "UNGA81: restoring trust, strengthening health, securing the future. The World Health Organization (WHO) and partners will raise global awareness ...",
-   "score": 15
-  },
-  {
-   "title": "European Government Relations Adviser",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYzZETHQ5MzdUdE9aSUI0cjdhX1R0NFpJQjRtQ3FnVjFLdHA5a0NCR3BYVkZoWU91NHgxa3VIeVYybXlEdFVMcXFIQjhtazdzSTcyaG1qQnAxZE5GVnJBQ3dpNm5lVm94TGljenFZWWJObEs2TC1JcTJFcDR3eWdsaDh6dUYwc1huSHZwR0d0a1g0NkNGdE1ub2tNbHpMYjZISk5zaUd1UQ?oc=5",
-   "src": "Euractiv Jobs",
-   "feed": "Euractiv Health",
-   "cat": "policy",
-   "date": "2026-09-14T13:56:20+00:00",
-   "summary": "European Government Relations Adviser Euractiv Jobs",
-   "score": 2
-  },
-  {
-   "title": "Von der Leyen to skip Carney speech in EU Parliament",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMEhEUElSeTU0dDVUSFNONzlkUnM5bmdjSW1ubTU4V3NkWUpaUk1ibER3RVlPbTI4cFlJWkFqMXU4Wjl3RU5wdzh6MElvSUFDaHMyWDQ2UnRYSzB5SHl5aDVRYkhMSFhEaXBtTnV1WWU0bHNjLUFzRkl3ZW1qd2FEMTM0ZmwwN1FzTWR1Q1hyLXMtRWtWNllmQldyQkZ1bTZmRldjRmdtZw?oc=5",
-   "src": "politico.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-09-14T13:36:00+00:00",
-   "summary": "Von der Leyen to skip Carney speech in EU Parliament politico.eu",
-   "score": 2
-  },
-  {
-   "title": "STAT+: GSK touts lung cancer data from two drugs",
-   "url": "https://www.statnews.com/2026/09/14/biotech-news-gsk-touts-lung-cancer-data-from-two-drugs/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-09-14T13:34:37+00:00",
-   "summary": "Late-stage results for Definium's LSD treatment, AstraZeneca breast cancer drug fails key trial, and more biotech news from The Readout",
-   "score": 1
-  },
-  {
-   "title": "STAT+: Pharmalittle: We’re reading about another AstraZeneca trial failure, a Novo name change, and more",
-   "url": "https://www.statnews.com/pharmalot/2026/09/14/another-astrazeneca-trial-failure-novo-name-change/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-09-14T13:07:51+00:00",
-   "summary": "AstraZeneca disclosed that a breast cancer pill failed in a pivotal trial testing it as a first-line therapy in advanced tumors",
-   "score": 3
-  },
-  {
-   "title": "News - Drug gives mice long-lasting protection against severe malaria - EARA",
-   "url": "https://www.eara.eu/news/drug-gives-mice-long-lasting-protection-against-severe-malaria",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-14T13:07:31+00:00",
-   "summary": "The World Health Organization has approved a landmark vaccine against malaria for widespread rollout in Africa. ... © 2026 European Animal Research ...",
-   "score": 12
-  },
-  {
-   "title": "EU says no easy way forward on stalled WHO pandemic agreement - Euractiv",
-   "url": "https://www.euractiv.com/news/eu-says-no-easy-way-forward-on-stalled-who-pandemic-agreement/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-14T13:04:46+00:00",
-   "summary": "Health · Emma Pirnay Euractiv. World Health Organization (WHO) Director-General Tedros Adhanom Ghebreyesus during hantavirus press briefing in Spain.",
-   "score": 22
-  },
-  {
-   "title": "FemTech's Real Test: Can Innovation Solve Rural America's Maternal Health Crisis ? | Mintz",
-   "url": "https://www.mintz.com/insights-center/viewpoints/2146/2026-09-10-femtechs-real-test-can-innovation-solve-rural-americas",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-14T12:46:37+00:00",
-   "summary": "... health crisis . This article lays out the size of that opportunity, the federal policy and regulatory obstacles standing in its way, and what ...",
-   "score": 3
-  },
-  {
-   "title": "GeoVax and CEPI Enter Agreement to Utilize CEPI Centralised Laboratory Network to ... - EQS News",
-   "url": "https://www.eqs-news.com/news/corporate/geovax-and-cepi-enter-agreement-to-utilize-cepi-centralised-laboratory-network-to-support-geo-mva-phase-3-trial/14cc20be-fd9b-4dc2-bd8e-3e97c774c398_en",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-14T12:41:24+00:00",
-   "summary": "... of the world . “Independent evaluation is an important step toward building confidence in GEO-MVA among regulators, public- health organizations ...",
-   "score": 3
-  },
-  {
-   "title": "Presidential dialogue on high-threat pathogens - WHO | Regional Office for Africa",
-   "url": "https://afro.who.int/media-centre/events/presidential-dialogue-high-threat-pathogens",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-14T12:38:54+00:00",
-   "summary": "Act together. World Health Organization , African Region ... Live demonstration, with Voyage Santé+ border screening. Convened by. World Health ...",
-   "score": 12
-  },
-  {
-   "title": "Family 'horrified' over granddad's four-day hospital bed wait - BBC",
-   "url": "https://www.bbc.com/news/articles/c2e0pn27lwno",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-14T12:35:40+00:00",
-   "summary": "Health Minister Robbie Butler said he was determined to cut emergency department (ED) waiting times that were \"far too long\" but said there was ...",
-   "score": 3
-  },
-  {
-   "title": "More girls are harming themselves. Only some show up in the ER - CalMatters",
-   "url": "https://calmatters.org/health/mental-health/2026/09/self-harm-emergency-visits/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-14T12:17:01+00:00",
-   "summary": "National research shows emergency room visits connected to self ... health disparities. But students and representatives from schools say ...",
-   "score": 3
-  },
-  {
-   "title": "World Health Organization (WHO) Prequalifies Multi-Dose RSV Vaccine Vial, Paving The ...",
-   "url": "https://goldrushcam.com/sierrasuntimes/index.php/news/local-news/81635-world-health-organization-who-prequalifies-multi-dose-rsv-vaccine-vial-paving-the-way-to-protecting-more-infants-globally",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-14T12:08:50+00:00",
-   "summary": "World Health Organization (WHO) Prequalifies Multi-Dose RSV Vaccine Vial, Paving The Way To Protecting More Infants Globally.",
-   "score": 13
-  },
-  {
-   "title": "WHO prequalifies multi-dose RSV vaccine vial - Open Access Government",
-   "url": "https://www.openaccessgovernment.org/who-prequalifies-multi-dose-rsv-vaccine-vial/214241/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-14T11:53:59+00:00",
-   "summary": "The World Health Organization (WHO) has prequalified a multi-dose vial version of the maternal respiratory syncytial virus (RSV) vaccine, RSVpreF, ...",
-   "score": 16
-  },
-  {
-   "title": "EU to limit access to social media before age of 15",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbER6M0ludEVIMHo3aGdFXzNLQmM3VDdxVkxfZld6Vmw2dW0wSmhFQXhYeUwwOFhza05pdFZINGdCbm5tal9kT2pObm9DLWk0ZklJLW9NYzVRcUxKR2djWDBJYTNmMERHX1pKQUNacndBVWlJQ08tOFQyYWp1NjNxWlBrdXU0RlpULWswQXFwNXVBSFNNN1pvVWs0SQ?oc=5",
-   "src": "politico.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-09-14T11:51:00+00:00",
-   "summary": "EU to limit access to social media before age of 15 politico.eu",
-   "score": 2
-  },
-  {
-   "title": "Pennsylvania records third measles-related death amid outbreak",
-   "url": "https://www.statnews.com/2026/09/14/health-enws-pennsylvania-records-third-measles-related-death-amid-outbreak/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-09-14T11:49:09+00:00",
-   "summary": "RSV season approaches, a federal judge pauses AAP challenge of RFK J.r vaccine charges, and more health news",
-   "score": 13
-  },
-  {
-   "title": "Bayer urges court to approve $7.25 billion Monsanto Roundup settlement that could limit its ...",
-   "url": "https://geneticliteracyproject.org/2026/09/14/bayer-urges-court-to-approve-7-25-billion-monsanto-roundup-settlement-that-could-limit-its-future-liabilities/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-14T11:45:49+00:00",
-   "summary": "The World Health Organization's cancer research arm called glyphosate a probable carcinogen in 2015; the EPA has repeatedly found no such risk at ...",
-   "score": 6
-  },
-  {
-   "title": "Tom Tiffany thanks first responders after emergency plane landing on a Wisconsin lake",
-   "url": "https://www.youtube.com/watch?v=w3kd-zlssp4",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-14T11:39:29+00:00",
-   "summary": "Tom Tiffany thanks first responders after emergency plane landing on a Wisconsin lake ... William Parker Senior Health · What a Stroke Looks Like the ...",
-   "score": 3
-  },
-  {
-   "title": "Bayer Faces Test of $7.25B Roundup Settlement In Missouri Court - Claims Journal",
-   "url": "https://www.claimsjournal.com/news/national/2026/09/14/340085.htm",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-14T11:35:34+00:00",
-   "summary": "The litigation gained momentum when the World Health Organization's International Agency for Research on Cancer determined in 2015 that glyphosate was ...",
-   "score": 6
-  },
-  {
-   "title": "Meloni rules out electoral U-turn on Ukraine",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOejdaRGwyZHBfeFhjbzJwQ1dSeDllMzlxdDRiVzRPM2NvRTRWZnlBZ0lWaFRGUDNmbmVNT3pjV2RrSXRBaGo0emlvbFZFOWpHUDlremV0cnlSNlN3WVRQZDRHOFdHeUxocHo4YWhyRTc2LTJ2MzBacUQyd1YxNGd2ag?oc=5",
-   "src": "euractiv.com",
-   "feed": "Euractiv Health",
-   "cat": "policy",
-   "date": "2026-09-14T11:35:16+00:00",
-   "summary": "Meloni rules out electoral U-turn on Ukraine euractiv.com",
-   "score": 2
-  },
-  {
-   "title": "Psychiatrists Disagree On Diagnosis Nearly As Often As They Agree - USNews.com",
-   "url": "https://www.usnews.com/news/health-news/articles/2026-09-14/psychiatrists-disagree-on-diagnosis-nearly-as-often-as-they-agree",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-14T11:32:27+00:00",
-   "summary": "Personality disorders or schizophrenia?” In the new study, psychiatrists were asked to base their diagnoses on the World Health Organization's ICD-10 ...",
-   "score": 6
-  },
-  {
-   "title": "South Sudan and Uganda Sign a Landmark Agreement to Strengthen Cross-border ... - ReliefWeb",
-   "url": "https://reliefweb.int/report/uganda/south-sudan-and-uganda-sign-landmark-agreement-strengthen-cross-border-collaboration-health-security-africa-cdc",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-14T11:26:59+00:00",
-   "summary": "... health emergencies along their shared border. Signed on 7 September and ... World Health Organization (WHO) through the Continental Incident ...",
-   "score": 6
-  },
-  {
-   "title": "Commission to unveil 'EU Kids Act' on Thursday",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPalh5cy1ycTVYQ0s0cGNuSXJRMll6ejBsTDRFUy1FaEZfdXhOYWJzQkdQMlBtbUVDUGxnTkRUd1hIcVU3cjU5WHplUkN4blFOSU5WUFc4cktmSE5oRldnX1kyc3ZLNVhhTERIbG9MRHV2bzY1Q2piTlYyVGJKS3RNUQ?oc=5",
-   "src": "euractiv.com",
-   "feed": "Euractiv Health",
-   "cat": "policy",
-   "date": "2026-09-14T11:25:33+00:00",
-   "summary": "Commission to unveil 'EU Kids Act' on Thursday euractiv.com",
-   "score": 2
-  },
-  {
-   "title": "South Sudan and Uganda Sign a Landmark Agreement to Strengthen Cross-border Collaboration on Health Security – Africa CDC",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOYlF1T1ZyUnM2ejAzWXp5VlZ1WDREcXhaYnc1aE1LV2JQWG1nQUVhU1Axc0c1T0tmaUNGZ3BiN3IyRjQ4cXowMDZJVmJxT1JLS1lnS184WXFlM1Z5dFlpcnFGYy1NaV9ra2xMRDJxQ1V0OXZtSjhpbjdaVHc2NmkyMlYtS2tmNnBMa2NCSlBwbWdyVFBjblhoY3h4T2dTYzc1cER4ZFR1WkRiVG1fUWVuMEtmSmFpVVQ5MkxKSXpjWERaei1uX25nb25mYUprUFNDREJjRXNLNkduUGx1YjcyUA?oc=5",
-   "src": "consultaelectoral.onpe.gob.pe",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-09-14T11:24:57+00:00",
-   "summary": "South Sudan and Uganda Sign a Landmark Agreement to Strengthen Cross-border Collaboration on Health Security – Africa CDC consultaelectoral.onpe.gob.pe",
-   "score": 12
-  },
-  {
-   "title": "Why Bangladesh has lost 1000 lives to measles despite record vaccine drive - Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/14/why-bangladesh-is-struggling-against-measles-epidemic-despite-20m-vaccines",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-14T11:13:17+00:00",
-   "summary": "Cases began rising markedly in January 2026 and surged through March, prompting Bangladesh to notify the World Health Organization (WHO) of a ...",
-   "score": 14
-  },
-  {
-   "title": "EXCLUSIVE: EU split over how much to cut long-term budget",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOUU85aEVma1ZRMFQ3bEhfMW9PODBTVWI4cmZpR0hGMjBkRG5wNHBZQi16MDZSS1ozbnIyZ0ppZEpFWUVIdDNTd1VJbTVDSjRfZGNkSkxER1F0aGVnNDZBaE96STF4VTBGOFhNSHhpNG9hTVJUa3pLSnJVNlZOTnA3T0gzY1ctQS0tNU84TjVXbVo?oc=5",
-   "src": "euractiv.com",
-   "feed": "Euractiv Health",
-   "cat": "policy",
-   "date": "2026-09-14T11:11:26+00:00",
-   "summary": "EXCLUSIVE: EU split over how much to cut long-term budget euractiv.com",
-   "score": 2
-  },
-  {
-   "title": "WHO at the United Nations General Assembly 2026 - World | ReliefWeb",
-   "url": "https://reliefweb.int/report/world/who-united-nations-general-assembly-2026",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-14T11:08:47+00:00",
-   "summary": "The World Health Organization (WHO) and partners will raise global awareness during the 81st United Nations General Assembly (UNGA81) of the ...",
-   "score": 12
   }
  ]
 }
