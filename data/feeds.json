@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-19T20:51:51+00:00",
- "feeds_ok": 27,
+ "generated": "2026-09-19T23:21:37+00:00",
+ "feeds_ok": 15,
  "feeds_tot": 27,
  "status": {
   "WHO News": {
@@ -9,8 +9,8 @@
    "cat": "who"
   },
   "WHO Disease Outbreak News": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 3)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 404: Not Found | [3] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "who"
   },
   "WHO Alert": {
@@ -24,8 +24,8 @@
    "cat": "who"
   },
   "ProMED": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "promed"
   },
   "CIDRAP Public Health": {
@@ -39,8 +39,8 @@
    "cat": "promed"
   },
   "Eurosurveillance": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "promed"
   },
   "Health Emergency": {
@@ -49,8 +49,8 @@
    "cat": "emerg"
   },
   "ReliefWeb Health": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 3)",
+   "ok": false,
+   "msg": "RuntimeError: [1] ValueError: 0 entries | [2] ValueError: 0 entries | [3] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "emerg"
   },
   "Global Health": {
@@ -59,18 +59,18 @@
    "cat": "global"
   },
   "ECDC": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 3)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 404: Not Found | [3] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "global"
   },
   "Africa CDC": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 3)",
+   "ok": false,
+   "msg": "RuntimeError: [1] ValueError: 0 entries | [2] ValueError: 0 entries | [3] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "global"
   },
   "Think Global Health": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 3)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 404: Not Found | [3] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "global"
   },
   "CIDRAP Stewardship": {
@@ -99,8 +99,8 @@
    "cat": "journal"
   },
   "BMJ Global Health": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 3)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 429: Too Many Requests | [2] URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)> | [3] HTTPError: ",
    "cat": "journal"
   },
   "PLOS Global Public Health": {
@@ -114,18 +114,18 @@
    "cat": "policy"
   },
   "Geneva Health Files": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "policy"
   },
   "Politico EU Health": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "policy"
   },
   "Euractiv Health": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "policy"
   },
   "STAT News": {
@@ -134,12 +134,102 @@
    "cat": "news"
   },
   "Devex Global Health": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "news"
   }
  },
  "items": [
+  {
+   "title": "Multiple people treated after rabies found in skunk in Kootenay Lake region of B.C. - CBC",
+   "url": "https://www.cbc.ca/news/canada/british-columbia/skunk-kootenays-rabies-9.7350660",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-19T22:16:20+00:00",
+   "summary": "The health authority is now warning that anyone else who may have been exposed to the disease should seek immediate emergency medical care.",
+   "score": 6
+  },
+  {
+   "title": "South Korea moves to approve abortion pills for the first time, with rollout expected by 2027",
+   "url": "https://www.jurist.org/news/2026/09/south-korea-moves-to-approve-abortion-pills-for-the-first-time-with-rollout-expected-by-2027/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-19T22:10:58+00:00",
+   "summary": "The nine-week limit falls short of the twelve weeks the World Health Organization (WHO) says the pills can safely be used, a gap Shin Jun-su ...",
+   "score": 6
+  },
+  {
+   "title": "Why I stay in emergency medicine: a dancer at nearly 100 - KevinMD.com",
+   "url": "https://kevinmd.com/2026/09/why-i-stay-in-emergency-medicine-a-dancer-at-nearly-100.html",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-19T22:10:17+00:00",
+   "summary": "Howie Mell is a board-certified emergency medicine and emergency medical services (EMS) physician licensed in six states. ... Health and his MD ...",
+   "score": 3
+  },
+  {
+   "title": "Popular honeymoon destination declares national emergency over massive HIV surge - Fox News",
+   "url": "https://www.foxnews.com/travel/popular-honeymoon-destination-declares-national-emergency-massive-hiv-surge",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-19T21:53:27+00:00",
+   "summary": "Antonio Lalabalavu, Fiji's health minister, announced that the situation, previously labeled an outbreak in January 2025, now requires a comprehensive ...",
+   "score": 10
+  },
+  {
+   "title": "Supporting Early-Career Global Oncology Investigators Through a Virtual Community of Practice",
+   "url": "https://oncodaily.com/voices/nci-center-for-global-health-589768",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-19T21:26:23+00:00",
+   "summary": "NCI Center for Global Health shared on LinkedIn: “A new study out now in JCO Global Oncology, 'Using Qualitative Research Methods to Codesign a ...",
+   "score": 8
+  },
+  {
+   "title": "Duquesne University professor among the Americans who died in flooding in Nepal",
+   "url": "https://www.cbsnews.com/pittsburgh/news/duquesne-university-professor-dies-nepal-flooding/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-19T21:15:40+00:00",
+   "summary": "\"Dr. Cantrell's work in public health, global health security, and health ... health took him around the world. Dr. Cantrell died while returning ...",
+   "score": 17
+  },
+  {
+   "title": "Former Notre Dame football player Chris Salerno shares story of surviving emergency brain surgery",
+   "url": "https://www.wndu.com/2026/09/19/former-notre-dame-football-player-chris-salerno-shares-story-surviving-emergency-brain-surgery/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-19T21:02:17+00:00",
+   "summary": "Salerno faced a medical battle much bigger than football when a sudden emergency changed his life in an instant.",
+   "score": -3
+  },
+  {
+   "title": "'Outdated' health policies surrounding Covid still pose a danger today, says U of C researcher",
+   "url": "https://www.ctvnews.ca/calgary/article/outdated-health-policies-surrounding-covid-still-pose-a-danger-today-says-u-of-c-researcher/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-19T20:32:59+00:00",
+   "summary": "... health emergencies .” “This work includes the development of the new ... health emergency ,” Johnson's statement continued. On top of that ...",
+   "score": 6
+  },
+  {
+   "title": "LIVE | GLOBAL HEALTH CATALYST SUMMIT 2026 Her Excellency Dr. Fatima Maada Bio ...",
+   "url": "https://www.facebook.com/FatimaMaadaBio/videos/-live-global-health-catalyst-summit-2026her-excellency-dr-fatima-maada-bio-first/4606653406222605/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-19T20:17:52+00:00",
+   "summary": "LIVE | GLOBAL HEALTH CATALYST SUMMIT 2026 Her Excellency Dr. Fatima Maada Bio, First Lady of Sierra Leone and President of OAFLAD, set to deliver ...",
+   "score": 13
+  },
   {
    "title": "China's Xi Jinping sparks public health rumours amid global tensions - YouTube",
    "url": "https://www.youtube.com/watch?v=Y_f71rIQAHE",
@@ -151,6 +241,46 @@
    "score": 7
   },
   {
+   "title": "Australian researchers find potential link between plastic additive and symptoms of autism and ADHD",
+   "url": "https://7news.com.au/technology/science/australian-researchers-find-potential-link-between-plastic-additive-and-symptoms-of-autism-and-adhd-c-22866754",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-19T19:53:10+00:00",
+   "summary": "The lead researcher said future studies could necessitate a global health emergency.",
+   "score": 11
+  },
+  {
+   "title": "Congo begins Ebola vaccinations for health workers in outbreak epicenter - ABC News",
+   "url": "https://abcnews.com/International/wireStory/congo-begins-ebola-vaccinations-health-workers-epicenter-outbreak-136589471",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-19T19:52:14+00:00",
+   "summary": "The vaccine is licensed for use against Ebola virus disease caused by the Zaire strain — a different, more common type of Ebola virus. The World ...",
+   "score": 15
+  },
+  {
+   "title": "20 years of investing in queer communities. - Mpact Global",
+   "url": "https://www.mpactglobal.org/about",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-19T19:47:34+00:00",
+   "summary": "Mpact Global Action for Gay Men's Health and Rights was founded in 2006 as The Global Forum on MSM & HIV (MSMGF).",
+   "score": 5
+  },
+  {
+   "title": "Congo begins Ebola vaccinations for health workers in the epicenter of the outbreak - PBS",
+   "url": "https://www.pbs.org/newshour/world/congo-begins-ebola-vaccinations-for-health-workers-in-the-epicenter-of-the-outbreak",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-19T19:35:10+00:00",
+   "summary": "Left: FILE PHOTO: A Congolese medical worker dressed in personal protective equipment walks within the emergency unit at the Katwa Ebola treatment ...",
+   "score": 13
+  },
+  {
    "title": "HBKU, Middle East Council on Global Affairs Wrap Up Global Health Diplomacy Program",
    "url": "https://www.fananews.com/language/en/hbku-middle-east-council-on-global-affairs-wrap-up-global-health-diplomacy-program/",
    "src": "Global Health",
@@ -159,6 +289,16 @@
    "date": "2026-09-19T19:34:34+00:00",
    "summary": "In a statement on Saturday, HBKU said the program was part of the “Doha Health Initiative for the Global South”, launched by the Middle East Council ...",
    "score": 13
+  },
+  {
+   "title": "Immigration briefing: How fear of immigration sweeps keeps migrant kids from doctors",
+   "url": "https://www.kunc.org/2026-09-19/immigration-briefing-how-fear-of-immigration-sweeps-keeps-migrant-kids-from-doctors",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-19T19:03:24+00:00",
+   "summary": "... health issue or an emerging mental health issue. ROMO: And there ... medical emergency in custody. That gap is why two House members - both ...",
+   "score": 3
   },
   {
    "title": "The last month has reinforced my belief and resolve that health cannot be separate from the ...",
@@ -231,6 +371,16 @@
    "score": 16
   },
   {
+   "title": "Search and rescue team responds to medical incident in remote hot springs area",
+   "url": "https://www.denvergazette.com/outtherecolorado/2026/09/19/search-and-rescue-team-responds-to-medical-incident-in-remote-hot-springs-area-2/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-19T17:27:27+00:00",
+   "summary": "Mountain Rescue Aspen (MRA) responded to a medical emergency involving a 29-year-old backpacker in the Conundrum Hot Springs area on Wednesday ...",
+   "score": 3
+  },
+  {
    "title": "Maria Maalouf Highlights Saudi Arabia's Contribution to Global Healthcare at C3 ... - Instagram",
    "url": "https://www.instagram.com/p/Ddb9Q-2FHVr/",
    "src": "Global Health",
@@ -259,6 +409,16 @@
    "date": "2026-09-19T16:52:19+00:00",
    "summary": "Launched on September 19, 2026, at the World Health Organization (WHO)-run training center for health workers in Bunia, the study will include ...",
    "score": 10
+  },
+  {
+   "title": "Sepsis: Spot the signs, save a life | Parkview Health",
+   "url": "https://www.parkview.com/blog/sepsis-spot-the-signs-save-a-life",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-19T16:51:37+00:00",
+   "summary": "According to the U.S. Centers for Disease Control and Prevention (CDC), sepsis is considered a medical emergency . Seek medical care immediately if ...",
+   "score": 3
   },
   {
    "title": "HBKU and the Middle East Council on Global Affairs conclude Executive Program on ... - Zawya",
@@ -3979,166 +4139,6 @@
    "date": "2026-09-17T10:55:03+00:00",
    "summary": "The World Health Organization was trusted by 69 percent of respondents, followed by the United Nations at 62 percent (previously 61 and 58 percent ...",
    "score": 6
-  },
-  {
-   "title": "Trump's Economic Vise Leaves Cubans Desperate for Food and Medicine - ny times",
-   "url": "https://www.nytimes.com/2026/09/17/world/americas/trump-sanctions-cuba-shipping-containers.html",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-17T10:39:45+00:00",
-   "summary": "... Health Organization. The World Health Organization said tuberculosis medication it purchased from an Indian pharmaceutical firm meant to leave by ...",
-   "score": 10
-  },
-  {
-   "title": "STAT+: A biotech hedge fund births a new immunology company",
-   "url": "https://www.statnews.com/2026/09/17/biotech-hedge-fund-startup-north-immunology/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-09-17T10:30:00+00:00",
-   "summary": "Why a biotech hedge fund decided to build from the ground up a new company to develop a better, long-acting antibody treatment for atopic dermatitis.",
-   "score": 1
-  },
-  {
-   "title": "STAT+: A Sellas immunotherapy study, long delayed, will end in failure",
-   "url": "https://www.statnews.com/2026/09/17/sellas-immunotherapy-study-acute-myeloid-leukemia/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-09-17T10:30:00+00:00",
-   "summary": "Why Sellas' experimental immunotherapy study is a blowup waiting to happen.",
-   "score": 5
-  },
-  {
-   "title": "Polio Technical Advisor in Washington, D.C. | Careers at D.C. - Nakupuna Companies",
-   "url": "https://careers-nakupuna.icims.com/jobs/6964/polio-technical-advisor/job",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-17T10:22:25+00:00",
-   "summary": "... Global Health Security and Diplomacy (GHSD) Polio Lead. ... health financing frameworks to advance U.S. global health and foreign policy objectives.",
-   "score": 18
-  },
-  {
-   "title": "TB Technical Advisor in Washington, D.C. | Careers at D.C. - Nakupuna Companies",
-   "url": "https://careers-nakupuna.icims.com/jobs/6960/tb-technical-advisor/job",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-17T10:22:24+00:00",
-   "summary": "PTSC leads the Department of State's health systems transition planning on behalf of the Bureau of Global Health Security and Diplomacy (GHSD). In ...",
-   "score": 11
-  },
-  {
-   "title": "NTD Technical Advisor in Washington, D.C. | Careers at D.C. - Nakupuna Companies",
-   "url": "https://careers-nakupuna.icims.com/jobs/6963/ntd-technical-advisor/job",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-17T10:22:24+00:00",
-   "summary": "OHP advances international efforts to combat HIV, malaria, tuberculosis, malnutrition, and maternal and child health challenges that threaten global ...",
-   "score": 9
-  },
-  {
-   "title": "What Will Trump Pick Mean for World Food Programme and Humanitarians?",
-   "url": "https://healthpolicy-watch.news/what-will-trump-pick-mean-for-world-food-programme-and-humanitarians/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-09-17T10:16:03+00:00",
-   "summary": "The Trump administration dismantled aid and attacked the global system as wasteful. Now a Trump pick looks set to lead one of the world’s biggest humanitarian agencies. This story was originally published by The New Humanitarian. US agriculture official Luke Lindberg will be named the new head of th",
-   "score": 4
-  },
-  {
-   "title": "Ebola business narrative and the cycle of distrust",
-   "url": "http://www.bmj.com/content/394/bmj-2026-100849.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-09-17T10:11:15+00:00",
-   "summary": "Over 100 days since the start of the current Ebola outbreak, the response in the Democratic Republic of Congo (DRC) is at an impasse, with fears the situation will worsen. The World Health Organization declared the outbreak, caused by the Bundibugyo species of Ebola virus, a public health emergency ",
-   "score": 14
-  },
-  {
-   "title": "Six rules for doctors using AI",
-   "url": "http://www.bmj.com/content/394/bmj-2026-100883.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-09-17T10:01:31+00:00",
-   "summary": "AI is already being introduced into workflows in the NHS, and in the coming years it will undoubtedly become part of the day-to-day practice of most doctors. But what happens when AI contributes to patient harm? Unlike doctors, an AI system cannot be sued under English law. Legal responsibility may ",
-   "score": 1
-  },
-  {
-   "title": "Yemen escalation displaces more than 57,000 children: UNICEF",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE56bFk4ejRoek9FNjZlZU1IXzFHRVpadW5OVXEtQk54cWd2MkZLb3pUWEJDcWlHMWR4Z2thMG9DX2FEeWxIREtPZFFLS0FhU0h1T0tPQzhxRQ?oc=5",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-09-17T09:45:30+00:00",
-   "summary": "Yemen escalation displaces more than 57,000 children: UNICEF UN News",
-   "score": 3
-  },
-  {
-   "title": "Next-generation antivenom fights India's deadliest snakes - The Telegraph",
-   "url": "https://www.telegraph.co.uk/global-health/science-and-disease/india-snakebite-capital-antivenom-trial-mice-global-health/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-17T09:39:19+00:00",
-   "summary": "... health physician in Chhattisgarh state and a member of The Global Snakebite Taskforce. “But there are huge quality and efficacy issues even ...",
-   "score": 7
-  },
-  {
-   "title": "from the people living with chronic conditions, to their health workers, carers, and community ... - X",
-   "url": "https://x.com/WHO/status/2100495113432481897",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-17T09:29:59+00:00",
-   "summary": "... health workers, carers, and community. Everyone has a role to play. Here's how. #WorldPatientSafetyDay\". @WHO · World Health Organization (WHO) · @WHO.",
-   "score": 9
-  },
-  {
-   "title": "Assisted dying: Jersey won’t be a “Dignitas-style model” for Brits, says Sarah Wollaston",
-   "url": "http://www.bmj.com/content/394/bmj-2026-100881.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-09-17T09:11:42+00:00",
-   "summary": "Jersey will not provide a “Dignitas-style model” for British citizens seeking an assisted death after the bill for England and Wales was rejected,1 the head of the island’s implementation committee has told The BMJ.But Sarah Wollaston, the doctor and former British MP now overseeing the rollout of t",
-   "score": 1
-  },
-  {
-   "title": "GMC right of appeal: prolonged proceedings put substantial financial burden on doctors",
-   "url": "http://www.bmj.com/content/394/bmj-2026-100830.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-09-17T09:01:35+00:00",
-   "summary": "Singh calls for removal of the General Medical Council’s (GMC’s) power to appeal decisions made by the Medical Practitioners Tribunal Service.1 The current consultation on the draft General Medical Council Order 2026 follows the Mann review, which recommended retaining the GMC’s right of appeal. Thi",
-   "score": 1
-  },
-  {
-   "title": "Hazel Thornton: patient advocate who campaigned for informed choice",
-   "url": "http://www.bmj.com/content/394/bmj-2026-100798.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-09-17T08:56:08+00:00",
-   "summary": "Hazel Thornton returned from a holiday in France in 1991 to find an invitation to attend Essex County Hospital in Colchester for a routine breast scan. Like many, she found the prospect slightly unnerving. Yet she had more reason than most to worry: surgery for a malignant melanoma some years earlie",
-   "score": 7
-  },
-  {
-   "title": "Beyond extreme heat: Understanding Asia's climate- health future | News - Eco-Business",
-   "url": "https://www.eco-business.com/news/beyond-extreme-heat-understanding-asias-climate-health-future/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-17T08:54:52+00:00",
-   "summary": "It said climate change, “once primarily an environmental concern,” is now recognised as a global ... Health systems globally could face an additional US ...",
-   "score": 3
   }
  ]
 }
