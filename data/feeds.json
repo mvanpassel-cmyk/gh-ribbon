@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-19T23:21:37+00:00",
- "feeds_ok": 15,
+ "generated": "2026-09-20T01:18:51+00:00",
+ "feeds_ok": 27,
  "feeds_tot": 27,
  "status": {
   "WHO News": {
@@ -9,8 +9,8 @@
    "cat": "who"
   },
   "WHO Disease Outbreak News": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 404: Not Found | [3] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 3)",
    "cat": "who"
   },
   "WHO Alert": {
@@ -24,8 +24,8 @@
    "cat": "who"
   },
   "ProMED": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 2)",
    "cat": "promed"
   },
   "CIDRAP Public Health": {
@@ -39,8 +39,8 @@
    "cat": "promed"
   },
   "Eurosurveillance": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 2)",
    "cat": "promed"
   },
   "Health Emergency": {
@@ -49,8 +49,8 @@
    "cat": "emerg"
   },
   "ReliefWeb Health": {
-   "ok": false,
-   "msg": "RuntimeError: [1] ValueError: 0 entries | [2] ValueError: 0 entries | [3] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 3)",
    "cat": "emerg"
   },
   "Global Health": {
@@ -59,18 +59,18 @@
    "cat": "global"
   },
   "ECDC": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 404: Not Found | [3] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 3)",
    "cat": "global"
   },
   "Africa CDC": {
-   "ok": false,
-   "msg": "RuntimeError: [1] ValueError: 0 entries | [2] ValueError: 0 entries | [3] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 3)",
    "cat": "global"
   },
   "Think Global Health": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 404: Not Found | [3] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 3)",
    "cat": "global"
   },
   "CIDRAP Stewardship": {
@@ -99,8 +99,8 @@
    "cat": "journal"
   },
   "BMJ Global Health": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 429: Too Many Requests | [2] URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)> | [3] HTTPError: ",
+   "ok": true,
+   "msg": "9 items",
    "cat": "journal"
   },
   "PLOS Global Public Health": {
@@ -114,18 +114,18 @@
    "cat": "policy"
   },
   "Geneva Health Files": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 2)",
    "cat": "policy"
   },
   "Politico EU Health": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 2)",
    "cat": "policy"
   },
   "Euractiv Health": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 2)",
    "cat": "policy"
   },
   "STAT News": {
@@ -134,12 +134,32 @@
    "cat": "news"
   },
   "Devex Global Health": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 2)",
    "cat": "news"
   }
  },
  "items": [
+  {
+   "title": "Carrot Top Hospitalized and Recovering, His Rep Says - People.com",
+   "url": "https://people.com/carrot-top-hospitalized-recovering-rep-says-12128755",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-19T23:43:42+00:00",
+   "summary": "News anchor shares health update after suffering medical emergency ...",
+   "score": 0
+  },
+  {
+   "title": "'Bill Gates' finger prints are all over…': Johnson exposes how Fauci 'scared people during COVID'",
+   "url": "https://www.youtube.com/watch?v=aHEMoBfHppU",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-19T23:18:27+00:00",
+   "summary": "Sen. Ron Johnson raises fresh questions about Bill Gates' influence on global health organisations and the COVID-19 response, while criticising ...",
+   "score": 8
+  },
   {
    "title": "Multiple people treated after rabies found in skunk in Kootenay Lake region of B.C. - CBC",
    "url": "https://www.cbc.ca/news/canada/british-columbia/skunk-kootenays-rabies-9.7350660",
@@ -201,6 +221,16 @@
    "score": 17
   },
   {
+   "title": "What 1,000 Women Workers Can Teach Us About Surviving Extreme Heat - TIME",
+   "url": "https://time.com/article/2026/09/19/what-1000-women-workers-can-teach-us-about-surviving-extreme-heat/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-19T21:06:47+00:00",
+   "summary": "... health disorders, and those with little or no access to healthcare . According to the International Labor Organization, billions of workers around ...",
+   "score": 3
+  },
+  {
    "title": "Former Notre Dame football player Chris Salerno shares story of surviving emergency brain surgery",
    "url": "https://www.wndu.com/2026/09/19/former-notre-dame-football-player-chris-salerno-shares-story-surviving-emergency-brain-surgery/",
    "src": "Health Emergency",
@@ -209,6 +239,16 @@
    "date": "2026-09-19T21:02:17+00:00",
    "summary": "Salerno faced a medical battle much bigger than football when a sudden emergency changed his life in an instant.",
    "score": -3
+  },
+  {
+   "title": "A dangerous combination: how co-occurring floods and blackouts increase cardiovascular ...",
+   "url": "https://www.nature.com/articles/s41370-026-00977-1",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-19T20:46:09+00:00",
+   "summary": "The effect of an 18-hour electrical power outage on an urban emergency medical services system. ... We thank the New York State Department of Health for ...",
+   "score": 3
   },
   {
    "title": "'Outdated' health policies surrounding Covid still pose a danger today, says U of C researcher",
@@ -231,6 +271,16 @@
    "score": 13
   },
   {
+   "title": "Beyond Antibiotics: Bacteriophage Therapy Against Multidrug-Resistant Pathogens in the ...",
+   "url": "https://www.cureus.com/articles/534492-beyond-antibiotics-bacteriophage-therapy-against-multidrug-resistant-pathogens-in-the-era-of-antimicrobial-resistance",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-19T20:17:26+00:00",
+   "summary": "The escalating global health crisis of antimicrobial resistance (AMR) urgently calls for interventions that transcend the limitations of ...",
+   "score": 15
+  },
+  {
    "title": "China's Xi Jinping sparks public health rumours amid global tensions - YouTube",
    "url": "https://www.youtube.com/watch?v=Y_f71rIQAHE",
    "src": "Global Health",
@@ -239,6 +289,26 @@
    "date": "2026-09-19T20:05:11+00:00",
    "summary": "... health have ignited fresh geopolitical uncertainty amid already heightened global tensions. In this video, Former China Diplomat Charles Parton ...",
    "score": 7
+  },
+  {
+   "title": "Global Health Politics Workshop: Ashley Fox (University at Albany, SUNY) · Calendar",
+   "url": "https://www.bu.edu/calendar/?uid=320737@17.calendar.bu.edu&eid=320224&cid=17",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-09-19T20:03:44+00:00",
+   "summary": "Global Health Politics Workshop: Ashley Fox (University at Albany, SUNY). Ashley Fox will give a talk on \"The Contingency of Vaccine Hesitancy: ...",
+   "score": 15
+  },
+  {
+   "title": "International News: World Health Organization warns of growing Global Health worker ...",
+   "url": "https://www.breakingbelizenews.com/2026/09/19/international-news-world-health-organization-warns-of-growing-global-health-worker-shortage-as-workforce-ages/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-19T19:57:00+00:00",
+   "summary": "The World Health Organization (WHO) is warning of a growing global health workforce gap in the 2030s, as both patients and healthcare workers age.",
+   "score": 19
   },
   {
    "title": "Australian researchers find potential link between plastic additive and symptoms of autism and ADHD",
@@ -321,6 +391,16 @@
    "score": 8
   },
   {
+   "title": "Why pet owners decline vaccines: Survey insights and strategies for navigating hesitancy",
+   "url": "https://www.dvm360.com/view/why-pet-owners-decline-vaccines-survey-insights-and-strategies-for-navigating-hesitancy",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-19T18:31:07+00:00",
+   "summary": "The World Health Organization's (WHO's) Strategic Advisory Group of Experts on Immunization (SAGE) define vaccine hesitancy as a “delay in ...",
+   "score": 10
+  },
+  {
    "title": "Message from President Trump on U.S. Leadership as Secretariat of the Geneva Consensus ...",
    "url": "https://www.hhs.gov/about/agencies/oga/news-events/potus-letter-gcd/index.html",
    "src": "Health Emergency",
@@ -328,6 +408,16 @@
    "cat": "emerg",
    "date": "2026-09-19T18:28:16+00:00",
    "summary": "HIPAA Privacy Rule · Health Insurance Protections · Health IT Legislation · Food and Drug Safety · Public Health Emergencies . Human Research ...",
+   "score": 3
+  },
+  {
+   "title": "Letters of Support Opportunity for Proposed Dade County Emergency Room",
+   "url": "https://www.discoverdade.com/local/emergency-care-closer-to-home-for-dade-county-and-north-alabama/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-09-19T18:22:55+00:00",
+   "summary": "... Health System freestanding emergency room in Dade County. The letters are an important part of Parkridge Health […]",
    "score": 3
   },
   {
@@ -349,6 +439,16 @@
    "date": "2026-09-19T18:01:51+00:00",
    "summary": "Can AI save global health ? Bill Gates is betting $1 billion that it can. AI can't fix all the infrastructure aid cuts broke. But maybe it can help.",
    "score": 8
+  },
+  {
+   "title": "World Health Organization South-East Asia on X: \"In case of a snakebite , every minute ...",
+   "url": "https://x.com/WHOSEARO/status/2101350866196603146",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-09-19T17:59:30+00:00",
+   "summary": "In case of a snakebite , every minute counts. DON'T: ❌ Delay seeking medical attention ❌ Rely on traditional cures and harmful first aid ...",
+   "score": 9
   },
   {
    "title": "Kevin Warsh just revealed a huge change for the Fed. The press missed it - Fortune",
@@ -501,16 +601,6 @@
    "score": 9
   },
   {
-   "title": "What 1,000 Women Workers Can Teach Us About Surviving Extreme Heat - TIME",
-   "url": "https://time.com/article/2026/09/19/what-1000-women-workers-can-teach-us-about-surviving-extreme-heat/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-19T15:37:46+00:00",
-   "summary": "Satchit Balsari is associate professor of Emergency Medicine at Harvard Medical ... health disorders, and those with little or no access to healthcare .",
-   "score": 3
-  },
-  {
    "title": "'His Health Is Our Immediate Concern': Papa Roach Cancels Festival Appearance After ... - VICE",
    "url": "https://www.vice.com/en/article/his-health-is-our-immediate-concern-papa-roach-cancels-festival-appearance-after-bassists-medical-emergency/",
    "src": "Health Emergency",
@@ -559,6 +649,16 @@
    "date": "2026-09-19T15:18:08+00:00",
    "summary": "Global , Planetary & One Health / Health Sciences ... We keep you informed – with our newsletter! ... We use cookies to enable the use of certain functions ...",
    "score": 9
+  },
+  {
+   "title": "Smoke and flight delays at Riyadh airport after air raid alert",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNc2N6XzhFVjg5bGZ1QkdPRTZ2ODFZTnZlS3VIUUhBX040MGpjSTRGNkJianItN0FIbkdtdi1UakhWZFRQM3B5VElvRy1Za0RmZVpjSVBLcFY3alZnLTh3ZmRZdnJrenAxX2VMQU9CWDR3TGpVYWdfd0ExOUgwUWtVZG1FbUZmNFRXbDVFOTY4VVBwV1I3Z3d6R1hR?oc=5",
+   "src": "politico.eu",
+   "feed": "Politico EU Health",
+   "cat": "policy",
+   "date": "2026-09-19T15:17:00+00:00",
+   "summary": "Smoke and flight delays at Riyadh airport after air raid alert politico.eu",
+   "score": 2
   },
   {
    "title": "MSF launches Ebola disease vaccination study among DRC frontline workers",
@@ -1383,11 +1483,11 @@
   {
    "title": "Anti-abortion groups launch coalition on Geneva Consensus Declaration",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOV09VQlFYa0w4OTJkZnljRi1kZy1HdWJPT21kek1ramhiLVBIYlQxcnY1TGJhS3hPdmhTRV8tdHZMTWRQSjZoaXYxc2pyOUkwQ2xoTTFpaTVhbDhRREFUVWFibkdrdl9NbUdUcVBPZUswUVBDaTdoZG1Neklic1pzUlhJSFVRVUVEUHNXWWREaTFSTHZYRGVEdGtael9oYkdkQ2ZHbmJn?oc=5",
-   "src": "devex.com",
+   "src": "Devex",
    "feed": "Devex Global Health",
    "cat": "news",
    "date": "2026-09-18T22:11:21+00:00",
-   "summary": "Anti-abortion groups launch coalition on Geneva Consensus Declaration devex.com",
+   "summary": "Anti-abortion groups launch coalition on Geneva Consensus Declaration Devex",
    "score": 2
   },
   {
@@ -1953,11 +2053,11 @@
   {
    "title": "Q&A: Coefficient Giving is betting big on AI",
    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNaEd5dVFObV95SW1DckFsVlBPTTdkU1RnbWZDYXJ6Z2ZjNVRMd3dlVTNZYzRwUWRFVGpGMWpzaXVvdGtZZmRlUjg1RkRWTHYzSFF3ZXNKVjNBZHFnaGpsTF9nYVFVcEFvODRpWTlrc2ZpSWlWZGRKWTdmV3FEUUYxUlN4RQ?oc=5",
-   "src": "devex.com",
+   "src": "Devex",
    "feed": "Devex Global Health",
    "cat": "news",
    "date": "2026-09-18T16:09:29+00:00",
-   "summary": "Q&A: Coefficient Giving is betting big on AI devex.com",
+   "summary": "Q&A: Coefficient Giving is betting big on AI Devex",
    "score": 2
   },
   {
@@ -2781,16 +2881,6 @@
    "score": 2
   },
   {
-   "title": "German elections put Merz under increasing pressure",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdW51VmNNOTd3ak04Vlp4R0FYSDNhcWpFclg2WmRQZ2ZmcnpYQkpZTFZ6dVFrQjluMDR4ZWRuWUJCeDc1MW1pamlkanF1RG9hYzhabnJQT2FHM0xHbVVpajZydE81OF9ERFVWVHVQa3hPZjl1aUI4ZnZyODhnS0xmODNSY1N3NHVvQWc?oc=5",
-   "src": "euractiv.com",
-   "feed": "Euractiv Health",
-   "cat": "policy",
-   "date": "2026-09-18T02:04:08+00:00",
-   "summary": "German elections put Merz under increasing pressure euractiv.com",
-   "score": 2
-  },
-  {
    "title": "Time to build United States of Europe, says France's Attal",
    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZzRSNkNNSm1XTC14UUlkSXRaVEdwYXBDZnMxbWxZUVY3czhrRllxQ2lGSFF5SHNTc0xPZUpaWnk2YWtpa3BaVUJmb2VOQ25pc0Jqa3NGckpVdlI3S0VVeTlyTW9xaDhhMVdpR0ZBaDlNeEZ6anNhZU5KZzdKTHgweUxKOVVMOTlYMDZjVk01WVRCVlhib29DQW93TnZJS2JYSE1vRHc4TkE?oc=5",
    "src": "euractiv.com",
@@ -2798,6 +2888,16 @@
    "cat": "policy",
    "date": "2026-09-18T02:04:08+00:00",
    "summary": "Time to build United States of Europe, says France's Attal euractiv.com",
+   "score": 2
+  },
+  {
+   "title": "German elections put Merz under increasing pressure",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdW51VmNNOTd3ak04Vlp4R0FYSDNhcWpFclg2WmRQZ2ZmcnpYQkpZTFZ6dVFrQjluMDR4ZWRuWUJCeDc1MW1pamlkanF1RG9hYzhabnJQT2FHM0xHbVVpajZydE81OF9ERFVWVHVQa3hPZjl1aUI4ZnZyODhnS0xmODNSY1N3NHVvQWc?oc=5",
+   "src": "euractiv.com",
+   "feed": "Euractiv Health",
+   "cat": "policy",
+   "date": "2026-09-18T02:04:08+00:00",
+   "summary": "German elections put Merz under increasing pressure euractiv.com",
    "score": 2
   },
   {
@@ -3513,11 +3613,11 @@
   {
    "title": "What is UNGA, and why does it matter for global development?",
    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZ3AtcGx2d29RdTRDUHRiYmtoaW82cGl0V1ZwcjlIOWJ2VnhDSzlWdFRveUtONzZ6Q3JHZ2xSdGx6dkdrYjNiLVJZdGZhdDN4dFhlWWJxM211bHRBYTJ6QThobVdvM295MVNDaDFsZUc5RERWdDA1SE5wNENsUGFfWGFuRVUxMzFGX1VfcnVfMl80SVVrQ3Vr?oc=5",
-   "src": "devex.com",
+   "src": "Devex",
    "feed": "Devex Global Health",
    "cat": "news",
    "date": "2026-09-17T17:29:26+00:00",
-   "summary": "What is UNGA, and why does it matter for global development? devex.com",
+   "summary": "What is UNGA, and why does it matter for global development? Devex",
    "score": 2
   },
   {
@@ -3733,11 +3833,11 @@
   {
    "title": "Global health agrees on reform. Now, who will give up power?",
    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaU05eHllcnFaeTNIeHVjcC1NbjdmVmVzcUNSaXU3eWdFWVA1c2tSamRBYk9QSk9GcEp6R3l1bUZROHVod0hfUFpkVXdhVW5IdE9mMTYydlN0blNOZ0FnVHFESjBCamlKN1dFQ2pBQmJQNG5wV1BKN0VxbW9QNkdJbTgwLXlubUVEMlNjY3oxSVVCNXcxYlE?oc=5",
-   "src": "devex.com",
+   "src": "Devex",
    "feed": "Devex Global Health",
    "cat": "news",
    "date": "2026-09-17T15:51:49+00:00",
-   "summary": "Global health agrees on reform. Now, who will give up power? devex.com",
+   "summary": "Global health agrees on reform. Now, who will give up power? Devex",
    "score": 18
   },
   {
@@ -4039,106 +4139,6 @@
    "date": "2026-09-17T12:10:07+00:00",
    "summary": "ESC- Youth4All Project Assistant in Communications and Finance reliefweb.int",
    "score": 2
-  },
-  {
-   "title": "STAT+: Pharmalittle: We’re reading about FDA hiring delays, a new Bavarian Nordic CEO, and more",
-   "url": "https://www.statnews.com/pharmalot/2026/09/17/fda-hiring-delays-bavarian-nordic-appoints-ceo/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-09-17T11:59:57+00:00",
-   "summary": "For all the talk of a hiring spree at the FDA after DOGE cuts last year, the reality is more complicated and filled with bureaucratic delays",
-   "score": 1
-  },
-  {
-   "title": "Humanitarian Management Trainee - Monitoring, Evaluation, Accountability and Learning (MEAL)",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYkRkWk40a2pHZXpfWlktSUtlRE8wYXhSdkFvbUVCdngyRkhnQ1R6TkJpQ19oTndXOXhsWWV1STVlUFU3MXBQOU1WdjZUTXBxSHJYUFVaWlZ2azBPdmR6LXJORnZKQUVqMnlIbExZV1BYODZHWE1CaDZBaG9lTHNPR25YRkFOc1ZkTjl4NllPYUFnaldweEZGa2RsalBJTGdYU3NLdFFraXJhNGt5RXRGaG0wMURESUhfUEFRaw?oc=5",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-09-17T11:52:48+00:00",
-   "summary": "Humanitarian Management Trainee - Monitoring, Evaluation, Accountability and Learning (MEAL) ReliefWeb",
-   "score": 2
-  },
-  {
-   "title": "Humanitarian trainee - Monitoring, Evaluation, Accountability and Learning (MEAL)",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZXVhZENKQ1JIeVhNZ0tBOTJ4S0sxYkZuZVRDbzR5cElvYmZ3dXdYanhva0VQNEhlYnhiWFNTb0psOV9oaV9LNUVQN1U1bFgwejZPVkdBUEVCWjl3cVlVS1RPVzNoSzhYVGRHb0dxWXYzNzZmenMtR0tPVlJONGhUX2tBWHVrXzQtZjZBLXNVZHM4VVpYQ3NjRmUzR2JBR2QxRHZ4V1lFZnRWNmg1Z0E?oc=5",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-09-17T11:52:48+00:00",
-   "summary": "Humanitarian trainee - Monitoring, Evaluation, Accountability and Learning (MEAL) ReliefWeb",
-   "score": 2
-  },
-  {
-   "title": "Hans Kluge on X: \"It was a great honour to open the Global Health Forum of the Boao Forum ...",
-   "url": "https://x.com/hans_kluge/status/2100543013286023243",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-17T11:47:13+00:00",
-   "summary": "In 2022, 2.1 billion people faced financial hardship from out-of-pocket health costs. By 2030, the world could be short of 11 million health workers.",
-   "score": 13
-  },
-  {
-   "title": "Man, 51, Dies After Experiencing ' Medical Emergency ' During Ironman Swim - People.com",
-   "url": "https://people.com/man-51-dies-during-ironman-swim-wisconsin-12125519",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-09-17T11:37:41+00:00",
-   "summary": "A 51-year-old man has died after experiencing a medical emergency during the swimming element of the Ironman 70.3 Wisconsin competition.",
-   "score": 3
-  },
-  {
-   "title": "Academic Teams | Yale School of Public Health",
-   "url": "https://ysph.yale.edu/about-school-of-public-health/who-we-are/academic-teams/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-17T11:34:56+00:00",
-   "summary": "... Health (Social and Behavioral Sciences); Affiliated Faculty, Yale Institute for Global Health ... , Faculty Director, Global Health Concentration ...",
-   "score": 8
-  },
-  {
-   "title": "Cosmetic surgery patients should be screened for body dysmorphia, says NICE",
-   "url": "http://www.bmj.com/content/394/bmj-2026-100892.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-09-17T11:21:12+00:00",
-   "summary": "Doctors who provide cosmetic treatments should screen patients for body dysmorphic disorder (BDD), new clinical guidance advises.If a person is suspected of having BDD, clinicians should refer them for specialist assessment rather than proceeding with the cosmetic procedure, recommends the new draft",
-   "score": 4
-  },
-  {
-   "title": "Tedros Adhanom Ghebreyesus on X: \"Happy birthday, Prime Minister @narendramodi. I ...",
-   "url": "https://x.com/DrTedros/status/2100543976600203500",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-09-17T11:18:35+00:00",
-   "summary": "... Leaders Summit, for putting health high on the agenda, and for securing strong commitments by BRICS Leaders to #HealthForAll and global health",
-   "score": 8
-  },
-  {
-   "title": "Can AI find drugs to fight infection?",
-   "url": "https://www.news-medical.net/news/20260917/Can-AI-find-drugs-to-fight-infection.aspx",
-   "src": "AMR Industry / news",
-   "feed": "AMR Industry / news",
-   "cat": "amr",
-   "date": "2026-09-17T11:15:00+00:00",
-   "summary": "Streptococcus pneumoniae is a bacterial pathogen that causes life-threatening infections, including pneumonia and meningitis.",
-   "score": 2
-  },
-  {
-   "title": "Poll finds support for cooperation, conflict prevention top priority",
-   "url": "https://www.democracywithoutborders.org/44974/poll-finds-support-for-cooperation-conflict-prevention-top-priority/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-09-17T10:55:03+00:00",
-   "summary": "The World Health Organization was trusted by 69 percent of respondents, followed by the United Nations at 62 percent (previously 61 and 58 percent ...",
-   "score": 6
   }
  ]
 }
