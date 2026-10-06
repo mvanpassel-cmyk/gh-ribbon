@@ -377,6 +377,63 @@ def append_archive(items) -> int:
     return len(nieuw)
 
 
+def titel_sleutel(titel: str) -> str:
+    """Genormaliseerde titel om hetzelfde bericht onder een andere URL te
+    herkennen (WHO.int vs. ReliefWeb vs. Google News). Een eventuele
+    ' - Bronnaam' of ' | Bronnaam' aan het eind valt weg."""
+    t = (titel or "").lower()
+    t = re.sub(r"\s+[-|–—]\s+[^-|–—]{2,60}$", "", t)
+    t = re.sub(r"[^a-z0-9]+", " ", t)
+    return t.strip()
+
+
+def eerste_publicatie() -> dict:
+    """Vroegste publicatiedatum per titel uit het archief. Zo komt een bericht
+    dat dagen later onder een nieuwe URL opduikt niet opnieuw als 'vers' bovenaan."""
+    oudste = {}
+    if not ARCHIVE.exists():
+        return oudste
+    try:
+        with ARCHIVE.open(newline="", encoding="utf-8-sig") as f:
+            for row in csv.DictReader(f):
+                sleutel = titel_sleutel(row.get("titel", ""))
+                dag = (row.get("gepubliceerd") or "")[:10]
+                if len(sleutel) < 25 or len(dag) != 10:
+                    continue
+                iso_dag = dag + "T00:00:00+00:00"
+                if sleutel not in oudste or iso_dag < oudste[sleutel]:
+                    oudste[sleutel] = iso_dag
+    except Exception as e:
+        print(f"  archief niet bruikbaar voor ontdubbelen: {e}", file=sys.stderr)
+    return oudste
+
+
+def ontdubbel_op_titel(items: list, oudste: dict) -> list:
+    """Voegt items met dezelfde titel samen. Het resultaat krijgt de vroegste
+    bekende publicatiedatum en de hoogste score van de groep. Titels korter dan
+    25 tekens (na normaliseren) worden nooit samengevoegd."""
+    uit, per_sleutel = [], {}
+    for item in items:
+        item = dict(item)                     # kopie: het archief houdt zijn eigen data
+        sleutel = titel_sleutel(item.get("title", ""))
+        if len(sleutel) < 25:
+            uit.append(item)
+            continue
+        vroegste = oudste.get(sleutel)
+        if vroegste and (not item.get("date") or vroegste < item["date"]):
+            item["date"] = vroegste
+        if sleutel not in per_sleutel:
+            per_sleutel[sleutel] = item
+            uit.append(item)
+            continue
+        bewaard = per_sleutel[sleutel]
+        if item.get("date") and (not bewaard.get("date") or item["date"] < bewaard["date"]):
+            bewaard["date"] = item["date"]
+        if (item.get("score") or 0) > (bewaard.get("score") or 0):
+            bewaard["score"] = item["score"]
+    return uit
+
+
 def main() -> int:
     fresh, status = [], {}
     for feed in FEEDS:
@@ -399,6 +456,8 @@ def main() -> int:
             continue
         seen.add(key)
         merged.append(item)
+
+    merged = ontdubbel_op_titel(merged, eerste_publicatie())
 
     cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
     def recent(i):
