@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-05T18:35:36+00:00",
- "feeds_ok": 27,
+ "generated": "2026-10-06T00:58:12+00:00",
+ "feeds_ok": 16,
  "feeds_tot": 27,
  "status": {
   "WHO News": {
@@ -9,8 +9,8 @@
    "cat": "who"
   },
   "WHO Disease Outbreak News": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 3)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 404: Not Found | [3] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "who"
   },
   "WHO Alert": {
@@ -24,8 +24,8 @@
    "cat": "who"
   },
   "ProMED": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "promed"
   },
   "CIDRAP Public Health": {
@@ -39,8 +39,8 @@
    "cat": "promed"
   },
   "Eurosurveillance": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "promed"
   },
   "Health Emergency": {
@@ -49,8 +49,8 @@
    "cat": "emerg"
   },
   "ReliefWeb Health": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 3)",
+   "ok": false,
+   "msg": "RuntimeError: [1] ValueError: 0 entries | [2] ValueError: 0 entries | [3] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "emerg"
   },
   "Global Health": {
@@ -59,18 +59,18 @@
    "cat": "global"
   },
   "ECDC": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 3)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 404: Not Found | [3] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "global"
   },
   "Africa CDC": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 3)",
+   "ok": false,
+   "msg": "RuntimeError: [1] ValueError: 0 entries | [2] ValueError: 0 entries | [3] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "global"
   },
   "Think Global Health": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 3)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 404: Not Found | [3] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "global"
   },
   "CIDRAP Stewardship": {
@@ -114,18 +114,18 @@
    "cat": "policy"
   },
   "Geneva Health Files": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "policy"
   },
   "Politico EU Health": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "policy"
   },
   "Euractiv Health": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "policy"
   },
   "STAT News": {
@@ -134,12 +134,382 @@
    "cat": "news"
   },
   "Devex Global Health": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "news"
   }
  },
  "items": [
+  {
+   "title": "Pennsylvania's measles outbreak is the largest in decades in the US - POLITICO",
+   "url": "https://www.politico.com/news/2026/10/05/pennsylvanias-measles-outbreak-is-the-largest-in-decades-in-the-us-01107865",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-05T23:29:26+00:00",
+   "summary": "In November, international health officials will meet to determine if ... Global power is in flux. Your daily guide to what comes next ...",
+   "score": 13
+  },
+  {
+   "title": "Sonoma County issues heat advisory | Department of Health Services",
+   "url": "https://sonomacounty.gov/sonoma-county-issues-heat-advisory",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-05T22:54:51+00:00",
+   "summary": "If someone near you experiences these symptoms, do the following: Call 911 right away-heat stroke is a medical emergency ; Move the person to a cooler ...",
+   "score": 3
+  },
+  {
+   "title": "Russia's Mystery Infection: Did A Lab Accident Trigger A Health Scare? - YouTube",
+   "url": "https://www.youtube.com/watch?v=TAoTY967fmI",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-05T22:29:45+00:00",
+   "summary": "... global concerns. #Russia #PneumonicPlague #Plague #LaboratoryAccident ... Russia's Mystery Infection: Did A Lab Accident Trigger A Health Scare?",
+   "score": 3
+  },
+  {
+   "title": "New York declares first US measles disaster emergency since 2025 surge | CNN",
+   "url": "https://www.cnn.com/2026/10/05/health/new-york-declares-first-us-measles-disaster-emergency-since-2025-surge",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-05T22:15:28+00:00",
+   "summary": "The state also expanded the pool of health professionals ​allowed to administer measles-mumps-rubella (MMR) vaccines as cases rise in rural ...",
+   "score": 9
+  },
+  {
+   "title": "I-TEAM: Employee dies at chemical plant in Iberville Parish, investigation underway - WAFB",
+   "url": "https://www.wafb.com/2026/10/05/i-team-employee-dies-chemical-plant-iberville-parish-investigation-underway/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-05T22:05:35+00:00",
+   "summary": "Westlake Corporation is investigating an incident where an employee experienced a medical emergency on Saturday October 3 and later died.",
+   "score": 3
+  },
+  {
+   "title": "New York declares first US measles disaster emergency since 2025 surge - Reuters",
+   "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/new-york-declares-disaster-emergency-over-measles-outbreak-2026-10-05/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-05T22:04:27+00:00",
+   "summary": "State expands pool of healthcare professionals authorized to administer MMR vaccines · New York reports 108 measles cases through October 3 · More than ...",
+   "score": 9
+  },
+  {
+   "title": "Russian gov't downplays plague lab worker death; dozens quarantined - YouTube",
+   "url": "https://www.youtube.com/watch?v=CumnsaQDu38",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-05T22:02:31+00:00",
+   "summary": "... World Health Organization says the public health risk is low, and US Secretary of State Marco Rubio has said he doesn't think there is cause for ...",
+   "score": 6
+  },
+  {
+   "title": "Dozens quarantined in Siberia after plague institute lab worker dies - Reuters",
+   "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/dozens-quarantined-siberia-after-plague-institute-lab-worker-dies-2026-10-05/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-05T21:57:10+00:00",
+   "summary": "... Health Rounds newsletter. Sign up here. The World Health Organization said that based on available information, \"the ​public health risk to the ...",
+   "score": 6
+  },
+  {
+   "title": "What is the plague? What to know after the suspected Russia case - USA Today",
+   "url": "https://www.usatoday.com/story/graphics/2026/10/05/what-is-plague-symptoms-spread/92103332007/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-05T21:52:37+00:00",
+   "summary": "There are three main clinical forms of plague infection, according to the World Health Organization : Bubonic: The most common form, caused by flea ...",
+   "score": 6
+  },
+  {
+   "title": "From Country Experience to Global Health Policy: Rethinking Country Ownership and ...",
+   "url": "https://www.africanconstituency.org/from-country-experience-to-global-health-policy-rethinking-country-ownership-and-global-health-financing/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-05T21:50:56+00:00",
+   "summary": "As global health financing comes under increasing pressure, discussions in Accra revealed a deeper set of questions about country ownership, ...",
+   "score": 16
+  },
+  {
+   "title": "Russia's Plague Scare: What Experts Say About the Risk - Northeastern Global News",
+   "url": "https://news.northeastern.edu/2026/10/05/outbreak-plague-russia-analysis/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-05T21:50:41+00:00",
+   "summary": "... health and computer sciences. ... Human cases occur sporadically in parts of Africa, Asia and the Americas, according to the World Health Organization , ...",
+   "score": 6
+  },
+  {
+   "title": "Cayce employee dies on the job after ' medical emergency .' What we know. - Yahoo",
+   "url": "https://www.yahoo.com/news/articles/cayce-employee-dies-job-medical-201600414.html",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-05T21:47:39+00:00",
+   "summary": "... A Cayce city employee died after experiencing a medical emergency while at work on Oct. 5, the city ...",
+   "score": 3
+  },
+  {
+   "title": "Senate Passes Bill Extending Emergency Care Reporting Deadline for IHS Patients",
+   "url": "https://nativenewsonline.net/health/senate-passes-bill-extending-emergency-care-reporting-deadline-for-ihs-patients/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-05T21:47:06+00:00",
+   "summary": "The U.S. Senate has unanimously passed bipartisan legislation that would give Indian Health Service patients more time to report emergency medical ...",
+   "score": 5
+  },
+  {
+   "title": "Building Health Together: My Global Journey in Livingstone, Zambia - TarHeels.live",
+   "url": "https://tarheels.live/globalhealth/2026/10/05/building-health-together-my-global-journey-in-livingstone-zambia/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-05T21:43:38+00:00",
+   "summary": "Building Health Together: My Global Journey in Livingstone, Zambia · As I reflect on my practicum experience with the Free Haven Community Initiative, ...",
+   "score": 3
+  },
+  {
+   "title": "From Rerum Novarum to Magnifica Humanitas: Catholic Social Doctrine and Decent Work",
+   "url": "https://annalsofglobalhealth.org/articles/10.5334/aogh.5366",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-05T21:41:07+00:00",
+   "summary": "A global survey conducted by Rantanen, Lehtinen, and Valenti across International Commission on Occupational Health (ICOH) member countries revealed ...",
+   "score": 3
+  },
+  {
+   "title": "What to know about pneumonic plague after woman in Russia dies from mysterious illness",
+   "url": "https://www.nbcnews.com/health/health-news/plague-suspected-russia-lab-pneumonic-siberia-symptoms-treatment-rcna601589",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-05T21:17:42+00:00",
+   "summary": "The woman died Friday, according to the World Health Organization , with no cause of death confirmed. A Russian official said the woman died of ...",
+   "score": 6
+  },
+  {
+   "title": "Hochul declares emergency as New York measles cases surge",
+   "url": "https://www.crainsnewyork.com/health-care/cny-measles-emergency-declaration-20261005/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-05T21:14:33+00:00",
+   "summary": "This exclusive Health Pulse content is only available to Health Pulse subscribers. · Featured Stories · Latest News · See More in Healthcare .",
+   "score": 7
+  },
+  {
+   "title": "Trump says US ready to aid Russia with plague outbreak in Siberia - Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/5/trump-says-us-ready-to-aid-russia-with-plague-outbreak-in-siberia",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-05T21:06:19+00:00",
+   "summary": "The World Health Organization (WHO) said based on unofficial information it has received, the “public health risk to the general population ...",
+   "score": 12
+  },
+  {
+   "title": "SMRs Are Changing the Emergency Planning Zone. What Should Emergency Managers Rethink?",
+   "url": "https://hsph.harvard.edu/advanced-learning-academy/news/smrs-are-changing-the-emergency-planning-zone-what-should-emergency-managers-rethink/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-05T20:48:11+00:00",
+   "summary": "Harvard T.H. Chan School of Public Health's Radiological Emergency Management: Regulations, Planning, Response, and Recovery program takes on that ...",
+   "score": 3
+  },
+  {
+   "title": "31-year-old employee at Iberville Parish chemical plant dies after medical emergency at work",
+   "url": "https://www.wbrz.com/news/31-year-old-employee-at-iberville-parish-chemical-plant-dies-after-medical-emergency-at-work/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-05T20:47:11+00:00",
+   "summary": "According to Westlake officials, Triche was found unresponsive after suffering a medical emergency in a unit around 7:44 p.m. and an on-site medical ...",
+   "score": 3
+  },
+  {
+   "title": "Oct. 13, 2026 — Lecture: “Improving the gut microbiome” | Global Health Center",
+   "url": "https://sites.wustl.edu/globalhealthcenter/calendar_event/oct-13-2026-lecture-improving-the-gut-microbiome/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-05T20:39:47+00:00",
+   "summary": "12:00 – 1:00 PM, 3rd Floor Auditorium, St. Louis Children's Hospital and Zoom. Presented by Phillip Tarr, MD. The Global Health Center is a ...",
+   "score": 13
+  },
+  {
+   "title": "There's a contraception shortage in Tanzania due to a cut in U.S. family planning aid - NPR",
+   "url": "https://www.npr.org/2026/10/05/nx-s1-5986095/theres-a-contraception-shortage-in-tanzania-due-to-a-cut-in-u-s-family-planning-aid",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-05T20:39:20+00:00",
+   "summary": "Global Health · A new California law bans child marriage. What's the global outlook on the practice? Shepherds attend a part time night school near ...",
+   "score": 8
+  },
+  {
+   "title": "How political, cultural, and economic forces can shape the risk of zoonotic disease",
+   "url": "https://www.gmu.edu/news/2026-10/how-political-cultural-and-economic-forces-can-shape-risk-zoonotic-disease",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-05T20:39:04+00:00",
+   "summary": "... Global and Community Health at the College of Public Health. Read the ... GCH Global Health Research · Global Health · Research · College of Public ...",
+   "score": 8
+  },
+  {
+   "title": "How worried should we be about the Russian plague lab leak? - The Telegraph",
+   "url": "https://www.telegraph.co.uk/global-health/science-and-disease/how-worried-should-we-be-about-the-russian-plague-lab-leak/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-05T20:35:42+00:00",
+   "summary": "Protect yourself and your family by learning more about Global Health Security ... Global Health Security, · Bubonic plague, · Bacteria, · Pandemics and ...",
+   "score": 11
+  },
+  {
+   "title": "Harvard LEAD Fellowship for Promoting Women in Global Health 2027 - 2028 - Reviewr",
+   "url": "https://my.reviewr.com/s2/site/Harvard_LEAD_GlobalHealthFellowship_2025;jsessionid=AF671E6EEE10EC283B3FCEE3BF830082.6a?redir=micrositedesign",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-05T20:33:43+00:00",
+   "summary": "Description. Welcome to the 2027-2028 application for a Harvard LEAD Fellowship. To equip and empower more women leaders in global health , the Harvard ...",
+   "score": 13
+  },
+  {
+   "title": "Hochul declares emergency over measles outbreak - WWNY",
+   "url": "https://www.wwnytv.com/2026/10/05/hochul-declares-emergency-over-measles-outbreak/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-05T20:27:09+00:00",
+   "summary": "“That is why I have taken steps to increase the number of health professionals who can vaccinate and test. These emergency measures will protect ...",
+   "score": 16
+  },
+  {
+   "title": "The Global Mental Health Crisis: How to Help | Project HOPE",
+   "url": "https://www.projecthope.org/news-stories/story/the-global-mental-health-crisis-how-to-help",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-05T20:20:20+00:00",
+   "summary": "Mental health is essential at every stage of life — and especially during emergency and humanitarian responses, when disasters, crises, outbreaks, ...",
+   "score": 6
+  },
+  {
+   "title": "Cayce employee dies on the job after ' medical emergency ' - Post and Courier",
+   "url": "https://www.postandcourier.com/columbia/news/cayce-employee-death-sled-columbia/article_636f364f-e7cd-4226-b0bc-78d839c12aef.html",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-05T20:18:31+00:00",
+   "summary": "The employee died “after experiencing a medical emergency .” Emergency responders responded to a call regarding the incident around 9 a.m. on Oct.",
+   "score": 3
+  },
+  {
+   "title": "Suspected plague incident leaves 1 dead, 200 under quarantine in Siberia | CIDRAP",
+   "url": "https://www.cidrap.umn.edu/plague/suspected-plague-incident-leaves-1-dead-200-under-quarantine-siberia",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-05T20:16:41+00:00",
+   "summary": "From 2019 to 2025, the World Health Organization estimates there were 3,800 suspected plague cases (mostly bubonic) in 10 countries, resulting in 423 ...",
+   "score": 6
+  },
+  {
+   "title": "STAT+: Judges skewer HHS arguments in hearing over Medicare Advantage audits lawsuit",
+   "url": "https://www.statnews.com/2026/10/05/humana-medicare-advantage-radv-audits-lawsuit-hearing/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-10-05T20:13:42+00:00",
+   "summary": "Federal judges pushed back against the government's arguments in a Medicare Advantage case.",
+   "score": -5
+  },
+  {
+   "title": "Driving Global Health innovation: the IMVACS annual meeting in Lecce and R-Evolution ...",
+   "url": "https://revolutionworldwide.community/driving-global-health-innovation-the-imvacs-annual-meeting-in-lecce-and-r-evolution-worldwides-partnership-with-unisalento/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-05T20:13:34+00:00",
+   "summary": "Driving Global Health innovation: the IMVACS annual meeting in Lecce and R-Evolution Worldwide's partnership with UniSalento. October 5, 2026 Chiara ...",
+   "score": 13
+  },
+  {
+   "title": "STAT+: Nobel-winning optogenetics research has led to experimental treatments for blindness and Alzheimer’s",
+   "url": "https://www.statnews.com/2026/10/05/2026-nobel-prize-winning-optogenetics-research-explained/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-10-05T20:08:24+00:00",
+   "summary": "Optogenetics is now the foundational way through which we are able to understand how the brain works",
+   "score": 1
+  },
+  {
+   "title": "What is pneumonic plague, and how will we know if it's spreading in Russia?",
+   "url": "https://www.washingtonpost.com/health/2026/10/05/what-is-pneumonic-plague-how-will-we-know-if-its-spreading-russia/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-05T19:56:13+00:00",
+   "summary": "Bubonic plague is the most common form of plague globally, according to the World Health Organization , and is caused by the bite of an infected flea.",
+   "score": 6
+  },
+  {
+   "title": "Russia plays down plague fears and denies lab accident, says scientist died of \"pneumonia ...",
+   "url": "https://www.cbsnews.com/news/russia-plague-lab-death-pneumonia-of-unknown-origin/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-05T19:48:25+00:00",
+   "summary": "The World Health Organization said she died of severe pneumonia overnight into Oct. 2. The plague bacterium referred to by the reports is yersinia ...",
+   "score": 6
+  },
+  {
+   "title": "Canada closely following reports of plague in Russia, health minister says - CTV News",
+   "url": "https://www.ctvnews.ca/health/article/canada-closely-following-reports-of-plague-in-russia-health-minister-says/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-05T19:30:22+00:00",
+   "summary": "Michel says there's no risk to Canada but her government is working with the World Health Organization and other countries to stay on top of the ...",
+   "score": 6
+  },
+  {
+   "title": "What are the three plague pandemics in human history? - Down To Earth",
+   "url": "https://www.downtoearth.org.in/health/what-are-the-three-plague-pandemics-in-human-history",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-05T19:14:27+00:00",
+   "summary": "According to the World Health Organization (WHO), plague is caused by the bacteria Yersinia pestis, zoonotic bacteria usually found in small mammals ...",
+   "score": 6
+  },
+  {
+   "title": "What We Know About Russia Pneumonic 'Plague' After Dozens Quarantined in Siberia",
+   "url": "https://time.com/article/2026/10/05/russia-plague-fears-siberia-quarantine-lab-worker-died/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-05T19:11:16+00:00",
+   "summary": "Natural reservoirs of the bacterium exist on all inhabited continents except Oceania, according to the World Health Organization . In the U.S. ...",
+   "score": 6
+  },
   {
    "title": "STAT+: New Trump regulations would clean up health care pricing disclosures",
    "url": "https://www.statnews.com/2026/10/05/trump-kennedy-transparency-in-coverage-regulations-health-care-prices-disclosure/?utm_campaign=rss",
@@ -521,6 +891,16 @@
    "score": 22
   },
   {
+   "title": "Integration of oral health promotion in primary school health programs: A scoping review",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007390",
+   "src": "PLOS Global Public Health",
+   "feed": "PLOS Global Public Health",
+   "cat": "journal",
+   "date": "2026-10-05T14:00:00+00:00",
+   "summary": "by Nikita Surani, Nathalia Carolina Fernandes Fagundes, Harmanpreet Kaur, Rebecca Gokiert, Arnaldo Perez-Garcia, Maryam Amin Children experience significant oral health problems, compromising learning and quality of life. Schools are effective in promoting children’s overall health, within which ora",
+   "score": 3
+  },
+  {
    "title": "Evaluating a biochemical TB medication adherence test: Insights from image-based reporting through a patient companion app",
    "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007182",
    "src": "PLOS Global Public Health",
@@ -608,6 +988,16 @@
    "cat": "news",
    "date": "2026-10-05T12:00:51+00:00",
    "summary": "What science says so far about which cancers can be beat by vaccines — and which will require more creative approaches.",
+   "score": 3
+  },
+  {
+   "title": "Extreme heat making pregnancy a ‘new fault line’ in climate crisis",
+   "url": "https://news.un.org/feed/view/en/story/2026/10/1168522",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-10-05T12:00:00+00:00",
+   "summary": "Pregnancy and childbirth have become a “new fault line in the global climate crisis” as extreme heat worsens, the head of the UN climate action body (UNFCCC) warned on Monday, calling for maternal and newborn health to be built into countries’ climate plans.",
    "score": 3
   },
   {
@@ -3749,396 +4139,6 @@
    "date": "2026-10-02T20:28:43+00:00",
    "summary": "The World Health Organization has recently raised the alarm about the virus' rapid spread into new health zones, stretching limited resources. The ...",
    "score": 10
-  },
-  {
-   "title": "The number of people who have died in the Democratic Republic of Congo's latest Ebola ...",
-   "url": "https://www.instagram.com/reel/Dd_fl0aDCFb/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-02T20:23:31+00:00",
-   "summary": "The World Health Organization (WHO) warned that the Ebola ... Follow for more global health updates. #Ebola #DRCongo # GlobalHealth ...",
-   "score": 21
-  },
-  {
-   "title": "Good news from World Health Organization (WHO) ahead of the weekend: people are living ...",
-   "url": "https://www.facebook.com/DrTedros.Official/posts/good-news-from-world-health-organization-who-ahead-of-the-weekend-people-are-liv/1688332442662065/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-02T20:11:37+00:00",
-   "summary": "Global life expectancy reached 73.3 years in 2023, almost fully recovering the years lost during COVID-19 ⬇️ Now we must make sure people don't just ...",
-   "score": 9
-  },
-  {
-   "title": "Patient-zero drill put health facilities to the test—40% of them failed - Ars Technica",
-   "url": "https://arstechnica.com/health/2026/10/patient-zero-drill-put-health-facilities-to-the-test-40-of-them-failed/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-02T20:08:57+00:00",
-   "summary": "“These drills identified needs for health care workers and health care ... Actors mostly visited emergency departments (42 of 73), but also ...",
-   "score": 3
-  },
-  {
-   "title": "National Preparedness Month 2026: A Look at Sands' Support for Americares Global ... - CSRwire",
-   "url": "https://csrwire.com/press-release/national-preparedness-month-2026-look-sands-support-americares-global-readiness-and-response/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-02T20:05:34+00:00",
-   "summary": "July marked the completion of Sands' sixth year of support for the global health and disaster relief organization and closed out year one of the ...",
-   "score": 8
-  },
-  {
-   "title": "AHF to Mark 40 Years of Global Impact with World AIDS Day Concert in L.A. Nov. 30th",
-   "url": "https://www.aidshealth.org/2026/10/ahf-to-mark-40-years-of-global-impact-with-world-aids-day-concert-in-l-a-nov-30th/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-02T20:01:46+00:00",
-   "summary": "AIDS Healthcare Foundation (AHF), the world's largest HIV/AIDS healthcare organization ... health organization providing direct HIV/ADS services ...",
-   "score": 5
-  },
-  {
-   "title": "NIH rolling out streamlined website to help public find information more easily",
-   "url": "https://www.statnews.com/2026/10/02/nih-launching-streamlined-website-to-help-public-find-information/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-10-02T19:59:07+00:00",
-   "summary": "The redesign is intended to streamline what was a sprawling and fractured information ecosystem, requiring users to understand NIH's organizational structure",
-   "score": 1
-  },
-  {
-   "title": "Gaza: WHO appeals for massive aid influx ahead of winter - the United Nations",
-   "url": "https://www.un.org/en/gaza-who-appeals-massive-aid-influx-ahead-winter",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-02T19:55:03+00:00",
-   "summary": "... devastating consequences on Palestinians who urgently need them in the war-torn enclave, the UN World Health Organization (WHO) said on Friday.",
-   "score": 12
-  },
-  {
-   "title": "How Canada’s bets on health innovation are scaling up",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQTFRhbjB5c3l2YmpwNFFDUEhCMTBvQkcxa2tSZjRnOWdQck1zMU91VmhuX2FYV2F1dTZOQ1ExYkItdk1DX1BjREVURHdRcWh1Zi1lM2ZKWW5jTXZPMk9IZkxZS04zelZyQ2hBRTVIVmFvOXp2dGZYdHBzRExrQjZ2WGNSYTNTNmpZRE9CMTNGM292X2tVaExJdmdZTk1uUQ?oc=5",
-   "src": "Devex",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-10-02T19:54:11+00:00",
-   "summary": "How Canada’s bets on health innovation are scaling up Devex",
-   "score": 2
-  },
-  {
-   "title": "Trump Declares EMERGENCY From Whitehouse; Drops NUCLEAR Bombshell On Iran ...",
-   "url": "https://www.youtube.com/watch?v=mFVgdvqPDhI",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-02T19:43:16+00:00",
-   "summary": "LIVE | Trump Declares EMERGENCY From Whitehouse; Drops NUCLEAR Bombshell On Iran, Russia, Israel US NEWS LIVE ... Go to channel Food, Health & Science ...",
-   "score": 3
-  },
-  {
-   "title": "‘Money alone won’t get us there’: UN steps up aid for 12 forgotten crises",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA0X3dZeTNTZnVGQmdpU3ljeVE2LUJIbmtTaV8tRTltbTJ2eUwtRXg0Tzk1a3QyeExSUGpjb2JPbXRmZ1NuNC1VQkhzTzlHMWJxa0pqeFFvMA?oc=5",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-02T19:33:54+00:00",
-   "summary": "‘Money alone won’t get us there’: UN steps up aid for 12 forgotten crises UN News",
-   "score": 3
-  },
-  {
-   "title": "Serologic Assessment of Public Health Action Needed for Trachoma, Coastal Ecuador, 2021–2024",
-   "url": "https://wwwnc.cdc.gov/eid/article/32/11/26-1024",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-02T19:28:21+00:00",
-   "summary": "... health concern by the World Health Organization and targeted for elimination by 2030 (1). Public health interventions for trachoma include surgery ...",
-   "score": 6
-  },
-  {
-   "title": "More Than a Board Meeting: What Does a Cook County Commissioner Really Do?",
-   "url": "https://cookcountymn.gov/news_detail_T6_R897.php",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-02T19:26:06+00:00",
-   "summary": "Commissioners serve on numerous boards, committees and commissions. My assignments have included housing, planning, public health , emergency ...",
-   "score": 3
-  },
-  {
-   "title": "World Health Organization reports rise in global life expectancy",
-   "url": "https://report.az/en/amp/health/world-health-organization-reports-rise-in-global-life-expectancy",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-02T19:24:28+00:00",
-   "summary": "Global life expectancy has increased, reaching levels recorded before the coronavirus pandemic, according to the World Health Organization (WHO), ...",
-   "score": 9
-  },
-  {
-   "title": "Global life expectancy bounces back to near pre-pandemic levels, WHO says | UN News",
-   "url": "https://news.un.org/en/story/2026/10/1168515",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-02T18:40:01+00:00",
-   "summary": "... World Health Organization (WHO) said on Friday. According to the UN health agency's latest Global Health Estimates, life expectancy reached 73.3 ...",
-   "score": 17
-  },
-  {
-   "title": "How Biotech AI And Robotics Bridge Bottlenecks To Impact Global Health - Forbes",
-   "url": "https://www.forbes.com/sites/ray-fernandez/2026/10/02/how-biotech-ai-and-robotics-bridge-bottlenecks-to-impact-global-health/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-02T18:39:13+00:00",
-   "summary": "Which Biotech Technologies Have the Greatest Potential to Impact Global Health ? Biological Lattice Industries (BLI), tech stack is developed to ...",
-   "score": 13
-  },
-  {
-   "title": "Global life expectancy bounces back to near pre-pandemic levels, WHO says",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE81TEVFeXRXMVlVX1NBY0p0ZThQOVhnUHFlMk5GaWNqbXh6ejhFSUd0SFQySkxOcVV5LXFuYXM1UXpjNTdxZzlnUXRMS1RPc3BHR2RRMDVKQQ?oc=5",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-02T18:37:30+00:00",
-   "summary": "Global life expectancy bounces back to near pre-pandemic levels, WHO says UN News",
-   "score": 9
-  },
-  {
-   "title": "The America First strategy asks for a Memorandum of Understanding as a condition for ... - Facebook",
-   "url": "https://www.facebook.com/NPR/posts/the-america-first-strategy-asks-for-a-memorandum-of-understanding-as-a-condition/1464678955529099/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-02T18:34:33+00:00",
-   "summary": "... the world. Trump's “America First Global Health Strategy” is nothing more than global gangsterism | Alaska Beacon. Alex McDonald and 13 others. 14 ...",
-   "score": 8
-  },
-  {
-   "title": "October ushers in a new era in U.S. foreign aid - NPR",
-   "url": "https://www.npr.org/2026/10/02/g-s1-146042/foreign-aid-united-states-healthcare-america-first",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-02T18:32:33+00:00",
-   "summary": "It's the age of the \"America First Global Health Strategy.\" And that means rewriting the rules for funding healthcare in low- and middle-income ...",
-   "score": 11
-  },
-  {
-   "title": "Failed 'torturous' execution attempt on Christa Pike reignites death penalty debate - NPR",
-   "url": "https://www.npr.org/2026/10/02/nx-s1-5988832/christa-pike-reignites-death-penalty-debate",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-02T17:57:08+00:00",
-   "summary": "On Thursday, International rights watchdog Amnesty International ... Global Health · A new California law bans child marriage. What's the ...",
-   "score": 8
-  },
-  {
-   "title": "Congo's Ebola outbreak surpasses 4,000 deaths amid violence and mistrust | CBC News",
-   "url": "https://www.cbc.ca/news/world/congo-outbreak-death-toll-treatment-centre-beating-9.7366690",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-02T17:48:33+00:00",
-   "summary": "More than 50 health workers have died after contracting the virus. Community resistance hampering containment efforts. The World Health Organization ...",
-   "score": 16
-  },
-  {
-   "title": "Iraq withdrawal / America's Mideast footprint / Hegseth's Pentagon overhaul - NPR",
-   "url": "https://www.npr.org/2026/10/01/nx-s1-5987699/iraq-withdrawal-americas-mideast-footprint-hegseths-pentagon-overhaul",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-02T17:22:13+00:00",
-   "summary": "Global Health · A new California law bans child marriage. What's the global outlook on the practice? A sign opposing a data center development ...",
-   "score": 8
-  },
-  {
-   "title": "COVID-19 Drops Out of World’s Top 10 Causes of Death for First Time Since Pandemic Began",
-   "url": "https://healthpolicy-watch.news/covid-19-drops-out-of-worlds-top-10-causes-of-death-for-first-time-since-pandemic-began/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-10-02T17:09:57+00:00",
-   "summary": "COVID-19 dropped out of the world’s 10 leading causes of death in 2023 for the first time since the pandemic began in 2020, and only two years after it topped the list, according to new World Health Organization estimates released Friday. The virus directly killed an estimated 0.9 million people in ",
-   "score": 7
-  },
-  {
-   "title": "Tierra Walker's Death Was Preventable. The Conservative Legal Movement Made It Predictable",
-   "url": "https://ballsandstrikes.org/law-politics/tierra-walker-abortion-texas-ban/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-02T16:57:41+00:00",
-   "summary": "That pregnancy ended in stillbirths at 25 weeks and derailed her physical and mental health. ... medical emergency exceptions. But it doesn't seem to be ...",
-   "score": 3
-  },
-  {
-   "title": "Northern India Braces for Toxic Winter Pollution, Despite Improved Delhi Plan",
-   "url": "https://healthpolicy-watch.news/north-india-braces-for-toxic-winter-pollution-despite-improved-delhi-plan/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-10-02T16:55:34+00:00",
-   "summary": "Rural farm fires and Diwali fireworks likely to trigger pollution emergencies in northern India during late autumn and early winter, despite the rollout of new pollution control measures in the capital city territory. DELHI, India – As India braces for the winter smog season, Delhi has announced a p",
-   "score": 8
-  },
-  {
-   "title": "An Ebola treatment center was burned down as the death toll in Congo passes 4000",
-   "url": "https://abcnews.com/Health/wireStory/congos-ebola-outbreak-recorded-4000-deaths-authorities-struggle-136943057",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-02T16:55:14+00:00",
-   "summary": "The World Health ... The Associated Press receives financial support for global health and development coverage in Africa from the Gates Foundation.",
-   "score": 12
-  },
-  {
-   "title": "Man Accused of Faking a Medical Emergency to Avoid Paying $63 Bill at Red Lobster",
-   "url": "https://www.yahoo.com/news/us/articles/man-accused-faking-medical-emergency-103057243.html",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-02T16:44:46+00:00",
-   "summary": "It didn't take long for the police to determine that Rasheed's alleged fake medical emergency was just a ploy to get out of paying for his meal.",
-   "score": 3
-  },
-  {
-   "title": "Life Expectancy Nears Pre-Pandemic Level as NCDs Rise: WHO - Mexico Business News",
-   "url": "https://mexicobusiness.news/health/news/life-expectancy-nears-pre-pandemic-level-ncds-rise-who",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-02T16:43:03+00:00",
-   "summary": "... the World Health Organization's (WHO) latest Global Health Estimates, released on Oct. 2, 2026. Healthy life expectancy remains below its ...",
-   "score": 17
-  },
-  {
-   "title": "West Bank Healthcare: Closed Roads, Empty Treasury & Doctors Detained",
-   "url": "https://healthpolicy-watch.news/west-bank-healthcare-closed-roads-empty-treasury-doctors-detained/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-10-02T16:42:19+00:00",
-   "summary": "ISRAELI-OCCUPIED WEST BANK – The oxygen mask slipped from three-month-old Ahmad Zaid’s face. He was in his father’s arms, in front of a closed Israeli military gate blocking the road between Deir Ammar refugee camp, northwest of Ramallah, where the family lives, and the city of Ramallah, with a hosp",
-   "score": 4
-  },
-  {
-   "title": "Flight Sends Out International Distress Code as Passenger Experience Mid-Air Medical Emergency",
-   "url": "https://people.com/flight-sends-out-international-distress-code-as-passenger-experience-mid-air-medical-emergency-12154385",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-02T16:42:12+00:00",
-   "summary": "A flight to London was forced to divert about six hours into its journey as a passenger experienced a medical emergency on board.",
-   "score": 3
-  },
-  {
-   "title": "Ebola death toll surpasses 4000 as DR Congo struggles to suppress outbreak - Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/10/2/ebola-death-toll-surpasses-4000-as-dr-congo-struggles-to-suppress-outbreak",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-02T16:34:36+00:00",
-   "summary": "The World Health Organization has warned that the epidemic is “far from over” and on track to surpass the regional 2014-2016 West Africa Ebola ...",
-   "score": 18
-  },
-  {
-   "title": "Ukraine war ‘a human rights catastrophe’ that must end, says Türk",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9ud2VHajhPRTdFT2JpZ09HUDBTbGkzSUVmT0FoanFGSGY5UzZkNkNyUWRWOTAtc3lmRV9FNWhuMmJWeGVGSlJNYWQ2VVU2c180WElsNUFZNA?oc=5",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-02T16:22:38+00:00",
-   "summary": "Ukraine war ‘a human rights catastrophe’ that must end, says Türk UN News",
-   "score": 3
-  },
-  {
-   "title": "Hospitals expand push to limit ER visits ahead of Medicaid cuts - Modern Healthcare",
-   "url": "https://www.modernhealthcare.com/providers/mh-hospital-er-urgent-care-virtual/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-02T16:17:30+00:00",
-   "summary": "Health systems are expanding urgent care, virtual care and behavioral health clinics to steer low-acuity patients away from emergency departments.",
-   "score": -3
-  },
-  {
-   "title": "New WHO estimates show changing global health landscape",
-   "url": "https://www.who.int/japan/news/detail-global/02-10-2026-new-who-estimates-show-changing-global-health-landscape",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-02T16:16:17+00:00",
-   "summary": "WHO's latest Global Health Estimates, released on 2 October 2026, provide a picture of how health has changed across countries and regions between ...",
-   "score": 19
-  },
-  {
-   "title": "What it’s like to wait for the call from the Nobel Prize committee",
-   "url": "https://www.statnews.com/2026/10/02/nobel-prize-2026-geneticist-mary-claire-king-long-waiting-not-getting-winner-call/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-10-02T16:07:11+00:00",
-   "summary": "Ahead of this year's Nobel Prize announcements, STAT chatted with Mary-Claire King, who discovered the BRCA cancer mutations and is frequently mentioned in prize predictions.",
-   "score": 4
-  },
-  {
-   "title": "Stephanie Psaki's Post - LinkedIn",
-   "url": "https://www.linkedin.com/posts/stephanie-psaki-a86a884_there-has-been-a-lot-of-speculation-about-activity-7511585941975920640-EF-0",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-02T16:03:48+00:00",
-   "summary": "There has been a lot of speculation about the shift in U.S. global health policy coming from outside of Africa, and often difficult to know what ...",
-   "score": 8
-  },
-  {
-   "title": "Letters announcing medical -debt relief arrive as a welcome surprise | Here & Now - WBUR",
-   "url": "https://www.wbur.org/hereandnow/2026/10/02/medical-debt-relief",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-02T16:01:48+00:00",
-   "summary": "The medical emergency came as a surprise, and Gurney knew the ordeal would be expensive, even with health insurance. Her portion of the $2 million ...",
-   "score": 3
-  },
-  {
-   "title": "Communicable disease threats report, 26 September - 2 October, week 40",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNelFfRmRCaF9YZWh4S0hocU45aHJZRWlzRzBKTzVyV1FrODlJRlFCOTZVZzd5cGk0TkN2QzRoM0psN1J6d3AtYnNCREgwNERKYTJVT2o0Rzg5bkJxVExwRmkzTVJXVUdtMmNoRUkyNmRJWW4yQi1Xb3ZCRDlKR0N0QWJacUp5ZWlPX2F3dlBlQ3FTVWlnY0lfM29mUmk3SzQ1NFRTZk1VaFJQSjluUV8yMG1OZ1Y?oc=5",
-   "src": "European Centre for Disease Prevention and Control",
-   "feed": "ECDC",
-   "cat": "global",
-   "date": "2026-10-02T16:00:46+00:00",
-   "summary": "Communicable disease threats report, 26 September - 2 October, week 40 European Centre for Disease Prevention and Control",
-   "score": 2
-  },
-  {
-   "title": "PAHO regional meeting of health ministers concludes with new measures to strengthen ...",
-   "url": "https://www.paho.org/en/news/2-10-2026-paho-regional-meeting-health-ministers-concludes-new-measures-strengthen-health",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-02T15:59:31+00:00",
-   "summary": "Report Wrongdoing. Follow Us. Regional Office for the Americas of the World Health Organization . © Pan American Health Organization. All rights ...",
-   "score": 6
-  },
-  {
-   "title": "A smart investment: The economics of saving mothers - Unitaid",
-   "url": "https://unitaid.org/news-blog/a-smart-investment-the-economics-of-saving-mothers/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-02T15:58:43+00:00",
-   "summary": "A World Health Organization review of oxytocin found approximately 40% of supplies to be substandard. Problems can arise from manufacturing and ...",
-   "score": 12
   }
  ]
 }
