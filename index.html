@@ -201,6 +201,41 @@ footer {
   display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px;
   font-size:10px; color:var(--muted); letter-spacing:.08em;
 }
+
+/* Verborgen statistieken: bijna onzichtbaar stipje in de footer. */
+.stats-dot {
+  background:none; border:0; color:var(--muted); opacity:.22; cursor:pointer;
+  font:inherit; font-size:15px; line-height:1; padding:0 6px; transition:opacity .15s, color .15s;
+}
+.stats-dot:hover, .stats-dot:focus-visible { opacity:1; color:var(--accent); outline:none; }
+.stats-ov {
+  position:fixed; inset:0; background:rgba(2,9,5,.82); z-index:500;
+  display:none; align-items:center; justify-content:center; padding:20px;
+}
+.stats-ov.open { display:flex; }
+.stats-box {
+  background:var(--surface); border:1px solid var(--border); border-top:2px solid var(--accent);
+  width:100%; max-width:460px; max-height:86vh; overflow:auto; padding:20px 22px 18px;
+}
+.stats-hd { display:flex; align-items:baseline; justify-content:space-between; margin-bottom:16px; }
+.stats-hd .sec-title { color:var(--accent); }
+.stats-x { background:none; border:0; color:var(--muted); font:inherit; font-size:18px; cursor:pointer; line-height:1; }
+.stats-x:hover { color:var(--accent); }
+.stats-demo {
+  font-size:10px; letter-spacing:.1em; color:var(--promed);
+  border:1px dashed var(--promed); padding:6px 10px; margin-bottom:14px; line-height:1.6;
+}
+.stats-nums { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:20px; }
+.stats-num { border:1px solid var(--border); background:var(--bg); padding:10px 12px; }
+.stats-num b { display:block; font-family:'Syne',sans-serif; font-size:24px; font-weight:800; color:var(--bright); font-variant-numeric:tabular-nums; }
+.stats-num span { font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+.stats-sub { font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin-bottom:10px; }
+.c-row { display:grid; grid-template-columns:26px 1fr 44px; align-items:center; gap:8px; margin-bottom:7px; font-size:12px; }
+.c-bar { position:relative; height:20px; background:var(--bg); border:1px solid var(--border); }
+.c-bar i { position:absolute; left:0; top:0; bottom:0; background:rgba(61,255,154,.18); border-right:2px solid var(--accent); }
+.c-bar em { position:absolute; left:8px; top:0; line-height:19px; font-style:normal; color:var(--bright); font-size:11px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:calc(100% - 12px); }
+.c-n { text-align:right; color:var(--muted); font-variant-numeric:tabular-nums; }
+.stats-foot { margin-top:14px; font-size:9px; color:var(--muted); letter-spacing:.08em; line-height:1.7; }
 </style>
 </head>
 <body>
@@ -208,7 +243,7 @@ footer {
 <div class="topbar">
   <div style="display:flex;align-items:center">
     <div class="logo-pill">GH RIBBON</div>
-    <span class="logo-sub">Global Health Intelligence · VWS/IZ</span>
+    <span class="logo-sub">Global Health Intelligence</span>
   </div>
   <div class="topbar-right">
     <span class="live-dot" id="dot"></span>
@@ -248,8 +283,18 @@ footer {
 
 <footer>
   <span>27 bronnen · WHO · CIDRAP · ECDC · Africa CDC · Lancet · BMJ · PLOS · Health Policy Watch · Geneva Health Files · Politico · Euractiv · STAT · Devex</span>
-  <span id="ft">—</span>
+  <span><span id="ft">—</span><button class="stats-dot" id="sd" onclick="openStats()" aria-label="Statistieken" title="">◔</button></span>
 </footer>
+
+<div class="stats-ov" id="sov" onclick="if(event.target===this)closeStats()">
+  <div class="stats-box" role="dialog" aria-label="Bezoekersstatistieken">
+    <div class="stats-hd">
+      <span class="sec-title">Bezoekers</span>
+      <button class="stats-x" onclick="closeStats()" aria-label="Sluiten">×</button>
+    </div>
+    <div id="stats-body"></div>
+  </div>
+</div>
 
 <div class="ticker-wrap">
   <div class="ticker-badge">LIVE</div>
@@ -470,6 +515,83 @@ function tog(cat) {
 fetch('data/archive.csv', { method: 'HEAD' })
   .then(r => { if (!r.ok) document.getElementById('csv').style.display = 'none'; })
   .catch(() => { document.getElementById('csv').style.display = 'none'; });
+
+// ── Verborgen bezoekersstatistieken ─────────────────────────────────────────
+// Tellen gebeurt met GoatCounter (gratis, geen cookies, geen persoonsgegevens).
+// Zolang GC_CODE leeg is telt er niets en toont het paneel demodata.
+// Invullen na het aanmaken van een gratis account op goatcounter.com,
+// bijvoorbeeld 'ghribbon' (wordt https://ghribbon.goatcounter.com).
+const GC_CODE = '';
+
+if (GC_CODE && !/^(localhost|127\.|\[::1\])/.test(location.hostname)) {
+  const s = document.createElement('script');
+  s.async = true;
+  s.dataset.goatcounter = 'https://' + GC_CODE + '.goatcounter.com/count';
+  s.src = '//gc.zgo.at/count.js';
+  document.head.appendChild(s);
+}
+
+// Het paneel leest data/stats.json (later te vullen door dezelfde Actions-
+// workflow die de feeds ophaalt, zodat er geen sleutel in de pagina staat).
+// Bestaat dat bestand niet, dan zie je duidelijk gelabelde demodata.
+const DEMO_STATS = {
+  total: 1284, today: 23, week: 164,
+  countries: [
+    {code:'NL',count:512},{code:'BE',count:131},{code:'DE',count:118},
+    {code:'CH',count:97}, {code:'ID',count:64}, {code:'ZA',count:58},
+    {code:'KE',count:41}, {code:'GB',count:37}, {code:'IN',count:29},
+    {code:'US',count:24}
+  ]
+};
+const regionNames = (() => {
+  try { return new Intl.DisplayNames(['nl'], { type: 'region' }); } catch (_) { return null; }
+})();
+
+function vlag(code) {
+  return code.toUpperCase().replace(/./g, c => String.fromCodePoint(127397 + c.charCodeAt(0)));
+}
+function landNaam(code) {
+  try { return (regionNames && regionNames.of(code.toUpperCase())) || code; } catch (_) { return code; }
+}
+const nf = n => Number(n || 0).toLocaleString('nl-NL');
+
+async function openStats() {
+  const ov = document.getElementById('sov');
+  const body = document.getElementById('stats-body');
+  ov.classList.add('open');
+  body.innerHTML = '<div class="stats-foot">laden…</div>';
+
+  let d = null, demo = false;
+  try {
+    const r = await fetch('data/stats.json?t=' + Date.now(), { cache: 'no-store' });
+    if (r.ok) d = await r.json();
+  } catch (_) {}
+  if (!d || !Array.isArray(d.countries)) { d = DEMO_STATS; demo = true; }
+
+  const landen = [...d.countries].sort((a, b) => b.count - a.count).slice(0, 12);
+  const max = landen.length ? landen[0].count : 1;
+
+  body.innerHTML =
+    (demo ? '<div class="stats-demo">DEMODATA — er is nog niets gekoppeld. Deze cijfers zijn verzonnen.</div>' : '') +
+    '<div class="stats-nums">' +
+      '<div class="stats-num"><b>' + nf(d.total) + '</b><span>totaal</span></div>' +
+      '<div class="stats-num"><b>' + nf(d.week) + '</b><span>7 dagen</span></div>' +
+      '<div class="stats-num"><b>' + nf(d.today) + '</b><span>vandaag</span></div>' +
+    '</div>' +
+    '<div class="stats-sub">Herkomst</div>' +
+    (landen.length ? landen.map(l => {
+      const code = htmlesc(l.code);
+      return '<div class="c-row"><span>' + vlag(l.code) + '</span>' +
+        '<div class="c-bar"><i style="width:' + Math.max(3, Math.round(l.count / max * 100)) + '%"></i>' +
+        '<em>' + htmlesc(landNaam(l.code)) + '</em></div>' +
+        '<span class="c-n" title="' + code + '">' + nf(l.count) + '</span></div>';
+    }).join('') : '<div class="stats-foot">Nog geen bezoeken geregistreerd.</div>') +
+    '<div class="stats-foot">Alleen aantallen en land, geen cookies en geen IP-adressen opgeslagen.' +
+      (d.generated ? ' Bijgewerkt ' + htmlesc(relDate(d.generated)) + '.' : '') + '</div>';
+}
+
+function closeStats() { document.getElementById('sov').classList.remove('open'); }
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeStats(); });
 
 loadAll();
 setInterval(loadAll, 15 * 60 * 1000);
