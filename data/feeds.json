@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-11T18:12:37+00:00",
- "feeds_ok": 27,
+ "generated": "2026-10-11T22:12:52+00:00",
+ "feeds_ok": 16,
  "feeds_tot": 27,
  "status": {
   "WHO News": {
@@ -9,8 +9,8 @@
    "cat": "who"
   },
   "WHO Disease Outbreak News": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 3)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 404: Not Found | [3] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "who"
   },
   "WHO Alert": {
@@ -20,12 +20,12 @@
   },
   "UN News Health": {
    "ok": true,
-   "msg": "12 items (via kandidaat 3)",
+   "msg": "12 items",
    "cat": "who"
   },
   "ProMED": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "promed"
   },
   "CIDRAP Public Health": {
@@ -39,8 +39,8 @@
    "cat": "promed"
   },
   "Eurosurveillance": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "promed"
   },
   "Health Emergency": {
@@ -49,8 +49,8 @@
    "cat": "emerg"
   },
   "ReliefWeb Health": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 3)",
+   "ok": false,
+   "msg": "RuntimeError: [1] ValueError: 0 entries | [2] ValueError: 0 entries | [3] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "emerg"
   },
   "Global Health": {
@@ -59,18 +59,18 @@
    "cat": "global"
   },
   "ECDC": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 3)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 404: Not Found | [3] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "global"
   },
   "Africa CDC": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 3)",
+   "ok": false,
+   "msg": "RuntimeError: [1] ValueError: 0 entries | [2] ValueError: 0 entries | [3] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "global"
   },
   "Think Global Health": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 3)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 404: Not Found | [3] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "global"
   },
   "CIDRAP Stewardship": {
@@ -114,18 +114,18 @@
    "cat": "policy"
   },
   "Geneva Health Files": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "policy"
   },
   "Politico EU Health": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "policy"
   },
   "Euractiv Health": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "policy"
   },
   "STAT News": {
@@ -134,301 +134,271 @@
    "cat": "news"
   },
   "Devex Global Health": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
    "cat": "news"
   }
  },
  "items": [
   {
-   "title": "WHO Director-General Candidates Address Global Health Reform in First Public Campaign Event",
-   "url": "https://healthpolicy-watch.news/who-director-general-forum/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-10-11T17:54:39+00:00",
-   "summary": "BERLIN – The WHO Director-General election process ignited its first public candidate conversation on Sunday (11 October) at the 2026 World Health Summit in Berlin, as four of the race’s seven declared contenders tackled the thorny question of how to make global health institutions more responsive a",
-   "score": 20
-  },
-  {
-   "title": "The World Health Summit 2026 has officially opened in Berlin, Germany, convening global ... - X",
-   "url": "https://x.com/nighealthwatch/status/2109330842732335186",
+   "title": "Nothing symbolizes #Germany's support more than its hosting of part of @who right here in Berlin",
+   "url": "https://www.instagram.com/p/DeXmEmVjbII/",
    "src": "Global Health",
    "feed": "Global Health",
    "cat": "global",
-   "date": "2026-10-11T17:49:28+00:00",
-   "summary": "The World Health Summit 2026 has officially opened in Berlin, Germany, convening global health leaders, researchers and policymakers to examine ...",
-   "score": 8
+   "date": "2026-10-11T21:48:26+00:00",
+   "summary": "... the World Health Summit as a platform for dialogue and cooperation on global health . October 11–13, 2026 Berlin & online #WHS2026 # GlobalHealth .",
+   "score": 14
   },
   {
-   "title": "Mason County driver injured in crash after suffering medical emergency , WSP says - The Olympian",
-   "url": "https://www.theolympian.com/news/local/article317579952.html",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-11T17:32:03+00:00",
-   "summary": "Troopers say the cash was triggered by a medical emergency . About 9 a.m., the 60-year-old man was driving south on state Route 3, approaching the town ...",
-   "score": 3
-  },
-  {
-   "title": "SeaShare Is Closing the Protein Gap in America's Food Banks - Food Tank",
-   "url": "https://foodtank.com/news/2026/10/seashare-is-closing-the-protein-gap-in-americas-food-banks/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-11T17:08:29+00:00",
-   "summary": "... health benefits of consuming seafood, reports the World Health Organization . Fish and other seafood can be excellent sources of protein, vitamins ...",
+   "title": "Suspected Plague Event in Irkutsk, Russia: Lessons on Early Response - WHN",
+   "url": "https://whn.global/suspected-plague-event-in-irkutsk-russia-lessons-on-early-response/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-11T20:12:54+00:00",
+   "summary": "On October 7, the World Health Organization said it had requested additional information from Russia concerning reports of a second employee of the ...",
    "score": 6
   },
   {
-   "title": "Beyond the Title: Dr. Nestor Rodriguez | Madison365",
-   "url": "https://madison365.com/beyond-the-title-dr-nestor-rodriguez-2/",
+   "title": "Governor's Rule And Emergency Imposed In KP: What It Means | Dawn News English",
+   "url": "https://www.youtube.com/watch?v=oxeIWNqvCQY",
    "src": "Health Emergency",
    "feed": "Health Emergency",
    "cat": "emerg",
-   "date": "2026-10-11T16:41:56+00:00",
-   "summary": "... Medical Director and Co-Owner of Carbon World Health in Madison. ... Dr. Rodriguez is currently the Medical Director of Emergency Services at Watertown ...",
+   "date": "2026-10-11T20:03:58+00:00",
+   "summary": "Pakistan's federal government has imposed governor's rule and a state of emergency ... William Parker Senior Health · What a Stroke Looks Like the Day ...",
    "score": 3
   },
   {
-   "title": "WHO pilots new training to strengthen sexual and reproductive health policies and programmes",
-   "url": "https://www.afro.who.int/countries/kenya/news/who-pilots-new-training-strengthen-sexual-and-reproductive-health-policies-and-programmes",
+   "title": "WHO: Cause of Siberian Plague Lab Worker's Death Still Unclear - Kyiv Post",
+   "url": "https://www.kyivpost.com/post/86733",
    "src": "WHO Alert",
    "feed": "WHO Alert",
    "cat": "who",
-   "date": "2026-10-11T16:40:20+00:00",
-   "summary": "World Health Organization — African Region · Donate. Health topics. All ... World Bank. Dr Vanessa Brizuela from the WHO Human Reproduction ...",
-   "score": 12
+   "date": "2026-10-11T19:57:36+00:00",
+   "summary": "The World Health Organization (WHO) stated that the cause of pneumonia that killed an employee of an anti-plague research center in Siberia ...",
+   "score": 6
   },
   {
-   "title": "The World Health Summit 2026 is officially underway in Berlin, Germany. This year's theme ...",
-   "url": "https://www.facebook.com/AmericanUniversityofAntigua/posts/the-world-health-summit-2026-is-officially-underway-in-berlin-germany-this-years/1422638810049354/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-11T16:32:34+00:00",
-   "summary": "The World Health Summit 2026 is officially underway in Berlin, Germany. This year's theme is “From Crisis to Resilience: Innovating for Health.",
-   "score": 3
+   "title": "Opinion | What happened inside Russia's plague lab? - The Washington Post",
+   "url": "https://www.washingtonpost.com/opinions/2026/10/11/russias-plague-mystery-needs-answers/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-11T19:35:16+00:00",
+   "summary": "The International Health Regulations give a government 24 hours to share information about potential outbreaks with the World Health Organization .",
+   "score": 14
   },
   {
-   "title": "South Texas Health System on Instagram: \"Lead the Future of Healthcare with STHS",
-   "url": "https://www.instagram.com/p/DeXCdSxF-HR/",
+   "title": "Dr. Ryan Christian Wallace Obituary Oct 11, 2026 - Randall & Roberts Funeral Home",
+   "url": "https://www.randallroberts.com/obituaries/dr-ryan-wallace",
    "src": "Health Emergency",
    "feed": "Health Emergency",
    "cat": "emerg",
-   "date": "2026-10-11T16:10:42+00:00",
-   "summary": "Assistant Chief Nursing Officer (STHS Edinburg/Cornerstone) • System Market Director – Freestanding Emergency Department (STHS) • Director of Nursing, ...",
+   "date": "2026-10-11T19:31:37+00:00",
+   "summary": "... Emergency Department at IU Health Ball Memorial Hospital. Serving as the Assistant Medical Director, he was widely respected by colleagues and ...",
    "score": 3
   },
   {
-   "title": "[Editorial] Rethinking threats to human survival",
-   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01958-6/fulltext?rss=yes",
-   "src": "The Lancet",
-   "feed": "The Lancet",
-   "cat": "journal",
-   "date": "2026-10-11T15:58:25+00:00",
-   "summary": "Much health advocacy is driven by single-issue activism. Communities with a common interest—from AIDS to child health, climate to tobacco control—focus intensely on their own domain. And understandably so. Important progress has been made through often courageous direct action. But this sharply comp",
-   "score": 1
-  },
-  {
-   "title": "Nigeria Health Watch on X: \".@WHO's next Director-General will have an important ...",
-   "url": "https://x.com/nighealthwatch/status/2109286927115370498",
+   "title": "From Crisis to Resilience: Strategic Health Industries for Health Security | PD 04 - YouTube",
+   "url": "https://www.youtube.com/watch?v=EM3VFtwiAR8",
    "src": "Global Health",
    "feed": "Global Health",
    "cat": "global",
-   "date": "2026-10-11T15:37:27+00:00",
-   "summary": "At #WHS2026, prospective candidates for the role shared their visions for WHO and the wider global health architecture, offering perspectives on the ...",
+   "date": "2026-10-11T19:19:32+00:00",
+   "summary": "Go to channel World Health Summit · Launch of the Findings from the Lancet Commission on 21st Century Global Threats to Health | KEY 01. World Health ...",
+   "score": 9
+  },
+  {
+   "title": "As obesity rates among children soar, WHO cautions against treating with GLP-1s - YouTube",
+   "url": "https://www.youtube.com/shorts/mfxzum7TCJY",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-11T19:18:25+00:00",
+   "summary": "... World Health Organization emphasizes dietary changes and physical activity. They are not recommending surgery or weight-loss medications like GLP ...",
+   "score": 12
+  },
+  {
+   "title": "Netherlands - Curium Pharma",
+   "url": "https://www.curiumpharma.com/region/netherlands/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-11T19:09:31+00:00",
+   "summary": "Today, Curium in the Netherlands supports hospitals, imaging centres, and healthcare professionals across the world with reliable access to high- ...",
+   "score": 3
+  },
+  {
+   "title": "Teso North Member of Parliament Oku Kaunya has urged farmers ... - Facebook",
+   "url": "https://www.facebook.com/kenyanewsagency/posts/%F0%9D%97%A7%F0%9D%97%B2%F0%9D%98%80%F0%9D%97%BC-%F0%9D%97%A1%F0%9D%97%BC%F0%9D%97%BF%F0%9D%98%81%F0%9D%97%B5-%F0%9D%97%A0%F0%9D%97%B2%F0%9D%97%BA%F0%9D%97%AF%F0%9D%97%B2%F0%9D%97%BF-%F0%9D%97%BC%F0%9D%97%B3-%F0%9D%97%A3%F0%9D%97%AE%F0%9D%97%BF%F0%9D%97%B9%F0%9D%97%B6%F0%9D%97%AE%F0%9D%97%BA%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81-%F0%9D%97%A2%F0%9D%97%B8%F0%9D%98%82-%F0%9D%97%9E%F0%9D%97%AE%F0%9D%98%82%F0%9D%97%BB%F0%9D%98%86%F0%9D%97%AE-has-urged-farmers-to-consider-shiftin/1413536804295295/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-11T19:04:56+00:00",
+   "summary": "Dr Nato said the project is a joint initiative between the World Health Organization (WHO), the World Food Programme (WFP), Food and Agriculture ...",
+   "score": 6
+  },
+  {
+   "title": "Berlin gathers international representatives at the World Health Summit - Reuters Connect",
+   "url": "https://www.reutersconnect.com/item/berlin-gathers-international-representatives-at-the-world-health-summit/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XRUZWQzU1MDIxNjU2MDk5MDAx",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-11T19:04:50+00:00",
+   "summary": "Berlin, Oct. 11 (EFE/EPA). — The health ministers of Germany, Carsten Linnemann, and Ukraine, Viktor Liashko, are participating in the World ...",
+   "score": 3
+  },
+  {
+   "title": "Congratulations to dear friends of mine, Professor Jean-Jacques Muyembe-Tamfum ... - Facebook",
+   "url": "https://www.facebook.com/DrTedros.Official/posts/congratulations-to-dear-friends-of-mine-professor-jean-jacques-muyembe-tamfum-an/1695552695273373/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-11T18:44:45+00:00",
+   "summary": "Congratulations to ITM alumni Jean-Jacques Muyembe-Tamfum and Peter Piot for receiving the World Health Organization (WHO) Global Health Leaders ...",
    "score": 11
   },
   {
-   "title": "this special and potentially the most important session of the World Health Summit 2026 ... - X",
-   "url": "https://x.com/WorldHealthSmt/status/2109281176108028055",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-11T15:36:43+00:00",
-   "summary": "... global health more broadly,” Axel R. Pries, President, World Health Summit At #WHS2026, the session “The Future of WHO and the Global Health ...",
-   "score": 11
+   "title": "Texas Matters: Blood Work — Inside America's plasma-for-cash economy | TPR",
+   "url": "https://www.tpr.org/podcast/texas-matters/2026-10-11/texas-matters-blood-work-inside-americas-plasma-for-cash-economy?_amp=true",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-11T18:44:23+00:00",
+   "summary": "The World Health Organization advises against compensated systems for human materials, citing exploitation concerns and uncertainty about the long ...",
+   "score": 6
   },
   {
-   "title": "World Health Summit 2026: Berlin Becomes Global Meeting Point for ...",
-   "url": "https://www.easynewsweb.com/world-health-summit-2026-berlin-becomes-global-meeting-point-for/",
+   "title": "Power outages, downed trees as rain batters Inland Empire - YouTube",
+   "url": "https://www.youtube.com/watch?v=SYOswvKZ2yQ",
    "src": "Global Health",
    "feed": "Global Health",
    "cat": "global",
-   "date": "2026-10-11T15:34:20+00:00",
-   "summary": "The World Health Summit (WHS) 2026, the leading platform for global health , brings together more than 4,000 participants from 130 countries in ...",
-   "score": 8
+   "date": "2026-10-11T18:37:51+00:00",
+   "summary": "William Parker Senior Health •1.8M views · 15:50 · Go to channel Global Crisis · A Massive Kelvin Wave Is Moving Toward California — And It Could ...",
+   "score": 3
   },
   {
-   "title": "Data Analyst CTB - UCSF Career Site Careers - Oracle Cloud",
-   "url": "https://iazuqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/10020",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-11T15:23:29+00:00",
-   "summary": "Experience working on international collaborations including international field experience. Experience working in global health research including in ...",
-   "score": 8
+   "title": "PAHO/WHO coordinates with Ministry of Health to support health response following ...",
+   "url": "https://www.paho.org/en/news/10-10-2026-pahowho-coordinates-ministry-health-support-health-response-following-earthquake",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-11T18:37:06+00:00",
+   "summary": "... health needs resulting from the earthquake.Panama City, October 11, 2026 (PAHO/WHO) – The Pan American Health Organization/ World Health Organization ...",
+   "score": 12
   },
   {
-   "title": "Pope Leo to have surgery to remove nodule on his lung - The Guardian",
-   "url": "https://www.theguardian.com/world/2026/oct/11/pope-leo-surgery-remove-nodule-lung",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-11T15:13:58+00:00",
-   "summary": "Leo has no previously known health problems and is considered ... Global health . Nuclear war and malicious use of AI threaten end of ...",
-   "score": 8
+   "title": "Video footage available of Journey performing with their usual lineup after Deen ... - Chaoszine",
+   "url": "https://chaoszine.net/video-footage-available-of-journey-performing-with-their-usual-lineup-after-deen-castronovos-health-emergency/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-11T18:19:34+00:00",
+   "summary": "This occurred only two days after he experienced a medical emergency during a concert in Tulsa, Oklahoma. Journey guitarist Neal Schon addressed this ...",
+   "score": 3
   },
   {
-   "title": "Black Book Releases 2027 Global Healthcare Technology Outlook Covering 167 Countries ...",
-   "url": "https://finance.yahoo.com/healthcare/articles/black-book-releases-2027-global-133000715.html",
+   "title": "World Bank in talks with dozens of countries about crisis aid, Banga says | Reuters",
+   "url": "https://www.reuters.com/business/finance/world-bank-talks-with-dozens-countries-about-crisis-aid-banga-says-2026-10-11/",
    "src": "Global Health",
    "feed": "Global Health",
    "cat": "global",
-   "date": "2026-10-11T14:54:51+00:00",
-   "summary": "Fifth-year, 340-page guide offers free access to country-by-country intelligence on EHR adoption, implementation challenges and healthcare ...",
+   "date": "2026-10-11T18:16:29+00:00",
+   "summary": "Future of Health · Future of Money · Take Five · World at Work ... Ajay Banga, President of the World Bank Group, reacts during the Clinton Global ...",
+   "score": 3
+  },
+  {
+   "title": "U.S. Measles Cases Reach 4,080, the Most Since 1991, as Pennsylvania's Outbreak Climbs ...",
+   "url": "https://www.medicaldaily.com/us-measles-4080-cases-most-since-1991-pennsylvania-479822",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-11T18:13:33+00:00",
+   "summary": "New York has declared a state health emergency in response to its cases. CIDRAP also reported that no new outbreaks were identified in the most ...",
+   "score": 16
+  },
+  {
+   "title": "Mystery surrounds worker's death at Russia plague lab - 1News",
+   "url": "https://www.1news.co.nz/2026/10/11/mystery-surrounds-workers-death-at-russia-plague-lab/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-11T18:02:56+00:00",
+   "summary": "The World Health Organization said Sunday it still doesn't know what caused the death of a young worker at a lab in Russia that focuses on plague ...",
+   "score": 6
+  },
+  {
+   "title": "A '70s NBC Medical Drama Had A Saturday Morning Cartoon Spin-Off With Animal Sidekicks",
+   "url": "https://www.tvline.com/2277278/emergency-70s-medical-drama-saturday-morning-cartoon-spin-off/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-11T17:57:47+00:00",
+   "summary": "The blueprint for the genre of medical dramas can be traced back to \" Emergency !\" The show even inspired a cartoon version for kids called ...",
+   "score": 3
+  },
+  {
+   "title": "Another First Alert Day Sunday for chance of more storms - YouTube",
+   "url": "https://www.youtube.com/watch?v=gun6iPO6xIk",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-11T17:45:44+00:00",
+   "summary": "William Li Senior Health · Cardiologist Warns: Millions Do THIS Every ... Go to channel Global Crisis · A Massive Kelvin Wave Is Moving Toward ...",
+   "score": 3
+  },
+  {
+   "title": "Meet the speakers | Global Health EDCTP3 - LinkedIn",
+   "url": "https://www.linkedin.com/posts/global-health-edctp3_meet-the-speakers-activity-7514984551421702144-t5Xc",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-11T17:38:37+00:00",
+   "summary": "Join us this afternoon at 16:00 at the World Health Summit 2026 Global Health EDCTP3 and Grand Challenges Canada will bring together researchers, ...",
    "score": 13
   },
   {
-   "title": "'It was a terrible thing': Panama declares state of emergency as quake aftershocks rattle communities",
-   "url": "https://www.theguardian.com/world/2026/oct/11/panama-eathquake-state-of-emergency",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-11T14:26:36+00:00",
-   "summary": "He said homes, schools, healthcare facilities, roads and hotels were among the damaged facilities. Malitzie Rivera, the deputy director of the ...",
-   "score": 3
-  },
-  {
-   "title": "Families of 9/11 victims await key ruling in New York as truther conference is held nearby",
-   "url": "https://www.theguardian.com/us-news/2026/oct/11/september-11-new-york-saudi-arabia",
+   "title": "Pope Leo XIV to undergo lung surgery this week - NPR",
+   "url": "https://www.npr.org/2026/10/11/nx-s1-5998027/pope-leo-xiv-to-undergo-lung-surgery-this-week",
    "src": "Global Health",
    "feed": "Global Health",
    "cat": "global",
-   "date": "2026-10-11T14:14:42+00:00",
-   "summary": "... Global health . Nuclear war and malicious use of AI threaten end of humanity by 2100, says Lancet assessment. 1h ago. Most viewed. Most viewed. Most ...",
+   "date": "2026-10-11T17:26:13+00:00",
+   "summary": "Leo has had no known previous health problems. \"I thank you for ... Global Health · The Taliban has taken a terrible toll on the education of ...",
    "score": 8
   },
   {
-   "title": "From Hospital Websites to Digital Health Service Platforms: Policy Priorities in Ecuador ...",
-   "url": "https://unu.edu/publication/hospital-websites-digital-health-service-platforms-policy-priorities-ecuador-greece",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-11T14:03:04+00:00",
-   "summary": "Global Fora · Projects · ICEGOV · Repositories · INOV.EGOV · Careers · Contact. Toggle the UNU institute website header overlay. About · Our Work ...",
-   "score": 3
-  },
-  {
-   "title": "Knee Replacement Alternative Treatment Archives - Advance Global Health",
-   "url": "https://advanceglobalhealth.com/blog/tag/knee-replacement-alternative-treatment/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-11T13:56:39+00:00",
-   "summary": "Knee pain and osteoarthritis can gradually affect walking, climbing stairs, exercising, and even simple daily activities. When knee pain becomes ...",
-   "score": 17
-  },
-  {
-   "title": "EMS, deputies called to Trinity High School after students given THC gummies - WXII12",
-   "url": "https://www.wxii12.com/article/trinity-high-school-thc-gummies-medical-emergency/74100399",
+   "title": "Terrell County deputies respond to medical emergency in Pumpville - CBS7",
+   "url": "https://www.firstalert7.com/2026/10/11/terrell-county-deputies-respond-medical-emergency-pumpville/",
    "src": "Health Emergency",
    "feed": "Health Emergency",
    "cat": "emerg",
-   "date": "2026-10-11T13:52:09+00:00",
-   "summary": "Randolph County Schools say the medical emergency happened in the last block of the school day Friday.",
+   "date": "2026-10-11T17:26:08+00:00",
+   "summary": "The Terrell County Sheriff's Office was called to a medical emergency in Pumpville on Saturday afternoon, said Sheriff Thaddeus Cleveland.",
    "score": 3
   },
   {
-   "title": "Pakistan Officially Enforces Emergency In Khyber Pakhtunkhwa, Gazette Notification Issued",
-   "url": "https://www.youtube.com/watch?v=aF0wIe8fSwI",
+   "title": "Alabama Awards Nearly $55 Million in Rural Healthcare Grants, Including Funding for ...",
+   "url": "https://calhounjournal.com/alabama-awards-nearly-55-million-in-rural-healthcare-grants-including-funding-for-piedmont-emergency-rescue-squad/",
    "src": "Health Emergency",
    "feed": "Health Emergency",
    "cat": "emerg",
-   "date": "2026-10-11T13:44:57+00:00",
-   "summary": "... emergency and its impact on the provincial administration remain ... Jingduan Yang | ACES Health · The Right Way to Use Clove, and What to ...",
+   "date": "2026-10-11T16:49:52+00:00",
+   "summary": "The funding includes $381,220 for Piedmont Emergency Rescue Squad to expand emergency medical services in Calhoun, Cherokee and Etowah counties. The ...",
    "score": 3
   },
   {
-   "title": "Jennifer Simard Reveals 'Life-Saving Surgery' After Health Battle - People.com",
-   "url": "https://people.com/jennifer-simard-reveals-life-saving-surgery-after-health-battle-12165691",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-11T13:34:34+00:00",
-   "summary": "“What most people don't know is towards the end of the run I actually had to spend some time in the emergency room for some hemorrhaging,” Simard says ...",
-   "score": 3
-  },
-  {
-   "title": "Fight trafficking by decriminalizing consensual adult sex work - VTDigger",
-   "url": "https://vtdigger.org/2026/10/11/fight-trafficking-by-decriminalizing-consensual-adult-sex-work/",
+   "title": "Sustaining livelihoods amid crisis in Gaza - UN News",
+   "url": "https://news.un.org/en/story/2026/10/1168569",
    "src": "WHO Alert",
    "feed": "WHO Alert",
    "cat": "who",
-   "date": "2026-10-11T12:59:17+00:00",
-   "summary": "... Association for Mental Health and Addiction Recovery. ... The ACLU, Amnesty International, Human Rights Watch, the World Health Organization ...",
+   "date": "2026-10-11T16:19:39+00:00",
+   "summary": "... World Health Organization (WHO) said on Friday. Aerial view of a massive tent settlement and damaged buildings along the Gaza Strip coastline near ...",
    "score": 6
-  },
-  {
-   "title": "WHO unsure what killed plague-lab worker in Russia - YouTube",
-   "url": "https://www.youtube.com/watch?v=NgHRnRARI0I",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-11T12:37:13+00:00",
-   "summary": "The World Health Organization said on Saturday that it ​still does not know what caused the pneumonia that ‌killed a Russian lab worker at an ...",
-   "score": 12
-  },
-  {
-   "title": "Here's why these 5 grocery staples have skyrocketed in price this year - CBC",
-   "url": "https://www.cbc.ca/news/marketplace/marketplace-cheat-sheet-oct-11-9.7374857",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-11T12:22:28+00:00",
-   "summary": "The CBC's Marketplace rounds up the consumer and health news you need from the week ... World Health Organization has released its first-ever guidelines ...",
-   "score": 6
-  },
-  {
-   "title": "Memorial Health urges flu vaccinations ahead of peak season - Capitol City Now",
-   "url": "https://capitolcitynow.com/news/248842-memorial-health-urges-flu-vaccinations-ahead-of-peak-season/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-11T12:04:09+00:00",
-   "summary": "Daniel Brannan, 48, had more than 5,000 images and videos when he was arrested, said prosecutors. An emergency preparedness exercise was held with ...",
-   "score": 3
-  },
-  {
-   "title": "Panama declares state of emergency after 7.7 and 6.6 magnitude earthquakes - YouTube",
-   "url": "https://www.youtube.com/watch?v=rE86-P9-Czw",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-11T11:50:53+00:00",
-   "summary": "The government of Panama declared a state of emergency Saturday ... William Parker Senior Health · What a Stroke Looks Like the Day Before It ...",
-   "score": 3
-  },
-  {
-   "title": "Emergency doctor 'completely terrified' of looming winter pressures on NHS - BBC",
-   "url": "https://www.bbc.com/news/articles/c63r5nnxxzgvo",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-11T11:44:39+00:00",
-   "summary": "PA Media Hospital corridor with healthcare staff and equipment visible in the background, while a PA Media. The Health and Care Improving Flow Plan ...",
-   "score": 3
-  },
-  {
-   "title": "Lindsay Clancy murder trial; investigator says mom searched 'can you treat a sociopath'",
-   "url": "https://abc7ny.com/post/lindsay-clancy-trial-live-mother-breaks-down-crying-during-testimony-childrens-autopsies/19672426/?userab=kfsn_content_recs-582*variant_a_control_kfsn-2512,kabc_content_recs-577*variant_c_trending-2482,wls_content_recs-584*variant_b_trending_wls-2517,wtvd_content_recs-585*variant_a_control_wtvd-2518,ktrk_content_recs-587*variant_a_control_ktrk-2522,wpvi_content_recs-586*variant_b_trending_wpvi-2521,otv_web_content_rec-539*variant_c_trending-2268,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_a_control-3493,otv_search_page_design_unification-546*variant_b_search_redesign-2300,otv_web_live-581*variant_a_live-2510,follow_otv_on_google-683*variant_a_control-3659,abcn_popular_reads_exp_followup-648*variant_b_popularityonly-3457,otv_mobile_web_content_recs-639*variant_a_control-3429,kgo_content_recs-583*variant_b_trending_kgo-2515,otvlink_abcnnav-576*variant_b_local-2479",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-11T10:55:43+00:00",
-   "summary": "Postpartum psychosis is a rare but serious medical emergency ... health. \"It's just a scary, very scary, stressful time for me, and starting new ...",
-   "score": 3
   },
   {
    "title": "Governance, coordination, and accountability in public health emergency preparedness and ...",
@@ -439,6 +409,306 @@
    "date": "2026-10-11T06:37:10+00:00",
    "summary": "Funding: This work received financial support from the Alliance for Health Policy and Systems Research, Science Division, World Health Organization , ...",
    "score": 12
+  },
+  {
+   "title": "WHO unsure what caused pneumonia that killed plague-lab worker in Russia - CNA",
+   "url": "https://www.channelnewsasia.com/world/who-russia-plague-lab-worker-pneumonia-6449906",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "... health fears on social media ... GENEVA: The World Health Organization (WHO) said on Saturday (Oct 10) ...",
+   "score": 12
+  },
+  {
+   "title": "SeaShare Is Closing the Protein Gap in America's Food Banks - Food Tank",
+   "url": "https://foodtank.com/news/2026/10/seashare-is-closing-the-protein-gap-in-americas-food-banks/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "... health benefits of consuming seafood, reports the World Health Organization . Fish and other seafood can be excellent sources of protein, vitamins ...",
+   "score": 6
+  },
+  {
+   "title": "WHO pilots new training to strengthen sexual and reproductive health policies and programmes",
+   "url": "https://www.afro.who.int/countries/kenya/news/who-pilots-new-training-strengthen-sexual-and-reproductive-health-policies-and-programmes",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "World Health Organization — African Region · Donate. Health topics. All ... World Bank. Dr Vanessa Brizuela from the WHO Human Reproduction ...",
+   "score": 12
+  },
+  {
+   "title": "Mason County driver injured in crash after suffering medical emergency , WSP says - The Olympian",
+   "url": "https://www.theolympian.com/news/local/article317579952.html",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "Troopers say the cash was triggered by a medical emergency . About 9 a.m., the 60-year-old man was driving south on state Route 3, approaching the town ...",
+   "score": 3
+  },
+  {
+   "title": "Beyond the Title: Dr. Nestor Rodriguez | Madison365",
+   "url": "https://madison365.com/beyond-the-title-dr-nestor-rodriguez-2/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "... Medical Director and Co-Owner of Carbon World Health in Madison. ... Dr. Rodriguez is currently the Medical Director of Emergency Services at Watertown ...",
+   "score": 3
+  },
+  {
+   "title": "South Texas Health System on Instagram: \"Lead the Future of Healthcare with STHS",
+   "url": "https://www.instagram.com/p/DeXCdSxF-HR/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "Assistant Chief Nursing Officer (STHS Edinburg/Cornerstone) • System Market Director – Freestanding Emergency Department (STHS) • Director of Nursing, ...",
+   "score": 3
+  },
+  {
+   "title": "'It was a terrible thing': Panama declares state of emergency as quake aftershocks rattle communities",
+   "url": "https://www.theguardian.com/world/2026/oct/11/panama-eathquake-state-of-emergency",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "He said homes, schools, healthcare facilities, roads and hotels were among the damaged facilities. Malitzie Rivera, the deputy director of the ...",
+   "score": 3
+  },
+  {
+   "title": "The World Health Summit 2026 has officially opened in Berlin, Germany, convening global ... - X",
+   "url": "https://x.com/nighealthwatch/status/2109330842732335186",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "The World Health Summit 2026 has officially opened in Berlin, Germany, convening global health leaders, researchers and policymakers to examine ...",
+   "score": 8
+  },
+  {
+   "title": "[Editorial] Rethinking threats to human survival",
+   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01958-6/fulltext?rss=yes",
+   "src": "The Lancet",
+   "feed": "The Lancet",
+   "cat": "journal",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "Much health advocacy is driven by single-issue activism. Communities with a common interest—from AIDS to child health, climate to tobacco control—focus intensely on their own domain. And understandably so. Important progress has been made through often courageous direct action. But this sharply comp",
+   "score": 1
+  },
+  {
+   "title": "WHO Director-General Candidates Address Global Health Reform in First Public Campaign Event",
+   "url": "https://healthpolicy-watch.news/who-director-general-forum/",
+   "src": "Health Policy Watch",
+   "feed": "Health Policy Watch",
+   "cat": "policy",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "BERLIN – The WHO Director-General election process ignited its first public candidate conversation on Sunday (11 October) at the 2026 World Health Summit in Berlin, as four of the race’s seven declared contenders tackled the thorny question of how to make global health institutions more responsive a",
+   "score": 20
+  },
+  {
+   "title": "The World Health Summit 2026 is officially underway in Berlin, Germany. This year's theme ...",
+   "url": "https://www.facebook.com/AmericanUniversityofAntigua/posts/the-world-health-summit-2026-is-officially-underway-in-berlin-germany-this-years/1422638810049354/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "The World Health Summit 2026 is officially underway in Berlin, Germany. This year's theme is “From Crisis to Resilience: Innovating for Health.",
+   "score": 3
+  },
+  {
+   "title": "Nigeria Health Watch on X: \".@WHO's next Director-General will have an important ...",
+   "url": "https://x.com/nighealthwatch/status/2109286927115370498",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "At #WHS2026, prospective candidates for the role shared their visions for WHO and the wider global health architecture, offering perspectives on the ...",
+   "score": 11
+  },
+  {
+   "title": "this special and potentially the most important session of the World Health Summit 2026 ... - X",
+   "url": "https://x.com/WorldHealthSmt/status/2109281176108028055",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "... global health more broadly,” Axel R. Pries, President, World Health Summit At #WHS2026, the session “The Future of WHO and the Global Health ...",
+   "score": 11
+  },
+  {
+   "title": "World Health Summit 2026: Berlin Becomes Global Meeting Point for ...",
+   "url": "https://www.easynewsweb.com/world-health-summit-2026-berlin-becomes-global-meeting-point-for/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "The World Health Summit (WHS) 2026, the leading platform for global health , brings together more than 4,000 participants from 130 countries in ...",
+   "score": 8
+  },
+  {
+   "title": "Data Analyst CTB - UCSF Career Site Careers - Oracle Cloud",
+   "url": "https://iazuqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/10020",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "Experience working on international collaborations including international field experience. Experience working in global health research including in ...",
+   "score": 8
+  },
+  {
+   "title": "Pope Leo to have surgery to remove nodule on his lung - The Guardian",
+   "url": "https://www.theguardian.com/world/2026/oct/11/pope-leo-surgery-remove-nodule-lung",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "Leo has no previously known health problems and is considered ... Global health . Nuclear war and malicious use of AI threaten end of ...",
+   "score": 8
+  },
+  {
+   "title": "Black Book Releases 2027 Global Healthcare Technology Outlook Covering 167 Countries ...",
+   "url": "https://finance.yahoo.com/healthcare/articles/black-book-releases-2027-global-133000715.html",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "Fifth-year, 340-page guide offers free access to country-by-country intelligence on EHR adoption, implementation challenges and healthcare ...",
+   "score": 13
+  },
+  {
+   "title": "Families of 9/11 victims await key ruling in New York as truther conference is held nearby",
+   "url": "https://www.theguardian.com/us-news/2026/oct/11/september-11-new-york-saudi-arabia",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "... Global health . Nuclear war and malicious use of AI threaten end of humanity by 2100, says Lancet assessment. 1h ago. Most viewed. Most viewed. Most ...",
+   "score": 8
+  },
+  {
+   "title": "From Hospital Websites to Digital Health Service Platforms: Policy Priorities in Ecuador ...",
+   "url": "https://unu.edu/publication/hospital-websites-digital-health-service-platforms-policy-priorities-ecuador-greece",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "Global Fora · Projects · ICEGOV · Repositories · INOV.EGOV · Careers · Contact. Toggle the UNU institute website header overlay. About · Our Work ...",
+   "score": 3
+  },
+  {
+   "title": "Knee Replacement Alternative Treatment Archives - Advance Global Health",
+   "url": "https://advanceglobalhealth.com/blog/tag/knee-replacement-alternative-treatment/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "Knee pain and osteoarthritis can gradually affect walking, climbing stairs, exercising, and even simple daily activities. When knee pain becomes ...",
+   "score": 17
+  },
+  {
+   "title": "EMS, deputies called to Trinity High School after students given THC gummies - WXII12",
+   "url": "https://www.wxii12.com/article/trinity-high-school-thc-gummies-medical-emergency/74100399",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "Randolph County Schools say the medical emergency happened in the last block of the school day Friday.",
+   "score": 3
+  },
+  {
+   "title": "Pakistan Officially Enforces Emergency In Khyber Pakhtunkhwa, Gazette Notification Issued",
+   "url": "https://www.youtube.com/watch?v=aF0wIe8fSwI",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "... emergency and its impact on the provincial administration remain ... Jingduan Yang | ACES Health · The Right Way to Use Clove, and What to ...",
+   "score": 3
+  },
+  {
+   "title": "Jennifer Simard Reveals 'Life-Saving Surgery' After Health Battle - People.com",
+   "url": "https://people.com/jennifer-simard-reveals-life-saving-surgery-after-health-battle-12165691",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "“What most people don't know is towards the end of the run I actually had to spend some time in the emergency room for some hemorrhaging,” Simard says ...",
+   "score": 3
+  },
+  {
+   "title": "Fight trafficking by decriminalizing consensual adult sex work - VTDigger",
+   "url": "https://vtdigger.org/2026/10/11/fight-trafficking-by-decriminalizing-consensual-adult-sex-work/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "... Association for Mental Health and Addiction Recovery. ... The ACLU, Amnesty International, Human Rights Watch, the World Health Organization ...",
+   "score": 6
+  },
+  {
+   "title": "WHO unsure what killed plague-lab worker in Russia - YouTube",
+   "url": "https://www.youtube.com/watch?v=NgHRnRARI0I",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "The World Health Organization said on Saturday that it ​still does not know what caused the pneumonia that ‌killed a Russian lab worker at an ...",
+   "score": 12
+  },
+  {
+   "title": "Here's why these 5 grocery staples have skyrocketed in price this year - CBC",
+   "url": "https://www.cbc.ca/news/marketplace/marketplace-cheat-sheet-oct-11-9.7374857",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "The CBC's Marketplace rounds up the consumer and health news you need from the week ... World Health Organization has released its first-ever guidelines ...",
+   "score": 6
+  },
+  {
+   "title": "Memorial Health urges flu vaccinations ahead of peak season - Capitol City Now",
+   "url": "https://capitolcitynow.com/news/248842-memorial-health-urges-flu-vaccinations-ahead-of-peak-season/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "Daniel Brannan, 48, had more than 5,000 images and videos when he was arrested, said prosecutors. An emergency preparedness exercise was held with ...",
+   "score": 3
+  },
+  {
+   "title": "Panama declares state of emergency after 7.7 and 6.6 magnitude earthquakes - YouTube",
+   "url": "https://www.youtube.com/watch?v=rE86-P9-Czw",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "The government of Panama declared a state of emergency Saturday ... William Parker Senior Health · What a Stroke Looks Like the Day Before It ...",
+   "score": 3
+  },
+  {
+   "title": "Emergency doctor 'completely terrified' of looming winter pressures on NHS - BBC",
+   "url": "https://www.bbc.com/news/articles/c63r5nnxxzgvo",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "PA Media Hospital corridor with healthcare staff and equipment visible in the background, while a PA Media. The Health and Care Improving Flow Plan ...",
+   "score": 3
+  },
+  {
+   "title": "Lindsay Clancy murder trial; investigator says mom searched 'can you treat a sociopath'",
+   "url": "https://abc7ny.com/post/lindsay-clancy-trial-live-mother-breaks-down-crying-during-testimony-childrens-autopsies/19672426/?userab=kfsn_content_recs-582*variant_a_control_kfsn-2512,kabc_content_recs-577*variant_c_trending-2482,wls_content_recs-584*variant_b_trending_wls-2517,wtvd_content_recs-585*variant_a_control_wtvd-2518,ktrk_content_recs-587*variant_a_control_ktrk-2522,wpvi_content_recs-586*variant_b_trending_wpvi-2521,otv_web_content_rec-539*variant_c_trending-2268,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_a_control-3493,otv_search_page_design_unification-546*variant_b_search_redesign-2300,otv_web_live-581*variant_a_live-2510,follow_otv_on_google-683*variant_a_control-3659,abcn_popular_reads_exp_followup-648*variant_b_popularityonly-3457,otv_mobile_web_content_recs-639*variant_a_control-3429,kgo_content_recs-583*variant_b_trending_kgo-2515,otvlink_abcnnav-576*variant_b_local-2479",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-11T00:00:00+00:00",
+   "summary": "Postpartum psychosis is a rare but serious medical emergency ... health. \"It's just a scary, very scary, stressful time for me, and starting new ...",
+   "score": 3
   },
   {
    "title": "Is diet soda bad for weight loss? Here's what a new study found",
@@ -469,16 +739,6 @@
    "date": "2026-10-11T00:00:00+00:00",
    "summary": "The international theme for 2026, promoted by the World Federation for Mental Health (WFMH) and adopted by the World Health Organization (WHO), is \" ...",
    "score": 6
-  },
-  {
-   "title": "WHO unsure what caused pneumonia that killed plague-lab worker in Russia",
-   "url": "https://wmbdradio.com/2026/10/10/who-says-russia-confirms-death-at-research-lab-no-plague-case-registered/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-11T00:00:00+00:00",
-   "summary": "Oct 10 (Reuters) - The World Health Organization said on Saturday that it still does not know what caused the pneumonia that killed a Russian ​lab ...",
-   "score": 12
   },
   {
    "title": "On #WeekendBreakfastSoundsGood, we're discussing the World Health Organization's new ...",
@@ -771,26 +1031,6 @@
    "score": 12
   },
   {
-   "title": "Selecting the Next WHO Director-General: Learning from Predecessors (Part I)",
-   "url": "https://healthpolicy-watch.news/selecting-the-next-who-director-general-learning-from-predecessors-part-i/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-10-10T13:15:26+00:00",
-   "summary": "The World Health Assembly chooses a new chief for the World Health Organization in May 2027. Before judging the candidates, assess the predecessors. Eight people have held the post over 78 years. Their varied track record offers pointers for selecting the future incumbent. Every five years, WHO redi",
-   "score": 18
-  },
-  {
-   "title": "UN chief ‘gravely concerned’ by renewed fighting in northern Ethiopia, warns against escalation",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAwZG5sa0NUVUttYmliamFmb0VNUXdnM2NRTktHMnQ3OFBJX1Z3VU05ZUs1THMzeTQ3NUNKQVJzMHJkeXBvaFJaOE1pc2dZSThfWlBlVE82MA?oc=5",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-10T12:51:21+00:00",
-   "summary": "UN chief ‘gravely concerned’ by renewed fighting in northern Ethiopia, warns against escalation UN News",
-   "score": 3
-  },
-  {
    "title": "Tropical Storm Watch | Sandbag and emergency resources for San Diego County",
    "url": "https://www.cbs8.com/article/weather/severe-weather/tropical-storm-rachel-san-diego-county-impacts-flooding-high-tides/509-8fa42d98-0c6a-49cf-b12a-d6fa4f33d04f",
    "src": "Health Emergency",
@@ -808,17 +1048,7 @@
    "cat": "who",
    "date": "2026-10-10T00:00:00+00:00",
    "summary": "(OSV News) – As the global community marks World Mental Health Day Oct. ... According to the World Health Organization , more than 1 billion people ...",
-   "score": 9
-  },
-  {
-   "title": "Journey drummer rushed to hospital after medical emergency interrupts concert - WZDM",
-   "url": "https://www.wzdm.com/2026/10/10/journey-drummer-rushed-to-hospital-after-medical-emergency-interrupts-concert/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-10T00:00:00+00:00",
-   "summary": "Journey's Tulsa concert ended after just two songs when drummer Deen Castronovo had a medical emergency . Bandmates asked fans for prayers.",
-   "score": 3
+   "score": 6
   },
   {
    "title": "[Perspectives] John Wong: making an impact on population health at scale",
@@ -881,6 +1111,16 @@
    "score": 7
   },
   {
+   "title": "Selecting the Next WHO Director-General: Learning from Predecessors (Part I)",
+   "url": "https://healthpolicy-watch.news/selecting-the-next-who-director-general-learning-from-predecessors-part-i/",
+   "src": "Health Policy Watch",
+   "feed": "Health Policy Watch",
+   "cat": "policy",
+   "date": "2026-10-10T00:00:00+00:00",
+   "summary": "The World Health Assembly chooses a new chief for the World Health Organization in May 2027. Before judging the candidates, assess the predecessors. Eight people have held the post over 78 years. Their varied track record offers pointers for selecting the future incumbent. Every five years, WHO redi",
+   "score": 18
+  },
+  {
    "title": "Americans trust science more than peers around the world, survey shows",
    "url": "https://www.statnews.com/2026/10/10/u-s-trust-science-higher-than-other-nations-wellcome-survey/?utm_campaign=rss",
    "src": "STAT News",
@@ -888,6 +1128,26 @@
    "cat": "news",
    "date": "2026-10-10T00:00:00+00:00",
    "summary": "Just 40 percent of Americans reported a lot of confidence in U.S. hospitals and health clinics, the same proportion as in Portugal and Uruguay.",
+   "score": 1
+  },
+  {
+   "title": "UN chief ‘gravely concerned’ by renewed fighting in northern Ethiopia, warns against escalation",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAwZG5sa0NUVUttYmliamFmb0VNUXdnM2NRTktHMnQ3OFBJX1Z3VU05ZUs1THMzeTQ3NUNKQVJzMHJkeXBvaFJaOE1pc2dZSThfWlBlVE82MA?oc=5",
+   "src": "UN News",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-10-10T00:00:00+00:00",
+   "summary": "UN chief ‘gravely concerned’ by renewed fighting in northern Ethiopia, warns against escalation UN News",
+   "score": 3
+  },
+  {
+   "title": "Journey drummer rushed to hospital after medical emergency interrupts concert - WZDM",
+   "url": "https://www.wzdm.com/2026/10/10/journey-drummer-rushed-to-hospital-after-medical-emergency-interrupts-concert/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-10-10T00:00:00+00:00",
+   "summary": "Journey's Tulsa concert ended after just two songs when drummer Deen Castronovo had a medical emergency . Bandmates asked fans for prayers.",
    "score": 3
   },
   {
@@ -1911,16 +2171,6 @@
    "score": 1
   },
   {
-   "title": "World News in Brief: ‘Horrific’ attack in Sudan, Israeli incursions in Syria intensify, most women and girls homeless in Gaza",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5TVzRaQXdvUlo5MkVLd00zb1E2WWpDUERYczFHOXV5YlZNWEVSbFlJRnY0Q0xXS2tWb2lYSV90YW42VXNZYm9CZVM3eUxhaFdCbjBNUFhNNA?oc=5",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-09T19:45:57+00:00",
-   "summary": "World News in Brief: ‘Horrific’ attack in Sudan, Israeli incursions in Syria intensify, most women and girls homeless in Gaza UN News",
-   "score": 3
-  },
-  {
    "title": "Ebola Outbreak: Current Situation",
    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1Xb2M3MTlzZjZoNFc5QlFXTkhpcDIxTFBQc050QnBtQkQwczJnM2daRUZGQzFfcl80RmZGYy1qLXRXeUF0Y1hmejlfemVQVk5uNldZclZscUpiQ1hSX1FsdXB1MG4?oc=5",
    "src": "Centers for Disease Control and Prevention | CDC (.gov)",
@@ -1959,26 +2209,6 @@
    "date": "2026-10-09T00:00:00+00:00",
    "summary": "A large study finds 6% of US and Canadian cats are infected with the parasite, but rarely with a genotype that's harmful to humans.",
    "score": 2
-  },
-  {
-   "title": "PROJECT MEDICAL REFERENT / PROJECT MEDICAL COORDINATOR FOR THE SENIOR EMERGENCY EXTENDED PACKAGE (18 MONTHS CONTRACT)",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOV1FoYS14OTFjZTJFeWZDemIwSXdBQ29ESGMyVEFydWV6SkljOEN4b0NQUTJvVGdtUzBnQ0h1SVJlekpaZEZ3Q1Z6Q0xHcTZHR3ZqUEJNNkg0ZFh3bXkzRGpUbTVIdUY2UHhYaFhfcE12TTJjR29vUzlfVklZZWhleFFQS1BaMHZYbHYxRTI5dzVOeVZBRTRkYndab25LakhNMi1FeUg4RWp1Q0g5MTdRNjAydGNDSEtxNG9DRGthX0JMaGVJXzEySXlvZ1Y2VERsUTJvR3p3?oc=5",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-10-09T00:00:00+00:00",
-   "summary": "PROJECT MEDICAL REFERENT / PROJECT MEDICAL COORDINATOR FOR THE SENIOR EMERGENCY EXTENDED PACKAGE (18 MONTHS CONTRACT) ReliefWeb",
-   "score": 2
-  },
-  {
-   "title": "Communicable disease threats report, 3 - 9 October, week 41",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMjhGQjBDWFFObmpZdkp1RG1wTEhkVF9hRjZNQi15UzE4NC0yN2pVR3V5aW9RQnA1djJBaVFhT21fMGZOQzNHU0FneWZhSjFwRHZfY01Pa1otTlRwNkNWQ0pkMFR2VEFjbG9FbExTc1doX01DMEZ3azBFTzVOWGZxSjM2S0lSbmgxd1l3WDFRT0I1SVNIQjU2LWUtUmVEZkFfOXNXY3JB?oc=5",
-   "src": "European Centre for Disease Prevention and Control (ECDC)",
-   "feed": "ECDC",
-   "cat": "global",
-   "date": "2026-10-09T00:00:00+00:00",
-   "summary": "Communicable disease threats report, 3 - 9 October, week 41 European Centre for Disease Prevention and Control (ECDC)",
-   "score": 4
   },
   {
    "title": "Real time molecular movie unlocks secrets of penicillin biosynthesis",
@@ -2151,26 +2381,6 @@
    "score": 7
   },
   {
-   "title": "Is the EU ready for the next pandemic?",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeGZjdF9RRzFNRWNHQkNwNXFyYlMwRHQ1VExkSHBLZDdSNHBuUDQtbkNXTnFTelJabnIxOUU0SU0tbXhyemFraFhxN1BFUzZHRVNMLWowQVZ3eXRQNkw2UFJOU0E1czk2c0tJQWJxTDRIQkg3ZTB1ajB2Y0NnWXJGTE1aeTNqRmNWRmtnbXhMQi1kWHV1WEJTeU5iVjM?oc=5",
-   "src": "politico.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-10-09T00:00:00+00:00",
-   "summary": "Is the EU ready for the next pandemic? politico.eu",
-   "score": 2
-  },
-  {
-   "title": "EU opens Pandora’s negotiating box",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPangzc0dZLUlGQWVVc2pHLXVzd2xhT0ZSb3NLeldvYm1UYWFjVzBGSXFDb1p0Y24xdGEtM0Y5NjV5cm5tWEFsWkdtb2VPZG1nVVJ5QVZkN19PQlpzbjVkVUVKOTA5SDB2V3dtS0U5cjIyaHBicWplRExfbnpQWk1sWEZLS21ZWldENzBJWWJDcWM?oc=5",
-   "src": "POLITICO.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-10-09T00:00:00+00:00",
-   "summary": "EU opens Pandora’s negotiating box POLITICO.eu",
-   "score": 2
-  },
-  {
    "title": "STAT+: Biotech leader, leading lab leak theorist no longer in consideration for top infectious disease role",
    "url": "https://www.statnews.com/2026/10/09/steven-quay-no-longer-in-consideration-for-top-infectious-disease-role/?utm_campaign=rss",
    "src": "STAT News",
@@ -2259,6 +2469,56 @@
    "date": "2026-10-09T00:00:00+00:00",
    "summary": "“Basic studies led to clinical and translational advances that no one could have predicted,” Robert Gallo writes of his work with interleukin-2.",
    "score": 1
+  },
+  {
+   "title": "World News in Brief: ‘Horrific’ attack in Sudan, Israeli incursions in Syria intensify, most women and girls homeless in Gaza",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5TVzRaQXdvUlo5MkVLd00zb1E2WWpDUERYczFHOXV5YlZNWEVSbFlJRnY0Q0xXS2tWb2lYSV90YW42VXNZYm9CZVM3eUxhaFdCbjBNUFhNNA?oc=5",
+   "src": "UN News",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-10-09T00:00:00+00:00",
+   "summary": "World News in Brief: ‘Horrific’ attack in Sudan, Israeli incursions in Syria intensify, most women and girls homeless in Gaza UN News",
+   "score": 3
+  },
+  {
+   "title": "PROJECT MEDICAL REFERENT / PROJECT MEDICAL COORDINATOR FOR THE SENIOR EMERGENCY EXTENDED PACKAGE (18 MONTHS CONTRACT)",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOV1FoYS14OTFjZTJFeWZDemIwSXdBQ29ESGMyVEFydWV6SkljOEN4b0NQUTJvVGdtUzBnQ0h1SVJlekpaZEZ3Q1Z6Q0xHcTZHR3ZqUEJNNkg0ZFh3bXkzRGpUbTVIdUY2UHhYaFhfcE12TTJjR29vUzlfVklZZWhleFFQS1BaMHZYbHYxRTI5dzVOeVZBRTRkYndab25LakhNMi1FeUg4RWp1Q0g5MTdRNjAydGNDSEtxNG9DRGthX0JMaGVJXzEySXlvZ1Y2VERsUTJvR3p3?oc=5",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-10-09T00:00:00+00:00",
+   "summary": "PROJECT MEDICAL REFERENT / PROJECT MEDICAL COORDINATOR FOR THE SENIOR EMERGENCY EXTENDED PACKAGE (18 MONTHS CONTRACT) ReliefWeb",
+   "score": 2
+  },
+  {
+   "title": "Communicable disease threats report, 3 - 9 October, week 41",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMjhGQjBDWFFObmpZdkp1RG1wTEhkVF9hRjZNQi15UzE4NC0yN2pVR3V5aW9RQnA1djJBaVFhT21fMGZOQzNHU0FneWZhSjFwRHZfY01Pa1otTlRwNkNWQ0pkMFR2VEFjbG9FbExTc1doX01DMEZ3azBFTzVOWGZxSjM2S0lSbmgxd1l3WDFRT0I1SVNIQjU2LWUtUmVEZkFfOXNXY3JB?oc=5",
+   "src": "European Centre for Disease Prevention and Control (ECDC)",
+   "feed": "ECDC",
+   "cat": "global",
+   "date": "2026-10-09T00:00:00+00:00",
+   "summary": "Communicable disease threats report, 3 - 9 October, week 41 European Centre for Disease Prevention and Control (ECDC)",
+   "score": 4
+  },
+  {
+   "title": "Is the EU ready for the next pandemic?",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeGZjdF9RRzFNRWNHQkNwNXFyYlMwRHQ1VExkSHBLZDdSNHBuUDQtbkNXTnFTelJabnIxOUU0SU0tbXhyemFraFhxN1BFUzZHRVNMLWowQVZ3eXRQNkw2UFJOU0E1czk2c0tJQWJxTDRIQkg3ZTB1ajB2Y0NnWXJGTE1aeTNqRmNWRmtnbXhMQi1kWHV1WEJTeU5iVjM?oc=5",
+   "src": "politico.eu",
+   "feed": "Politico EU Health",
+   "cat": "policy",
+   "date": "2026-10-09T00:00:00+00:00",
+   "summary": "Is the EU ready for the next pandemic? politico.eu",
+   "score": 2
+  },
+  {
+   "title": "EU opens Pandora’s negotiating box",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPangzc0dZLUlGQWVVc2pHLXVzd2xhT0ZSb3NLeldvYm1UYWFjVzBGSXFDb1p0Y24xdGEtM0Y5NjV5cm5tWEFsWkdtb2VPZG1nVVJ5QVZkN19PQlpzbjVkVUVKOTA5SDB2V3dtS0U5cjIyaHBicWplRExfbnpQWk1sWEZLS21ZWldENzBJWWJDcWM?oc=5",
+   "src": "POLITICO.eu",
+   "feed": "Politico EU Health",
+   "cat": "policy",
+   "date": "2026-10-09T00:00:00+00:00",
+   "summary": "EU opens Pandora’s negotiating box POLITICO.eu",
+   "score": 2
   },
   {
    "title": "Request for Proposal Production Partner - Digital Micro Drama Series October 2026 India",
@@ -3481,36 +3741,6 @@
    "score": 8
   },
   {
-   "title": "‘Overshoot is not a reason to surrender’: UN calls for accelerated climate action ahead of COP31 summit",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1jSjh6YVZIb3hmc2dkNVI5N0xwRGFhclhSSW84TWhlcHcxQ3J2eFRxUzF6RmJSNWVwUEltczQ5MHVibWFLbjhfTHBSSWZoWjhjU0JMdUMtRQ?oc=5",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-08T19:02:46+00:00",
-   "summary": "‘Overshoot is not a reason to surrender’: UN calls for accelerated climate action ahead of COP31 summit UN News",
-   "score": 3
-  },
-  {
-   "title": "Darfur: Healthcare needs outstrip resources as Security Council extends Sudan sanctions",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAtLTFzb3ZHeElVMEpkMXJSUFJYbmx0dndZOHJxUjE5S2pSXzlSMjZLMHdqY1NKY1ZBRGtnM2gwLVJCQ0w5YW1STlp6dW0tVXR3Y1hPcXBKTQ?oc=5",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "Darfur: Healthcare needs outstrip resources as Security Council extends Sudan sanctions UN News",
-   "score": 3
-  },
-  {
-   "title": "Myanmar: Poverty deepens as families face multiple shocks with limited resources",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAzR3NJdjg2UDE3eDBUT19HQ0d1ZUpQdTlhb2lXXzd5d2F2bnZ1cUpXMzhHNjZ4enFiVEFyTzFnbTBQTW1XWHNyMEpwV0QydnkzejI4Z0pCYw?oc=5",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "Myanmar: Poverty deepens as families face multiple shocks with limited resources UN News",
-   "score": 3
-  },
-  {
    "title": "HHS launches new major vaccine injury initiative",
    "url": "https://www.cidrap.umn.edu/public-health/hhs-launches-new-major-vaccine-injury-initiative",
    "src": "CIDRAP Public Health",
@@ -3519,16 +3749,6 @@
    "date": "2026-10-08T00:00:00+00:00",
    "summary": "The initiative includes a new National Institutes of Health clinic for suspected vaccine-related injuries.",
    "score": 6
-  },
-  {
-   "title": "Data Management Volunteer (VOL001-U2-2)",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9waXgtaF9mX1F5clFWX3Bic3B1aUFOcFdBbTd6NXdhSnBfRXlLcEtVWDhRcld6VlpLbW1EWExYSW5VQjB4cGRQb21wTFM5dFN0cHhtemxPTlp5QlUySDI0b1M1bklPbDd4VGxVbmw4eXlxWjc5cjhWUWhoWQ?oc=5",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "Data Management Volunteer (VOL001-U2-2) ReliefWeb",
-   "score": 2
   },
   {
    "title": "[Correspondence] Bundibugyo virus: coordinating a cross-border response",
@@ -3711,6 +3931,46 @@
    "score": 13
   },
   {
+   "title": "‘Overshoot is not a reason to surrender’: UN calls for accelerated climate action ahead of COP31 summit",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1jSjh6YVZIb3hmc2dkNVI5N0xwRGFhclhSSW84TWhlcHcxQ3J2eFRxUzF6RmJSNWVwUEltczQ5MHVibWFLbjhfTHBSSWZoWjhjU0JMdUMtRQ?oc=5",
+   "src": "UN News",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-10-08T00:00:00+00:00",
+   "summary": "‘Overshoot is not a reason to surrender’: UN calls for accelerated climate action ahead of COP31 summit UN News",
+   "score": 3
+  },
+  {
+   "title": "Darfur: Healthcare needs outstrip resources as Security Council extends Sudan sanctions",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAtLTFzb3ZHeElVMEpkMXJSUFJYbmx0dndZOHJxUjE5S2pSXzlSMjZLMHdqY1NKY1ZBRGtnM2gwLVJCQ0w5YW1STlp6dW0tVXR3Y1hPcXBKTQ?oc=5",
+   "src": "UN News",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-10-08T00:00:00+00:00",
+   "summary": "Darfur: Healthcare needs outstrip resources as Security Council extends Sudan sanctions UN News",
+   "score": 3
+  },
+  {
+   "title": "Myanmar: Poverty deepens as families face multiple shocks with limited resources",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAzR3NJdjg2UDE3eDBUT19HQ0d1ZUpQdTlhb2lXXzd5d2F2bnZ1cUpXMzhHNjZ4enFiVEFyTzFnbTBQTW1XWHNyMEpwV0QydnkzejI4Z0pCYw?oc=5",
+   "src": "UN News",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-10-08T00:00:00+00:00",
+   "summary": "Myanmar: Poverty deepens as families face multiple shocks with limited resources UN News",
+   "score": 3
+  },
+  {
+   "title": "Data Management Volunteer (VOL001-U2-2)",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9waXgtaF9mX1F5clFWX3Bic3B1aUFOcFdBbTd6NXdhSnBfRXlLcEtVWDhRcld6VlpLbW1EWExYSW5VQjB4cGRQb21wTFM5dFN0cHhtemxPTlp5QlUySDI0b1M1bklPbDd4VGxVbmw4eXlxWjc5cjhWUWhoWQ?oc=5",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-10-08T00:00:00+00:00",
+   "summary": "Data Management Volunteer (VOL001-U2-2) ReliefWeb",
+   "score": 2
+  },
+  {
    "title": "‘Not great, not terrible’: Why nobody trusts Russia to tell the truth about plague",
    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOeXZtRUpnUXdUcUdNQ3VYMmZPNDc2b016VWxkZ2ozQUxuSERBSUhzQnpwVUlMeHpvUENSRE1VX2JhX2s4MU5VSkk5UFQ4V045dzNNR2RjcXR1RmNXYWYyTDVvbWg1bkZIdG1hN2pxb3dkQ1VyMndNWjBCSmpRdXVaUE53MTBuVkZ6S010bmdhNnk0UmxZaXZjOWhR?oc=5",
    "src": "POLITICO.eu",
@@ -3879,266 +4139,6 @@
    "date": "2026-10-08T00:00:00+00:00",
    "summary": "The government is likely to “fall a long way short” of reaching its headline target on elective care waiting times, mainly because of a rise in GP referrals, an analysis by a health think tank has suggested.1In 2024 the then prime minister, Keir Starmer, said the top priority for the NHS was for 92%",
    "score": 1
-  },
-  {
-   "title": "AI physician agents . . . and other research",
-   "url": "http://www.bmj.com/content/395/bmj-2026-100977.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "AI agents arrive on healthcare premisesAI agents are in the news, with warnings that they’re going rogue and may one day bring down the internet or human civilisation. In the meantime it surely won’t be long before AI agents are delivering a big chunk of clinical work, probably well before we unders",
-   "score": 1
-  },
-  {
-   "title": "NIH funding uncertainty thwarts U.S. researchers",
-   "url": "https://www.statnews.com/2026/10/08/readout-loud-podcast-nih-funding-research-biotech-caribou-nobel-prize/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "How has the NIH been spending its budget? And why are biotech investors feeling gloomy? Find out on this week's episode of \"The Readout LOUD\" podcast.",
-   "score": 1
-  },
-  {
-   "title": "STAT+: AI for breast cancer risk prediction goes DTC, regulatory cloud over Utah sandbox, and AI psychosis",
-   "url": "https://www.statnews.com/2026/10/08/breast-cancer-ai-goes-dtc-utah-sandbox-ai-psychosis-health-tech/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "In this edition of STAT's Health Tech: The story of a startup taking its algorithm for breast cancer risk prediction directly to patients, and more.",
-   "score": 1
-  },
-  {
-   "title": "STAT+: The fresh faces that may shake up key Senate committees ahead of midterms",
-   "url": "https://www.statnews.com/2026/10/08/health-policy-news-fresh-faces-shake-up-senate-committees-2026-midterms/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "Dozens of Democrats are vying for seats on the House Energy and Commerce and Ways and Means committees, with several members from both parties either leaving or in close races.",
-   "score": 1
-  },
-  {
-   "title": "STAT+: Roche goes beyond licensing in deal with Chinese biotech",
-   "url": "https://www.statnews.com/2026/10/08/biotech-news-roche-goes-beyond-licensing-in-deal-with-chinese-biotech/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "Roche is partnering with Chinese startup Defand Therapeutics to discover new medicines.",
-   "score": 3
-  },
-  {
-   "title": "FDA says its safety review of abortion pill will continue into next year",
-   "url": "https://www.statnews.com/2026/10/08/fda-mifepristone-abortion-pill-safety-review-continue-into-2027/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "The FDA says its ongoing safety review of the nation's main abortion pill will continue into next year, a timeline that was quickly condemned by abortion opponents.",
-   "score": 1
-  },
-  {
-   "title": "STAT+: Argenx sees unusual setback with failure of late-stage study of drug for autoimmune disease",
-   "url": "https://www.statnews.com/2026/10/08/argenx-autoimmune-disease-study-sjogrens/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "Argenx said its blockbuster drug Vyvgart didn’t outperform placebo in a Phase 3 trial of patients with Sjögren's disease, a chronic autoimmune disorder.",
-   "score": 1
-  },
-  {
-   "title": "1 dead, 3 hurt after vehicle hits Modesto home; medical emergency led to crash - KCRA",
-   "url": "https://www.kcra.com/article/modesto-vehicle-crash-home-fortuna-encina-avenue/74082241",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "The crash near Fortuna and Encina avenues was the result of a medical emergency , police said. Advertisement. Three people who were hurt were in the ...",
-   "score": 6
-  },
-  {
-   "title": "United States of America and Zambia Sign Five-Year, $2.49 Billion Health Cooperation ...",
-   "url": "https://zm.usembassy.gov/united-states-of-america-and-zambia-sign-five-year-2-49-billion-health-cooperation-memorandum-of-understanding/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "... global health assistance to Zambia. Furthermore, the AFGHS MOU will continue critical support for laboratory and data systems and key medical ...",
-   "score": 8
-  },
-  {
-   "title": "Explore GBD 2023 study estimates with Claude | Institute for Health Metrics and Evaluation",
-   "url": "https://www.healthdata.org/explore-gbd-2023-study-estimates-claude",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "Disease Profile: a deep dive on one cause: its global scale, where it's concentrated, its trend over time, and what's driving it. Disease Children ...",
-   "score": 3
-  },
-  {
-   "title": "Jan and Jack Creighton Global Health Lecture Series | Involve",
-   "url": "https://globalcampus-wsu.presence.io/event/jan-and-jack-creighton-global-health-lecture-series-17",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "Allen School for Global Health is proud to host a monthly seminar series that brings together experts from various disciplines to discuss cutting-edge ...",
-   "score": 13
-  },
-  {
-   "title": "The UNU Gender and Health Hub: A nexus to people, knowledge, policy and action for ...",
-   "url": "https://unu.edu/global-health/event/unu-gender-and-health-hub-nexus-people-knowledge-policy-and-action-gender",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "Coordinated by the United Nations University International Institute for Global Health (UNU-IIGH), GHH seeks to bridge the gap between people, ...",
-   "score": 8
-  },
-  {
-   "title": "Real-world evidence on maternal RSV vaccination uptake, effectiveness, and safety",
-   "url": "https://www.thelancet.com/journals/lanepe/article/PIIS2666-7762(26)00259-0/fulltext",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "According to the International Vaccine Access Center (IVAC), by January 2026, 31 countries in five World Health Organization (WHO) regions had ...",
-   "score": 8
-  },
-  {
-   "title": "Global Heart Failure Cases More Than Doubled to 56 Million Since 1990 | AJMC",
-   "url": "https://www.ajmc.com/view/global-heart-failure-cases-more-than-doubled-to-56-million-since-1990",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "... Global Burden of Disease (GBD) 2023 analysis published in JAMA Cardiology . 1 . Global health | Image credit: Елена Григорова - stock.adobe.com.",
-   "score": 5
-  },
-  {
-   "title": "Caribbean countries strengthen action to prevent drowning - PAHO/WHO",
-   "url": "https://www.paho.org/en/news/8-10-2026-caribbean-countries-strengthen-action-prevent-drowning",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "... World Health Organization (WHO) and the Pan American Health Organization (PAHO) as well as the Royal National Lifeboat Institution. Drowning ...",
-   "score": 6
-  },
-  {
-   "title": "Advancing Health Through Global Collaboration | Look to Michigan - YouTube",
-   "url": "https://www.youtube.com/watch?v=OKPkmrMNA_0&vl=hi",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "Through partnerships with 45 institutions and organizations worldwide, the University of Michigan's Center for Global Health Equity brings experts ...",
-   "score": 11
-  },
-  {
-   "title": "Houston-area high school student dies after medical emergency during PE - Yahoo",
-   "url": "https://www.yahoo.com/news/articles/houston-area-high-school-student-161609291.html",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "A Davis High School student died after experiencing a medical emergency during a physical education class inside the school gymnasium on Wednesday, ...",
-   "score": 3
-  },
-  {
-   "title": "The World Health Organization continues to look for answers about the reported plague in ...",
-   "url": "https://www.facebook.com/abscbnNEWS/posts/the-world-health-organization-continues-to-look-for-answers-about-the-reported-p/1712772334231349/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "The World Health Organization continues to look for answers about the reported plague in the Irkutsk region of Siberia, Russia. Link to the full ...",
-   "score": 9
-  },
-  {
-   "title": "What's Going Around in Metro Detroit: Respiratory viruses, RSV, influenza - ClickOnDetroit",
-   "url": "https://www.clickondetroit.com/news/local/2026/10/08/whats-going-around-in-metro-detroit-respiratory-viruses-rsv-influenza/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "Kelly Levasseur -- Medical Director of Pediatric Emergency ... Whitney Minnock -- Pediatric Chief of Emergency at Corewell Health William Beaumont ...",
-   "score": 7
-  },
-  {
-   "title": "Beauregard Health System completes emergency department expansion - KPLC",
-   "url": "https://www.kplctv.com/video/2026/10/08/beauregard-health-system-completes-emergency-department-expansion/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "Beauregard Health System completes emergency department expansion. Published: Oct. 8, 2026 at 2:20 PM PDT|Updated: 21 hours ago. Share. Add Us On ...",
-   "score": 3
-  },
-  {
-   "title": "Long ignored by drugmakers, preeclampsia is now a focus for WHO and biopharma",
-   "url": "https://endpoints.news/long-ignored-by-drugmakers-preeclampsia-is-now-a-focus-for-who-and-biopharma/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "... health organizations and a few biopharma companies. The World Health Organization on Thursday released a “global roadmap” outlining ambitions to ...",
-   "score": 12
-  },
-  {
-   "title": "UN health agency wants more details from Russia on suspected pneumonic plague case",
-   "url": "https://www.wral.com/news/ap/c1dff-russia-keeps-a-tight-lid-on-suspected-case-of-pneumonic-plague-as-global-concerns-mount/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "A top official with the World Health Organization says the U.N. health agency doesn't know how a lab employee in Siberia died amid concerns about ...",
-   "score": 6
-  },
-  {
-   "title": "China announces candidate for WHO chief position - CNA",
-   "url": "https://www.channelnewsasia.com/east-asia/china-candidate-who-chief-song-li-6442066",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "Beijing is putting forward maternity health expert Song Li for the top position at the World Health Organization . If elected, she will be the ...",
-   "score": 16
-  },
-  {
-   "title": "Attorneys General of Three States File Two Sweeping Lawsuits Targeting Telehealth ...",
-   "url": "https://www.ebglaw.com/health-law-advisor/attorneys-general-of-three-states-file-two-sweeping-lawsuits-targeting-telehealth-abortion-providers-and-state-shield-laws",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "Health systems and emergency departments in the plaintiff states that have treated patients for complications arising from medication abortion should ...",
-   "score": 3
-  },
-  {
-   "title": "The World Cup Is Won Between Matches: What Elite Sport Can Teach Us About Integrative Health",
-   "url": "https://journals.sagepub.com/doi/10.1177/27683605261495327",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "The vocabulary is different from that used in a soccer training center, but the organizational logic is remarkably similar. The comparison has limits.",
-   "score": 3
-  },
-  {
-   "title": "Public health doctors call for energy resilience to be treated as essential health infrastructure",
-   "url": "https://www.maltatoday.com.mt/news/national/144889/public_health_doctors_call_for_energy_resilience_to_be_treated_as_essential_health_infrastructure",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-10-08T00:00:00+00:00",
-   "summary": "The World Health Organization identifies reliable electricity as fundamental to emergency procedures, communications, refrigeration, diagnostic ...",
-   "score": 6
   }
  ]
 }
