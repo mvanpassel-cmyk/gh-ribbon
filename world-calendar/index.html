@@ -22,6 +22,8 @@
   --summit:  #29b6f6;
   --health:  #ff5c8a;
   --eu:      #ab8eff;
+  --amr:     #ff9f43;
+  --partners:#4dd0e1;
 }
 
 body {
@@ -100,6 +102,8 @@ main { max-width: 860px; margin: 0 auto; padding: 20px 16px 60px; }
 .c-summit   { --c: var(--summit); }
 .c-health   { --c: var(--health); }
 .c-eu       { --c: var(--eu); }
+.c-amr      { --c: var(--amr); }
+.c-partners { --c: var(--partners); }
 
 footer { color: var(--muted); font-size: 11px; border-top: 1px solid var(--border); padding-top: 14px; margin-top: 30px; }
 footer a { color: var(--muted); }
@@ -129,7 +133,7 @@ footer a { color: var(--muted); }
   <div id="list"></div>
 
   <footer>
-    Elections, summits, global health and EU/NL milestones. Refreshed weekly. Each entry links to its source — check the source before relying on a date.
+    Elections, summits, global health, AMR & One Health, EU/NL milestones and Dutch partner countries (Indonesia, South Africa, China, India, Kenya). Refreshed weekly. Each entry links to its source — check the source before relying on a date.
   </footer>
 </main>
 
@@ -138,7 +142,9 @@ const CATS = {
   election: { label: 'Elections', cls: 'c-election' },
   summit:   { label: 'Summits & diplomacy', cls: 'c-summit' },
   health:   { label: 'Global health', cls: 'c-health' },
-  eu:       { label: 'EU & Dutch politics', cls: 'c-eu' }
+  eu:       { label: 'EU & Dutch politics', cls: 'c-eu' },
+  amr:      { label: 'AMR & One Health', cls: 'c-amr' },
+  partners: { label: 'Partner countries (ID·ZA·CN·IN·KE)', cls: 'c-partners' }
 };
 const active = new Set(Object.keys(CATS));
 let events = [];
@@ -147,7 +153,8 @@ function load(key, fallback) { try { const v = localStorage.getItem(key); return
 function save(key, v) { try { localStorage.setItem(key, JSON.stringify(v)); } catch (e) {} }
 
 const saved = load('wc-cats', null);
-if (Array.isArray(saved)) { active.clear(); saved.forEach(c => CATS[c] && active.add(c)); }
+if (Array.isArray(saved)) { const known = load('wc-known', ['election','summit','health','eu']); active.clear(); saved.forEach(c => CATS[c] && active.add(c)); Object.keys(CATS).forEach(c => { if (!known.includes(c)) active.add(c); }); }
+save('wc-known', Object.keys(CATS));
 const showPastBox = document.getElementById('showPast');
 showPastBox.checked = load('wc-past', false);
 
