@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Calendar — GH Ribbon</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:      #07100a;
+  --surface: #0d1a10;
+  --surface2:#111f14;
+  --border:  #1c2e1f;
+  --accent:  #3dff9a;
+  --muted:   #5d7a64;
+  --text:    #c8ddd2;
+  --bright:  #e8f5ee;
+  --election:#ffd740;
+  --summit:  #29b6f6;
+  --health:  #ff5c8a;
+  --eu:      #ab8eff;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.topbar {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 12px 16px; border-bottom: 1px solid var(--border);
+  background: #030a05; position: sticky; top: 0; z-index: 10;
+}
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.logo-pill {
+  background: var(--accent); color: #030a05;
+  font-family: 'Syne', sans-serif; font-weight: 800;
+  padding: 3px 10px; border-radius: 3px; font-size: 13px; letter-spacing: .04em;
+}
+.logo-sub { font-family: 'Syne', sans-serif; font-weight: 600; color: var(--bright); font-size: 15px; }
+.updated { color: var(--muted); font-size: 11px; text-align: right; }
+
+main { max-width: 860px; margin: 0 auto; padding: 20px 16px 60px; }
+
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.chip {
+  font-family: inherit; font-size: 12px; cursor: pointer;
+  background: var(--surface); color: var(--text);
+  border: 1px solid var(--border); border-radius: 999px; padding: 6px 12px;
+  display: inline-flex; align-items: center; gap: 7px;
+}
+.chip .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c, var(--accent)); }
+.chip[aria-pressed="true"] { border-color: var(--c, var(--accent)); color: var(--bright); background: var(--surface2); }
+.chip[aria-pressed="false"] { opacity: .5; }
+
+.opts { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 20px; color: var(--muted); font-size: 12px; flex-wrap: wrap; }
+.opts label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+
+.week {
+  border: 1px solid var(--accent); border-radius: 6px; padding: 14px 16px; margin-bottom: 28px;
+  background: linear-gradient(180deg, rgba(61,255,154,.06), transparent);
+}
+.week h2 { font-family: 'Syne', sans-serif; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+.week ul { list-style: none; }
+.week li { padding: 4px 0; display: flex; gap: 10px; }
+.week .wd { color: var(--muted); min-width: 92px; flex-shrink: 0; }
+.week .empty { color: var(--muted); }
+
+.month { margin-bottom: 26px; }
+.month h3 {
+  font-family: 'Syne', sans-serif; font-weight: 800; font-size: 20px; color: var(--bright);
+  border-bottom: 1px solid var(--border); padding-bottom: 6px; margin-bottom: 10px;
+}
+.ev {
+  display: grid; grid-template-columns: 76px 1fr; gap: 12px;
+  padding: 10px 0 10px 12px; border-left: 3px solid var(--c);
+  margin-bottom: 8px; background: var(--surface); border-radius: 0 4px 4px 0;
+}
+.ev.tentative { border-left-style: dashed; }
+.ev.past { opacity: .4; }
+.ev .date { font-weight: 700; color: var(--bright); font-size: 13px; }
+.ev .date small { display: block; font-weight: 400; color: var(--muted); font-size: 11px; }
+.ev .title { color: var(--bright); font-family: 'Syne', sans-serif; font-weight: 600; font-size: 15px; line-height: 1.3; }
+.ev .meta { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.ev .meta .cat { color: var(--c); }
+.ev .note { font-size: 12.5px; margin-top: 4px; }
+.ev a { color: var(--muted); font-size: 11px; text-decoration: none; border-bottom: 1px dotted var(--muted); }
+.ev a:hover { color: var(--accent); border-color: var(--accent); }
+.badge { font-size: 10px; border: 1px dashed var(--muted); color: var(--muted); border-radius: 3px; padding: 0 4px; margin-left: 6px; vertical-align: 2px; }
+.now-badge { font-size: 10px; background: var(--accent); color: #030a05; border-radius: 3px; padding: 0 5px; margin-left: 6px; vertical-align: 2px; font-weight: 700; }
+
+.c-election { --c: var(--election); }
+.c-summit   { --c: var(--summit); }
+.c-health   { --c: var(--health); }
+.c-eu       { --c: var(--eu); }
+
+footer { color: var(--muted); font-size: 11px; border-top: 1px solid var(--border); padding-top: 14px; margin-top: 30px; }
+footer a { color: var(--muted); }
+.err { color: var(--health); }
+
+@media (max-width: 480px) {
+  .ev { grid-template-columns: 64px 1fr; gap: 10px; }
+  .logo-sub { font-size: 13px; }
+  .week .wd { min-width: 78px; }
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="../"><span class="logo-pill">GH RIBBON</span><span class="logo-sub">World Calendar</span></a>
+  <div class="updated" id="updated"></div>
+</header>
+
+<main>
+  <div class="filters" id="filters"></div>
+  <div class="opts">
+    <label><input type="checkbox" id="showPast"> show past events</label>
+    <span>dashed = date tentative</span>
+  </div>
+
+  <section class="week" id="week"></section>
+  <div id="list"></div>
+
+  <footer>
+    Elections, summits, global health and EU/NL milestones. Refreshed weekly. Each entry links to its source — check the source before relying on a date.
+  </footer>
+</main>
+
+<script>
+const CATS = {
+  election: { label: 'Elections', cls: 'c-election' },
+  summit:   { label: 'Summits & diplomacy', cls: 'c-summit' },
+  health:   { label: 'Global health', cls: 'c-health' },
+  eu:       { label: 'EU & Dutch politics', cls: 'c-eu' }
+};
+const active = new Set(Object.keys(CATS));
+let events = [];
+
+function load(key, fallback) { try { const v = localStorage.getItem(key); return v === null ? fallback : JSON.parse(v); } catch (e) { return fallback; } }
+function save(key, v) { try { localStorage.setItem(key, JSON.stringify(v)); } catch (e) {} }
+
+const saved = load('wc-cats', null);
+if (Array.isArray(saved)) { active.clear(); saved.forEach(c => CATS[c] && active.add(c)); }
+const showPastBox = document.getElementById('showPast');
+showPastBox.checked = load('wc-past', false);
+
+const d = s => new Date(s + 'T00:00:00');
+const today = new Date(); today.setHours(0, 0, 0, 0);
+const fmtDay = dt => dt.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+const fmtWd = dt => dt.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+const fmtMonth = dt => dt.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+const endOf = e => d(e.end || e.start);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+function renderFilters() {
+  const box = document.getElementById('filters');
+  box.innerHTML = '';
+  for (const [k, c] of Object.entries(CATS)) {
+    const b = document.createElement('button');
+    b.className = 'chip ' + c.cls;
+    b.setAttribute('aria-pressed', active.has(k));
+    b.innerHTML = '<span class="dot"></span>' + c.label;
+    b.onclick = () => { active.has(k) ? active.delete(k) : active.add(k); save('wc-cats', [...active]); renderFilters(); render(); };
+    box.appendChild(b);
+  }
+}
+
+function render() {
+  const list = document.getElementById('list');
+  const showPast = showPastBox.checked;
+  const shown = events.filter(e => active.has(e.cat) && (showPast || endOf(e) >= today));
+
+  // Next 7 days
+  const weekEnd = new Date(today); weekEnd.setDate(weekEnd.getDate() + 7);
+  const thisWeek = events.filter(e => active.has(e.cat) && d(e.start) < weekEnd && endOf(e) >= today);
+  const wk = document.getElementById('week');
+  wk.innerHTML = '<h2>Next 7 days</h2>' + (thisWeek.length
+    ? '<ul>' + thisWeek.map(e => {
+        const ongoing = d(e.start) < today;
+        return `<li class="${CATS[e.cat].cls}"><span class="wd">${ongoing ? 'ongoing' : fmtWd(d(e.start))}</span><span style="color:var(--c)">●</span> <span>${esc(e.title)}</span></li>`;
+      }).join('') + '</ul>'
+    : '<p class="empty">Nothing in the selected categories.</p>');
+
+  // Grouped by month
+  const groups = new Map();
+  for (const e of shown) {
+    const key = e.start.slice(0, 7);
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(e);
+  }
+  if (!shown.length) { list.innerHTML = '<p class="empty" style="color:var(--muted)">No events match.</p>'; return; }
+  list.innerHTML = [...groups.entries()].map(([key, evs]) => `
+    <section class="month"><h3>${fmtMonth(d(key + '-01'))}</h3>
+    ${evs.map(e => {
+      const s = d(e.start), en = endOf(e);
+      const past = en < today;
+      const now = s <= today && en >= today;
+      const range = e.end ? `${fmtDay(s)}<small>to ${fmtDay(en)}</small>` : `${fmtDay(s)}<small>${s.toLocaleDateString('en-GB', { weekday: 'short' })}</small>`;
+      return `<article class="ev ${CATS[e.cat].cls} ${e.status === 'tentative' ? 'tentative' : ''} ${past ? 'past' : ''}">
+        <div class="date">${range}</div>
+        <div>
+          <div class="title">${esc(e.title)}${now ? '<span class="now-badge">NOW</span>' : ''}${e.status === 'tentative' ? '<span class="badge">tentative</span>' : ''}</div>
+          <div class="meta"><span class="cat">${CATS[e.cat].label}</span> · ${esc(e.place)}</div>
+          ${e.note ? `<div class="note">${esc(e.note)}</div>` : ''}
+          ${e.src ? `<a href="${esc(e.src)}" target="_blank" rel="noopener">source ↗</a>` : ''}
+        </div>
+      </article>`;
+    }).join('')}
+    </section>`).join('');
+}
+
+showPastBox.onchange = () => { save('wc-past', showPastBox.checked); render(); };
+
+fetch('events.json?v=' + Date.now())
+  .then(r => r.json())
+  .then(data => {
+    events = data.events.sort((a, b) => a.start.localeCompare(b.start) || (a.end || a.start).localeCompare(b.end || b.start));
+    document.getElementById('updated').textContent = 'updated ' + d(data.updated).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+    renderFilters(); render();
+  })
+  .catch(() => { document.getElementById('list').innerHTML = '<p class="err">Could not load events.json.</p>'; });
+</script>
+</body>
+</html>
