@@ -202,6 +202,18 @@ footer {
   font-size:10px; color:var(--muted); letter-spacing:.08em;
 }
 
+/* Zoekbalk */
+.search-bar {
+  display: flex; align-items: center; gap: 10px;
+  padding: 9px 26px; border-bottom: 1px solid var(--border); background: #030a05;
+}
+.search-bar[hidden] { display: none; }
+.search-bar input {
+  flex: 1; min-width: 0; background: var(--surface); border: 1px solid var(--border); border-radius: 2px;
+  color: var(--bright); font-family: 'Space Mono', monospace; font-size: 13px; padding: 8px 12px; outline: none;
+}
+.search-bar input:focus { border-color: var(--accent); }
+
 /* Verborgen statistieken: bijna onzichtbaar stipje in de footer. */
 .stats-dot {
   background:none; border:0; color:var(--muted); opacity:.22; cursor:pointer;
@@ -285,6 +297,8 @@ footer {
   .card-sum, .card-link { display: none; }
 
   footer { padding: 10px 14px 16px; font-size: 9px; }
+  .search-bar { padding: 8px 14px; }
+  .search-bar input { font-size: 16px; }   /* 16px: voorkomt inzoomen op iPhone */
 }
 </style>
 </head>
@@ -299,6 +313,7 @@ footer {
     <span class="live-dot" id="dot"></span>
     <span class="status-txt" id="st">LIVE</span>
     <span class="clock" id="clk">—</span>
+    <button class="rbtn" id="sb" onclick="toggleSearch()" title="Zoeken in nieuws en archief" aria-label="Zoeken">🔍</button>
     <a class="rbtn" href="world-calendar/" style="text-decoration:none" title="Wereldagenda: verkiezingen, toppen, global health, EU/NL">📅 AGENDA</a>
     <a class="rbtn" id="csv" href="data/archive.csv" download="gh-ribbon-archief.csv"
        style="text-decoration:none" title="Volledig archief als spreadsheet">⤓ CSV</a>
@@ -309,6 +324,11 @@ footer {
   </div>
 </div>
 
+
+<div class="search-bar" id="sbar" hidden>
+  <input id="q" type="search" placeholder="Zoek in nieuws en archief…" autocomplete="off" aria-label="Zoeken">
+  <button class="rbtn" onclick="toggleSearch()" aria-label="Zoeken sluiten">✕</button>
+</div>
 
 <div class="filter-bar">
   <span class="flbl">Alerts:</span>
@@ -455,14 +475,23 @@ function renderTicker(items) {
 }
 
 function renderCards() {
-  const gefilterd = allItems.filter(i => active.has(i.cat));
-  const visible   = prioriteer(gefilterd);
-  document.getElementById('cnt').textContent =
-    toonAlles ? `${visible.length} items`
-              : `top ${visible.length} van ${gefilterd.length}`;
+  let visible;
+  if (zoekterm) {
+    visible = zoekResultaten();
+    document.getElementById('cnt').textContent =
+      `${visible.length}${visible.length === MAX_ZOEK ? '+' : ''} ${visible.length === 1 ? 'resultaat' : 'resultaten'} voor “${zoekterm}”` +
+      (archief === null ? ' — archief laden…' : ' (incl. archief)');
+  } else {
+    const gefilterd = allItems.filter(i => active.has(i.cat));
+    visible = prioriteer(gefilterd);
+    document.getElementById('cnt').textContent =
+      toonAlles ? `${visible.length} items`
+                : `top ${visible.length} van ${gefilterd.length}`;
+  }
   if (!visible.length) {
-    document.getElementById('grid').innerHTML =
-      '<div class="state">Geen items — activeer meer categorieën.</div>';
+    document.getElementById('grid').innerHTML = zoekterm
+      ? '<div class="state">Niets gevonden — probeer andere woorden of activeer meer categorieën.</div>'
+      : '<div class="state">Geen items — activeer meer categorieën.</div>';
     return;
   }
   document.getElementById('grid').innerHTML = visible.map((item, idx) => `
@@ -527,6 +556,77 @@ async function loadAll() {
   }
   rb.disabled = false;
 }
+
+// ── Zoeken in actuele items én het archief (data/archive.csv) ─────────────
+// Het archief wordt pas opgehaald als de zoekbalk opengaat.
+// Ruim zoeken: één woord is genoeg; meer treffers = hoger, daarna nieuwste eerst.
+let zoekterm = '';
+let archief = null;            // null = nog niet geladen
+let archiefLaden = null;
+const MAX_ZOEK = 200;
+const norm = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+const tijd = s => { const t = Date.parse(s); return isNaN(t) ? 0 : t; };
+
+function parseCSV(txt) {
+  const rows = []; let row = [], f = '', q = false;
+  for (let i = 0; i < txt.length; i++) {
+    const c = txt[i];
+    if (q) {
+      if (c === '"') { if (txt[i + 1] === '"') { f += '"'; i++; } else q = false; }
+      else f += c;
+    } else if (c === '"') q = true;
+    else if (c === ',') { row.push(f); f = ''; }
+    else if (c === '\n') { row.push(f); rows.push(row); row = []; f = ''; }
+    else if (c !== '\r') f += c;
+  }
+  if (f || row.length) { row.push(f); rows.push(row); }
+  return rows;
+}
+
+function laadArchief() {
+  if (!archiefLaden) archiefLaden = fetch('data/archive.csv?t=' + Date.now(), { cache: 'no-store' })
+    .then(r => r.ok ? r.text() : '')
+    .then(txt => {
+      const rows = parseCSV(txt.replace(/^\uFEFF/, ''));
+      const kop = rows.shift() || [];
+      const k = n => kop.indexOf(n);
+      archief = rows.filter(r => r.length >= kop.length).map(r => ({
+        title: r[k('titel')], src: r[k('bron')], feed: r[k('feed')], url: r[k('url')],
+        cat: r[k('categorie')], date: r[k('gepubliceerd')] || r[k('datum_gezien')], summary: ''
+      }));
+    })
+    .catch(() => { archief = []; })
+    .then(() => { if (zoekterm) renderCards(); });
+  return archiefLaden;
+}
+
+function zoekResultaten() {
+  const woorden = norm(zoekterm).split(/\s+/).filter(Boolean);
+  const gezien = new Set(), uit = [];
+  for (const i of allItems.concat(archief || [])) {
+    if (!active.has(i.cat) || !i.url || gezien.has(i.url)) continue;
+    gezien.add(i.url);
+    const tekst = norm(i.title + ' ' + i.src + ' ' + (i.summary || ''));
+    const treffers = woorden.filter(w => tekst.includes(w)).length;
+    if (treffers) uit.push([treffers, i]);
+  }
+  uit.sort((a, b) => b[0] - a[0] || tijd(b[1].date) - tijd(a[1].date));
+  return uit.slice(0, MAX_ZOEK).map(x => x[1]);
+}
+
+function toggleSearch() {
+  const bar = document.getElementById('sbar');
+  const open = bar.hidden;
+  bar.hidden = !open;
+  if (open) { document.getElementById('q').focus(); laadArchief(); }
+  else { document.getElementById('q').value = ''; zoekterm = ''; renderCards(); }
+}
+
+let zoekTimer;
+document.getElementById('q').addEventListener('input', e => {
+  clearTimeout(zoekTimer);
+  zoekTimer = setTimeout(() => { zoekterm = e.target.value.trim(); renderCards(); }, 200);
+});
 
 // Ticker aan/uit. De keuze blijft staan tussen bezoeken; wie hem uitzet
 // wil hem meestal uit houden.
