@@ -99,6 +99,21 @@ main { max-width: 860px; margin: 0 auto; padding: 20px 16px 60px; }
 .badge { font-size: 10px; border: 1px dashed var(--muted); color: var(--muted); border-radius: 3px; padding: 0 4px; margin-left: 6px; vertical-align: 2px; }
 .now-badge { font-size: 10px; background: var(--accent); color: #030a05; border-radius: 3px; padding: 0 5px; margin-left: 6px; vertical-align: 2px; font-weight: 700; }
 
+.top-right { display: flex; align-items: center; gap: 8px; }
+.navbtn {
+  background: none; border: 1px solid var(--border); color: var(--muted); border-radius: 3px;
+  font-family: inherit; font-size: 11px; padding: 4px 10px; text-decoration: none; cursor: pointer; white-space: nowrap;
+}
+.navbtn:hover { color: var(--accent); border-color: var(--accent); }
+.search-bar { padding: 10px 16px; border-bottom: 1px solid var(--border); background: #030a05; }
+.search-bar[hidden] { display: none; }
+.search-bar input {
+  display: block; width: 100%; max-width: 828px; margin: 0 auto; background: var(--surface);
+  border: 1px solid var(--border); border-radius: 4px; color: var(--bright);
+  font-family: inherit; font-size: 14px; padding: 8px 12px; outline: none;
+}
+.search-bar input:focus { border-color: var(--accent); }
+
 .earlier {
   display: block; width: 100%; margin: 0 0 22px; padding: 9px 12px; text-align: left;
   font-family: inherit; font-size: 12px; color: var(--muted); cursor: pointer;
@@ -122,14 +137,23 @@ footer a { color: var(--muted); }
   .ev { grid-template-columns: 64px 1fr; gap: 10px; }
   .logo-sub { font-size: 13px; }
   .week .wd { min-width: 78px; }
+  .updated { display: none; }
+  .search-bar input { font-size: 16px; }
 }
 </style>
 </head>
 <body>
 <header class="topbar">
-  <a class="logo" href="../"><span class="logo-pill">GH RIBBON</span><span class="logo-sub">World Calendar</span></a>
-  <div class="updated" id="updated"></div>
+  <a class="logo" href="/gh-ribbon/"><span class="logo-pill">GH RIBBON</span><span class="logo-sub">World Calendar</span></a>
+  <div class="top-right">
+    <div class="updated" id="updated"></div>
+    <a class="navbtn" href="/gh-ribbon/">← NEWS</a>
+    <button class="navbtn" id="sb" type="button" aria-label="Search">🔍</button>
+  </div>
 </header>
+<div class="search-bar" id="sbar" hidden>
+  <input id="q" type="search" placeholder="Search events…" autocomplete="off" aria-label="Search events">
+</div>
 
 <main>
   <div class="filters" id="filters"></div>
@@ -165,6 +189,8 @@ const saved = load('wc-cats', null);
 if (Array.isArray(saved)) { const known = load('wc-known', ['election','summit','health','eu']); active.clear(); saved.forEach(c => CATS[c] && active.add(c)); Object.keys(CATS).forEach(c => { if (!known.includes(c)) active.add(c); }); }
 save('wc-known', Object.keys(CATS));
 let showEarlier = false;   // earlier months stay folded until asked for
+let zoek = '';             // search text; any word may match
+const norm = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 
 const d = s => new Date(s + 'T00:00:00');
 const today = new Date(); today.setHours(0, 0, 0, 0);
@@ -190,12 +216,16 @@ function renderFilters() {
 function render() {
   const list = document.getElementById('list');
   const curKey = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0');
-  const shown = events.filter(e => active.has(e.cat));
+  const woorden = norm(zoek).split(/\s+/).filter(Boolean);
+  const treft = e => !woorden.length ||
+    woorden.some(w => norm(e.title + ' ' + e.place + ' ' + (e.note || '') + ' ' + CATS[e.cat].label).includes(w));
+  const shown = events.filter(e => active.has(e.cat) && treft(e));
 
   // Next 7 days
   const weekEnd = new Date(today); weekEnd.setDate(weekEnd.getDate() + 7);
   const thisWeek = events.filter(e => active.has(e.cat) && d(e.start) < weekEnd && endOf(e) >= today);
   const wk = document.getElementById('week');
+  wk.hidden = woorden.length > 0;   // while searching, only show results
   wk.innerHTML = '<h2>Next 7 days</h2>' + (thisWeek.length
     ? '<ul>' + thisWeek.map(e => {
         const ongoing = d(e.start) < today;
@@ -235,10 +265,10 @@ function render() {
   const earlier = all.filter(([k]) => k < curKey);
   const current = all.filter(([k]) => k >= curKey);
   const nEarlier = earlier.reduce((n, [, evs]) => n + evs.length, 0);
-  const toggle = nEarlier
+  const toggle = nEarlier && !woorden.length
     ? `<button class="earlier" id="earlierBtn">${showEarlier ? '↓ Hide earlier months' : '↑ Show earlier months (' + nEarlier + ' events)'}</button>`
     : '';
-  list.innerHTML = (showEarlier ? earlier.map(monthHtml).join('') : '') + toggle + current.map(monthHtml).join('');
+  list.innerHTML = ((showEarlier || woorden.length) ? earlier.map(monthHtml).join('') : '') + toggle + current.map(monthHtml).join('');
   const btn = document.getElementById('earlierBtn');
   if (btn) btn.onclick = () => {
     const before = btn.getBoundingClientRect().top;
@@ -248,6 +278,18 @@ function render() {
     window.scrollBy(0, after - before);   // keep the current month where it was
   };
 }
+
+document.getElementById('sb').onclick = () => {
+  const bar = document.getElementById('sbar');
+  bar.hidden = !bar.hidden;
+  if (!bar.hidden) document.getElementById('q').focus();
+  else { document.getElementById('q').value = ''; zoek = ''; render(); }
+};
+let zoekTimer;
+document.getElementById('q').addEventListener('input', e => {
+  clearTimeout(zoekTimer);
+  zoekTimer = setTimeout(() => { zoek = e.target.value.trim(); render(); }, 150);
+});
 
 fetch('events.json?v=' + Date.now())
   .then(r => r.json())
