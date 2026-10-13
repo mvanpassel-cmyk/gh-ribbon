@@ -41,5 +41,8 @@ jobs:
             echo "Geen wijzigingen."
           else
             git commit -m "feeds: $(date -u '+%Y-%m-%d %H:%M UTC')"
+            # Iemand kan intussen iets anders gepusht hebben (bv. de wereldagenda):
+            # eerst bijwerken, anders weigert GitHub de push.
+            git pull --rebase origin main
             git push
           fi
