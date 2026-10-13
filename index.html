@@ -236,6 +236,56 @@ footer {
 .c-bar em { position:absolute; left:8px; top:0; line-height:19px; font-style:normal; color:var(--bright); font-size:11px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:calc(100% - 12px); }
 .c-n { text-align:right; color:var(--muted); font-variant-numeric:tabular-nums; }
 .stats-foot { margin-top:14px; font-size:9px; color:var(--muted); letter-spacing:.08em; line-height:1.7; }
+
+/* ── Tablet: twee kolommen. Boven 900px blijft alles zoals het was. ── */
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .logo-pill, .rbtn { white-space: nowrap; }
+  .logo-sub { display: none; }
+  .topbar { padding: 12px 18px; }
+  .topbar-right { gap: 8px; }
+  .rbtn { padding: 5px 9px; }
+}
+
+/* ── Telefoon: snel scannen. Eén kolom koppen, geen ticker, knoppen klein. ── */
+@media (max-width: 640px) {
+  body { padding-bottom: 0; }
+  .ticker-wrap { display: none; }
+  #bb { display: none; }            /* BALK-knop heeft zonder ticker geen functie */
+
+  .topbar { flex-wrap: wrap; row-gap: 8px; padding: 10px 14px; }
+  .logo-pill { font-size: 12px; padding: 4px 10px; }
+  .logo-sub { display: none; }
+  .clock { font-size: 12px; }
+  .topbar-right { width: 100%; order: 2; gap: 6px; overflow-x: auto; scrollbar-width: none; flex-wrap: nowrap; }
+  .topbar-right::-webkit-scrollbar { display: none; }
+  .topbar-right .live-dot, .topbar-right .status-txt, .topbar-right .clock { display: none; }
+  .rbtn { padding: 3px 8px; font-size: 9px; opacity: .7; white-space: nowrap; flex-shrink: 0; }
+
+  .filter-bar { flex-wrap: nowrap; overflow-x: auto; padding: 8px 14px; gap: 6px; scrollbar-width: none; }
+  .filter-bar::-webkit-scrollbar { display: none; }
+  .fbtn { flex-shrink: 0; padding: 4px 9px; white-space: nowrap; }
+  .filter-sep { flex-shrink: 0; }
+
+  .main { padding: 12px 10px 24px; }
+  .sec-hd { margin-bottom: 10px; padding: 0 4px; }
+  .grid { grid-template-columns: 1fr; gap: 6px; }
+
+  .card, .card.feat { grid-column: auto; padding: 10px 12px; gap: 4px 8px; flex-direction: row; flex-wrap: wrap; align-items: center; }
+  .card-hd { display: contents; }
+  .card .badge { order: 1; }
+  .card .card-src { order: 2; flex: 1 1 0; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .card .card-date { order: 3; flex-shrink: 0; }
+  .card .card-title { order: 4; flex: 1 1 100%; }
+  .card:hover { transform: none; }
+  .card-hd { gap: 8px; }
+  .badge { font-size: 7px; padding: 2px 6px; }
+  .card-src { font-size: 10px; }
+  .card-title, .card.feat .card-title { font-size: 14.5px; line-height: 1.35; }
+  .card-sum, .card-link { display: none; }
+
+  footer { padding: 10px 14px 16px; font-size: 9px; }
+}
 </style>
 </head>
 <body>
