@@ -24,6 +24,7 @@
   --eu:      #ab8eff;
   --amr:     #ff9f43;
   --partners:#4dd0e1;
+  --gha:     #e6ee9c;
 }
 
 body {
@@ -104,6 +105,7 @@ main { max-width: 860px; margin: 0 auto; padding: 20px 16px 60px; }
 .c-eu       { --c: var(--eu); }
 .c-amr      { --c: var(--amr); }
 .c-partners { --c: var(--partners); }
+.c-gha      { --c: var(--gha); }
 
 footer { color: var(--muted); font-size: 11px; border-top: 1px solid var(--border); padding-top: 14px; margin-top: 30px; }
 footer a { color: var(--muted); }
@@ -133,7 +135,7 @@ footer a { color: var(--muted); }
   <div id="list"></div>
 
   <footer>
-    Elections, summits, global health, AMR & One Health, EU/NL milestones and Dutch partner countries (Indonesia, South Africa, China, India, Kenya). Refreshed weekly. Each entry links to its source — check the source before relying on a date.
+    Elections, summits, global health, global health architecture reform, AMR & One Health, EU/NL milestones and Dutch partner countries (Indonesia, South Africa, China, India, Kenya). Refreshed weekly. Each entry links to its source — check the source before relying on a date.
   </footer>
 </main>
 
@@ -144,7 +146,8 @@ const CATS = {
   health:   { label: 'Global health', cls: 'c-health' },
   eu:       { label: 'EU & Dutch politics', cls: 'c-eu' },
   amr:      { label: 'AMR & One Health', cls: 'c-amr' },
-  partners: { label: 'Partner countries (ID·ZA·CN·IN·KE)', cls: 'c-partners' }
+  partners: { label: 'Partner countries (ID·ZA·CN·IN·KE)', cls: 'c-partners' },
+  gha:      { label: 'GHA reform', cls: 'c-gha' }
 };
 const active = new Set(Object.keys(CATS));
 let events = [];
