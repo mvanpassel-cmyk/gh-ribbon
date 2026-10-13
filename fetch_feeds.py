@@ -153,6 +153,10 @@ FEEDS = [
     {"label": "Devex Global Health", "cat": "news", "urls": [
         "https://www.devex.com/news/feed",
         gnews("site:devex.com global health")]},
+    # Gates Foundation Grand Challenges: geen eigen RSS, dus via Google News
+    {"label": "Grand Challenges", "cat": "news", "urls": [
+        gnews("site:grandchallenges.org"),
+        gnews('"Grand Challenges" Gates Foundation')]},
 ]
 
 
@@ -174,6 +178,7 @@ BRONGEWICHT = {
     "CIDRAP Pandemic Influenza": 3,
     "CIDRAP Stewardship": 2, "ProMED": 2, "AMR Industry / news": 2,
     "The Lancet": 1, "BMJ": 1, "STAT News": 1,
+    "Grand Challenges": 2,
 }
 
 TERMEN = {
