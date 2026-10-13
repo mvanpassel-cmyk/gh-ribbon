@@ -99,6 +99,13 @@ main { max-width: 860px; margin: 0 auto; padding: 20px 16px 60px; }
 .badge { font-size: 10px; border: 1px dashed var(--muted); color: var(--muted); border-radius: 3px; padding: 0 4px; margin-left: 6px; vertical-align: 2px; }
 .now-badge { font-size: 10px; background: var(--accent); color: #030a05; border-radius: 3px; padding: 0 5px; margin-left: 6px; vertical-align: 2px; font-weight: 700; }
 
+.earlier {
+  display: block; width: 100%; margin: 0 0 22px; padding: 9px 12px; text-align: left;
+  font-family: inherit; font-size: 12px; color: var(--muted); cursor: pointer;
+  background: var(--surface); border: 1px dashed var(--border); border-radius: 4px;
+}
+.earlier:hover { color: var(--accent); border-color: var(--accent); }
+
 .c-election { --c: var(--election); }
 .c-summit   { --c: var(--summit); }
 .c-health   { --c: var(--health); }
@@ -127,7 +134,6 @@ footer a { color: var(--muted); }
 <main>
   <div class="filters" id="filters"></div>
   <div class="opts">
-    <label><input type="checkbox" id="showPast"> show past events</label>
     <span>dashed = date tentative</span>
   </div>
 
@@ -158,8 +164,7 @@ function save(key, v) { try { localStorage.setItem(key, JSON.stringify(v)); } ca
 const saved = load('wc-cats', null);
 if (Array.isArray(saved)) { const known = load('wc-known', ['election','summit','health','eu']); active.clear(); saved.forEach(c => CATS[c] && active.add(c)); Object.keys(CATS).forEach(c => { if (!known.includes(c)) active.add(c); }); }
 save('wc-known', Object.keys(CATS));
-const showPastBox = document.getElementById('showPast');
-showPastBox.checked = load('wc-past', false);
+let showEarlier = false;   // earlier months stay folded until asked for
 
 const d = s => new Date(s + 'T00:00:00');
 const today = new Date(); today.setHours(0, 0, 0, 0);
@@ -184,8 +189,8 @@ function renderFilters() {
 
 function render() {
   const list = document.getElementById('list');
-  const showPast = showPastBox.checked;
-  const shown = events.filter(e => active.has(e.cat) && (showPast || endOf(e) >= today));
+  const curKey = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0');
+  const shown = events.filter(e => active.has(e.cat));
 
   // Next 7 days
   const weekEnd = new Date(today); weekEnd.setDate(weekEnd.getDate() + 7);
@@ -206,7 +211,7 @@ function render() {
     groups.get(key).push(e);
   }
   if (!shown.length) { list.innerHTML = '<p class="empty" style="color:var(--muted)">No events match.</p>'; return; }
-  list.innerHTML = [...groups.entries()].map(([key, evs]) => `
+  const monthHtml = ([key, evs]) => `
     <section class="month"><h3>${fmtMonth(d(key + '-01'))}</h3>
     ${evs.map(e => {
       const s = d(e.start), en = endOf(e);
@@ -223,10 +228,26 @@ function render() {
         </div>
       </article>`;
     }).join('')}
-    </section>`).join('');
-}
+    </section>`;
 
-showPastBox.onchange = () => { save('wc-past', showPastBox.checked); render(); };
+  // Start at the current month; earlier months sit behind a button above it.
+  const all = [...groups.entries()];
+  const earlier = all.filter(([k]) => k < curKey);
+  const current = all.filter(([k]) => k >= curKey);
+  const nEarlier = earlier.reduce((n, [, evs]) => n + evs.length, 0);
+  const toggle = nEarlier
+    ? `<button class="earlier" id="earlierBtn">${showEarlier ? '↓ Hide earlier months' : '↑ Show earlier months (' + nEarlier + ' events)'}</button>`
+    : '';
+  list.innerHTML = (showEarlier ? earlier.map(monthHtml).join('') : '') + toggle + current.map(monthHtml).join('');
+  const btn = document.getElementById('earlierBtn');
+  if (btn) btn.onclick = () => {
+    const before = btn.getBoundingClientRect().top;
+    showEarlier = !showEarlier;
+    render();
+    const after = document.getElementById('earlierBtn').getBoundingClientRect().top;
+    window.scrollBy(0, after - before);   // keep the current month where it was
+  };
+}
 
 fetch('events.json?v=' + Date.now())
   .then(r => r.json())
