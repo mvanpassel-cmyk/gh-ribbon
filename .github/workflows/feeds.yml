@@ -18,7 +18,7 @@ concurrency:
 
 jobs:
   harvest:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # vastgezet: ubuntu-latest wordt Ubuntu 26 vanaf 19-10-2026
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
