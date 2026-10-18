@@ -263,7 +263,7 @@ footer {
 @media (max-width: 640px) {
   body { padding-bottom: 0; }
   .ticker-wrap { display: none; }
-  #bb { display: none; }            /* BALK-knop heeft zonder ticker geen functie */
+  #bb { display: none; }            /* TICKER button heeft zonder ticker geen functie */
 
   .topbar { flex-wrap: wrap; row-gap: 8px; padding: 10px 14px; }
   .logo-pill { font-size: 12px; padding: 4px 10px; }
@@ -313,21 +313,21 @@ footer {
     <span class="live-dot" id="dot"></span>
     <span class="status-txt" id="st">LIVE</span>
     <span class="clock" id="clk">—</span>
-    <button class="rbtn" id="sb" onclick="toggleSearch()" title="Zoeken in nieuws en archief" aria-label="Zoeken">🔍</button>
-    <a class="rbtn" href="world-calendar/" style="text-decoration:none" title="Wereldagenda: verkiezingen, toppen, global health, EU/NL">📅 AGENDA</a>
-    <a class="rbtn" id="csv" href="data/archive.csv" download="gh-ribbon-archief.csv"
-       style="text-decoration:none" title="Volledig archief als spreadsheet">⤓ CSV</a>
-    <button class="rbtn" id="bb" onclick="toggleTicker()" title="Nieuwsbalk onderin aan/uit">▬ BALK</button>
+    <button class="rbtn" id="sb" onclick="toggleSearch()" title="Search news and archive" aria-label="Search">🔍</button>
+    <a class="rbtn" href="world-calendar/" style="text-decoration:none" title="World calendar: elections, summits, global health, EU/NL">📅 CALENDAR</a>
+    <a class="rbtn" id="csv" href="data/archive.csv" download="gh-ribbon-archive.csv"
+       style="text-decoration:none" title="Full archive as spreadsheet">⤓ CSV</a>
+    <button class="rbtn" id="bb" onclick="toggleTicker()" title="Show or hide the news ticker at the bottom">▬ TICKER</button>
     <button class="rbtn" id="tb" onclick="toggleAlles()">TOP 30</button>
-    <a class="rbtn" href="ticker.html" target="_blank" style="text-decoration:none" title="Ticker los openen, bijvoorbeeld voor een tweede scherm">⬒ LOS</a>
+    <a class="rbtn" href="ticker.html" target="_blank" style="text-decoration:none" title="Open the ticker in a separate window, e.g. for a second screen">⬒ DETACH</a>
     <button class="rbtn" id="rb" onclick="loadAll()">↻ REFRESH</button>
   </div>
 </div>
 
 
 <div class="search-bar" id="sbar" hidden>
-  <input id="q" type="search" placeholder="Zoek in nieuws en archief…" autocomplete="off" aria-label="Zoeken">
-  <button class="rbtn" onclick="toggleSearch()" aria-label="Zoeken sluiten">✕</button>
+  <input id="q" type="search" placeholder="Search news and archive…" autocomplete="off" aria-label="Search">
+  <button class="rbtn" onclick="toggleSearch()" aria-label="Close search">✕</button>
 </div>
 
 <div class="filter-bar">
@@ -347,21 +347,21 @@ footer {
 <main class="main">
   <div class="sec-hd">
     <span class="sec-title">Global Health Intelligence</span>
-    <span class="sec-count" id="cnt">laden…</span>
+    <span class="sec-count" id="cnt">loading…</span>
   </div>
   <div class="grid" id="grid"></div>
 </main>
 
 <footer>
-  <span>28 bronnen · WHO · CIDRAP · ECDC · Africa CDC · Lancet · BMJ · PLOS · Health Policy Watch · Geneva Health Files · Politico · Euractiv · STAT · Devex · Grand Challenges</span>
-  <span><span id="ft">—</span><button class="stats-dot" id="sd" onclick="openStats()" aria-label="Statistieken" title="">◔</button></span>
+  <span>28 sources · WHO · CIDRAP · ECDC · Africa CDC · Lancet · BMJ · PLOS · Health Policy Watch · Geneva Health Files · Politico · Euractiv · STAT · Devex · Grand Challenges</span>
+  <span><span id="ft">—</span><button class="stats-dot" id="sd" onclick="openStats()" aria-label="Statistics" title="">◔</button></span>
 </footer>
 
 <div class="stats-ov" id="sov" onclick="if(event.target===this)closeStats()">
-  <div class="stats-box" role="dialog" aria-label="Bezoekersstatistieken">
+  <div class="stats-box" role="dialog" aria-label="Visitor statistics">
     <div class="stats-hd">
-      <span class="sec-title">Bezoekers</span>
-      <button class="stats-x" onclick="closeStats()" aria-label="Sluiten">×</button>
+      <span class="sec-title">Visitors</span>
+      <button class="stats-x" onclick="closeStats()" aria-label="Close">×</button>
     </div>
     <div id="stats-body"></div>
   </div>
@@ -373,7 +373,7 @@ footer {
     <span class="t-item">
       <span class="t-sep">◆</span>
       <span class="t-src">GH RIBBON</span>
-      <span class="t-hl">Feeds laden — even geduld…</span>
+      <span class="t-hl">Loading feeds — one moment…</span>
     </span>
   </div>
 </div>
@@ -390,7 +390,7 @@ let active = new Set(['who','promed','emerg','global','amr','journal','policy','
 
 setInterval(() => {
   document.getElementById('clk').textContent =
-    new Date().toLocaleTimeString('nl-NL',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+    new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
 }, 1000);
 
 function htmlesc(s) {
@@ -403,11 +403,11 @@ function relDate(s) {
   if (!s) return '';
   const d = new Date(s); if (isNaN(d)) return '';
   const m = Math.floor((Date.now()-d)/60000);
-  if (m < 1)    return 'Zojuist';
-  if (m < 60)   return m+'m geleden';
-  if (m < 1440) return Math.floor(m/60)+'u geleden';
-  if (m < 2880) return 'Gisteren';
-  return d.toLocaleDateString('nl-NL',{day:'numeric',month:'short'});
+  if (m < 1)    return 'Just now';
+  if (m < 60)   return m+'m ago';
+  if (m < 1440) return Math.floor(m/60)+'h ago';
+  if (m < 2880) return 'Yesterday';
+  return d.toLocaleDateString('en-GB',{day:'numeric',month:'short'});
 }
 
 // Rangschikking. De harvester geeft elk item een relevantiescore mee;
@@ -479,19 +479,19 @@ function renderCards() {
   if (zoekterm) {
     visible = zoekResultaten();
     document.getElementById('cnt').textContent =
-      `${visible.length}${visible.length === MAX_ZOEK ? '+' : ''} ${visible.length === 1 ? 'resultaat' : 'resultaten'} voor “${zoekterm}”` +
-      (archief === null ? ' — archief laden…' : ' (incl. archief)');
+      `${visible.length}${visible.length === MAX_ZOEK ? '+' : ''} ${visible.length === 1 ? 'result' : 'results'} for “${zoekterm}”` +
+      (archief === null ? ' — loading archive…' : ' (incl. archive)');
   } else {
     const gefilterd = allItems.filter(i => active.has(i.cat));
     visible = prioriteer(gefilterd);
     document.getElementById('cnt').textContent =
       toonAlles ? `${visible.length} items`
-                : `top ${visible.length} van ${gefilterd.length}`;
+                : `top ${visible.length} of ${gefilterd.length}`;
   }
   if (!visible.length) {
     document.getElementById('grid').innerHTML = zoekterm
-      ? '<div class="state">Niets gevonden — probeer andere woorden of activeer meer categorieën.</div>'
-      : '<div class="state">Geen items — activeer meer categorieën.</div>';
+      ? '<div class="state">Nothing found — try other words or enable more categories.</div>'
+      : '<div class="state">No items — enable more categories.</div>';
     return;
   }
   document.getElementById('grid').innerHTML = visible.map((item, idx) => `
@@ -505,7 +505,7 @@ function renderCards() {
       <div class="card-src">${htmlesc(item.src)}</div>
       <div class="card-title">${htmlesc(item.title)}</div>
       ${item.summary ? `<div class="card-sum">${htmlesc(item.summary)}</div>` : ''}
-      <span class="card-link">Lees verder ↗</span>
+      <span class="card-link">Read more ↗</span>
     </a>`).join('');
 }
 
@@ -519,8 +519,8 @@ function renderDiag(meta) {
     document.querySelector('footer').appendChild(el);
   }
   const bad = Object.entries(feedStatus).filter(([,v]) => !v.ok).map(([k]) => k);
-  el.innerHTML = `<span style="color:var(--accent)">${meta.feeds_ok}/${meta.feeds_tot} bronnen OK</span>` +
-    (bad.length ? ' — stil: ' + bad.map(htmlesc).join(', ') : '');
+  el.innerHTML = `<span style="color:var(--accent)">${meta.feeds_ok}/${meta.feeds_tot} sources OK</span>` +
+    (bad.length ? ' — silent: ' + bad.map(htmlesc).join(', ') : '');
   el.title = Object.entries(feedStatus).map(([k,v]) => k + ' → ' + v.msg).join('\n');
 }
 
@@ -530,7 +530,7 @@ async function loadAll() {
   const st = document.getElementById('st');
   rb.disabled = true;
   dot.className = 'live-dot busy';
-  st.textContent = 'LADEN…';
+  st.textContent = 'LOADING…';
   try {
     const res = await fetch(DATA + '?t=' + Date.now(), { cache: 'no-store' });
     if (!res.ok) throw new Error('HTTP ' + res.status);
@@ -544,14 +544,14 @@ async function loadAll() {
     st.textContent = 'LIVE';
     const age = data.generated ? relDate(data.generated) : '';
     document.getElementById('ft').textContent =
-      'Harvest ' + (age || new Date().toLocaleTimeString('nl-NL'));
+      'Harvest ' + (age || new Date().toLocaleTimeString('en-GB'));
   } catch (e) {
     dot.className = 'live-dot err';
     st.textContent = 'ERROR';
     document.getElementById('grid').innerHTML =
-      '<div class="state err">data/feeds.json kon niet geladen worden.<br>' +
-      '<small>' + htmlesc(e.message) + ' — draait de Actions-workflow al? ' +
-      'Check de Actions-tab van de repo.</small></div>';
+      '<div class="state err">data/feeds.json could not be loaded.<br>' +
+      '<small>' + htmlesc(e.message) + ' — has the Actions workflow run yet? ' +
+      'Check the Actions tab of the repo.</small></div>';
     document.getElementById('cnt').textContent = '0 items';
   }
   rb.disabled = false;
@@ -635,7 +635,7 @@ const TICKER_KEY = 'ghribbon.ticker';
 function pasTickerToe(aan) {
   document.body.classList.toggle('geen-ticker', !aan);
   const b = document.getElementById('bb');
-  b.textContent = aan ? '▬ BALK' : '▬ BALK UIT';
+  b.textContent = aan ? '▬ TICKER' : '▬ TICKER OFF';
   b.style.opacity = aan ? '' : '.45';
 }
 
@@ -651,7 +651,7 @@ catch (_) { pasTickerToe(true); }
 
 function toggleAlles() {
   toonAlles = !toonAlles;
-  document.getElementById('tb').textContent = toonAlles ? 'ALLES' : 'TOP 30';
+  document.getElementById('tb').textContent = toonAlles ? 'ALL' : 'TOP 30';
   renderCards();
 }
 
@@ -695,7 +695,7 @@ const DEMO_STATS = {
   ]
 };
 const regionNames = (() => {
-  try { return new Intl.DisplayNames(['nl'], { type: 'region' }); } catch (_) { return null; }
+  try { return new Intl.DisplayNames(['en'], { type: 'region' }); } catch (_) { return null; }
 })();
 
 function vlag(code) {
@@ -704,13 +704,13 @@ function vlag(code) {
 function landNaam(code) {
   try { return (regionNames && regionNames.of(code.toUpperCase())) || code; } catch (_) { return code; }
 }
-const nf = n => Number(n || 0).toLocaleString('nl-NL');
+const nf = n => Number(n || 0).toLocaleString('en-GB');
 
 async function openStats() {
   const ov = document.getElementById('sov');
   const body = document.getElementById('stats-body');
   ov.classList.add('open');
-  body.innerHTML = '<div class="stats-foot">laden…</div>';
+  body.innerHTML = '<div class="stats-foot">loading…</div>';
 
   let d = null, demo = false;
   try {
@@ -723,22 +723,22 @@ async function openStats() {
   const max = landen.length ? landen[0].count : 1;
 
   body.innerHTML =
-    (demo ? '<div class="stats-demo">DEMODATA — er is nog niets gekoppeld. Deze cijfers zijn verzonnen.</div>' : '') +
+    (demo ? '<div class="stats-demo">DEMO DATA — nothing is connected yet. These numbers are made up.</div>' : '') +
     '<div class="stats-nums">' +
-      '<div class="stats-num"><b>' + nf(d.total) + '</b><span>totaal</span></div>' +
-      '<div class="stats-num"><b>' + nf(d.week) + '</b><span>7 dagen</span></div>' +
-      '<div class="stats-num"><b>' + nf(d.today) + '</b><span>vandaag</span></div>' +
+      '<div class="stats-num"><b>' + nf(d.total) + '</b><span>total</span></div>' +
+      '<div class="stats-num"><b>' + nf(d.week) + '</b><span>7 days</span></div>' +
+      '<div class="stats-num"><b>' + nf(d.today) + '</b><span>today</span></div>' +
     '</div>' +
-    '<div class="stats-sub">Herkomst</div>' +
+    '<div class="stats-sub">Origin</div>' +
     (landen.length ? landen.map(l => {
       const code = htmlesc(l.code);
       return '<div class="c-row"><span>' + vlag(l.code) + '</span>' +
         '<div class="c-bar"><i style="width:' + Math.max(3, Math.round(l.count / max * 100)) + '%"></i>' +
         '<em>' + htmlesc(landNaam(l.code)) + '</em></div>' +
         '<span class="c-n" title="' + code + '">' + nf(l.count) + '</span></div>';
-    }).join('') : '<div class="stats-foot">Nog geen bezoeken geregistreerd.</div>') +
-    '<div class="stats-foot">Alleen aantallen en land, geen cookies en geen IP-adressen opgeslagen.' +
-      (d.generated ? ' Bijgewerkt ' + htmlesc(relDate(d.generated)) + '.' : '') + '</div>';
+    }).join('') : '<div class="stats-foot">No visits recorded yet.</div>') +
+    '<div class="stats-foot">Counts and country only; no cookies and no IP addresses stored.' +
+      (d.generated ? ' Updated ' + htmlesc(relDate(d.generated)) + '.' : '') + '</div>';
 }
 
 function closeStats() { document.getElementById('sov').classList.remove('open'); }

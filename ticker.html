@@ -72,7 +72,7 @@ body {
 
 <div class="bar">
   <div class="badge-live">LIVE<span class="n" id="n">—</span></div>
-  <div class="track" id="tk"><span class="msg">GH Ribbon laden…</span></div>
+  <div class="track" id="tk"><span class="msg">Loading GH Ribbon…</span></div>
 </div>
 
 <script>
@@ -118,7 +118,7 @@ async function load() {
     if (ONLY.length) items = items.filter(i => ONLY.includes(i.cat));
     items = interleave(items).slice(0, 50);
 
-    if (!items.length) { tk.innerHTML = '<span class="msg">Geen items.</span>'; return; }
+    if (!items.length) { tk.innerHTML = '<span class="msg">No items.</span>'; return; }
 
     document.getElementById('n').textContent = data.feeds_ok + '/' + data.feeds_tot;
 
@@ -139,7 +139,7 @@ async function load() {
     tk.style.setProperty('--dur', Math.round(SPEED * items.length / 40) + 's');
     requestAnimationFrame(() => tk.classList.add('run'));
   } catch (e) {
-    tk.innerHTML = '<span class="msg">Kan data/feeds.json niet laden — ' + he(e.message) + '</span>';
+    tk.innerHTML = '<span class="msg">Could not load data/feeds.json — ' + he(e.message) + '</span>';
   }
 }
 
