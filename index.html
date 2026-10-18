@@ -327,6 +327,7 @@ footer {
 
 <div class="search-bar" id="sbar" hidden>
   <input id="q" type="search" placeholder="Search news and archive…" autocomplete="off" aria-label="Search">
+  <button class="rbtn" id="qx" onclick="exportZoek()" title="Download all matches as CSV" hidden>⤓ CSV</button>
   <button class="rbtn" onclick="toggleSearch()" aria-label="Close search">✕</button>
 </div>
 
@@ -476,6 +477,7 @@ function renderTicker(items) {
 
 function renderCards() {
   let visible;
+  document.getElementById('qx').hidden = !zoekterm;
   if (zoekterm) {
     visible = zoekResultaten();
     document.getElementById('cnt').textContent =
@@ -600,7 +602,7 @@ function laadArchief() {
   return archiefLaden;
 }
 
-function zoekResultaten() {
+function zoekResultaten(alles) {
   const woorden = norm(zoekterm).split(/\s+/).filter(Boolean);
   const gezien = new Set(), uit = [];
   for (const i of allItems.concat(archief || [])) {
@@ -611,7 +613,19 @@ function zoekResultaten() {
     if (treffers) uit.push([treffers, i]);
   }
   uit.sort((a, b) => b[0] - a[0] || tijd(b[1].date) - tijd(a[1].date));
-  return uit.slice(0, MAX_ZOEK).map(x => x[1]);
+  return (alles ? uit : uit.slice(0, MAX_ZOEK)).map(x => x[1]);
+}
+
+function exportZoek() {
+  if (!zoekterm) return;
+  const q = v => '"' + String(v ?? '').replace(/"/g, '""') + '"';
+  const rows = [['date','category','source','feed','title','url'].join(',')].concat(
+    zoekResultaten(true).map(i => [i.date ? String(i.date).slice(0,10) : '', i.cat, i.src, i.feed, i.title, i.url].map(q).join(',')));
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob(['\uFEFF' + rows.join('\r\n')], { type: 'text/csv;charset=utf-8' }));
+  a.download = 'gh-ribbon-search-' + (zoekterm.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40) || 'results') + '.csv';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
 }
 
 function toggleSearch() {
