@@ -87,6 +87,16 @@ main { max-width: 860px; margin: 0 auto; padding: 20px 16px 60px; }
   margin-bottom: 8px; background: var(--surface); border-radius: 0 4px 4px 0;
 }
 .ev.tentative { border-left-style: dashed; }
+.ev.partner { background: linear-gradient(90deg, rgba(77,208,225,.10), var(--surface) 60%); box-shadow: inset 0 0 0 1px rgba(77,208,225,.35); }
+.ptag {
+  display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: .03em;
+  color: #031416; background: var(--partners); border-radius: 3px; padding: 0 5px; margin: 0 4px 0 0; vertical-align: 2px;
+}
+.countries { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 14px; }
+.countries .lbl { color: var(--muted); font-size: 11px; margin-right: 2px; }
+.countries .chip { --c: var(--partners); padding: 4px 10px; font-size: 11px; }
+.countries .chip[aria-pressed="false"] { opacity: .6; }
+.week .star { color: var(--partners); }
 .ev.past { opacity: .4; }
 .ev .date { font-weight: 700; color: var(--bright); font-size: 13px; }
 .ev .date small { display: block; font-weight: 400; color: var(--muted); font-size: 11px; }
@@ -157,15 +167,16 @@ footer a { color: var(--muted); }
 
 <main>
   <div class="filters" id="filters"></div>
+  <div class="countries" id="countries"></div>
   <div class="opts">
-    <span>dashed = date tentative</span>
+    <span>dashed = date tentative · <span style="color:var(--partners)">★ highlighted = partner country</span></span>
   </div>
 
   <section class="week" id="week"></section>
   <div id="list"></div>
 
   <footer>
-    Elections, summits, global health, global health architecture reform, AMR & One Health, EU/NL milestones and Dutch partner countries (Indonesia, South Africa, China, India, Kenya). Refreshed weekly. Each entry links to its source — check the source before relying on a date.
+    Elections, summits, global health, global health architecture reform, AMR & One Health, EU/NL milestones and Dutch partner countries (Indonesia, India, China, United States, Kenya, Uganda, Ethiopia, South Africa, Colombia, Canada) — events in or about these countries are highlighted in every category. Refreshed weekly. Each entry links to its source — check the source before relying on a date.
   </footer>
 </main>
 
@@ -176,10 +187,23 @@ const CATS = {
   health:   { label: 'Global health', cls: 'c-health' },
   eu:       { label: 'EU & Dutch politics', cls: 'c-eu' },
   amr:      { label: 'AMR & One Health', cls: 'c-amr' },
-  partners: { label: 'Partner countries (ID·ZA·CN·IN·KE)', cls: 'c-partners' },
+  partners: { label: 'Partner countries', cls: 'c-partners' },
   gha:      { label: 'GHA reform', cls: 'c-gha' }
 };
 const active = new Set(Object.keys(CATS));
+// Countries with a special relationship. An event counts when its "country" field
+// (ISO code or list of codes) names one, or when its place is exactly the country name.
+const PARTNERS = {
+  ID: 'Indonesia', IN: 'India', CN: 'China', US: 'United States', KE: 'Kenya',
+  UG: 'Uganda', ET: 'Ethiopia', ZA: 'South Africa', CO: 'Colombia', CA: 'Canada'
+};
+const BY_NAME = Object.fromEntries(Object.entries(PARTNERS).map(([k, v]) => [v.toLowerCase(), k]));
+BY_NAME['usa'] = 'US';
+function partnersOf(e) {
+  if (e.country) return [].concat(e.country).map(c => String(c).toUpperCase()).filter(c => PARTNERS[c]);
+  const k = BY_NAME[String(e.place || '').trim().toLowerCase()];
+  return k ? [k] : [];
+}
 let events = [];
 
 function load(key, fallback) { try { const v = localStorage.getItem(key); return v === null ? fallback : JSON.parse(v); } catch (e) { return fallback; } }
@@ -188,6 +212,7 @@ function save(key, v) { try { localStorage.setItem(key, JSON.stringify(v)); } ca
 const saved = load('wc-cats', null);
 if (Array.isArray(saved)) { const known = load('wc-known', ['election','summit','health','eu']); active.clear(); saved.forEach(c => CATS[c] && active.add(c)); Object.keys(CATS).forEach(c => { if (!known.includes(c)) active.add(c); }); }
 save('wc-known', Object.keys(CATS));
+const selCountries = new Set((load('wc-countries', []) || []).filter(c => PARTNERS[c]));
 let showEarlier = false;   // earlier months stay folded until asked for
 let zoek = '';             // search text; any word may match
 const norm = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -213,25 +238,47 @@ function renderFilters() {
   }
 }
 
+function renderCountries() {
+  const box = document.getElementById('countries');
+  const all = Object.keys(PARTNERS);
+  const allOn = selCountries.size === all.length;
+  const mk = (label, pressed, onclick, title) => {
+    const b = document.createElement('button');
+    b.className = 'chip';
+    b.setAttribute('aria-pressed', pressed);
+    if (title) b.title = title;
+    b.innerHTML = label;
+    b.onclick = () => { onclick(); save('wc-countries', [...selCountries]); renderCountries(); render(); };
+    return b;
+  };
+  box.innerHTML = '<span class="lbl">Partner countries:</span>';
+  box.appendChild(mk('★ Only partners', allOn, () => { if (allOn) selCountries.clear(); else all.forEach(c => selCountries.add(c)); }, 'Show only events in or about partner countries'));
+  for (const [k, name] of Object.entries(PARTNERS)) {
+    box.appendChild(mk(name, selCountries.has(k), () => { selCountries.has(k) ? selCountries.delete(k) : selCountries.add(k); }, 'Show only ' + name));
+  }
+  if (selCountries.size) box.appendChild(mk('✕ clear', false, () => selCountries.clear(), 'Show all countries again'));
+}
+
 function render() {
   const list = document.getElementById('list');
   const curKey = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0');
   const woorden = norm(zoek).split(/\s+/).filter(Boolean);
   const treft = e => !woorden.length ||
-    woorden.some(w => norm(e.title + ' ' + e.place + ' ' + (e.note || '') + ' ' + CATS[e.cat].label).includes(w));
-  const shown = events.filter(e => active.has(e.cat) && treft(e));
+    woorden.some(w => norm(e.title + ' ' + e.place + ' ' + (e.note || '') + ' ' + CATS[e.cat].label + ' ' + partnersOf(e).map(c => PARTNERS[c]).join(' ')).includes(w));
+  const inCountry = e => !selCountries.size || partnersOf(e).some(c => selCountries.has(c));
+  const shown = events.filter(e => active.has(e.cat) && inCountry(e) && treft(e));
 
   // Next 7 days
   const weekEnd = new Date(today); weekEnd.setDate(weekEnd.getDate() + 7);
-  const thisWeek = events.filter(e => active.has(e.cat) && d(e.start) < weekEnd && endOf(e) >= today);
+  const thisWeek = events.filter(e => active.has(e.cat) && inCountry(e) && d(e.start) < weekEnd && endOf(e) >= today);
   const wk = document.getElementById('week');
   wk.hidden = woorden.length > 0;   // while searching, only show results
   wk.innerHTML = '<h2>Next 7 days</h2>' + (thisWeek.length
     ? '<ul>' + thisWeek.map(e => {
         const ongoing = d(e.start) < today;
-        return `<li class="${CATS[e.cat].cls}"><span class="wd">${ongoing ? 'ongoing' : fmtWd(d(e.start))}</span><span style="color:var(--c)">●</span> <span>${esc(e.title)}</span></li>`;
+        return `<li class="${CATS[e.cat].cls}"><span class="wd">${ongoing ? 'ongoing' : fmtWd(d(e.start))}</span><span style="color:var(--c)">●</span> <span>${esc(e.title)}${partnersOf(e).length ? ' <span class="star" title="Partner country">★</span>' : ''}</span></li>`;
       }).join('') + '</ul>'
-    : '<p class="empty">Nothing in the selected categories.</p>');
+    : '<p class="empty">Nothing in the selected filters.</p>');
 
   // Grouped by month
   const groups = new Map();
@@ -248,11 +295,12 @@ function render() {
       const past = en < today;
       const now = s <= today && en >= today;
       const range = e.end ? `${fmtDay(s)}<small>to ${fmtDay(en)}</small>` : `${fmtDay(s)}<small>${s.toLocaleDateString('en-GB', { weekday: 'short' })}</small>`;
-      return `<article class="ev ${CATS[e.cat].cls} ${e.status === 'tentative' ? 'tentative' : ''} ${past ? 'past' : ''}">
+      const pc = partnersOf(e);
+      return `<article class="ev ${CATS[e.cat].cls} ${e.status === 'tentative' ? 'tentative' : ''} ${past ? 'past' : ''} ${pc.length ? 'partner' : ''}">
         <div class="date">${range}</div>
         <div>
           <div class="title">${esc(e.title)}${now ? '<span class="now-badge">NOW</span>' : ''}${e.status === 'tentative' ? '<span class="badge">tentative</span>' : ''}</div>
-          <div class="meta"><span class="cat">${CATS[e.cat].label}</span> · ${esc(e.place)}</div>
+          <div class="meta">${pc.map(c => `<span class="ptag">★ ${esc(PARTNERS[c])}</span>`).join('')}<span class="cat">${CATS[e.cat].label}</span> · ${esc(e.place)}</div>
           ${e.note ? `<div class="note">${esc(e.note)}</div>` : ''}
           ${e.src ? `<a href="${esc(e.src)}" target="_blank" rel="noopener">source ↗</a>` : ''}
         </div>
@@ -296,7 +344,7 @@ fetch('events.json?v=' + Date.now())
   .then(data => {
     events = data.events.sort((a, b) => a.start.localeCompare(b.start) || (a.end || a.start).localeCompare(b.end || b.start));
     document.getElementById('updated').textContent = 'updated ' + d(data.updated).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
-    renderFilters(); render();
+    renderFilters(); renderCountries(); render();
   })
   .catch(() => { document.getElementById('list').innerHTML = '<p class="err">Could not load events.json.</p>'; });
 </script>
