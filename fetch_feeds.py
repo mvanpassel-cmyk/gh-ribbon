@@ -98,10 +98,21 @@ FEEDS = [
     # --- Global health ----------------------------------------------------------
     {"label": "Global Health", "cat": "global", "urls": [
         "https://www.google.com/alerts/feeds/07358569115421849873/5068632798327940500"]},
+    # ECDC: officiele taxonomie-feeds (zie https://www.ecdc.europa.eu/en/rss-feeds).
+    # De oude adressen /en/news-events/rss en /en/rss bestaan niet; daardoor viel deze bron
+    # terug op Google News. Er is geen feed voor de pagina "Public health events".
     {"label": "ECDC", "cat": "global", "urls": [
-        "https://www.ecdc.europa.eu/en/news-events/rss",
-        "https://www.ecdc.europa.eu/en/rss",
+        "https://www.ecdc.europa.eu/en/taxonomy/term/1307/feed",       # nieuws en persberichten
         gnews("site:ecdc.europa.eu")]},
+    {"label": "ECDC Epidemiological updates", "cat": "emerg", "urls": [
+        "https://www.ecdc.europa.eu/en/taxonomy/term/1310/feed",
+        gnews("site:ecdc.europa.eu epidemiological update")]},
+    {"label": "ECDC Threats report", "cat": "emerg", "urls": [
+        "https://www.ecdc.europa.eu/en/taxonomy/term/1505/feed",       # wekelijks CDTR
+        gnews("site:ecdc.europa.eu communicable disease threats report")]},
+    {"label": "ECDC Risk assessments", "cat": "emerg", "urls": [
+        "https://www.ecdc.europa.eu/en/taxonomy/term/1295/feed",
+        gnews("site:ecdc.europa.eu risk assessment")]},
     {"label": "Africa CDC", "cat": "global", "urls": [
         "https://africacdc.org/news/feed/",
         "https://africacdc.org/feed/",
@@ -173,7 +184,8 @@ BRONGEWICHT = {
     "Think Global Health": 4, "BMJ Global Health": 3, "WHO Alert": 3,
     "PLOS Global Public Health": 3, "Africa CDC": 3, "UN News Health": 3,
     "Global Health": 3, "Health Emergency": 3, "ReliefWeb Health": 2,
-    "Devex Global Health": 2, "ECDC": 2, "Eurosurveillance": 2,
+    "Devex Global Health": 2, "ECDC": 2, "ECDC Epidemiological updates": 3, "ECDC Threats report": 3,
+    "ECDC Risk assessments": 3, "Eurosurveillance": 2,
     "Politico EU Health": 2, "Euractiv Health": 2, "CIDRAP Public Health": 2,
     "CIDRAP Pandemic Influenza": 3,
     "CIDRAP Stewardship": 2, "ProMED": 2, "AMR Industry / news": 2,
