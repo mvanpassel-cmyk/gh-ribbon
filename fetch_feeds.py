@@ -243,6 +243,124 @@ def unwrap(url: str) -> str:
     return url
 
 
+# ---------------------------------------------------------------------------
+# Linkhygiëne. De Google Alerts-feeds halen het open web binnen, en daar zit
+# af en toe spam, clickbait of een link met een (tijdelijke) sleutel erin.
+#   1. Altijd weg: rare schema's, IP-adressen, inloggegevens in de URL,
+#      link-shorteners, goedkope spam-TLD's, pre-signed cloud-URL's (die
+#      bevatten een token en zijn na een uur dood) en de BLOKLIJST.
+#   2. Alleen bij open-web-feeds: social media weg (behalve LinkedIn), en
+#      onbekende domeinen zakken VERTROUWD_STRAF punten in de ranking.
+# Een domein vertrouwen of blokkeren = één regel in de lijsten hieronder.
+# Matching is op achtervoegsel: "who.int" dekt ook "emro.who.int".
+# ---------------------------------------------------------------------------
+OPEN_WEB_FEEDS = {"WHO Alert", "Health Emergency", "Global Health"}
+
+BLOKLIJST = {
+    "kalkine.com.au", "kalkinemedia.com", "goal.com", "unilad.com",
+    "tradingview.com", "indeed.com", "apps.apple.com",
+}
+
+SOCIAL = {
+    "facebook.com", "fb.com", "instagram.com", "x.com", "twitter.com",
+    "youtube.com", "youtu.be", "tiktok.com", "threads.net", "reddit.com",
+    "pinterest.com", "bsky.app", "t.me", "telegram.me", "whatsapp.com",
+}  # LinkedIn mag blijven: daar posten instituten zelf
+
+SHORTENERS = {
+    "bit.ly", "tinyurl.com", "t.co", "ow.ly", "buff.ly", "rebrand.ly",
+    "is.gd", "cutt.ly", "shorturl.at", "tiny.cc", "lnkd.in", "goo.gl",
+}
+
+SPAM_TLDS = {
+    "xyz", "top", "click", "loan", "work", "gq", "tk", "ml", "cf", "ga",
+    "icu", "buzz", "cam", "rest", "monster", "cfd", "sbs", "quest", "bond",
+    "zip", "mov", "win", "bid", "stream", "download", "racing", "review",
+}
+
+VERTROUWD = {
+    # VN, overheden, EU, kennisinstituten
+    "who.int", "un.org", "unicef.org", "unaids.org", "worldbank.org", "imf.org",
+    "europa.eu", "ecdc.europa.eu", "cdc.gov", "nih.gov", "rivm.nl", "rijksoverheid.nl",
+    "africacdc.org", "gavi.org", "theglobalfund.org", "unitaid.org", "cepi.net",
+    "gatesfoundation.org", "wellcome.org", "msf.org", "icrc.org", "ifrc.org",
+    "reliefweb.int", "paho.org", "chp.gov.hk", "nhs.uk", "gov.uk",
+    # wetenschap
+    "thelancet.com", "bmj.com", "nature.com", "science.org", "nejm.org",
+    "jamanetwork.com", "plos.org", "cell.com", "sciencedirect.com", "springer.com",
+    "wiley.com", "frontiersin.org", "mdpi.com", "dovepress.com", "medrxiv.org",
+    "biorxiv.org", "eurosurveillance.org", "sciencedaily.com", "news-medical.net",
+    "medicalxpress.com", "cidrap.umn.edu", "promedmail.org", "thinkglobalhealth.org",
+    # nieuws
+    "reuters.com", "apnews.com", "bbc.co.uk", "bbc.com", "theguardian.com",
+    "nytimes.com", "washingtonpost.com", "ft.com", "economist.com", "bloomberg.com",
+    "politico.eu", "politico.com", "euractiv.com", "devex.com", "statnews.com",
+    "npr.org", "aljazeera.com", "france24.com", "dw.com", "lemonde.fr",
+    "telegraph.co.uk", "independent.co.uk", "cbc.ca", "abc.net.au", "news.sky.com",
+    "theglobeandmail.com", "smithsonianmag.com", "time.com", "axios.com",
+    "healthpolicy-watch.news", "genevahealthfiles.com", "nos.nl", "nrc.nl",
+    "volkskrant.nl", "trouw.nl", "scmp.com", "thehindu.com", "indianexpress.com",
+    "timesofindia.indiatimes.com", "hindustantimes.com", "thejakartapost.com",
+    "tempo.co", "dailymaverick.co.za", "news24.com", "nation.africa",
+    "theeastafrican.co.ke", "allafrica.com", "chinadaily.com.cn", "kff.org",
+    "kffhealthnews.org", "fiercepharma.com", "firstwordpharma.com", "endpts.com",
+    "linkedin.com", "outbreaknewstoday.substack.com", "ourworldindata.org",
+    "pbs.org", "doctorswithoutborders.org", "eurekalert.org", "medscape.com",
+    "medpagetoday.com", "academic.oup.com", "royalsocietypublishing.org",
+    "the-scientist.com", "passblue.com", "annalsofglobalhealth.org", "ijhpm.com",
+    "nigeriahealthwatch.com", "thetimes.com", "observer.co.uk", "ctvnews.ca",
+    "usnews.com", "iol.co.za", "deccanherald.com", "gulfnews.com",
+    "koreajoongangdaily.com", "projecthope.org", "directrelief.org", "oas.org",
+    "ejiltalk.org", "theregreview.org", "cureus.com", "pfizer.com", "astrazeneca.com",
+}
+
+VERTROUWD_STRAF = 3   # heft precies het brongewicht van de Alerts-feeds op
+_IP = re.compile(r"^\d{1,3}(\.\d{1,3}){3}$|^\[?[0-9a-f:]+\]?$")
+_PRESIGNED = ("x-amz-signature", "x-amz-security-token", "x-amz-credential",
+              "x-goog-signature", "x-goog-credential", "googleaccessid=",
+              "sig=", "se=")      # laatste twee: Azure SAS-tokens (samen met sv=)
+
+
+def host_van(url: str) -> str:
+    host = (urllib.parse.urlparse(url).hostname or "").lower()
+    return host[4:] if host.startswith("www.") else host
+
+
+def _in(host: str, lijst) -> bool:
+    return any(host == d or host.endswith("." + d) for d in lijst)
+
+
+def link_oordeel(url: str, open_web: bool) -> tuple[bool, int, str]:
+    """(houden?, strafpunten, reden). Reden alleen gevuld bij weggooien."""
+    try:
+        p = urllib.parse.urlparse(url)
+    except Exception:
+        return False, 0, "onleesbare URL"
+    host = host_van(url)
+    q = (p.query or "").lower()
+    if p.scheme not in ("http", "https") or not host:
+        return False, 0, "geen http(s)"
+    if "@" in p.netloc:
+        return False, 0, "inloggegevens in URL"
+    if _IP.match(host):
+        return False, 0, "IP-adres"
+    if any(k in q for k in _PRESIGNED[:6]) or ("sig=" in q and "sv=" in q):
+        return False, 0, "pre-signed URL met token"
+    if _in(host, BLOKLIJST):
+        return False, 0, "bloklijst"
+    if _in(host, SHORTENERS):
+        return False, 0, "link-shortener"
+    if host.rsplit(".", 1)[-1] in SPAM_TLDS:
+        return False, 0, "spam-TLD"
+    if open_web:
+        if _in(host, SOCIAL):
+            return False, 0, "social media"
+        overheid = re.search(r"(^|\.)(gov|gouv|go|gob|govt|int|edu|ac)(\.[a-z]{2})?$", host)
+        if not (_in(host, VERTROUWD) or overheid):
+            return True, VERTROUWD_STRAF, ""
+    return True, 0, ""
+
+
 def iso(entry) -> str:
     for key in ("published_parsed", "updated_parsed"):
         t = entry.get(key)
@@ -344,6 +462,8 @@ def harvest(feed) -> tuple[list, str]:
                     "cat":     feed["cat"],
                     "date":    iso(e),
                     "summary": summary[:300],
+                    "domain":  host_van(e.get("source", {}).get("href") or "")
+                               if "news.google.com" in link else host_van(link),
                 })
                 items[-1]["score"] = score_item(items[-1], feed["label"])
             if not items:
@@ -473,6 +593,22 @@ def main() -> int:
             continue
         seen.add(key)
         merged.append(item)
+
+    schoon, weg = [], {}
+    for item in merged:
+        open_web = item.get("feed") in OPEN_WEB_FEEDS
+        houden, straf, reden = link_oordeel(item["url"], open_web)
+        if not houden:
+            weg[reden] = weg.get(reden, 0) + 1
+            continue
+        item = dict(item)
+        item.setdefault("domain", host_van(item["url"]))
+        item["score"] = score_item(item, item.get("feed", "")) - straf
+        schoon.append(item)
+    if weg:
+        print("  weggefilterd: " + ", ".join(f"{n}x {r}" for r, n in sorted(weg.items())))
+    merged = schoon
+    fresh = [i for i in fresh if link_oordeel(i["url"], i.get("feed") in OPEN_WEB_FEEDS)[0]]
 
     merged = ontdubbel_op_titel(merged, eerste_publicatie())
 

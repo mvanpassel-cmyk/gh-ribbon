@@ -186,6 +186,7 @@ body.geen-ticker .ticker-wrap { display: none; }
 .card[data-c="amr"]     .badge { background:rgba(255,92,138,.13);  color:var(--amr); }
 .card-date  { font-size:10px; color:var(--muted); }
 .card-src   { font-size:11px; color:var(--muted); font-style:italic; }
+.card-via   { font-style:normal; opacity:.85; }
 .card-title { font-family:'Syne',sans-serif; font-size:15px; font-weight:600; color:var(--bright); line-height:1.45; flex:1; }
 .card.feat .card-title { font-size:18px; }
 .card-sum  { font-size:12px; color:var(--text); line-height:1.8; opacity:.85; }
@@ -402,6 +403,13 @@ function htmlesc(s) {
                       .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 function esc(u) { return (u||'#').replace(/"/g,'%22').replace(/'/g,'%27'); }
+// Echte website achter een item, voor de "via"-regel. Google News verbergt
+// de uitgever achter een redirect; dan liever niets tonen dan news.google.com.
+function viaDomain(item) {
+  let d = item.domain;
+  if (!d) { try { d = new URL(item.url).hostname.replace(/^www\./, ''); } catch (e) { d = ''; } }
+  return (!d || d === 'news.google.com') ? '' : d;
+}
 
 function relDate(s) {
   if (!s) return '';
@@ -470,7 +478,7 @@ function renderTicker(items) {
   const track = document.getElementById('tk');
   if (!items.length) return;
   track.innerHTML = [...items.slice(0,40), ...items.slice(0,40)].map(i =>
-    `<a class="t-item" href="${esc(i.url)}" target="_blank" rel="noopener">
+    `<a class="t-item" href="${esc(i.url)}" target="_blank" rel="noopener noreferrer nofollow">
        <span class="t-sep">◆</span>
        <span class="t-src">${htmlesc(i.src)}</span>
        <span class="t-hl">${htmlesc(i.title)}</span>
@@ -501,13 +509,13 @@ function renderCards() {
   }
   document.getElementById('grid').innerHTML = visible.map((item, idx) => `
     <a class="card${idx===0?' feat':''}" data-c="${item.cat}"
-       href="${esc(item.url)}" target="_blank" rel="noopener"
+       href="${esc(item.url)}" target="_blank" rel="noopener noreferrer nofollow"
        style="animation-delay:${Math.min(idx,20)*.025}s">
       <div class="card-hd">
         <span class="badge">${CAT_LABEL[item.cat]||item.cat}</span>
         <span class="card-date">${relDate(item.date)}</span>
       </div>
-      <div class="card-src">${htmlesc(item.src)}</div>
+      <div class="card-src">${htmlesc(item.src)}${viaDomain(item) ? ` · <span class="card-via">via ${htmlesc(viaDomain(item))}</span>` : ''}</div>
       <div class="card-title">${htmlesc(item.title)}</div>
       ${item.summary ? `<div class="card-sum">${htmlesc(item.summary)}</div>` : ''}
       <span class="card-link">Read more ↗</span>

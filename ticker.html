@@ -125,7 +125,7 @@ async function load() {
     // Twee keer dezelfde reeks: de animatie schuift precies 50% op, dus
     // het einde sluit naadloos aan op het begin.
     const html = items.map(i => `
-      <a class="it" data-c="${he(i.cat)}" href="${esc(i.url)}" target="_blank" rel="noopener">
+      <a class="it" data-c="${he(i.cat)}" href="${esc(i.url)}" target="_blank" rel="noopener noreferrer nofollow">
         <span class="pip"></span>
         <span class="src">${he(i.src)}</span>
         <span class="hl">${he(i.title)}</span>
