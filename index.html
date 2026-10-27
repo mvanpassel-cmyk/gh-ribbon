@@ -187,6 +187,9 @@ body.geen-ticker .ticker-wrap { display: none; }
 .card-date  { font-size:10px; color:var(--muted); }
 .card-src   { font-size:11px; color:var(--muted); font-style:italic; }
 .card-via   { font-style:normal; opacity:.85; }
+.tag        { font-size:9px; font-weight:700; letter-spacing:.08em; padding:2px 6px; border-radius:3px; margin-left:6px; vertical-align:middle; }
+.tag-urgent { background:#d92d20; color:#fff; }
+.tag-new    { border:1px solid var(--accent); color:var(--accent); }
 .card-title { font-family:'Syne',sans-serif; font-size:15px; font-weight:600; color:var(--bright); line-height:1.45; flex:1; }
 .card.feat .card-title { font-size:18px; }
 .card-sum  { font-size:12px; color:var(--text); line-height:1.8; opacity:.85; }
@@ -289,7 +292,7 @@ footer {
 
   .card, .card.feat { grid-column: auto; padding: 10px 12px; gap: 4px 8px; flex-direction: row; flex-wrap: wrap; align-items: center; }
   .card-hd { display: contents; }
-  .card .badge { order: 1; }
+  .card .hd-l { order: 1; white-space: nowrap; }
   .card .card-src { order: 2; flex: 1 1 0; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .card .card-date { order: 3; flex-shrink: 0; }
   .card .card-title { order: 4; flex: 1 1 100%; }
@@ -428,15 +431,53 @@ function relDate(s) {
 const MAX_CARDS  = 30;   // bovengrens -- minder mag, opvullen met ruis niet
 const PER_BRON   = 5;    // hard dak per bron
 const MIN_RANK   = 0;    // hieronder valt een item af (te oud of te irrelevant)
-const VERVAL     = 2.5;  // puntenaftrek per dag ouderdom (was 1.2: een sterk item bleef dagenlang bovenaan staan)
+const VERS_UREN  = 24;   // alles jonger dan dit gaat altijd voor
+const MIN_VERS   = 12;   // pas als er minder verse items zijn, vullen we aan met oudere
+const NIEUW_UREN = 6;    // NEW-label
+const VERVAL_UUR = 0.25; // binnen de verse laag: puntenaftrek per uur (6 per dag)
+const VERVAL     = 2.5;  // oudere laag: puntenaftrek per dag
+
+// Urgentie: alarmerend nieuws krijgt een bonus die in 24 uur wegzakt, plus
+// een rood URGENT-label. Bewust specifieke frasen, geen losse ziektenamen:
+// "ebola" staat ook in elk achtergrondstuk.
+const URGENT_FEEDS = new Set(['WHO Disease Outbreak News', 'ECDC Threats report', 'ECDC Risk assessments']);
+const URGENT_RE = new RegExp([
+  'pheic', 'public health emergency of international concern', 'pandemic emergency',
+  'outbreak declared', 'declares? (an? )?outbreak', 'declared an outbreak',
+  'state of emergency', 'emergency declared', 'declares? (a |an )?(national |public health )?emergency',
+  'grade 3 emergency', 'health alert', 'death toll', 'deaths? (rise|rises|climb|surge)',
+  'cases (surge|soar|spike|double)', 'first (confirmed )?(human )?cases?\\b', 'spreads? to',
+  'human-to-human', 'new variant', 'novel (virus|pathogen|strain)', 'unknown disease',
+  'mystery (illness|disease)', 'marburg', 'nipah', 'h5n1 (in )?human', 'cholera outbreak',
+  'ebola outbreak', 'mpox (outbreak|clade)', 'disease outbreak news'
+].join('|'), 'i');
 
 let toonAlles = false;
 
+function uren(i) {
+  if (!i.date) return Infinity;
+  const h = (Date.now() - new Date(i.date)) / 3600000;
+  return isNaN(h) ? Infinity : Math.max(0, h);
+}
+function isVers(i)   { return uren(i) < VERS_UREN; }
+function isNieuw(i)  { return uren(i) < NIEUW_UREN; }
+function isUrgent(i) {
+  if (!isVers(i)) return false;
+  // Feed telt alleen als de link echt van WHO/ECDC is: valt de officiële feed
+  // terug op een Google News-zoekopdracht, dan komt daar van alles mee.
+  const officieel = /(^|\/\/|\.)(who\.int|ecdc\.europa\.eu)\//.test(i.url || '');
+  return (URGENT_FEEDS.has(i.feed) && officieel) || URGENT_RE.test((i.title || '') + ' ' + (i.summary || ''));
+}
+
 function rank(i) {
   const score = typeof i.score === 'number' ? i.score : 1;
-  if (!i.date) return score;
-  const dagen = (Date.now() - new Date(i.date)) / 86400000;
-  return score - (isNaN(dagen) ? 0 : dagen * VERVAL);
+  const h = uren(i);
+  if (h === Infinity) return score - 10;                  // datum onbekend: achteraan in de oude laag
+  if (h < VERS_UREN) {
+    const bonus = isUrgent(i) ? 15 * (1 - h / VERS_UREN) : 0;
+    return 1000 + score + bonus - h * VERVAL_UUR;         // verse laag gaat altijd voor
+  }
+  return score - (h / 24) * VERVAL;
 }
 
 // Beste eerst, beurtelings per bron, met een hard dak per bron.
@@ -448,7 +489,10 @@ function prioriteer(items) {
   if (toonAlles) return gesorteerd;
 
   // Te oud of te irrelevant valt af -- tenzij er dan te weinig overblijft.
-  let kandidaten = gesorteerd.filter(i => rank(i) >= MIN_RANK);
+  // Vers eerst. Oudere items alleen als er te weinig vers nieuws is.
+  const vers = gesorteerd.filter(isVers);
+  let kandidaten = vers.length >= MIN_VERS ? vers
+                 : vers.concat(gesorteerd.filter(i => !isVers(i) && rank(i) >= MIN_RANK));
   if (kandidaten.length < 8) kandidaten = gesorteerd;
 
   const perBron = new Map();
@@ -512,7 +556,7 @@ function renderCards() {
        href="${esc(item.url)}" target="_blank" rel="noopener noreferrer nofollow"
        style="animation-delay:${Math.min(idx,20)*.025}s">
       <div class="card-hd">
-        <span class="badge">${CAT_LABEL[item.cat]||item.cat}</span>
+        <span class="hd-l"><span class="badge">${CAT_LABEL[item.cat]||item.cat}</span>${isUrgent(item) ? '<span class="tag tag-urgent">URGENT</span>' : isNieuw(item) ? '<span class="tag tag-new">NEW</span>' : ''}</span>
         <span class="card-date">${relDate(item.date)}</span>
       </div>
       <div class="card-src">${htmlesc(item.src)}${viaDomain(item) ? ` · <span class="card-via">via ${htmlesc(viaDomain(item))}</span>` : ''}</div>
