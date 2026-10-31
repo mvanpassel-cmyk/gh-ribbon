@@ -32,6 +32,8 @@ import feedparser
 OUT           = pathlib.Path("data/feeds.json")
 ARCHIVE       = pathlib.Path("data/archive.csv")  # groeit dagelijks aan, opent in Excel/Numbers
 MAX_AGE_DAYS  = 21     # ouder dan dit valt uit de cache
+# Trage onderwerpen: hier verschijnt minder nieuws, dus items mogen langer blijven.
+MAX_AGE_PER_CAT = {"pandemic": 60, "ntd": 60, "amr": 45}
 MAX_PER_FEED  = 12     # per bron meenemen
 MAX_TOTAL     = 700    # harde bovengrens op het bestand
 TIMEOUT       = 25
@@ -658,13 +660,18 @@ def main() -> int:
         if not i.get("date"):
             return True                      # datum onbekend: laten staan
         try:
-            return datetime.fromisoformat(i["date"]) >= cutoff
+            grens = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_PER_CAT.get(i.get("cat"), MAX_AGE_DAYS))
+            return datetime.fromisoformat(i["date"]) >= grens
         except Exception:
             return True
 
     merged = [i for i in merged if recent(i)]
     merged.sort(key=lambda i: i.get("date") or "", reverse=True)
-    merged = merged[:MAX_TOTAL]
+    # De bovengrens mag de trage onderwerpen niet wegdrukken: die tellen apart.
+    traag = [i for i in merged if i.get("cat") in MAX_AGE_PER_CAT]
+    rest = [i for i in merged if i.get("cat") not in MAX_AGE_PER_CAT]
+    merged = sorted(traag + rest[:max(0, MAX_TOTAL - len(traag))],
+                    key=lambda i: i.get("date") or "", reverse=True)
 
     ok = sum(1 for v in status.values() if v["ok"])
     OUT.parent.mkdir(parents=True, exist_ok=True)
