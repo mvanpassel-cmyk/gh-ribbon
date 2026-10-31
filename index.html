@@ -29,6 +29,8 @@
   --policy:  #ff8f00;
   --news:    #26a69a;
   --amr:     #ff5c8a;
+  --ntd:     #8bc34a;
+  --pandemic:#e040fb;
 }
 
 html, body { height: 100%; }
@@ -184,6 +186,15 @@ body.geen-ticker .ticker-wrap { display: none; }
 .card[data-c="policy"]  .badge { background:rgba(255,143,0,.13);   color:var(--policy); }
 .card[data-c="news"]    .badge { background:rgba(38,166,154,.13);  color:var(--news); }
 .card[data-c="amr"]     .badge { background:rgba(255,92,138,.13);  color:var(--amr); }
+.fbtn[data-c="ntd"].on      { border-color:var(--ntd);      color:var(--ntd);      background:rgba(139,195,74,.08); }
+.fbtn[data-c="pandemic"].on { border-color:var(--pandemic); color:var(--pandemic); background:rgba(224,64,251,.08); }
+.fbtn[data-c="ntd"]      .dot { background:var(--ntd); }
+.fbtn[data-c="pandemic"] .dot { background:var(--pandemic); }
+.card[data-c="ntd"]::after      { background:var(--ntd); }
+.card[data-c="pandemic"]::after { background:var(--pandemic); }
+.card[data-c="ntd"]      .badge { background:rgba(139,195,74,.13); color:var(--ntd); }
+.card[data-c="pandemic"] .badge { background:rgba(224,64,251,.13); color:var(--pandemic); }
+
 .card-date  { font-size:10px; color:var(--muted); }
 .card-src   { font-size:11px; color:var(--muted); font-style:italic; }
 .card-via   { font-style:normal; opacity:.85; }
@@ -345,6 +356,8 @@ footer {
   <button class="fbtn on" data-c="emerg"  onclick="tog('emerg')"> <span class="dot"></span>Emergency</button>
   <button class="fbtn on" data-c="global" onclick="tog('global')"><span class="dot"></span>Global Health</button>
   <button class="fbtn on" data-c="amr"    onclick="tog('amr')">   <span class="dot"></span>AMR</button>
+  <button class="fbtn on" data-c="ntd"    onclick="tog('ntd')">   <span class="dot"></span>NTDs</button>
+  <button class="fbtn on" data-c="pandemic" onclick="tog('pandemic')"><span class="dot"></span>Pandemic accord</button>
   <div class="filter-sep"></div>
   <span class="flbl">RSS:</span>
   <button class="fbtn on" data-c="journal" onclick="tog('journal')"><span class="dot"></span>Journals</button>
@@ -394,7 +407,7 @@ const DATA = 'data/feeds.json';
 
 let allItems = [];
 let feedStatus = {};
-let active = new Set(['who','promed','emerg','global','amr','journal','policy','news']);
+let active = new Set(['who','promed','emerg','global','amr','ntd','pandemic','journal','policy','news']);
 
 setInterval(() => {
   document.getElementById('clk').textContent =
@@ -515,7 +528,7 @@ function prioriteer(items) {
 
 const CAT_LABEL = {
   who:'WHO', promed:'PROMED', emerg:'EMERGENCY', global:'GLOBAL HEALTH',
-  amr:'AMR', journal:'JOURNAL', policy:'POLICY', news:'NEWS'
+  amr:'AMR', ntd:'NTDs', pandemic:'PANDEMIC ACCORD', journal:'JOURNAL', policy:'POLICY', news:'NEWS'
 };
 
 function renderTicker(items) {

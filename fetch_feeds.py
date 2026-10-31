@@ -33,7 +33,7 @@ OUT           = pathlib.Path("data/feeds.json")
 ARCHIVE       = pathlib.Path("data/archive.csv")  # groeit dagelijks aan, opent in Excel/Numbers
 MAX_AGE_DAYS  = 21     # ouder dan dit valt uit de cache
 MAX_PER_FEED  = 12     # per bron meenemen
-MAX_TOTAL     = 400    # harde bovengrens op het bestand
+MAX_TOTAL     = 700    # harde bovengrens op het bestand
 TIMEOUT       = 25
 RETRIES       = 2
 
@@ -44,7 +44,7 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
 
 # ---------------------------------------------------------------------------
 # Feeds. cat moet overeenkomen met de filterknoppen in index.html:
-#   who | promed | emerg | global | amr | journal | policy | news
+#   who | promed | emerg | global | amr | ntd | pandemic | journal | policy | news
 # Een feed die blijft falen kun je gewoon uitcommentariëren.
 # ---------------------------------------------------------------------------
 def gnews(zoekterm: str) -> str:
@@ -130,6 +130,40 @@ FEEDS = [
         gnews("antimicrobial resistance policy")]},
 
     # --- Journals --------------------------------------------------------------------
+    {"label": "AMR policy & research", "cat": "amr", "urls": [
+        gnews('"antimicrobial resistance" OR "drug-resistant" OR superbugs')]},
+    {"label": "AMR global governance", "cat": "amr", "urls": [
+        gnews('Quadripartite AMR OR "Global Leaders Group" antimicrobial OR "Independent Panel on Evidence" antimicrobial')]},
+    {"label": "Antibiotic R&D (GARDP, CARB-X)", "cat": "amr", "urls": [
+        gnews('GARDP OR CARB-X OR "AMR Action Fund" antibiotic')]},
+    {"label": "ReAct", "cat": "amr", "urls": [
+        "https://www.reactgroup.org/feed/",
+        gnews("ReAct antibiotic resistance")]},
+
+    # --- Neglected tropical diseases ------------------------------------------
+    {"label": "PLOS NTDs", "cat": "ntd", "urls": [
+        "https://journals.plos.org/plosntds/feed/atom"]},
+    {"label": "NTD news", "cat": "ntd", "urls": [
+        gnews('"neglected tropical diseases" OR schistosomiasis OR trachoma OR onchocerciasis OR leishmaniasis OR "sleeping sickness" OR "lymphatic filariasis"')]},
+    {"label": "WHO NTDs", "cat": "ntd", "urls": [
+        gnews('WHO "neglected tropical disease" eliminated OR elimination')]},
+    {"label": "DNDi", "cat": "ntd", "urls": [
+        "https://dndi.org/feed/",
+        gnews("DNDi drugs for neglected diseases")]},
+    {"label": "Uniting to Combat NTDs", "cat": "ntd", "urls": [
+        "https://unitingtocombatntds.org/en/feed/",
+        gnews('"Uniting to Combat" NTDs')]},
+
+    # --- Pandemic agreement, PABS, IHR -----------------------------------------
+    {"label": "Pandemic Agreement", "cat": "pandemic", "urls": [
+        gnews('"pandemic agreement" WHO')]},
+    {"label": "PABS / IGWG", "cat": "pandemic", "urls": [
+        gnews('PABS pathogen access benefit sharing OR IGWG pandemic')]},
+    {"label": "IHR amendments", "cat": "pandemic", "urls": [
+        gnews('"International Health Regulations" amendments OR "pandemic emergency"')]},
+    {"label": "Pandemic Fund & financing", "cat": "pandemic", "urls": [
+        gnews('"Pandemic Fund" OR "pandemic preparedness" financing WHO')]},
+
     {"label": "The Lancet", "cat": "journal", "urls": [
         "https://www.thelancet.com/rssfeed/lancet_online.xml"]},
     {"label": "Lancet Global Health", "cat": "journal", "urls": [
@@ -191,12 +225,16 @@ BRONGEWICHT = {
     "CIDRAP Stewardship": 2, "ProMED": 2, "AMR Industry / news": 2,
     "The Lancet": 1, "BMJ": 1, "STAT News": 1,
     "Grand Challenges": 2,
+    "AMR policy & research": 2, "AMR global governance": 3, "Antibiotic R&D (GARDP, CARB-X)": 2, "ReAct": 3,
+    "PLOS NTDs": 2, "NTD news": 2, "WHO NTDs": 3, "DNDi": 3, "Uniting to Combat NTDs": 3,
+    "Pandemic Agreement": 4, "PABS / IGWG": 4, "IHR amendments": 3, "Pandemic Fund & financing": 3,
 }
 
 TERMEN = {
     # kern van de portefeuille
     5: ["pandemic agreement", "pandemic treaty", "pabs", "igwg", "pandemisch",
-        "international health regulations", "world health assembly", "global health"],
+        "international health regulations", "world health assembly", "global health",
+        "pandemic fund", "pathogen access", "neglected tropical"],
     3: ["who ", "world health organization", "antimicrobial resistance", " amr ",
         "pandemic preparedness", "health security", "health emergency", "outbreak",
         "one health", "universal health coverage", "health financing",
@@ -204,6 +242,9 @@ TERMEN = {
     2: ["vaccine", "epidemic", "surveillance", "cholera", "mpox", "measles", "polio",
         "ebola", "influenza", "tuberculosis", "malaria", "hiv", "climate and health",
         "africa cdc", "ecdc", "hera", "eu health", "european commission",
+        "schistosomiasis", "trachoma", "onchocerciasis", "river blindness", "leishmaniasis",
+        "sleeping sickness", "lymphatic filariasis", "chagas", "snakebite", "leprosy", "yaws",
+        "superbug", "drug-resistant", "antibiotic",
         "indonesia", "south africa", "kenya", "india", "china"],
     # ruis: klinisch/commercieel VS-nieuws dat hier zelden toe doet
     -3: ["earnings", "ipo", "stock", "shares", "acquisition", "medicare",
