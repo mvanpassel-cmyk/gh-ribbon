@@ -22,6 +22,8 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # altijd de nieuwste stand, niet de commit die de run startte
 
       - uses: actions/setup-python@v5
         with:
@@ -43,6 +45,7 @@ jobs:
             git commit -m "feeds: $(date -u '+%Y-%m-%d %H:%M UTC')"
             # Iemand kan intussen iets anders gepusht hebben (bv. de wereldagenda):
             # eerst bijwerken, anders weigert GitHub de push.
-            git pull --rebase origin main
+            # Botst het toch (twee runs vlak na elkaar), dan wint de net geoogste versie.
+            git pull --rebase -X theirs origin main
             git push
           fi
