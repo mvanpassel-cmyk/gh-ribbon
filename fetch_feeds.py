@@ -220,7 +220,7 @@ BRONGEWICHT = {
     "Think Global Health": 4, "BMJ Global Health": 3, "WHO Alert": 3,
     "PLOS Global Public Health": 3, "Africa CDC": 3, "UN News Health": 3,
     "Global Health": 3, "Health Emergency": 3, "ReliefWeb Health": 2,
-    "Devex Global Health": 2, "ECDC": 2, "ECDC Epidemiological updates": 3, "ECDC Threats report": 3,
+    "Devex Global Health": 2, "ECDC": 3, "ECDC Epidemiological updates": 3, "ECDC Threats report": 3,
     "ECDC Risk assessments": 3, "Eurosurveillance": 2,
     "Politico EU Health": 2, "Euractiv Health": 2, "CIDRAP Public Health": 2,
     "CIDRAP Pandemic Influenza": 3,
@@ -236,7 +236,10 @@ TERMEN = {
     # kern van de portefeuille
     5: ["pandemic agreement", "pandemic treaty", "pabs", "igwg", "pandemisch",
         "international health regulations", "world health assembly", "global health",
-        "pandemic fund", "pathogen access", "neglected tropical"],
+        "pandemic fund", "pathogen access", "neglected tropical",
+        # paraatheidsbeoordelingen (JEE, SPAR, PHEPA, IHR benchmarks): eigen tools in de toolbox
+        "preparedness assessment", "phepa", "joint external evaluation", "states parties self-assessment",
+        "ihr benchmark", "emergency preparedness", "preparedness and response"],
     3: ["who ", "world health organization", "antimicrobial resistance", " amr ",
         "pandemic preparedness", "health security", "health emergency", "outbreak",
         "one health", "universal health coverage", "health financing",
@@ -628,9 +631,27 @@ def main() -> int:
                                      "cat": feed["cat"]}
             print(f"  FAIL  {feed['label']:<26} {type(e).__name__}: {e}", file=sys.stderr)
 
+    # Veel officiele feeds (ECDC, WHO) geven alleen een datum, geen tijd: dan lijkt
+    # een bericht dat 's middags verschijnt bij binnenkomst al 13 uur oud en zakt het
+    # meteen uit de verse laag. Bij zulke datum-zonder-tijd-items rekenen we vanaf
+    # het moment dat de harvester ze voor het eerst zag.
+    vorige = load_previous()
+    al_gezien = {i.get("url") for i in vorige}
+    nu = datetime.now(timezone.utc)
+    for item in fresh:
+        d = item.get("date") or ""
+        if item.get("url") in al_gezien or "T00:00:00" not in d:
+            continue
+        try:
+            leeftijd = nu - datetime.fromisoformat(d)
+        except Exception:
+            continue
+        if timedelta(0) <= leeftijd < timedelta(hours=36):
+            item["date"] = nu.isoformat(timespec="seconds")
+
     # Nieuw wint van oud, maar oude items blijven bestaan zolang ze vers zijn.
     merged, seen = [], set()
-    for item in fresh + load_previous():
+    for item in fresh + vorige:
         key = item.get("url")
         if not key or key in seen:
             continue
