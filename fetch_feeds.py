@@ -249,12 +249,23 @@ TERMEN = {
         "africa cdc", "ecdc", "hera", "eu health", "european commission",
         "schistosomiasis", "trachoma", "onchocerciasis", "river blindness", "leishmaniasis",
         "sleeping sickness", "lymphatic filariasis", "chagas", "snakebite", "leprosy", "yaws",
-        "superbug", "drug-resistant", "antibiotic",
+        "superbug", "drug-resistant", "antibiotic", "climate",
         "indonesia", "south africa", "kenya", "india", "china"],
+    # internationale reikwijdte: daar gaat het om
+    1: ["international", "worldwide", "cross-border", "multilateral", "countries", "regional",
+        "united nations", " un ", "g20", "g7", "african union", "member states", "global"],
+    # ruis: beroemdheden, entertainment, sport en lokale incidenten zonder internationale impact
+    -8: ["singer", "actress", "actor", "rapper", "celebrity", "pop star", "rock star", "tour dates",
+         "concert", "cancels shows", "postpone shows", "hospitalized", "hospitalised", "rushed to hospital",
+         "plane incident", "arrested", "arrest", "page six", "tmz", "royal family", "footballer",
+         "nfl", "nba", "premier league", "jet lag", "horoscope", "recipe"],
     # ruis: klinisch/commercieel VS-nieuws dat hier zelden toe doet
     -3: ["earnings", "ipo", "stock", "shares", "acquisition", "medicare",
          "medicaid", "obesity drug", "series a", "series b", "funding round"],
 }
+
+
+MIN_INHOUD_OPEN_WEB = 4   # minstens een kernwoord (gewicht 3) of twee lichtere
 
 
 def score_item(item, feed_label: str) -> int:
@@ -668,6 +679,11 @@ def main() -> int:
         item = dict(item)
         item.setdefault("domain", host_van(item["url"]))
         item["score"] = score_item(item, item.get("feed", "")) - straf
+        # Google Alerts en andere open-web feeds vangen veel ruis ("medical emergency"
+        # van een zanger). Die houden we alleen als de inhoud zelf relevant is.
+        if open_web and item["score"] - BRONGEWICHT.get(item.get("feed", ""), 1) + straf < MIN_INHOUD_OPEN_WEB:
+            weg["open web, te weinig relevant"] = weg.get("open web, te weinig relevant", 0) + 1
+            continue
         schoon.append(item)
     if weg:
         print("  weggefilterd: " + ", ".join(f"{n}x {r}" for r, n in sorted(weg.items())))
