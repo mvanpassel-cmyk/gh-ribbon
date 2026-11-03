@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-03T07:10:30+00:00",
- "feeds_ok": 21,
+ "generated": "2026-11-03T15:20:28+00:00",
+ "feeds_ok": 44,
  "feeds_tot": 44,
  "status": {
   "WHO News": {
@@ -9,8 +9,8 @@
    "cat": "who"
   },
   "WHO Disease Outbreak News": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 404: Not Found | [3] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 3)",
    "cat": "who"
   },
   "WHO Alert": {
@@ -20,12 +20,12 @@
   },
   "UN News Health": {
    "ok": true,
-   "msg": "12 items",
+   "msg": "12 items (via kandidaat 3)",
    "cat": "who"
   },
   "ProMED": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 2)",
    "cat": "promed"
   },
   "CIDRAP Public Health": {
@@ -39,8 +39,8 @@
    "cat": "promed"
   },
   "Eurosurveillance": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 2)",
    "cat": "promed"
   },
   "Health Emergency": {
@@ -49,8 +49,8 @@
    "cat": "emerg"
   },
   "ReliefWeb Health": {
-   "ok": false,
-   "msg": "RuntimeError: [1] ValueError: 0 entries | [2] ValueError: 0 entries | [3] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 3)",
    "cat": "emerg"
   },
   "Global Health": {
@@ -79,13 +79,13 @@
    "cat": "emerg"
   },
   "Africa CDC": {
-   "ok": false,
-   "msg": "RuntimeError: [1] ValueError: 0 entries | [2] ValueError: 0 entries | [3] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 3)",
    "cat": "global"
   },
   "Think Global Health": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 404: Not Found | [3] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 3)",
    "cat": "global"
   },
   "CIDRAP Stewardship": {
@@ -99,23 +99,23 @@
    "cat": "amr"
   },
   "AMR policy & research": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items",
    "cat": "amr"
   },
   "AMR global governance": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items",
    "cat": "amr"
   },
   "Antibiotic R&D (GARDP, CARB-X)": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items",
    "cat": "amr"
   },
   "ReAct": {
-   "ok": false,
-   "msg": "RuntimeError: [1] ValueError: 0 entries | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 2)",
    "cat": "amr"
   },
   "PLOS NTDs": {
@@ -124,43 +124,43 @@
    "cat": "ntd"
   },
   "NTD news": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items",
    "cat": "ntd"
   },
   "WHO NTDs": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items",
    "cat": "ntd"
   },
   "DNDi": {
-   "ok": false,
-   "msg": "RuntimeError: [1] ValueError: 0 entries | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 2)",
    "cat": "ntd"
   },
   "Uniting to Combat NTDs": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 404: Not Found | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 2)",
    "cat": "ntd"
   },
   "Pandemic Agreement": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items",
    "cat": "pandemic"
   },
   "PABS / IGWG": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items",
    "cat": "pandemic"
   },
   "IHR amendments": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items",
    "cat": "pandemic"
   },
   "Pandemic Fund & financing": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items",
    "cat": "pandemic"
   },
   "The Lancet": {
@@ -194,18 +194,18 @@
    "cat": "policy"
   },
   "Geneva Health Files": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 2)",
    "cat": "policy"
   },
   "Politico EU Health": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 2)",
    "cat": "policy"
   },
   "Euractiv Health": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 2)",
    "cat": "policy"
   },
   "STAT News": {
@@ -214,60 +214,412 @@
    "cat": "news"
   },
   "Devex Global Health": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 403: Forbidden | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items (via kandidaat 2)",
    "cat": "news"
   },
   "Grand Challenges": {
-   "ok": false,
-   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "ok": true,
+   "msg": "12 items",
    "cat": "news"
   }
  },
  "items": [
   {
-   "title": "Global , regional and national burden of cervical cancer in 1990–2023 with forecasts to 2050",
-   "url": "https://www.nature.com/articles/s41591-026-04729-4",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-03T04:48:18+00:00",
-   "summary": "All cervical cancer DALYs were attributable to human papillomavirus infection, with tobacco use contributing 5.9% (3.2–9.3) globally . By 2050, global ...",
-   "domain": "nature.com",
-   "score": 7
+   "title": "Funders Float ‘Natural Selection’ for Non-Profit Neglected Disease Drug Developers as Global Health Aid Dries Up",
+   "url": "https://healthpolicy-watch.news/funders-float-natural-selection-for-non-profit-neglected-disease-drug-developers-as-global-health-aid-dries-up/",
+   "src": "Health Policy Watch",
+   "feed": "Health Policy Watch",
+   "cat": "policy",
+   "date": "2026-11-03T15:15:58+00:00",
+   "summary": "In the late 1990s, doctors treating sleeping sickness, a parasitic disease spread by tsetse flies that is almost always fatal without treatment, still relied on melarsoprol, an arsenic-based drug that killed roughly one patient in 20. One patient given melarsoprol in 2003 later recalled the injectio",
+   "domain": "healthpolicy-watch.news",
+   "score": 18
   },
   {
-   "title": "From Athens to Rio de Janeiro, How Cities Are Reducing Drug-Related Harms",
-   "url": "https://www.thinkglobalhealth.org/article/from-athens-to-rio-de-janeiro-how-cities-are-reducing-drug-related-harms",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-03T04:34:55+00:00",
-   "summary": "Think Global Health · Environment · Poverty · Trade · Governance · Food · Urbanization · Aging · Gender · Migration · Data Visualization ...",
-   "domain": "thinkglobalhealth.org",
-   "score": 9
+   "title": "STAT+: FDA, CMS look to collaborate with states on health AI",
+   "url": "https://www.statnews.com/2026/11/03/fda-cms-collaborate-with-states-on-ai-heath-tech/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-11-03T14:51:12+00:00",
+   "summary": "In this edition of STAT Health Tech: Federal officials look to work with states on regulating AI, protecting doctors from AI liability, and more.",
+   "domain": "statnews.com",
+   "score": 1
   },
   {
-   "title": "Seventh WHO Global School on Refugee and Migrant Health | November 23-27, 2026",
-   "url": "https://globalhealth.stanford.edu/event/seventh-who-global-school-on-refugee-and-migrant-health-november-23-27-2027.html/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-03T03:59:48+00:00",
-   "summary": "Organized by PHM and Hosted by the Ministry of Health of Spain under the theme “Advancing equity and inclusion: future directions in refugee and ...",
-   "domain": "globalhealth.stanford.edu",
+   "title": "STAT+: Pharmalittle: We’re reading about a generic HIV prevention shot, Lonza buying U.S. facilities, and more",
+   "url": "https://www.statnews.com/pharmalot/2026/11/03/generic-hiv-prevention-shot-lonza-buying-facilities-in-us/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-11-03T14:44:54+00:00",
+   "summary": "The FDA gave tentative approval to Dr. Reddy’s Laboratories to make a generic version of a groundbreaking HIV prevention medicine",
+   "domain": "statnews.com",
+   "score": 5
+  },
+  {
+   "title": "[Editorial] Is global health dead?",
+   "url": "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(26)00290-1/fulltext?rss=yes",
+   "src": "Lancet Global Health",
+   "feed": "Lancet Global Health",
+   "cat": "journal",
+   "date": "2026-11-03T14:42:00+00:00",
+   "summary": "Global health is undergoing an existential crisis. 5 years ago, we invited readers to tell us what was wrong with it, and the result was a rich catalogue of thought pieces on “The future of global health research, publishing, and practice”. Those in the field acknowledged its colonial roots and the ",
+   "domain": "thelancet.com",
+   "score": 16
+  },
+  {
+   "title": "Ethiopia hosts first Emergency Medical Teams global meeting in Africa",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbzc2UTNmeF9DaUdTYnRRczZ6NUFtTk1QSGRldzY0YXVNVGVUQlFGYk1RUll5V1BqcWN6SUVoU0RtaEJabDRROW9GbnFSUkZJb0lCNlhjSGFvTmFGNjZkMHY2Z1NuQnBiLVdwaVhWdU41czZaX21XRmhrN3RDUzJObmw5UjdTa2EzNWVrSVYxQXh5NmtzOG11YXowNng5Umd3SEI4?oc=5",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-03T14:21:33+00:00",
+   "summary": "Ethiopia hosts first Emergency Medical Teams global meeting in Africa ReliefWeb",
+   "domain": "reliefweb.int",
+   "score": 4
+  },
+  {
+   "title": "Nicotine Exemption: A Step Backwards For Public Health , Children At Risk Of Addiction",
+   "url": "https://codeblue.galencentre.org/2026/11/nicotine-exemption-a-step-backwards-for-public-health-children-at-risk-of-addiction-amam-fpmpam/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-03T14:09:42+00:00",
+   "summary": "... health and children from nicotine addiction. Malaysia ratified the World Health Organization Framework Convention on Tobacco Control (WHO FCTC) in ...",
+   "domain": "codeblue.galencentre.org",
+   "score": 6
+  },
+  {
+   "title": "Child dies of measles in New York’s first such death in 30 years",
+   "url": "https://www.statnews.com/2026/11/03/child-dies-measles-new-york-first-death-30-years/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-11-03T13:48:16+00:00",
+   "summary": "A child in rural northern New York has died after contracting measles, marking the state's first death from the disease in 30 years.",
+   "domain": "statnews.com",
+   "score": 5
+  },
+  {
+   "title": "Early warning system for deteriorating children to expand to emergency departments across England",
+   "url": "http://www.bmj.com/content/395/bmj-2026-101323.short?rss=1",
+   "src": "BMJ",
+   "feed": "BMJ",
+   "cat": "journal",
+   "date": "2026-11-03T13:26:22+00:00",
+   "summary": "An early warning system to spot deteriorating children will be rolled out across England’s emergency departments this winter.Called the Paediatric Early Warning System (PEWS), this requires staff to measure, record, and assess children’s vital signs, before assigning them a score. A higher score wil",
+   "domain": "bmj.com",
+   "score": 1
+  },
+  {
+   "title": "Bundibugyo Ebola outbreak: DRC cases climb to more than 10 000",
+   "url": "http://www.bmj.com/content/395/bmj-2026-101314.short?rss=1",
+   "src": "BMJ",
+   "feed": "BMJ",
+   "cat": "journal",
+   "date": "2026-11-03T13:21:18+00:00",
+   "summary": "bmj;395/nov03_13/e101314/F1F1f1Xinhua/AlamyThe graves of people who have died from Ebola virus disease continue to spread around the outskirts of Bunia, the capital of the Democratic Republic of the Congo’s Ituri province. The outbreak has now claimed almost 5000 lives, and the number of confirmed c",
+   "domain": "bmj.com",
    "score": 14
   },
   {
-   "title": "Global Health Security: NZ's Role in Pandemic Preparedness | University of Waikato",
-   "url": "https://www.waikato.ac.nz/news-events/news/nz-has-retreated-from-global-cooperation-on-health-security-can-a-new-government-change-course/",
+   "title": "First U.S. bird flu death of the year after cattle exposure",
+   "url": "https://www.statnews.com/2026/11/03/health-news-first-us-bird-flu-death-after-cattle-exposure-2026/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-11-03T12:52:30+00:00",
+   "summary": "A person in Washington state has died from complications of the bird flu, the AP reported yesterday. It’s the first such death this year in the U.S., and the third…",
+   "domain": "statnews.com",
+   "score": 1
+  },
+  {
+   "title": "Medanta operator's profit jumps 39%, plans ₹997 crore Ghaziabad hospital - CNBC TV18",
+   "url": "https://www.linkedin.com/posts/cnbc-tv18_global-health-q2-medanta-operators-profit-activity-7523357245598855168-EPrO",
    "src": "Global Health",
    "feed": "Global Health",
    "cat": "global",
-   "date": "2026-11-03T03:10:07+00:00",
-   "summary": "University of Waikato law professor Alexander Gillespie examines NZ's retreat from global health cooperation and what the next government can do.",
-   "domain": "waikato.ac.nz",
-   "score": 27
+   "date": "2026-11-03T12:20:09+00:00",
+   "summary": "Global Health's Q2 net profit rose 39.3% to ₹220.6 crore, while EBITDA margin expanded to 25.2%. ✍️ Sheersh Kapoor reports on the results and ...",
+   "domain": "linkedin.com",
+   "score": 9
+  },
+  {
+   "title": "Sign in - CPHIA 2026 - Africa CDC",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9vN3czSDliZXgyd19mNUg2SVBSUTU2bWpZNFBFTUQyQ3pwckVmcVN6X19RV1pNdm8yb043MWU2ZmRMRVpxT0IzNEQwVmFKc2Y1NjBhN2hQck8?oc=5",
+   "src": "5th International Conference on Public Health in Africa",
+   "feed": "Africa CDC",
+   "cat": "global",
+   "date": "2026-11-03T12:10:19+00:00",
+   "summary": "Sign in - CPHIA 2026 - Africa CDC 5th International Conference on Public Health in Africa",
+   "domain": "cphia.africacdc.org",
+   "score": 8
+  },
+  {
+   "title": "We are failing to acknowledge or respond proportionately to the potential dangers of AI agents",
+   "url": "http://www.bmj.com/content/395/bmj-2026-101263.short?rss=1",
+   "src": "BMJ",
+   "feed": "BMJ",
+   "cat": "journal",
+   "date": "2026-11-03T12:01:19+00:00",
+   "summary": "The BMJ covered the OpenAI hack of an Australian government health website1 and its potential implications.2 But the scale and severity of the implications do not seem to be fully appreciated. This event presents some simple truths, but it’s unclear if we can bring ourselves to acknowledge them or r",
+   "domain": "bmj.com",
+   "score": 1
+  },
+  {
+   "title": "PFAS: UK population exposure to be examined in new study",
+   "url": "http://www.bmj.com/content/395/bmj-2026-101324.short?rss=1",
+   "src": "BMJ",
+   "feed": "BMJ",
+   "cat": "journal",
+   "date": "2026-11-03T11:46:23+00:00",
+   "summary": "A new study to examine levels of so called “forever chemicals” in the UK population and their potential effects on human health will be launched by health officials.The UK Health Security Agency (UKHSA) will look at blood and urine samples to examine population level exposure to perfluoroalkyl and p",
+   "domain": "bmj.com",
+   "score": 4
+  },
+  {
+   "title": "Launch of WHO's first Collaborating Centre for One Health Implementation in the Western Pacific",
+   "url": "https://www.who.int/macaochina/news/feature-stories/item/first-collaborating-centre-for-one-health-implementation-in-the-western-pacific",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-03T11:11:05+00:00",
+   "summary": "On 26 October 2026, the World Health Organization (WHO) inaugurated the Western Pacific Region's first WHO Collaborating Centre for One Health ...",
+   "domain": "who.int",
+   "score": 15
+  },
+  {
+   "title": "Helen Salisbury: Learning to say no to patient requests",
+   "url": "http://www.bmj.com/content/395/bmj-2026-101305.short?rss=1",
+   "src": "BMJ",
+   "feed": "BMJ",
+   "cat": "journal",
+   "date": "2026-11-03T10:56:27+00:00",
+   "summary": "There’s a simple model of general practice where a patient with newly occurring symptoms seeks help from a doctor. The doctor arrives at a diagnosis and then reassures, treats, or refers the patient on for hospital care. Sometimes this is what happens, but increasingly patients come to us having alr",
+   "domain": "bmj.com",
+   "score": 1
+  },
+  {
+   "title": "The quiet pandemic and the Aussies halting it",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPS3BEMU5WMnB5eTVBRXgtV2s1QUxVMlBTOTUxVzdJWVBtUXNEVUhrVDc1QVk0cUZLdjhzTFhBLTBETWZaNmhDUW9kU2tXRkdwSHpBVmJhWlQtVU9vS1Z4eHEwTnlTblc1bW9qQjhZeWRVNzQ0ZW9FRUpNZzRScDJieXZqekd3QjdNTHZLMy0waGxOU3pvdTkzUjJPWHdHdE10NXNHTERDd2I0SFlPY0lIU21BVlBQdk1NdlNFYXZuaGI1cXp5ZXl1cUo1ZGpYaFBhRkNfa19DRGlCRHk0M2lNdHFTT2s1M0RYcWpjVS1rdkllRVZJeVdORkMwVXQtdE5VRTNsUQ?oc=5",
+   "src": "The Australian",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-03T10:13:46+00:00",
+   "summary": "The quiet pandemic and the Aussies halting it The Australian",
+   "domain": "theaustralian.com.au",
+   "score": 2
+  },
+  {
+   "title": "Global coalition urges WHO to update decades-old drinking water guidelines as studies link ...",
+   "url": "https://www.greenpeace.org/international/press-release/86816/who-nitrate-drinking-water-guidelines-health-risks/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-03T10:11:37+00:00",
+   "summary": "Over 80 leading global health , environment, and food advocacy organisations including Greenpeace International, the International Panel of Experts ...",
+   "domain": "greenpeace.org",
+   "score": 14
+  },
+  {
+   "title": "From Referee to Coach: Toward Smart Global Health Regulation - MDPI",
+   "url": "https://www.mdpi.com/2227-9032/14/21/3740",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-03T09:59:53+00:00",
+   "summary": "The 2025 Sir Alasdair Breckenridge Lecture “From Setbacks to Breakthroughs: The Development of Smart Healthcare Regulation” was delivered by Professor ...",
+   "domain": "mdpi.com",
+   "score": 15
+  },
+  {
+   "title": "One Health must be at the heart of stronger health systems | Action for Global Health",
+   "url": "https://actionforglobalhealth.org.uk/one-health-stronger-health-systems/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-03T09:55:17+00:00",
+   "summary": "At a time when aid budgets are shrinking and climate and environmental pressures are increasing, this is both a health and an economic failure. The ...",
+   "domain": "actionforglobalhealth.org.uk",
+   "score": 20
+  },
+  {
+   "title": "Tualatin Rotary raises $11040 for global polio eradication",
+   "url": "https://tualatinlife.com/local-news/tualatin-rotary-raises-11040-for-global-polio-eradication/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-03T09:50:56+00:00",
+   "summary": "... the Global Polio Eradication Initiative alongside the World Health Organization , UNICEF, and the U.S. Centers for Disease Control and Prevention.",
+   "domain": "tualatinlife.com",
+   "score": 9
+  },
+  {
+   "title": "Kenya Mini Demographic and Health Survey 2025–26 | WHO | Regional Office for Africa",
+   "url": "https://www.afro.who.int/countries/kenya/publication/kenya-mini-demographic-and-health-survey-2025-26",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-03T09:36:10+00:00",
+   "summary": "World Health Organization — African Region · Donate. Health topics. All ... Topics. Maternal Health Newborn Child health Immunization Nutrition Sexual ...",
+   "domain": "afro.who.int",
+   "score": 18
+  },
+  {
+   "title": "Opinion: What the 2024 electoral map reveals about America’s mortality divide",
+   "url": "https://www.statnews.com/2026/11/03/electoral-map-reveals-red-state-blue-state-mortality-gap/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-11-03T09:30:00+00:00",
+   "summary": "Leading drivers of mortality look different according to political geography, experts write.",
+   "domain": "statnews.com",
+   "score": 1
+  },
+  {
+   "title": "Opinion: How meditation helped me become a better doctor overnight",
+   "url": "https://www.statnews.com/2026/11/03/traumatic-eye-injuries-ophthalmologist-meditation-psychology/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-11-03T09:30:00+00:00",
+   "summary": "“The inner work of meditation and self-inquiry can support the outer work of patient care,” writes a physician.",
+   "domain": "statnews.com",
+   "score": 1
+  },
+  {
+   "title": "‘Three-parent IVF’ was supposed to prevent mitochondrial disease. Studies are raising doubts",
+   "url": "https://www.statnews.com/2026/11/03/three-parent-ivf-safety-ethics-questions-mitochondrial-replacement-technology/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-11-03T09:30:00+00:00",
+   "summary": "Scientists and ethicists are rethinking the potential risks and benefits of a technology to prevent babies from inheriting rare mitochondrial diseases.",
+   "domain": "statnews.com",
+   "score": 1
+  },
+  {
+   "title": "Cervical cancer cases and deaths forecast to rise - Medical Xpress",
+   "url": "https://medicalxpress.com/news/2026-11-cervical-cancer-cases-deaths.html",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-03T09:23:05+00:00",
+   "summary": "The authors report that none of the seven Global Burden of Disease super-regions is forecast to reach the World Health Organization cervical ...",
+   "domain": "medicalxpress.com",
+   "score": 7
+  },
+  {
+   "title": "Online public consultation: draft integrated food profiling model for regulatory measures",
+   "url": "https://www.who.int/news-room/articles-detail/online-public-consultation--draft-integrated-food-profiling-model-for-regulatory-measures",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-03T09:07:14+00:00",
+   "summary": "World Health Statistics · UHC global monitoring report · About WHO · About ... Individuals or organizations wishing to comment must submit a ...",
+   "domain": "who.int",
+   "score": 7
+  },
+  {
+   "title": "Global health security: Why NZ needs to re-engage | PHCC",
+   "url": "https://www.phcc.org.nz/briefing/global-health-security-why-nz-needs-re-engage",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-03T08:44:48+00:00",
+   "summary": "These amendments were adopted by consensus at the World Health Assembly, which is made up of members of the World Health Organization (WHO). The ...",
+   "domain": "phcc.org.nz",
+   "score": 26
+  },
+  {
+   "title": "2016 Global Summit : Global Health Summit Videos - Academy on Violence and Abuse",
+   "url": "https://www.avahealth.org/topics/global-summit-videos/2016-global-summit.html",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-03T08:23:56+00:00",
+   "summary": "Victor Vieth - A National Plan to End Violence (50:19) Mechtchild Wolff, Phd, MA - Child Abuse and Misuse of Power in Institutions- (24:43) Steven ...",
+   "domain": "avahealth.org",
+   "score": 12
+  },
+  {
+   "title": "Global Fund Board Approves New Financing Mechanism to Accelerate Progress Against ...",
+   "url": "https://www.theglobalfund.org/en/news/2026/2026-11-03-global-fund-board-new-financing-mechanism-malaria-leadership-transition/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-03T08:22:13+00:00",
+   "summary": "... World Health Organization ) to prepare for the introduction of the vaccine. ... World Bank financing to procure health products through the Global ...",
+   "domain": "theglobalfund.org",
+   "score": 16
+  },
+  {
+   "title": "Mpox public health emergency declarations highlight missed signals, Independent Panel report says",
+   "url": "https://news.fundsforngos.org/2026/11/03/mpox-pheic-declarations-preparedness-failures-independent-panel/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-03T06:50:33+00:00",
+   "summary": "The World Health Organization (WHO) declared mpox a public health emergency of international concern (PHEIC) twice within two years—first in 2022 ...",
+   "domain": "news.fundsforngos.org",
+   "score": 14
+  },
+  {
+   "title": "Kenya Explores Partnership to Expand Access to Essential Antibiotics and Combat Antimicrobial Resistance",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcWZXTnNPRFA2ZnF1eXNqLUtrcUxfdDVTX0RaOXEwVXh2UzkzeEYxOWE4dWh0ZnZUSk5qMzRKQTBBMU1EMlRLQTR6VmlCcnczQk1DNmtjSkJhd2k3TEdGMWYyMG1UWFJmdXM2M2JNTmpqSlhGRjlHdGRfWVR6elpZWm9zUXFIalJQU1JGQWJTX05sbWpsUjNLWGdKTXFRUXpWYmVOT0Q0bGFlYjk5QWZYeFUwdTlJdUIzazI5bGlRTnA?oc=5",
+   "src": "health.go.ke",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-03T06:39:12+00:00",
+   "summary": "Kenya Explores Partnership to Expand Access to Essential Antibiotics and Combat Antimicrobial Resistance health.go.ke",
+   "domain": "health.go.ke",
+   "score": 16
+  },
+  {
+   "title": "Taking care of others despite fear: a doctor facing Ebola - WHO | Regional Office for Africa",
+   "url": "https://afro.who.int/countries/democratic-republic-of-congo/news/taking-care-others-despite-fear-doctor-facing-ebola",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-03T06:25:28+00:00",
+   "summary": "WHO assesses health systems and emergency preparedness across three Liberian counties. 02 Nov 2026 | Cluster/Departmental news. From Outbreak ...",
+   "domain": "afro.who.int",
+   "score": 23
+  },
+  {
+   "title": "New York state reports 1st measles-associated death in over 30 years - ABC News",
+   "url": "https://abcnews.com/Health/new-york-state-reports-1st-measles-death-30/story?id=137787620",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-03T06:24:32+00:00",
+   "summary": "As of Oct. 24, New York has recorded 178 measles cases this year, including eight in New York City, according to health officials. The emergency order ...",
+   "domain": "abcnews.com",
+   "score": 4
+  },
+  {
+   "title": "WHO chief urges countries to finalise pandemic agreement",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNODUzWnpCWG9hZW16ZVNONnNmVnY1VzJta0t3dlN5MDh0ajk1NWpTQzUtTlBPX0NoaHRBTUVfRjUySlZMMVlvUm1fcnBvY2gwLXo2bjhTMmRnYkxTRTZSc1Y5YzRYbHpZeVl0N2k5Y2ZwOWMteE5DY0dJS182aEpIb3dtei1JVm1fdVkzYTJkdw?oc=5",
+   "src": "Realnews Magazine",
+   "feed": "Pandemic Agreement",
+   "cat": "pandemic",
+   "date": "2026-11-03T06:20:16+00:00",
+   "summary": "WHO chief urges countries to finalise pandemic agreement Realnews Magazine",
+   "domain": "realnewsmagazine.net",
+   "score": 22
+  },
+  {
+   "title": "Poland’s court fight boils over",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxONnBaTWNLRWF6c3V6bHJzU2RLRjlqbW1POGdOWDFjejFFMXlNVVZXeTdVSFFVUGgzTWwwYkFOUTJScVJnQmw4NEtWZThqSmVSbGxiajVnejRoTFRIQlQzZGplS0MwR3cwZEp5VGd0dTVkaHhhUFZXQUpnb01pSnJkZTV1TThYc3hiRHhxQWtabTZFSUE?oc=5",
+   "src": "politico.eu",
+   "feed": "Politico EU Health",
+   "cat": "policy",
+   "date": "2026-11-03T05:05:00+00:00",
+   "summary": "Poland’s court fight boils over politico.eu",
+   "domain": "politico.eu",
+   "score": 2
   },
   {
    "title": "Where Summer Took Them | Institute for Global Health and Infectious Diseases",
@@ -281,12 +633,78 @@
    "score": 17
   },
   {
+   "title": "WHO urged to review drinking water standards amid nitrate health fears - Medical Xpress",
+   "url": "https://medicalxpress.com/news/2026-11-urged-standards-nitrate-health.html",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "Dozens of global health and environmental organizations called on the World Health Organization on Tuesday to revise decades-old standards for ...",
+   "domain": "medicalxpress.com",
+   "score": 18
+  },
+  {
+   "title": "A hotter world could have cleaner air, but deadlier heatwaves - News-Medical",
+   "url": "https://www.news-medical.net/news/20261102/A-hotter-world-could-have-cleaner-air-but-deadlier-heatwaves.aspx",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "Shen, F., Hegglin, M.I., Emmerichs, T. et al. (2026). Global health impacts of the 2018–2019 heatwaves and air pollution events under warmer climates.",
+   "domain": "news-medical.net",
+   "score": 11
+  },
+  {
+   "title": "Global , regional and national burden of cervical cancer in 1990–2023 with forecasts to 2050",
+   "url": "https://www.nature.com/articles/s41591-026-04729-4",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "All cervical cancer DALYs were attributable to human papillomavirus infection, with tobacco use contributing 5.9% (3.2–9.3) globally . By 2050, global ...",
+   "domain": "nature.com",
+   "score": 7
+  },
+  {
+   "title": "From Athens to Rio de Janeiro, How Cities Are Reducing Drug-Related Harms",
+   "url": "https://www.thinkglobalhealth.org/article/from-athens-to-rio-de-janeiro-how-cities-are-reducing-drug-related-harms",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "Think Global Health · Environment · Poverty · Trade · Governance · Food · Urbanization · Aging · Gender · Migration · Data Visualization ...",
+   "domain": "thinkglobalhealth.org",
+   "score": 9
+  },
+  {
+   "title": "Seventh WHO Global School on Refugee and Migrant Health | November 23-27, 2026",
+   "url": "https://globalhealth.stanford.edu/event/seventh-who-global-school-on-refugee-and-migrant-health-november-23-27-2027.html/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "Organized by PHM and Hosted by the Ministry of Health of Spain under the theme “Advancing equity and inclusion: future directions in refugee and ...",
+   "domain": "globalhealth.stanford.edu",
+   "score": 14
+  },
+  {
+   "title": "Global Health Security: NZ's Role in Pandemic Preparedness | University of Waikato",
+   "url": "https://www.waikato.ac.nz/news-events/news/nz-has-retreated-from-global-cooperation-on-health-security-can-a-new-government-change-course/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "University of Waikato law professor Alexander Gillespie examines NZ's retreat from global health cooperation and what the next government can do.",
+   "domain": "waikato.ac.nz",
+   "score": 27
+  },
+  {
    "title": "2015 Global Summit : Global Health Summit Videos - Academy on Violence and Abuse",
    "url": "https://www.avahealth.org/topics/global-summit-videos/2015-global-summit.html",
    "src": "Global Health",
    "feed": "Global Health",
    "cat": "global",
-   "date": "2026-11-03T00:44:33+00:00",
+   "date": "2026-11-03T00:00:00+00:00",
    "summary": "Steve Stone - Building Trauma Informed and Resilient Communities (19:15) The origin of AVA Regional Academies Susie Wiet - Gathering in the Desert ...",
    "domain": "avahealth.org",
    "score": 13
@@ -297,7 +715,7 @@
    "src": "Global Health",
    "feed": "Global Health",
    "cat": "global",
-   "date": "2026-11-03T00:32:29+00:00",
+   "date": "2026-11-03T00:00:00+00:00",
    "summary": "... Health Speaker Pamela Murnane ... Bring visibility to the urgent global health priority of impacts of extreme weather on women and children in LMIC ...",
    "domain": "globalhealthsciences.ucsf.edu",
    "score": 9
@@ -308,7 +726,7 @@
    "src": "Global Health",
    "feed": "Global Health",
    "cat": "global",
-   "date": "2026-11-03T00:32:29+00:00",
+   "date": "2026-11-03T00:00:00+00:00",
    "summary": "Register for Zoom Join us for an online discussion about successful south-south partnerships featuring AFREhealth and the Infectious Diseases ...",
    "domain": "globalhealthsciences.ucsf.edu",
    "score": 15
@@ -319,7 +737,7 @@
    "src": "Global Health",
    "feed": "Global Health",
    "cat": "global",
-   "date": "2026-11-03T00:27:51+00:00",
+   "date": "2026-11-03T00:00:00+00:00",
    "summary": "(“Medline”) (Nasdaq: MDLN) today announced that Jim Boyle, chief executive officer, is scheduled to present at the Jefferies Global Healthcare ...",
    "domain": "newsroom.medline.com",
    "score": 12
@@ -330,43 +748,10 @@
    "src": "Global Health",
    "feed": "Global Health",
    "cat": "global",
-   "date": "2026-11-03T00:22:11+00:00",
+   "date": "2026-11-03T00:00:00+00:00",
    "summary": "From community health to Ebola response, nursing is already doing One Health work – but its contribution remains under-recognized.",
    "domain": "eurekalert.org",
    "score": 20
-  },
-  {
-   "title": "A hotter world could have cleaner air, but deadlier heatwaves - News-Medical",
-   "url": "https://www.news-medical.net/news/20261102/A-hotter-world-could-have-cleaner-air-but-deadlier-heatwaves.aspx",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-03T00:19:13+00:00",
-   "summary": "... Health-risk-based AQI ( HAQI ), with pollutant thresholds adapted from the World Health Organization ( WHO ) 2021 air quality guidelines. The AQI ...",
-   "domain": "news-medical.net",
-   "score": 9
-  },
-  {
-   "title": "WHO urged to review drinking water standards amid nitrate health fears - Arab News",
-   "url": "https://www.arabnews.com/world/who-urged-to-review-drinking-water-standards-amid-nitrate-health-fears-3009506",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-03T00:04:32+00:00",
-   "summary": "GENEVA: Dozens of global health and environmental organizations called on the World Health Organization on Tuesday to revise decades-old standards ...",
-   "domain": "arabnews.com",
-   "score": 15
-  },
-  {
-   "title": "Leeds United tribute to fan who died after falling ill at game - BBC",
-   "url": "https://www.bbc.com/news/articles/c9dr8vxr6d1lo",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-11-02T22:30:13+00:00",
-   "summary": "Colin Westby, 68, died after he suffered a medical emergency at Elland Road last month.",
-   "domain": "bbc.com",
-   "score": 9
   },
   {
    "title": "The World Still Needs Us | American Foreign Service Association",
@@ -380,6 +765,17 @@
    "score": 17
   },
   {
+   "title": "World News in Brief: healthcare crisis in Yemen’s Taiz and Afghanistan, Western Sahara mission's phased closure",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1uN3p3cnhOLWYzdmZIR09KWlhCYlBMcDZ5bnJFLUV0aWItMmxDSzdWdlFBU19mUGJONDdPbHNtYVFDamRFVmloTlBMX1VwN1VOem9XbUowaw?oc=5",
+   "src": "UN News",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-02T20:45:52+00:00",
+   "summary": "World News in Brief: healthcare crisis in Yemen’s Taiz and Afghanistan, Western Sahara mission's phased closure UN News",
+   "domain": "news.un.org",
+   "score": 4
+  },
+  {
    "title": "Jobs - Global Health Hub",
    "url": "https://community.globalhealthhub.de/de/marktplatz/kategorien/7-jobs",
    "src": "Global Health",
@@ -391,6 +787,39 @@
    "score": 12
   },
   {
+   "title": "EU Commission to probe supermarket cyberattacks",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOODdMR3Vmdy1qTEQ2YW5CUXE3eFBTZmN0N1FteGdiQVdQNHJJMEQyZEtTSXRyM3FsTl82RGpaSFllNFZONlhRc2dVemRMM3JfOUxxUDVFdE1KRGdVVkdfSlQ2VHN4T1lnUjdDZllOd25kV3VGUVVaZ3BTeHRDcXhUR19KUFJ6LWlDUnZOS2RVYkFNRWxCYXBKOXVvODZtWGdQWXc?oc=5",
+   "src": "POLITICO.eu",
+   "feed": "Politico EU Health",
+   "cat": "policy",
+   "date": "2026-11-02T19:20:00+00:00",
+   "summary": "EU Commission to probe supermarket cyberattacks POLITICO.eu",
+   "domain": "politico.eu",
+   "score": 2
+  },
+  {
+   "title": "Ukraine: WFP provides hot meals to Oleshky evacuees as UN pushes to restore power before winter",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFB6cWk5bTBOWVNkd0RDUEY3ZjJiTlBJa25CUnZLM1RnVzVjcHhrWnhEM0QtMnJIY3V1aGFrQnJ0V0hhNDU0bDZQbHQ0eHhndlNQODVUbV9fRQ?oc=5",
+   "src": "UN News",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-02T17:52:35+00:00",
+   "summary": "Ukraine: WFP provides hot meals to Oleshky evacuees as UN pushes to restore power before winter UN News",
+   "domain": "news.un.org",
+   "score": 5
+  },
+  {
+   "title": "WHO Global Preparedness and Response to El Niño-Related Public Health Risks and Emergencies - Strategic Preparedness and Response Plan",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPM2NZbWpxQ3ZiYUZ5cWNkM3FMQ245Ri01Rm51OUNJbVVLVmpSWlpycjE4OXJxWGI0Z3pzZ2pBOFVQYndZUnVFQ21naGc1eUg0UGtoZVdGYXVzMFpxRUhndGF3Y0JzaFdiZUxEWHlTeFhtM1I4WXRiTDJqcGNaMFNoa242bGFvMEJMcEQwYXByT3J5cXBuQk9vdUVRV2F6V19INWhLQnhPVzQ3WnktSGktdm1vd2t1alZCeFAyeWFsM2xoTHQ2OVotTTJLdHFraGpHY2JyRkNwUnhfbkROLXB0N0VFbC1peWY5NnRWeF9FLWsyemdmNkYw?oc=5",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-02T15:57:04+00:00",
+   "summary": "WHO Global Preparedness and Response to El Niño-Related Public Health Risks and Emergencies - Strategic Preparedness and Response Plan ReliefWeb",
+   "domain": "reliefweb.int",
+   "score": 20
+  },
+  {
    "title": "Grants Coordinator",
    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBCbzEyTmFHQVRMV0c2MUhDbTdoSkk4YjBJc0JxMG9CU3hVYXJBQldOekJDQkZ6eGs5UThkS0hpR0ZPdi1STjFwa0VaeENBZzl3UmJEOU1nVFdYdE5MQnpMZHln?oc=5",
    "src": "ReliefWeb",
@@ -398,6 +827,17 @@
    "cat": "emerg",
    "date": "2026-11-02T14:09:17+00:00",
    "summary": "Grants Coordinator ReliefWeb",
+   "domain": "reliefweb.int",
+   "score": 2
+  },
+  {
+   "title": "AMDA Emergency Relief #2: Flash Floods in Nepal (2 November 2026)",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNbW52bHdRanBWRVZmbkNza3JBSzRLNnJZRmgxNzFONW1GZ0pia29SNjJRMHNPY3VHbTBZMWo0c3ZYQjhIQkt1YWV6bHdpZmZxelAxdmhTN182dU45LUVGZTl5QUdseVJ1RjBubXlhOTltM1JVUHpJdkhlUklJZGFHWDNITWRVQ1BCWjN2QXBIa1d5eG1DVlI5bQ?oc=5",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-02T14:03:03+00:00",
+   "summary": "AMDA Emergency Relief #2: Flash Floods in Nepal (2 November 2026) ReliefWeb",
    "domain": "reliefweb.int",
    "score": 2
   },
@@ -413,15 +853,15 @@
    "score": 2
   },
   {
-   "title": "Sign in - CPHIA 2026 - Africa CDC",
-   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9vN3czSDliZXgyd19mNUg2SVBSUTU2bWpZNFBFTUQyQ3pwckVmcVN6X19RV1pNdm8yb043MWU2ZmRMRVpxT0IzNEQwVmFKc2Y1NjBhN2hQck8?oc=5",
-   "src": "5th International Conference on Public Health in Africa",
-   "feed": "Africa CDC",
-   "cat": "global",
-   "date": "2026-11-02T12:03:46+00:00",
-   "summary": "Sign in - CPHIA 2026 - Africa CDC 5th International Conference on Public Health in Africa",
-   "domain": "cphia.africacdc.org",
-   "score": 8
+   "title": "Six in seven journalist murders go unpunished, UNESCO reports",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5aOTlBYU5tT3ZRSllOMEk1dE9sRzZLQ0tHVTJBWnZqMXRsTkhNd250TTdGSHdXSTNUUVpEVWhUcVM0bGRKSXowT3dnZTBtaWw5QVY1RlE2MA?oc=5",
+   "src": "UN News",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-02T10:38:16+00:00",
+   "summary": "Six in seven journalist murders go unpunished, UNESCO reports UN News",
+   "domain": "news.un.org",
+   "score": 4
   },
   {
    "title": "Head of Programme",
@@ -466,6 +906,39 @@
    "summary": "ILR be back POLITICO.eu",
    "domain": "politico.eu",
    "score": 2
+  },
+  {
+   "title": "Modern warfare spurs demand for new medical techniques - POLITICO",
+   "url": "https://www.politico.eu/article/europe-defense-modern-warfare-medical-techniques/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-02T05:00:00+00:00",
+   "summary": "Health security Health systems Health technology War and health. Related Countries. Russia Ukraine. Related Organizations. World Health Organization ( ...",
+   "domain": "politico.eu",
+   "score": 10
+  },
+  {
+   "title": "Tackling antimicrobial resistance in an ageing population: turning evidence into action across health and social care",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPY01aUFZYQ0JRb3hfRktHZklZSzMwbDhfT1hnNlBURkVaTXprRHJlVlJTdW9TUlFEX1pseFRSdFBmZjVRd19oMzROdEdUTUZzczE1RmJJekQ4OGVRbnp2YnBFUThMYzZlNlFRdFVoMmhIRnJDLVd3Y1BBMnlCbVdLYzI2OGJ3bmxyckltR19NRkMzR0FZWHp4UndTeXJHMll4RGFBWDJFcUVUVkk2Q3Mwal9lWWdValhtaFhYNUMwYXFPZw?oc=5",
+   "src": "City St George's, University of London",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Tackling antimicrobial resistance in an ageing population: turning evidence into action across health and social care City St George's, University of London",
+   "domain": "citystgeorges.ac.uk",
+   "score": 8
+  },
+  {
+   "title": "CDC Report Highlights 9.7 Million Infections From Antimicrobial Resistance Threats",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWV8zZDJEZERZSEJHU1NsbDV0SWFoQmdtVERmY0gxM3NEaVhqOFA0cXVJSEdpSkxmdVFLYjRtSXg4UTB5MXg2ZVMzMmZ1M0Z5Wmw4RjZwQmtMLWszcldvTGFmZWdNWDk4WjZWLU5lbUx3S25VQ1pMN3BpanNlcjdYdnN3RW03UmJpa2hnN2pUdDN1V3FZVFJQOUFOMA?oc=5",
+   "src": "Infectious Disease Advisor",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "CDC Report Highlights 9.7 Million Infections From Antimicrobial Resistance Threats Infectious Disease Advisor",
+   "domain": "infectiousdiseaseadvisor.com",
+   "score": 8
   },
   {
    "title": "Tracing Strongyloides stercoralis transmission and risk factors from schoolchildren to household in Northwest Ethiopia",
@@ -534,6 +1007,39 @@
    "score": 8
   },
   {
+   "title": "Seasoned French Diplomat Returns To Lead Pandemic Annex Talks",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdXFDdTBtM0tIV3RweWJiTkNnNW9qRDJGay10NEVnQWxEczI5eXZwWjFWdkhzMFdQczB0TEtPT1ZIQjZIZld1bmlpNGI1ZkxLY3o2MWZzVlVCdXU0ZGNLa25rYnkwSmJfRlpxUEN2MldsbklrVzRoUlRmVl96LUVGTUhQc0sxRnFvZDhyaFhoTzVBZE0wSVAyY01n?oc=5",
+   "src": "Health Policy Watch",
+   "feed": "Pandemic Agreement",
+   "cat": "pandemic",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Seasoned French Diplomat Returns To Lead Pandemic Annex Talks Health Policy Watch",
+   "domain": "healthpolicy-watch.news",
+   "score": 18
+  },
+  {
+   "title": "WHO chief: Ebola outbreak shows urgent need for pandemic treaty",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNE5fNmV4VjgtWFoteDRqQzFZU1cyU09pUHRILVdhdXFtNm9UT0JYa01lOWpNcXhzbEp5VXZheThpY2tRUkVCTVV1UnA4ZFR1cEZ0amJGWGs5SmFBbnFCQjV0VWtKTXZRN2FBY1R2T0hIblpRY0x5MEVOZ2pJT3BxTXZpS3ZVNWl1UmIybnNnYjk0SFIyb3hoV0VaN2hIdXc5MGRWb0kyRkVXUVpwczlJRzlKZ0wzS01YZnc?oc=5",
+   "src": "Euronews.com",
+   "feed": "Pandemic Agreement",
+   "cat": "pandemic",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "WHO chief: Ebola outbreak shows urgent need for pandemic treaty Euronews.com",
+   "domain": "euronews.com",
+   "score": 30
+  },
+  {
+   "title": "WHO Director-General's opening remarks at the Ninth meeting of the Intergovernmental Working Group (IGWG) on the WHO Pandemic Agreement – 2 November 2026",
+   "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxON3ZsNzhKT3N1ZkMwUkZZVFdHSVlMV1ZxT0REN1N1MWFFbEJXUU5FZUtGVWlFUnpqLXFKcWdxYl81QWFPbWdzb1hVLUpHNk5fOHVYSTdybzVpVi1za3RNb2tRZ0lKbzd2bVNtUUU5SlEtZWtLSnNESDhfWUxuT1JOZmZIa1pFcnMxWUVwMGl4SnUtNDQtcUpuRWk5X3F5WEtzUXFMMFk0M3NzX2QxVkFiT3ZPazlqNmgxbHlHb1ZxTHZPNFdKOU40ZnA2X1dPOHdpZWtUT3ZYT2dOWkp1M0lUWlloUXQ3dWFvWm9YQXU5R1FwRFEzUUFNWWwxalNEMHFNVjh5WENOWm55WGh6U283QXM2SkF5eWhyVVlPdWFLT1c?oc=5",
+   "src": "World Health Organization (WHO)",
+   "feed": "Pandemic Agreement",
+   "cat": "pandemic",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "WHO Director-General's opening remarks at the Ninth meeting of the Intergovernmental Working Group (IGWG) on the WHO Pandemic Agreement – 2 November 2026 World Health Organization (WHO)",
+   "domain": "who.int",
+   "score": 33
+  },
+  {
    "title": "Anne-Claire Amprou to be considered for WHO group co-chair post — Health Policy Watch",
    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQ1NhNW96QWtMekFKYzdKaDJlM2Rab2hGcVE2by1wREZiZ1kwWlBrMktmdnRlb0h6NFgzc0hrVDN3bFMwWER6UGdTeFc3QjlUeHBuUFlCQWJkZjdrWGpQRVd0Yl8wNGJzV21VeDNiVEtlVkg4QXRISjR5MHA3TU1za0thOUZ1Sjdxc2s4MWwwXzdPaHlQUFl5VmdWOVVSX2VFdDBwNWJvZng2MEh1LW9qekdPLTBMM2pHRUVQeA?oc=5",
    "src": "UA.NEWS",
@@ -554,39 +1060,6 @@
    "summary": "A Quarter of Americans Have Lied to Doctors for Antibiotics Gizmodo",
    "domain": "gizmodo.com",
    "score": 6
-  },
-  {
-   "title": "Tackling antimicrobial resistance in an ageing population: turning evidence into action across health and social care",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPY01aUFZYQ0JRb3hfRktHZklZSzMwbDhfT1hnNlBURkVaTXprRHJlVlJTdW9TUlFEX1pseFRSdFBmZjVRd19oMzROdEdUTUZzczE1RmJJekQ4OGVRbnp2YnBFUThMYzZlNlFRdFVoMmhIRnJDLVd3Y1BBMnlCbVdLYzI2OGJ3bmxyckltR19NRkMzR0FZWHp4UndTeXJHMll4RGFBWDJFcUVUVkk2Q3Mwal9lWWdValhtaFhYNUMwYXFPZw?oc=5",
-   "src": "City St George's, University of London",
-   "feed": "AMR policy & research",
-   "cat": "amr",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Tackling antimicrobial resistance in an ageing population: turning evidence into action across health and social care City St George's, University of London",
-   "domain": "citystgeorges.ac.uk",
-   "score": 8
-  },
-  {
-   "title": "CDC Report Highlights 9.7 Million Infections From Antimicrobial Resistance Threats",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWV8zZDJEZERZSEJHU1NsbDV0SWFoQmdtVERmY0gxM3NEaVhqOFA0cXVJSEdpSkxmdVFLYjRtSXg4UTB5MXg2ZVMzMmZ1M0Z5Wmw4RjZwQmtMLWszcldvTGFmZWdNWDk4WjZWLU5lbUx3S25VQ1pMN3BpanNlcjdYdnN3RW03UmJpa2hnN2pUdDN1V3FZVFJQOUFOMA?oc=5",
-   "src": "Infectious Disease Advisor",
-   "feed": "AMR policy & research",
-   "cat": "amr",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "CDC Report Highlights 9.7 Million Infections From Antimicrobial Resistance Threats Infectious Disease Advisor",
-   "domain": "infectiousdiseaseadvisor.com",
-   "score": 8
-  },
-  {
-   "title": "WHO Director-General's opening remarks at the Ninth meeting of the Intergovernmental Working Group (IGWG) on the WHO Pandemic Agreement – 2 November 2026",
-   "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxON3ZsNzhKT3N1ZkMwUkZZVFdHSVlMV1ZxT0REN1N1MWFFbEJXUU5FZUtGVWlFUnpqLXFKcWdxYl81QWFPbWdzb1hVLUpHNk5fOHVYSTdybzVpVi1za3RNb2tRZ0lKbzd2bVNtUUU5SlEtZWtLSnNESDhfWUxuT1JOZmZIa1pFcnMxWUVwMGl4SnUtNDQtcUpuRWk5X3F5WEtzUXFMMFk0M3NzX2QxVkFiT3ZPazlqNmgxbHlHb1ZxTHZPNFdKOU40ZnA2X1dPOHdpZWtUT3ZYT2dOWkp1M0lUWlloUXQ3dWFvWm9YQXU5R1FwRFEzUUFNWWwxalNEMHFNVjh5WENOWm55WGh6U283QXM2SkF5eWhyVVlPdWFLT1c?oc=5",
-   "src": "World Health Organization (WHO)",
-   "feed": "Pandemic Agreement",
-   "cat": "pandemic",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "WHO Director-General's opening remarks at the Ninth meeting of the Intergovernmental Working Group (IGWG) on the WHO Pandemic Agreement – 2 November 2026 World Health Organization (WHO)",
-   "domain": "who.int",
-   "score": 33
   },
   {
    "title": "Ebola reminder of urgent need to finish pandemic treaty: WHO chief",
@@ -633,125 +1106,26 @@
    "score": 24
   },
   {
-   "title": "Cheap version of HIV-prevention shot raising hope in low-income countries | CBC News",
-   "url": "https://www.cbc.ca/news/health/hiv-prevention-shot-generic-version-9.7406267",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
+   "title": "International Secretariat Support Officer",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTllscDJHZUw1dFRoanN1YlpDNUpMeERLU3JTa1p2RHo3TzVpQVppRHFRbkFzUGowX2Z0T2pPTk5jSDR2Uk95YTVzSS1ZSk9vVnE3WS1jNHpSQjI1a196MWczOXRDckVKeU04ZEpuNWxqOW9Ybkt3V2VOMXQ2bzBGeg?oc=5",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
    "date": "2026-11-02T00:00:00+00:00",
-   "summary": "According to the World Health Organization , 41 million people worldwide were living with HIV and 570,000 died from HIV-related causes last year. A ...",
-   "domain": "cbc.ca",
-   "score": 13
-  },
-  {
-   "title": "Recent virus outbreaks show urgent need to complete pandemic treaty, says WHO chief",
-   "url": "https://www.euronews.com/2026/11/02/recent-virus-outbreaks-show-urgent-need-to-complete-pandemic-treaty-says-who-chief",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "... World Health Organization (WHO) chief Tedros Adhanom Ghebreyesus said on Monday during a negotiating meeting in Geneva. ADVERTISEMENT. ADVERTISEMENT.",
-   "domain": "euronews.com",
-   "score": 25
-  },
-  {
-   "title": "Five overlooked steps to identify new epidemics, fast | Nature",
-   "url": "https://www.nature.com/articles/d41586-026-03509-x?linkId=64297355&sfnsn=mo&utm_source=flipboard&utm_content=topic%2Fcoronavirus",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Public health ; Diseases; Developing world . First person infected with rare ... The call is open to people from research institutes and universities from ...",
-   "domain": "nature.com",
-   "score": 7
-  },
-  {
-   "title": "Health Equity for People with Disabilities: Best Practices in the Region of the Americas",
-   "url": "https://www.paho.org/en/events/health-equity-people-disabilities-best-practices-region-americas",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "... Health Organization to mark the International Day of Persons with Disabilities ... Regional Office for the Americas of the World Health Organization . © ...",
-   "domain": "paho.org",
-   "score": 14
-  },
-  {
-   "title": "Salmonella tied to oysters, Bundibugyo vaccine funding, no mother-to-child HIV in Barbados",
-   "url": "https://www.cidrap.umn.edu/ebola/quick-takes-salmonella-tied-oysters-bundibugyo-vaccine-funding-no-mother-child-hiv-barbados",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Barbados has become the latest nation to eliminate mother-to-child transmission of HIV as a public health problem, the World Health Organization (WHO) ...",
-   "domain": "cidrap.umn.edu",
-   "score": 14
-  },
-  {
-   "title": "Emergency preparedness demands cross-sector collaboration - American Public Health Association",
-   "url": "https://www.apha.org/publications/public-health-newswire/public-health-newswire/articles/emergency-preparedness-demands-cross-sector-collaboration",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "More than 60% of emerging infectious diseases originate in animals, according to the World Health Organization . Climate change, habitat ...",
-   "domain": "apha.org",
-   "score": 15
-  },
-  {
-   "title": "Dr Reddy's gets tentative US FDA nod for generic HIV prevention - Reuters",
-   "url": "https://www.reuters.com/legal/litigation/dr-reddys-gets-tentative-us-fda-nod-generic-hiv-prevention-2026-11-02/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Unitaid, a global health agency hosted by the World Health Organization , is providing technical and financial support to Dr Reddy's on the project ...",
-   "domain": "reuters.com",
-   "score": 19
-  },
-  {
-   "title": "Protein Biomarkers of Lung Cancer Risk Among Individuals Who Never Smoked | Oncology",
-   "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2856147",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "... World Health Organization . Data Sharing Statement: See Supplement 2. Additional Contributions: The Shanghai Women's Health Study and Shanghai ...",
-   "domain": "jamanetwork.com",
-   "score": 12
-  },
-  {
-   "title": "Institutional Approval Is Not Public Authorization: Legitimacy as a Governance Requirement ...",
-   "url": "https://www.jmir.org/2026/1/e109467",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Oxford University Press; 2023. 26,Ethics and governance of artificial intelligence for health: WHO guidance. World Health Organization . URL: https:// ...",
-   "domain": "jmir.org",
-   "score": 6
-  },
-  {
-   "title": "Seasoned French Diplomat Returns To Lead Pandemic Annex Talks - Health Policy Watch",
-   "url": "https://healthpolicy-watch.news/renowned-french-diplomat-returns-to-lead-pandemic-annex-talks/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "France's Ambassador for Global Health, Dr Anne-Claire Amprou, is joining the leadership of the World Health Organization (WHO) body negotiating ...",
-   "domain": "healthpolicy-watch.news",
-   "score": 12
-  },
-  {
-   "title": "Ethiopia: Violence in the north is pushing health system to the brink, WHO chief warns",
-   "url": "https://news.un.org/feed/view/en/story/2026/11/1168720",
-   "src": "UN News - Global perspective Human stories",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "The head of the World Health Organization (WHO) called on Monday for greater protection for civilians caught in conflict in northern Ethiopia following deadly drone strikes this past weekend.",
-   "domain": "news.un.org",
+   "summary": "International Secretariat Support Officer ReliefWeb",
+   "domain": "reliefweb.int",
    "score": 4
+  },
+  {
+   "title": "Sudan: Humanitarian Health and Nutrition Bulletin: Blue Nile Under Strain: Displacement, Malaria and Attacks on Civilians Drive an Acute Health Emergency",
+   "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQU0YwS0ZIdXRhbWpBWW9tdEM0NDJxN0NIeEs2RGM5WmtreVRWZXQwbkdYN195TDdsOGpIbFdlTWNFNzctOVI3MnZpSF8zY1hNZk1HSVN0N0oyVGR4VkRLTzNVbnB4MzBqMUxTMWhBZWR1aW9PZV91clZ6UmhNejZKbWFwbl9KOGgzUHVQY0xBT0RvVENITzM0M0tqdzdyVzJReVFlZDdmT210WDFobWh6Q0YwRjZscjNtOHh2U0lkelpFdTZtSm5wckJKd3pSNHA5S3hJNWxqaXcxUzBsWG04b2IzdG5EV2syVUcxYW1XYjFMTWhtcVljZnIzamUtcE1JRXppOF92bjVZUQ?oc=5",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Sudan: Humanitarian Health and Nutrition Bulletin: Blue Nile Under Strain: Displacement, Malaria and Attacks on Civilians Drive an Acute Health Emergency ReliefWeb",
+   "domain": "reliefweb.int",
+   "score": 12
   },
   {
    "title": "[Comment] Tsepamo 8 years on: women’s health remains an afterthought",
@@ -785,61 +1159,6 @@
    "summary": "Andy Burnham should make tackling England’s obesity epidemic his “clear, personal mission” because current plans to redress the problem are “doomed to fail,” MPs warned.A “moonshot to end the obesity epidemic” was promised in the 2025 10 Year Health Plan1 but the cross-party Health and Social Care C",
    "domain": "bmj.com",
    "score": 3
-  },
-  {
-   "title": "Chickenpox: Over 3000 children were admitted to hospital in England last year",
-   "url": "http://www.bmj.com/content/395/bmj-2026-101315.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "More than 3000 young people under 18 were admitted to hospital with chickenpox in England last year, new data from the UK Health Security Agency (UKHSA) show.1Children aged 5 and under bore the brunt of the illness, accounting for over 70% of all clinical chickenpox reports made to regional UKHSA he",
-   "domain": "bmj.com",
-   "score": 5
-  },
-  {
-   "title": "Sadomasochistic surgeon barred from seeing female patients wins High Court ruling",
-   "url": "http://www.bmj.com/content/395/bmj-2026-101311.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "A consultant transplant surgeon who admitted to engaging in sadomasochism in his private life has won a High Court ruling lifting interim conditions on his practice.These conditions included a bar on carrying out face-to-face consultations with female patients except in life threatening emergencies.",
-   "domain": "bmj.com",
-   "score": 4
-  },
-  {
-   "title": "Sixty seconds on . . . ferritin face",
-   "url": "http://www.bmj.com/content/395/bmj-2026-101300.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Sounds Fe-nomenalNot quite. According to a growing number of TikTok influencers, a wan pallor, dry skin, dark eyebags, and thinning hair aren’t the consequence of stress or sleepless nights, but proof that you suffer from low iron levels.Ferreting out “ferritin face”The term stems from ferritin, a p",
-   "domain": "bmj.com",
-   "score": -7
-  },
-  {
-   "title": "Doctor ȷobs in illegal Israeli settlements advertised at “obscene” London event",
-   "url": "http://www.bmj.com/content/395/bmj-2026-101310.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Medical jobs in illegal Israeli settlements in the West Bank were advertised to UK doctors in leaflets distributed at a London jobs fair, in what medical charities have condemned as an “obscene” enterprise.It comes just weeks after the UK government toughened its stance against Israeli settlements b",
-   "domain": "bmj.com",
-   "score": 1
-  },
-  {
-   "title": "Data centres: urgent UK policy and regulatory action are needed",
-   "url": "http://www.bmj.com/content/395/bmj-2026-101253.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "McNamara’s call for coordinated international regulatory action by governments on hyperscale data centres owing to health and environmental threats is timely.1 Precaution is needed. The costs of hyperscale data centres can damage economies, communities, public health, and sustainability but remain e",
-   "domain": "bmj.com",
-   "score": 2
   },
   {
    "title": "Health insurance coverage and quality of care for reproductive and maternal health in LMICs: a multicountry propensity score matching study",
@@ -950,6 +1269,182 @@
    "summary": "Four big drugmakers allegedly paid tens of millions of dollars to middlemen to supply lifesaving drugs to Russian government entities",
    "domain": "statnews.com",
    "score": 1
+  },
+  {
+   "title": "Leeds United tribute to fan who died after falling ill at game - BBC",
+   "url": "https://www.bbc.com/news/articles/c9dr8vxr6d1lo",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Colin Westby, 68, died after he suffered a medical emergency at Elland Road last month.",
+   "domain": "bbc.com",
+   "score": 9
+  },
+  {
+   "title": "Cheap version of HIV-prevention shot raising hope in low-income countries | CBC News",
+   "url": "https://www.cbc.ca/news/health/hiv-prevention-shot-generic-version-9.7406267",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "According to the World Health Organization , 41 million people worldwide were living with HIV and 570,000 died from HIV-related causes last year. A ...",
+   "domain": "cbc.ca",
+   "score": 13
+  },
+  {
+   "title": "Recent virus outbreaks show urgent need to complete pandemic treaty, says WHO chief",
+   "url": "https://www.euronews.com/2026/11/02/recent-virus-outbreaks-show-urgent-need-to-complete-pandemic-treaty-says-who-chief",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "... World Health Organization (WHO) chief Tedros Adhanom Ghebreyesus said on Monday during a negotiating meeting in Geneva. ADVERTISEMENT. ADVERTISEMENT.",
+   "domain": "euronews.com",
+   "score": 25
+  },
+  {
+   "title": "Five overlooked steps to identify new epidemics, fast | Nature",
+   "url": "https://www.nature.com/articles/d41586-026-03509-x?linkId=64297355&sfnsn=mo&utm_source=flipboard&utm_content=topic%2Fcoronavirus",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Public health ; Diseases; Developing world . First person infected with rare ... The call is open to people from research institutes and universities from ...",
+   "domain": "nature.com",
+   "score": 7
+  },
+  {
+   "title": "Health Equity for People with Disabilities: Best Practices in the Region of the Americas",
+   "url": "https://www.paho.org/en/events/health-equity-people-disabilities-best-practices-region-americas",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "... Health Organization to mark the International Day of Persons with Disabilities ... Regional Office for the Americas of the World Health Organization . © ...",
+   "domain": "paho.org",
+   "score": 14
+  },
+  {
+   "title": "Salmonella tied to oysters, Bundibugyo vaccine funding, no mother-to-child HIV in Barbados",
+   "url": "https://www.cidrap.umn.edu/ebola/quick-takes-salmonella-tied-oysters-bundibugyo-vaccine-funding-no-mother-child-hiv-barbados",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Barbados has become the latest nation to eliminate mother-to-child transmission of HIV as a public health problem, the World Health Organization (WHO) ...",
+   "domain": "cidrap.umn.edu",
+   "score": 14
+  },
+  {
+   "title": "Emergency preparedness demands cross-sector collaboration - American Public Health Association",
+   "url": "https://www.apha.org/publications/public-health-newswire/public-health-newswire/articles/emergency-preparedness-demands-cross-sector-collaboration",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "More than 60% of emerging infectious diseases originate in animals, according to the World Health Organization . Climate change, habitat ...",
+   "domain": "apha.org",
+   "score": 15
+  },
+  {
+   "title": "Dr Reddy's gets tentative US FDA nod for generic HIV prevention - Reuters",
+   "url": "https://www.reuters.com/legal/litigation/dr-reddys-gets-tentative-us-fda-nod-generic-hiv-prevention-2026-11-02/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Unitaid, a global health agency hosted by the World Health Organization , is providing technical and financial support to Dr Reddy's on the project ...",
+   "domain": "reuters.com",
+   "score": 19
+  },
+  {
+   "title": "Protein Biomarkers of Lung Cancer Risk Among Individuals Who Never Smoked | Oncology",
+   "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2856147",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "... World Health Organization . Data Sharing Statement: See Supplement 2. Additional Contributions: The Shanghai Women's Health Study and Shanghai ...",
+   "domain": "jamanetwork.com",
+   "score": 12
+  },
+  {
+   "title": "Institutional Approval Is Not Public Authorization: Legitimacy as a Governance Requirement ...",
+   "url": "https://www.jmir.org/2026/1/e109467",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Oxford University Press; 2023. 26,Ethics and governance of artificial intelligence for health: WHO guidance. World Health Organization . URL: https:// ...",
+   "domain": "jmir.org",
+   "score": 6
+  },
+  {
+   "title": "Ethiopia: Violence in the north is pushing health system to the brink, WHO chief warns",
+   "url": "https://news.un.org/feed/view/en/story/2026/11/1168720",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "The head of the World Health Organization (WHO) called on Monday for greater protection for civilians caught in conflict in northern Ethiopia following deadly drone strikes this past weekend.",
+   "domain": "news.un.org",
+   "score": 4
+  },
+  {
+   "title": "Chickenpox: Over 3000 children were admitted to hospital in England last year",
+   "url": "http://www.bmj.com/content/395/bmj-2026-101315.short?rss=1",
+   "src": "BMJ",
+   "feed": "BMJ",
+   "cat": "journal",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "More than 3000 young people under 18 were admitted to hospital with chickenpox in England last year, new data from the UK Health Security Agency (UKHSA) show.1Children aged 5 and under bore the brunt of the illness, accounting for over 70% of all clinical chickenpox reports made to regional UKHSA he",
+   "domain": "bmj.com",
+   "score": 5
+  },
+  {
+   "title": "Sadomasochistic surgeon barred from seeing female patients wins High Court ruling",
+   "url": "http://www.bmj.com/content/395/bmj-2026-101311.short?rss=1",
+   "src": "BMJ",
+   "feed": "BMJ",
+   "cat": "journal",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "A consultant transplant surgeon who admitted to engaging in sadomasochism in his private life has won a High Court ruling lifting interim conditions on his practice.These conditions included a bar on carrying out face-to-face consultations with female patients except in life threatening emergencies.",
+   "domain": "bmj.com",
+   "score": 4
+  },
+  {
+   "title": "Sixty seconds on . . . ferritin face",
+   "url": "http://www.bmj.com/content/395/bmj-2026-101300.short?rss=1",
+   "src": "BMJ",
+   "feed": "BMJ",
+   "cat": "journal",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Sounds Fe-nomenalNot quite. According to a growing number of TikTok influencers, a wan pallor, dry skin, dark eyebags, and thinning hair aren’t the consequence of stress or sleepless nights, but proof that you suffer from low iron levels.Ferreting out “ferritin face”The term stems from ferritin, a p",
+   "domain": "bmj.com",
+   "score": -7
+  },
+  {
+   "title": "Doctor ȷobs in illegal Israeli settlements advertised at “obscene” London event",
+   "url": "http://www.bmj.com/content/395/bmj-2026-101310.short?rss=1",
+   "src": "BMJ",
+   "feed": "BMJ",
+   "cat": "journal",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Medical jobs in illegal Israeli settlements in the West Bank were advertised to UK doctors in leaflets distributed at a London jobs fair, in what medical charities have condemned as an “obscene” enterprise.It comes just weeks after the UK government toughened its stance against Israeli settlements b",
+   "domain": "bmj.com",
+   "score": 1
+  },
+  {
+   "title": "Data centres: urgent UK policy and regulatory action are needed",
+   "url": "http://www.bmj.com/content/395/bmj-2026-101253.short?rss=1",
+   "src": "BMJ",
+   "feed": "BMJ",
+   "cat": "journal",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "McNamara’s call for coordinated international regulatory action by governments on hyperscale data centres owing to health and environmental threats is timely.1 Precaution is needed. The costs of hyperscale data centres can damage economies, communities, public health, and sustainability but remain e",
+   "domain": "bmj.com",
+   "score": 2
   },
   {
    "title": "A STAT reporter on covering MRT as an experimental fertility treatment",
@@ -1095,17 +1590,6 @@
    "score": 7
   },
   {
-   "title": "WHO chief: Ebola outbreak shows urgent need for pandemic treaty",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNE5fNmV4VjgtWFoteDRqQzFZU1cyU09pUHRILVdhdXFtNm9UT0JYa01lOWpNcXhzbEp5VXZheThpY2tRUkVCTVV1UnA4ZFR1cEZ0amJGWGs5SmFBbnFCQjV0VWtKTXZRN2FBY1R2T0hIblpRY0x5MEVOZ2pJT3BxTXZpS3ZVNWl1UmIybnNnYjk0SFIyb3hoV0VaN2hIdXc5MGRWb0kyRkVXUVpwczlJRzlKZ0wzS01YZnc?oc=5",
-   "src": "Euronews.com",
-   "feed": "WHO Disease Outbreak News",
-   "cat": "who",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "WHO chief: Ebola outbreak shows urgent need for pandemic treaty Euronews.com",
-   "domain": "euronews.com",
-   "score": 30
-  },
-  {
    "title": "Open letter to G20 leaders: Failing to act swiftly on Ebola outbreak in Africa risks a global crisis",
    "url": "https://theelders.org/news/open-letter-g20-leaders-failing-act-swiftly-ebola-outbreak-africa-risks-global-crisis",
    "src": "WHO Alert",
@@ -1115,17 +1599,6 @@
    "summary": "There have now been 10,000 cases of the Bundibugyo strain of Ebola reported since the World Health Organization first declared a public health ...",
    "domain": "theelders.org",
    "score": 17
-  },
-  {
-   "title": "International Secretariat Support Officer",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTllscDJHZUw1dFRoanN1YlpDNUpMeERLU3JTa1p2RHo3TzVpQVppRHFRbkFzUGowX2Z0T2pPTk5jSDR2Uk95YTVzSS1ZSk9vVnE3WS1jNHpSQjI1a196MWczOXRDckVKeU04ZEpuNWxqOW9Ybkt3V2VOMXQ2bzBGeg?oc=5",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "International Secretariat Support Officer ReliefWeb",
-   "domain": "reliefweb.int",
-   "score": 4
   },
   {
    "title": "Officials warn ‘unprecedented’ disease outbreak is ‘very dire’",
@@ -1458,17 +1931,6 @@
    "score": 11
   },
   {
-   "title": "Sudan: Humanitarian Health and Nutrition Bulletin: Blue Nile Under Strain: Displacement, Malaria and Attacks on Civilians Drive an Acute Health Emergency",
-   "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQU0YwS0ZIdXRhbWpBWW9tdEM0NDJxN0NIeEs2RGM5WmtreVRWZXQwbkdYN195TDdsOGpIbFdlTWNFNzctOVI3MnZpSF8zY1hNZk1HSVN0N0oyVGR4VkRLTzNVbnB4MzBqMUxTMWhBZWR1aW9PZV91clZ6UmhNejZKbWFwbl9KOGgzUHVQY0xBT0RvVENITzM0M0tqdzdyVzJReVFlZDdmT210WDFobWh6Q0YwRjZscjNtOHh2U0lkelpFdTZtSm5wckJKd3pSNHA5S3hJNWxqaXcxUzBsWG04b2IzdG5EV2syVUcxYW1XYjFMTWhtcVljZnIzamUtcE1JRXppOF92bjVZUQ?oc=5",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Sudan: Humanitarian Health and Nutrition Bulletin: Blue Nile Under Strain: Displacement, Malaria and Attacks on Civilians Drive an Acute Health Emergency ReliefWeb",
-   "domain": "reliefweb.int",
-   "score": 12
-  },
-  {
    "title": "Senior Manager, Programs and Partnerships, Africa and Middle East",
    "url": "https://www.careers.jnj.com/en/jobs/r-106728/senior-manager-programs-and-partnerships-africa-and-middle-east/",
    "src": "Global Health",
@@ -1579,15 +2041,15 @@
    "score": 10
   },
   {
-   "title": "The Trump-Kennedy Effect on US Health: Slow-Burn Damage Over Decades",
-   "url": "https://healthpolicy-watch.news/the-trump-kennedy-effect-on-us-health-cuts-to-medical-services-and-fewer-vaccinations/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
+   "title": "Western Sahara: UN ‘stands ready’ to keep supporting peace efforts as MINURSO mission ends",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9nenpISU9MMmhGbEhJUHZWZEFDQkhFLXE5OHRGNGFYdm9vY0M5S2ZpckZZeGl4RndJVTE0b0ZMQlA2aGtGdkdPNjRBRE5BV2F2eTFxcHlUcw?oc=5",
+   "src": "UN News",
+   "feed": "UN News Health",
+   "cat": "who",
    "date": "2026-11-01T00:00:00+00:00",
-   "summary": "Cuts to Medicaid, the health services for low-income Americans, and fewer childhood immunisations – alongside persistent insinuations that vaccines are unsafe – are the most significant health policy changes made by the Trump administration since January 2025. They have been accompanied by reduced f",
-   "domain": "healthpolicy-watch.news",
-   "score": 3
+   "summary": "Western Sahara: UN ‘stands ready’ to keep supporting peace efforts as MINURSO mission ends UN News",
+   "domain": "news.un.org",
+   "score": 5
   },
   {
    "title": "Policy Consultant -ميسر ورشات العمل المشاورات حول مشروع قانون مراكز التنمية المجتمعية -Damascus",
@@ -1599,6 +2061,17 @@
    "summary": "Policy Consultant -ميسر ورشات العمل المشاورات حول مشروع قانون مراكز التنمية المجتمعية -Damascus ReliefWeb",
    "domain": "reliefweb.int",
    "score": 2
+  },
+  {
+   "title": "The Trump-Kennedy Effect on US Health: Slow-Burn Damage Over Decades",
+   "url": "https://healthpolicy-watch.news/the-trump-kennedy-effect-on-us-health-cuts-to-medical-services-and-fewer-vaccinations/",
+   "src": "Health Policy Watch",
+   "feed": "Health Policy Watch",
+   "cat": "policy",
+   "date": "2026-11-01T00:00:00+00:00",
+   "summary": "Cuts to Medicaid, the health services for low-income Americans, and fewer childhood immunisations – alongside persistent insinuations that vaccines are unsafe – are the most significant health policy changes made by the Trump administration since January 2025. They have been accompanied by reduced f",
+   "domain": "healthpolicy-watch.news",
+   "score": 3
   },
   {
    "title": "Robert F. Kennedy Jr.’s food fight is coming to Brussels",
@@ -1643,17 +2116,6 @@
    "summary": "COP17: Nations chart ‘Yerevan Pathway’ to speed up action for nature UN News",
    "domain": "news.un.org",
    "score": 4
-  },
-  {
-   "title": "Western Sahara: UN ‘stands ready’ to keep supporting peace efforts as MINURSO mission ends",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9nenpISU9MMmhGbEhJUHZWZEFDQkhFLXE5OHRGNGFYdm9vY0M5S2ZpckZZeGl4RndJVTE0b0ZMQlA2aGtGdkdPNjRBRE5BV2F2eTFxcHlUcw?oc=5",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-11-01T00:00:00+00:00",
-   "summary": "Western Sahara: UN ‘stands ready’ to keep supporting peace efforts as MINURSO mission ends UN News",
-   "domain": "news.un.org",
-   "score": 5
   },
   {
    "title": "Barbados eliminates mother-to-child transmission of HIV, WHO announces",
@@ -2195,17 +2657,6 @@
    "score": 6
   },
   {
-   "title": "More than 5,000 die from Ebola in DR Congo's deadliest outbreak",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5jNU5SVHJ6R1hPT1VhOS02QU9URWQwR0htNnBXeEg1UXNWOGV3T25BbTVhZXJXVDdhV3hRVy01RWItVTR4eWRSWGdWWlNTdjd5QnB4MlA5Wmw1M28?oc=5",
-   "src": "BBC",
-   "feed": "WHO Disease Outbreak News",
-   "cat": "who",
-   "date": "2026-10-31T00:00:00+00:00",
-   "summary": "More than 5,000 die from Ebola in DR Congo's deadliest outbreak BBC",
-   "domain": "bbc.com",
-   "score": 14
-  },
-  {
    "title": "‘They deserve to know the truth’: UN rights chief demands probe into staffer’s death in Houthi custody",
    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBzV2t5R2VZeHNZMHEtbzJPTHFZYUVQenI1V3pocEU4eUJlUHl5LXpGN0dpUFdjVDhTUFRtclJJbnNIU045ZERIelplUGtjMEtPeU9fU2hZWQ?oc=5",
    "src": "UN News",
@@ -2226,6 +2677,17 @@
    "summary": "Samarkand: A ‘living museum’ on the Silk Road grapples with a tourism boom UN News",
    "domain": "news.un.org",
    "score": 4
+  },
+  {
+   "title": "More than 5,000 die from Ebola in DR Congo's deadliest outbreak",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5jNU5SVHJ6R1hPT1VhOS02QU9URWQwR0htNnBXeEg1UXNWOGV3T25BbTVhZXJXVDdhV3hRVy01RWItVTR4eWRSWGdWWlNTdjd5QnB4MlA5Wmw1M28?oc=5",
+   "src": "BBC",
+   "feed": "WHO Disease Outbreak News",
+   "cat": "who",
+   "date": "2026-10-31T00:00:00+00:00",
+   "summary": "More than 5,000 die from Ebola in DR Congo's deadliest outbreak BBC",
+   "domain": "bbc.com",
+   "score": 14
   },
   {
    "title": "Merz ‘surprised’ by Asian pushback to ‘Made in Europe’ plan for car industry",
@@ -2635,6 +3097,17 @@
    "score": 14
   },
   {
+   "title": "Ivermectin Plus Low-Dose Gamma-Radiation Shows Synergy Against Schistosomiasis in Mice",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdTRTcUdENWdNbjhqYkZuQ3pJLTRhX3c4WUNFdzlvOWtwNl9aaTJ3djFZM0lFd0tPa0d3b0VpWkstbXJTOGdCRWNVTzRnY2p6V2dCQkg0bndfQzVVRE5fM1puSnJJSDBjRDlnOWl3SGhHM1dxNTVKd0NWLXhhTDktZWw5WXdQUXJSbnZpM2xXTjg4dHBNZWI5MTU4WS1nR2dZS21uMjRzRmtzVy1hZl9WWg?oc=5",
+   "src": "Bioengineer.org",
+   "feed": "NTD news",
+   "cat": "ntd",
+   "date": "2026-10-30T05:42:37+00:00",
+   "summary": "Ivermectin Plus Low-Dose Gamma-Radiation Shows Synergy Against Schistosomiasis in Mice Bioengineer.org",
+   "domain": "bioengineer.org",
+   "score": 6
+  },
+  {
    "title": "Events - Stanford Center for Innovation in Global Health",
    "url": "https://globalhealth.stanford.edu/category/event/page/19/",
    "src": "Global Health",
@@ -2745,6 +3218,17 @@
    "score": 6
   },
   {
+   "title": "DR Congo: Hunger deepens for millions amid conflict, Ebola and climate shocks",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1zRmx2b0E5Y0NnbDJGYzFrd3JHekl1TVViRWtHUnJPMEd2dWpJek5BVXRsQ3l3M0dQWTFIaHoxWDA2cmktTUFHY3ZTM3hYWlBmaTV6eW5xaw?oc=5",
+   "src": "UN News",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-10-30T00:00:00+00:00",
+   "summary": "DR Congo: Hunger deepens for millions amid conflict, Ebola and climate shocks UN News",
+   "domain": "news.un.org",
+   "score": -4
+  },
+  {
    "title": "Postcards from IDWeek: Growing number of infectious disease professionals embrace advocacy",
    "url": "https://www.cidrap.umn.edu/public-health/postcards-idweek-growing-number-infectious-disease-professionals-embrace-advocacy",
    "src": "CIDRAP Public Health",
@@ -2753,6 +3237,17 @@
    "date": "2026-10-30T00:00:00+00:00",
    "summary": "A conference held in the nation’s capital included educational sessions about how to advocate for patients and research funding.",
    "domain": "cidrap.umn.edu",
+   "score": 2
+  },
+  {
+   "title": "Administrative and Operations Assistant/Company Driver – Port of Spain, Trinidad & Tobago",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRzIzRTdFY0ZGZEJrNTdTcWlQY25RaXR2U3NQOEhjejhnYkI2aTlPTVY4NC10bzBqdEFDNWhoLXFwU0Z0OWl6cUNLdmxkMWtXSjNBWDFGaUY5MXJ0VTNib0lweTU0UktUVjdhVjc1SWZLdVZXM3BfaXkzeTJmZVNUaWlvZW9nNlFLQ0FHWG9hX3JMbTlXLUFhLUswSkNFb1Uzd19kU1BGcnVnWUtNODYwUEpZYjg?oc=5",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-10-30T00:00:00+00:00",
+   "summary": "Administrative and Operations Assistant/Company Driver – Port of Spain, Trinidad & Tobago ReliefWeb",
+   "domain": "reliefweb.int",
    "score": 2
   },
   {
@@ -2877,28 +3372,6 @@
    "score": 4
   },
   {
-   "title": "Monitoring, Evaluation, Accountability, Research & Learning (MEARL) Officer, Nepal (Local Consultant)",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxObU5vMTU5bmdKeEphejhtcEwzV3VuS1c4QmlhVjFuWG5hcW9KdHJhbVBOYVUwQ3hsZDIxS29QdjllMlptQmtnaXM1SnNyX2tUM2JHMVNnaEtRNGstZ1B3Rkx4TVI0THJXQWlfaGd1dXVCMTFCQ3RtVmd5Rkdkci1zYnhZV3haUW1CQUpxUXZnRHc2dDlUaXZoVmRuc0dCY2w2X1RWcUlmMHNVQ1hCSjZCb09sRDNYUkxfUW9fTGNBRjBFNTg?oc=5",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-10-30T00:00:00+00:00",
-   "summary": "Monitoring, Evaluation, Accountability, Research & Learning (MEARL) Officer, Nepal (Local Consultant) ReliefWeb",
-   "domain": "reliefweb.int",
-   "score": 2
-  },
-  {
-   "title": "Administrative and Operations Assistant/Company Driver – Port of Spain, Trinidad & Tobago",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRzIzRTdFY0ZGZEJrNTdTcWlQY25RaXR2U3NQOEhjejhnYkI2aTlPTVY4NC10bzBqdEFDNWhoLXFwU0Z0OWl6cUNLdmxkMWtXSjNBWDFGaUY5MXJ0VTNib0lweTU0UktUVjdhVjc1SWZLdVZXM3BfaXkzeTJmZVNUaWlvZW9nNlFLQ0FHWG9hX3JMbTlXLUFhLUswSkNFb1Uzd19kU1BGcnVnWUtNODYwUEpZYjg?oc=5",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-10-30T00:00:00+00:00",
-   "summary": "Administrative and Operations Assistant/Company Driver – Port of Spain, Trinidad & Tobago ReliefWeb",
-   "domain": "reliefweb.int",
-   "score": 2
-  },
-  {
    "title": "US vaccine policy creates ‘huge opportunity’ for Europe",
    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdTBhVVVYUDAySWJTeXJnemZ2ZXNkNzZia1poX2pGQWc4b3hadVA5amw4ZEdQZC1SbmlQMkMyMTVlS3BoUEE0azV0OUQwRHF1QWlrMGtIRzBtRzNLSHE1M3AtTVZobndtWEcxaXdyXzZRNHppUG5vZ1FYYjI3NWYxM1oxTkE5UEozZG95M2dOOA?oc=5",
    "src": "POLITICO.eu",
@@ -2929,6 +3402,17 @@
    "date": "2026-10-30T00:00:00+00:00",
    "summary": "Streeting insists Burnham won’t make ‘arbitrary’ welfare cuts POLITICO.eu",
    "domain": "politico.eu",
+   "score": 2
+  },
+  {
+   "title": "Monitoring, Evaluation, Accountability, Research & Learning (MEARL) Officer, Nepal (Local Consultant)",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxObU5vMTU5bmdKeEphejhtcEwzV3VuS1c4QmlhVjFuWG5hcW9KdHJhbVBOYVUwQ3hsZDIxS29QdjllMlptQmtnaXM1SnNyX2tUM2JHMVNnaEtRNGstZ1B3Rkx4TVI0THJXQWlfaGd1dXVCMTFCQ3RtVmd5Rkdkci1zYnhZV3haUW1CQUpxUXZnRHc2dDlUaXZoVmRuc0dCY2w2X1RWcUlmMHNVQ1hCSjZCb09sRDNYUkxfUW9fTGNBRjBFNTg?oc=5",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-10-30T00:00:00+00:00",
+   "summary": "Monitoring, Evaluation, Accountability, Research & Learning (MEARL) Officer, Nepal (Local Consultant) ReliefWeb",
+   "domain": "reliefweb.int",
    "score": 2
   },
   {
@@ -3018,17 +3502,6 @@
    "summary": "An 1834 letter about a measles outbreak sheds light on today’s anti-vaccine movement, writes a medical historian.",
    "domain": "statnews.com",
    "score": 10
-  },
-  {
-   "title": "DR Congo: Hunger deepens for millions amid conflict, Ebola and climate shocks",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1zRmx2b0E5Y0NnbDJGYzFrd3JHekl1TVViRWtHUnJPMEd2dWpJek5BVXRsQ3l3M0dQWTFIaHoxWDA2cmktTUFHY3ZTM3hYWlBmaTV6eW5xaw?oc=5",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-30T00:00:00+00:00",
-   "summary": "DR Congo: Hunger deepens for millions amid conflict, Ebola and climate shocks UN News",
-   "domain": "news.un.org",
-   "score": -4
   },
   {
    "title": "Barbados eliminates mother-to-child transmission of HIV - Jamaica Observer",
@@ -3680,6 +4153,28 @@
    "score": 2
   },
   {
+   "title": "CDC Says These Superbugs Kill 50,000 Americans Per Year",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUkZKWUliZjdCNmZCRnVKQmk1WWRmdHI2VFkybWpMVjhVXzBXNGZPdHRUaklKRTBCZHoyRWFQLWh0R3ppLV96Z2xqZ3FybXlnU2tzN0dGdEd2TmplUzlRckI0TE04VEVEdU1sZXBIOWRDU1lQM0ZvWURmSzNTajRrWnhwd1M?oc=5",
+   "src": "MedPage Today",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "CDC Says These Superbugs Kill 50,000 Americans Per Year MedPage Today",
+   "domain": "medpagetoday.com",
+   "score": 6
+  },
+  {
+   "title": "64 Katsina students hospitalised after schistosomiasis drugs",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQclZfcmtUb1BMME1WQXFJeVJhSl84UU1ZdWdvMjg3TzNOU1hab0VRN3IwdzkxMWJ2U01yNTIyX3hOSDFKcjNnMWFpb1VXcVBpZ2lwODhBVDNrQWFPcHdjY2xGcUI3cFpybmFVMy1DQnBWdlg4cE5PaVV3bVlFcFRqTUZ0UVFkOVQ3Vm1fZ0gzSGRxSy1iN3NjSQ?oc=5",
+   "src": "Daily Post Nigeria",
+   "feed": "NTD news",
+   "cat": "ntd",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "64 Katsina students hospitalised after schistosomiasis drugs Daily Post Nigeria",
+   "domain": "dailypost.ng",
+   "score": -10
+  },
+  {
    "title": "A comparative analysis of baseline and post-intervention surveillance in a hookworm control pilot: Evidence from Tiantai County, Zhejiang Province, 2022–2024",
    "url": "https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0014835",
    "src": "PLOS NTDs",
@@ -3713,17 +4208,6 @@
    "score": 6
   },
   {
-   "title": "CDC Says These Superbugs Kill 50,000 Americans Per Year",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUkZKWUliZjdCNmZCRnVKQmk1WWRmdHI2VFkybWpMVjhVXzBXNGZPdHRUaklKRTBCZHoyRWFQLWh0R3ppLV96Z2xqZ3FybXlnU2tzN0dGdEd2TmplUzlRckI0TE04VEVEdU1sZXBIOWRDU1lQM0ZvWURmSzNTajRrWnhwd1M?oc=5",
-   "src": "MedPage Today",
-   "feed": "AMR policy & research",
-   "cat": "amr",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "CDC Says These Superbugs Kill 50,000 Americans Per Year MedPage Today",
-   "domain": "medpagetoday.com",
-   "score": 6
-  },
-  {
    "title": "64 Katsina Students Hospitalised After Schistosomiasis Medication, Teachers Allegedly Beat Some for ‘Mischief’",
    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUndWcmNQeFB5SG5HcVJFNUxIal9EcG5MaGJTZWJYS1NOaDFjV3ZtZExrVEgtNWo4YzB3a0RWb0g1c0RyYk5TYWkzemQ4M25uOGNwa3B5Wm5RcFF2UHE0OWd4Q3lVTW9taWJ1dFF1ZVkxN1dUYjVxcWlDblZYY1NfS3ctQmdUeGtqWl9SdXR0Y3BDRFRLUjJNOW51THN4Q2NzZlBkbHZtZGNELUdGcm5HZnNhS0lHQ3Q4OUVtQVFwZmNDMXFidW5nQTZYOGh6VjFHRTRBN2Y4dlNLNk9jR1dBOVhKam9oaUE?oc=5",
    "src": "ZAgazola",
@@ -3735,15 +4219,37 @@
    "score": -10
   },
   {
-   "title": "64 Katsina students hospitalised after schistosomiasis drugs",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQclZfcmtUb1BMME1WQXFJeVJhSl84UU1ZdWdvMjg3TzNOU1hab0VRN3IwdzkxMWJ2U01yNTIyX3hOSDFKcjNnMWFpb1VXcVBpZ2lwODhBVDNrQWFPcHdjY2xGcUI3cFpybmFVMy1DQnBWdlg4cE5PaVV3bVlFcFRqTUZ0UVFkOVQ3Vm1fZ0gzSGRxSy1iN3NjSQ?oc=5",
-   "src": "Daily Post Nigeria",
-   "feed": "NTD news",
-   "cat": "ntd",
+   "title": "AI is changing the way we think. The question is whether we’ll notice in time",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1yX0thOW1UNk9aOUsyWHRLREpnbElzVWxaYm9YZDl1aXJJZ2hDU1RmRWhkQ0RDZER6a1JQNnlYTnktRVhrSkdBSXV6Q0MyLUMzTFNockZ1MA?oc=5",
+   "src": "UN News",
+   "feed": "UN News Health",
+   "cat": "who",
    "date": "2026-10-29T00:00:00+00:00",
-   "summary": "64 Katsina students hospitalised after schistosomiasis drugs Daily Post Nigeria",
-   "domain": "dailypost.ng",
-   "score": -10
+   "summary": "AI is changing the way we think. The question is whether we’ll notice in time UN News",
+   "domain": "news.un.org",
+   "score": 4
+  },
+  {
+   "title": "Myanmar’s illicit economy fuels escalating violence, with civilians bearing the brunt",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE51bkJ4NHZJZ3ZOYjFQeWJVS3hsOFlHU1BiNWJqMFQycmVUbEpzZWtJZklfYm9ram41b21fNHZOVGhwSGZCN19HZTNkbTdTUEpJQThMdzV6MA?oc=5",
+   "src": "UN News",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "Myanmar’s illicit economy fuels escalating violence, with civilians bearing the brunt UN News",
+   "domain": "news.un.org",
+   "score": 4
+  },
+  {
+   "title": "Russia drone strike on Ukrainian railway station kills 13",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBuYTlXOE9ZMGh3bGZPSXBCbXhWeWNtT2RpT3RadW8zaUdJM0hHUE1uT1M4dXpsdHB5N0k3Q29Hb2V0T29Ya0g3NFdFbXJDZUNLa2t4aVJncw?oc=5",
+   "src": "UN News",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "Russia drone strike on Ukrainian railway station kills 13 UN News",
+   "domain": "news.un.org",
+   "score": 4
   },
   {
    "title": "Most US adults still drink pasteurized milk, but the number trying raw milk is increasing, survey notes",
@@ -3922,6 +4428,50 @@
    "score": 7
   },
   {
+   "title": "EU tells capitals to halt their national social media bans for a year",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNck02R3FGeWxReVV1N21OS2FoYlBnU1FNWmUxV0V6OUU3T3JJUWRxTXl4Vm96cHU2RXFtWnp0aGpRWl9zQ3ZtZGkwd05XaG9WTTJsc0RPWWptNFBleWhzd0l1dmU5bGpJN1NPMEhoTTA3dHltWWozYjBmNjNSWHdmbnpTOHA4ZkFreUExNm5kQmIzR1NJZXByOEZ6UGNpMWlVUEY2WA?oc=5",
+   "src": "POLITICO.eu",
+   "feed": "Politico EU Health",
+   "cat": "policy",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "EU tells capitals to halt their national social media bans for a year POLITICO.eu",
+   "domain": "politico.eu",
+   "score": 2
+  },
+  {
+   "title": "Belgium’s deputy PM wants to use ‘trade bazooka’ on US over pharma threats",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSnNzNUo0NDkyTC1rUVowVTRMY3phaDBEdURLQ2F5SHNTR0kzNHRFYlE1WlhydWtnT3FjS1ViOWRYSUwwSEpzRXNVS0puV2gyaUtJblp4LTl5V2RjWW1lSU5wQkNkc2EzeVdtMXYwdUo4N2FtV05oT05qQ0xyUjB2TUJ4WEhabnZKRXBBcExYQnBhblV3UTE0RVhIOHR5OUltdnJ4TVZMQXd6TlFVbzlURDhjdE0waUkzYWpDY3lNVlc0Zw?oc=5",
+   "src": "POLITICO.eu",
+   "feed": "Politico EU Health",
+   "cat": "policy",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "Belgium’s deputy PM wants to use ‘trade bazooka’ on US over pharma threats POLITICO.eu",
+   "domain": "politico.eu",
+   "score": 2
+  },
+  {
+   "title": "Quebec premier boycotts Mark Carney’s EU summit",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVVBCeDRuUEpKSDlydklEc0dISkFaeWhmVlRGWXBDLTRXWFJ0Y1hYMG9leThYeTFGMVFrUk5CSnN2WnZwdVdjT2VYVmdWdDd4OVp2Yl9ja3dnaEtoT3N4cEVWN3EyQkFOdmFSai1McllUUjU0a3Y3cWFFdkdtOHJVaWpMLVRLUXprNFFHSmdCWFNwazZtMW5TdEhHMGVxU25lUEFlNVF3RnVSQno4MktB?oc=5",
+   "src": "POLITICO.eu",
+   "feed": "Politico EU Health",
+   "cat": "policy",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "Quebec premier boycotts Mark Carney’s EU summit POLITICO.eu",
+   "domain": "politico.eu",
+   "score": 2
+  },
+  {
+   "title": "Devex Newswire: The tough realities facing Trump’s global health deals",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSnhTbGNIN1dwdVVER2NXX2ZqS3BqekFIa0pvaE82Q1Jnc01BUU1sUnpua3dqTFNmdzRqZHl4UndfbFJGMHBhRHdtVW4zUkxLM3JZemwxRWxzb2V2S094SnptNGtDVXVFbVIzNkxKZFcwZ003TDJLSnBqMDItTjNzS1dMTVZRRmMyNlBfSnVxNHhYV1J0MHVLREJsOXE5WUNzczlhaEZB?oc=5",
+   "src": "Devex",
+   "feed": "Devex Global Health",
+   "cat": "news",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "Devex Newswire: The tough realities facing Trump’s global health deals Devex",
+   "domain": "devex.com",
+   "score": 14
+  },
+  {
    "title": "SA maintains poultry imports from Brazil amid disease outbreak",
    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOUFTYjNBeUhFZ3R4U2dwWVRPQkdCZjZsT2x6YzFTRlh0bVpxajNOdXRGS2U1MTRiNGZ4QkhQaVRQdm92YUkzdkViX1A5OEVrTmp5dklYWFV1MWNBdGlTc2VTRGdMS2VLZXMxVFV3OElJNWlmRHJxOFNfVTJ2OURnS2pYNDFOT01YNVFMYUd0ZzFWdU1MMWpfLW0wcVN1QQ?oc=5",
    "src": "SABC News",
@@ -3977,50 +4527,6 @@
    "score": 2
   },
   {
-   "title": "EU tells capitals to halt their national social media bans for a year",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNck02R3FGeWxReVV1N21OS2FoYlBnU1FNWmUxV0V6OUU3T3JJUWRxTXl4Vm96cHU2RXFtWnp0aGpRWl9zQ3ZtZGkwd05XaG9WTTJsc0RPWWptNFBleWhzd0l1dmU5bGpJN1NPMEhoTTA3dHltWWozYjBmNjNSWHdmbnpTOHA4ZkFreUExNm5kQmIzR1NJZXByOEZ6UGNpMWlVUEY2WA?oc=5",
-   "src": "POLITICO.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "EU tells capitals to halt their national social media bans for a year POLITICO.eu",
-   "domain": "politico.eu",
-   "score": 2
-  },
-  {
-   "title": "Belgium’s deputy PM wants to use ‘trade bazooka’ on US over pharma threats",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSnNzNUo0NDkyTC1rUVowVTRMY3phaDBEdURLQ2F5SHNTR0kzNHRFYlE1WlhydWtnT3FjS1ViOWRYSUwwSEpzRXNVS0puV2gyaUtJblp4LTl5V2RjWW1lSU5wQkNkc2EzeVdtMXYwdUo4N2FtV05oT05qQ0xyUjB2TUJ4WEhabnZKRXBBcExYQnBhblV3UTE0RVhIOHR5OUltdnJ4TVZMQXd6TlFVbzlURDhjdE0waUkzYWpDY3lNVlc0Zw?oc=5",
-   "src": "POLITICO.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "Belgium’s deputy PM wants to use ‘trade bazooka’ on US over pharma threats POLITICO.eu",
-   "domain": "politico.eu",
-   "score": 2
-  },
-  {
-   "title": "Quebec premier boycotts Mark Carney’s EU summit",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVVBCeDRuUEpKSDlydklEc0dISkFaeWhmVlRGWXBDLTRXWFJ0Y1hYMG9leThYeTFGMVFrUk5CSnN2WnZwdVdjT2VYVmdWdDd4OVp2Yl9ja3dnaEtoT3N4cEVWN3EyQkFOdmFSai1McllUUjU0a3Y3cWFFdkdtOHJVaWpMLVRLUXprNFFHSmdCWFNwazZtMW5TdEhHMGVxU25lUEFlNVF3RnVSQno4MktB?oc=5",
-   "src": "POLITICO.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "Quebec premier boycotts Mark Carney’s EU summit POLITICO.eu",
-   "domain": "politico.eu",
-   "score": 2
-  },
-  {
-   "title": "Devex Newswire: The tough realities facing Trump’s global health deals",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSnhTbGNIN1dwdVVER2NXX2ZqS3BqekFIa0pvaE82Q1Jnc01BUU1sUnpua3dqTFNmdzRqZHl4UndfbFJGMHBhRHdtVW4zUkxLM3JZemwxRWxzb2V2S094SnptNGtDVXVFbVIzNkxKZFcwZ003TDJLSnBqMDItTjNzS1dMTVZRRmMyNlBfSnVxNHhYV1J0MHVLREJsOXE5WUNzczlhaEZB?oc=5",
-   "src": "Devex",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "Devex Newswire: The tough realities facing Trump’s global health deals Devex",
-   "domain": "devex.com",
-   "score": 14
-  },
-  {
    "title": "Tuberculosis incidence among household contacts of individuals with symptomatic and asymptomatic tuberculosis: A historical cohort study in the Western Cape province of South Afric",
    "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0006550",
    "src": "PLOS Global Public Health",
@@ -4054,28 +4560,6 @@
    "score": 1
   },
   {
-   "title": "Myanmar’s illicit economy fuels escalating violence, with civilians bearing the brunt",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE51bkJ4NHZJZ3ZOYjFQeWJVS3hsOFlHU1BiNWJqMFQycmVUbEpzZWtJZklfYm9ram41b21fNHZOVGhwSGZCN19HZTNkbTdTUEpJQThMdzV6MA?oc=5",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "Myanmar’s illicit economy fuels escalating violence, with civilians bearing the brunt UN News",
-   "domain": "news.un.org",
-   "score": 4
-  },
-  {
-   "title": "Russia drone strike on Ukrainian railway station kills 13",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBuYTlXOE9ZMGh3bGZPSXBCbXhWeWNtT2RpT3RadW8zaUdJM0hHUE1uT1M4dXpsdHB5N0k3Q29Hb2V0T29Ya0g3NFdFbXJDZUNLa2t4aVJncw?oc=5",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "Russia drone strike on Ukrainian railway station kills 13 UN News",
-   "domain": "news.un.org",
-   "score": 4
-  },
-  {
    "title": "Afghanistan opium production jumps fivefold as farmers find ways round Taliban ban",
    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5EWGdhakdlZlpxbFh0d1Foc29jemczYzFmd0hOSmMyQXFXMGU5UWRxTl9yWEtQMzFDZEN4NzA1eU56TExoNVhZVVUtdUdrd3A5dmEzdndaRQ?oc=5",
    "src": "UN News",
@@ -4083,17 +4567,6 @@
    "cat": "who",
    "date": "2026-10-29T00:00:00+00:00",
    "summary": "Afghanistan opium production jumps fivefold as farmers find ways round Taliban ban UN News",
-   "domain": "news.un.org",
-   "score": 4
-  },
-  {
-   "title": "AI is changing the way we think. The question is whether we’ll notice in time",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1yX0thOW1UNk9aOUsyWHRLREpnbElzVWxaYm9YZDl1aXJJZ2hDU1RmRWhkQ0RDZER6a1JQNnlYTnktRVhrSkdBSXV6Q0MyLUMzTFNockZ1MA?oc=5",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "AI is changing the way we think. The question is whether we’ll notice in time UN News",
    "domain": "news.un.org",
    "score": 4
   },
@@ -5011,17 +5484,6 @@
    "score": 6
   },
   {
-   "title": "Paraguay moves closer to eliminating trachoma as a public health problem",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObGZORW0ySGJjX3MxZmZuR19nTHh5YVUxR0RueW5xLWNqSjU3V084aExINWstWXluUG5GbEhjeXhSZFY2ZDRkTkNPa2xSR1dtNzVpNndJNGtqTmdKalN2bUFSdVkwMGdsSThzVGVYOVZadk1uZm1pTW9vZ09RVml5Q3FSVUFNNzhuTzNubmtKNVVYNDJKR3hzV3dtdUc?oc=5",
-   "src": "Pan American Health Organization (PAHO)",
-   "feed": "NTD news",
-   "cat": "ntd",
-   "date": "2026-10-28T00:00:00+00:00",
-   "summary": "Paraguay moves closer to eliminating trachoma as a public health problem Pan American Health Organization (PAHO)",
-   "domain": "paho.org",
-   "score": 6
-  },
-  {
    "title": "These are the 4 most urgent superbugs spreading in the US this winter",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ3VUaGZrWXJNakNxUVJFNEJjaGxha0tpbU9yQWZvdENBTDM4VXVSeVBFTGkwU1NFVjJETVF0cHR0azdRMm9iY3JSbTBXQllhMjZIZEhGZm42c3VDZy1TdVowMDFxX3l6azJxOFZ6b0dmbjdQeUZWUUxEVUo2b3hBNzItdXhkOS14a1Rkc2ZsRDhOa21tNTBlb1FJdGc?oc=5",
    "src": "The Independent",
@@ -5030,6 +5492,17 @@
    "date": "2026-10-28T00:00:00+00:00",
    "summary": "These are the 4 most urgent superbugs spreading in the US this winter The Independent",
    "domain": "independent.co.uk",
+   "score": 6
+  },
+  {
+   "title": "Paraguay moves closer to eliminating trachoma as a public health problem",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObGZORW0ySGJjX3MxZmZuR19nTHh5YVUxR0RueW5xLWNqSjU3V084aExINWstWXluUG5GbEhjeXhSZFY2ZDRkTkNPa2xSR1dtNzVpNndJNGtqTmdKalN2bUFSdVkwMGdsSThzVGVYOVZadk1uZm1pTW9vZ09RVml5Q3FSVUFNNzhuTzNubmtKNVVYNDJKR3hzV3dtdUc?oc=5",
+   "src": "Pan American Health Organization (PAHO)",
+   "feed": "NTD news",
+   "cat": "ntd",
+   "date": "2026-10-28T00:00:00+00:00",
+   "summary": "Paraguay moves closer to eliminating trachoma as a public health problem Pan American Health Organization (PAHO)",
+   "domain": "paho.org",
    "score": 6
   },
   {
@@ -5056,12 +5529,12 @@
   },
   {
    "title": "DR Congo: WHO urges sustained efforts as Ebola cases top 10,000",
-   "url": "https://news.un.org/feed/view/en/story/2026/10/1168689",
-   "src": "UN News - Global perspective Human stories",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE0xbEx1c1JUVmVUZkpfdVFwX3FFXzRHR2lqYnpfRWdnZHVQUVhsRHdvVWVNTHZ1RjNRWDQ5X1VvcHpwVjNfWGN0cFhzVks3MGJra0xkYXJ2bw?oc=5",
+   "src": "UN News",
    "feed": "UN News Health",
    "cat": "who",
    "date": "2026-10-28T00:00:00+00:00",
-   "summary": "As Ebola cases in the Democratic Republic of the Congo (DRC) surpass the 10,000 mark, the World Health Organization (WHO) has underlined the need for continued efforts to contain spread of the disease.",
+   "summary": "DR Congo: WHO urges sustained efforts as Ebola cases top 10,000 UN News",
    "domain": "news.un.org",
    "score": 16
   },
@@ -5099,17 +5572,6 @@
    "score": 35
   },
   {
-   "title": "Gevorg Tamamyan: Paediatric Oncologist, System Builder, Transregional Nominee – And a Test for Geneva’s Entrenched Machinery?",
-   "url": "https://healthpolicy-watch.news/gevorg-tamamyan-paediatric-oncologist-system-builder-transregional-nominee-and-a-test-for-genevas-entrenched-machinery/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-10-28T00:00:00+00:00",
-   "summary": "Who will steer the World Health Organization through its next chapter? Explore Health Policy Watch’s daily series examining the platforms, records, and institutional hurdles facing each contender for WHO Director-General, continuing today with Gevorg Tamamyan. Access all candidate profiles on our de",
-   "domain": "healthpolicy-watch.news",
-   "score": 12
-  },
-  {
    "title": "Billionaires shatter spending record to fight California wealth tax",
    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVzBpS3BDc0Z0b0FWT0FWamh1ZnlRdE1HRjVLb1AtR3o5dzhxY0E1a2hOcHRtTmxpV2xFUmE5UmtqX0lCb0Q3LXlxbVgyZXVZUy1JY2xTOVFrZnlSWU9sMVlmOUVjMUowLURzdng5UThPdURCa0xrX01hSGNWX1E2NFdHSTkxU1o5V3ZGeFRfNGdKVTdZU1ZvRkRpUHNaYnNUWmc?oc=5",
    "src": "POLITICO.eu",
@@ -5117,17 +5579,6 @@
    "cat": "policy",
    "date": "2026-10-28T00:00:00+00:00",
    "summary": "Billionaires shatter spending record to fight California wealth tax POLITICO.eu",
-   "domain": "politico.eu",
-   "score": 2
-  },
-  {
-   "title": "Spanish train disaster deals new blow to Sánchez’s long-shot election bid",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQS2tfUi0zd2Ztb09HMlItZGZuVW9tMjRfUDh2TGJOcm4zX2E5Y0JrTmc1TXdZZXJkM0pwWEwyVHJJUzZ2Z2FaNkFBVmhUZlVtTnUzai1HcktEUXA2Z2d2OHQxVVhVUEtlYUhndjQ0anI3MjMwUlBtVHczVFljSUp3TnR1dFl4NktmdFFTX3Jnb190dEFVX1V3bjBhQ2JZaW9kTFphOE9meVc2Y2xwelpJMTFVOGY?oc=5",
-   "src": "POLITICO.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-10-28T00:00:00+00:00",
-   "summary": "Spanish train disaster deals new blow to Sánchez’s long-shot election bid POLITICO.eu",
    "domain": "politico.eu",
    "score": 2
   },
@@ -5152,6 +5603,28 @@
    "summary": "The future of US global health aid comes slowly into focus Devex",
    "domain": "devex.com",
    "score": 14
+  },
+  {
+   "title": "Gevorg Tamamyan: Paediatric Oncologist, System Builder, Transregional Nominee – And a Test for Geneva’s Entrenched Machinery?",
+   "url": "https://healthpolicy-watch.news/gevorg-tamamyan-paediatric-oncologist-system-builder-transregional-nominee-and-a-test-for-genevas-entrenched-machinery/",
+   "src": "Health Policy Watch",
+   "feed": "Health Policy Watch",
+   "cat": "policy",
+   "date": "2026-10-28T00:00:00+00:00",
+   "summary": "Who will steer the World Health Organization through its next chapter? Explore Health Policy Watch’s daily series examining the platforms, records, and institutional hurdles facing each contender for WHO Director-General, continuing today with Gevorg Tamamyan. Access all candidate profiles on our de",
+   "domain": "healthpolicy-watch.news",
+   "score": 12
+  },
+  {
+   "title": "Spanish train disaster deals new blow to Sánchez’s long-shot election bid",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQS2tfUi0zd2Ztb09HMlItZGZuVW9tMjRfUDh2TGJOcm4zX2E5Y0JrTmc1TXdZZXJkM0pwWEwyVHJJUzZ2Z2FaNkFBVmhUZlVtTnUzai1HcktEUXA2Z2d2OHQxVVhVUEtlYUhndjQ0anI3MjMwUlBtVHczVFljSUp3TnR1dFl4NktmdFFTX3Jnb190dEFVX1V3bjBhQ2JZaW9kTFphOE9meVc2Y2xwelpJMTFVOGY?oc=5",
+   "src": "POLITICO.eu",
+   "feed": "Politico EU Health",
+   "cat": "policy",
+   "date": "2026-10-28T00:00:00+00:00",
+   "summary": "Spanish train disaster deals new blow to Sánchez’s long-shot election bid POLITICO.eu",
+   "domain": "politico.eu",
+   "score": 2
   },
   {
    "title": "Some Monkeys Seem to Become Germophobic After Living Through a Disease Outbreak, Just Like Humans",
@@ -5968,6 +6441,17 @@
    "score": 2
   },
   {
+   "title": "Trainer and Editorial Mentor - Consultancy",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5iZzh3OGtCQzhLWENNQ1hON2pZQnV2bGJJZmducHBRZFhrdnpHZFlqdElHdVBEdDQ5bEt5bDZMTmRSUmg2ZW95a2p4VnF5Q3NuSHBTOEFXYzc0eVlwUTZNSFRFcHpNV1pxWHBUZmpRal9Jem9NQi1jXzhvNkY3VTA?oc=5",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-10-27T14:09:28+00:00",
+   "summary": "Trainer and Editorial Mentor - Consultancy ReliefWeb",
+   "domain": "reliefweb.int",
+   "score": 2
+  },
+  {
    "title": "CDC report shows rise in drug-resistant infections, deaths in US",
    "url": "https://www.cidrap.umn.edu/antimicrobial-stewardship/cdc-report-shows-rise-drug-resistant-infections-deaths-us",
    "src": "CIDRAP Stewardship",
@@ -6012,17 +6496,6 @@
    "score": 6
   },
   {
-   "title": "Ebola: 20 contacts released from quarantine in Kenya, amid vaccine ‘hope’ in DR Congo",
-   "url": "https://news.un.org/feed/view/en/story/2026/10/1168676",
-   "src": "UN News - Global perspective Human stories",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-27T00:00:00+00:00",
-   "summary": "Twenty people associated with Kenya’s first case of Ebola Bundibugyo virus disease have been reunited with their families after being released from quarantine following completion of a mandatory 21-day monitoring period.",
-   "domain": "news.un.org",
-   "score": 15
-  },
-  {
    "title": "ECDC to deploy experts as Ebola cases emerge in Kenya and Nigeria",
    "url": "https://www.ecdc.europa.eu/en/news-events/ecdc-deploy-experts-ebola-cases-emerge-kenya-and-nigeria",
    "src": "ECDC",
@@ -6034,15 +6507,15 @@
    "score": 15
   },
   {
-   "title": "[Correspondence] Super El Niño threatens a public health emergency in Africa",
-   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02156-2/fulltext?rss=yes",
-   "src": "The Lancet",
-   "feed": "The Lancet",
-   "cat": "journal",
+   "title": "Africa CDC Commends Kenya’s Decisive Leadership and Strengthens Joint Efforts to Contain Ebola",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNOGZTVkt3UlQxS0VzazhTVWZIRTUwbUpWSUx3TGU3NjkyVzJzSHV0ZmtpcGt4SUlsQ3dVbThLYktVY2RudDctVkdtbGszWGVXcU9KU1kzeFRLVEtydk5HMDRPTlV3SjVjMlVHR2tXVVpKaV9rWExQUUxfczJmd1o3NEtkMEJWWmhpSjNZQmtvRTRTa0ZpR1Ytay1fUW9KSXE1anQweFFORTBVRGtuUFF0VlV4czlkZkh3VFpyUWk5MUNQcWRL?oc=5",
+   "src": "Home – Africa CDC",
+   "feed": "Africa CDC",
+   "cat": "global",
    "date": "2026-10-27T00:00:00+00:00",
-   "summary": "Africa stands on the cusp of an El Niño-driven public health emergency, superimposed on an increasingly unpredictable and extreme climate. The projected toll of heat-related deaths in Africa in the coming months will dwarf that in the northern hemisphere during the summer of 2026.1,2 Equally concern",
-   "domain": "thelancet.com",
-   "score": 9
+   "summary": "Africa CDC Commends Kenya’s Decisive Leadership and Strengthens Joint Efforts to Contain Ebola Home – Africa CDC",
+   "domain": "africacdc.org",
+   "score": 15
   },
   {
    "title": "Data Workers and the Mental Toll of Cleaning the Internet",
@@ -6054,6 +6527,17 @@
    "summary": "Data Workers and the Mental Toll of Cleaning the Internet Think Global Health",
    "domain": "thinkglobalhealth.org",
    "score": 10
+  },
+  {
+   "title": "[Correspondence] Super El Niño threatens a public health emergency in Africa",
+   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02156-2/fulltext?rss=yes",
+   "src": "The Lancet",
+   "feed": "The Lancet",
+   "cat": "journal",
+   "date": "2026-10-27T00:00:00+00:00",
+   "summary": "Africa stands on the cusp of an El Niño-driven public health emergency, superimposed on an increasingly unpredictable and extreme climate. The projected toll of heat-related deaths in Africa in the coming months will dwarf that in the northern hemisphere during the summer of 2026.1,2 Equally concern",
+   "domain": "thelancet.com",
+   "score": 9
   },
   {
    "title": "Meet the team behind the America First Global Health Strategy",
@@ -6078,28 +6562,6 @@
    "score": 20
   },
   {
-   "title": "Call for Experts – ICT, GIS, Digital Transformation, AI and Information Management",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY3FFLURTQlpUN2dwN0tSblg2LTl5TG85S29lUXNsdlZzN0RNc3ZkV2w5R0kxVmI3LXV4M1B5UjZpZG1tNk43UW96eFVNdi1SdXhMa0R6N19NdEUzQ1VGT01iOEJpRjNfd3JvVXREdG9RenZ1R0cxVUtpRE1abWVLMmtSWVZ6X3FOa1llTnNOZzd6cjBIWmdKZ3g1d0Z0RmE3SUtOSHN3TFZHaG8?oc=5",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-10-27T00:00:00+00:00",
-   "summary": "Call for Experts – ICT, GIS, Digital Transformation, AI and Information Management ReliefWeb",
-   "domain": "reliefweb.int",
-   "score": 2
-  },
-  {
-   "title": "Africa CDC Commends Kenya’s Decisive Leadership and Strengthens Joint Efforts to Contain Ebola",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNOGZTVkt3UlQxS0VzazhTVWZIRTUwbUpWSUx3TGU3NjkyVzJzSHV0ZmtpcGt4SUlsQ3dVbThLYktVY2RudDctVkdtbGszWGVXcU9KU1kzeFRLVEtydk5HMDRPTlV3SjVjMlVHR2tXVVpKaV9rWExQUUxfczJmd1o3NEtkMEJWWmhpSjNZQmtvRTRTa0ZpR1Ytay1fUW9KSXE1anQweFFORTBVRGtuUFF0VlV4czlkZkh3VFpyUWk5MUNQcWRL?oc=5",
-   "src": "Home – Africa CDC",
-   "feed": "Africa CDC",
-   "cat": "global",
-   "date": "2026-10-27T00:00:00+00:00",
-   "summary": "Africa CDC Commends Kenya’s Decisive Leadership and Strengthens Joint Efforts to Contain Ebola Home – Africa CDC",
-   "domain": "africacdc.org",
-   "score": 15
-  },
-  {
    "title": "3 questions global health leaders must address following WHS 2026",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONm5kdVN3NWVMTXdLSHBaQnVFSEJZRm1TOEVIbDVjZFV2TXV3QnF5MU41c2k3YkpXNVNkNGNCSTJCZ1p5UmF0SWZpRVllOFhvbXhJWjdIazNEdnM0RE1BQVBDN3lHQTctOTBGaXRTSV9nZUk3bGd1NFo3WnBtSkhaem9RSl9JQWZyb3ZadlpWX1BFNm1RQzd1OFNvMnM2MXh5S2loQnJDWWN3WXRINHc?oc=5",
    "src": "Devex",
@@ -6109,6 +6571,28 @@
    "summary": "3 questions global health leaders must address following WHS 2026 Devex",
    "domain": "devex.com",
    "score": 14
+  },
+  {
+   "title": "Ebola: 20 contacts released from quarantine in Kenya, amid vaccine ‘hope’ in DR Congo",
+   "url": "https://news.un.org/feed/view/en/story/2026/10/1168676",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-10-27T00:00:00+00:00",
+   "summary": "Twenty people associated with Kenya’s first case of Ebola Bundibugyo virus disease have been reunited with their families after being released from quarantine following completion of a mandatory 21-day monitoring period.",
+   "domain": "news.un.org",
+   "score": 15
+  },
+  {
+   "title": "Call for Experts – ICT, GIS, Digital Transformation, AI and Information Management",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY3FFLURTQlpUN2dwN0tSblg2LTl5TG85S29lUXNsdlZzN0RNc3ZkV2w5R0kxVmI3LXV4M1B5UjZpZG1tNk43UW96eFVNdi1SdXhMa0R6N19NdEUzQ1VGT01iOEJpRjNfd3JvVXREdG9RenZ1R0cxVUtpRE1abWVLMmtSWVZ6X3FOa1llTnNOZzd6cjBIWmdKZ3g1d0Z0RmE3SUtOSHN3TFZHaG8?oc=5",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-10-27T00:00:00+00:00",
+   "summary": "Call for Experts – ICT, GIS, Digital Transformation, AI and Information Management ReliefWeb",
+   "domain": "reliefweb.int",
+   "score": 2
   },
   {
    "title": "UNAIDS Board Rejects ‘Sunsetting’, Opting Instead for Transformation",
@@ -6166,17 +6650,6 @@
    "score": 10
   },
   {
-   "title": "Ebola: UN officials condemn killing of nurse in DR Congo",
-   "url": "https://news.un.org/feed/view/en/story/2026/10/1168667",
-   "src": "UN News - Global perspective Human stories",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-26T00:00:00+00:00",
-   "summary": "The UN’s Ebola coordinator and the head of the World Health Organization (WHO) have deplored the killing of a nurse working to halt the spread of the disease in the Democratic Republic of the Congo (DRC).",
-   "domain": "news.un.org",
-   "score": 12
-  },
-  {
    "title": "Medical assistants talk to families about vaccines in about half of visits, study finds",
    "url": "https://www.cidrap.umn.edu/childhood-vaccines/medical-assistants-talk-families-about-vaccines-about-half-visits-study-finds",
    "src": "CIDRAP Public Health",
@@ -6186,6 +6659,17 @@
    "summary": "A study highlights how office staff communicate about vaccines with families and the need to integrate best practices into pediatric care.",
    "domain": "cidrap.umn.edu",
    "score": 6
+  },
+  {
+   "title": "After the Earthquakes, Venezuela Faces a Longer Health Emergency",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNFNYdDRnMFh0TlBVMHZ3OEZuMDUtNDBsTkFkRjVmeC05R0MzN0sxV0ZCMG9pYUVmQllWcnFkRmpEN0N6NnZPdEc1Q3ZqZWtPaEd3VVpZcHZ6UGFUTGtreWd4Unp0Q1VrQUR5dDluR09YejE5NlpndVhKR3MwUDNhSVZ4d2Yxb05hVnNKUDhmb0J6RU9jRXNsTTdCMWpCS0FtZm9hZzNUS2xiT0ltcjFETTBZTjN5NDA?oc=5",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-10-26T00:00:00+00:00",
+   "summary": "After the Earthquakes, Venezuela Faces a Longer Health Emergency ReliefWeb",
+   "domain": "reliefweb.int",
+   "score": 8
   },
   {
    "title": "[Articles] Sacituzumab tirumotecan versus treatment of physician's choice in previously treated endometrial cancer (TroFuse-005/ENGOT-en23/GOG-3095): a randomised, open-label, phas",
@@ -6221,6 +6705,17 @@
    "score": 3
   },
   {
+   "title": "Ebola: UN officials condemn killing of nurse in DR Congo",
+   "url": "https://news.un.org/feed/view/en/story/2026/10/1168667",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-10-26T00:00:00+00:00",
+   "summary": "The UN’s Ebola coordinator and the head of the World Health Organization (WHO) have deplored the killing of a nurse working to halt the spread of the disease in the Democratic Republic of the Congo (DRC).",
+   "domain": "news.un.org",
+   "score": 12
+  },
+  {
    "title": "Plague risks in Russia and a dangerous delay on WHO pandemic agreement | Letters",
    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOb1N4MXZ3ZmhvOWh2eXN4eWo3WWs3UDQ5cVF3cEd0TnA2MFRNU3l5eXVLZlBRMjBHRGVlUnlIai1HUjBOMC1QQktFMnJkNktKQjZqaHVJU1JKcGl6NVNTdTVkb3dOaEhsVWsyZ3NYZlAyaTk1bEp6RnJfdklrSGhIQVFCUGVFYkVCR1NMU0JUQ1VHZWh2cENNRVljR2x6M3VJckJld28zbFZFdkdsRjhOWE9JczFnWGtOSHc?oc=5",
    "src": "The Guardian",
@@ -6230,6 +6725,17 @@
    "summary": "Plague risks in Russia and a dangerous delay on WHO pandemic agreement | Letters The Guardian",
    "domain": "theguardian.com",
    "score": 20
+  },
+  {
+   "title": "Visceral Leishmaniasis Presenting as Hemophagocytic Lymphohistiocytosis in a Non-endemic Setting: A Case Report",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQdnd3bjZjOWprWVU3T1B5WGlQOXZlZ3RGXzl3R1REYjIyeU1OenJzNkJZNTZBckxZMTlVZjBDQlE1X1d0SzktRWhGTEVVVG1xLUNHUGN4QUd2QjJCWHFfTGZaR0hsZlNZMVBUaEVpdjFLODJpbGk1Q3Q0NEJiQXJraXlocExqTnlhNUZYRjJ6SlBEWWY4Q01HWks3UXRidExBcGpPUTBFVUpOMXFEVUh2b0hNSDdsdFFLcVAzRUJiOEtQZzBEYnpRTkw2S0x1WWNRb3E0VzZQWHctSERsaS1YM1hSUQ?oc=5",
+   "src": "Cureus",
+   "feed": "NTD news",
+   "cat": "ntd",
+   "date": "2026-10-24T07:00:00+00:00",
+   "summary": "Visceral Leishmaniasis Presenting as Hemophagocytic Lymphohistiocytosis in a Non-endemic Setting: A Case Report Cureus",
+   "domain": "cureus.com",
+   "score": 6
   },
   {
    "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo, Kenya and Nigeria",
@@ -6252,28 +6758,6 @@
    "summary": "Discover how omics is transforming life sciences with expert insights from Dr. Shi-Qi An on multiomics, single-cell research and drug discovery.",
    "domain": "news-medical.net",
    "score": 2
-  },
-  {
-   "title": "Blood brothers: WHO chief joins ENHYPEN to celebrate drive success",
-   "url": "https://news.un.org/feed/view/en/story/2026/10/1168662",
-   "src": "UN News - Global perspective Human stories",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-23T00:00:00+00:00",
-   "summary": "The head of the World Health Organization (WHO) is a self-confessed fan of K-pop sensation ENHYPEN and this week, he got the chance to tell them so in person.",
-   "domain": "news.un.org",
-   "score": 12
-  },
-  {
-   "title": "‘Burden and loss’ builds in DR Congo, as Kenya strengthens Ebola containment",
-   "url": "https://news.un.org/feed/view/en/story/2026/10/1168655",
-   "src": "UN News - Global perspective Human stories",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-23T00:00:00+00:00",
-   "summary": "As Ebola continues to spread in the Democratic Republic of the Congo (DRC), more resources are needed to fight the disease and feed patients and families, UN agencies said on Friday.",
-   "domain": "news.un.org",
-   "score": 12
   },
   {
    "title": "CIDRAP Director Michael Osterholm recognized for defending vaccine science",
@@ -6318,6 +6802,28 @@
    "summary": "Equity has been a central principle to global health since the field emerged approximately 25–30 years ago. More recently, attention has turned inwards, towards disparities and questions of inequities within global health as a discipline. Unequal access to funding, visa and language barriers, author",
    "domain": "thelancet.com",
    "score": 19
+  },
+  {
+   "title": "Blood brothers: WHO chief joins ENHYPEN to celebrate drive success",
+   "url": "https://news.un.org/feed/view/en/story/2026/10/1168662",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-10-23T00:00:00+00:00",
+   "summary": "The head of the World Health Organization (WHO) is a self-confessed fan of K-pop sensation ENHYPEN and this week, he got the chance to tell them so in person.",
+   "domain": "news.un.org",
+   "score": 12
+  },
+  {
+   "title": "‘Burden and loss’ builds in DR Congo, as Kenya strengthens Ebola containment",
+   "url": "https://news.un.org/feed/view/en/story/2026/10/1168655",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-10-23T00:00:00+00:00",
+   "summary": "As Ebola continues to spread in the Democratic Republic of the Congo (DRC), more resources are needed to fight the disease and feed patients and families, UN agencies said on Friday.",
+   "domain": "news.un.org",
+   "score": 12
   },
   {
    "title": "Measles Cases and Outbreaks",
@@ -6375,28 +6881,6 @@
    "score": 19
   },
   {
-   "title": "First human case of Shamonda virus reported in France as patient dies",
-   "url": "https://news.un.org/feed/view/en/story/2026/10/1168652",
-   "src": "UN News - Global perspective Human stories",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-22T00:00:00+00:00",
-   "summary": "A patient in France has died after being infected with Shamonda virus, the first recorded human case of the disease.",
-   "domain": "news.un.org",
-   "score": 3
-  },
-  {
-   "title": "DR Congo: Ebola responders under pressure as outbreak expands",
-   "url": "https://news.un.org/feed/view/en/story/2026/10/1168647",
-   "src": "UN News - Global perspective Human stories",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-22T00:00:00+00:00",
-   "summary": "As the deadly Ebola disease outbreak reached an eighth province of the Democratic Republic of the Congo (DRC), investigators pursued all leads on Thursday to assess the risk of the disease spreading in Nigeria.",
-   "domain": "news.un.org",
-   "score": 13
-  },
-  {
    "title": "Calley Means, top RFK adviser, steps down, possibly over MAHA delays",
    "url": "https://www.cidrap.umn.edu/public-health/calley-means-top-rfk-adviser-steps-down-possibly-over-maha-delays",
    "src": "CIDRAP Public Health",
@@ -6406,6 +6890,17 @@
    "summary": "Means was reportedly frustrated with a postponed meeting on ultraprocessed food.",
    "domain": "cidrap.umn.edu",
    "score": 2
+  },
+  {
+   "title": "Fatal encephalitis caused by Shamonda virus Europe 1 (SHAV-EU1) in a patient with a severely weakened immune system, France, 2026",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbVA3WHJQZ0wtU3U3NDNTR0gzSWpEcDYwSTA3ZjBJRWt3Zk1TMi1NNFQwZlVGb21Vd2lidVRtNFVVUldjV1FiUGw5ZWhBYlJ3MjRoaXBmWVRma3F6RnM5UUh4b3BOR3JjdzBpbTJhMkpkUG5qQ1ZGeVVzLVdfc0M0WGdpMnNDWEU?oc=5",
+   "src": "Eurosurveillance",
+   "feed": "Eurosurveillance",
+   "cat": "promed",
+   "date": "2026-10-22T00:00:00+00:00",
+   "summary": "Fatal encephalitis caused by Shamonda virus Europe 1 (SHAV-EU1) in a patient with a severely weakened immune system, France, 2026 Eurosurveillance",
+   "domain": "eurosurveillance.org",
+   "score": 4
   },
   {
    "title": "Respiratory infections season",
@@ -6441,17 +6936,6 @@
    "score": 5
   },
   {
-   "title": "Fatal encephalitis caused by Shamonda virus Europe 1 (SHAV-EU1) in a patient with a severely weakened immune system, France, 2026",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbVA3WHJQZ0wtU3U3NDNTR0gzSWpEcDYwSTA3ZjBJRWt3Zk1TMi1NNFQwZlVGb21Vd2lidVRtNFVVUldjV1FiUGw5ZWhBYlJ3MjRoaXBmWVRma3F6RnM5UUh4b3BOR3JjdzBpbTJhMkpkUG5qQ1ZGeVVzLVdfc0M0WGdpMnNDWEU?oc=5",
-   "src": "Eurosurveillance",
-   "feed": "Eurosurveillance",
-   "cat": "promed",
-   "date": "2026-10-22T00:00:00+00:00",
-   "summary": "Fatal encephalitis caused by Shamonda virus Europe 1 (SHAV-EU1) in a patient with a severely weakened immune system, France, 2026 Eurosurveillance",
-   "domain": "eurosurveillance.org",
-   "score": 4
-  },
-  {
    "title": "How Talanoa Can Guide Inclusive Global Health Dialogues",
    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQk5aRUZsVjUzR0NkRThOYmVDRXZ0RmxCdFpYYVBNUnZPSC1zb3U4YW14cTN2UElrRnpPQmFTMmRxU3dQUllidGdZOGhZVS1yZ1I4SDNaYXhtdmtKOXVtRnJsYnlqdnBxdXBacHZSQmJzYTRyajNEVFlxRFJiX1lwN2NBaWVTc09aSWlqdXAyUDZ6ZmstS3c0RGlnNnhNdw?oc=5",
    "src": "Think Global Health",
@@ -6463,6 +6947,28 @@
    "score": 16
   },
   {
+   "title": "First human case of Shamonda virus reported in France as patient dies",
+   "url": "https://news.un.org/feed/view/en/story/2026/10/1168652",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-10-22T00:00:00+00:00",
+   "summary": "A patient in France has died after being infected with Shamonda virus, the first recorded human case of the disease.",
+   "domain": "news.un.org",
+   "score": 3
+  },
+  {
+   "title": "DR Congo: Ebola responders under pressure as outbreak expands",
+   "url": "https://news.un.org/feed/view/en/story/2026/10/1168647",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-10-22T00:00:00+00:00",
+   "summary": "As the deadly Ebola disease outbreak reached an eighth province of the Democratic Republic of the Congo (DRC), investigators pursued all leads on Thursday to assess the risk of the disease spreading in Nigeria.",
+   "domain": "news.un.org",
+   "score": 13
+  },
+  {
    "title": "What is visceral leishmaniasis?",
    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQSVk0Rk9wUExaSDdiYnRXXzdxUWxXQWtFS3BFOVViLVU5MzFiNFpldjJwT25ZZk1OSmJ5Z1lVYlYzMm56ckVtaXl6LXVTRzJKY0V5QmZjbHIycFBNbERIUG5tQ1p1Z1FHY1RYVkkwRlVITVgxOW1EWTdMd1hRXy1SQkxMUEp0cW12Y3NIZEVQR2hfUGgwZ0E?oc=5",
    "src": "Wellcome Trust",
@@ -6472,6 +6978,17 @@
    "summary": "What is visceral leishmaniasis? Wellcome Trust",
    "domain": "wellcome.org",
    "score": 6
+  },
+  {
+   "title": "Epidemics linked to loss of health workers, with poorer nations hardest hit",
+   "url": "https://www.cidrap.umn.edu/misc-emerging-topics/epidemics-linked-loss-health-workers-poorer-nations-hardest-hit",
+   "src": "CIDRAP Public Health",
+   "feed": "CIDRAP Public Health",
+   "cat": "promed",
+   "date": "2026-10-21T00:00:00+00:00",
+   "summary": "Infectious disease epidemics could account for an average annual shortfall of 17,500 healthcare workers worldwide.",
+   "domain": "cidrap.umn.edu",
+   "score": 7
   },
   {
    "title": "World News in Brief: Aid for Ethiopia, Abyei drone strikes condemned, extreme heat and newborn health",
@@ -6507,17 +7024,6 @@
    "score": 16
   },
   {
-   "title": "Epidemics linked to loss of health workers, with poorer nations hardest hit",
-   "url": "https://www.cidrap.umn.edu/misc-emerging-topics/epidemics-linked-loss-health-workers-poorer-nations-hardest-hit",
-   "src": "CIDRAP Public Health",
-   "feed": "CIDRAP Public Health",
-   "cat": "promed",
-   "date": "2026-10-21T00:00:00+00:00",
-   "summary": "Infectious disease epidemics could account for an average annual shortfall of 17,500 healthcare workers worldwide.",
-   "domain": "cidrap.umn.edu",
-   "score": 7
-  },
-  {
    "title": "Blood test could slash sepsis antibiotics",
    "url": "https://www.news-medical.net/news/20261020/Blood-test-could-slash-sepsis-antibiotics.aspx",
    "src": "AMR Industry / news",
@@ -6551,17 +7057,6 @@
    "score": 20
   },
   {
-   "title": "Yemen war continues to force families from homes amid hunger and disease",
-   "url": "https://news.un.org/feed/view/en/story/2026/10/1168629",
-   "src": "UN News - Global perspective Human stories",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-20T00:00:00+00:00",
-   "summary": "More than 250,000 people have now fled renewed fighting in Yemen, the UN said on Tuesday, citing particular concern for those sheltering in the southwestern city of Taiz and the wider governorate, where access is “essentially blocked”.",
-   "domain": "news.un.org",
-   "score": 4
-  },
-  {
    "title": "Devex CheckUp: Is a consensus forming around the future of global health?",
    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbkY4MWg5MTU2YmVwR19SSVNJOUlnNjZBYVd3cHU2cTR0Sm9lLUo5WEExejV4XzNsRUVLcTBfcWh3NUFZT2RpTmJmZ0M0blU5UDFkbmNfUHRYX1hNSDBKWWtXOFJzUHUwa0JDVlk2NmRGY1d5NU4tWDc2TGZDUjgzSVZJcWFJaVZBWGx3U2lONEdYM2hiU0Rod2stMTI1UWt1V095TTZ3Vk0?oc=5",
    "src": "Devex",
@@ -6571,6 +7066,17 @@
    "summary": "Devex CheckUp: Is a consensus forming around the future of global health? Devex",
    "domain": "devex.com",
    "score": 14
+  },
+  {
+   "title": "Yemen war continues to force families from homes amid hunger and disease",
+   "url": "https://news.un.org/feed/view/en/story/2026/10/1168629",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-10-20T00:00:00+00:00",
+   "summary": "More than 250,000 people have now fled renewed fighting in Yemen, the UN said on Tuesday, citing particular concern for those sheltering in the southwestern city of Taiz and the wider governorate, where access is “essentially blocked”.",
+   "domain": "news.un.org",
+   "score": 4
   },
   {
    "title": "Study links antibiotic use with subsequent irritable bowel syndrome",
@@ -6826,15 +7332,15 @@
    "score": 19
   },
   {
-   "title": "[Articles] 2022 WHO estimates for overall and human papillomavirus test-based cervical cancer screening coverage worldwide: a review and synthetic analysis",
-   "url": "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(26)00206-8/fulltext?rss=yes",
-   "src": "Lancet Global Health",
-   "feed": "Lancet Global Health",
-   "cat": "journal",
+   "title": "African Development Bank concludes supervision mission for $55 million health emergency project Sudan Health Emergency and Infrastructure Project",
+   "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPM0RWbXFDUUpieTJwTEFjRUkzeVYwTWd6NXRhdzVMSjdMTlFtY1NrWS1kVDRoRDhxQmUxN3p6TEE0YnBybGF3STI5MEJaTjBoQlp6anh0MHZKNXBQLU1kT0JGR25YUnNjejlhVzI0SlJOM2xKYWlrYnZFams5cTVxOGNmNU1QWHR2QkV1WXNOQWRFQU54Rk5PU2Zha3F0dzBTMk9nOVFuenE2VXUwQUtXbERCM0VkSVNuOHIxcTZxcmhIbU9fZWZLZHRTcmlaLWp1Xzd1cXNsTEtXU3RLOFRjNWhvd0hDS1RtemhlYWZPdWVZcThUSHllUE5nU0RfY1FnV0dBN2xocC1OSGtFLXc?oc=5",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
    "date": "2026-10-14T00:00:00+00:00",
-   "summary": "Despite policy updates, overall and HPV-specific screening coverage remains far below WHO’s 70% target. Three in five women aged 30–49 years worldwide have never been screened, and 92% have never received HPV testing, with substantial disparities across regions and country-income levels. Scaling up ",
-   "domain": "thelancet.com",
-   "score": 12
+   "summary": "African Development Bank concludes supervision mission for $55 million health emergency project Sudan Health Emergency and Infrastructure Project ReliefWeb",
+   "domain": "reliefweb.int",
+   "score": 8
   },
   {
    "title": "Russia's Suspected Plague Incident and the Limits of Disease Reporting",
@@ -6846,6 +7352,17 @@
    "summary": "Russia's Suspected Plague Incident and the Limits of Disease Reporting Think Global Health",
    "domain": "thinkglobalhealth.org",
    "score": 10
+  },
+  {
+   "title": "[Articles] 2022 WHO estimates for overall and human papillomavirus test-based cervical cancer screening coverage worldwide: a review and synthetic analysis",
+   "url": "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(26)00206-8/fulltext?rss=yes",
+   "src": "Lancet Global Health",
+   "feed": "Lancet Global Health",
+   "cat": "journal",
+   "date": "2026-10-14T00:00:00+00:00",
+   "summary": "Despite policy updates, overall and HPV-specific screening coverage remains far below WHO’s 70% target. Three in five women aged 30–49 years worldwide have never been screened, and 92% have never received HPV testing, with substantial disparities across regions and country-income levels. Scaling up ",
+   "domain": "thelancet.com",
+   "score": 12
   },
   {
    "title": "Congressman urges medical, dental groups to educate clinicians about antibiotic stewardship",
@@ -7143,17 +7660,6 @@
    "summary": "How Trachoma in El Salvador Was Eliminated The Borgen Project",
    "domain": "borgenproject.org",
    "score": 7
-  },
-  {
-   "title": "Operationalizing the CBDR-RC principle in the WHO Pandemic Agreement: from environmental law to pandemic governance",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdVFhUm1sZ0EzNmhETDYxTnRqTWhtSVVPQTE4QW1jRjdoRV9XVm5oVFE4eE1ZaDExa2kyMlhyOGNTaHB2Slc5TDd3aHdlOWhKWll1Q3NHc1ZaVjd4VXN2VUMwQUZIeTRWdzMzNk1HYU5xX19SazcxTUlpYjVYd19TMXlJS1QxOUFTNEtkNGVvYk41MUtmOUE?oc=5",
-   "src": "Frontiers",
-   "feed": "Pandemic Agreement",
-   "cat": "pandemic",
-   "date": "2026-09-16T00:00:00+00:00",
-   "summary": "Operationalizing the CBDR-RC principle in the WHO Pandemic Agreement: from environmental law to pandemic governance Frontiers",
-   "domain": "frontiersin.org",
-   "score": 20
   },
   {
    "title": "Strengthening health security through the implementation of International Health Regulations",
