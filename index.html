@@ -375,7 +375,7 @@ footer {
 
 <footer>
   <span>31 sources · WHO · CIDRAP · ECDC · Africa CDC · Lancet · BMJ · PLOS · Health Policy Watch · Geneva Health Files · Politico · Euractiv · STAT · Devex · Grand Challenges</span>
-  <span><span id="ft">—</span><button class="stats-dot" id="sd" onclick="openStats()" aria-label="Statistics" title="">◔</button></span>
+  <span><span id="ft">—</span><!-- Statistiekknop verborgen: er is nog geen data/stats.json, dus hij toonde demodata. Haal "hidden" weg zodra die er is. --><button class="stats-dot" id="sd" onclick="openStats()" aria-label="Statistics" title="" hidden>◔</button></span>
 </footer>
 
 <div class="stats-ov" id="sov" onclick="if(event.target===this)closeStats()">
@@ -418,7 +418,8 @@ function htmlesc(s) {
   return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')
                       .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
-function esc(u) { return (u||'#').replace(/"/g,'%22').replace(/'/g,'%27'); }
+// Only http(s) links from feeds; anything else (javascript:, data:) becomes '#'.
+function esc(u) { u = String(u || ''); if (!/^https?:\/\//i.test(u)) return '#'; return u.replace(/"/g,'%22').replace(/'/g,'%27'); }
 // Echte website achter een item, voor de "via"-regel. Google News verbergt
 // de uitgever achter een redirect; dan liever niets tonen dan news.google.com.
 function viaDomain(item) {

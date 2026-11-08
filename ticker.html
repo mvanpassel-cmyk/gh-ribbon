@@ -88,7 +88,7 @@ const P     = new URLSearchParams(location.search);
 const SPEED = { slow: 400, normal: 240, fast: 140 }[P.get('speed') || 'normal'] || 240;
 const ONLY  = (P.get('cat') || '').split(',').filter(Boolean);
 
-const esc = u => (u || '#').replace(/"/g, '%22').replace(/'/g, '%27');
+const esc = u => { u = String(u || ''); return /^https?:\/\//i.test(u) ? u.replace(/"/g, '%22').replace(/'/g, '%27') : '#'; };  // only http(s) links
 const he  = s => String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;')
                                 .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
