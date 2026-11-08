@@ -30,7 +30,9 @@ from html import unescape
 import feedparser
 
 OUT           = pathlib.Path("data/feeds.json")
-ARCHIVE       = pathlib.Path("data/archive.csv")  # groeit dagelijks aan, opent in Excel/Numbers
+ARCHIVE_DIR   = pathlib.Path("data/archive")      # één CSV per maand (YYYY-MM.csv), opent in Excel/Numbers
+ARCHIVE_INDEX = ARCHIVE_DIR / "index.json"        # lijst van maanden; de pagina laadt alleen wat nodig is
+ARCHIVE_COLS  = ["seen_date", "published", "category", "source", "feed", "title", "url"]
 MAX_AGE_DAYS  = 21     # ouder dan dit valt uit de cache
 # Trage onderwerpen: hier verschijnt minder nieuws, dus items mogen langer blijven.
 MAX_AGE_PER_CAT = {"pandemic": 60, "ntd": 60, "amr": 45}
@@ -258,7 +260,13 @@ TERMEN = {
     -8: ["singer", "actress", "actor", "rapper", "celebrity", "pop star", "rock star", "tour dates",
          "concert", "cancels shows", "postpone shows", "hospitalized", "hospitalised", "rushed to hospital",
          "plane incident", "arrested", "arrest", "page six", "tmz", "royal family", "footballer",
-         "nfl", "nba", "premier league", "jet lag", "horoscope", "recipe"],
+         "nfl", "nba", "premier league", "jet lag", "horoscope", "recipe",
+         # ruis: studiegidsen, vacatures en archiefstukken ("On this day") zonder nieuwswaarde
+         "unit of study", "course outline", "course code", "syllabus", "postgraduate", "undergraduate",
+         "master of", "tuition", "scholarship", "job opening", "internship",
+         "on this day", "from the archives", "scmp archive", "years ago today",
+         # lokale meldingen zonder internationale impact
+         "possible measles exposure", "measles exposure reported", "measles exposure at"],
     # ruis: klinisch/commercieel VS-nieuws dat hier zelden toe doet
     -3: ["earnings", "ipo", "stock", "shares", "acquisition", "medicare",
          "medicaid", "obesity drug", "series a", "series b", "funding round"],
@@ -322,7 +330,11 @@ SOCIAL = {
     "facebook.com", "fb.com", "instagram.com", "x.com", "twitter.com",
     "youtube.com", "youtu.be", "tiktok.com", "threads.net", "reddit.com",
     "pinterest.com", "bsky.app", "t.me", "telegram.me", "whatsapp.com",
-}  # LinkedIn mag blijven: daar posten instituten zelf
+}  # LinkedIn mag blijven (daar posten instituten zelf), maar zakt: zie LAGE_WAARDE
+
+# Domeinen die mogen blijven maar flink zakken in de ranking: meestal persoonlijke
+# posts, zelden nieuws. Een sterk relevant bericht kan nog steeds de top 30 halen.
+LAGE_WAARDE = {"linkedin.com": 8}
 
 SHORTENERS = {
     "bit.ly", "tinyurl.com", "t.co", "ow.ly", "buff.ly", "rebrand.ly",
@@ -361,7 +373,7 @@ VERTROUWD = {
     "tempo.co", "dailymaverick.co.za", "news24.com", "nation.africa",
     "theeastafrican.co.ke", "allafrica.com", "chinadaily.com.cn", "kff.org",
     "kffhealthnews.org", "fiercepharma.com", "firstwordpharma.com", "endpts.com",
-    "linkedin.com", "outbreaknewstoday.substack.com", "ourworldindata.org",
+    "outbreaknewstoday.substack.com", "ourworldindata.org",
     "pbs.org", "doctorswithoutborders.org", "eurekalert.org", "medscape.com",
     "medpagetoday.com", "academic.oup.com", "royalsocietypublishing.org",
     "the-scientist.com", "passblue.com", "annalsofglobalhealth.org", "ijhpm.com",
@@ -412,6 +424,9 @@ def link_oordeel(url: str, open_web: bool) -> tuple[bool, int, str]:
     if open_web:
         if _in(host, SOCIAL):
             return False, 0, "social media"
+        for d, straf in LAGE_WAARDE.items():
+            if _in(host, [d]):
+                return True, straf, ""
         overheid = re.search(r"(^|\.)(gov|gouv|go|gob|govt|int|edu|ac)(\.[a-z]{2})?$", host)
         if not (_in(host, VERTROUWD) or overheid):
             return True, VERTROUWD_STRAF, ""
@@ -542,32 +557,50 @@ def load_previous() -> list:
         return []
 
 
-def append_archive(items) -> int:
-    """Append-only dagboek van alles wat langskwam. Dedupe op URL, zodat een
-    item dat drie dagen in een feed blijft staan maar één regel krijgt.
-    utf-8-sig omdat Excel anders de accenten sloopt."""
-    cols = ["datum_gezien", "gepubliceerd", "categorie", "bron", "feed", "titel", "url"]
-    seen = set()
-    if ARCHIVE.exists():
+def archive_rows():
+    """Alle regels uit alle maandbestanden, oudste maand eerst."""
+    for pad in sorted(ARCHIVE_DIR.glob("*.csv")):
         try:
-            with ARCHIVE.open(newline="", encoding="utf-8-sig") as f:
-                for row in csv.DictReader(f):
-                    seen.add(row.get("url", ""))
+            with pad.open(newline="", encoding="utf-8-sig") as f:
+                yield from csv.DictReader(f)
         except Exception as e:
-            print(f"  archief onleesbaar, begin opnieuw: {e}", file=sys.stderr)
+            print(f"  {pad} onleesbaar, overgeslagen: {e}", file=sys.stderr)
 
+
+def write_archive_index() -> None:
+    maanden = []
+    for pad in sorted(ARCHIVE_DIR.glob("*.csv"), reverse=True):
+        with pad.open(newline="", encoding="utf-8-sig") as f:
+            rows = max(0, sum(1 for _ in f) - 1)
+        maanden.append({"month": pad.stem, "file": pad.name, "rows": rows, "bytes": pad.stat().st_size})
+    ARCHIVE_INDEX.write_text(json.dumps({
+        "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "columns": ARCHIVE_COLS,
+        "months": maanden,
+    }, indent=1))
+
+
+def append_archive(items) -> int:
+    """Append-only dagboek van alles wat langskwam, één bestand per maand.
+    Dedupe op URL over alle maanden, zodat een item dat drie dagen in een feed
+    blijft staan maar één regel krijgt. utf-8-sig omdat Excel anders de
+    accenten sloopt."""
+    seen = {row.get("url", "") for row in archive_rows()}
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     nieuw = [i for i in items if i.get("url") and i["url"] not in seen]
 
-    write_header = not ARCHIVE.exists()
-    with ARCHIVE.open("a", newline="", encoding="utf-8-sig") as f:
+    ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+    pad = ARCHIVE_DIR / f"{today[:7]}.csv"
+    write_header = not pad.exists()
+    with pad.open("a", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         if write_header:
-            w.writerow(cols)
+            w.writerow(ARCHIVE_COLS)
         for i in nieuw:
             w.writerow([today, (i.get("date") or "")[:10], i.get("cat", ""),
                         i.get("src", ""), i.get("feed", ""), i.get("title", ""),
                         i.get("url", "")])
+    write_archive_index()
     return len(nieuw)
 
 
@@ -585,20 +618,14 @@ def eerste_publicatie() -> dict:
     """Vroegste publicatiedatum per titel uit het archief. Zo komt een bericht
     dat dagen later onder een nieuwe URL opduikt niet opnieuw als 'vers' bovenaan."""
     oudste = {}
-    if not ARCHIVE.exists():
-        return oudste
-    try:
-        with ARCHIVE.open(newline="", encoding="utf-8-sig") as f:
-            for row in csv.DictReader(f):
-                sleutel = titel_sleutel(row.get("titel", ""))
-                dag = (row.get("gepubliceerd") or "")[:10]
-                if len(sleutel) < 25 or len(dag) != 10:
-                    continue
-                iso_dag = dag + "T00:00:00+00:00"
-                if sleutel not in oudste or iso_dag < oudste[sleutel]:
-                    oudste[sleutel] = iso_dag
-    except Exception as e:
-        print(f"  archief niet bruikbaar voor ontdubbelen: {e}", file=sys.stderr)
+    for row in archive_rows():
+        sleutel = titel_sleutel(row.get("title", ""))
+        dag = (row.get("published") or "")[:10]
+        if len(sleutel) < 25 or len(dag) != 10:
+            continue
+        iso_dag = dag + "T00:00:00+00:00"
+        if sleutel not in oudste or iso_dag < oudste[sleutel]:
+            oudste[sleutel] = iso_dag
     return oudste
 
 
@@ -720,11 +747,10 @@ def main() -> int:
         "items":     merged,
     }, ensure_ascii=False, indent=1))
 
-    ARCHIVE.parent.mkdir(parents=True, exist_ok=True)
     toegevoegd = append_archive(fresh)
 
     print(f"\n{ok}/{len(FEEDS)} feeds OK -> {len(merged)} items in {OUT}")
-    print(f"archief: {toegevoegd} nieuwe regels in {ARCHIVE}")
+    print(f"archief: {toegevoegd} nieuwe regels in {ARCHIVE_DIR}/")
     # Nooit falen op een kapotte bron: dan zou de workflow rood staan en de
     # oude feeds.json blijven hangen. Alleen falen als er niets overblijft.
     return 0 if merged else 1

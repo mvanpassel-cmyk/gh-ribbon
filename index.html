@@ -59,7 +59,7 @@ body.geen-ticker .ticker-wrap { display: none; }
   font-size: 14px; padding: 5px 14px; letter-spacing: .12em;
 }
 .logo-sub {
-  font-size: 11px; color: var(--muted);
+  font-size: 12px; color: var(--muted);
   letter-spacing: .12em; text-transform: uppercase; margin-left: 14px;
 }
 .topbar-right { display: flex; align-items: center; gap: 12px; }
@@ -70,11 +70,11 @@ body.geen-ticker .ticker-wrap { display: none; }
 .live-dot.busy { background: var(--emerg); animation: none; }
 .live-dot.err  { background: #ff4444; animation: none; }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.2} }
-.status-txt { font-size: 11px; color: var(--muted); letter-spacing: .1em; }
+.status-txt { font-size: 12px; color: var(--muted); letter-spacing: .1em; }
 .clock { font-size: 14px; color: var(--accent); letter-spacing: .08em; font-variant-numeric: tabular-nums; }
 .rbtn {
   background: none; border: 1px solid var(--border); color: var(--muted);
-  padding: 5px 13px; font-family: 'Space Mono', monospace; font-size: 11px;
+  padding: 5px 13px; font-family: 'Space Mono', monospace; font-size: 12px;
   cursor: pointer; border-radius: 2px; letter-spacing: .08em; transition: all .15s;
 }
 .rbtn:hover { border-color: var(--accent); color: var(--accent); }
@@ -97,7 +97,7 @@ body.geen-ticker .ticker-wrap { display: none; }
   position: absolute; left: 0; top: 0; bottom: 0; width: 66px;
   background: var(--accent); color: #020905;
   display: flex; align-items: center; justify-content: center;
-  font-size: 9px; font-weight: 700; letter-spacing: .2em; z-index: 3;
+  font-size: 11px; font-weight: 700; letter-spacing: .2em; z-index: 3;
 }
 .ticker-track {
   display: flex; align-items: center;
@@ -115,7 +115,7 @@ body.geen-ticker .ticker-wrap { display: none; }
 }
 .t-item:hover .t-hl { color: var(--accent); }
 .t-sep { color: var(--accent); font-size: 12px; flex-shrink: 0; }
-.t-src { font-size: 10px; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; flex-shrink: 0; }
+.t-src { font-size: 11px; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; flex-shrink: 0; }
 .t-hl  { font-size: 17px; font-weight: 700; color: var(--bright); transition: color .15s; }
 
 .filter-bar {
@@ -123,10 +123,10 @@ body.geen-ticker .ticker-wrap { display: none; }
   padding: 9px 26px; border-bottom: 1px solid var(--border);
   background: var(--surface); flex-wrap: wrap;
 }
-.flbl { font-size: 10px; color: var(--muted); letter-spacing: .14em; text-transform: uppercase; margin-right: 4px; }
+.flbl { font-size: 11px; color: var(--muted); letter-spacing: .14em; text-transform: uppercase; margin-right: 4px; }
 .fbtn {
   background: none; border: 1px solid var(--border); color: var(--muted);
-  padding: 5px 12px; font-family: 'Space Mono', monospace; font-size: 10px;
+  padding: 5px 12px; font-family: 'Space Mono', monospace; font-size: 11px;
   cursor: pointer; border-radius: 2px; display: flex; align-items: center;
   gap: 6px; opacity: .4; transition: all .15s; letter-spacing: .07em;
 }
@@ -152,8 +152,8 @@ body.geen-ticker .ticker-wrap { display: none; }
 
 .main { flex: 1; padding: 22px 26px 40px; }
 .sec-hd { display: flex; align-items: baseline; gap: 12px; margin-bottom: 18px; }
-.sec-title { font-family:'Syne',sans-serif; font-size:11px; font-weight:800; color:var(--muted); letter-spacing:.2em; text-transform:uppercase; }
-.sec-count { font-size:11px; color:var(--muted); opacity:.5; }
+.sec-title { font-family:'Syne',sans-serif; font-size:12px; font-weight:800; color:var(--muted); letter-spacing:.2em; text-transform:uppercase; }
+.sec-count { font-size:12px; color:var(--muted); opacity:.5; }
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 
 .card {
@@ -177,7 +177,7 @@ body.geen-ticker .ticker-wrap { display: none; }
 @keyframes fadeUp { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
 
 .card-hd { display:flex; align-items:center; justify-content:space-between; }
-.badge { font-size:8px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; padding:3px 8px; border-radius:1px; }
+.badge { font-size:10px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; padding:3px 8px; border-radius:1px; }
 .card[data-c="who"]     .badge { background:rgba(41,182,246,.13);  color:var(--who); }
 .card[data-c="promed"]  .badge { background:rgba(255,215,64,.13);  color:var(--promed); }
 .card[data-c="emerg"]   .badge { background:rgba(255,112,67,.13);  color:var(--emerg); }
@@ -195,16 +195,16 @@ body.geen-ticker .ticker-wrap { display: none; }
 .card[data-c="ntd"]      .badge { background:rgba(139,195,74,.13); color:var(--ntd); }
 .card[data-c="pandemic"] .badge { background:rgba(224,64,251,.13); color:var(--pandemic); }
 
-.card-date  { font-size:10px; color:var(--muted); }
-.card-src   { font-size:11px; color:var(--muted); font-style:italic; }
+.card-date  { font-size:11px; color:var(--muted); }
+.card-src   { font-size:12px; color:var(--muted); font-style:italic; }
 .card-via   { font-style:normal; opacity:.85; }
-.tag        { font-size:9px; font-weight:700; letter-spacing:.08em; padding:2px 6px; border-radius:3px; margin-left:6px; vertical-align:middle; }
+.tag        { font-size:11px; font-weight:700; letter-spacing:.08em; padding:2px 6px; border-radius:3px; margin-left:6px; vertical-align:middle; }
 .tag-urgent { background:#d92d20; color:#fff; }
 .tag-new    { border:1px solid var(--accent); color:var(--accent); }
 .card-title { font-family:'Syne',sans-serif; font-size:15px; font-weight:600; color:var(--bright); line-height:1.45; flex:1; }
 .card.feat .card-title { font-size:18px; }
 .card-sum  { font-size:12px; color:var(--text); line-height:1.8; opacity:.85; }
-.card-link { font-size:11px; color:var(--accent); opacity:.6; transition:opacity .15s; margin-top:auto; }
+.card-link { font-size:12px; color:var(--accent); opacity:.6; transition:opacity .15s; margin-top:auto; }
 .card:hover .card-link { opacity:1; }
 
 .skel-card { background:var(--surface); border:1px solid var(--border); border-radius:2px; padding:16px; display:flex; flex-direction:column; gap:11px; }
@@ -217,7 +217,7 @@ body.geen-ticker .ticker-wrap { display: none; }
 footer {
   padding:10px 26px; border-top:1px solid var(--border);
   display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px;
-  font-size:10px; color:var(--muted); letter-spacing:.08em;
+  font-size:11px; color:var(--muted); letter-spacing:.08em;
 }
 
 /* Zoekbalk */
@@ -252,20 +252,20 @@ footer {
 .stats-x { background:none; border:0; color:var(--muted); font:inherit; font-size:18px; cursor:pointer; line-height:1; }
 .stats-x:hover { color:var(--accent); }
 .stats-demo {
-  font-size:10px; letter-spacing:.1em; color:var(--promed);
+  font-size:11px; letter-spacing:.1em; color:var(--promed);
   border:1px dashed var(--promed); padding:6px 10px; margin-bottom:14px; line-height:1.6;
 }
 .stats-nums { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:20px; }
 .stats-num { border:1px solid var(--border); background:var(--bg); padding:10px 12px; }
 .stats-num b { display:block; font-family:'Syne',sans-serif; font-size:24px; font-weight:800; color:var(--bright); font-variant-numeric:tabular-nums; }
-.stats-num span { font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
-.stats-sub { font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin-bottom:10px; }
+.stats-num span { font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+.stats-sub { font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin-bottom:10px; }
 .c-row { display:grid; grid-template-columns:26px 1fr 44px; align-items:center; gap:8px; margin-bottom:7px; font-size:12px; }
 .c-bar { position:relative; height:20px; background:var(--bg); border:1px solid var(--border); }
 .c-bar i { position:absolute; left:0; top:0; bottom:0; background:rgba(61,255,154,.18); border-right:2px solid var(--accent); }
-.c-bar em { position:absolute; left:8px; top:0; line-height:19px; font-style:normal; color:var(--bright); font-size:11px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:calc(100% - 12px); }
+.c-bar em { position:absolute; left:8px; top:0; line-height:19px; font-style:normal; color:var(--bright); font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:calc(100% - 12px); }
 .c-n { text-align:right; color:var(--muted); font-variant-numeric:tabular-nums; }
-.stats-foot { margin-top:14px; font-size:9px; color:var(--muted); letter-spacing:.08em; line-height:1.7; }
+.stats-foot { margin-top:14px; font-size:11px; color:var(--muted); letter-spacing:.08em; line-height:1.7; }
 
 /* ── Tablet: twee kolommen. Boven 900px blijft alles zoals het was. ── */
 @media (max-width: 900px) {
@@ -290,7 +290,7 @@ footer {
   .topbar-right { width: 100%; order: 2; gap: 6px; overflow-x: auto; scrollbar-width: none; flex-wrap: nowrap; }
   .topbar-right::-webkit-scrollbar { display: none; }
   .topbar-right .live-dot, .topbar-right .status-txt, .topbar-right .clock { display: none; }
-  .rbtn { padding: 3px 8px; font-size: 9px; opacity: .7; white-space: nowrap; flex-shrink: 0; }
+  .rbtn { padding: 3px 8px; font-size: 11px; opacity: .7; white-space: nowrap; flex-shrink: 0; }
 
   .filter-bar { flex-wrap: nowrap; overflow-x: auto; padding: 8px 14px; gap: 6px; scrollbar-width: none; }
   .filter-bar::-webkit-scrollbar { display: none; }
@@ -309,12 +309,12 @@ footer {
   .card .card-title { order: 4; flex: 1 1 100%; }
   .card:hover { transform: none; }
   .card-hd { gap: 8px; }
-  .badge { font-size: 7px; padding: 2px 6px; }
-  .card-src { font-size: 10px; }
+  .badge { font-size: 10px; padding: 2px 6px; }
+  .card-src { font-size: 11px; }
   .card-title, .card.feat .card-title { font-size: 14.5px; line-height: 1.35; }
   .card-sum, .card-link { display: none; }
 
-  footer { padding: 10px 14px 16px; font-size: 9px; }
+  footer { padding: 10px 14px 16px; font-size: 11px; }
   .search-bar { padding: 8px 14px; }
   .search-bar input { font-size: 16px; }   /* 16px: voorkomt inzoomen op iPhone */
 }
@@ -333,8 +333,7 @@ footer {
     <span class="clock" id="clk">—</span>
     <button class="rbtn" id="sb" onclick="toggleSearch()" title="Search news and archive" aria-label="Search">🔍</button>
     <a class="rbtn" href="world-calendar/" style="text-decoration:none" title="World calendar: elections, summits, global health, EU/NL">📅 CALENDAR</a>
-    <a class="rbtn" id="csv" href="data/archive.csv" download="gh-ribbon-archive.csv"
-       style="text-decoration:none" title="Full archive as spreadsheet">⤓ CSV</a>
+    <button class="rbtn" id="csv" onclick="downloadArchief()" title="Full archive as spreadsheet">⤓ CSV</button>
     <button class="rbtn" id="bb" onclick="toggleTicker()" title="Show or hide the news ticker at the bottom">▬ TICKER</button>
     <button class="rbtn" id="tb" onclick="toggleAlles()">TOP 30</button>
     <a class="rbtn" href="ticker.html" target="_blank" style="text-decoration:none" title="Open the ticker in a separate window, e.g. for a second screen">⬒ DETACH</a>
@@ -588,7 +587,7 @@ function renderDiag(meta) {
   if (!el) {
     el = document.createElement('span');
     el.id = 'diag';
-    el.style.cssText = 'display:block;width:100%;font-size:10px;line-height:1.9;opacity:.75;margin-top:6px';
+    el.style.cssText = 'display:block;width:100%;font-size:11px;line-height:1.9;opacity:.75;margin-top:6px';
     document.querySelector('footer').appendChild(el);
   }
   const bad = Object.entries(feedStatus).filter(([,v]) => !v.ok).map(([k]) => k);
@@ -630,14 +629,16 @@ async function loadAll() {
   rb.disabled = false;
 }
 
-// ── Zoeken in actuele items én het archief (data/archive.csv) ─────────────
-// Het archief wordt pas opgehaald als de zoekbalk opengaat.
-// Ruim zoeken: één woord is genoeg; meer treffers = hoger, daarna nieuwste eerst.
+// ── Zoeken in actuele items én het archief (data/archive/<maand>.csv) ─────
+// Het archief wordt pas opgehaald als de zoekbalk opengaat: eerst de index,
+// dan de maanden, nieuwste eerst. Resultaten verschijnen zodra een maand binnen is.
+// Alleen de lopende maand verandert; oudere maanden mag de browser cachen.
 let zoekterm = '';
 let archief = null;            // null = nog niet geladen
 let archiefLaden = null;
 const MAX_ZOEK = 200;
-const norm = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+const ARCH_DIR = 'data/archive/';
+const norm = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 const tijd = s => { const t = Date.parse(s); return isNaN(t) ? 0 : t; };
 
 function parseCSV(txt) {
@@ -656,21 +657,57 @@ function parseCSV(txt) {
   return rows;
 }
 
+function archiefIndex() {
+  return fetch(ARCH_DIR + 'index.json?t=' + Date.now(), { cache: 'no-store' })
+    .then(r => r.ok ? r.json() : { months: [] });
+}
+function maandTekst(m, i) {
+  // i === 0: lopende maand, altijd vers; oudere maanden veranderen niet meer.
+  const url = ARCH_DIR + m.file + (i === 0 ? '?t=' + Date.now() : '');
+  return fetch(url, i === 0 ? { cache: 'no-store' } : {}).then(r => r.ok ? r.text() : '');
+}
+function rijenUit(txt) {
+  const rows = parseCSV(txt.replace(/^﻿/, ''));
+  const kop = rows.shift() || [];
+  const k = n => kop.indexOf(n);
+  return rows.filter(r => r.length >= kop.length).map(r => ({
+    title: r[k('title')], src: r[k('source')], feed: r[k('feed')], url: r[k('url')],
+    cat: r[k('category')], date: r[k('published')] || r[k('seen_date')], summary: ''
+  }));
+}
+
 function laadArchief() {
-  if (!archiefLaden) archiefLaden = fetch('data/archive.csv?t=' + Date.now(), { cache: 'no-store' })
-    .then(r => r.ok ? r.text() : '')
-    .then(txt => {
-      const rows = parseCSV(txt.replace(/^\uFEFF/, ''));
-      const kop = rows.shift() || [];
-      const k = n => kop.indexOf(n);
-      archief = rows.filter(r => r.length >= kop.length).map(r => ({
-        title: r[k('titel')], src: r[k('bron')], feed: r[k('feed')], url: r[k('url')],
-        cat: r[k('categorie')], date: r[k('gepubliceerd')] || r[k('datum_gezien')], summary: ''
-      }));
+  if (!archiefLaden) archiefLaden = archiefIndex()
+    .then(async idx => {
+      archief = [];
+      for (const [i, m] of (idx.months || []).entries()) {   // nieuwste maand eerst
+        const txt = await maandTekst(m, i).catch(() => '');
+        archief = archief.concat(rijenUit(txt));
+        if (zoekterm) renderCards();
+      }
     })
-    .catch(() => { archief = []; })
+    .catch(() => { archief = archief || []; })
     .then(() => { if (zoekterm) renderCards(); });
   return archiefLaden;
+}
+
+// Volledig archief als één spreadsheet, samengevoegd uit de maandbestanden.
+async function downloadArchief() {
+  const b = document.getElementById('csv'); const label = b.textContent;
+  b.disabled = true; b.textContent = '⤓ …';
+  try {
+    const idx = await archiefIndex();
+    const delen = [];
+    for (const [i, m] of [...(idx.months || [])].reverse().entries()) {   // oudste eerst
+      const txt = (await maandTekst(m, (idx.months.length - 1) - i)).replace(/^﻿/, '');
+      delen.push(delen.length ? txt.slice(txt.indexOf('\n') + 1) : txt);  // kopregel één keer
+    }
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob(['﻿' + delen.join('')], { type: 'text/csv;charset=utf-8' }));
+    a.download = 'gh-ribbon-archive.csv';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  } finally { b.disabled = false; b.textContent = label; }
 }
 
 function zoekResultaten(alles) {
@@ -748,7 +785,7 @@ function tog(cat) {
 }
 
 // Toon de CSV-knop alleen als het archief daadwerkelijk bestaat.
-fetch('data/archive.csv', { method: 'HEAD' })
+fetch(ARCH_DIR + 'index.json', { method: 'HEAD' })
   .then(r => { if (!r.ok) document.getElementById('csv').style.display = 'none'; })
   .catch(() => { document.getElementById('csv').style.display = 'none'; });
 

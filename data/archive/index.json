@@ -1,0 +1,38 @@
+{
+ "updated": "2026-11-08T21:08:32+00:00",
+ "columns": [
+  "seen_date",
+  "published",
+  "category",
+  "source",
+  "feed",
+  "title",
+  "url"
+ ],
+ "months": [
+  {
+   "month": "2026-11",
+   "file": "2026-11.csv",
+   "rows": 1298,
+   "bytes": 354884
+  },
+  {
+   "month": "2026-10",
+   "file": "2026-10.csv",
+   "rows": 5693,
+   "bytes": 1483870
+  },
+  {
+   "month": "2026-09",
+   "file": "2026-09.csv",
+   "rows": 5653,
+   "bytes": 1469385
+  },
+  {
+   "month": "2026-08",
+   "file": "2026-08.csv",
+   "rows": 429,
+   "bytes": 130015
+  }
+ ]
+}
