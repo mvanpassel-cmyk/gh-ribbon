@@ -275,9 +275,43 @@ TERMEN = {
 
 MIN_INHOUD_OPEN_WEB = 4   # minstens een kernwoord (gewicht 3) of twee lichtere
 
+# Vacatures en persoonsprofielen (bio's, staff-pagina's) zijn geen nieuws. Ze zakken
+# PROFIEL_STRAF punten, behalve een bio met nieuwswaarde: een benoeming, verkiezing of
+# vertrek (bijv. de nieuwe DG van de WHO).
+PROFIEL_STRAF = 20
+PROFIEL_PAD = re.compile(r"/(people|person|profiles?|staff|faculty|our-team|team|members?|experts?|"
+                         r"directory|bios?|biography|speakers?)/", re.I)
+VACATURE_PAD = re.compile(r"/(jobs?|careers?|vacanc(?:y|ies)|vacatures?|recruitment|job-?openings?)(?:/|$|[?#])", re.I)
+BIO_TITEL = re.compile(r"^(?:Dr\.? |Prof\.? )?[A-Z][a-z][\w.'’-]*(?: [A-Z][\w.'’-]*){1,4},\s*"
+                       r"(?:MD|PhD|MPH|MSc|MS|DrPH|MBBS|FRCP|RN|PharmD|DVM)\b")
+VACATURE_WOORDEN = ["vacature", "we are hiring", "we're hiring", "job description",
+                    "apply now", "call for applications", "position available", "job posting",
+                    "career opportunity", "postdoctoral position", "phd position"]
+BIO_WOORDEN = ["curriculum vitae", "biography", "faculty profile", "staff profile", "meet our", "about the author"]
+NIEUWS_OVER_PERSOON = ["director-general", "director general", "appointed", "appoints", "elected", "elects",
+                       "nominated", "nominee", "named", "names", "new head", "takes office", "assumes", "steps down", "resigns",
+                       "dies", "died", "obituary"]
+
+
+def profiel_of_vacature(item) -> bool:
+    """Een vacature of een persoonsprofiel zonder nieuwswaarde?"""
+    titel = item.get("title") or ""
+    tl, tekst = titel.lower(), (item.get("summary") or "").lower()
+    pad = urllib.parse.urlparse(item.get("url") or "").path
+    nieuws = any(w in tl or w in tekst for w in NIEUWS_OVER_PERSOON)
+    if any(w in tl for w in VACATURE_WOORDEN):
+        return True
+    nieuwspad = re.search(r"/(?:news|events?|press|stories|articles?)/", pad, re.I)   # bijv. /staff/events/...
+    if VACATURE_PAD.search(pad) or (PROFIEL_PAD.search(pad) and not nieuwspad) or BIO_TITEL.match(titel) \
+            or any(w in tl for w in BIO_WOORDEN):
+        return not nieuws
+    return False
+
 
 def score_item(item, feed_label: str) -> int:
     s = BRONGEWICHT.get(feed_label, 1)
+    if profiel_of_vacature(item):
+        s -= PROFIEL_STRAF
     titel = (item.get("title") or "").lower()
     tekst = (item.get("summary") or "").lower()
     for gewicht, woorden in TERMEN.items():
