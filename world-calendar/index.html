@@ -145,6 +145,7 @@ main { max-width: 860px; margin: 0 auto; padding: 20px 16px 60px; }
 .ev .rel a { color: var(--text); border-bottom: 0; font-size: 12.5px; }
 .ev .rel a:hover { color: var(--accent); }
 .rel .src { color: var(--muted); font-size: 11px; }
+.ev .checked { color: var(--muted); font-size: 11px; }
 .rel span { min-width: 0; overflow-wrap: anywhere; }
 .ev > div { min-width: 0; }
 footer { color: var(--muted); font-size: 12px; border-top: 1px solid var(--border); padding-top: 14px; margin-top: 30px; }
@@ -386,7 +387,7 @@ function render() {
           ${e.note ? `<div class="note">${esc(e.note)}</div>` : ''}
           ${related.has(e) ? `<ul class="rel" aria-label="Related news">${related.get(e).map(it =>
             `<li><span><a href="${esc(veiligeUrl(it.url))}" target="_blank" rel="noopener noreferrer nofollow">${esc(it.title)}</a> <span class="src">${esc(it.src || '')}</span></span></li>`).join('')}</ul>` : ''}
-          ${e.src ? `<a href="${esc(e.src)}" target="_blank" rel="noopener">source ↗</a>` : ''}
+          ${e.src ? `<a href="${esc(veiligeUrl(e.src))}" target="_blank" rel="noopener">source ↗</a>` : ''}${e.checked ? ` <span class="checked" title="Date last verified against the source">· checked ${fmtDay(d(e.checked))}</span>` : ''}
         </div>
       </article>`;
     }).join('')}
