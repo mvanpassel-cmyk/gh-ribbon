@@ -1,9 +1,13 @@
 name: Harvest feeds
 
 on:
+  # De echte klok is een Cloudflare Worker die elk uur workflow_dispatch aanroept
+  # (zie cloudflare/README.md): GitHub's eigen cron vuurt in de praktijk maar elke
+  # 4 tot 8 uur. Deze cron blijft als reserve en slaat over als de laatste oogst
+  # minder dan 40 minuten oud is.
   schedule:
-    - cron: "17 * * * *"      # elk uur op :17 (niet op het hele uur: minder druk)
-  workflow_dispatch:           # knop in de Actions-tab om handmatig te draaien
+    - cron: "17 * * * *"
+  workflow_dispatch:           # Worker, of de knop in de Actions-tab
   push:
     paths:
       - "fetch_feeds.py"
@@ -25,20 +29,34 @@ jobs:
         with:
           ref: main   # altijd de nieuwste stand, niet de commit die de run startte
 
+      - name: Reserve-cron overslaan als de Worker net geoogst heeft
+        id: guard
+        if: github.event_name == 'schedule'
+        run: |
+          leeftijd=$(python3 -c "import json,datetime as d;g=json.load(open('data/feeds.json'))['generated'];print(int((d.datetime.now(d.timezone.utc)-d.datetime.fromisoformat(g)).total_seconds()//60))" 2>/dev/null || echo 999)
+          echo "laatste oogst $leeftijd minuten geleden"
+          if [ "$leeftijd" -lt 40 ]; then echo "skip=1" >> "$GITHUB_OUTPUT"; fi
+
       - uses: actions/setup-python@v5
+        if: steps.guard.outputs.skip != '1'
         with:
           python-version: "3.12"
 
       - run: pip install feedparser
+        if: steps.guard.outputs.skip != '1'
 
       - name: Harvest
+        if: steps.guard.outputs.skip != '1'
+        env:
+          RELIEFWEB_APPNAME: ${{ secrets.RELIEFWEB_APPNAME }}   # leeg = ReliefWeb via Google News
         run: python fetch_feeds.py
 
       - name: Commit als er iets veranderd is
+        if: steps.guard.outputs.skip != '1'
         run: |
           git config user.name  "gh-ribbon-bot"
           git config user.email "actions@github.com"
-          git add data/feeds.json data/archive
+          git add data/feeds.json data/archive data/gnews-urls.json
           if git diff --staged --quiet; then
             echo "Geen wijzigingen."
           else

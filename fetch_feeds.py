@@ -170,7 +170,7 @@ FEEDS = [
     {"label": "WHO NTDs", "cat": "ntd", "urls": [
         gnews('WHO "neglected tropical disease" eliminated OR elimination')]},
     {"label": "DNDi", "cat": "ntd", "urls": [
-        {"api": "wp", "url": "https://dndi.org/wp-json/wp/v2/news?per_page=12"},   # /feed/ is leeg
+        {"api": "wp", "timeout": 60, "url": "https://dndi.org/wp-json/wp/v2/news?per_page=12&_fields=title,link,excerpt,date_gmt"},   # /feed/ is leeg
         gnews("site:dndi.org")]},
     {"label": "Uniting to Combat NTDs", "cat": "ntd", "urls": [
         # Alles achter een 403 voor datacenter-IP's (gemeten 10-11-2026).
@@ -213,8 +213,9 @@ FEEDS = [
         # werkt; daaruit alleen de gezondheidsstukken.
         {"url": "https://www.politico.eu/feed/", "tags": GEZONDHEIDSTAGS},
         gnews("site:politico.eu health")]},
-    {"label": "Euractiv Health", "cat": "policy", "urls": [
-        # Sectiefeeds: Cloudflare-uitdaging. De hoofdfeed (100 stukken) werkt.
+    # Euractiv heet sinds eind september 2026 Rapporteur (rapporteur.com); de oude
+    # hoofdfeed op euractiv.com levert die stukken. Sectiefeeds: Cloudflare-uitdaging.
+    {"label": "Rapporteur (ex-Euractiv)", "cat": "policy", "urls": [
         {"url": "https://www.euractiv.com/feed/", "tags": GEZONDHEIDSTAGS},
         gnews("site:euractiv.com health")]},
 
@@ -246,7 +247,7 @@ BRONGEWICHT = {
     "Global Health": 3, "Health Emergency": 3, "ReliefWeb Health": 2,
     "Devex Global Health": 2, "ECDC": 3, "ECDC Epidemiological updates": 3, "ECDC Threats report": 3,
     "ECDC Risk assessments": 3, "Eurosurveillance": 2,
-    "Politico EU Health": 2, "Euractiv Health": 2, "CIDRAP Public Health": 2,
+    "Politico EU Health": 2, "Rapporteur (ex-Euractiv)": 2, "CIDRAP Public Health": 2,
     "CIDRAP Pandemic Influenza": 3,
     "CIDRAP Stewardship": 2, "ProMED": 2, "AMR Industry / news": 2,
     "The Lancet": 1, "BMJ": 1, "STAT News": 1,
@@ -537,7 +538,7 @@ VERTROUWD = {
     # nieuws
     "reuters.com", "apnews.com", "bbc.co.uk", "bbc.com", "theguardian.com",
     "nytimes.com", "washingtonpost.com", "ft.com", "economist.com", "bloomberg.com",
-    "politico.eu", "politico.com", "euractiv.com", "devex.com", "statnews.com",
+    "politico.eu", "politico.com", "euractiv.com", "rapporteur.com", "devex.com", "statnews.com",
     "npr.org", "aljazeera.com", "france24.com", "dw.com", "lemonde.fr",
     "telegraph.co.uk", "independent.co.uk", "cbc.ca", "abc.net.au", "news.sky.com",
     "theglobeandmail.com", "smithsonianmag.com", "time.com", "axios.com",
@@ -595,6 +596,12 @@ def link_oordeel(url: str, open_web: bool) -> tuple[bool, int, str]:
         return False, 0, "link-shortener"
     if host.rsplit(".", 1)[-1] in SPAM_TLDS:
         return False, 0, "spam-TLD"
+    pad = (p.path or "").lower()
+    if re.search(r"/(sponsored|partner|promoted|paid)-?(content|post)s?/", pad):
+        return False, 0, "gesponsorde inhoud"
+    jaar = re.search(r"/(?:year-)?((?:19|20)\d\d)/", pad)
+    if jaar and int(jaar.group(1)) < datetime.now(timezone.utc).year - 1:
+        return False, 0, "oud artikel (jaartal in URL)"
     if open_web:
         if _in(host, SOCIAL):
             return False, 0, "social media"
@@ -633,7 +640,7 @@ def domein(url: str) -> str:
     return ".".join(delen[-2:]) if len(delen) >= 2 else host
 
 
-def download(url: str) -> bytes:
+def download(url: str, timeout: int = 0) -> bytes:
     """Haalt één URL op. Respecteert een pauze per domein, want BMJ gaf 429
     toen we www.bmj.com en gh.bmj.com vlak achter elkaar aanriepen -- die
     delen één rate limit."""
@@ -653,7 +660,7 @@ def download(url: str) -> bytes:
                 "Accept-Language": "en-GB,en;q=0.9,nl;q=0.8",
                 "Cache-Control": "no-cache",
             })
-            with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+            with urllib.request.urlopen(req, timeout=timeout or TIMEOUT) as r:
                 return r.read()
         except urllib.error.HTTPError as e:
             last = e
@@ -689,8 +696,8 @@ def gnews_site(kandidaat) -> str:
 # date (iso) en eventueel tags. Een kandidaat is dan een dict, bijvoorbeeld
 # {"api": "wp", "url": "https://dndi.org/wp-json/wp/v2/news?per_page=12"}.
 # ---------------------------------------------------------------------------
-def _json(url: str):
-    return json.loads(download(url))
+def _json(url: str, timeout: int = 0):
+    return json.loads(download(url, timeout))
 
 
 def api_who(kandidaat) -> list:
@@ -708,7 +715,7 @@ def api_who(kandidaat) -> list:
 def api_wp(kandidaat) -> list:
     """WordPress REST-API, voor sites waarvan de RSS leeg of geblokkeerd is."""
     uit = []
-    for x in _json(kandidaat["url"]):
+    for x in _json(kandidaat["url"], kandidaat.get("timeout", 0)):
         uit.append({"title": (x.get("title") or {}).get("rendered", ""), "link": x.get("link", ""),
                     "summary": (x.get("excerpt") or {}).get("rendered", ""),
                     "date": (x.get("date_gmt") or "") + ("+00:00" if x.get("date_gmt") else "")})
@@ -793,8 +800,10 @@ def harvest(feed) -> tuple[list, dict]:
             if not entries:
                 raise ValueError("0 entries")
 
-            terugval = is_gnews(kandidaat) and not zoekbron
             site = gnews_site(kandidaat)
+            # Terugval = Google News staat in voor een officiële bron: ofwel na een
+            # mislukte eigen feed, ofwel een 'site:'-zoekopdracht op die bron.
+            terugval = is_gnews(kandidaat) and (not zoekbron or bool(site))
             items, buiten_site = [], 0
             for e in entries[:MAX_PER_FEED]:
                 title = strip_html(e.get("title", ""))
@@ -807,10 +816,14 @@ def harvest(feed) -> tuple[list, dict]:
                 link = unwrap((e.get("link") or "").strip())
                 if not title or not link.startswith("http"):
                     continue
+                if re.search(r"\[(promoted|sponsored)( content)?\]|^sponsored:", title, re.I):
+                    continue
                 dom = host_van(bron.get("href") or "") if "news.google.com" in link else host_van(link)
                 if site and not _in(dom, [site]):
                     buiten_site += 1              # 'site:who.int' leverde een stuk van elders
                     continue
+                if site and len(title.split()) < 5:
+                    continue                      # 'Contact us', 'All Jobs', 'Our governance': pagina's, geen nieuws
                 src = strip_html(bron_el) if bron_el else feed["label"]
                 item = {
                     "title":   title[:180],
@@ -834,7 +847,7 @@ def harvest(feed) -> tuple[list, dict]:
             if buiten_site:
                 msg += f", {buiten_site} van buiten {site} weg"
             status = {"ok": True, "msg": msg, "cat": feed["cat"], "via": n + 1, "fallback": terugval}
-            if zoekbron:
+            if zoekbron and not site:
                 status["search"] = True
             if fouten:
                 status["errors"] = " | ".join(fouten)[:300]
@@ -1213,6 +1226,15 @@ def main() -> int:
             continue
         seen.add(key)
         merged.append(item)
+
+    # Google News-links vervangen door de echte artikel-URL (gecachet), vóór de
+    # linkcheck: dan zien bloklijst, social-filter en uitgeverstier de echte site.
+    gn_cache = laad_gnews_cache()
+    opgelost, mislukt = los_gnews_links_op(merged, gn_cache)
+    bewaar_gnews_cache(gn_cache)
+    nog = sum(1 for i in merged if "news.google.com" in (i.get("url") or ""))
+    print(f"  Google News-links: {opgelost} nieuw opgelost, {mislukt} mislukt, {nog} nog niet")
+    merged = list({(i.get("url") or ""): i for i in reversed(merged)}.values())[::-1]   # opgelost kan dubbel zijn
 
     schoon, weg = [], {}
     for item in merged:
