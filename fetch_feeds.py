@@ -21,9 +21,11 @@ import re
 import socket
 import sys
 import time
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
+from collections import Counter
 from datetime import datetime, timedelta, timezone
 from html import unescape
 
@@ -638,55 +640,276 @@ def append_archive(items) -> int:
     return len(nieuw)
 
 
-def titel_sleutel(titel: str) -> str:
-    """Genormaliseerde titel om hetzelfde bericht onder een andere URL te
-    herkennen (WHO.int vs. ReliefWeb vs. Google News). Een eventuele
-    ' - Bronnaam' of ' | Bronnaam' aan het eind valt weg."""
-    t = (titel or "").lower()
-    t = re.sub(r"\s+[-|–—]\s+[^-|–—]{2,60}$", "", t)
+# ---------------------------------------------------------------------------
+# Ontdubbelen. Hetzelfde bericht komt vaak via meerdere feeds binnen, onder
+# een andere URL en met een net andere kop: afgekapt ("..."), met " - Uitgever"
+# erachter, "U.S." tegen "US", "Congo" tegen "DRC", of in een andere volgorde
+# ("WHO chief: X" tegen "X: WHO chief"). Daarom vergelijken we de inhouds-
+# woorden van de kop, niet de letterlijke tekst.
+# ---------------------------------------------------------------------------
+STOPWOORDEN = set("""a an the of in on at to for from by with and or as is are was were be been being
+its it this that these those after amid over into than about how what why when will can could may might
+would should has have had says said say via per""".split())
+
+LANDNAMEN = [
+    (r"\b(?:the )?democratic republic of (?:the )?congo\b|\bdr ?congo\b|\bdrc\b"
+     r"|\b(?:the )?republic of (?:the )?congo\b", "congo"),
+    (r"\bturkiye\b", "turkey"), (r"\bcote d ?ivoire\b", "ivory coast"), (r"\bkiev\b", "kyiv"),
+    (r"\bczech republic\b", "czechia"), (r"\bburma\b", "myanmar"), (r"\bholland\b", "netherlands"),
+    (r"\bmonkeypox\b", "mpox"), (r"\bcovid 19\b|\bsars cov 2\b", "covid"),
+    (r"\bunited states(?: of america)?\b|\busa\b", "us"),
+    (r"\b(?:the )?united kingdom\b|\b(?:great )?britain\b", "uk"),
+    (r"\b(?:the )?united nations\b", "un"),
+    (r"\b(?:the )?european union\b", "eu"),
+    (r"\bworld health organi[sz]ation\b", "who"),
+]
+# Rangtelwoorden tellen als getallen: 'sixth meeting' en 'ninth meeting' zijn
+# verschillende vergaderingen. "one" bewust niet (One Health).
+GETALWOORDEN = dict(zip(
+    "two three four five six seven eight nine ten eleven twelve".split(), map(str, range(2, 13))))
+GETALWOORDEN.update(zip(
+    "first second third fourth fifth sixth seventh eighth ninth tenth eleventh twelfth".split(),
+    map(str, range(1, 13))))
+# Woorden die een bericht definiëren. Heeft elke kop er een die de andere mist
+# ('mpox' tegen 'cholera', 'Kenya' tegen 'Uganda'), dan zijn het verschillende
+# berichten, hoe gelijk de rest van de kop ook is.
+_ZIEKTEN = """ebola marburg mpox monkeypox cholera measles polio poliovirus dengue malaria tuberculosis tb
+hiv aids covid sars mers coronavirus influenza flu h5n1 h5n5 h7n9 h1n1 h3n2 avian nipah zika chikungunya
+oropouche lassa plague anthrax rabies diphtheria pertussis meningitis typhoid hepatitis yellow rift crimean
+hantavirus legionella salmonella listeria norovirus rotavirus rsv mumps rubella smallpox varicella leprosy
+scabies trachoma schistosomiasis leishmaniasis onchocerciasis filariasis chagas yaws dracunculiasis"""
+_LANDEN = """afghanistan albania algeria angola argentina armenia australia austria azerbaijan bahamas bahrain
+bangladesh barbados belarus belgium belize benin bhutan bolivia bosnia botswana brazil brunei bulgaria burkina
+burundi cambodia cameroon canada chad chile china colombia comoros congo croatia cuba cyprus czechia czech
+denmark djibouti dominica dominican ecuador egypt salvador eritrea estonia eswatini ethiopia fiji finland
+france gabon gambia georgia germany ghana greece guatemala guinea guyana haiti honduras hungary iceland india
+indonesia iran iraq ireland israel italy ivory jamaica japan jordan kazakhstan kenya kiribati korea kosovo
+kuwait kyrgyzstan laos latvia lebanon lesotho liberia libya lithuania luxembourg madagascar malawi malaysia
+maldives mali malta mauritania mauritius mexico micronesia moldova mongolia montenegro morocco mozambique
+myanmar namibia nepal netherlands dutch zealand nicaragua niger nigeria macedonia norway oman pakistan palau
+palestine gaza panama papua paraguay peru philippines poland portugal qatar romania russia rwanda samoa saudi
+senegal serbia seychelles sierra singapore slovakia slovenia somalia sudan spain lanka suriname sweden
+switzerland syria taiwan tajikistan tanzania thailand timor togo tonga trinidad tunisia turkey turkiye
+turkmenistan tuvalu uganda ukraine emirates uae uk us uruguay uzbekistan vanuatu venezuela vietnam yemen
+zambia zimbabwe africa asia europe americas caribbean pacific"""
+_UITGEVER = re.compile(r"\s+[-|–—]\s+([^-|–—]{2,60})$")
+_AFGEKAPT = re.compile(r"(\.\.\.|…)\s*$")
+_ALGEMEEN_LABEL = {"com", "org", "net", "gov", "int", "edu", "www", "news", "co", "ac", "go"}
+_TRACKING = re.compile(r"^(utm_|fbclid$|gclid$|mc_|ref$|ref_|cmpid$|ito$|at_|rss$|cid$|smid$|taid$)", re.I)
+
+
+def canon_url(url: str) -> str:
+    """URL zonder tracking-parameters, fragment, www. en slash aan het eind."""
+    try:
+        p = urllib.parse.urlparse(url or "")
+    except Exception:
+        return url or ""
+    host = host_van(url)
+    if host == "news.google.com":
+        return url                            # het pad is een ondoorzichtige id
+    q = [(k, v) for k, v in urllib.parse.parse_qsl(p.query, keep_blank_values=True) if not _TRACKING.match(k)]
+    pad = re.sub(r"/amp$", "", p.path.rstrip("/")) or "/"
+    return host + pad + ("?" + urllib.parse.urlencode(sorted(q)) if q else "")
+
+
+def zonder_uitgever(titel: str, url: str = "", src: str = "", domein: str = "") -> str:
+    """Knipt ' - Uitgever' van de kop, maar alleen als dat stuk echt de
+    uitgever is (past bij het domein of de bronnaam). Zo blijft het land in
+    'Ebola disease - Democratic Republic of the Congo' (WHO DON) gewoon staan."""
+    m = _UITGEVER.search(titel or "")
+    if not m:
+        return titel or ""
+    staart = m.group(1).lower()
+    compact = re.sub(r"[^a-z0-9]+", "", staart)
+    woorden = set(re.findall(r"[a-z0-9]+", staart))
+    labels = set()
+    for host in {host_van(url), domein or ""} - {"", "news.google.com"}:
+        labels |= {l for l in host.split(".") if len(l) >= 3 and l not in _ALGEMEEN_LABEL}
+    bron = re.sub(r"[^a-z0-9]+", "", (src or "").lower())
+    uitgever = (bron and bron == compact) or any(
+        l in woorden or l == compact or (len(l) >= 4 and l in compact) or (len(compact) >= 4 and compact in l)
+        for l in labels)
+    return titel[: m.start()] if uitgever else titel
+
+
+def kopwoorden(titel: str, url: str = "", src: str = "", domein: str = "") -> list:
+    t = zonder_uitgever(titel, url, src, domein).strip()
+    afgekapt = bool(_AFGEKAPT.search(t))
+    t = _AFGEKAPT.sub("", t)
+    t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode().lower()
+    t = re.sub(r"\b((?:[a-z]\.){1,3}[a-z])\.?(?![a-z])", lambda m: m.group(1).replace(".", ""), t)  # u.s. -> us
+    t = re.sub(r"\b(\d+)(?:st|nd|rd|th)\b", r"\1", t)        # 6th -> 6
     t = re.sub(r"[^a-z0-9]+", " ", t)
-    return t.strip()
+    for patroon, vervang in LANDNAMEN:
+        t = re.sub(patroon, vervang, t)
+    woorden = t.split()
+    if afgekapt and woorden and not re.search(r"\s(\.\.\.|…)\s*$", titel or ""):
+        woorden = woorden[:-1]                # midden in een woord afgekapt ("Glob...")
+    return [_stam(w) for w in woorden if w not in STOPWOORDEN]
+
+
+def _stam(w: str) -> str:
+    w = GETALWOORDEN.get(w, w)
+    if len(w) > 4 and w.endswith("s") and not w.endswith("ss"):
+        w = w[:-1]                            # pandemics ~ pandemic
+    return w
+
+
+SLEUTELWOORDEN = {_stam(w) for w in (_ZIEKTEN + " " + _LANDEN).split()}
+
+
+def titel_sleutel(titel: str, url: str = "", src: str = "", domein: str = "") -> str:
+    """Kop als gesorteerde set inhoudswoorden; leeg als hij te kort is om op te vertrouwen."""
+    woorden = sorted(set(kopwoorden(titel, url, src, domein)))
+    return " ".join(woorden) if len(woorden) >= 4 else ""
+
+
+def eigennamen(titel: str, url: str = "", src: str = "", domein: str = "") -> frozenset:
+    """Woorden die midden in een kop met een hoofdletter staan (Stearns,
+    Hamilton). Alleen bij koppen in zinsopbouw: in Title Case Heeft Elk Woord
+    Een Hoofdletter en zie je niet wat een naam is."""
+    woorden = re.findall(r"[^\W\d_][\w'’.-]*", zonder_uitgever(titel or "", url, src, domein))
+    if len(woorden) < 4:
+        return frozenset()
+    hoofd = [w for w in woorden[1:] if w[0].isupper()]
+    if len(hoofd) > 0.5 * (len(woorden) - 1):
+        return frozenset()
+    return frozenset(k for w in hoofd for k in kopwoorden(w))
+
+
+def uitgever_van(item: dict) -> str:
+    """Wie publiceerde dit? Bij een directe link de host; bij een Google
+    News-link (waar de echte URL verborgen zit) de bronnaam."""
+    host = host_van(item.get("url") or "")
+    if host != "news.google.com":
+        return host
+    return "src:" + re.sub(r"[^a-z0-9]+", "", (item.get("src") or "").lower())
+
+
+def handtekening(item: dict) -> dict:
+    url = item.get("url") or ""
+    host = host_van(url)
+    args = (item.get("title", ""), url, item.get("src", ""), item.get("domain", ""))
+    reeks = tuple(kopwoorden(*args))
+    woorden = frozenset(reeks)
+    return {"reeks": reeks,
+            "woorden": woorden,
+            "namen": eigennamen(*args),
+            "getallen": frozenset(w for w in woorden if w.isdigit()),
+            "uitgever": uitgever_van(item),
+            "url": canon_url(url)}
+
+
+def zelfde_bericht(a: dict, b: dict) -> bool:
+    if a["url"] == b["url"]:
+        return True
+    if a["uitgever"] and a["uitgever"] == b["uitgever"]:
+        return False      # zelfde uitgever, andere pagina: een vervolg in een reeks (WHO DON's houden vaak dezelfde kop)
+    if a["getallen"] and b["getallen"] and a["getallen"] != b["getallen"]:
+        return False      # situation report 12 vs 13, of een ander dodental
+    A, B = a["woorden"], b["woorden"]
+    alleen_a, alleen_b = A - B, B - A
+    if alleen_a & SLEUTELWOORDEN and alleen_b & SLEUTELWOORDEN:
+        return False      # andere ziekte of ander land
+    if len(alleen_a) == len(alleen_b) == 1 and alleen_a <= a["namen"] and alleen_b <= b["namen"]:
+        return False      # precies één naam verwisseld: 'Stearns County jail' tegen 'Hamilton County jail'
+    klein = min(len(A), len(B))
+    if klein < 4:
+        return False
+    gedeeld = len(A & B)
+    if gedeeld / len(A | B) >= 0.7:
+        return True
+    # De ene kop zit (bijna) helemaal in de andere: afgekapt, of er staat een
+    # label voor ("STAT+:", "[Articles]"). Maar 'Ninth meeting of the IGWG' is
+    # niet hetzelfde als 'DG's opening remarks at the Ninth meeting of the IGWG':
+    # dan moet de korte het begin van de lange zijn, of de lange mag maar een
+    # paar woorden extra hebben.
+    if klein < 6 or gedeeld / klein < 0.9:
+        return False
+    kort, lang = sorted((a["reeks"], b["reeks"]), key=len)
+    return len(B if len(A) == klein else A) - klein <= 3 or lang[:len(kort)] == kort
+
+
+def past_in_groep(h: dict, leden: list) -> bool:
+    """Lijkt op minstens één lid, en botst met geen enkel lid: een andere
+    pagina van dezelfde uitgever in de groep betekent een ander bericht, ook
+    als het via de kopie van een derde site toch op de groep lijkt."""
+    if any(h["uitgever"] and h["uitgever"] == lid["uitgever"] and h["url"] != lid["url"] for lid in leden):
+        return False
+    return any(zelfde_bericht(h, lid) for lid in leden)
+
+
+def kwaliteit(item: dict) -> tuple:
+    """Welke versie van een dubbel bericht tonen we?"""
+    host = host_van(item.get("url") or "")
+    titel = zonder_uitgever((item.get("title") or "").strip(), item.get("url", ""),
+                            item.get("src", ""), item.get("domain", "")).strip()
+    return (not (_in(host, SOCIAL) or _in(host, LAGE_WAARDE)),                           # nieuwsbericht boven een Facebook- of LinkedIn-post
+            host != "news.google.com",                       # directe link boven de Google-omweg
+            titel == unicodedata.normalize("NFKC", titel),   # gewone letters, geen 𝐯𝐞𝐭𝐭𝐞 unicode
+            not _AFGEKAPT.search(titel),                     # volledige kop boven afgekapte
+            BRONGEWICHT.get(item.get("feed", ""), 1),
+            min(len(titel), 140))
 
 
 def eerste_publicatie() -> dict:
-    """Vroegste publicatiedatum per titel uit het archief. Zo komt een bericht
+    """Per kop-sleutel de publicatiedagen uit het archief. Zo komt een bericht
     dat dagen later onder een nieuwe URL opduikt niet opnieuw als 'vers' bovenaan."""
     oudste = {}
     for row in archive_rows():
-        sleutel = titel_sleutel(row.get("title", ""))
+        url = row.get("url", "")
+        sleutel = titel_sleutel(row.get("title", ""), url, row.get("source", ""))
         dag = (row.get("published") or "")[:10]
-        if len(sleutel) < 25 or len(dag) != 10:
+        if not sleutel or len(dag) != 10:
             continue
-        iso_dag = dag + "T00:00:00+00:00"
-        if sleutel not in oudste or iso_dag < oudste[sleutel]:
-            oudste[sleutel] = iso_dag
+        uitgever = uitgever_van({"url": url, "src": row.get("source", "")})
+        oudste.setdefault(sleutel, []).append((dag, uitgever, canon_url(url)))
     return oudste
 
 
 def ontdubbel_op_titel(items: list, oudste: dict) -> list:
-    """Voegt items met dezelfde titel samen. Het resultaat krijgt de vroegste
-    bekende publicatiedatum en de hoogste score van de groep. Titels korter dan
-    25 tekens (na normaliseren) worden nooit samengevoegd."""
-    uit, per_sleutel = [], {}
+    """Voegt items samen die hetzelfde bericht zijn (zie zelfde_bericht). Per
+    groep tonen we de beste versie (kwaliteit), met de vroegste bekende
+    publicatiedatum en de hoogste score van de groep."""
+    groepen, woord_index, url_index = [], {}, {}
     for item in items:
         item = dict(item)                     # kopie: het archief houdt zijn eigen data
-        sleutel = titel_sleutel(item.get("title", ""))
-        if len(sleutel) < 25:
-            uit.append(item)
-            continue
-        vroegste = oudste.get(sleutel)
-        if vroegste and (not item.get("date") or vroegste < item["date"]):
-            item["date"] = vroegste
-        if sleutel not in per_sleutel:
-            per_sleutel[sleutel] = item
-            uit.append(item)
-            continue
-        bewaard = per_sleutel[sleutel]
-        if item.get("date") and (not bewaard.get("date") or item["date"] < bewaard["date"]):
-            bewaard["date"] = item["date"]
-        if (item.get("score") or 0) > (bewaard.get("score") or 0):
-            bewaard["score"] = item["score"]
-    return uit
+        h = handtekening(item)
+
+        sleutel = titel_sleutel(item.get("title", ""), item.get("url", ""), item.get("src", ""), item.get("domain", ""))
+        dagen = [dag for dag, uitgever, url in oudste.get(sleutel, ())
+                 if url == h["url"] or uitgever != h["uitgever"]]
+        if dagen:
+            vroegste = min(dagen)
+            if not item.get("date") or vroegste < item["date"][:10]:
+                item["date"] = vroegste + "T00:00:00+00:00"
+
+        kandidaten = Counter()
+        for w in h["woorden"]:
+            for g in woord_index.get(w, ()):
+                kandidaten[g] += 1
+        for g in url_index.get(h["url"], ()):
+            kandidaten[g] += 1000
+        gevonden = next((g for g, n in kandidaten.most_common()
+                         if n >= 3 and past_in_groep(h, groepen[g]["leden"])), None)
+
+        if gevonden is None:
+            gevonden = len(groepen)
+            groepen.append({"item": item, "leden": [h]})
+        else:
+            groep = groepen[gevonden]
+            bewaard = groep["item"]
+            datums = [d for d in (bewaard.get("date"), item.get("date")) if d]
+            score = max(bewaard.get("score") or 0, item.get("score") or 0)
+            if kwaliteit(item) > kwaliteit(bewaard):
+                bewaard = groep["item"] = item
+            bewaard["date"] = min(datums) if datums else bewaard.get("date", "")
+            bewaard["score"] = score
+            groep["leden"].append(h)
+        for w in h["woorden"]:
+            woord_index.setdefault(w, set()).add(gevonden)
+        url_index.setdefault(h["url"], set()).add(gevonden)
+    return [g["item"] for g in groepen]
 
 
 def main() -> int:
