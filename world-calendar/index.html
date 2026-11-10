@@ -191,14 +191,18 @@ const CATS = {
   gha:      { label: 'GHA reform', cls: 'c-gha' }
 };
 const active = new Set(Object.keys(CATS));
-// Countries with a special relationship. An event counts when its "country" field
-// (ISO code or list of codes) names one, or when its place is exactly the country name.
-const PARTNERS = {
-  ID: 'Indonesia', IN: 'India', CN: 'China', US: 'United States', KE: 'Kenya',
-  UG: 'Uganda', ET: 'Ethiopia', ZA: 'South Africa', CO: 'Colombia', CA: 'Canada'
-};
-const BY_NAME = Object.fromEntries(Object.entries(PARTNERS).map(([k, v]) => [v.toLowerCase(), k]));
-BY_NAME['usa'] = 'US';
+// Countries with a special relationship, from the site-wide ../partners.json (the
+// news harvester scores the same list). An event counts when its "country" field
+// (ISO code or list of codes) names one, or when its place is one of the country's names.
+let PARTNERS = {};   // code -> display name
+let BY_NAME = {};    // lower-case name -> code
+function setPartners(data) {
+  for (const [code, v] of Object.entries((data && data.countries) || {})) {
+    PARTNERS[code] = v.names[0];
+    for (const n of v.names) BY_NAME[n.toLowerCase()] = code;
+  }
+  for (const c of [...selCountries]) if (!PARTNERS[c]) selCountries.delete(c);
+}
 function partnersOf(e) {
   if (e.country) return [].concat(e.country).map(c => String(c).toUpperCase()).filter(c => PARTNERS[c]);
   const k = BY_NAME[String(e.place || '').trim().toLowerCase()];
@@ -212,7 +216,7 @@ function save(key, v) { try { localStorage.setItem(key, JSON.stringify(v)); } ca
 const saved = load('wc-cats', null);
 if (Array.isArray(saved)) { const known = load('wc-known', ['election','summit','health','eu']); active.clear(); saved.forEach(c => CATS[c] && active.add(c)); Object.keys(CATS).forEach(c => { if (!known.includes(c)) active.add(c); }); }
 save('wc-known', Object.keys(CATS));
-const selCountries = new Set((load('wc-countries', []) || []).filter(c => PARTNERS[c]));
+const selCountries = new Set(load('wc-countries', []) || []);   // pruned once partners.json is in (setPartners)
 let showEarlier = false;   // earlier months stay folded until asked for
 let zoek = '';             // search text; any word may match
 const norm = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -339,9 +343,12 @@ document.getElementById('q').addEventListener('input', e => {
   zoekTimer = setTimeout(() => { zoek = e.target.value.trim(); render(); }, 150);
 });
 
-fetch('events.json?v=' + Date.now())
-  .then(r => r.json())
-  .then(data => {
+Promise.all([
+  fetch('events.json?v=' + Date.now()).then(r => r.json()),
+  fetch('../partners.json').then(r => r.ok ? r.json() : null).catch(() => null)
+])
+  .then(([data, partners]) => {
+    setPartners(partners);
     events = data.events.sort((a, b) => a.start.localeCompare(b.start) || (a.end || a.start).localeCompare(b.end || b.start));
     document.getElementById('updated').textContent = 'updated ' + d(data.updated).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
     renderFilters(); renderCountries(); render();

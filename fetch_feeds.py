@@ -257,28 +257,43 @@ BRONGEWICHT = {
     "Pandemic Agreement": 4, "PABS / IGWG": 4, "IHR amendments": 3, "Pandemic Fund & financing": 3,
 }
 
+# Trefwoorden en hun gewicht. Matching op hele woorden (meervoud-s mag), dus
+# "who" telt niet meer in "who got it?". Woorden met hoofdletters (WHO, AMR, UN,
+# PABS) tellen alleen in die schrijfwijze: dan is het de organisatie of de
+# afkorting, niet het Engelse woordje. Titel telt dubbel, samenvatting enkel.
 TERMEN = {
     # kern van de portefeuille
-    5: ["pandemic agreement", "pandemic treaty", "pabs", "igwg", "pandemisch",
-        "international health regulations", "world health assembly", "global health",
-        "pandemic fund", "pathogen access", "neglected tropical",
+    5: ["pandemic agreement", "pandemic treaty", "PABS", "IGWG", "pandemisch",
+        "international health regulations", "IHR", "World Health Assembly", "WHA", "Executive Board",
+        "global health architecture", "pandemic fund", "pathogen access", "benefit sharing",
+        "neglected tropical", "NTD", "NTDs", "antimicrobial resistance", "AMR",
         # paraatheidsbeoordelingen (JEE, SPAR, PHEPA, IHR benchmarks): eigen tools in de toolbox
-        "preparedness assessment", "phepa", "joint external evaluation", "states parties self-assessment",
-        "ihr benchmark", "emergency preparedness", "preparedness and response"],
-    3: ["who ", "world health organization", "antimicrobial resistance", " amr ",
+        "preparedness assessment", "PHEPA", "joint external evaluation", "JEE", "SPAR",
+        "states parties self-assessment", "IHR benchmark", "preparedness and response"],
+    3: ["WHO", "world health organization", "Tedros", "director-general",
         "pandemic preparedness", "health security", "health emergency", "outbreak",
-        "one health", "universal health coverage", "health financing",
-        "global fund", "gavi", "unitaid", "wto trips", "equity", "low- and middle-income"],
-    2: ["vaccine", "epidemic", "surveillance", "cholera", "mpox", "measles", "polio",
-        "ebola", "influenza", "tuberculosis", "malaria", "hiv", "climate and health",
-        "africa cdc", "ecdc", "hera", "eu health", "european commission",
+        "one health", "universal health coverage", "UHC", "health financing", "global health",
+        "global fund", "gavi", "CEPI", "unitaid", "UNAIDS", "africa cdc", "ECDC", "HERA",
+        "WTO", "TRIPS", "health equity", "low- and middle-income", "LMIC", "LMICs",
+        "development aid", "official development assistance", "aid cuts", "funding cuts",
+        "PEPFAR", "USAID", "State Department", "donor", "donors", "replenishment",
+        "EU health", "health ministers", "EPSCO", "European Commission", "Council of the EU",
+        "G20", "G7", "UN General Assembly", "UNGA", "COP31", "heat-health"],
+    # klimaat telt pas echt in combinatie met gezondheid
+    4: ["climate and health", "climate-health", "health and climate", "Health Day"],
+    2: ["vaccine", "vaccination", "epidemic", "surveillance", "cholera", "mpox", "measles", "polio",
+        "ebola", "marburg", "influenza", "bird flu", "H5N1", "tuberculosis", "malaria", "HIV",
+        "dengue", "yellow fever", "antibiotic", "antibiotics", "superbug", "drug-resistant", "stewardship",
         "schistosomiasis", "trachoma", "onchocerciasis", "river blindness", "leishmaniasis",
         "sleeping sickness", "lymphatic filariasis", "chagas", "snakebite", "leprosy", "yaws",
-        "superbug", "drug-resistant", "antibiotic", "climate",
-        "indonesia", "south africa", "kenya", "india", "china"],
+        "elimination", "eliminate", "eliminated", "humanitarian", "refugees", "health workforce",
+        "essential medicines", "substandard", "falsified", "medical countermeasures",
+        "climate", "pandemic", "zoonotic", "funding", "funds", "aid", "financing", "civil society",
+        "immunization", "immunisation", "malnutrition", "air pollution", "air quality", "tobacco",
+        "guidelines", "guidance", "maternal", "child health", "2030 Agenda", "SDG", "SDGs"],
     # internationale reikwijdte: daar gaat het om
     1: ["international", "worldwide", "cross-border", "multilateral", "countries", "regional",
-        "united nations", " un ", "g20", "g7", "african union", "member states", "global"],
+        "United Nations", "UN", "African Union", "member states", "global", "ministers", "summit"],
     # ruis: beroemdheden, entertainment, sport en lokale incidenten zonder internationale impact
     -8: ["singer", "actress", "actor", "rapper", "celebrity", "pop star", "rock star", "tour dates",
          "concert", "cancels shows", "postpone shows", "hospitalized", "hospitalised", "rushed to hospital",
@@ -286,14 +301,70 @@ TERMEN = {
          "nfl", "nba", "premier league", "jet lag", "horoscope", "recipe",
          # ruis: studiegidsen, vacatures en archiefstukken ("On this day") zonder nieuwswaarde
          "unit of study", "course outline", "course code", "syllabus", "postgraduate", "undergraduate",
-         "master of", "tuition", "scholarship", "job opening", "internship",
+         "master of", "tuition", "scholarship", "fellowship", "job opening", "internship", "consultant",
          "on this day", "from the archives", "scmp archive", "years ago today",
          # lokale meldingen zonder internationale impact
          "possible measles exposure", "measles exposure reported", "measles exposure at"],
+    # ruis: onderzoeksverslagen (klinisch, technisch). Beleidsstukken in tijdschriften
+    # ([Health Policy], [Comment] over WHO) halen het via de kern-termen alsnog.
+    -4: ["case report", "a case of", "systematic review", "meta-analysis", "cohort", "randomised",
+         "randomized", "immunogenicity", "efficacy and safety", "cross-sectional", "retrospective",
+         "prevalence of", "in vitro", "mouse model", "mice", "peptide", "pharmacogenomics",
+         "scoping review", "gene therapy", "lipid", "blood-pressure", "stroke", "oncology"],
     # ruis: klinisch/commercieel VS-nieuws dat hier zelden toe doet
-    -3: ["earnings", "ipo", "stock", "shares", "acquisition", "medicare",
-         "medicaid", "obesity drug", "series a", "series b", "funding round"],
+    -3: ["earnings", "IPO", "stock", "shares", "acquisition", "medicare",
+         "medicaid", "obesity drug", "series a", "series b", "funding round", "STAT+",
+         "FDA approves", "biotech", "chatbot", "chatbots"],
 }
+
+# Uitgevers-tier, op domein (achtervoegsel: "who.int" dekt ook "afro.who.int").
+# Omhoog: officiële instanties en gespecialiseerde (beleids)media. Omlaag:
+# persbureau-doorplaatsingen, contentfabrieken en voorspelbare onderzoeksruis.
+UITGEVER_TIER = {
+    4: ["who.int", "news.un.org", "un.org", "ecdc.europa.eu", "africacdc.org", "paho.org",
+        "unaids.org", "theglobalfund.org", "gavi.org", "cepi.net", "unitaid.org", "woah.org",
+        "fao.org", "unicef.org", "worldbank.org", "wto.org", "consilium.europa.eu", "ec.europa.eu",
+        "europa.eu", "rivm.nl", "rijksoverheid.nl", "government.nl"],
+    3: ["healthpolicy-watch.news", "genevahealthfiles.com", "devex.com", "thinkglobalhealth.org",
+        "cidrap.umn.edu", "reliefweb.int", "msf.org", "doctorswithoutborders.org", "ifrc.org",
+        "cgdev.org", "kff.org", "politico.eu", "rapporteur.com", "euractiv.com"],
+    2: ["thelancet.com", "bmj.com", "nature.com", "science.org", "nejm.org", "eurosurveillance.org",
+        "reuters.com", "apnews.com", "theguardian.com", "ft.com", "nytimes.com", "economist.com",
+        "bbc.com", "bbc.co.uk", "aljazeera.com", "dw.com", "france24.com", "lemonde.fr", "nos.nl",
+        "nrc.nl", "thehindu.com", "nation.africa", "dailymaverick.co.za", "thejakartapost.com",
+        "scmp.com", "cdc.gov", "nih.gov", "gov.uk", "ukhsa.gov.uk", "passblue.com", "theconversation.com"],
+    -3: ["news-medical.net", "medicalxpress.com", "eurekalert.org", "sciencedaily.com",
+         "healthcareitnews.com", "fiercehealthcare.com", "beckershospitalreview.com", "borgenproject.org",
+         "msn.com", "yahoo.com", "newsbreak.com", "medscape.com"],
+    -6: ["businesswire.com", "prnewswire.com", "globenewswire.com", "einpresswire.com", "accesswire.com",
+         "newswire.com", "openpr.com", "prweb.com", "markets.businessinsider.com", "morningstar.com",
+         "marketscreener.com", "finance.yahoo.com", "bioengineer.org", "scienmag.com", "miragenews.com",
+         "oncodaily.com", "openaccessgovernment.org", "scirp.org", "cureus.com", "foodagribusiness.world",
+         "asiaresearchnews.com"],
+}
+
+# Zoekopdrachten van de Google Alerts (die zie je niet in de feed-URL). Een bron
+# krijgt geen punten voor de termen waarop hij zelf zoekt: dat 'global health' in
+# de Global Health-alert staat, zegt niets over relevantie.
+ALERT_ZOEKTERMEN = {
+    "WHO Alert": ["WHO", "World Health Organization"],
+    "Global Health": ["global health"],
+    "Health Emergency": ["health emergency", "emergency"],
+}
+
+# Een ribbon over gezondheid: een stuk zonder één gezondheidswoord in kop of
+# samenvatting (een algemeen COP31-verhaal, een verkiezing) krijgt geen
+# inhoudspunten, hoe vaak "climate" of "summit" er ook in staat.
+GEZONDHEID_RE = re.compile(
+    r"health|disease|medic|vaccin|immuni[sz]|pandemic|epidemic|outbreak|virus|viral|infect|pathogen|"
+    r"hospital|patient|clinic|drug|antibiot|antimicrob|superbug|malaria|tubercul|\bTB\b|\bHIV\b|aids\b|"
+    r"ebola|cholera|polio|measles|mpox|dengue|marburg|influenza|\bflu\b|h5n1|\bNTDs?\b|leprosy|"
+    r"leishmania|trachoma|schistosom|nutrition|malnutrition|mortality|surveillance|\bWHO\b|\bAMR\b|"
+    r"\bUHC\b|\bPABS\b|\bIHR\b|gavi|global fund|unaids|cepi|africa cdc|ecdc|nurses?|doctors?", re.I)
+
+PARTNERS_BESTAND = pathlib.Path("partners.json")
+PARTNER_BONUS = 2      # nieuws over een partnerland, mits het ook inhoudelijk ergens over gaat
+PARTNER_MIN_INHOUD = 5   # anders tilt elk binnenlands VS-verhaal mee
 
 
 MIN_INHOUD_OPEN_WEB = 4   # minstens een kernwoord (gewicht 3) of twee lichtere
@@ -331,21 +402,93 @@ def profiel_of_vacature(item) -> bool:
     return False
 
 
+def _term_re(term: str) -> re.Pattern:
+    """Heel woord; een meervoud-s of -es mag. Hoofdletters = exact zo geschreven."""
+    hoofd = any(c.isupper() for c in term)
+    staart = r"(?:s|es)?" if term[-1].isalpha() and not hoofd else ""
+    begin = r"(?<![\w])" if term[0].isalnum() else ""
+    eind = r"(?![\w])" if term[-1].isalnum() else ""
+    return re.compile(begin + re.escape(term) + staart + eind, 0 if hoofd else re.I)
+
+
+_TERMEN_RE = [(g, w, _term_re(w)) for g, ws in TERMEN.items() for w in ws]
+_ZOEK_CACHE: dict = {}
+
+
+def eigen_zoektermen(feed_label: str) -> list:
+    """De termen waarop deze bron zelf zoekt (Google Alerts en Google News)."""
+    if feed_label in _ZOEK_CACHE:
+        return _ZOEK_CACHE[feed_label]
+    termen = list(ALERT_ZOEKTERMEN.get(feed_label, []))
+    for feed in FEEDS:
+        if feed["label"] != feed_label:
+            continue
+        for k in feed.get("urls") or [feed.get("url", "")]:
+            if not is_gnews(k):
+                continue
+            q = urllib.parse.parse_qs(urllib.parse.urlparse(k if isinstance(k, str) else k["url"]).query).get("q", [""])[0]
+            q = re.sub(r"\bsite:\S+", " ", q)
+            termen += re.findall(r'"([^"]+)"', q)
+            termen += [w for w in re.sub(r'"[^"]*"', " ", q).split() if w not in ("OR", "AND") and len(w) > 1]
+    _ZOEK_CACHE[feed_label] = [t.lower() for t in termen]
+    return _ZOEK_CACHE[feed_label]
+
+
+def _eigen(term: str, eigen: list) -> bool:
+    t = term.lower()
+    return any(re.search(r"(?<!\w)" + re.escape(t) + r"(?!\w)", e) or re.search(r"(?<!\w)" + re.escape(e) + r"(?!\w)", t)
+               for e in eigen)
+
+
+def _partner_res() -> list:
+    try:
+        landen = json.loads(PARTNERS_BESTAND.read_text())["countries"]
+    except Exception:
+        return []
+    return [(code, _term_re(naam)) for code, v in landen.items() for naam in v["names"]]
+
+
+_PARTNER_RE = _partner_res()
+
+
+def uitgever_tier(domein: str) -> int:
+    for punten, lijst in UITGEVER_TIER.items():
+        if _in(domein or "", lijst):
+            return punten
+    return 0
+
+
 def score_item(item, feed_label: str) -> int:
+    """Relevantie = bron + inhoud + uitgever. item["inhoud"] bewaart het
+    inhoudsdeel apart (de open-webfilter en de pagina gebruiken dat)."""
     # Een officiële bron die op Google News terugviel is een zoekopdracht
     # geworden: dan geen bonus voor de naam van die bron.
-    s = 1 if item.get("fallback") else BRONGEWICHT.get(feed_label, 1)
+    bron = 1 if item.get("fallback") else BRONGEWICHT.get(feed_label, 1)
+    titel = item.get("title") or ""
+    tekst = item.get("summary") or ""
+    eigen = eigen_zoektermen(feed_label)
+    inhoud = 0
+    for gewicht, term, rx in _TERMEN_RE:
+        if gewicht > 0 and eigen and _eigen(term, eigen):
+            continue
+        if rx.search(titel):
+            inhoud += gewicht * 2          # titel telt dubbel
+        elif rx.search(tekst):
+            inhoud += gewicht
+    if inhoud > 0 and not GEZONDHEID_RE.search(titel + " " + tekst):
+        inhoud = 0
+    if inhoud >= PARTNER_MIN_INHOUD and any(rx.search(titel) or rx.search(tekst) for _, rx in _PARTNER_RE):
+        inhoud += PARTNER_BONUS
     if profiel_of_vacature(item):
-        s -= PROFIEL_STRAF
-    titel = (item.get("title") or "").lower()
-    tekst = (item.get("summary") or "").lower()
-    for gewicht, woorden in TERMEN.items():
-        for w in woorden:
-            if w in titel:
-                s += gewicht * 2          # titel telt dubbel
-            elif w in tekst:
-                s += gewicht
-    return s
+        inhoud -= PROFIEL_STRAF
+    item["inhoud"] = inhoud
+    # De uitgever telt alleen waar die niet vastligt: Google Alerts, Google News-
+    # zoekopdrachten en terugvallers. Bij een eigen feed zit de kwaliteit van de
+    # uitgever al in het brongewicht; anders telt Health Policy Watch dubbel.
+    open_bron = (feed_label in OPEN_WEB_FEEDS or item.get("fallback") or bool(eigen)
+                 or "news.google.com" in (item.get("url") or "") or "gnews" in item)
+    tier = uitgever_tier(item.get("domain") or host_van(item.get("url") or "")) if open_bron else 0
+    return bron + inhoud + tier
 
 
 def strip_html(raw: str) -> str:
@@ -1185,6 +1328,28 @@ def ontdubbel_op_titel(items: list, oudste: dict) -> list:
     return [g["item"] for g in groepen]
 
 
+def herbeoordeel(items: list) -> tuple[list, dict]:
+    """Linkcheck en (her)score van elk item, ook van items uit vorige runs: zo
+    werkt een nieuwe scoreregel meteen op de hele ribbon. Geeft (schoon, weg)."""
+    schoon, weg = [], {}
+    for item in items:
+        open_web = item.get("feed") in OPEN_WEB_FEEDS
+        houden, straf, reden = link_oordeel(item["url"], open_web)
+        if not houden:
+            weg[reden] = weg.get(reden, 0) + 1
+            continue
+        item = dict(item)
+        item.setdefault("domain", host_van(item["url"]))
+        item["score"] = score_item(item, item.get("feed", "")) - straf
+        # Google Alerts en andere open-web feeds vangen veel ruis ("medical emergency"
+        # van een zanger). Die houden we alleen als de inhoud zelf relevant is.
+        if open_web and item.get("inhoud", 0) < MIN_INHOUD_OPEN_WEB:
+            weg["open web, te weinig relevant"] = weg.get("open web, te weinig relevant", 0) + 1
+            continue
+        schoon.append(item)
+    return schoon, weg
+
+
 def main() -> int:
     fresh, status = [], {}
     for feed in FEEDS:
@@ -1236,22 +1401,7 @@ def main() -> int:
     print(f"  Google News-links: {opgelost} nieuw opgelost, {mislukt} mislukt, {nog} nog niet")
     merged = list({(i.get("url") or ""): i for i in reversed(merged)}.values())[::-1]   # opgelost kan dubbel zijn
 
-    schoon, weg = [], {}
-    for item in merged:
-        open_web = item.get("feed") in OPEN_WEB_FEEDS
-        houden, straf, reden = link_oordeel(item["url"], open_web)
-        if not houden:
-            weg[reden] = weg.get(reden, 0) + 1
-            continue
-        item = dict(item)
-        item.setdefault("domain", host_van(item["url"]))
-        item["score"] = score_item(item, item.get("feed", "")) - straf
-        # Google Alerts en andere open-web feeds vangen veel ruis ("medical emergency"
-        # van een zanger). Die houden we alleen als de inhoud zelf relevant is.
-        if open_web and item["score"] - BRONGEWICHT.get(item.get("feed", ""), 1) + straf < MIN_INHOUD_OPEN_WEB:
-            weg["open web, te weinig relevant"] = weg.get("open web, te weinig relevant", 0) + 1
-            continue
-        schoon.append(item)
+    schoon, weg = herbeoordeel(merged)
     if weg:
         print("  weggefilterd: " + ", ".join(f"{n}x {r}" for r, n in sorted(weg.items())))
     merged = schoon

@@ -1,0 +1,15 @@
+{
+ "_doc": "Partner countries with a special relationship in Mark's global health work. One list for the whole site: the harvester (fetch_feeds.py) scores news about them, the world calendar highlights their events. 'names' are matched as whole words in headlines; the first name is the display name.",
+ "countries": {
+  "ID": {"names": ["Indonesia", "Indonesian", "Jakarta"]},
+  "IN": {"names": ["India", "Indian", "New Delhi"]},
+  "CN": {"names": ["China", "Chinese", "Beijing"]},
+  "US": {"names": ["United States", "USA", "U.S.", "US", "American", "Washington"]},
+  "KE": {"names": ["Kenya", "Kenyan", "Nairobi"]},
+  "UG": {"names": ["Uganda", "Ugandan", "Kampala"]},
+  "ET": {"names": ["Ethiopia", "Ethiopian", "Addis Ababa"]},
+  "ZA": {"names": ["South Africa", "South African", "Pretoria"]},
+  "CO": {"names": ["Colombia", "Colombian", "Bogotá", "Bogota"]},
+  "CA": {"names": ["Canada", "Canadian", "Ottawa"]}
+ }
+}
