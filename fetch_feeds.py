@@ -701,7 +701,7 @@ def api_who(kandidaat) -> list:
         titel = x.get("OverrideTitle") if x.get("UseOverrideTitle") and x.get("OverrideTitle") else x.get("Title")
         pad = x.get("ItemDefaultUrl") or ("/" + (x.get("UrlName") or ""))
         uit.append({"title": titel or "", "link": basis + pad, "summary": x.get("Summary") or "",
-                    "date": x.get("PublicationDateAndTime") or ""})
+                    "date": (x.get("PublicationDateAndTime") or "").replace("Z", "+00:00")})
     return uit
 
 
