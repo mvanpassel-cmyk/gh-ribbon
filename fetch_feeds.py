@@ -345,6 +345,122 @@ def unwrap(url: str) -> str:
 
 
 # ---------------------------------------------------------------------------
+# Google News-links. Een Google News-feed geeft geen artikel-URL maar een
+# versleutelde omleiding (news.google.com/rss/articles/CBMi...). Oudere ids
+# bevatten de echte URL gewoon in de base64; nieuwere ("AU_yqL...") niet, en
+# dan vraagt Google News het zelf op bij zijn eigen batchexecute-endpoint.
+# Dat kost twee requests per link, dus: alleen voor nieuwe links, een plafond
+# per run, en alles wat gelukt is komt in een cache (data/gnews-urls.json).
+# ---------------------------------------------------------------------------
+GNEWS_CACHE = pathlib.Path("data/gnews-urls.json")
+GNEWS_MAX_PER_RUN = 60
+GNEWS_PAUZE = 1.0
+_GN_ID = re.compile(r"news\.google\.com/(?:rss/)?(?:articles|read)/([A-Za-z0-9_-]+)")
+
+
+def _gn_base64(gn_id: str) -> str:
+    """Oud formaat: de URL staat letterlijk in de protobuf."""
+    import base64
+    try:
+        ruw = base64.urlsafe_b64decode(gn_id + "=" * (-len(gn_id) % 4))
+    except Exception:
+        return ""
+    m = re.search(rb"https?://[\x21-\x7e]+", ruw)
+    if not m or m.group(0).startswith(b"https://news.google.com"):
+        return ""
+    url = m.group(0).decode("ascii", "ignore")
+    # In de protobuf volgt soms direct een lengte-byte met nog een AMP-URL erachter.
+    return re.split(r"[\x00-\x1f]|\xd2\x01", url)[0]
+
+
+def _gn_batchexecute(gn_id: str) -> str:
+    """Nieuw formaat: handtekening en tijdstempel van de artikelpagina halen
+    en daarmee de echte URL opvragen."""
+    req = urllib.request.Request(f"https://news.google.com/rss/articles/{gn_id}",
+                                 headers={"User-Agent": UA, "Accept-Language": "en-GB,en;q=0.9"})
+    with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+        html = r.read().decode("utf-8", "replace")
+    sg = re.search(r'data-n-a-sg="([^"]+)"', html)
+    ts = re.search(r'data-n-a-ts="([^"]+)"', html)
+    if not (sg and ts):
+        return ""
+    verzoek = ('["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,0,1],'
+               '"X","X",1,[1,1,1],1,1,null,0,0,null,0],"%s",%s,"%s"]' % (gn_id, ts.group(1), sg.group(1)))
+    body = "f.req=" + urllib.parse.quote(json.dumps([[["Fbv4je", verzoek, None, "generic"]]]))
+    req = urllib.request.Request("https://news.google.com/_/DotsSplashUi/data/batchexecute",
+                                 data=body.encode(), headers={
+                                     "User-Agent": UA,
+                                     "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"})
+    with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+        tekst = r.read().decode("utf-8", "replace")
+    deel = json.loads(tekst.split("\n\n", 1)[1])
+    url = json.loads(deel[0][2])[1]
+    return url if isinstance(url, str) and url.startswith("http") else ""
+
+
+def los_gnews_op(url: str) -> str:
+    """Echte artikel-URL achter een Google News-link, of "" als dat niet lukt."""
+    m = _GN_ID.search(url or "")
+    if not m:
+        return ""
+    gevonden = _gn_base64(m.group(1))
+    if gevonden:
+        return gevonden
+    try:
+        return _gn_batchexecute(m.group(1))
+    except Exception:
+        return ""
+
+
+def laad_gnews_cache() -> dict:
+    try:
+        return json.loads(GNEWS_CACHE.read_text())
+    except Exception:
+        return {}
+
+
+def los_gnews_links_op(items: list, cache: dict) -> tuple[int, int]:
+    """Vervangt Google News-links door de echte URL (in place). Geeft
+    (opgelost uit cache of nieuw, mislukt) terug. Een mislukte link blijft
+    gewoon de Google-link: die werkt in de browser ook."""
+    nieuw = mislukt = 0
+    vandaag = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    for item in items:
+        url = item.get("url") or ""
+        if "news.google.com" not in url:
+            continue
+        hit = cache.get(url)
+        if hit is None and nieuw + mislukt < GNEWS_MAX_PER_RUN:
+            echt = los_gnews_op(url)
+            time.sleep(GNEWS_PAUZE)
+            hit = cache[url] = {"url": echt, "seen": vandaag}
+            if echt:
+                nieuw += 1
+            else:
+                mislukt += 1
+        if hit:
+            hit["seen"] = vandaag
+            if hit.get("url") and not hit["url"].startswith("https://news.google.com"):
+                item["gnews"] = url
+                item["url"] = hit["url"]
+                item["domain"] = host_van(hit["url"])
+    return nieuw, mislukt
+
+
+def bewaar_gnews_cache(cache: dict) -> None:
+    """Houdt alleen links die de afgelopen 30 dagen nog langskwamen. Mislukte
+    pogingen (lege url) gaan na 3 dagen weg, zodat ze opnieuw geprobeerd worden."""
+    nu = datetime.now(timezone.utc)
+    def vers(v, dagen):
+        try:
+            return nu - datetime.fromisoformat(v["seen"] + "T00:00:00+00:00") <= timedelta(days=dagen)
+        except Exception:
+            return False
+    schoon = {k: v for k, v in cache.items() if vers(v, 30 if v.get("url") else 3)}
+    GNEWS_CACHE.write_text(json.dumps(schoon, ensure_ascii=False, separators=(",", ":"), sort_keys=True))
+
+
+# ---------------------------------------------------------------------------
 # Linkhygiëne. De Google Alerts-feeds halen het open web binnen, en daar zit
 # af en toe spam, clickbait of een link met een (tijdelijke) sleutel erin.
 #   1. Altijd weg: rare schema's, IP-adressen, inloggegevens in de URL,

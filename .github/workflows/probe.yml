@@ -1,0 +1,20 @@
+name: Probe feeds
+
+# Handmatig: proeft kandidaat-URL's uit .github/scripts/probe-urls.txt vanaf een
+# GitHub-runner en test het oplossen van Google News-links. Wijzigt niets.
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install feedparser
+      - run: python .github/scripts/probe_feeds.py .github/scripts/probe-urls.txt
+      - name: Google News-links oplossen
+        run: python .github/scripts/probe_gnews.py
