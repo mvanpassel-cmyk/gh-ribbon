@@ -16,5 +16,6 @@ jobs:
           python-version: "3.12"
       - run: pip install feedparser
       - run: python .github/scripts/probe_feeds.py .github/scripts/probe-urls.txt
-      - name: Google News-links oplossen
+        continue-on-error: true
+      - name: Droogtest harvester
         run: python .github/scripts/probe_gnews.py

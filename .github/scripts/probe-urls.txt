@@ -1,10 +1,2 @@
-WHO DON sel	https://www.who.int/api/news/diseaseoutbreaknews?sf_culture=en&$orderby=PublicationDateAndTime%20desc&$top=3&$select=Title,OverrideTitle,UseOverrideTitle,ItemDefaultUrl,PublicationDateAndTime,UrlName,Summary
-WHO DON all	https://www.who.int/api/news/diseaseoutbreaknews?sf_culture=en&$orderby=PublicationDateAndTime%20desc&$top=1
-Eurosurv crossref	https://api.crossref.org/journals/1560-7917/works?sort=published&order=desc&rows=5&select=DOI,title,published,URL
-Eurosurv epmc	https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN:1560-7917&sort=P_PDATE_D%20desc&format=json&pageSize=5&resultType=lite
-Politico hlth	https://www.politico.eu/section/health/feed/
-Euractiv all	https://www.euractiv.com/feed/
-DNDi types	https://dndi.org/wp-json/wp/v2/types
-ReAct types	https://www.reactgroup.org/wp-json/wp/v2/types
-GHF post	https://genevahealthfiles.com/2026/03/09/our-newsletter-has-a-new-home/
-TGH sitemap	https://www.thinkglobalhealth.org/sitemap.xml
+GHF ghost	https://newsletter.genevahealthfiles.com/rss/
+Politico main	https://www.politico.eu/feed/

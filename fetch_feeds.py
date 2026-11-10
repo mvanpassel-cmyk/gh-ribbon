@@ -66,39 +66,57 @@ def gnews(zoekterm: str) -> str:
 # wint. De laatste is meestal een Google News-zoekopdracht, zodat een bron
 # nooit helemaal stilvalt. In de Actions-log zie je welke kandidaat het werd.
 # ---------------------------------------------------------------------------
+# Tags waarop we de algemene feeds van Politico en Euractiv filteren (deel van het woord volstaat).
+GEZONDHEIDSTAGS = ["health", "pharma", "medicin", "vaccin", "pandemic", "antimicrobial", "disease",
+                   "cancer", "hera", "ema ", "drug", "hospital", "epidemic", "outbreak", "mpox", "ebola"]
+
 FEEDS = [
     # --- WHO ----------------------------------------------------------------
+    # De RSS van WHO-nieuws serveert sinds een tijd stukken uit 2020 (die vallen
+    # weg op leeftijd); de API die who.int zelf gebruikt is wel actueel.
     {"label": "WHO News", "cat": "who", "urls": [
+        {"api": "who", "basis": "https://www.who.int/news/item",
+         "url": "https://www.who.int/api/news/newsitems?sf_culture=en&$orderby=PublicationDateAndTime%20desc&$top=12"},
         "https://www.who.int/rss-feeds/news-english.xml"]},
     {"label": "WHO Disease Outbreak News", "cat": "who", "urls": [
+        # De DON-RSS geeft 404 (gemeten 10-11-2026); de API werkt.
+        {"api": "who", "basis": "https://www.who.int/emergencies/disease-outbreak-news/item",
+         "url": "https://www.who.int/api/news/diseaseoutbreaknews?sf_culture=en&$orderby=PublicationDateAndTime%20desc"
+                "&$top=12&$select=Title,OverrideTitle,UseOverrideTitle,ItemDefaultUrl,UrlName,PublicationDateAndTime,Summary"},
         "https://www.who.int/rss-feeds/disease-outbreak-news-english.xml",
-        "https://www.who.int/feeds/entity/csr/don/en/rss.xml",
-        gnews("WHO disease outbreak news")]},
+        gnews("site:who.int disease outbreak news")]},
     {"label": "WHO Alert", "cat": "who", "urls": [
         "https://www.google.com/alerts/feeds/07358569115421849873/153340034560442073"]},
     {"label": "UN News Health", "cat": "who", "urls": [
         "https://news.un.org/feed/subscribe/en/news/topic/health/feed/rss.xml",
-        "https://news.un.org/en/rss/health.xml",
         gnews("site:news.un.org health")]},
 
     # --- Outbreak / surveillance --------------------------------------------
-    {"label": "ProMED", "cat": "promed", "urls": [
-        "https://promedmail.org/feed/",
-        gnews("ProMED-mail outbreak")]},
+    # ProMED: geen feed meer sinds de nieuwe (betaalde) site; /feed/ geeft 404
+    # (gemeten 10-11-2026). De Google News-zoekopdracht "ProMED-mail outbreak"
+    # leverde stukken óver ProMED van willekeurige sites. Daarom uit.
     {"label": "CIDRAP Public Health", "cat": "promed", "urls": [
         "https://www.cidrap.umn.edu/news/91/rss"]},          # geverifieerd
     {"label": "CIDRAP Pandemic Influenza", "cat": "promed", "urls": [
         "https://www.cidrap.umn.edu/news/86/rss"]},          # geverifieerd
     {"label": "Eurosurveillance", "cat": "promed", "urls": [
-        "https://www.eurosurveillance.org/rss/current.xml",
+        # eurosurveillance.org zit achter een Cloudflare-uitdaging; Crossref heeft
+        # elk nieuw artikel binnen een dag (ISSN 1560-7917).
+        {"api": "crossref", "basis": "https://www.eurosurveillance.org/content/",
+         "url": "https://api.crossref.org/journals/1560-7917/works?sort=published&order=desc&rows=12"
+                "&select=DOI,title,published,issued,abstract"},
         gnews("site:eurosurveillance.org")]},
 
     # --- Health emergencies ---------------------------------------------------
     {"label": "Health Emergency", "cat": "emerg", "urls": [
         "https://www.google.com/alerts/feeds/07358569115421849873/3291854287981540699"]},
     {"label": "ReliefWeb Health", "cat": "emerg", "urls": [
-        "https://reliefweb.int/updates/rss.xml",
-        "https://reliefweb.int/disasters/rss.xml",
+        # De RSS geeft een lege 202 (botuitdaging); de API v2 wil een goedgekeurde
+        # appname, als secret RELIEFWEB_APPNAME. Tot die er is: Google News.
+        {"api": "reliefweb",
+         "url": "https://api.reliefweb.int/v2/reports?appname={appname}&preset=latest&limit=12"
+                "&filter[field]=theme.name&filter[value]=Health"
+                "&fields[include][]=url_alias&fields[include][]=date.original&fields[include][]=source.shortname"},
         gnews("site:reliefweb.int health emergency")]},
 
     # --- Global health ----------------------------------------------------------
@@ -120,12 +138,10 @@ FEEDS = [
         "https://www.ecdc.europa.eu/en/taxonomy/term/1295/feed",
         gnews("site:ecdc.europa.eu risk assessment")]},
     {"label": "Africa CDC", "cat": "global", "urls": [
-        "https://africacdc.org/news/feed/",
-        "https://africacdc.org/feed/",
+        "https://africacdc.org/news-item/feed/",       # /news/feed/ en /feed/ zijn leeg
         gnews("site:africacdc.org")]},
     {"label": "Think Global Health", "cat": "global", "urls": [
-        "https://www.thinkglobalhealth.org/rss.xml",
-        "https://www.thinkglobalhealth.org/feed",
+        # Geen RSS meer (alle feed-adressen 404, gemeten 10-11-2026).
         gnews("site:thinkglobalhealth.org")]},
 
     # --- AMR ----------------------------------------------------------------------
@@ -143,8 +159,8 @@ FEEDS = [
     {"label": "Antibiotic R&D (GARDP, CARB-X)", "cat": "amr", "urls": [
         gnews('GARDP OR CARB-X OR "AMR Action Fund" antibiotic')]},
     {"label": "ReAct", "cat": "amr", "urls": [
-        "https://www.reactgroup.org/feed/",
-        gnews("ReAct antibiotic resistance")]},
+        # De RSS en de WordPress-API zijn leeg (gemeten 10-11-2026).
+        gnews("site:reactgroup.org")]},
 
     # --- Neglected tropical diseases ------------------------------------------
     {"label": "PLOS NTDs", "cat": "ntd", "urls": [
@@ -154,11 +170,11 @@ FEEDS = [
     {"label": "WHO NTDs", "cat": "ntd", "urls": [
         gnews('WHO "neglected tropical disease" eliminated OR elimination')]},
     {"label": "DNDi", "cat": "ntd", "urls": [
-        "https://dndi.org/feed/",
-        gnews("DNDi drugs for neglected diseases")]},
+        {"api": "wp", "url": "https://dndi.org/wp-json/wp/v2/news?per_page=12"},   # /feed/ is leeg
+        gnews("site:dndi.org")]},
     {"label": "Uniting to Combat NTDs", "cat": "ntd", "urls": [
-        "https://unitingtocombatntds.org/en/feed/",
-        gnews('"Uniting to Combat" NTDs')]},
+        # Alles achter een 403 voor datacenter-IP's (gemeten 10-11-2026).
+        gnews("site:unitingtocombatntds.org")]},
 
     # --- Pandemic agreement, PABS, IHR -----------------------------------------
     {"label": "Pandemic Agreement", "cat": "pandemic", "urls": [
@@ -189,20 +205,24 @@ FEEDS = [
     {"label": "Health Policy Watch", "cat": "policy", "urls": [
         "https://healthpolicy-watch.news/feed/"]},
     {"label": "Geneva Health Files", "cat": "policy", "urls": [
-        "https://genevahealthfiles.substack.com/feed",
-        gnews("Geneva Health Files pandemic treaty")]},
+        # Sinds maart 2026 op Ghost (newsletter.genevahealthfiles.com); Substack blokkeert.
+        "https://newsletter.genevahealthfiles.com/rss/",
+        gnews("site:genevahealthfiles.com")]},
     {"label": "Politico EU Health", "cat": "policy", "urls": [
-        "https://www.politico.eu/feed/?cat=96",
+        # De sectiefeed geeft HTML, ?cat=96 een Cloudflare-uitdaging. De hoofdfeed
+        # werkt; daaruit alleen de gezondheidsstukken.
+        {"url": "https://www.politico.eu/feed/", "tags": GEZONDHEIDSTAGS},
         gnews("site:politico.eu health")]},
     {"label": "Euractiv Health", "cat": "policy", "urls": [
-        "https://www.euractiv.com/sections/health-consumers/feed/",
+        # Sectiefeeds: Cloudflare-uitdaging. De hoofdfeed (100 stukken) werkt.
+        {"url": "https://www.euractiv.com/feed/", "tags": GEZONDHEIDSTAGS},
         gnews("site:euractiv.com health")]},
 
     # --- News ------------------------------------------------------------------------------------
     {"label": "STAT News", "cat": "news", "urls": [
         "https://www.statnews.com/feed/"]},
     {"label": "Devex Global Health", "cat": "news", "urls": [
-        "https://www.devex.com/news/feed",
+        "https://www.devex.com/news/feed.rss",          # /news/feed zit achter een captcha
         gnews("site:devex.com global health")]},
     # Gates Foundation Grand Challenges: geen eigen RSS, dus via Google News
     {"label": "Grand Challenges", "cat": "news", "urls": [
@@ -311,7 +331,9 @@ def profiel_of_vacature(item) -> bool:
 
 
 def score_item(item, feed_label: str) -> int:
-    s = BRONGEWICHT.get(feed_label, 1)
+    # Een officiële bron die op Google News terugviel is een zoekopdracht
+    # geworden: dan geen bonus voor de naam van die bron.
+    s = 1 if item.get("fallback") else BRONGEWICHT.get(feed_label, 1)
     if profiel_of_vacature(item):
         s -= PROFIEL_STRAF
     titel = (item.get("title") or "").lower()
@@ -648,55 +670,177 @@ def download(url: str) -> bytes:
     raise last
 
 
-def harvest(feed) -> tuple[list, str]:
-    """Probeert de kandidaat-URL's op volgorde. De eerste die bruikbare XML
+def is_gnews(kandidaat) -> bool:
+    url = kandidaat if isinstance(kandidaat, str) else kandidaat.get("url", "")
+    return url.startswith("https://news.google.com/rss/search")
+
+
+def gnews_site(kandidaat) -> str:
+    """Het domein uit een 'site:'-zoekopdracht, of ""."""
+    url = kandidaat if isinstance(kandidaat, str) else kandidaat.get("url", "")
+    q = urllib.parse.parse_qs(urllib.parse.urlparse(url).query).get("q", [""])[0]
+    m = re.search(r"\bsite:([a-z0-9.-]+)", q, re.I)
+    return m.group(1).lower().removeprefix("www.") if m else ""
+
+
+# ---------------------------------------------------------------------------
+# Bronnen zonder (werkende) RSS: een paar officiële API's. Elke adapter geeft
+# dezelfde "entries" terug als feedparser: dicts met title, link, summary,
+# date (iso) en eventueel tags. Een kandidaat is dan een dict, bijvoorbeeld
+# {"api": "wp", "url": "https://dndi.org/wp-json/wp/v2/news?per_page=12"}.
+# ---------------------------------------------------------------------------
+def _json(url: str):
+    return json.loads(download(url))
+
+
+def api_who(kandidaat) -> list:
+    """WHO's eigen Sitefinity-API (dezelfde die who.int zelf gebruikt)."""
+    basis = kandidaat["basis"]
+    uit = []
+    for x in _json(kandidaat["url"]).get("value", []):
+        titel = x.get("OverrideTitle") if x.get("UseOverrideTitle") and x.get("OverrideTitle") else x.get("Title")
+        pad = x.get("ItemDefaultUrl") or ("/" + (x.get("UrlName") or ""))
+        uit.append({"title": titel or "", "link": basis + pad, "summary": x.get("Summary") or "",
+                    "date": x.get("PublicationDateAndTime") or ""})
+    return uit
+
+
+def api_wp(kandidaat) -> list:
+    """WordPress REST-API, voor sites waarvan de RSS leeg of geblokkeerd is."""
+    uit = []
+    for x in _json(kandidaat["url"]):
+        uit.append({"title": (x.get("title") or {}).get("rendered", ""), "link": x.get("link", ""),
+                    "summary": (x.get("excerpt") or {}).get("rendered", ""),
+                    "date": (x.get("date_gmt") or "") + ("+00:00" if x.get("date_gmt") else "")})
+    return uit
+
+
+def api_crossref(kandidaat) -> list:
+    """Nieuwste artikelen van een tijdschrift via Crossref (op ISSN). Voor
+    Eurosurveillance, waarvan de site achter een Cloudflare-uitdaging zit."""
+    uit = []
+    for x in _json(kandidaat["url"]).get("message", {}).get("items", []):
+        delen = ((x.get("published") or x.get("issued") or {}).get("date-parts") or [[]])[0]
+        datum = "-".join(f"{d:02d}" for d in delen) if len(delen) == 3 else ""
+        uit.append({"title": " ".join(x.get("title") or []),
+                    "link": kandidaat.get("basis", "https://doi.org/") + x.get("DOI", ""),
+                    "summary": x.get("abstract") or "",
+                    "date": datum + "T00:00:00+00:00" if datum else ""})
+    return uit
+
+
+def api_reliefweb(kandidaat) -> list:
+    """ReliefWeb API v2. Vraagt een goedgekeurde appname (gratis aan te vragen,
+    zie README); zonder secret RELIEFWEB_APPNAME slaan we deze kandidaat over."""
+    import os
+    app = os.environ.get("RELIEFWEB_APPNAME", "").strip()
+    if not app:
+        raise ValueError("geen RELIEFWEB_APPNAME")
+    url = kandidaat["url"].replace("{appname}", urllib.parse.quote(app))
+    uit = []
+    for x in _json(url).get("data", []):
+        f = x.get("fields", {})
+        bron = ", ".join(s.get("shortname", "") for s in f.get("source", [])[:2])
+        uit.append({"title": f.get("title", ""), "link": f.get("url_alias") or f.get("url", ""),
+                    "summary": bron, "date": (f.get("date") or {}).get("original", "")})
+    return uit
+
+
+API = {"who": api_who, "wp": api_wp, "crossref": api_crossref, "reliefweb": api_reliefweb}
+
+
+def entries_van(kandidaat) -> list:
+    if isinstance(kandidaat, dict) and kandidaat.get("api"):
+        return API[kandidaat["api"]](kandidaat)
+    url = kandidaat if isinstance(kandidaat, str) else kandidaat["url"]
+    ruw = download(url)
+    parsed = feedparser.parse(ruw)
+    if not parsed.entries and b"<html" in ruw[:600].lower():
+        raise ValueError("HTML in plaats van een feed")
+    uit = []
+    for e in parsed.entries or []:
+        uit.append({"title": e.get("title", ""), "link": e.get("link") or "",
+                    "summary": e.get("summary") or (e.get("content", [{}])[0].get("value") if e.get("content") else ""),
+                    "date": iso(e), "tags": [t.get("term", "") for t in e.get("tags", [])],
+                    "source": e.get("source", {})})
+    return uit
+
+
+def harvest(feed) -> tuple[list, dict]:
+    """Probeert de kandidaten op volgorde. De eerste die bruikbare items
     oplevert wint. Zo overleeft een bron een verhuisde feed-URL, en hebben
-    de Cloudflare-sites een Google News-vangnet."""
+    de Cloudflare-sites een Google News-vangnet.
+
+    Geeft (items, status) terug. status["fallback"] is True als een officiële
+    bron het niet deed en we op Google News terugvielen: dat telt als een
+    zwakke bron (gewicht 1, nooit URGENT) en de pagina toont hem oranje."""
     kandidaten = feed.get("urls") or [feed["url"]]
+    zoekbron = is_gnews(kandidaten[0])           # een Google News-zoekopdracht by design
     fouten = []
-    for n, url in enumerate(kandidaten):
+    for n, kandidaat in enumerate(kandidaten):
         try:
-            parsed = feedparser.parse(download(url))
-            entries = parsed.entries or []
+            entries = entries_van(kandidaat)
+            if isinstance(kandidaat, dict) and kandidaat.get("tags"):
+                # Algemene feed (heel Euractiv, heel Politico): alleen de gezondheidsstukken.
+                # Nul treffers is dan gewoon een rustig uur, geen reden om terug te vallen.
+                if not any(e.get("tags") for e in entries):
+                    raise ValueError("feed heeft geen tags om op te filteren")
+                wil = [t.lower() for t in kandidaat["tags"]]
+                entries = [e for e in entries if any(w in t.lower() for t in e.get("tags", []) for w in wil)]
+                if not entries:
+                    return [], {"ok": True, "msg": "0 items (geen gezondheidsstukken dit uur)", "cat": feed["cat"],
+                                "via": n + 1, "fallback": False}
             if not entries:
                 raise ValueError("0 entries")
 
-            items = []
+            terugval = is_gnews(kandidaat) and not zoekbron
+            site = gnews_site(kandidaat)
+            items, buiten_site = [], 0
             for e in entries[:MAX_PER_FEED]:
                 title = strip_html(e.get("title", ""))
                 # Google News hangt " - Uitgever" achter elke kop. De bron
                 # staat al apart in het <source>-element, dus knip dat eraf.
-                bron_el = e.get("source", {}).get("title", "")
+                bron = e.get("source") or {}
+                bron_el = bron.get("title", "")
                 if bron_el and title.endswith(" - " + bron_el):
                     title = title[: -(len(bron_el) + 3)].strip()
                 link = unwrap((e.get("link") or "").strip())
                 if not title or not link.startswith("http"):
                     continue
-                summary = strip_html(
-                    e.get("summary") or (e.get("content", [{}])[0].get("value") if e.get("content") else "")
-                )
-                src = feed["label"]
-                if e.get("source", {}).get("title"):
-                    src = strip_html(e["source"]["title"])
-                items.append({
+                dom = host_van(bron.get("href") or "") if "news.google.com" in link else host_van(link)
+                if site and not _in(dom, [site]):
+                    buiten_site += 1              # 'site:who.int' leverde een stuk van elders
+                    continue
+                src = strip_html(bron_el) if bron_el else feed["label"]
+                item = {
                     "title":   title[:180],
                     "url":     link,
                     "src":     src,
                     "feed":    feed["label"],
                     "cat":     feed["cat"],
-                    "date":    iso(e),
-                    "summary": summary[:300],
-                    "domain":  host_van(e.get("source", {}).get("href") or "")
-                               if "news.google.com" in link else host_van(link),
-                })
-                items[-1]["score"] = score_item(items[-1], feed["label"])
+                    "date":    e.get("date") or "",
+                    "summary": strip_html(e.get("summary") or "")[:300],
+                    "domain":  dom,
+                }
+                if terugval:
+                    item["fallback"] = True
+                item["score"] = score_item(item, feed["label"])
+                items.append(item)
             if not items:
-                raise ValueError("entries zonder bruikbare titel/link")
+                raise ValueError("entries zonder bruikbare titel/link" +
+                                 (f" ({buiten_site} van buiten {site})" if buiten_site else ""))
 
-            via = "" if n == 0 else f" (via kandidaat {n + 1})"
-            return items, f"{len(items)} items{via}"
+            msg = f"{len(items)} items" + ("" if n == 0 else f" (via kandidaat {n + 1})")
+            if buiten_site:
+                msg += f", {buiten_site} van buiten {site} weg"
+            status = {"ok": True, "msg": msg, "cat": feed["cat"], "via": n + 1, "fallback": terugval}
+            if zoekbron:
+                status["search"] = True
+            if fouten:
+                status["errors"] = " | ".join(fouten)[:300]
+            return items, status
         except Exception as e:
-            fouten.append(f"[{n + 1}] {type(e).__name__}: {e}")
+            fouten.append(f"[{n + 1}] {type(e).__name__}: {e}"[:160])
     raise RuntimeError(" | ".join(fouten))
 
 
@@ -1032,10 +1176,11 @@ def main() -> int:
     fresh, status = [], {}
     for feed in FEEDS:
         try:
-            items, msg = harvest(feed)
+            items, st = harvest(feed)
             fresh.extend(items)
-            status[feed["label"]] = {"ok": True, "msg": msg, "cat": feed["cat"]}
-            print(f"  OK    {feed['label']:<26} {msg}")
+            status[feed["label"]] = st
+            label = "FALLB" if st.get("fallback") else "OK   "
+            print(f"  {label} {feed['label']:<26} {st['msg']}" + (f"   [{st['errors']}]" if st.get("errors") else ""))
         except Exception as e:
             status[feed["label"]] = {"ok": False,
                                      "msg": f"{type(e).__name__}: {e}"[:200],
