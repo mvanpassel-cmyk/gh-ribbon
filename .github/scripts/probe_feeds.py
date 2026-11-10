@@ -42,9 +42,19 @@ def inhoud(body):
                 if isinstance(titel, dict):
                     titel = titel.get("rendered")
                 koppen.append(f"{str(titel)[:90]} | {f.get('url') or f.get('link') or f.get('ItemDefaultUrl') or f.get('url_alias') or ''}")
+        if lijst and isinstance(lijst[0], dict):
+            koppen.append("velden: " + ", ".join(list(lijst[0].keys())[:30]))
+        elif isinstance(d, dict):
+            koppen.append("sleutels: " + ", ".join(list(d.keys())[:30]))
         return len(lijst), koppen
     p = feedparser.parse(body)
-    return len(p.entries), [f"{e.get('title','')[:90]} | {e.get('link','')[:90]}" for e in p.entries[:2]]
+    koppen = [f"{e.get('title','')[:90]} | {e.get('link','')[:90]}" for e in p.entries[:2]]
+    tags = sorted({t.get("term", "") for e in p.entries for t in e.get("tags", [])})
+    if tags:
+        koppen.append("tags: " + ", ".join(tags)[:400])
+    if not p.entries:
+        koppen.append("begin: " + body[:160].decode("utf-8", "replace").replace("\n", " "))
+    return len(p.entries), koppen
 
 
 for regel in open(sys.argv[1]):

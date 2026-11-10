@@ -1,16 +1,14 @@
 #!/usr/bin/env python3
-"""Test: lost de Google News-links uit probe-gnews.txt op met de harvester-code."""
-import pathlib, sys, time
+"""Test: draait harvest() van de echte harvester op een paar bronnen en toont
+per kandidaat waarom hij faalde."""
+import pathlib, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2]))
 import fetch_feeds as F
 
-for url in open(pathlib.Path(__file__).with_name("probe-gnews.txt")).read().split():
-    m = F._GN_ID.search(url)
-    oud = F._gn_base64(m.group(1)) if m else ""
-    try:
-        nieuw = F._gn_batchexecute(m.group(1)) if m and not oud else ""
-        fout = ""
-    except Exception as e:
-        nieuw, fout = "", f"{type(e).__name__}: {e}"[:160]
-    print(f"{'base64' if oud else 'batch '} {oud or nieuw or 'MISLUKT ' + fout}")
-    time.sleep(1)
+for feed in F.FEEDS:
+    if feed["label"] in ("UN News Health", "WHO News", "BMJ", "Geneva Health Files", "ReAct", "DNDi"):
+        try:
+            items, msg = F.harvest(feed)
+            print(f"{feed['label']:<24} OK {msg} | {items[0]['url'][:90]}")
+        except Exception as e:
+            print(f"{feed['label']:<24} FAIL {e}"[:400])

@@ -1,51 +1,10 @@
-# label<TAB>url  -- kandidaten om te proeven, niets hiervan staat al in fetch_feeds.py tenzij hij werkt
-WHO DON rss	https://www.who.int/rss-feeds/disease-outbreak-news-english.xml
-WHO DON api1	https://www.who.int/api/news/diseaseoutbreaknews?sf_culture=en&$orderby=PublicationDateAndTime%20desc&$top=12
-WHO DON api2	https://www.who.int/api/emergencies/diseaseoutbreaknews?sf_provider=dynamicProvider372&sf_culture=en&$orderby=PublicationDateAndTime%20desc&$top=12
-WHO news api	https://www.who.int/api/news/newsitems?sf_culture=en&$orderby=PublicationDateAndTime%20desc&$top=5
-UN News health	https://news.un.org/feed/subscribe/en/news/topic/health/feed/rss.xml
-UN News all	https://news.un.org/feed/subscribe/en/news/all/rss.xml
-ProMED 1	https://promedmail.org/feed/
-ProMED 2	https://www.promedmail.org/feed/
-ProMED 3	https://promedmail.org/wp-json/wp/v2/posts?per_page=5
-Eurosurv 1	https://www.eurosurveillance.org/rss/current.xml
-Eurosurv 2	https://www.eurosurveillance.org/content/eurosurveillance/latestarticles?fmt=rss
-Eurosurv 3	https://www.eurosurveillance.org/rss/content/eurosurveillance/latestarticles?fmt=rss
-Eurosurv 4	https://www.eurosurveillance.org/rss/content/eurosurveillance/latestissue?fmt=rss
-ReliefWeb rss	https://reliefweb.int/updates/rss.xml
-ReliefWeb rss hlth	https://reliefweb.int/updates/rss.xml?advanced-search=%28TY4595%29
-ReliefWeb api v1	https://api.reliefweb.int/v1/reports?appname=gh-ribbon&preset=latest&limit=5&filter[field]=theme.name&filter[value]=Health&fields[include][]=url_alias&fields[include][]=date.original
-ReliefWeb api v2	https://api.reliefweb.int/v2/reports?appname=gh-ribbon&preset=latest&limit=5&filter[field]=theme.name&filter[value]=Health&fields[include][]=url_alias&fields[include][]=date.original
-Africa CDC 1	https://africacdc.org/news/feed/
-Africa CDC 2	https://africacdc.org/feed/
-Africa CDC 3	https://africacdc.org/news-item/feed/
-Africa CDC 4	https://africacdc.org/wp-json/wp/v2/posts?per_page=5
-Africa CDC 5	https://africacdc.org/wp-json/wp/v2/news-item?per_page=5
-TGH 1	https://www.thinkglobalhealth.org/rss.xml
-TGH 2	https://www.thinkglobalhealth.org/feed
-TGH 3	https://www.thinkglobalhealth.org/rss
-TGH 4	https://www.thinkglobalhealth.org/feed.xml
-Politico 1	https://www.politico.eu/feed/?cat=96
-Politico 2	https://www.politico.eu/section/health/feed/
-Politico 3	https://www.politico.eu/feed/
-Politico 4	https://www.politico.eu/tag/health/feed/
-Euractiv 1	https://www.euractiv.com/sections/health-consumers/feed/
-Euractiv 2	https://www.euractiv.com/section/health-consumers/feed/
-Euractiv 3	https://www.euractiv.com/section/health/feed/
-Euractiv 4	https://www.euractiv.com/feed/
-Devex 1	https://www.devex.com/news/feed
-Devex 2	https://www.devex.com/news/feed.rss
-Devex 3	https://www.devex.com/news.rss
-Devex 4	https://www.devex.com/rss
-DNDi 1	https://dndi.org/feed/
-DNDi 2	https://dndi.org/news/feed/
-DNDi 3	https://dndi.org/press-releases/feed/
-DNDi 4	https://dndi.org/wp-json/wp/v2/posts?per_page=5
-ReAct 1	https://www.reactgroup.org/feed/
-ReAct 2	https://www.reactgroup.org/news-and-views/news-and-opinions/feed/
-ReAct 3	https://www.reactgroup.org/wp-json/wp/v2/posts?per_page=5
-Uniting 1	https://unitingtocombatntds.org/en/feed/
-Uniting 2	https://unitingtocombatntds.org/feed/
-Uniting 3	https://unitingtocombatntds.org/wp-json/wp/v2/posts?per_page=5
-GHF 1	https://genevahealthfiles.substack.com/feed
-GHF 2	https://www.genevahealthfiles.com/feed
+WHO DON sel	https://www.who.int/api/news/diseaseoutbreaknews?sf_culture=en&$orderby=PublicationDateAndTime%20desc&$top=3&$select=Title,OverrideTitle,UseOverrideTitle,ItemDefaultUrl,PublicationDateAndTime,UrlName,Summary
+WHO DON all	https://www.who.int/api/news/diseaseoutbreaknews?sf_culture=en&$orderby=PublicationDateAndTime%20desc&$top=1
+Eurosurv crossref	https://api.crossref.org/journals/1560-7917/works?sort=published&order=desc&rows=5&select=DOI,title,published,URL
+Eurosurv epmc	https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN:1560-7917&sort=P_PDATE_D%20desc&format=json&pageSize=5&resultType=lite
+Politico hlth	https://www.politico.eu/section/health/feed/
+Euractiv all	https://www.euractiv.com/feed/
+DNDi types	https://dndi.org/wp-json/wp/v2/types
+ReAct types	https://www.reactgroup.org/wp-json/wp/v2/types
+GHF post	https://genevahealthfiles.com/2026/03/09/our-newsletter-has-a-new-home/
+TGH sitemap	https://www.thinkglobalhealth.org/sitemap.xml
