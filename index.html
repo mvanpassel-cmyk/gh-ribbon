@@ -351,7 +351,7 @@ footer {
 <div class="filter-bar">
   <span class="flbl">Alerts:</span>
   <button class="fbtn on" data-c="who"    onclick="tog('who')">   <span class="dot"></span>WHO</button>
-  <button class="fbtn on" data-c="promed" onclick="tog('promed')"><span class="dot"></span>ProMED</button>
+  <button class="fbtn on" data-c="promed" onclick="tog('promed')"><span class="dot"></span>Outbreaks</button>
   <button class="fbtn on" data-c="emerg"  onclick="tog('emerg')"> <span class="dot"></span>Emergency</button>
   <button class="fbtn on" data-c="global" onclick="tog('global')"><span class="dot"></span>Global Health</button>
   <button class="fbtn on" data-c="amr"    onclick="tog('amr')">   <span class="dot"></span>AMR</button>
@@ -476,7 +476,7 @@ function isVers(i)   { return uren(i) < VERS_UREN; }
 function inVerseLaag(i) { return isVers(i) && (typeof i.score === 'number' ? i.score : 1) >= VERS_MIN; }
 function isNieuw(i)  { return uren(i) < NIEUW_UREN; }
 function isUrgent(i) {
-  if (!isVers(i)) return false;
+  if (!isVers(i) || i.fallback) return false;   // a Google News stand-in is never URGENT
   // Feed telt alleen als de link echt van WHO/ECDC is: valt de officiële feed
   // terug op een Google News-zoekopdracht, dan komt daar van alles mee.
   const officieel = /(^|\/\/|\.)(who\.int|ecdc\.europa\.eu)\//.test(i.url || '');
@@ -529,7 +529,7 @@ function prioriteer(items) {
 }
 
 const CAT_LABEL = {
-  who:'WHO', promed:'PROMED', emerg:'EMERGENCY', global:'GLOBAL HEALTH',
+  who:'WHO', promed:'OUTBREAKS', emerg:'EMERGENCY', global:'GLOBAL HEALTH',
   amr:'AMR', ntd:'NTDs', pandemic:'PANDEMIC ACCORD', journal:'JOURNAL', policy:'POLICY', news:'NEWS'
 };
 
@@ -590,10 +590,16 @@ function renderDiag(meta) {
     el.style.cssText = 'display:block;width:100%;font-size:11px;line-height:1.9;opacity:.75;margin-top:6px';
     document.querySelector('footer').appendChild(el);
   }
-  const bad = Object.entries(feedStatus).filter(([,v]) => !v.ok).map(([k]) => k);
-  el.innerHTML = `<span style="color:var(--accent)">${meta.feeds_ok}/${meta.feeds_tot} sources OK</span>` +
-    (bad.length ? ' — silent: ' + bad.map(htmlesc).join(', ') : '');
-  el.title = Object.entries(feedStatus).map(([k,v]) => k + ' → ' + v.msg).join('\n');
+  // Three states: direct (green), fallback = an official source we only reach through
+  // a Google News search (amber), silent (red).
+  const st = Object.entries(feedStatus);
+  const bad = st.filter(([,v]) => !v.ok).map(([k]) => k);
+  const fb  = st.filter(([,v]) => v.ok && v.fallback).map(([k]) => k);
+  const direct = st.length - bad.length - fb.length;
+  el.innerHTML = `<span style="color:var(--accent)">${direct}/${st.length} sources direct</span>` +
+    (fb.length ? ` — <span style="color:var(--promed)" title="Official source unreachable; items come from a Google News search instead">via Google News: ${fb.map(htmlesc).join(', ')}</span>` : '') +
+    (bad.length ? ` — <span style="color:var(--journal)">silent: ${bad.map(htmlesc).join(', ')}</span>` : '');
+  el.title = st.map(([k,v]) => k + ' → ' + v.msg + (v.fallback ? ' [fallback]' : '')).join('\n');
 }
 
 async function loadAll() {
