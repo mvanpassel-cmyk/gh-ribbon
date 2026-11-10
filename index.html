@@ -233,39 +233,40 @@ footer {
 .search-bar input:focus { border-color: var(--accent); }
 
 /* Verborgen statistieken: bijna onzichtbaar stipje in de footer. */
-.stats-dot {
-  background:none; border:0; color:var(--muted); opacity:.22; cursor:pointer;
-  font:inherit; font-size:15px; line-height:1; padding:0 6px; transition:opacity .15s, color .15s;
+
+/* ── Deze week (uit de wereldagenda) ── */
+.week-strip {
+  display:flex; align-items:center; gap:10px; padding:8px 26px; border-bottom:1px solid var(--border);
+  background:var(--surface); font-size:12px; overflow:hidden;
 }
-.stats-dot:hover, .stats-dot:focus-visible { opacity:1; color:var(--accent); outline:none; }
-.stats-ov {
-  position:fixed; inset:0; background:rgba(2,9,5,.82); z-index:500;
-  display:none; align-items:center; justify-content:center; padding:20px;
-}
-.stats-ov.open { display:flex; }
-.stats-box {
-  background:var(--surface); border:1px solid var(--border); border-top:2px solid var(--accent);
-  width:100%; max-width:460px; max-height:86vh; overflow:auto; padding:20px 22px 18px;
-}
-.stats-hd { display:flex; align-items:baseline; justify-content:space-between; margin-bottom:16px; }
-.stats-hd .sec-title { color:var(--accent); }
-.stats-x { background:none; border:0; color:var(--muted); font:inherit; font-size:18px; cursor:pointer; line-height:1; }
-.stats-x:hover { color:var(--accent); }
-.stats-demo {
-  font-size:11px; letter-spacing:.1em; color:var(--promed);
-  border:1px dashed var(--promed); padding:6px 10px; margin-bottom:14px; line-height:1.6;
-}
-.stats-nums { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:20px; }
-.stats-num { border:1px solid var(--border); background:var(--bg); padding:10px 12px; }
-.stats-num b { display:block; font-family:'Syne',sans-serif; font-size:24px; font-weight:800; color:var(--bright); font-variant-numeric:tabular-nums; }
-.stats-num span { font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
-.stats-sub { font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin-bottom:10px; }
-.c-row { display:grid; grid-template-columns:26px 1fr 44px; align-items:center; gap:8px; margin-bottom:7px; font-size:12px; }
-.c-bar { position:relative; height:20px; background:var(--bg); border:1px solid var(--border); }
-.c-bar i { position:absolute; left:0; top:0; bottom:0; background:rgba(61,255,154,.18); border-right:2px solid var(--accent); }
-.c-bar em { position:absolute; left:8px; top:0; line-height:19px; font-style:normal; color:var(--bright); font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:calc(100% - 12px); }
-.c-n { text-align:right; color:var(--muted); font-variant-numeric:tabular-nums; }
-.stats-foot { margin-top:14px; font-size:11px; color:var(--muted); letter-spacing:.08em; line-height:1.7; }
+.week-strip[hidden] { display:none; }
+.week-strip .wk-lbl { color:var(--accent); letter-spacing:.16em; font-weight:700; flex-shrink:0; }
+.week-strip .wk-list { display:flex; gap:18px; overflow-x:auto; scrollbar-width:none; min-width:0; flex:1; white-space:nowrap; }
+.week-strip .wk-list::-webkit-scrollbar { display:none; }
+.wk-ev { color:var(--text); text-decoration:none; display:inline-flex; gap:6px; align-items:baseline; }
+.wk-ev:hover .wk-t { color:var(--bright); text-decoration:underline; }
+.wk-ev .wk-d { color:var(--muted); }
+.wk-ev .wk-dot { width:7px; height:7px; border-radius:50%; background:var(--c); align-self:center; flex-shrink:0; }
+.wk-ev.c-health { --c:var(--who); } .wk-ev.c-amr { --c:var(--amr); } .wk-ev.c-gha { --c:var(--global); }
+.wk-ev.c-eu { --c:var(--policy); } .wk-ev.c-summit { --c:var(--news); } .wk-ev.c-election { --c:var(--promed); }
+.wk-ev.c-partners { --c:var(--ntd); }
+.week-strip .wk-all { color:var(--muted); text-decoration:none; flex-shrink:0; }
+.week-strip .wk-all:hover { color:var(--accent); }
+
+/* ── Vandaag: de selectie van de dagelijkse redactietaak (data/brief.json) ── */
+.today { border:1px solid var(--border); border-left:2px solid var(--accent); background:var(--surface); padding:14px 18px 10px; margin-bottom:22px; }
+.today[hidden] { display:none; }
+.today-hd { display:flex; justify-content:space-between; align-items:baseline; gap:10px; margin-bottom:8px; }
+.today-hd .sec-title { color:var(--accent); }
+.today-hd small { color:var(--muted); font-size:11px; letter-spacing:.08em; }
+.today ol { list-style:none; counter-reset:t; }
+.today li { counter-increment:t; display:grid; grid-template-columns:22px 1fr; gap:4px 8px; padding:7px 0; border-top:1px solid var(--border); }
+.today li:first-child { border-top:0; }
+.today li::before { content:counter(t); color:var(--accent); font-weight:700; font-size:13px; }
+.today a { color:var(--bright); text-decoration:none; font-family:'Syne',sans-serif; font-weight:600; font-size:15px; line-height:1.3; }
+.today a:hover { text-decoration:underline; }
+.today .why { grid-column:2; color:var(--text); font-size:12.5px; line-height:1.5; }
+.today .why .src { color:var(--muted); }
 
 /* ── Tablet: twee kolommen. Boven 900px blijft alles zoals het was. ── */
 @media (max-width: 900px) {
@@ -279,6 +280,9 @@ footer {
 
 /* ── Telefoon: snel scannen. Eén kolom koppen, geen ticker, knoppen klein. ── */
 @media (max-width: 640px) {
+  .week-strip { padding:8px 16px; }
+  .week-strip .wk-all { display:none; }
+  .today { padding:12px 14px 8px; }
   body { padding-bottom: 0; }
   .ticker-wrap { display: none; }
   #bb { display: none; }            /* TICKER button heeft zonder ticker geen functie */
@@ -364,7 +368,17 @@ footer {
   <button class="fbtn on" data-c="news"    onclick="tog('news')">   <span class="dot"></span>News</button>
 </div>
 
+<nav class="week-strip" id="wk" hidden aria-label="This week in the world calendar">
+  <span class="wk-lbl">THIS WEEK</span>
+  <span class="wk-list" id="wkl"></span>
+  <a class="wk-all" href="world-calendar/">full calendar →</a>
+</nav>
+
 <main class="main">
+  <section class="today" id="today" hidden aria-label="Today's selection">
+    <div class="today-hd"><span class="sec-title">Today</span><small id="today-meta"></small></div>
+    <ol id="today-list"></ol>
+  </section>
   <div class="sec-hd">
     <span class="sec-title">Global Health Intelligence</span>
     <span class="sec-count" id="cnt">loading…</span>
@@ -373,19 +387,9 @@ footer {
 </main>
 
 <footer>
-  <span>31 sources · WHO · CIDRAP · ECDC · Africa CDC · Lancet · BMJ · PLOS · Health Policy Watch · Geneva Health Files · Politico · Euractiv · STAT · Devex · Grand Challenges</span>
-  <span><span id="ft">—</span><!-- Statistiekknop verborgen: er is nog geen data/stats.json, dus hij toonde demodata. Haal "hidden" weg zodra die er is. --><button class="stats-dot" id="sd" onclick="openStats()" aria-label="Statistics" title="" hidden>◔</button></span>
+  <span><span id="nsrc">40+</span> sources · WHO · CIDRAP · ECDC · Africa CDC · Eurosurveillance · Lancet · BMJ · PLOS · Health Policy Watch · Geneva Health Files · Politico · Rapporteur · STAT · Devex</span>
+  <span id="ft">—</span>
 </footer>
-
-<div class="stats-ov" id="sov" onclick="if(event.target===this)closeStats()">
-  <div class="stats-box" role="dialog" aria-label="Visitor statistics">
-    <div class="stats-hd">
-      <span class="sec-title">Visitors</span>
-      <button class="stats-x" onclick="closeStats()" aria-label="Close">×</button>
-    </div>
-    <div id="stats-body"></div>
-  </div>
-</div>
 
 <div class="ticker-wrap">
   <div class="ticker-badge">LIVE</div>
@@ -600,6 +604,7 @@ function renderDiag(meta) {
     (fb.length ? ` — <span style="color:var(--promed)" title="Official source unreachable; items come from a Google News search instead">via Google News: ${fb.map(htmlesc).join(', ')}</span>` : '') +
     (bad.length ? ` — <span style="color:var(--journal)">silent: ${bad.map(htmlesc).join(', ')}</span>` : '');
   el.title = st.map(([k,v]) => k + ' → ' + v.msg + (v.fallback ? ' [fallback]' : '')).join('\n');
+  const n = document.getElementById('nsrc'); if (n && st.length) n.textContent = st.length;
 }
 
 async function loadAll() {
@@ -795,11 +800,9 @@ fetch(ARCH_DIR + 'index.json', { method: 'HEAD' })
   .then(r => { if (!r.ok) document.getElementById('csv').style.display = 'none'; })
   .catch(() => { document.getElementById('csv').style.display = 'none'; });
 
-// ── Verborgen bezoekersstatistieken ─────────────────────────────────────────
-// Tellen gebeurt met GoatCounter (gratis, geen cookies, geen persoonsgegevens).
-// Zolang GC_CODE leeg is telt er niets en toont het paneel demodata.
-// Invullen na het aanmaken van een gratis account op goatcounter.com,
-// bijvoorbeeld 'ghribbon' (wordt https://ghribbon.goatcounter.com).
+// ── Bezoekersteller ─────────────────────────────────────────────────────────
+// GoatCounter (gratis, geen cookies, geen persoonsgegevens); de cijfers staan op
+// https://mvanpassel.goatcounter.com, niet op deze pagina.
 const GC_CODE = 'mvanpassel';
 
 if (GC_CODE && !/^(localhost|127\.|\[::1\])/.test(location.hostname)) {
@@ -810,70 +813,57 @@ if (GC_CODE && !/^(localhost|127\.|\[::1\])/.test(location.hostname)) {
   document.head.appendChild(s);
 }
 
-// Het paneel leest data/stats.json (later te vullen door dezelfde Actions-
-// workflow die de feeds ophaalt, zodat er geen sleutel in de pagina staat).
-// Bestaat dat bestand niet, dan zie je duidelijk gelabelde demodata.
-const DEMO_STATS = {
-  total: 1284, today: 23, week: 164,
-  countries: [
-    {code:'NL',count:512},{code:'BE',count:131},{code:'DE',count:118},
-    {code:'CH',count:97}, {code:'ID',count:64}, {code:'ZA',count:58},
-    {code:'KE',count:41}, {code:'GB',count:37}, {code:'IN',count:29},
-    {code:'US',count:24}
-  ]
-};
-const regionNames = (() => {
-  try { return new Intl.DisplayNames(['en'], { type: 'region' }); } catch (_) { return null; }
-})();
 
-function vlag(code) {
-  return code.toUpperCase().replace(/./g, c => String.fromCodePoint(127397 + c.charCodeAt(0)));
-}
-function landNaam(code) {
-  try { return (regionNames && regionNames.of(code.toUpperCase())) || code; } catch (_) { return code; }
-}
-const nf = n => Number(n || 0).toLocaleString('en-GB');
-
-async function openStats() {
-  const ov = document.getElementById('sov');
-  const body = document.getElementById('stats-body');
-  ov.classList.add('open');
-  body.innerHTML = '<div class="stats-foot">loading…</div>';
-
-  let d = null, demo = false;
+// ── Deze week: komende 7 dagen uit de wereldagenda ──────────────────────────
+// Gezondheid, AMR, GHA-hervorming en EU eerst (op datum), daarna de rest.
+const WK_VOORRANG = ['health', 'amr', 'gha', 'eu'];
+async function loadWeek() {
   try {
-    const r = await fetch('data/stats.json?t=' + Date.now(), { cache: 'no-store' });
-    if (r.ok) d = await r.json();
-  } catch (_) {}
-  if (!d || !Array.isArray(d.countries)) { d = DEMO_STATS; demo = true; }
-
-  const landen = [...d.countries].sort((a, b) => b.count - a.count).slice(0, 12);
-  const max = landen.length ? landen[0].count : 1;
-
-  body.innerHTML =
-    (demo ? '<div class="stats-demo">DEMO DATA — nothing is connected yet. These numbers are made up.</div>' : '') +
-    '<div class="stats-nums">' +
-      '<div class="stats-num"><b>' + nf(d.total) + '</b><span>total</span></div>' +
-      '<div class="stats-num"><b>' + nf(d.week) + '</b><span>7 days</span></div>' +
-      '<div class="stats-num"><b>' + nf(d.today) + '</b><span>today</span></div>' +
-    '</div>' +
-    '<div class="stats-sub">Origin</div>' +
-    (landen.length ? landen.map(l => {
-      const code = htmlesc(l.code);
-      return '<div class="c-row"><span>' + vlag(l.code) + '</span>' +
-        '<div class="c-bar"><i style="width:' + Math.max(3, Math.round(l.count / max * 100)) + '%"></i>' +
-        '<em>' + htmlesc(landNaam(l.code)) + '</em></div>' +
-        '<span class="c-n" title="' + code + '">' + nf(l.count) + '</span></div>';
-    }).join('') : '<div class="stats-foot">No visits recorded yet.</div>') +
-    '<div class="stats-foot">Counts and country only; no cookies and no IP addresses stored.' +
-      (d.generated ? ' Updated ' + htmlesc(relDate(d.generated)) + '.' : '') + '</div>';
+    const r = await fetch('world-calendar/events.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!r.ok) return;
+    const evs = (await r.json()).events || [];
+    const dag = s => new Date(s + 'T00:00:00');
+    const vandaag = new Date(); vandaag.setHours(0, 0, 0, 0);
+    const eind = new Date(vandaag); eind.setDate(eind.getDate() + 7);
+    const week = evs.filter(e => dag(e.start) < eind && dag(e.end || e.start) >= vandaag);
+    const prio = e => { const n = WK_VOORRANG.indexOf(e.cat); return n < 0 ? 9 : 0; };
+    week.sort((a, b) => prio(a) - prio(b) || a.start.localeCompare(b.start));
+    if (!week.length) return;
+    document.getElementById('wkl').innerHTML = week.map(e => {
+      const s = dag(e.start);
+      const wann = s < vandaag ? 'now' : s.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric' });
+      return `<a class="wk-ev c-${htmlesc(e.cat)}" href="world-calendar/" title="${htmlesc(e.place || '')}${e.status === 'tentative' ? ' · tentative' : ''}">` +
+             `<span class="wk-dot"></span><span class="wk-d">${wann}</span><span class="wk-t">${htmlesc(e.title)}</span></a>`;
+    }).join('');
+    document.getElementById('wk').hidden = false;
+  } catch (e) { /* geen agenda: dan geen strook */ }
 }
 
-function closeStats() { document.getElementById('sov').classList.remove('open'); }
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeStats(); });
+// ── Vandaag: data/brief.json, geschreven door de dagelijkse redactietaak ────
+// Alleen tonen als hij vers is (minder dan 30 uur oud); anders blijft het blok weg.
+async function loadBrief() {
+  const el = document.getElementById('today');
+  try {
+    const r = await fetch('data/brief.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!r.ok) { el.hidden = true; return; }
+    const b = await r.json();
+    const oud = (Date.now() - new Date(b.generated)) / 3600000;
+    const picks = (b.items || []).filter(i => /^https?:\/\//i.test(i.url || '') && i.title).slice(0, 5);
+    if (!(oud < 30) || !picks.length) { el.hidden = true; return; }
+    document.getElementById('today-list').innerHTML = picks.map(i =>
+      `<li><a href="${esc(i.url)}" target="_blank" rel="noopener noreferrer nofollow">${htmlesc(i.title)}</a>` +
+      `<span class="why">${htmlesc(i.why || '')}${i.src ? ` <span class="src">· ${htmlesc(i.src)}</span>` : ''}</span></li>`).join('');
+    document.getElementById('today-meta').textContent =
+      'selected ' + new Date(b.generated).toLocaleString('en-GB', { weekday: 'short', hour: '2-digit', minute: '2-digit' });
+    el.hidden = false;
+  } catch (e) { el.hidden = true; }
+}
 
 loadAll();
+loadWeek();
+loadBrief();
 setInterval(loadAll, 15 * 60 * 1000);
+setInterval(loadBrief, 60 * 60 * 1000);
 </script>
 </body>
 </html>

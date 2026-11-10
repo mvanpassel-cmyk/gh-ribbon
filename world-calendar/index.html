@@ -139,6 +139,14 @@ main { max-width: 860px; margin: 0 auto; padding: 20px 16px 60px; }
 .c-partners { --c: var(--partners); }
 .c-gha      { --c: var(--gha); }
 
+.rel { list-style: none; margin-top: 8px; padding-top: 6px; border-top: 1px dashed var(--border); }
+.rel li { font-size: 12.5px; line-height: 1.4; padding: 2px 0; display: flex; gap: 6px; }
+.rel li::before { content: '↳'; color: var(--c); flex-shrink: 0; }
+.ev .rel a { color: var(--text); border-bottom: 0; font-size: 12.5px; }
+.ev .rel a:hover { color: var(--accent); }
+.rel .src { color: var(--muted); font-size: 11px; }
+.rel span { min-width: 0; overflow-wrap: anywhere; }
+.ev > div { min-width: 0; }
 footer { color: var(--muted); font-size: 12px; border-top: 1px solid var(--border); padding-top: 14px; margin-top: 30px; }
 footer a { color: var(--muted); }
 .err { color: var(--health); }
@@ -209,6 +217,76 @@ function partnersOf(e) {
   return k ? [k] : [];
 }
 let events = [];
+let related = new Map();   // event -> up to 3 ribbon items
+
+// ── Related news ────────────────────────────────────────────────────────────
+// For events in the next 30 days we look for GH Ribbon items (../data/feeds.json)
+// that share distinctive words with the event title: words that are rare in the
+// news (in under 3% of headlines) and not generic ("meeting", "world", "health").
+// An item needs two such words, or one acronym or code such as EPSCO, APEC, IGWG,
+// COP31 or PCB59. It must also be dated from three
+// weeks before the event to three days after it. No good match: nothing is shown.
+const GENERIEK = new Set(('a an the of and or in on at to for by with from as is are be its it this that new ' +
+  'meeting meetings summit summits conference conferences session sessions forum day days week world global ' +
+  'international national annual general high level leaders council committee board election elections ' +
+  'presidential legislative parliamentary local federal state states first second third fourth fifth ' +
+  'health public regional reserved dates possible further takes over formal targeted signature ' +
+  'informal heads government special european eu un research systems system development action change ' +
+  'agenda report plan policy programme program people women children access care director').split(' '));
+function woorden(t) {
+  return String(t || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[’']s\b/g, '').split(/[^A-Za-z0-9]+/).filter(Boolean);
+}
+const stam = x => { x = x.toLowerCase(); return x.length > 4 && x.endsWith('s') && !x.endsWith('ss') ? x.slice(0, -1) : x; };
+const telt = x => !GENERIEK.has(x.toLowerCase()) && !/^(19|20)\d\d$/.test(x) && (x.length >= 3 || /\d/.test(x));
+function kenmerken(t) {
+  const w = woorden(t), uit = [];
+  for (const x of w.filter(telt)) {
+    uit.push({ k: stam(x), code: /^[A-Z]{3,}\d*$/.test(x) || /^[A-Z]+\d+$/i.test(x) });
+    const m = x.match(/^([A-Z]{3,})\d+$/);       // IGWG9 also matches plain IGWG, PCB59 matches PCB
+    if (m) uit.push({ k: m[1].toLowerCase(), code: true });
+  }
+  return uit;
+}
+function maakRelated(items) {
+  related = new Map();
+  if (!items.length) return;
+  const sets = items.map(i => {
+    const w = woorden(i.title).map(stam);
+    return new Set(w);
+  });
+  const df = new Map();
+  for (const s of sets) for (const k of s) df.set(k, (df.get(k) || 0) + 1);
+  const zeldzaam = Math.max(3, items.length * 0.03);
+  const horizon = new Date(today); horizon.setDate(horizon.getDate() + 30);
+  for (const e of events) {
+    const s = d(e.start), en = endOf(e);
+    if (en < today || s > horizon) continue;
+    const van = new Date(s); van.setDate(van.getDate() - 21);
+    const tot = new Date(en); tot.setDate(tot.getDate() + 3);
+    const km = kenmerken(e.title).filter(f => (df.get(f.k) || 0) > 0 && df.get(f.k) <= zeldzaam);
+    if (!km.length) continue;
+    const treffers = [];
+    items.forEach((it, n) => {
+      const t = new Date(it.date);
+      if (!(t >= van && t <= tot)) return;
+      let punten = 0;
+      for (const f of km) if (sets[n].has(f.k)) punten += f.code ? 2 : 1;
+      if (punten >= 2) treffers.push([punten, it.score || 0, it]);
+    });
+    treffers.sort((a, b) => b[0] - a[0] || b[1] - a[1]);
+    const gezien = new Set();
+    const top = [];
+    for (const [, , it] of treffers) {
+      const sleutel = woorden(it.title).slice(0, 6).join(' ').toLowerCase();
+      if (gezien.has(sleutel)) continue;
+      gezien.add(sleutel); top.push(it);
+      if (top.length === 3) break;
+    }
+    if (top.length) related.set(e, top);
+  }
+}
+const veiligeUrl = u => /^https?:\/\//i.test(String(u || '')) ? String(u) : '#';
 
 function load(key, fallback) { try { const v = localStorage.getItem(key); return v === null ? fallback : JSON.parse(v); } catch (e) { return fallback; } }
 function save(key, v) { try { localStorage.setItem(key, JSON.stringify(v)); } catch (e) {} }
@@ -306,6 +384,8 @@ function render() {
           <div class="title">${esc(e.title)}${now ? '<span class="now-badge">NOW</span>' : ''}${e.status === 'tentative' ? '<span class="badge">tentative</span>' : ''}</div>
           <div class="meta">${pc.map(c => `<span class="ptag">★ ${esc(PARTNERS[c])}</span>`).join('')}<span class="cat">${CATS[e.cat].label}</span> · ${esc(e.place)}</div>
           ${e.note ? `<div class="note">${esc(e.note)}</div>` : ''}
+          ${related.has(e) ? `<ul class="rel" aria-label="Related news">${related.get(e).map(it =>
+            `<li><span><a href="${esc(veiligeUrl(it.url))}" target="_blank" rel="noopener noreferrer nofollow">${esc(it.title)}</a> <span class="src">${esc(it.src || '')}</span></span></li>`).join('')}</ul>` : ''}
           ${e.src ? `<a href="${esc(e.src)}" target="_blank" rel="noopener">source ↗</a>` : ''}
         </div>
       </article>`;
@@ -345,12 +425,14 @@ document.getElementById('q').addEventListener('input', e => {
 
 Promise.all([
   fetch('events.json?v=' + Date.now()).then(r => r.json()),
-  fetch('../partners.json').then(r => r.ok ? r.json() : null).catch(() => null)
+  fetch('../partners.json').then(r => r.ok ? r.json() : null).catch(() => null),
+  fetch('../data/feeds.json?v=' + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null)
 ])
-  .then(([data, partners]) => {
+  .then(([data, partners, feeds]) => {
     setPartners(partners);
     events = data.events.sort((a, b) => a.start.localeCompare(b.start) || (a.end || a.start).localeCompare(b.end || b.start));
     document.getElementById('updated').textContent = 'updated ' + d(data.updated).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+    maakRelated((feeds && feeds.items) || []);
     renderFilters(); renderCountries(); render();
   })
   .catch(() => { document.getElementById('list').innerHTML = '<p class="err">Could not load events.json.</p>'; });

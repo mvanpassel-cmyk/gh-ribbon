@@ -961,6 +961,8 @@ def harvest(feed) -> tuple[list, dict]:
                     continue
                 if re.search(r"\[(promoted|sponsored)( content)?\]|^sponsored:", title, re.I):
                     continue
+                if re.match(r"(sign in|log ?in|register|subscribe|my account|page not found|404)\b", title, re.I):
+                    continue                      # inlog- en foutpagina's uit 'site:'-zoekopdrachten
                 dom = host_van(bron.get("href") or "") if "news.google.com" in link else host_van(link)
                 if site and not _in(dom, [site]):
                     buiten_site += 1              # 'site:who.int' leverde een stuk van elders
