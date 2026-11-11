@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T23:32:43+00:00",
+ "generated": "2026-11-11T06:44:27+00:00",
  "feeds_ok": 43,
  "feeds_tot": 43,
  "status": {
@@ -26,11 +26,10 @@
   },
   "UN News Health": {
    "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "msg": "12 items",
    "cat": "who",
-   "via": 2,
-   "fallback": true,
-   "errors": "[1] ValueError: 0 entries"
+   "via": 1,
+   "fallback": false
   },
   "CIDRAP Public Health": {
    "ok": true,
@@ -283,14 +282,14 @@
   },
   "Politico EU Health": {
    "ok": true,
-   "msg": "0 items (geen gezondheidsstukken dit uur)",
+   "msg": "1 items",
    "cat": "policy",
    "via": 1,
    "fallback": false
   },
   "Rapporteur (ex-Euractiv)": {
    "ok": true,
-   "msg": "6 items",
+   "msg": "8 items",
    "cat": "policy",
    "via": 1,
    "fallback": false
@@ -318,6 +317,152 @@
   }
  },
  "items": [
+  {
+   "title": "INTERVIEW: Faster science needs more resources, says EFSA chief",
+   "url": "https://www.rapporteur.com/interview/interview-faster-science-needs-more-resources-says-efsa-chief/",
+   "src": "Rapporteur (ex-Euractiv)",
+   "feed": "Rapporteur (ex-Euractiv)",
+   "cat": "policy",
+   "date": "2026-11-11T05:55:01+00:00",
+   "summary": "As Brussels pushes for faster food safety assessments, Nikolaus Kriz warns maintaining safety standards requires adequate resources",
+   "domain": "rapporteur.com",
+   "inhoud": 0,
+   "score": 5
+  },
+  {
+   "title": "Nigeria Projects Lymphatic Filariasis Elimination Across Most Endemic Units by 2030",
+   "url": "https://bioengineer.org/nigeria-projects-lymphatic-filariasis-elimination-across-most-endemic-units-by-2030/",
+   "src": "Bioengineer.org",
+   "feed": "NTD news",
+   "cat": "ntd",
+   "date": "2026-11-11T04:08:58+00:00",
+   "summary": "Nigeria Projects Lymphatic Filariasis Elimination Across Most Endemic Units by 2030 Bioengineer.org",
+   "domain": "bioengineer.org",
+   "inhoud": 0,
+   "score": -4,
+   "gnews": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMDZkbEtlM2pQQXhULXhwd2lJNkFkUVpwVGxGXzFtaU00QkRrdHhyZlZ1V0tsa0VHRXY2enV3UXRJTk1TRUJvMHZ6WDI5S2I1bmtCbkZmU2txUWVUbUVWQTJka3ZWNE9Sd0JfX3RSalUxYTAxZElaOUl3UmxPU25LTEtJRTRmVzdodG83d1lYZVZ6cTFaRElJZWNwdzhINzh6Wi1SZUJfQV92dGF0?oc=5"
+  },
+  {
+   "title": "2027 Global Health Research Seed Funding Grant - American Association of Physicists in Medicine -",
+   "url": "https://aapm.secure-platform.com/site/solicitations/login/102113?returnUrl=https%3A%2F%2Faapm.secure-platform.com%2Fsite%2Fsolicitations%2F102113%2Fhome",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-11T03:49:04+00:00",
+   "summary": "2027 Global Health Research Seed Funding Grant · Login · Non-Members - Create a New Account.",
+   "domain": "aapm.secure-platform.com",
+   "inhoud": 4,
+   "score": 4
+  },
+  {
+   "title": "Reforming the World Health Organization to strengthen scientific independence and public trust",
+   "url": "https://link.springer.com/article/10.1007/s44250-026-00441-9",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-11T03:43:14+00:00",
+   "summary": "The World Health Organization (WHO) has grown markedly since its inception and has achieved major successes in global public health, including the ...",
+   "domain": "link.springer.com",
+   "inhoud": 9,
+   "score": 12
+  },
+  {
+   "title": "Brussels explores LSD’s medical potential as US moves ahead",
+   "url": "https://www.rapporteur.com/news/brussels-explores-lsds-medical-potential-as-us-moves-ahead/",
+   "src": "Rapporteur (ex-Euractiv)",
+   "feed": "Rapporteur (ex-Euractiv)",
+   "cat": "policy",
+   "date": "2026-11-11T03:00:52+00:00",
+   "summary": "European regulators have already agreed to testing LSD – but not to approving it",
+   "domain": "rapporteur.com",
+   "inhoud": 0,
+   "score": 5
+  },
+  {
+   "title": "80th World Health Assembly - SDG Knowledge Hub",
+   "url": "https://sdg.iisd.org/events/80th-world-health-assembly/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-11T01:32:56+00:00",
+   "summary": "The 80th World Health Assembly (WHA) will convene in May 2027. The WHA is the decision-making body of the World Health Organization (WHO).",
+   "domain": "sdg.iisd.org",
+   "inhoud": 19,
+   "score": 19
+  },
+  {
+   "title": "AHF • AIDS Healthcare Foundation's Emergency Response to the Flash Floods in Nepal",
+   "url": "https://www.aidshealth.org/2026/11/aids-healthcare-foundations-emergency-response-to-the-flash-floods-in-nepal/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-11T01:02:42+00:00",
+   "summary": "When devastating flash floods hit Nepal this summer, AIDS Healthcare Foundation responded with emergency relief for 50 affected households.",
+   "domain": "aidshealth.org",
+   "inhoud": 4,
+   "score": 4
+  },
+  {
+   "title": "Lymphatic Filariasis Risk Models Show High Bias and Limited External Validation",
+   "url": "https://bioengineer.org/lymphatic-filariasis-risk-models-show-high-bias-and-limited-external-validation/",
+   "src": "Bioengineer.org",
+   "feed": "NTD news",
+   "cat": "ntd",
+   "date": "2026-11-11T00:40:21+00:00",
+   "summary": "Lymphatic Filariasis Risk Models Show High Bias and Limited External Validation Bioengineer.org",
+   "domain": "bioengineer.org",
+   "inhoud": 0,
+   "score": -4,
+   "gnews": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTFBOYlNLNnRJVXVBMW9rWUZybXZPdGhpd2ctQVFGQmhfbWFtYk9HbnYya3hTZFJNd0NMdER4UWxnbXAtZFRuRHVxb01YRUEwdzJZaTl4b2xNTnA4NzlCMFRfTlZXR2dXN2ZKNEpmYlFrcWJBWmllTG9idHQ0WmN2RGRZNTRYWFRBRU1kc2oybzhZSHhRQlF0NE54QWI0NzAtc09wSFgxVQ?oc=5"
+  },
+  {
+   "title": "Explanation of Position for UNGA 81/3C Resolution “Intensification of Efforts to End Obstetric Fistula",
+   "url": "https://usun.usmission.gov/explanation-of-position-for-unga-81-3c-resolution-intensification-of-efforts-to-end-obstetric-fistula/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-11T00:06:11+00:00",
+   "summary": "The United States remains deeply committed to the health and well-being of women and girls worldwide. ... World Health Organization or promotes ...",
+   "domain": "usun.usmission.gov",
+   "inhoud": 9,
+   "score": 12
+  },
+  {
+   "title": "World Health Organization meets to determine US measles status as vaccine exemptions grow",
+   "url": "https://www.yahoo.com/news/us/articles/world-health-organization-meets-determine-001717697.html",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-11T00:01:42+00:00",
+   "summary": "Last year, only 11 of the state's 67 counties had kindergarten vaccination rates above the 95% level targeted by the World Health Organization , data ...",
+   "domain": "yahoo.com",
+   "inhoud": 12,
+   "score": 12
+  },
+  {
+   "title": "STAT+: Democrats take new step toward investigating Trump’s drug pricing deals",
+   "url": "https://www.statnews.com/2026/11/10/democrats-investigate-most-favored-nation-deals-letters-drugmakers/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-11-10T23:55:00+00:00",
+   "summary": "Incoming Democratic chairs of key committees have taken a step toward investigating MFN drug pricing agreements between drugmakers and the Trump administration.",
+   "domain": "statnews.com",
+   "inhoud": -6,
+   "score": -5
+  },
+  {
+   "title": "World Health Organization officials meet to evaluate revoking the U.S.' measles-free status",
+   "url": "https://www.modernghana.com/videonews/nbc/1/751601",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-10T23:52:24+00:00",
+   "summary": "World Health Organization officials meet to evaluate revoking the U.S.' measles-free status. BBC CNN DW CGTN NBC ABC ALJazeera. France24 JoyNews",
+   "domain": "modernghana.com",
+   "inhoud": 4,
+   "score": 4
+  },
   {
    "title": "[Comment] A digital intervention to strengthening parenting in Tanzania",
    "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02198-7/fulltext?rss=yes",
@@ -403,6 +548,18 @@
    "score": 11
   },
   {
+   "title": "WHO Director General Should Convene Emergency Committee on El Niño",
+   "url": "https://www.thinkglobalhealth.org/article/who-director-general-should-convene-emergency-committee-on-el-nino",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-10T22:20:52+00:00",
+   "summary": "... health governance. By recognizing El Niño as a public health emergency of international concern (PHEIC), WHO can answer calls to escalate its ...",
+   "domain": "thinkglobalhealth.org",
+   "inhoud": 7,
+   "score": 13
+  },
+  {
    "title": "Outbreaks don't wait for funding: tropical medicine and global health in Somalia | RSTMH",
    "url": "https://www.rstmh.org/news-blog/blogs/outbreaks-dont-wait-funding-tropical-medicine-and-global-health-somalia",
    "src": "Global Health",
@@ -413,18 +570,6 @@
    "domain": "rstmh.org",
    "inhoud": 21,
    "score": 21
-  },
-  {
-   "title": "The WHO Has Declared This Super El Niño a Health Emergency - Gizmodo",
-   "url": "https://gizmodo.com/this-super-el-nino-just-triggered-something-the-who-has-never-done-before-2000837799",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-10T21:54:34+00:00",
-   "summary": "According to the World Meteorological Organization's 2026 State of the Climate Report, released on the first day of COP31 negotiations, the WHO has ...",
-   "domain": "gizmodo.com",
-   "inhoud": 11,
-   "score": 11
   },
   {
    "title": "Study examines cervical cancer's global burden now and by 2050 | CIDRAP",
@@ -451,6 +596,18 @@
    "score": 18
   },
   {
+   "title": "The WHO Has Declared This Super El Niño a Health Emergency - Gizmodo",
+   "url": "https://gizmodo.com/this-super-el-nino-just-triggered-something-the-who-has-never-done-before-2000837799",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-10T21:18:52+00:00",
+   "summary": "El Niño: a global health crisis. Since May, sea surface temperatures in the central and eastern tropical Pacific Ocean have been rising with ...",
+   "domain": "gizmodo.com",
+   "inhoud": 10,
+   "score": 10
+  },
+  {
    "title": "The WPI Conversation: How to build health sovereignty in the wake of international funding cuts",
    "url": "https://wpintelligence.washingtonpost.com/topics/health-care/2026/11/10/wpi-conversation-how-build-health-sovereignty-wake-international-funding-cuts/?itid=hp_brand_promo_1",
    "src": "Global Health",
@@ -461,18 +618,6 @@
    "domain": "wpintelligence.washingtonpost.com",
    "inhoud": 18,
    "score": 21
-  },
-  {
-   "title": "John Kerry Tells COP31 The US Will Return To Climate Fight As Iran War Drives Surprise ...",
-   "url": "https://healthpolicy-watch.news/john-kerry-cop31-us-will-return-climate-fight-iran-war-drives-down-emissions/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-10T21:15:07+00:00",
-   "summary": "Combat the infodemic in health information and support health policy reporting from the global South. Our growing network of journalists in Africa ...",
-   "domain": "healthpolicy-watch.news",
-   "inhoud": 12,
-   "score": 18
   },
   {
    "title": "WHO launches “Together for Science and Health” movement to strengthen trust worldwide",
@@ -509,18 +654,6 @@
    "domain": "atlanticcouncil.org",
    "inhoud": 4,
    "score": 4
-  },
-  {
-   "title": "Tobacco Taxes and Health Financing in the Eastern Mediterranean Region",
-   "url": "https://www.cgdev.org/blog/tobacco-taxes-and-health-financing-eastern-mediterranean-region",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-10T20:26:29+00:00",
-   "summary": "The World Health Organization (WHO) Regional Office for the Eastern Mediterranean has established a Commission on Investing in the Health ...",
-   "domain": "cgdev.org",
-   "inhoud": 15,
-   "score": 18
   },
   {
    "title": "STAT+: Wyden, Sanders hand-in-hand on ‘Medicare for All’ initiative",
@@ -585,6 +718,18 @@
    "score": -5
   },
   {
+   "title": "John Kerry Tells COP31 the US Will Return to Climate Fight as Iran War Drives Surprise Dip in Fossil Fuel Emissions",
+   "url": "https://healthpolicy-watch.news/john-kerry-cop31-us-will-return-climate-fight-iran-war-drives-down-emissions/",
+   "src": "Health Policy Watch",
+   "feed": "Health Policy Watch",
+   "cat": "policy",
+   "date": "2026-11-10T17:58:27+00:00",
+   "summary": "ANTALYA – In a tale of America at a crossroads, former US Secretary of State John Kerry declared at COP31 on Tuesday that the country would soon return to a leadership role in the global response to the climate crisis, as a new report found President Donald Trump’s war on Iran had inadvertently tipp",
+   "domain": "healthpolicy-watch.news",
+   "inhoud": 0,
+   "score": 4
+  },
+  {
    "title": "Cases of this drug-resistant disease climb in SC. Here's the best defense",
    "url": "https://www.thestate.com/news/local/article317998740.html",
    "src": "The State",
@@ -596,6 +741,19 @@
    "inhoud": 0,
    "score": 2,
    "gnews": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBFVlBVOTNyZndVM0NfcTUwX3Fka0t1NTQ5bEZwWlhHdU1yS2szckFHSHBGMDlIdm05alBJSjY5YjRxeU5HajByeEtueGUxR1hvQ0RIWUtBYjZlMFVYMVNFSGVfeWx5aGJR0gFoQVVfeXFMTmJtWkFnbW9VajJoaDhpR3d0NFJXT0tSNlo3alJrTGVQcnpkNGMwd2dtMFJ0V3ZKOWtzdDBsOTVHOUxYczdQRS1yZ1JJWTN4Zy15dm5TVGxCNVdrbmNmUm9IaENRY0t6dFM?oc=5"
+  },
+  {
+   "title": "Early gene therapy trial for drug-resistant epilepsy shows over 90% seizure reduction",
+   "url": "https://www.epilepsy.org.uk/news/gene-therapy-drug-resistant-epilepsy",
+   "src": "Epilepsy Action",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-10T17:31:38+00:00",
+   "summary": "Early gene therapy trial for drug-resistant epilepsy shows over 90% seizure reduction Epilepsy Action",
+   "domain": "epilepsy.org.uk",
+   "inhoud": -8,
+   "score": -6,
+   "gnews": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9zX1hXZWxSWmhhLUM0d3lCbXlPa1hBeTRwQnl4MFVvUUVndkczb3ctMlEzam1OcUVveE1QLVEwdDRPU1kwSEVjLW1DbTBjVGFYTUlVMEhvYmRKQk5KWFQ3eFFQZXlBajZiZzNoY2RRTk9sOExjTjd6bA?oc=5"
   },
   {
    "title": "STAT+: Men’s use of chatbots for therapy, and earnings season highlights",
@@ -1193,6 +1351,30 @@
    "score": -5
   },
   {
+   "title": "World News in Brief: Ending cholera by 2030 ‘within reach’, Haiti displacement and hunger, US human rights review rescheduled",
+   "url": "https://news.un.org/feed/view/en/story/2026/11/1168782",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-10T12:00:00+00:00",
+   "summary": "Ending cholera as a public health threat by 2030 is within reach, as every cholera death can be prevented with tools that already exist, the World Health Organization (WHO) said on Tuesday.",
+   "domain": "news.un.org",
+   "inhoud": 9,
+   "score": 16
+  },
+  {
+   "title": "Ebola: IOM urges wider surveillance beyond formal routes in DR Congo",
+   "url": "https://news.un.org/feed/view/en/story/2026/11/1168781",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-10T12:00:00+00:00",
+   "summary": "Seventy-one confirmed Ebola cases have been detected along transit routes in the Democratic Republic of the Congo (DRC) since the outbreak began almost six months ago, the International Organization for Migration (IOM) said on Tuesday.",
+   "domain": "news.un.org",
+   "inhoud": 12,
+   "score": 19
+  },
+  {
    "title": "When deaths go uncounted: WHO flags dangerous blind spots in Africa’s health data",
    "url": "https://news.un.org/feed/view/en/story/2026/11/1168772",
    "src": "UN News - Global perspective Human stories",
@@ -1558,6 +1740,18 @@
    "score": 9
   },
   {
+   "title": "Tobacco Taxes and Health Financing in the Eastern Mediterranean Region",
+   "url": "https://www.cgdev.org/blog/tobacco-taxes-and-health-financing-eastern-mediterranean-region",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-10T00:00:00+00:00",
+   "summary": "The World Health Organization (WHO) Regional Office for the Eastern Mediterranean has established a Commission on Investing in the Health ...",
+   "domain": "cgdev.org",
+   "inhoud": 21,
+   "score": 24
+  },
+  {
    "title": "80th World Health Assembly - Medicines for Malaria Venture",
    "url": "https://www.mmv.org/events/80th-world-health-assembly",
    "src": "Global Health",
@@ -1827,19 +2021,6 @@
    "domain": "devex.com",
    "inhoud": 2,
    "score": 7
-  },
-  {
-   "title": "Oman elected WHO Pandemic Agreement bureau vice-chair",
-   "url": "https://www.omanobserver.om/article/1199403/oman/oman-elected-who-pandemic-agreement-bureau-vice-chair",
-   "src": "Oman Observer",
-   "feed": "Pandemic Agreement",
-   "cat": "pandemic",
-   "date": "2026-11-09T17:08:51+00:00",
-   "summary": "Oman elected WHO Pandemic Agreement bureau vice-chair Oman Observer",
-   "domain": "omanobserver.om",
-   "inhoud": 0,
-   "score": 4,
-   "gnews": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOclRIcGxybE4wUThKZVNvZTdmUGo0cGFfVEdlb1NtaFNpYlp4bWxCV3N1M3dYUzRCZm0xb25YR0l5MkZzbGRvSGdnZmlUZW50dGpkTWtKMlExYlpsZHV3RnJVTGJ4QmlxRkNUdmFVbHNKYjZwbjVoSXhMRGlZNV9Tam9VVTVnemYtam9pMUE3Zkxrdm9HRVF2cnpJS1F3VFRLUm5JNdIBWkFVX3lxTE9MQnNlVkNUa1gzUnU0N2dtVXU3SG5XSDA4ZktjaXNrTDNWOTZPRUR3VlBXWUtqTXBSMzJ6Y3NuNk51ZFh5LXc0TDh5YXQ3bDlwY0V2eGFlUS1kdw?oc=5"
   },
   {
    "title": "World Bank names new accountability chief. Can he win over skeptics?",
@@ -2150,6 +2331,19 @@
    "domain": "devex.com",
    "inhoud": 0,
    "score": 5
+  },
+  {
+   "title": "Oman elected as Vice-Chair of Bureau of WHO Intergovernmental Working Group on Pandemic Agreement",
+   "url": "https://timesofoman.com/article/178963-oman-elected-as-vice-chair-of-bureau-of-who-intergovernmental-working-group-on-pandemic-agreement",
+   "src": "Times of Oman",
+   "feed": "Pandemic Agreement",
+   "cat": "pandemic",
+   "date": "2026-11-09T12:19:00+00:00",
+   "summary": "Oman elected as Vice-Chair of Bureau of WHO Intergovernmental Working Group on Pandemic Agreement Times of Oman",
+   "domain": "timesofoman.com",
+   "inhoud": 0,
+   "score": 4,
+   "gnews": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQ0tnOTJHc1lnWXZadjAycEtDVDB2VFpWQll1WjFBelRpZncwOGNIUXlSTE1XcWxDWFhzc3ZWN1JjeXBKa1lKbHg3SG16V2xyeVI0Wi1McV9pbUVFZ25rQTMyUVllQjd1WjJrV29oN3ItTjlNeWdrMUluUW5CblFIYUN3eURDV0lRdGFReXEyTTZTWXA0UkV6ajZuVjdyNUdzQ1g0VjRybXdESXZXanh2UXRPeHVEYXZRaUx3V3BOckxteXpzQlkwZDY5QzlaTlM0OGc?oc=5"
   },
   {
    "title": "What we can learn from two pioneering female surgeons",
@@ -7303,6 +7497,19 @@
    "score": 16
   },
   {
+   "title": "Tackling antimicrobial resistance in an ageing population: turning evidence into action across health and social care",
+   "url": "https://www.citystgeorges.ac.uk/news-and-events/news/2026/november/tackling-antimicrobial-resistance-in-an-ageing-population",
+   "src": "City St George's, University of London",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-02T16:13:35+00:00",
+   "summary": "Tackling antimicrobial resistance in an ageing population: turning evidence into action across health and social care City St George's, University of London",
+   "domain": "citystgeorges.ac.uk",
+   "inhoud": 0,
+   "score": 2,
+   "gnews": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPY01aUFZYQ0JRb3hfRktHZklZSzMwbDhfT1hnNlBURkVaTXprRHJlVlJTdW9TUlFEX1pseFRSdFBmZjVRd19oMzROdEdUTUZzczE1RmJJekQ4OGVRbnp2YnBFUThMYzZlNlFRdFVoMmhIRnJDLVd3Y1BBMnlCbVdLYzI2OGJ3bmxyckltR19NRkMzR0FZWHp4UndTeXJHMll4RGFBWDJFcUVUVkk2Q3Mwal9lWWdValhtaFhYNUMwYXFPZw?oc=5"
+  },
+  {
    "title": "[Comment] Tsepamo 8 years on: women’s health remains an afterthought",
    "url": "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(26)00270-6/fulltext?rss=yes",
    "src": "Lancet Global Health",
@@ -7351,18 +7558,6 @@
    "score": 3
   },
   {
-   "title": "Mark Dybul at The Global Fund: Back To First Principles; Focus on Controlling Epidemics; Cautious on The Expansion of Scope; Signals Collaboration With Gavi",
-   "url": "https://newsletter.genevahealthfiles.com/mark-dybul-at-the-global-fund-back-to-first-principles-focus-on-controlling-epidemics-cautious-on-the-expansion-of-scope-signals-collaboration-with-gavi/",
-   "src": "Geneva Health Files",
-   "feed": "Geneva Health Files",
-   "cat": "policy",
-   "date": "2026-11-02T08:15:17+00:00",
-   "summary": "Newsletter Edition #396 [The Files In-Depth] Subscribe Now! Readers, As you would know, last week, the Global Fund elected Mark Dybul, a highly regarded technical leader and expert, to lead the institution, for a non-consecutive second term. There are two parts to this comprehensive edition: first, ",
-   "domain": "newsletter.genevahealthfiles.com",
-   "inhoud": 18,
-   "score": 22
-  },
-  {
    "title": "CDC Report Highlights 9.7 Million Infections From Antimicrobial Resistance Threats",
    "url": "https://www.infectiousdiseaseadvisor.com/news/cdc-antimicrobial-resistance-threats-report-2026/",
    "src": "Infectious Disease Advisor",
@@ -7386,18 +7581,6 @@
    "domain": "dndi.org",
    "inhoud": 12,
    "score": 15
-  },
-  {
-   "title": "Health insurance coverage and quality of care for reproductive and maternal health in LMICs: a multicountry propensity score matching study",
-   "url": "http://gh.bmj.com/cgi/content/short/11/11/e022566?rss=1",
-   "src": "BMJ Global Health",
-   "feed": "BMJ Global Health",
-   "cat": "journal",
-   "date": "2026-11-02T00:05:23+00:00",
-   "summary": "",
-   "domain": "gh.bmj.com",
-   "inhoud": 10,
-   "score": 13
   },
   {
    "title": "Ebola reminder of urgent need to finish pandemic treaty: WHO chief",
@@ -7437,19 +7620,6 @@
    "score": 7,
    "inhoud": 0,
    "gnews": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdXFDdTBtM0tIV3RweWJiTkNnNW9qRDJGay10NEVnQWxEczI5eXZwWjFWdkhzMFdQczB0TEtPT1ZIQjZIZld1bmlpNGI1ZkxLY3o2MWZzVlVCdXU0ZGNLa25rYnkwSmJfRlpxUEN2MldsbklrVzRoUlRmVl96LUVGTUhQc0sxRnFvZDhyaFhoTzVBZE0wSVAyY01n?oc=5"
-  },
-  {
-   "title": "Tackling antimicrobial resistance in an ageing population: turning evidence into action across health and social care",
-   "url": "https://www.citystgeorges.ac.uk/news-and-events/news/2026/november/tackling-antimicrobial-resistance-in-an-ageing-population",
-   "src": "City St George's, University of London",
-   "feed": "AMR policy & research",
-   "cat": "amr",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Tackling antimicrobial resistance in an ageing population: turning evidence into action across health and social care City St George's, University of London",
-   "domain": "citystgeorges.ac.uk",
-   "score": 2,
-   "inhoud": 0,
-   "gnews": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPY01aUFZYQ0JRb3hfRktHZklZSzMwbDhfT1hnNlBURkVaTXprRHJlVlJTdW9TUlFEX1pseFRSdFBmZjVRd19oMzROdEdUTUZzczE1RmJJekQ4OGVRbnp2YnBFUThMYzZlNlFRdFVoMmhIRnJDLVd3Y1BBMnlCbVdLYzI2OGJ3bmxyckltR19NRkMzR0FZWHp4UndTeXJHMll4RGFBWDJFcUVUVkk2Q3Mwal9lWWdValhtaFhYNUMwYXFPZw?oc=5"
   },
   {
    "title": "Recent virus outbreaks show urgent need to complete pandemic treaty, says WHO chief",
@@ -7628,18 +7798,6 @@
    "gnews": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQY0NTUENsU2V0NHByOG9yMHZaVmhRcmRiZ25WcGppazVSN1hUMzFtMF9HLWxCaFROeVVTU3ViTUs0RWJCMlBLN1k0ZndkbzhRMFhrSXQ1QnJ2UW9GdWJ4VVRLUHIzYkVobGsyTGRadmw5VkU2U2dfNUpYYlZmYWRqc0NOTmI4ZFBsSS1uUFlEQUZjbVVZRnFpM2ZQUjhKOW9veXllM1BDYWJFVk90?oc=5"
   },
   {
-   "title": "New Multisectoral Framework to Cocreate National Multisectoral Action Plan to Improve NCDs, Injuries and Mental Health",
-   "url": "https://africacdc.org/news-item/africa-cdc-develops-action-plan-to-address-ncds-injuries-and-mental-health/",
-   "src": "Africa CDC",
-   "feed": "Africa CDC",
-   "cat": "global",
-   "date": "2026-10-31T14:53:25+00:00",
-   "summary": "KIGALI, Rwanda, 30 October 2026 – African Union Member States are a step closer to a coordinated response to non-communicable diseases (NCDs), injuries and mental health conditions following the finalisation of a multisectoral action plan at a five-day technical meeting convened by the Africa Centre",
-   "domain": "africacdc.org",
-   "inhoud": 2,
-   "score": 5
-  },
-  {
    "title": "Google DeepMind Is Trying To Solve A Huge Problem In Healthcare: Antimicrobial Resistance",
    "url": "https://www.forbes.com/sites/saibala/2026/10/31/google-deepmind-is-trying-to-solve-a-huge-problem-in-healthcare-antimicrobial-resistance/",
    "src": "Forbes",
@@ -7715,30 +7873,6 @@
    "domain": "news-medical.net",
    "inhoud": 8,
    "score": 7
-  },
-  {
-   "title": "Postcards from IDWeek: Growing number of infectious disease professionals embrace advocacy",
-   "url": "https://www.cidrap.umn.edu/public-health/postcards-idweek-growing-number-infectious-disease-professionals-embrace-advocacy",
-   "src": "CIDRAP Public Health",
-   "feed": "CIDRAP Public Health",
-   "cat": "promed",
-   "date": "2026-10-30T17:05:00+00:00",
-   "summary": "A conference held in the nation’s capital included educational sessions about how to advocate for patients and research funding.",
-   "domain": "cidrap.umn.edu",
-   "inhoud": 2,
-   "score": 4
-  },
-  {
-   "title": "Starlink, Specimens And Sovereignty In DRC’s Ebola Response [Exclusive Analysis]",
-   "url": "https://newsletter.genevahealthfiles.com/starlink-specimens-and-sovereignty-in-drcs-ebola-response-exclusive-analysis/",
-   "src": "Geneva Health Files",
-   "feed": "Geneva Health Files",
-   "cat": "policy",
-   "date": "2026-10-30T09:14:10+00:00",
-   "summary": "Newsletter Edition #172 [Treaty Talks] Subscribe Now! Readers, To serve public interest, this publication is dedicated to tracking how commercial and political interests interact with public health. In today's story, we map how information has flowed in the context of the expanding Ebola outbreak, a",
-   "domain": "newsletter.genevahealthfiles.com",
-   "inhoud": 7,
-   "score": 11
   },
   {
    "title": "Ninth meeting of the Intergovernmental Working Group (IGWG) on the WHO Pandemic Agreement",
@@ -7851,30 +7985,6 @@
    "inhoud": 4
   },
   {
-   "title": "Most US adults still drink pasteurized milk, but the number trying raw milk is increasing, survey notes",
-   "url": "https://www.cidrap.umn.edu/foodborne-disease/most-us-adults-still-drink-pasteurized-milk-number-trying-raw-milk-increasing",
-   "src": "CIDRAP Public Health",
-   "feed": "CIDRAP Public Health",
-   "cat": "promed",
-   "date": "2026-10-29T21:31:00+00:00",
-   "summary": "Among more than 1,000 respondents, 15% drank raw milk in the past 6 months, and people who trust social media influencers are more likely to imbibe.",
-   "domain": "cidrap.umn.edu",
-   "inhoud": 0,
-   "score": 2
-  },
-  {
-   "title": "A cancer vaccine milestone, a vaccine injury center, and what a flu shot study actually found: The State of US Vaccine Policy",
-   "url": "https://www.cidrap.umn.edu/vaccine-policy-update/cancer-vaccine-milestone-vaccine-injury-center-and-what-flu-shot-study",
-   "src": "CIDRAP Public Health",
-   "feed": "CIDRAP Public Health",
-   "cat": "promed",
-   "date": "2026-10-29T20:24:00+00:00",
-   "summary": "We talk about a promising mRNA cancer vaccine, a worrisome vaccine injury clinic, a measles test, and a misrepresented study on flu vaccination.",
-   "domain": "cidrap.umn.edu",
-   "inhoud": 10,
-   "score": 12
-  },
-  {
    "title": "Amino acid restores power to last-resort antibiotics",
    "url": "https://www.news-medical.net/news/20261029/Amino-acid-restores-power-to-last-resort-antibiotics.aspx",
    "src": "AMR Industry / news",
@@ -7885,42 +7995,6 @@
    "domain": "news-medical.net",
    "inhoud": 12,
    "score": 11
-  },
-  {
-   "title": "Postcards from IDWeek: Infectious disease specialists say they remain dedicated to improving lives, despite challenges",
-   "url": "https://www.cidrap.umn.edu/public-health/postcards-idweek-infectious-disease-specialists-say-they-remain-dedicated-improving",
-   "src": "CIDRAP Public Health",
-   "feed": "CIDRAP Public Health",
-   "cat": "promed",
-   "date": "2026-10-29T14:39:00+00:00",
-   "summary": "Health professionals are facing growing pushback on vaccinations, even as they struggle to keep up with rapidly spreading measles outbreaks.",
-   "domain": "cidrap.umn.edu",
-   "inhoud": 7,
-   "score": 9
-  },
-  {
-   "title": "COMMENTARY: To regain trust in public health, untangle it from politics",
-   "url": "https://www.cidrap.umn.edu/public-health/commentary-regain-trust-public-health-untangle-it-politics",
-   "src": "CIDRAP Public Health",
-   "feed": "CIDRAP Public Health",
-   "cat": "promed",
-   "date": "2026-10-29T12:34:00+00:00",
-   "summary": "The question for future federal health leaders is whether they’ll have the will to shift from political pandering back to evidence-based, trustworthy recommendations.",
-   "domain": "cidrap.umn.edu",
-   "inhoud": 0,
-   "score": 2
-  },
-  {
-   "title": "First public health emergency preparedness assessments across Europe show both commitment and recurring challenges",
-   "url": "https://www.ecdc.europa.eu/en/news-events/first-public-health-emergency-preparedness-assessments-across-europe-show-both",
-   "src": "ECDC",
-   "feed": "ECDC",
-   "cat": "global",
-   "date": "2026-10-29T08:57:39+00:00",
-   "summary": "The first cycle of Public Health Emergency Preparedness Assessments (PHEPAs) coordinated by the European Centre for Disease Prevention and Control (ECDC) has shown a strong commitment to emergency preparedness across Europe, with a number of common challenges remaining.",
-   "domain": "ecdc.europa.eu",
-   "inhoud": 19,
-   "score": 22
   },
   {
    "title": "DNDi welcomes GHIT Fund’s support for innovative approaches to improve success in Chagas disease drug discovery with Nagasaki University, the University of Dundee, and Eisai",
@@ -8036,42 +8110,6 @@
    "gnews": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUndWcmNQeFB5SG5HcVJFNUxIal9EcG5MaGJTZWJYS1NOaDFjV3ZtZExrVEgtNWo4YzB3a0RWb0g1c0RyYk5TYWkzemQ4M25uOGNwa3B5Wm5RcFF2UHE0OWd4Q3lVTW9taWJ1dFF1ZVkxN1dUYjVxcWlDblZYY1NfS3ctQmdUeGtqWl9SdXR0Y3BDRFRLUjJNOW51THN4Q2NzZlBkbHZtZGNELUdGcm5HZnNhS0lHQ3Q4OUVtQVFwZmNDMXFidW5nQTZYOGh6VjFHRTRBN2Y4dlNLNk9jR1dBOVhKam9oaUE?oc=5"
   },
   {
-   "title": "Rapid inter-regional and cross-border dissemination of carbapenemase-producing Klebsiella pneumoniae ST6668, European Union, April 2022 to August 2026",
-   "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.43.2600861",
-   "src": "Eurosurveillance",
-   "feed": "Eurosurveillance",
-   "cat": "promed",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "Preliminary analysis of genomic surveillance data from the European Antimicrobial Resistance Gene Surveillance Network detected the spread of the emerging carbapenemase-producing Klebsiella pneumoniae sequence type ST6668 in 19 NUTS-2 regions in Italy (8 regions) and five other European Union (EU) c",
-   "domain": "eurosurveillance.org",
-   "inhoud": 11,
-   "score": 13
-  },
-  {
-   "title": "Identification of Usutu virus in blood donors as part of molecular screening for West Nile virus, France, 2023",
-   "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.43.2600044",
-   "src": "Eurosurveillance",
-   "feed": "Eurosurveillance",
-   "cat": "promed",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "BACKGROUND West Nile Virus (WNV) can be transmitted via blood transfusion and lead to neuroinvasive forms in recipients of blood products. AIM We aimed to investigate WNV and Usutu virus (USUV) infections among blood donors in France. METHODS Blood donations in 18 of 96 departments of metropolitan F",
-   "domain": "eurosurveillance.org",
-   "inhoud": 12,
-   "score": 14
-  },
-  {
-   "title": "Trends in hepatitis E virus incidence and seroprevalence in the Netherlands, 1988 to 2025",
-   "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.43.2600103",
-   "src": "Eurosurveillance",
-   "feed": "Eurosurveillance",
-   "cat": "promed",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "BACKGROUND Hepatitis E virus (HEV) can cause serious liver disease, especially in immunosuppressed patients. In 2013, the Netherlands started HEV-RNA screening of donations for production of solvent detergent (S/D)-treated plasma. Since 2017, all Dutch blood donations are screened. AIM To study tren",
-   "domain": "eurosurveillance.org",
-   "inhoud": 0,
-   "score": 2
-  },
-  {
    "title": "Study suggests US enteric fever cases won’t respond to ciprofloxacin",
    "url": "https://www.cidrap.umn.edu/antimicrobial-stewardship/study-suggests-us-enteric-fever-cases-won-t-respond-ciprofloxacin",
    "src": "CIDRAP Stewardship",
@@ -8094,42 +8132,6 @@
    "domain": "cidrap.umn.edu",
    "inhoud": 0,
    "score": 2
-  },
-  {
-   "title": "DR Congo: WHO urges sustained efforts as Ebola cases top 10,000",
-   "url": "https://news.un.org/feed/view/en/story/2026/10/1168689",
-   "src": "UN News - Global perspective Human stories",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-10-28T12:00:00+00:00",
-   "summary": "As Ebola cases in the Democratic Republic of the Congo (DRC) surpass the 10,000 mark, the World Health Organization (WHO) has underlined the need for continued efforts to contain spread of the disease.",
-   "domain": "news.un.org",
-   "inhoud": 10,
-   "score": 17
-  },
-  {
-   "title": "As the cold season nears, universal immunisation of newborns against RSV could significantly reduce infant hospitalisations across Europe",
-   "url": "https://www.ecdc.europa.eu/en/news-events/cold-season-nears-universal-immunisation-newborns-against-rsv-could-significantly",
-   "src": "ECDC",
-   "feed": "ECDC",
-   "cat": "global",
-   "date": "2026-10-28T09:02:07+00:00",
-   "summary": "As the season for respiratory syncytial virus (RSV) and other respiratory diseases approaches, a new report from the European Centre for Disease Prevention and Control (ECDC) indicates that universal immunisation of newborns against RSV could substantially reduce hospitalisations among infants linke",
-   "domain": "ecdc.europa.eu",
-   "inhoud": 7,
-   "score": 10
-  },
-  {
-   "title": "Indonesia's Bold Bid to the Lead the World Health Organization: The Expectations On the Candidature of Budi Sadikin",
-   "url": "https://newsletter.genevahealthfiles.com/indonesias-bold-bid-to-the-lead-the-world-health-organization-the-expectations-on-the-candidature-of-budi-sadikin/",
-   "src": "Geneva Health Files",
-   "feed": "Geneva Health Files",
-   "cat": "policy",
-   "date": "2026-10-28T07:43:59+00:00",
-   "summary": "Newsletter Edition #395 [The Files In-Depth] Subscribe Now! Readers, The race to lead the World Health Organization is intensifying. In today's piece, we look at the expectations around the candidature of Budi Sadikin, Indonesia's minister of health and a finance wonk. My colleague Naurah",
-   "domain": "newsletter.genevahealthfiles.com",
-   "inhoud": 8,
-   "score": 12
   },
   {
    "title": "CDC Names the 4 Most Dangerous Superbugs in the US",
@@ -8865,8 +8867,8 @@
    "date": "2026-09-25T07:00:00+00:00",
    "summary": "World leaders renew commitment to protect the world from future pandemics World Health Organization (WHO)",
    "domain": "who.int",
-   "score": 14,
    "inhoud": 6,
+   "score": 14,
    "gnews": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOV2pzclBSMzBSM05hS3lCRE1hNTMyVHNFUmxYYVpVakUtVllxUzBLYzJuR0NRRE5EeEtvaGVEbHJlWHpKNFdUMmZTT1lCNVRROGZXRFJzOFNLby1jQ3VEcGVaRnpKWGw2V29EM0g3RWxHTjdISWdBSW9FaTJIdEJ6Q1lWWTg5Ym81SWNSYUtTQ3RHeDgwUlM4S3ZTUUJycXpjQ1JfTkJjQ1FJd1dQRF8wTHhnWTc?oc=5"
   },
   {
@@ -8917,8 +8919,8 @@
    "date": "2026-09-21T07:00:00+00:00",
    "summary": "Pandemic Agreement Negotiator Warns Against Losing Momentum Health Policy Watch",
    "domain": "healthpolicy-watch.news",
-   "score": 7,
    "inhoud": 0,
+   "score": 7,
    "gnews": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNM0JEY2pqZzYzRmU4dzhzNWd2d1FDWWJMdG1JZUdFZWQzZjk2a3FiT0xrdG1nczlNUHZmenl0SDRsTmNhMlFqdHM4MHJvMEtTTzFGcWl4VGRpOThXQlItNkp3YkpwYXdNTHg2TGtJZ2Zsc3M0VzNiS3p2aE5teTlfakNFN2tHSVQyQ1V3ODd1WFB0MTMwZ3VZ?oc=5"
   },
   {
