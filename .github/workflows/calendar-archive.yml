@@ -1,0 +1,39 @@
+name: World calendar archive
+
+# Copies every event that has ended from world-calendar/events.json into
+# world-calendar/archive.json, so the weekly refresh can prune events.json
+# without losing history. Runs after each change to events.json and daily.
+on:
+  push:
+    paths:
+      - "world-calendar/events.json"
+      - "world-calendar/archive.py"
+  schedule:
+    - cron: "23 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: calendar-archive
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - run: python3 world-calendar/archive.py
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- world-calendar/archive.json; then echo "no change"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add world-calendar/archive.json
+          git commit -m "world-calendar: archive past events"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          exit 1

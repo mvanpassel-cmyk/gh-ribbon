@@ -185,7 +185,7 @@ footer a { color: var(--muted); }
   <div id="list"></div>
 
   <footer>
-    Elections, summits, global health, global health architecture reform, AMR & One Health, EU/NL milestones and Dutch partner countries (Indonesia, India, China, United States, Kenya, Uganda, Ethiopia, South Africa, Colombia, Canada) — events in or about these countries are highlighted in every category. Refreshed weekly. Each entry links to its source — check the source before relying on a date.
+    Elections, summits, global health, global health architecture reform, AMR & One Health, EU/NL milestones and Dutch partner countries (Indonesia, India, China, United States, Kenya, Uganda, Ethiopia, South Africa, Colombia, Canada) — events in or about these countries are highlighted in every category. Refreshed weekly; past events stay available under “Show earlier months” (archive since January 2026). Each entry links to its source — check the source before relying on a date.
   </footer>
 </main>
 
@@ -427,11 +427,15 @@ document.getElementById('q').addEventListener('input', e => {
 Promise.all([
   fetch('events.json?v=' + Date.now()).then(r => r.json()),
   fetch('../partners.json').then(r => r.ok ? r.json() : null).catch(() => null),
-  fetch('../data/feeds.json?v=' + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null)
+  fetch('../data/feeds.json?v=' + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null),
+  fetch('archive.json?v=' + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null)
 ])
-  .then(([data, partners, feeds]) => {
+  .then(([data, partners, feeds, archive]) => {
     setPartners(partners);
-    events = data.events.sort((a, b) => a.start.localeCompare(b.start) || (a.end || a.start).localeCompare(b.end || b.start));
+    // Past events live on in archive.json after the weekly refresh drops them from events.json.
+    const seen = new Set(data.events.map(e => e.start + '|' + e.title));
+    const old = ((archive && archive.events) || []).filter(e => !seen.has(e.start + '|' + e.title));
+    events = data.events.concat(old).sort((a, b) => a.start.localeCompare(b.start) || (a.end || a.start).localeCompare(b.end || b.start));
     document.getElementById('updated').textContent = 'updated ' + d(data.updated).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
     maakRelated((feeds && feeds.items) || []);
     renderFilters(); renderCountries(); render();
