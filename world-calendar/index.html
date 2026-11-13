@@ -107,6 +107,16 @@ main { max-width: 860px; margin: 0 auto; padding: 20px 16px 60px; }
 .ev a { color: var(--muted); font-size: 12px; text-decoration: none; border-bottom: 1px dotted var(--muted); }
 .ev a:hover { color: var(--accent); border-color: var(--accent); }
 .badge { font-size: 11px; border: 1px dashed var(--muted); color: var(--muted); border-radius: 3px; padding: 0 4px; margin-left: 6px; vertical-align: 2px; }
+.ev.now-anchor { scroll-margin-top: 90px; }
+.now-btn {
+  position: fixed; right: 16px; bottom: 20px; z-index: 20;
+  font-family: inherit; font-size: 12px; font-weight: 700; letter-spacing: .05em; cursor: pointer;
+  background: var(--accent); color: #030a05; border: 0; border-radius: 999px;
+  padding: 9px 14px; box-shadow: 0 4px 14px rgba(0,0,0,.5);
+  opacity: 0; transform: translateY(8px); pointer-events: none; transition: opacity .2s, transform .2s;
+}
+.now-btn.show { opacity: 1; transform: none; pointer-events: auto; }
+.now-btn:focus-visible { outline: 2px solid var(--bright); outline-offset: 2px; }
 .now-badge { font-size: 11px; background: var(--accent); color: #030a05; border-radius: 3px; padding: 0 5px; margin-left: 6px; vertical-align: 2px; font-weight: 700; }
 
 .top-right { display: flex; align-items: center; gap: 8px; }
@@ -174,6 +184,7 @@ footer a { color: var(--muted); }
   <input id="q" type="search" placeholder="Search events…" autocomplete="off" aria-label="Search events">
 </div>
 
+<button class="now-btn" id="nowBtn" type="button" aria-label="Jump to today">NOW</button>
 <main>
   <div class="filters" id="filters"></div>
   <div class="countries" id="countries"></div>
@@ -370,7 +381,8 @@ function render() {
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(e);
   }
-  if (!shown.length) { list.innerHTML = '<p class="empty" style="color:var(--muted)">No events match.</p>'; return; }
+  if (!shown.length) { list.innerHTML = '<p class="empty" style="color:var(--muted)">No events match.</p>'; updateNowBtn(); return; }
+  let anchorSet = false;   // first event that is on now or still to come gets the NOW anchor
   const monthHtml = ([key, evs]) => `
     <section class="month"><h3>${fmtMonth(d(key + '-01'))}</h3>
     ${evs.map(e => {
@@ -379,7 +391,8 @@ function render() {
       const now = s <= today && en >= today;
       const range = e.end ? `${fmtDay(s)}<small>to ${fmtDay(en)}</small>` : `${fmtDay(s)}<small>${s.toLocaleDateString('en-GB', { weekday: 'short' })}</small>`;
       const pc = partnersOf(e);
-      return `<article class="ev ${CATS[e.cat].cls} ${e.status === 'tentative' ? 'tentative' : ''} ${past ? 'past' : ''} ${pc.length ? 'partner' : ''}">
+      const anchor = !anchorSet && en >= today; if (anchor) anchorSet = true;
+      return `<article ${anchor ? 'id="nowAnchor" ' : ''}class="ev ${anchor ? 'now-anchor ' : ''}${CATS[e.cat].cls} ${e.status === 'tentative' ? 'tentative' : ''} ${past ? 'past' : ''} ${pc.length ? 'partner' : ''}">
         <div class="date">${range}</div>
         <div>
           <div class="title">${esc(e.title)}${now ? '<span class="now-badge">NOW</span>' : ''}${e.status === 'tentative' ? '<span class="badge">tentative</span>' : ''}</div>
@@ -409,8 +422,29 @@ function render() {
     render();
     const after = document.getElementById('earlierBtn').getBoundingClientRect().top;
     window.scrollBy(0, after - before);   // keep the current month where it was
+    updateNowBtn();
   };
+  updateNowBtn();
 }
+
+// NOW button (bottom right): shown once today's events are out of view; jumps back to them.
+const nowBtn = document.getElementById('nowBtn');
+function updateNowBtn() {
+  const a = document.getElementById('nowAnchor');
+  if (!a) { nowBtn.classList.remove('show'); return; }
+  const r = a.getBoundingClientRect();
+  // Below the fold with no earlier months rendered: the page top already is 'now', so stay hidden.
+  const away = (r.top > window.innerHeight && (showEarlier || zoek)) || r.bottom < 80;
+  nowBtn.textContent = r.top > window.innerHeight ? 'NOW ↓' : 'NOW ↑';
+  nowBtn.classList.toggle('show', away);
+}
+nowBtn.onclick = () => {
+  const a = document.getElementById('nowAnchor');
+  if (a) a.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+};
+let nowTick = false;
+window.addEventListener('scroll', () => { if (!nowTick) { nowTick = true; requestAnimationFrame(() => { nowTick = false; updateNowBtn(); }); } }, { passive: true });
+window.addEventListener('resize', updateNowBtn);
 
 document.getElementById('sb').onclick = () => {
   const bar = document.getElementById('sbar');
