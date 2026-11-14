@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-14T14:18:11+00:00",
- "feeds_ok": 42,
+ "generated": "2026-11-14T19:19:02+00:00",
+ "feeds_ok": 43,
  "feeds_tot": 43,
  "status": {
   "WHO News": {
@@ -26,11 +26,10 @@
   },
   "UN News Health": {
    "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "msg": "12 items",
    "cat": "who",
-   "via": 2,
-   "fallback": true,
-   "errors": "[1] ValueError: 0 entries"
+   "via": 1,
+   "fallback": false
   },
   "CIDRAP Public Health": {
    "ok": true,
@@ -62,7 +61,7 @@
   },
   "ReliefWeb Health": {
    "ok": true,
-   "msg": "8 items (via kandidaat 2)",
+   "msg": "9 items (via kandidaat 2)",
    "cat": "emerg",
    "via": 2,
    "fallback": true,
@@ -112,7 +111,7 @@
   },
   "Think Global Health": {
    "ok": true,
-   "msg": "8 items",
+   "msg": "12 items",
    "cat": "global",
    "via": 1,
    "fallback": true
@@ -216,9 +215,12 @@
    "search": true
   },
   "IHR amendments": {
-   "ok": false,
-   "msg": "RuntimeError: [1] ValueError: 0 entries",
-   "cat": "pandemic"
+   "ok": true,
+   "msg": "12 items",
+   "cat": "pandemic",
+   "via": 1,
+   "fallback": false,
+   "search": true
   },
   "Pandemic Fund & financing": {
    "ok": true,
@@ -316,6 +318,126 @@
  },
  "items": [
   {
+   "title": "US Stands to Lose Measles Elimination Status as Multiple States Face The Worst Outbreaks in Nearly Three Decades",
+   "url": "https://healthpolicy-watch.news/us-to-lose-measles-elimination-status/",
+   "src": "Health Policy Watch",
+   "feed": "Health Policy Watch",
+   "cat": "policy",
+   "date": "2026-11-14T19:06:27+00:00",
+   "summary": "Plummeting vaccination rates have fueled a historic and prolonged wave of measles in the US – with the Pan American Health Organization expected to revoke the country’s elimination status it enjoyed since 2000. Experts told Health Policy Watch that the shifting vaccination landscape and persistent c",
+   "domain": "healthpolicy-watch.news",
+   "inhoud": 18,
+   "score": 22
+  },
+  {
+   "title": "SEAHEARTS: South-East Asia’s Success Rolling out Strategies to Accelerate Action on Diabetes and other NCDs",
+   "url": "https://healthpolicy-watch.news/seahearts-south-east-asias-success-rolling-out-strategies-to-accelerate-action-on-diabetes-and-other-ncds/",
+   "src": "Health Policy Watch",
+   "feed": "Health Policy Watch",
+   "cat": "policy",
+   "date": "2026-11-14T17:58:58+00:00",
+   "summary": "The SEAHEARTS initiative in WHO’s South-East Asia Region offers an outstanding example of how we can build health systems that address diabetes and other related conditions – worth special attention on World Diabetes Day, as we grapple with the growing number of people worldwide living with the cond",
+   "domain": "healthpolicy-watch.news",
+   "inhoud": 4,
+   "score": 8
+  },
+  {
+   "title": "Rep. Jonathan Jackson says US has 'turned its back on Africa'",
+   "url": "https://www.devex.com/news/rep-jonathan-jackson-says-us-has-turned-its-back-on-africa-113895",
+   "src": "Devex Global Health",
+   "feed": "Devex Global Health",
+   "cat": "news",
+   "date": "2026-11-14T16:38:22+00:00",
+   "summary": "At COP31 in Antalya, Turkey, the Illinois lawmaker said aid cuts and empty ambassador posts are costing Washington influence across Africa.",
+   "domain": "devex.com",
+   "inhoud": 0,
+   "score": 5
+  },
+  {
+   "title": "US loses measles-free status after continued spread of the disease: Report - CNA",
+   "url": "https://www.channelnewsasia.com/world/us-lose-measles-free-status-disease-transmission-6550971",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-14T16:23:31+00:00",
+   "summary": "The reported decision by the Americas branch of the World Health Organization comes as the US battles the highest number of measles cases it has ...",
+   "domain": "channelnewsasia.com",
+   "inhoud": 4,
+   "score": 4
+  },
+  {
+   "title": "WHO DON: Middle East respiratory syndrome coronavirus - Qatar - Avian Flu Diary",
+   "url": "https://afludiary.blogspot.com/2026/11/who-don-middle-east-respiratory.html",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-14T16:22:24+00:00",
+   "summary": "On 29 October 2026, the National International Health Regulations (IHR) ... Whether MERS-CoV will re-emerge as a global health threat remains ...",
+   "domain": "afludiary.blogspot.com",
+   "inhoud": 17,
+   "score": 17
+  },
+  {
+   "title": "The U.S. has lost measles elimination status. Here's what that means and who is most at risk.",
+   "url": "https://www.cbsnews.com/news/measles-elimination-status-united-states/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-14T16:16:07+00:00",
+   "summary": "The Pan American Health Organization is a regional office for the World Health Organization , covering North and South America. The agency is set ...",
+   "domain": "cbsnews.com",
+   "inhoud": 11,
+   "score": 11
+  },
+  {
+   "title": "'We’ll be back': US lawmakers make their case at COP31 without Trump",
+   "url": "https://www.devex.com/news/we-ll-be-back-us-lawmakers-make-their-case-at-cop31-without-trump-113896",
+   "src": "Devex Global Health",
+   "feed": "Devex Global Health",
+   "cat": "news",
+   "date": "2026-11-14T16:13:21+00:00",
+   "summary": "Governors, mayors, and a House delegation have arrived in Antalya, Turkey, promising to rebuild trust while at the same time warning that the president retains his veto pen.",
+   "domain": "devex.com",
+   "inhoud": 0,
+   "score": 5
+  },
+  {
+   "title": "US Has Lost Measles Elimination Status, Global Health Authorities Say",
+   "url": "https://kffhealthnews.org/public-health/us-measles-elimination-status-lost-outbreaks-continuous-spread-year-paho-cdc/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-14T14:44:08+00:00",
+   "summary": "PAHO, an international group that oversees health in the Americas and works with the World Health Organization, based its assessment on two analyses: ...",
+   "domain": "kffhealthnews.org",
+   "inhoud": 14,
+   "score": 17
+  },
+  {
+   "title": "Can Bundibugyo vaccines be made sterile without filtration? - Drug Discovery News",
+   "url": "https://www.drugdiscoverynews.com/can-bundibugyo-vaccines-be-made-sterile-without-filtration-17662",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-14T14:32:28+00:00",
+   "summary": "These findings underpin the global ambition set out by the World Health Organization (WHO) to eliminate cervical cancer as a public health problem.",
+   "domain": "drugdiscoverynews.com",
+   "inhoud": 7,
+   "score": 7
+  },
+  {
+   "title": "'You have to cope': why don't we hear of the 'epidemic' of women's loneliness? - The Guardian",
+   "url": "https://www.theguardian.com/society/2026/nov/15/epidemic-of-lonely-women-female-male-loneliness",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-14T14:19:11+00:00",
+   "summary": "You feel alone.” We're living through a global crisis of loneliness, with the World Health Organization (WHO) declaring it a priority for public ...",
+   "domain": "theguardian.com",
+   "inhoud": 5,
+   "score": 10
+  },
+  {
    "title": "After 26 years, the US has lost its measles elimination status - CNN",
    "url": "https://www.cnn.com/2026/11/13/health/us-measles-elimination-status",
    "src": "WHO Alert",
@@ -350,18 +472,6 @@
    "domain": "wusa9.com",
    "inhoud": 10,
    "score": 10
-  },
-  {
-   "title": "WHO DG Candidate Maria Neira Calls for Strategic Reforms to Rebuild Trust and Strengthen Global Health",
-   "url": "https://healthpolicy-watch.news/who-dg-candidate-maria-neira-calls-for-strategic-reforms-to-rebuild-trust-and-strengthen-global-health/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-11-14T13:15:08+00:00",
-   "summary": "The World Health Organization (WHO) must rebuild public trust, protect its most important functions and resist across-the-board budget cuts as it confronts growing health threats and shrinking financial resources, according to Dr. Maria Neira, a candidate to become the agency’s next director-general",
-   "domain": "healthpolicy-watch.news",
-   "inhoud": 20,
-   "score": 24
   },
   {
    "title": "The Garbage Man: Bill Gates has earned billions investing in climate-polluting landfills",
@@ -1300,6 +1410,20 @@
    "domain": "nytimes.com",
    "inhoud": 4,
    "score": 9
+  },
+  {
+   "title": "Feasibility Study Consultant in Abyan, Yemen",
+   "url": "https://reliefweb.int/job/4238263/feasibility-study-consultant-abyan-yemen",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-13T14:21:19+00:00",
+   "summary": "Feasibility Study Consultant in Abyan, Yemen ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -36,
+   "score": -32,
+   "gnews": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1QVWhLdFF6cjhqaEtodUZScm5leFR0d1BIczktdzV6cVZSYk02bjRDcEhxRkJENzhIMXlUeEkzSFlsUVFnaC1IdVNrUUs2dHRtSXlYcUR3UmxFdVdaRTV3MHZNaUgzbC1ld012UHhsd2lYM1QwNDJqc3NDbTZrLUU?oc=5"
   },
   {
    "title": "Correction: Travel history and occupation among diagnosed Cutaneous Leishmaniasis cases in Guyana: A multi-site retrospective case series, 2017–2021",
@@ -6549,69 +6673,6 @@
    "score": 11
   },
   {
-   "title": "Kraków shooter dies in hospital",
-   "url": "https://www.politico.eu/article/krakow-shooter-dies-in-hospital/",
-   "src": "POLITICO.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-11-09T08:47:00+00:00",
-   "summary": "Kraków shooter dies in hospital POLITICO.eu",
-   "domain": "politico.eu",
-   "score": 5,
-   "inhoud": 0,
-   "gnews": "https://news.google.com/rss/articles/CBMickFVX3lxTE83Z1lWLWZJZXN2TDBQZWJ4QTNFNVRsZG5HQTZhWFRkX3VrNmFpZy1VUzhxRGVtYWMtMWpMZTFYalVaT25pNTVtTDJ3VFJVLUNJMVpGWHp6Y2g5czQtZnR4Nno5aHlXMjcybEpkaFF1TWVxZw?oc=5"
-  },
-  {
-   "title": "Brazil confirms 4 Newcastle disease outbreaks as export restrictions mount",
-   "url": "https://www.foodagribusiness.world/poultry/brazil-confirms-3-more-newcastle-disease-outbreaks",
-   "src": "All about feed",
-   "feed": "WHO Disease Outbreak News",
-   "cat": "who",
-   "date": "2026-11-09T08:01:46+00:00",
-   "summary": "Brazil confirms 4 Newcastle disease outbreaks as export restrictions mount All about feed",
-   "domain": "foodagribusiness.world",
-   "score": -2,
-   "inhoud": 0,
-   "gnews": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTWZXNjJvd1JobzBxa3NNV2FBemhtbktxZWdsYTlpVktYODZJQjRqdzNHcVAxSzVtOUotSDBTalNjMV9Hdlh2VExfenVNTmdlcGZ6OWhJOERiOGotbmRPM1RhRzA4VjNIbVctVXVkekcwdm04TG5VQWlWMkNFQWFONklzZThFNk1nRTZZSGJvS0YxQVM2NFlnVg?oc=5"
-  },
-  {
-   "title": "Winter is coming",
-   "url": "https://www.politico.eu/newsletter/london-playbook/winter-is-coming/",
-   "src": "POLITICO.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-11-09T07:04:00+00:00",
-   "summary": "Winter is coming POLITICO.eu",
-   "domain": "politico.eu",
-   "score": 5,
-   "inhoud": 0,
-   "gnews": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA5M3hEa210MmFlN3E4Y1RQd3JTNVQ0UjUySzVVV0hfWUVuSkxiSUY4VXEwdVNVV19STTIwZ0YyTTllcDhvdnRSbzhrdGVvbXpIZXptVi1JdkxTOTJrWmMwUTA3QkRlOGRCQWRTSVZnRGFSTGN0M3VF?oc=5"
-  },
-  {
-   "title": "Devex Pro Insider: Should we be worried about transparency in aid?",
-   "url": "https://www.devex.com/news/devex-pro-insider-should-we-be-worried-about-transparency-in-aid-113824",
-   "src": "Devex Global Health",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-11-09T06:56:32+00:00",
-   "summary": "Rubio weighs stepping away from his role after the GOP’s midterm loss; and Education Cannot Wait hits 90% of its $600 million funding goal.",
-   "domain": "devex.com",
-   "inhoud": 0,
-   "score": 5
-  },
-  {
-   "title": "Devex Debrief: Elections have consequences",
-   "url": "https://www.devex.com/news/devex-debrief-elections-have-consequences-113812",
-   "src": "Devex Global Health",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-11-09T06:55:35+00:00",
-   "summary": "Emboldened by the midterms, Democrats in Congress plan to flex their foreign aid muscles again.",
-   "domain": "devex.com",
-   "inhoud": 0,
-   "score": 5
-  },
-  {
    "title": "Doctors are using bacteria-killing viruses against superbugs that drugs cannot beat, and in a Belgian ser",
    "url": "https://timesofindia.indiatimes.com/science/discovery/revolutionary-phage-therapy-shows-77-success-in-combating-superbugs-experts-release-first-global-treatment-guidelines/articleshow/135642367.cms",
    "src": "The Times of India",
@@ -6638,30 +6699,6 @@
    "gnews": "https://news.google.com/rss/articles/CBMipAJBVV95cUxQVmFXTDhKR05XUU1aMmx1TVJnZDNxbWRtbENzbUtMMzVtN25aVG5xOFJqMlAwa0k3RDZ5UUlBclptalI2YjNQQnZ1cC1LRURyOFcxTW9vU3ZURUpxalVYd3V0YzdHdWViaU0xQXV1c0RRNnZFNm5SS2ZhQUJYUk9lNTlzcURtaDU2X1ZTTmdvZVZFa1gwbzdoQnIySFRWS18wNnFURTYwZElDRnZQeElsZGU5NGlJLVhNUlFaM1h1Y1dLbFhQUlNnN0NFUWQxY2JndVhRZTdQVUlnNEtuZmpoMTlDWHBrNGplUTVoTExicDI5WDNFeW1zVk1HbzlHWHlpRDlqVlR5bkhFUHQzLWtUbm9TbjNPNjEtS3laQUszb1lqdmY00gGqAkFVX3lxTE9wV2lyY1pjT1kwcUFxODBSWjlVb2JoX0w1akF3blhOS2VJRzI1eWVTczBQZHRTR0pxaEJSS191YVBUSWRiQ05HVnpzVUZuZHo1TEtFVkpqRlJtckVtZEsxNExteTA3UzF6WmJnR3RRYVR2eElIZ1M1WkR1bklmLW1TdHNsWW15V053a0V1aW95UkxrbjZzMHZQcEtid003TUNNYTJwcGxmbmJZY2RaczhyNl84MW1VbHlaLTAwejdzUmtzeUVUbV9DMENRV2hDbGhhaDlSMHI2dUd2NEo1RDRfakl3V2FLQTRZejhfdnZLTlR0M3B6Y0hJeEZkSHZ3eUREYjkwTGFYeFlNMEtKMHhrSERVOHhHZmYwWXZmUkRZdEQ0UnBYSmEyWnc?oc=5"
   },
   {
-   "title": "Essential medicines face removal from EU critical list",
-   "url": "https://www.rapporteur.com/news/essential-medicines-face-removal-from-eu-critical-list/",
-   "src": "Rapporteur (ex-Euractiv)",
-   "feed": "Rapporteur (ex-Euractiv)",
-   "cat": "policy",
-   "date": "2026-11-09T03:00:44+00:00",
-   "summary": "Plasma industry warns that treatments for immune disorders and cancer could lose their critical designation",
-   "domain": "rapporteur.com",
-   "inhoud": 4,
-   "score": 9
-  },
-  {
-   "title": "INTERVIEW: Swiss pharma industry warns US tariff threat still looms",
-   "url": "https://www.rapporteur.com/news/interview-swiss-pharma-industry-warns-us-tariff-threat-still-looms/",
-   "src": "Rapporteur (ex-Euractiv)",
-   "feed": "Rapporteur (ex-Euractiv)",
-   "cat": "policy",
-   "date": "2026-11-09T03:00:13+00:00",
-   "summary": "Tariffs on medicines could soon be back on the table, with or without Trump.",
-   "domain": "rapporteur.com",
-   "inhoud": 0,
-   "score": 5
-  },
-  {
    "title": "Funding deficits risk reversing hard-won gains in Turkana's trachoma fight",
    "url": "https://nation.africa/kenya/health/funding-deficits-risk-reversing-hard-won-gains-in-turkana-s-trachoma-fight-5658004",
    "src": "Daily Nation",
@@ -6686,42 +6723,6 @@
    "score": -4,
    "inhoud": 0,
    "gnews": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMWh0M3Z4aUNOSWlPSEVZZjlrY0s5cUgtVnVRZktpUEFGVG16SmRzc2d3T2hGTnkwNEFjTTJxT1dhdXVCNnpreXpYQzdzek1ZX3gxMUpZTG0zUlpic1dLUmVqaHJJaW5lZ2I3QXIxYzZiS1cyTk1RTkNTNEFDb1lTXy1zbElTM0hjUmpyVg?oc=5"
-  },
-  {
-   "title": "Food industry pushes back on WHO guidance for products with added colour, sweeteners",
-   "url": "https://www.channelnewsasia.com/world/food-industry-pushes-back-who-guidance-products-added-colour-sweeteners-6536901",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "Logo of the World Health Organisation (WHO) on a glass panel at the WHO headquarters in Geneva, Switzerland, Apr 29, 2026. (Photo: REUTERS/Denis ...",
-   "domain": "channelnewsasia.com",
-   "inhoud": 4,
-   "score": 4
-  },
-  {
-   "title": "UNFCCC chief warns climate crisis has become global health emergency on pandemic scale",
-   "url": "https://petra.gov.jo/en/news/unfccc-chief-warns-climate-crisis-has-become-global-health-emergency-on-pandemic-scale",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "Amman, Nov. 9 (Petra) – Simon Stiell, executive secretary of the United Nations Framework Convention on Climate Change (UNFCCC), warned on Monday ...",
-   "domain": "petra.gov.jo",
-   "score": 20,
-   "inhoud": 17
-  },
-  {
-   "title": "Fears over Ebola spread in DRC as patients flee attack on treatment centre - The Telegraph",
-   "url": "https://www.telegraph.co.uk/global-health/science-and-disease/fears-over-ebola-spread-drc/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "Global Health Security · Global Health Security home · Climate & People · Science & Disease · Terror & Security · Women & Girls · Opinion & Analysis.",
-   "domain": "telegraph.co.uk",
-   "score": 12,
-   "inhoud": 9
   },
   {
    "title": "As Global Health Aid Dries Up, Non-Profit Drug Development Faces New Challenges",
@@ -7270,6 +7271,19 @@
    "score": 2
   },
   {
+   "title": "Is climate change propelling the rise of superbugs?",
+   "url": "https://www.preventionweb.net/news/climate-change-propelling-rise-superbugs",
+   "src": "PreventionWeb.net",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-04T08:00:00+00:00",
+   "summary": "Is climate change propelling the rise of superbugs? PreventionWeb.net",
+   "domain": "preventionweb.net",
+   "inhoud": 8,
+   "score": 11,
+   "gnews": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdDdCVlNRTmJOWmtBZ0lhd25aVnZmV25BZVlrR1cxZDItRzBnUzFtWW5Xak1od2NDNVV4M0RWTl83TWxjOFRqekxDd2d3NG92NUVhWXI4bEJmYUFqWGJ4SmppTm1mcmI3MXhiVGl3WWJMZ1BTcnRaREVTVUxrM3FsMA?oc=5"
+  },
+  {
    "title": "Scientists turn viruses into weapons against deadly superbugs",
    "url": "https://www.sciencedaily.com/releases/2026/11/261102202828.htm",
    "src": "Science Daily",
@@ -7281,19 +7295,6 @@
    "inhoud": 4,
    "score": 3,
    "gnews": "https://news.google.com/rss/articles/CBMib0FVX3lxTE10YVVTTnVHeFMzQmRNU3M3YmFIcWUyZC11c0UyeEF3MnVUekpYZzdzSlMxY3pDOXM3VDVEWm9xN1FPVWp0Ym1udC1KYjhEMERUWTRNVTJHRTdsZXB6NHFzUEc5LUNodWVfVXRlN1Y4cw?oc=5"
-  },
-  {
-   "title": "Is climate change propelling the rise of superbugs?",
-   "url": "https://www.unep.org/en/news-and-stories/story/climate-change-propelling-rise-superbugs",
-   "src": "UNEP - UN Environment Programme",
-   "feed": "AMR policy & research",
-   "cat": "amr",
-   "date": "2026-11-04T08:00:00+00:00",
-   "summary": "Is climate change propelling the rise of superbugs? UNEP - UN Environment Programme",
-   "domain": "unep.org",
-   "inhoud": 9,
-   "score": 11,
-   "gnews": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNeXdVeThnWHFONG9Sa09vdmtRMThIYmJUVktvcXJUdXg3ZUd0X3dRYm96ZWhEZko3dUJwcm1RQlVONWctWEptZUJSbDRCZlNhNEU4UFJKNHNOS09qSVJGTldCb1VCMEpYNnJJNFdzV1E1WTBRVFpiTGV1d0RRVkVMZEs0d3VxR0lDRmNqd3lFV18?oc=5"
   },
   {
    "title": "Updated Guidelines on Surgical Management of Drug-Resistant Epilepsy",
