@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T23:42:13+00:00",
+ "generated": "2026-11-14T06:43:25+00:00",
  "feeds_ok": 43,
  "feeds_tot": 43,
  "status": {
@@ -62,7 +62,7 @@
   },
   "ReliefWeb Health": {
    "ok": true,
-   "msg": "8 items (via kandidaat 2)",
+   "msg": "6 items (via kandidaat 2)",
    "cat": "emerg",
    "via": 2,
    "fallback": true,
@@ -255,7 +255,7 @@
   },
   "BMJ Global Health": {
    "ok": true,
-   "msg": "8 items",
+   "msg": "9 items",
    "cat": "journal",
    "via": 1,
    "fallback": false
@@ -319,6 +319,90 @@
  },
  "items": [
   {
+   "title": "US loses measles-free status after continued spread of the disease, WSJ reports | Reuters",
+   "url": "https://www.reuters.com/world/us-loses-measles-free-status-after-continued-spread-disease-wsj-reports-2026-11-14/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-14T04:39:58+00:00",
+   "summary": "The international health body did not immediately respond to ‌a request from Reuters for comment on the report, which cited people familiar with ...",
+   "domain": "reuters.com",
+   "inhoud": 7,
+   "score": 12
+  },
+  {
+   "title": "Awareness and attitudes towards decolonising global health: findings from an international survey of perioperative clinicians",
+   "url": "http://gh.bmj.com/cgi/content/short/11/11/e024372?rss=1",
+   "src": "BMJ Global Health",
+   "feed": "BMJ Global Health",
+   "cat": "journal",
+   "date": "2026-11-14T04:17:32+00:00",
+   "summary": "",
+   "domain": "gh.bmj.com",
+   "inhoud": 10,
+   "score": 13
+  },
+  {
+   "title": "Finalists for the Paul Farmer Lectureship and Award for Global Health Equity",
+   "url": "https://www.mcgill.ca/spgh/about-us/paul-farmer-lectureship-and-award/finalists",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-14T02:03:51+00:00",
+   "summary": "2026 Finalists The strength of this year's nominations reflects the remarkable work being carried out around the world to advance health equity.",
+   "domain": "mcgill.ca",
+   "inhoud": 6,
+   "score": 6
+  },
+  {
+   "title": "Conflict and disease outbreaks deepen DR Congo's hunger crisis as record numbers are ... - Unicef",
+   "url": "https://www.unicef.org/press-releases/conflict-and-disease-outbreaks-deepen-dr-congos-hunger-crisis-record-numbers-are",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-14T01:44:23+00:00",
+   "summary": "... Emergency levels of hunger in early 2027. ... Health Emergencies Programme. “When families cannot access enough ...",
+   "domain": "unicef.org",
+   "inhoud": 6,
+   "score": 13
+  },
+  {
+   "title": "Our partners | Center for Global Health Equity - University of Michigan",
+   "url": "https://globalhealthequity.umich.edu/about/partners?1f9cd8db_page=2",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-14T01:39:11+00:00",
+   "summary": "Explore the institutions and collaborators we work with around the world to advance equitable, community-driven global health research.",
+   "domain": "globalhealthequity.umich.edu",
+   "inhoud": 6,
+   "score": 9
+  },
+  {
+   "title": "Latin American countries strengthen vaccination, screening, and access to technologies to ... - PAHO",
+   "url": "https://www.paho.org/en/news/13-11-2026-latin-american-countries-strengthen-vaccination-screening-and-access-technologies",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-14T01:05:02+00:00",
+   "summary": "The meeting aimed to accelerate progress toward the 90-70-90 targets set out in the World Health Organization's global strategy for the elimination of ...",
+   "domain": "paho.org",
+   "inhoud": 13,
+   "score": 20
+  },
+  {
+   "title": "Making measles history together: a resource for local government - GOV.UK",
+   "url": "https://www.gov.uk/government/publications/measles-resources-for-local-government/making-measles-history-together-a-resource-for-local-government",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-14T00:11:03+00:00",
+   "summary": "Eliminating measles (and rubella) is a core goal of the World Health Organization ( WHO ) European Immunization Agenda 2030 and an important part of ...",
+   "domain": "gov.uk",
+   "inhoud": 6,
+   "score": 11
+  },
+  {
    "title": "[Correspondence] Lula's new term—safeguarding science, health, and the Amazon",
    "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02234-8/fulltext?rss=yes",
    "src": "The Lancet",
@@ -365,6 +449,30 @@
    "domain": "statnews.com",
    "inhoud": -12,
    "score": -11
+  },
+  {
+   "title": "Fighting Ebola in the Democratic Republic of the Congo | International Medical Corps",
+   "url": "https://internationalmedicalcorps.org/video/fighting-ebola-in-the-democratic-republic-of-the-congo/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-13T22:19:03+00:00",
+   "summary": "Emergency Response & Preparedness · Family & Community Health · Ebola · Infectious Disease. Your gift can save lives. Deliver health and hope to those ...",
+   "domain": "internationalmedicalcorps.org",
+   "inhoud": 6,
+   "score": 6
+  },
+  {
+   "title": "Lindsay Keegan Appointed Rees Presidential Endowed Chair in Global Medicine",
+   "url": "https://medicine.utah.edu/internal-medicine/news/2026/11/lindsay-keegan-appointed-rees-presidential-endowed-chair-global",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-13T22:18:50+00:00",
+   "summary": "... world. Keegan recently served as a core member of the World Health Organization's Ad Hoc diphtheria vaccination working group . She co-led ...",
+   "domain": "medicine.utah.edu",
+   "inhoud": 4,
+   "score": 7
   },
   {
    "title": "US poised to lose its 'measles elimination status' after more than 25 years - Stateline.org",
@@ -598,6 +706,20 @@
    "domain": "swissre.com",
    "inhoud": 4,
    "score": 4
+  },
+  {
+   "title": "COP31: Climate finance falls short as calls grow for polluters to pay",
+   "url": "https://news.un.org/en/story/2026/11/1168802",
+   "src": "UN News",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-13T19:22:08+00:00",
+   "summary": "COP31: Climate finance falls short as calls grow for polluters to pay UN News",
+   "domain": "news.un.org",
+   "fallback": true,
+   "inhoud": 0,
+   "score": 5,
+   "gnews": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE15SGEwOVBLUHZEOUtMRkQ0T3RmNDJ1a0lyRGhYNWFZb2tWal80bEFYTHJfa29NOVRJbFo3cmxLR2RqbkJIY2lwMjJqd2x5RGdyNkx5dXA0MA?oc=5"
   },
   {
    "title": "Middle East respiratory syndrome (MERS) – Qatar",
@@ -1639,6 +1761,19 @@
    "domain": "cidrap.umn.edu",
    "inhoud": 7,
    "score": 13
+  },
+  {
+   "title": "Inhaled living medicine reduces drug-resistant lung biofilms in the lungs of pigs",
+   "url": "https://www.news-medical.net/news/20261112/Inhaled-living-medicine-reduces-drug-resistant-lung-biofilms-in-the-lungs-of-pigs.aspx",
+   "src": "News-Medical",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-12T20:13:00+00:00",
+   "summary": "Inhaled living medicine reduces drug-resistant lung biofilms in the lungs of pigs News-Medical",
+   "domain": "news-medical.net",
+   "inhoud": 0,
+   "score": -1,
+   "gnews": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNeDRIWWp2bk01cld5eGpHWGJxYWRIdHFCSVhpSUs1WHcwX0RnVnFpYlBCSUpUQ0RKVVY4U1o3OFlMQmRENEJmbmtrWWdjYXVwSi1vQi15cDdvbzJiZUhvZmJ2M0FoWkJ6aWJMMC1EUmxvMDVmYnQxaHhvQkl5VGtTcDZ4bmxqRVlZX0Y5cTFGUjJxd0kzbE9ueXI1RWgwYi1JQl9WbW54bERIWTFMUWc3dUVJT0Z1STBTek1LbFoxYUFCdXhteUoxNQ?oc=5"
   },
   {
    "title": "Tuberculosis Rapid Test Allows In-the-Field Results | News | Northwestern Engineering",
@@ -3859,6 +3994,20 @@
    "domain": "ndtv.com",
    "inhoud": 10,
    "score": 10
+  },
+  {
+   "title": "Health & Nutrition Programs Coordinator (Syria - Damascus)",
+   "url": "https://reliefweb.int/job/4237903/health-nutrition-programs-coordinator-syria-damascus",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-11T08:13:41+00:00",
+   "summary": "Health & Nutrition Programs Coordinator (Syria - Damascus) ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -20,
+   "score": -16,
+   "gnews": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPRUd6Y3pYS09TUUYyV0dFZnQ1R1NNa3FYb3dGUlFTdnFwQVJOTzc4blZNSE5BNUhzd21JYlk1LVduV2xLTHVVTm5vNzk5ZU04TWlXeTVFYzhjanNXTFNObWFTS2hKajZXOUNTdnY3a3ZkT2RWdFFtdEI2czFWVWg5MEpBMHZKeEtYMGN2UVFjOA?oc=5"
   },
   {
    "title": "The economist making the case for climate as AI fortunes grow",
@@ -6575,143 +6724,6 @@
    "inhoud": 15
   },
   {
-   "title": "Can the World Finally Deliver on Chemical Pollution? Lead is the Test.",
-   "url": "https://www.cgdev.org/blog/can-world-finally-deliver-chemical-pollution-lead-test",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "Chemical pollution should be a global priority. The World Health Organization (WHO) estimated that in 2019, manmade chemicals killed about two million ...",
-   "domain": "cgdev.org",
-   "score": 9,
-   "inhoud": 6
-  },
-  {
-   "title": "Unitaid launches US$10.9 million initiative to protect essential health products from rising ...",
-   "url": "https://unitaid.org/news-blog/unitaid-launches-us10-9-million-initiative-to-protect-essential-health-products-from-rising-temperatures/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "“Climate and weather events are increasingly affecting global supply chains and the potential impacts on the quality of medicines and diagnostics at ...",
-   "domain": "unitaid.org",
-   "score": 17,
-   "inhoud": 10
-  },
-  {
-   "title": "WHO Urges Testing to Confirm Infections with New COVID-19 Variant PJ.2.1 - En.tempo.co",
-   "url": "https://en.tempo.co/read/2123259/who-urges-testing-to-confirm-infections-with-new-covid-19-variant-pj-2-1",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "TEMPO.CO, Jakarta - The World Health Organization (WHO) has emphasized the importance of testing to confirm infections with the PJ.2.1 variant of ...",
-   "domain": "en.tempo.co",
-   "score": 14,
-   "inhoud": 11
-  },
-  {
-   "title": "Le Pen’s plan to end EU diplomacy",
-   "url": "https://www.politico.eu/podcast/brussels-playbook-podcast/le-pens-plan-to-end-eu-diplomacy/",
-   "src": "politico.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "Le Pen’s plan to end EU diplomacy politico.eu",
-   "domain": "politico.eu",
-   "score": 5,
-   "inhoud": 0,
-   "gnews": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNeVA4T0plZ05nVVJzSjZKQVB6aEhlNmxVbExGdUdtN2N2c01ZTHdpREd4RnV6TVAwT1ZvX0FHZGhhNkM2TUFpV3R5LVg5TC1VTWtsZG0ySDM1RXljNU1sZk81ejNUdi05cUQwRXBZdDVaUDFqVnpUY2hqalhlQ2dOd3UyMFA4SFNuZTRXRE1uREs3SGlzLWc?oc=5"
-  },
-  {
-   "title": "Climate and Health Funders Coalition Awards $225 Million in First Year To Accelerate ...",
-   "url": "https://www.rockefellerfoundation.org/news/climate-health-funders-coalition-225-million-first-year-accelerate-solutions-improve-health/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "GHIIN recently co-organized the flagship Global Heat Forum in Bangkok, which convened over 600 participants, including the world's top experts on ...",
-   "domain": "rockefellerfoundation.org",
-   "score": 12,
-   "inhoud": 12
-  },
-  {
-   "title": "Health Security At Risk: How Climate Change Spawns The Next Epidemic - Nation Thailand",
-   "url": "https://www.nationthailand.com/sustaination/40073274",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "Rising global temperatures accelerate the breeding of disease vectors like mosquitoes, expanding their range, while the thawing of permafrost risks re ...",
-   "domain": "nationthailand.com",
-   "score": 14,
-   "inhoud": 14
-  },
-  {
-   "title": "University of Global Health Equity: The Medical School That Chose the Countryside",
-   "url": "https://constructor.university/events/university-global-health-equity-medical-school-chose-countryside",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "Can UGHE become a benchmark for global health education in lower-income countries? We will discuss this and more with Professor Abebe Bekele, Deputy ...",
-   "domain": "constructor.university",
-   "score": 7,
-   "inhoud": 7
-  },
-  {
-   "title": "AFRICA CDC WELCOMES THE APPOINTMENT OF DR MARK DYBUL AS EXECUTIVE DIRECTOR OF THE GLOBAL FUND AND CALLS FOR A NEW ERA OF AFRICAN OWNERSHIP AND HEALTH SOVEREIGNTY",
-   "url": "https://africacdc.org/news-item/africa-cdc-welcomes-the-appointment-of-dr-mark-dybul-as-executive-director-of-the-global-fund-and-calls-for-a-new-era-of-african-ownership-and-health-sovereignty/",
-   "src": "Africa CDC",
-   "feed": "Africa CDC",
-   "cat": "global",
-   "date": "2026-11-08T21:13:11+00:00",
-   "summary": "Addis Ababa, 9 November 2026 The Africa Centres for Disease Control and Prevention (Africa CDC) welcomes the appointment of Dr Mark Dybul as the next Executive Director of the Global Fund to Fight AIDS, Tuberculosis and Malaria and looks forward to deepening cooperation in support of Africa’s health",
-   "domain": "africacdc.org",
-   "inhoud": 22,
-   "score": 25
-  },
-  {
-   "title": "Beyond the broken glass: The human cost of the 1938 November Pogrom",
-   "url": "https://news.un.org/en/story/2026/11/1168756",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-11-08T17:00:00+00:00",
-   "summary": "Beyond the broken glass: The human cost of the 1938 November Pogrom UN News",
-   "domain": "news.un.org",
-   "fallback": true,
-   "inhoud": 0,
-   "score": 5,
-   "gnews": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1Yc2g1RTN5dTRjb0hiSUw0MGpWUEhDelRqLTZfT3NUZmotLV9pVnJQazdxRHNpbFFGVW5EdXloUEpBSEwyNERXaEQ3UVVkdWNVMzY4dkhhTQ?oc=5"
-  },
-  {
-   "title": "Wirecard fugitive claimed he toppled Sebastian Kurz in messages to Russian spy",
-   "url": "https://www.politico.eu/article/wirecard-fugitive-jan-marsalek-claimed-he-toppled-sebastian-kurz-in-messages-to-russian-spy/",
-   "src": "POLITICO.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-11-08T16:57:00+00:00",
-   "summary": "Wirecard fugitive claimed he toppled Sebastian Kurz in messages to Russian spy POLITICO.eu",
-   "domain": "politico.eu",
-   "score": 5,
-   "inhoud": 0,
-   "gnews": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQjVzX2lwN0t4bmtsOE9NaFYyNTdXVDNNcjBTZzJkMXBhM3cyY0wyc1lRQ21Wd3BLQ2QzdzVtWlhwZmZHMnZ1NS1rTHBkYVY4REpqLVJ2dno2NTFfZ2ctVk9VdUpJX3RSRnlOYV9aa01KNWRMdGowcllEVk5ydm90b01rZ2VvM2c1Wk11TGlpak56YzllMkZiaHZCWk5DSm5qUzRVaGtwZWo3SXlZMjJCcHI1V1R5RXJWZ184NWNxZmt3Zw?oc=5"
-  },
-  {
-   "title": "In America’s measles epidemic, RFK Jr. is now on trial",
-   "url": "https://www.politico.eu/article/in-americas-measles-epidemic-rfk-jr-is-now-on-trial/",
-   "src": "POLITICO.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-11-08T16:39:00+00:00",
-   "summary": "In America’s measles epidemic, RFK Jr. is now on trial POLITICO.eu",
-   "domain": "politico.eu",
-   "score": 13,
-   "inhoud": 8,
-   "gnews": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNbGViNlhWLWoxemgzd0dfSW5iYzZZSWh1N282YkNwTzhGc1Z3MkJCWjBpS196NVBmbU80eDV6UEk4ZG5QbkJwM0E4NlItbFBncWZSLW1hU2JwMUFDWVBvTnQ1TGVvVlhmQVc0QlZwRDlLWDdIRVpUT2JrRVBGOUdPRnlUaW9udDNSZl95QQ?oc=5"
-  },
-  {
    "title": "As Global Health Aid Dries Up, Non-Profit Drug Development Faces New Challenges",
    "url": "https://healthpolicy-watch.news/funders-float-natural-selection-for-non-profit-neglected-disease-drug-developers-as-global-health-aid-dries-up/",
    "src": "Health Policy Watch",
@@ -7527,6 +7539,19 @@
    "gnews": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPY01aUFZYQ0JRb3hfRktHZklZSzMwbDhfT1hnNlBURkVaTXprRHJlVlJTdW9TUlFEX1pseFRSdFBmZjVRd19oMzROdEdUTUZzczE1RmJJekQ4OGVRbnp2YnBFUThMYzZlNlFRdFVoMmhIRnJDLVd3Y1BBMnlCbVdLYzI2OGJ3bmxyckltR19NRkMzR0FZWHp4UndTeXJHMll4RGFBWDJFcUVUVkk2Q3Mwal9lWWdValhtaFhYNUMwYXFPZw?oc=5"
   },
   {
+   "title": "Seasoned French Diplomat Returns To Lead Pandemic Annex Talks",
+   "url": "https://healthpolicy-watch.news/renowned-french-diplomat-returns-to-lead-pandemic-annex-talks/",
+   "src": "Health Policy Watch",
+   "feed": "Pandemic Agreement",
+   "cat": "pandemic",
+   "date": "2026-11-02T08:00:00+00:00",
+   "summary": "Seasoned French Diplomat Returns To Lead Pandemic Annex Talks Health Policy Watch",
+   "domain": "healthpolicy-watch.news",
+   "inhoud": 0,
+   "score": 7,
+   "gnews": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdXFDdTBtM0tIV3RweWJiTkNnNW9qRDJGay10NEVnQWxEczI5eXZwWjFWdkhzMFdQczB0TEtPT1ZIQjZIZld1bmlpNGI1ZkxLY3o2MWZzVlVCdXU0ZGNLa25rYnkwSmJfRlpxUEN2MldsbklrVzRoUlRmVl96LUVGTUhQc0sxRnFvZDhyaFhoTzVBZE0wSVAyY01n?oc=5"
+  },
+  {
    "title": "CDC Report Highlights 9.7 Million Infections From Antimicrobial Resistance Threats",
    "url": "https://www.infectiousdiseaseadvisor.com/news/cdc-antimicrobial-resistance-threats-report-2026/",
    "src": "Infectious Disease Advisor",
@@ -7576,19 +7601,6 @@
    "score": 18,
    "inhoud": 14,
    "gnews": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQV19Yb0tTWmFGUDhrcXNkbUZoeGRQZ21sc3dTbHBjTmtXeDliYXdObEdONjEtQjNiQTV0eDc0ZHh5bmpVT1JiRXBZNTZHUGY1MUhTbk12aDlzalZ6OTV0U25Tb1lQWW90MzdBYXFTam5QRzFYd3hzZmdOMHd5M0ZfNTFzZEJCaW9aSjY1dGJZWG1Na3FKLXdldg?oc=5"
-  },
-  {
-   "title": "Seasoned French Diplomat Returns To Lead Pandemic Annex Talks",
-   "url": "https://healthpolicy-watch.news/renowned-french-diplomat-returns-to-lead-pandemic-annex-talks/",
-   "src": "Health Policy Watch",
-   "feed": "PABS / IGWG",
-   "cat": "pandemic",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Seasoned French Diplomat Returns To Lead Pandemic Annex Talks Health Policy Watch",
-   "domain": "healthpolicy-watch.news",
-   "score": 7,
-   "inhoud": 0,
-   "gnews": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdXFDdTBtM0tIV3RweWJiTkNnNW9qRDJGay10NEVnQWxEczI5eXZwWjFWdkhzMFdQczB0TEtPT1ZIQjZIZld1bmlpNGI1ZkxLY3o2MWZzVlVCdXU0ZGNLa25rYnkwSmJfRlpxUEN2MldsbklrVzRoUlRmVl96LUVGTUhQc0sxRnFvZDhyaFhoTzVBZE0wSVAyY01n?oc=5"
   },
   {
    "title": "Recent virus outbreaks show urgent need to complete pandemic treaty, says WHO chief",
@@ -8802,18 +8814,6 @@
    "score": 2,
    "inhoud": 0,
    "gnews": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9GSDJxT1dMLUZiTjJWc09RWW9fMFc1Sjk0RHI0T3dKRHphaklST3VxUHU0WGxtcDFtRDhkVFdhdnpGOU5BNnBXWl91Sk90RjVB?oc=5"
-  },
-  {
-   "title": "Gepotidacin demonstrates quick symptom relief for urinary tract infections",
-   "url": "https://www.cidrap.umn.edu/antimicrobial-stewardship/gepotidacin-demonstrates-quick-symptom-relief-urinary-tract-infections",
-   "src": "CIDRAP Stewardship",
-   "feed": "CIDRAP Stewardship",
-   "cat": "amr",
-   "date": "2026-09-30T00:00:00+00:00",
-   "summary": "More than half the women in the small, single-arm trial experienced symptom relief in 24 hours.",
-   "domain": "cidrap.umn.edu",
-   "score": 2,
-   "inhoud": 0
   },
   {
    "title": "Solomon Islands calls for predictable financing for pandemic preparedness",
