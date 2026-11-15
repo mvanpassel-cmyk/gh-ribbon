@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T14:51:59+00:00",
+ "generated": "2026-11-15T20:27:37+00:00",
  "feeds_ok": 43,
  "feeds_tot": 43,
  "status": {
@@ -194,7 +194,7 @@
   },
   "Uniting to Combat NTDs": {
    "ok": true,
-   "msg": "6 items",
+   "msg": "5 items",
    "cat": "ntd",
    "via": 1,
    "fallback": true
@@ -319,12 +319,145 @@
  },
  "items": [
   {
+   "title": "New Orleans port sues owners of tanker involved in Mississippi crash - NPR",
+   "url": "https://www.npr.org/2026/11/15/nx-s1-6041677/new-orleans-port-sues-miracle-mississippi-cruise-ship",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-15T19:40:35+00:00",
+   "summary": "Health Reporting in the States · US has lost measles elimination status, global health authorities say · What universal free childcare is costing New ...",
+   "domain": "npr.org",
+   "inhoud": 4,
+   "score": 7
+  },
+  {
+   "title": "Opinion | Bacteria are beating antibiotics. Vaccines could help. - The Washington Post",
+   "url": "https://www.washingtonpost.com/opinions/2026/11/15/answer-antibiotic-resistance-is-more-vaccines/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-15T19:07:21+00:00",
+   "summary": "The writer, an infectious disease clinician, is a professor emeritus at the Center for Vaccine Development and Global Health at the University of ...",
+   "domain": "washingtonpost.com",
+   "inhoud": 14,
+   "score": 17
+  },
+  {
+   "title": "WHO urges concrete action on antimicrobial resistance worldwide",
+   "url": "https://www.premiumtimesng.com/news/top-news/925375-who-urges-concrete-action-on-antimicrobial-resistance-worldwide.html",
+   "src": "Premium Times Nigeria",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-15T18:35:19+00:00",
+   "summary": "WHO urges concrete action on antimicrobial resistance worldwide Premium Times Nigeria",
+   "domain": "premiumtimesng.com",
+   "inhoud": 8,
+   "score": 10,
+   "gnews": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYmoyckhGVXR1NUNEYTBRLUJIbDhhVDF6MjJERWhnbG01QldiRW5JSDM4RVhIMDBWRWo3ZGhSallDLWRORzV0RnRjZ3VfLWR1RHRQN1VuZlpJZzNUa2l6TUlxWjBnS0pFRm9ES3NkM0hONlhPbUhoZG5vaXBRWmFYZHNRSGhFZ21ZRlRVQ2ZHZ29mMWFVNUZaLUQ5WmxBbzRCZndvQ0lXZTJBWFJCZEx4YTI3bHk5NkwwX2RuSw?oc=5"
+  },
+  {
+   "title": "Document Analysis Reveals Outbreak Response Gaps Across Conflict-Affected Health Policies",
+   "url": "https://bioengineer.org/document-analysis-reveals-outbreak-response-gaps-across-conflict-affected-health-policies/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-15T15:46:46+00:00",
+   "summary": "... international health security instruments. The research was situated in ... global health authorities. To close these vulnerabilities, the ...",
+   "domain": "bioengineer.org",
+   "inhoud": 10,
+   "score": 4
+  },
+  {
+   "title": "'Who bears the cost?': UN official on the price of chemical pollution as Geneva kicks off ...",
+   "url": "https://genevasolutions.news/climate-environment/who-bears-the-cost-un-official-on-the-price-of-chemical-pollution-as-geneva-kicks-off-framework-s-first-meeting",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-15T15:40:40+00:00",
+   "summary": "... global framework on chemicals, adopted in Bonn in 2023. The ... We cover five core themes: Climate, Global Health , Peace & Humanitarian ...",
+   "domain": "genevasolutions.news",
+   "inhoud": 6,
+   "score": 6
+  },
+  {
+   "title": "3000 recover from Ebola in DR Congo: WHO - Anadolu Ajansı",
+   "url": "https://www.aa.com.tr/en/health/3-000-recover-from-ebola-in-dr-congo-who/4125898",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-15T15:27:49+00:00",
+   "summary": "World Health Organization Director-General Tedros Ghebreyesus expressed deep gratitude to the nurses, doctors, community health workers, contact ...",
+   "domain": "aa.com.tr",
+   "inhoud": 10,
+   "score": 10
+  },
+  {
+   "title": "STAT+: FDA rejects lung cancer treatment ivonescimab from Summit Therapeutics",
+   "url": "https://www.statnews.com/2026/11/15/fda-rejects-ivonescimab-lung-cancer-treatment-summit-therapeutics/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-11-15T15:05:15+00:00",
+   "summary": "The FDA has rejected ivonescimab, a treatment for a type of lung cancer developed by U.S. biotech Summit Therapeutics and the Chinese drugmaker Akeso.",
+   "domain": "statnews.com",
+   "inhoud": -7,
+   "score": -6
+  },
+  {
+   "title": "Malaria vaccine: Price set to fall by around 40 percent | Good News - Denkstrom",
+   "url": "https://denkstrom.org/en/goodnews/malaria-vaccine-price-set-to-fall-by-around-40-percent/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-15T14:39:13+00:00",
+   "summary": "... the global malaria burden. The World Health Organization recommended RTS,S in October 2021 as the first malaria vaccine against malaria in children.",
+   "domain": "denkstrom.org",
+   "inhoud": 9,
+   "score": 9
+  },
+  {
+   "title": "Syria launches vaccination campaign to stop polio outbreak in Deir ez-Zor - EMRO",
+   "url": "https://www.emro.who.int/syria/news/syria-launches-vaccination-campaign-to-stop-polio-outbreak-in-deir-ez-zor.html",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-15T14:25:42+00:00",
+   "summary": "... World Health Organization (WHO) and the United Nations Children's Fund (UNICEF). Syria launches vaccination campaign to stop polio outbreak in ...",
+   "domain": "emro.who.int",
+   "inhoud": 15,
+   "score": 22
+  },
+  {
+   "title": "US loses measles elimination status after year of outbreaks - Türkiye Today",
+   "url": "https://www.turkiyetoday.com/world/us-loses-measles-elimination-status-after-year-of-outbreaks-3232468",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-15T14:12:10+00:00",
+   "summary": "... Health Organization (PAHO) announced. PAHO is the World Health Organization's regional office for the Americas. A panel of experts appointed by ...",
+   "domain": "turkiyetoday.com",
+   "inhoud": 17,
+   "score": 17
+  },
+  {
+   "title": "DR Congo Ebola outbreak spreads to remote areas as violence hampers response - Xinhua",
+   "url": "http://english.news.cn/20261115/3d7b584dd20a49aea5234cef15a68173/c.html",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-15T13:32:05+00:00",
+   "summary": "... health authorities. In a joint statement issued Sunday, the World Health Organization (WHO) and humanitarian partners warned that 400 to 500 new ...",
+   "domain": "english.news.cn",
+   "inhoud": 12,
+   "score": 12
+  },
+  {
    "title": "Drug-resistant infections linked to 4.7m deaths, WHO warns",
    "url": "https://thesun.ng/drug-resistant-infections-linked-to-4-7m-deaths-who-warns/",
    "src": "The Sun Nigeria",
    "feed": "AMR policy & research",
    "cat": "amr",
-   "date": "2026-11-15T13:02:02+00:00",
+   "date": "2026-11-15T13:12:03+00:00",
    "summary": "Drug-resistant infections linked to 4.7m deaths, WHO warns The Sun Nigeria",
    "domain": "thesun.ng",
    "inhoud": 6,
@@ -344,15 +477,15 @@
    "score": 7
   },
   {
-   "title": "Six months on, accessing hard-to-reach communities key to halting Ebola outbreak | WHO",
-   "url": "https://www.afro.who.int/countries/democratic-republic-of-congo/news/six-months-accessing-hard-reach-communities-key-halting-ebola-outbreak",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
+   "title": "Six months on, accessing hard-to-reach communities key to halting Ebola outbreak",
+   "url": "https://africacdc.org/news-item/six-months-on-accessing-hard-to-reach-communities-key-to-halting-ebola-outbreak/",
+   "src": "Africa CDC",
+   "feed": "Africa CDC",
+   "cat": "global",
    "date": "2026-11-15T08:24:03+00:00",
-   "summary": "World Health Organization — African Region · Donate. Health topics. All ... health zones in eight provinces. Contact follow-up remains below ...",
-   "domain": "afro.who.int",
-   "inhoud": 10,
+   "summary": "15 November 2026 | Addis Ababa, Geneva, Kinshasa, New York, Rome Six months into the Ebola outbreak caused by Bundibugyo virus in the Democratic Republic of the Congo, significant progress has been made in bringing lifesaving services closer to affected communities, despite immense challenges. Howev",
+   "domain": "africacdc.org",
+   "inhoud": 12,
    "score": 17
   },
   {
@@ -731,18 +864,6 @@
    "score": 7
   },
   {
-   "title": "WHO issues first guidelines on type 1 diabetes for adults",
-   "url": "https://www.who.int/news/item/14-11-2026-who-issues-first-guidelines-on-type-1-diabetes-for-adults",
-   "src": "WHO News",
-   "feed": "WHO News",
-   "cat": "who",
-   "date": "2026-11-14T13:30:42+00:00",
-   "summary": "",
-   "domain": "who.int",
-   "inhoud": 10,
-   "score": 14
-  },
-  {
    "title": "US loses its measles elimination status as cases surge | wusa9.com",
    "url": "https://www.wusa9.com/article/news/nation-world/us-measles-elimination-status-forfeit/507-a415f887-20e1-4f1e-ab07-d355163c5f08",
    "src": "WHO Alert",
@@ -761,10 +882,10 @@
    "feed": "Health Policy Watch",
    "cat": "policy",
    "date": "2026-11-14T13:15:08+00:00",
-   "summary": "The World Health Organization (WHO) must rebuild public trust, protect its most important functions and resist across-the-board budget cuts as it confronts growing health threats and shrinking financial resources, according to Dr. Maria Neira, a candidate to become the agency’s next director-general",
+   "summary": "The World Health Organization (WHO) must rebuild public trust, protect its most important functions, and resist across-the-board budget cuts as it confronts growing health threats and shrinking financial resources, according to Dr. Maria Neira, a candidate to become the agency’s next director-genera",
    "domain": "healthpolicy-watch.news",
-   "inhoud": 20,
-   "score": 24
+   "inhoud": 17,
+   "score": 21
   },
   {
    "title": "The Garbage Man: Bill Gates has earned billions investing in climate-polluting landfills",
@@ -959,6 +1080,18 @@
    "score": 11
   },
   {
+   "title": "WHO issues first guidelines on type 1 diabetes for adults",
+   "url": "https://www.who.int/news/item/14-11-2026-who-issues-first-guidelines-on-type-1-diabetes-for-adults",
+   "src": "WHO News",
+   "feed": "WHO News",
+   "cat": "who",
+   "date": "2026-11-14T00:00:00+00:00",
+   "summary": "",
+   "domain": "who.int",
+   "inhoud": 10,
+   "score": 16
+  },
+  {
    "title": "U.S. loses measles-free status after continued spread of the disease, WSJ reports",
    "url": "https://www.spokesman.com/stories/2026/nov/14/us-loses-measles-free-status-after-continued-sprea/",
    "src": "WHO Alert",
@@ -968,7 +1101,7 @@
    "summary": "The reported decision by the Americas branch of the World Health Organization comes as the U.S. battles the highest number of measles cases it has ...",
    "domain": "spokesman.com",
    "inhoud": 4,
-   "score": 12
+   "score": 4
   },
   {
    "title": "The Trump administration is diverting billions in health funding away from low-income ... - CNN",
@@ -1875,6 +2008,20 @@
    "score": 5
   },
   {
+   "title": "COP31: New initiative targets AI and reliable climate change information",
+   "url": "https://news.un.org/en/story/2026/11/1168798",
+   "src": "UN News",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-13T12:06:51+00:00",
+   "summary": "COP31: New initiative targets AI and reliable climate change information UN News",
+   "domain": "news.un.org",
+   "fallback": true,
+   "inhoud": 0,
+   "score": 5,
+   "gnews": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1yUWRNNGFVOHB2dEMtcGhhYk1CbFFybmdLdi1IS2o2cmVmNTdJSzRaSDIwcVM1cnF2MDZsNW5TMVlnVmxHYlVNLWhVRUNkV3pvN0MtbllTYw?oc=5"
+  },
+  {
    "title": "DR Congo Ebola outbreak: Unrest fuelled by armed groups holds back response",
    "url": "https://news.un.org/feed/view/en/story/2026/11/1168797",
    "src": "UN News - Global perspective Human stories",
@@ -2227,19 +2374,6 @@
    "score": 13
   },
   {
-   "title": "Funding Backs UNSW Research on Antibiotics for Drug-Resistant Infections",
-   "url": "https://www.miragenews.com/funding-backs-unsw-research-on-antibiotics-for-1776787/",
-   "src": "Mirage News",
-   "feed": "AMR policy & research",
-   "cat": "amr",
-   "date": "2026-11-13T00:04:00+00:00",
-   "summary": "Funding Backs UNSW Research on Antibiotics for Drug-Resistant Infections Mirage News",
-   "domain": "miragenews.com",
-   "inhoud": 12,
-   "score": 8,
-   "gnews": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSEdhWUtHUnFNYVZpa1JNcFE3bVVYTXp5Y0ZxQmw4U1pqd2FMRVZRekFWNnRrN3BncUlpbG5nWDZTMmpEM2R1ZGlTcXJuV3JkakpQS3gzdHdNczdObHZNTXRfQTlhUkhxOFZ0aV9WMnBPNkt3M01mYjZjLVdtWEJ0SWJvYkNYZmh5Nnc?oc=5"
-  },
-  {
    "title": "WHO's next Director-General - The Lancet",
    "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02295-6/fulltext",
    "src": "Health Emergency",
@@ -2310,6 +2444,19 @@
    "domain": "wthitv.com",
    "inhoud": 4,
    "score": 4
+  },
+  {
+   "title": "New funding backs UNSW research on antibiotics for drug-resistant infections",
+   "url": "https://www.unsw.edu.au/newsroom/news/2026/11/new-funding-backs-unsw-research-on-antibiotics-for-drug-resistant-infections",
+   "src": "UNSW Sydney",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-12T21:58:02+00:00",
+   "summary": "New funding backs UNSW research on antibiotics for drug-resistant infections UNSW Sydney",
+   "domain": "unsw.edu.au",
+   "inhoud": 12,
+   "score": 14,
+   "gnews": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQT3hmakJ4WkVFQk8wMElTS3lxcW9sUmNMWjhWanFiM1k3ZVhmUWRScTd6bnBnaUFTOXhQN0FQVHc4ZHhvejVJeHNGYnBYZm1PVThJT1VxZV9FdUxBNm1Sb21pd01OdGhyZmZuS08tM3NFUUV4SXFDdzF1YkV4Vl9aNlZ4NC01S2F1bl9hMzZpM2pmUzlTMzQxS2ZnV1lGUUJFZTVuOGNVSzZoSzNFUGVULWVhRnAzTnV0dWdYWEtVdw?oc=5"
   },
   {
    "title": "Six killed in Israeli airstrike on Gaza’s Nasser Hospital",
@@ -6512,155 +6659,6 @@
    "gnews": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMnlRLW1fdWNKY2FfSzAyMlVyRWEtMEdWenl2UjhueFUxcndBT3hTbF9NV3NBaU1sMFZqYWtjd0xLUkFlTWlCR0k2eno0X3ZmbHFNOXhuUUhYdzdyZWprdGx0a1NhNVJsTXdkOF9DMm1hN3lnbnVHUUkwc0JxZVNKeTFudzI?oc=5"
   },
   {
-   "title": "US Midterm Elections: Democrats Pledge to Lower Health Costs and Revive Research Funding",
-   "url": "https://healthpolicy-watch.news/us-midterm-elections-democrats-pledge-to-lower-health-costs-and-revive-research-funding/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-11-09T17:30:20+00:00",
-   "summary": "November’s US midterm elections swept Democrats into power in both the House and Senate, marking a shift in congressional leadership on key health policies. This comes as a former Trump administration official and a founder of the “Make America Healthy Again” (MAHA) movement accused the administrati",
-   "domain": "healthpolicy-watch.news",
-   "inhoud": 4,
-   "score": 8
-  },
-  {
-   "title": "Money Matters: The US just put $1.7B into global health — who got it?",
-   "url": "https://www.devex.com/news/money-matters-the-us-just-put-1-7b-into-global-health-who-got-it-113833",
-   "src": "Devex Global Health",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-11-09T17:14:45+00:00",
-   "summary": "Plus, Norway cuts aid, Education Cannot Wait gets over $500 million, and a peek inside Switzerland’s Fondation Botnar.",
-   "domain": "devex.com",
-   "inhoud": 2,
-   "score": 7
-  },
-  {
-   "title": "World Bank names new accountability chief. Can he win over skeptics?",
-   "url": "https://www.devex.com/news/world-bank-names-new-accountability-chief-can-he-win-over-skeptics-113836",
-   "src": "Devex Global Health",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-11-09T17:03:05+00:00",
-   "summary": "Critics wonder if Woochong Um was the best choice for the job, which will be charged with setting policy and standing up the banks new Independent Accountability Mechanism and replacing the three existing entities.",
-   "domain": "devex.com",
-   "inhoud": 0,
-   "score": 5
-  },
-  {
-   "title": "STAT+: Heart association meeting’s readout is trending ‘neutral’",
-   "url": "https://www.statnews.com/2026/11/09/aha-2026-news-neutral-clinical-trials-lessons-learned/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-11-09T16:53:21+00:00",
-   "summary": "The theme of the American Heart Association meetings was \"neutral\" results. Yet no one wants to stop pursuing inflammation or Lp(a) lowering.",
-   "domain": "statnews.com",
-   "inhoud": -6,
-   "score": -5
-  },
-  {
-   "title": "US midterm elections: Doctors win critical races in rebuke of Trump, so what does it mean for health?",
-   "url": "http://www.bmj.com/content/395/bmj-2026-101397.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-11-09T16:41:16+00:00",
-   "summary": "President Donald Trump and the Republican Party experienced a major defeat in the US midterm elections, with doctors playing a key role in the so called “blue wave.”While votes are still being counted in many places for the final numbers, Democrats have secured majorities in both the Senate and the ",
-   "domain": "bmj.com",
-   "inhoud": 0,
-   "score": 3
-  },
-  {
-   "title": "COP31 opens in Antalya: Can climate promises finally deliver results?",
-   "url": "https://news.un.org/en/story/2026/11/1168763",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-11-09T16:35:36+00:00",
-   "summary": "COP31 opens in Antalya: Can climate promises finally deliver results? UN News",
-   "domain": "news.un.org",
-   "fallback": true,
-   "inhoud": 0,
-   "score": 5,
-   "gnews": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5MN1JOZTg3Z0x6NklydFpaUkF0Wk5EdjBfSUUzelZidDZQMXhiZ0pTZDZ2elZJVDQzdGpHOFM1VnQ5TUJyMTM2YVlQZHI4eWl6NVZLaWFBMA?oc=5"
-  },
-  {
-   "title": "France blames Iran for cyberattacks targeting supermarket fridges",
-   "url": "https://www.politico.eu/article/france-blames-iran-for-cyberattacks-targeting-supermarket-fridges/",
-   "src": "POLITICO.eu",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-11-09T16:35:00+00:00",
-   "summary": "France blames Iran for cyberattacks targeting supermarket fridges POLITICO.eu",
-   "domain": "politico.eu",
-   "score": 5,
-   "inhoud": 0,
-   "gnews": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNQUIwUjV3OEZXSl9hSjN2M3g0R2cwVVBMbXF3azBPT3JMa0JhUHdFbXBEaWJINzB5RXh5UTN3RHgzR2VjcHZKZ0dydkpGZ1lhcVBPMzlYMGYtdFI3aVlRXzF2T2h1dGtsS2M1aDNnZDk2Mm9fQ1VfdnZRXzQ3VXZEeTNadXFJSmxfc3JLOC1TM2pwSHhaM3pSaHRpdFBZWUU?oc=5"
-  },
-  {
-   "title": "Who are Fondation Botnar’s top grantees?",
-   "url": "https://www.devex.com/news/who-are-fondation-botnar-s-top-grantees-113817",
-   "src": "Devex Global Health",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-11-09T16:25:14+00:00",
-   "summary": "Fondation Botnar's grantmaking significantly dropped to €9.2 million in 2025. Who were the lucky ones who got a share of the pie? Devex crunched the numbers to find out.",
-   "domain": "devex.com",
-   "inhoud": 0,
-   "score": 5
-  },
-  {
-   "title": "WHO DG Candidate Budi Sadikin: No Country Can Fight a Pandemic Alone",
-   "url": "https://healthpolicy-watch.news/who-dg-candidate-budi-sadikin-no-country-can-fight-a-pandemic-alone/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-11-09T16:13:46+00:00",
-   "summary": "Budi Sadikin, Indonesia’s Minister of Health and the country’s nominee for WHO Director-General, has in fact spent most of his career in finance – as a top executive at Indonesia’s largest bank, PT Bank Mandiri TBk. “Before, my job was to make my clients wealthy; now my job is to make my people heal",
-   "domain": "healthpolicy-watch.news",
-   "inhoud": 15,
-   "score": 19
-  },
-  {
-   "title": "Haïti - ETT 112.1 : Suivi des réponses humanitaires suite aux déplacements liés aux violences armées à Petite Rivière de l'Artibonite et Verrettes (Département de l'Artibonite)",
-   "url": "https://reliefweb.int/report/haiti/haiti-ett-1121-suivi-des-reponses-humanitaires-suite-aux-deplacements-lies-aux-violences-armees-petite-riviere-de-lartibonite-et-verrettes-departement-de-lartibonite",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-11-09T16:07:05+00:00",
-   "summary": "Haïti - ETT 112.1 : Suivi des réponses humanitaires suite aux déplacements liés aux violences armées à Petite Rivière de l'Artibonite et Verrettes (Département de l'Artibonite) ReliefWeb",
-   "domain": "reliefweb.int",
-   "fallback": true,
-   "inhoud": 0,
-   "score": 4,
-   "gnews": "https://news.google.com/rss/articles/CBMipwJBVV95cUxQZFFrZVM5ek1YUkpWeWlkZWo4OXZYOVB1QTJWeW5BX2xVZmliS2QzTmJubjlSbnRVazRoUXMtay1XNHVQa1NuOFctN19VWGh6YUhvTkktdFNRbmR3bll1X05LMndNZm5KWDNtanFQTnhfMktZVlRZNUNfTEdmTWpsM3ZfUFhQWlZWMlFjNWswZEtCWE10VzJhTG85ZE5JUVJnTlB0dnd6ZlFQbnhqVUJseW5xcHltT01aTm5VWDRBazVsVmw0dFg3dHNVSXVqSXJjSTlxQXZ3SldfaEY0VXBldGViWW5oWjktamhSU0hab0RBalJ5SDVVQzBORDg0OWQzOEdPdzJMQ1U1R2VUMDdOX01RSkQ2T09SM0gxYmRyVVZwRk1pNHI0?oc=5"
-  },
-  {
-   "title": "STAT+: FDA warns GLP-1 drugs carry potential risk of rare eye condition",
-   "url": "https://www.statnews.com/2026/11/09/glp-1-drugs-potential-risk-rare-eye-condition-naion-fda/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-11-09T15:56:55+00:00",
-   "summary": "The FDA on Monday warned that GLP-1 drugs carry a potential risk for a rare but serious eye condition that's sometimes referred to as an \"eye stroke.\"",
-   "domain": "statnews.com",
-   "inhoud": -10,
-   "score": -9
-  },
-  {
-   "title": "“Reallocated” {pound}40m for winter support will further strain GP budgets, doctors warn",
-   "url": "http://www.bmj.com/content/395/bmj-2026-101398.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-11-09T15:41:14+00:00",
-   "summary": "UK government plans to reallocate £40m from GP budgets to provide vulnerable patients with extra support this winter is another blow to struggling practices, the BMA has warned.Unveiled by the prime minister, Andy Burnham, the funds will enable general practices to “proactively identify” and provide",
-   "domain": "bmj.com",
-   "inhoud": 2,
-   "score": 5
-  },
-  {
    "title": "How an Ancient Peptide Could Help Fight Modern Superbugs",
    "url": "https://www.medscape.com/viewarticle/how-ancient-peptide-could-help-fight-modern-superbugs-2026a10016of",
    "src": "Medscape",
@@ -7212,19 +7210,6 @@
    "gnews": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVVp0VTZFR2hLNzRjMnJJOUpEaGdqLTRYRlZyVDEtejFLZHdqdk5obF83QU5mZGFqMHhPaVNYeExTblVBZmtKYnMwOHZLa0lQV0Zld3YtVjZud29QejBhU3ZQNDAzOEF5WnBIUnU1cXRvVDFVT3dBdjNFTW9UTms0bHE5MHBLLWRLcWZhZjI5b2gzMXZXNTVUbHZWWTBGbS1lVVJvNGlHWDRiTnZ2VTVDZU5TWHBhTVd3ZWpBSDB2c0dad3pHS0FGQ2NWdk1LYXh3Z0hyR1dmOA?oc=5"
   },
   {
-   "title": "WHO hails progress against neglected tropical diseases",
-   "url": "https://medicalxpress.com/news/2026-11-hails-neglected-tropical-diseases.html",
-   "src": "Medical Xpress",
-   "feed": "NTD news",
-   "cat": "ntd",
-   "date": "2026-11-04T21:20:02+00:00",
-   "summary": "WHO hails progress against neglected tropical diseases Medical Xpress",
-   "domain": "medicalxpress.com",
-   "inhoud": 6,
-   "score": 5,
-   "gnews": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOQ3NYXzRXMmpaRU4tX3JvLXJib2owX3BOcHNjeXdQUmg4U1ByRHgzbWFiVmE5UzRQZ20tSjFHbmRoUGNjZXZfYmwza0FpQ2p0OHZOY2xkc0FDdnJUVm90djZMc2N6SmxPRFUzblFXZkFHV1B5dXJ6ZHE4Q2lzdEZZR21wbw?oc=5"
-  },
-  {
    "title": "More than a quarter of Americans have misrepresented symptoms to get antibiotics, surveys show",
    "url": "https://www.cidrap.umn.edu/antimicrobial-stewardship/more-quarter-americans-have-misrepresented-symptoms-get-antibiotics",
    "src": "CIDRAP Stewardship",
@@ -7335,6 +7320,19 @@
    "inhoud": 4,
    "score": 6,
    "gnews": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQV1ZpcmRCci1rTnIxbjE1NXlUVVZWSGgyN1FROXRoX0JFdjFtLXQ3NzlEajNteDZ0RHNvRmpNVWdqSU5xRnVQRkFFU2psTHBJTG5lTDZIdENOZVRVT1lhb0lxOGp3Mi1yZVlBbkR2VnRqNzhtSGp2VFQ2NmhpMF84MFVwLWV2bTZvZDkza21WakI1a2gwMENPa3hTcUc?oc=5"
+  },
+  {
+   "title": "WHO hails progress against neglected tropical diseases",
+   "url": "https://www.nst.com.my/lifestyle/heal/2026/11/1575066/who-hails-progress-against-neglected-tropical-diseases",
+   "src": "NST Online",
+   "feed": "NTD news",
+   "cat": "ntd",
+   "date": "2026-11-04T00:00:00+00:00",
+   "summary": "WHO hails progress against neglected tropical diseases NST Online",
+   "domain": "nst.com.my",
+   "inhoud": 6,
+   "score": 8,
+   "gnews": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZHFlZUVXN1ZBYlZBam8wZlBUNlM5ZnN0dzV1UWRJSHBmbkp3NERvNGlOamx3UWVGeTNfeEpoTDF0cVh0c1AxRHdMV0poeXJIMVFBSkZjN1R5Z3owYnJpZThlSzZfY0ZQeFIyUHhFR25BUFpGeXp3NWNTSnhmNmlOZkpqOHBDQWxvdkpUVV9pa2kyZE1PRmZuQU5PUk5xN0FGZEVwcTFSVnp1Uzhv0gGyAUFVX3lxTFBfRnFfajZPTno1TXRHcEFXeU1UenpEclNQOF9RNlNEd2sxXzVodV9NNGtCYVVMN0VoQm4zY3ZUWE93ajBGMUYxa0FXSGhpemJldFNEV0FLRE1HZmVXVDhXM05ZbTdUaHVTMTE0blBTYUtkWnh3eWR1TTVJTG8tNzM0RkFNLXpNUmxzaGVTMGxxdHA3RFdGM3p2Y3JEaWl3SjNOZm1IR19nZUh3QnlWOFdReFE?oc=5"
   },
   {
    "title": "Uneven and Fragile Progress Against Neglected Tropical Diseases – New WHO Report",
