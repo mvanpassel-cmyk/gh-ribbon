@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T00:00:00+00:00",
+ "generated": "2026-11-15T06:47:53+00:00",
  "feeds_ok": 43,
  "feeds_tot": 43,
  "status": {
@@ -26,11 +26,10 @@
   },
   "UN News Health": {
    "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "msg": "12 items",
    "cat": "who",
-   "via": 2,
-   "fallback": true,
-   "errors": "[1] ValueError: 0 entries"
+   "via": 1,
+   "fallback": false
   },
   "CIDRAP Public Health": {
    "ok": true,
@@ -62,7 +61,7 @@
   },
   "ReliefWeb Health": {
    "ok": true,
-   "msg": "11 items (via kandidaat 2)",
+   "msg": "10 items (via kandidaat 2)",
    "cat": "emerg",
    "via": 2,
    "fallback": true,
@@ -194,7 +193,7 @@
   },
   "Uniting to Combat NTDs": {
    "ok": true,
-   "msg": "5 items",
+   "msg": "6 items",
    "cat": "ntd",
    "via": 1,
    "fallback": true
@@ -319,6 +318,67 @@
  },
  "items": [
   {
+   "title": "New Unitaid report charts a path to expand access to lifesaving newborn care",
+   "url": "https://unitaid.org/news-blog/new-unitaid-report-charts-a-path-to-expand-access-to-lifesaving-newborn-care/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-15T06:02:45+00:00",
+   "summary": "On 23 November at 14:00-15:30 CET, the World Health Organization and Unitaid will host a webinar bringing together newborn health experts to explore ...",
+   "domain": "unitaid.org",
+   "inhoud": 9,
+   "score": 16
+  },
+  {
+   "title": "What to know about antimicrobial resistance in pet treatment",
+   "url": "https://www.straitstimes.com/life/what-to-know-about-antimicrobial-resistance-in-pet-treatment",
+   "src": "The Straits Times",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-15T02:34:00+00:00",
+   "summary": "What to know about antimicrobial resistance in pet treatment The Straits Times",
+   "domain": "straitstimes.com",
+   "inhoud": 0,
+   "score": 2,
+   "gnews": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQcnhCaFJoSnBfRFdZR01ER2lvSmZBM2xBSXlGRVY2QU9OSmhGTzEwRDhsaG1qX0JEaExTNUZGcl9MTE5SUkRjNjAxQTNfSnJMTWZYX3FkWEVPNnRHalpsVHVxZE1JZ2tLMjB4cm1UeDhGd1pfd3ZSRnBTU3k0bmlYaGZrNVlzTmtLOVExeDl4c2p3bmhEUF9UQzlR?oc=5"
+  },
+  {
+   "title": "Organ transplant controversy tests 'the dead donor rule' - NPR",
+   "url": "https://www.npr.org/2026/11/14/nx-s1-6032604/organ-transplant-donor-dead-ethics",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-15T01:29:04+00:00",
+   "summary": "Global Health · Seven days of chaos in the ER: How this country's healthcare system is unraveling · A cursor moves over Google&#039;s search engine ...",
+   "domain": "npr.org",
+   "inhoud": 6,
+   "score": 9
+  },
+  {
+   "title": "My mother told me I would die if I sought treatment for Ebola - I am proof you can survive",
+   "url": "https://www.bbc.com/news/articles/cmvg2e2q28w1o",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-15T00:35:06+00:00",
+   "summary": "This was in July, two months after the World Health Organization (WHO) had declared the Ebola outbreak in DR Congo a public health emergency of ...",
+   "domain": "bbc.com",
+   "inhoud": 10,
+   "score": 15
+  },
+  {
+   "title": "US has lost measles elimination status, global health authorities say - NPR",
+   "url": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-14T23:47:57+00:00",
+   "summary": "PAHO, an international group that oversees health in the Americas and works with the World Health Organization , based its assessment on two analyses: ...",
+   "domain": "npr.org",
+   "inhoud": 19,
+   "score": 22
+  },
+  {
    "title": "World health group prepares to announce US has lost measles elimination status",
    "url": "https://www.stgeorgeutah.com/life/world-health-group-prepares-to-announce-us-has-lost-measles-elimination-status-utah-2025-26/article_518db65b-5e2f-4543-a7f7-7bdcf9686db1.html",
    "src": "WHO Alert",
@@ -329,6 +389,18 @@
    "domain": "stgeorgeutah.com",
    "inhoud": 10,
    "score": 10
+  },
+  {
+   "title": "Imported Malaria Cases in Vietnam Highlight Antimalarial Shortages During Elimination",
+   "url": "https://bioengineer.org/imported-malaria-cases-in-vietnam-highlight-antimalarial-shortages-during-elimination/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-14T23:14:39+00:00",
+   "summary": "While the World Health Organization recognises that the final phases of elimination and the prevention of re-establishment require locally adapted ...",
+   "domain": "bioengineer.org",
+   "inhoud": 8,
+   "score": 2
   },
   {
    "title": "‘A simple cut could become incurable’: The looming threat of drug-resistant infections",
@@ -416,16 +488,16 @@
    "score": 11
   },
   {
-   "title": "US Stands To Lose Measles Elimination Status As Multiple States Face The Worst ...",
+   "title": "US Stands to Lose Measles Elimination Status as Multiple States Face The Worst Outbreaks in Nearly Three Decades",
    "url": "https://healthpolicy-watch.news/us-to-lose-measles-elimination-status/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-14T19:09:43+00:00",
-   "summary": "Experts told Health Policy Watch that the shifting vaccination landscape and persistent cases globally have fueled the worst outbreak since 1991.",
+   "src": "Health Policy Watch",
+   "feed": "Health Policy Watch",
+   "cat": "policy",
+   "date": "2026-11-14T19:06:27+00:00",
+   "summary": "Plummeting vaccination rates have fueled a historic and prolonged wave of measles in the US – with the Pan American Health Organization expected to revoke the country’s elimination status it enjoyed since 2000. Experts told Health Policy Watch that the shifting vaccination landscape and persistent c",
    "domain": "healthpolicy-watch.news",
-   "inhoud": 15,
-   "score": 21
+   "inhoud": 18,
+   "score": 22
   },
   {
    "title": "Pharmacy Council of India calls for coordinated action to tackle antimicrobial resistance",
@@ -433,7 +505,7 @@
    "src": "Prop News Time",
    "feed": "AMR policy & research",
    "cat": "amr",
-   "date": "2026-11-14T19:00:27+00:00",
+   "date": "2026-11-14T19:02:15+00:00",
    "summary": "Pharmacy Council of India calls for coordinated action to tackle antimicrobial resistance Prop News Time",
    "domain": "propnewstime.com",
    "inhoud": 0,
@@ -537,18 +609,6 @@
    "score": 5
   },
   {
-   "title": "US has lost measles elimination status, global health authorities say - NPR",
-   "url": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-14T14:44:08+00:00",
-   "summary": "PAHO, an international group that oversees health in the Americas and works with the World Health Organization , based its assessment on two analyses: ...",
-   "domain": "npr.org",
-   "inhoud": 19,
-   "score": 22
-  },
-  {
    "title": "Can Bundibugyo vaccines be made sterile without filtration? - Drug Discovery News",
    "url": "https://www.drugdiscoverynews.com/can-bundibugyo-vaccines-be-made-sterile-without-filtration-17662",
    "src": "WHO Alert",
@@ -643,18 +703,6 @@
    "domain": "cnn.com",
    "inhoud": 4,
    "score": 4
-  },
-  {
-   "title": "The Trump administration is diverting billions in health funding away from low-income ... - KQ2",
-   "url": "https://www.kq2.com/cnn/cnn-world/2026/11/14/the-trump-administration-is-diverting-billions-in-health-funding-away-from-low-income-countries-defying-congress-plans/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-14T12:15:55+00:00",
-   "summary": "The budget plans also involve an effort to move nearly a billion dollars into a global health innovation fund benefiting US corporations, while ...",
-   "domain": "kq2.com",
-   "inhoud": 4,
-   "score": 7
   },
   {
    "title": "New York State Department of Health Recognizes World Diabetes Day With Landmarks ...",
@@ -847,6 +895,18 @@
    "domain": "gov.uk",
    "inhoud": 6,
    "score": 11
+  },
+  {
+   "title": "The Trump administration is diverting billions in health funding away from low-income ... - CNN",
+   "url": "https://www.cnn.com/2026/11/14/world/trump-administration-foreign-aid-global-health-diverted-intl",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-14T00:00:00+00:00",
+   "summary": "... World · Africa · Americas · Asia · Australia · China · Europe · India · Middle ... health objectives,” the three organizations said in their analysis.",
+   "domain": "cnn.com",
+   "inhoud": 4,
+   "score": 4
   },
   {
    "title": "[Correspondence] Lula's new term—safeguarding science, health, and the Amazon",
@@ -4781,14 +4841,16 @@
   {
    "title": "WHO Director General Should Convene Emergency Committee on El Niño",
    "url": "https://www.thinkglobalhealth.org/article/who-director-general-should-convene-emergency-committee-on-el-nino",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
+   "src": "Think Global Health",
+   "feed": "Think Global Health",
+   "cat": "global",
    "date": "2026-11-10T22:20:52+00:00",
-   "summary": "... health governance. By recognizing El Niño as a public health emergency of international concern (PHEIC), WHO can answer calls to escalate its ...",
+   "summary": "WHO Director General Should Convene Emergency Committee on El Niño Think Global Health",
    "domain": "thinkglobalhealth.org",
-   "inhoud": 7,
-   "score": 13
+   "fallback": true,
+   "inhoud": 10,
+   "score": 14,
+   "gnews": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNFdpa25vYjVXTFNmY2xJWnZTMk1nV0pFSGIzeXBaWEl3VUV3b3h2d1hpNlR5NmFQampzSFFoWU9hbXgzUnpaZjdkMGR5UC1MNnZmQkhSajNGZUV3eFZfdmdEMHlmbTUtQzNtTjB5UGttakY0Tjd6aWp1ZzBUOHVZb1prcDU1d1lWd0Y2b3I3ZVpZMnBJTkk2dVZpTjlfbmtvZXQwNTl3SWxqTDRP?oc=5"
   },
   {
    "title": "Outbreaks don't wait for funding: tropical medicine and global health in Somalia | RSTMH",
@@ -6597,20 +6659,6 @@
    "score": -5
   },
   {
-   "title": "Security Council LIVE: Strikes on Ukraine’s power grid, as peace talks loom",
-   "url": "https://news.un.org/en/story/2026/11/1168761",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-11-09T14:26:52+00:00",
-   "summary": "Security Council LIVE: Strikes on Ukraine’s power grid, as peace talks loom UN News",
-   "domain": "news.un.org",
-   "fallback": true,
-   "inhoud": 0,
-   "score": 5,
-   "gnews": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9Ic0x0d0FZOUZiT3lOazl1RDZXUjEtU3hiUnlnTjZNUDRrdDRUWjVaQTZ4RC10NUVWUXNiWjE5SEFUc2hvcGx2eDVVbkY2dGVfa29XNG1oOA?oc=5"
-  },
-  {
    "title": "How an Ancient Peptide Could Help Fight Modern Superbugs",
    "url": "https://www.medscape.com/viewarticle/how-ancient-peptide-could-help-fight-modern-superbugs-2026a10016of",
    "src": "Medscape",
@@ -6635,55 +6683,6 @@
    "inhoud": -8,
    "score": -12,
    "gnews": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNQk1GMnFxN2w1UlJMXzcwUXN3dF9laUV0SU9wV252UHpKdVlvbldyR0hkQmtvd1pheWxBcWNVYmdxM1JqSzl5VVRyaW5CNVlZdmozb0s4cU1iZXJTM0ZkZUdkbkpIbXZ0VjNSMVJ6Qzl2d1VWb0Ezelhfek5YMkV0dlBCeEFwTkV3VTg3YVY1Y0tPblVQVVFTcQ?oc=5"
-  },
-  {
-   "title": "Wildlife import linked to higher risk of animal-human disease outbreaks",
-   "url": "https://www.xjtlu.edu.cn/en/news/2026/11/wildlife-import-research",
-   "src": "西交利物浦大学",
-   "feed": "WHO Disease Outbreak News",
-   "cat": "who",
-   "date": "2026-11-09T13:59:39+00:00",
-   "summary": "Wildlife import linked to higher risk of animal-human disease outbreaks 西交利物浦大学",
-   "domain": "xjtlu.edu.cn",
-   "score": 4,
-   "inhoud": 0,
-   "gnews": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NVmJMYlJCY04tYW9fQ0EwSUNZSjNSUWZzTVFGcU9MV19OdjZ1MlhhMXlSNGhHYmhpQWkzWFhrdF8tZUVudDZfek12eEdZZ2hLUTVOcW1sV252RV8wSkRsZ2xGWEJIQ1VaVU8ta25UdlZZRm8?oc=5"
-  },
-  {
-   "title": "The realities shaping the universal health coverage agenda",
-   "url": "https://www.devex.com/news/the-realities-shaping-the-universal-health-coverage-agenda-113829",
-   "src": "Devex Global Health",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-11-09T13:43:55+00:00",
-   "summary": "Nearly a year out from the U.N. high-level meeting on universal health coverage, the race to secure financing is on.",
-   "domain": "devex.com",
-   "inhoud": 2,
-   "score": 7
-  },
-  {
-   "title": "[Health Policy] Prioritising malaria interventions to maximise health: the role of economic evaluation",
-   "url": "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(26)00242-1/fulltext?rss=yes",
-   "src": "Lancet Global Health",
-   "feed": "Lancet Global Health",
-   "cat": "journal",
-   "date": "2026-11-09T13:09:25+00:00",
-   "summary": "Malaria decision makers face difficult choices about how to allocate scarce resources to complex intervention packages across heterogeneous areas and populations. Such decisions must balance competing objectives, including health maximisation, equity, and political acceptability. The current WHO-sup",
-   "domain": "thelancet.com",
-   "inhoud": 7,
-   "score": 11
-  },
-  {
-   "title": "STAT+: A new rule to prevent the spread of bioweapons",
-   "url": "https://www.statnews.com/2026/11/09/health-news-new-rule-to-prevent-bioweapon-spread/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-11-09T12:55:07+00:00",
-   "summary": "AI makes it easier for people to come up with new potential medicines, but may also increase the possibility of bad actors creating new bioweapons. New guidelines from Trump officials…",
-   "domain": "statnews.com",
-   "inhoud": -12,
-   "score": -11
   },
   {
    "title": "Oman elected as Vice-Chair of Bureau of WHO Intergovernmental Working Group on Pandemic Agreement",
