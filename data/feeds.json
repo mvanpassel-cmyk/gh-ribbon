@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14T19:19:02+00:00",
+ "generated": "2026-11-15T00:00:00+00:00",
  "feeds_ok": 43,
  "feeds_tot": 43,
  "status": {
@@ -26,10 +26,11 @@
   },
   "UN News Health": {
    "ok": true,
-   "msg": "12 items",
+   "msg": "12 items (via kandidaat 2)",
    "cat": "who",
-   "via": 1,
-   "fallback": false
+   "via": 2,
+   "fallback": true,
+   "errors": "[1] ValueError: 0 entries"
   },
   "CIDRAP Public Health": {
    "ok": true,
@@ -61,7 +62,7 @@
   },
   "ReliefWeb Health": {
    "ok": true,
-   "msg": "9 items (via kandidaat 2)",
+   "msg": "11 items (via kandidaat 2)",
    "cat": "emerg",
    "via": 2,
    "fallback": true,
@@ -318,16 +319,150 @@
  },
  "items": [
   {
-   "title": "US Stands to Lose Measles Elimination Status as Multiple States Face The Worst Outbreaks in Nearly Three Decades",
+   "title": "World health group prepares to announce US has lost measles elimination status",
+   "url": "https://www.stgeorgeutah.com/life/world-health-group-prepares-to-announce-us-has-lost-measles-elimination-status-utah-2025-26/article_518db65b-5e2f-4543-a7f7-7bdcf9686db1.html",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-14T23:33:26+00:00",
+   "summary": "Researchers with direct knowledge of the deliberations on the country's status told KFF Health News that the Pan American Health Organization reached ...",
+   "domain": "stgeorgeutah.com",
+   "inhoud": 10,
+   "score": 10
+  },
+  {
+   "title": "‘A simple cut could become incurable’: The looming threat of drug-resistant infections",
+   "url": "https://www.counterview.net/2026/11/a-simple-cut-could-become-incurable.html",
+   "src": "Counterview",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-14T22:30:00+00:00",
+   "summary": "‘A simple cut could become incurable’: The looming threat of drug-resistant infections Counterview",
+   "domain": "counterview.net",
+   "inhoud": 0,
+   "score": 2,
+   "gnews": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORDR2YXE1bFg0bGhQUTlURTRhMTUzM0IweFQ3amZSNWkydUlCRUdlTl9iNTdQTWxyS1h1SHlZbmdxRmYtT3hoSUc2V2tmQVhuSzI1UlFvVHJWRENUemJKd1hDV2lhZTVOQXY2Q2p0MEkxbHcyX3dGMGZzMTRXY3dSU1J3?oc=5"
+  },
+  {
+   "title": "Huge Crowds and Low Vaccination Rates Raise Measles Alarms as Pope Leo XIV Visits ...",
+   "url": "https://www.usnews.com/news/health-news/articles/2026-11-14/huge-crowds-and-low-vaccination-rates-raise-measles-alarms-as-pope-leo-xiv-visits-south-america",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-14T22:18:37+00:00",
+   "summary": "The Pan American Health Organization ... As of 2025, only Uruguay had achieved that number, according to data from the World Health Organization .",
+   "domain": "usnews.com",
+   "inhoud": 10,
+   "score": 13
+  },
+  {
+   "title": "US to lose measles-free status - The Telegraph",
+   "url": "https://www.telegraph.co.uk/world-news/2026/11/14/us-to-lose-measles-free-status/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-14T21:50:24+00:00",
+   "summary": "A committee of the Pan American Health Organization, part of the World Health Organization , met this week to decide whether to strip the US of the ...",
+   "domain": "telegraph.co.uk",
+   "inhoud": 4,
+   "score": 7
+  },
+  {
+   "title": "Measles is back in the United States, WHO authorities say | Live Science",
+   "url": "https://www.livescience.com/health/viruses-infections-disease/measles-is-back-in-the-united-states-who-authorities-say",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-14T20:40:13+00:00",
+   "summary": "The Pan American Health Organization (PAHO), which is the regional office of the World Health Organization for the Americas, has reevaluated the ...",
+   "domain": "livescience.com",
+   "inhoud": 7,
+   "score": 7
+  },
+  {
+   "title": "U.S. measles deaths rise to 10 after new reports in Pennsylvania and Wisconsin",
+   "url": "https://www.nbcnews.com/health/health-news/us-measles-deaths-rise-10-new-reports-pennsylvania-wisconsin-rcna609245",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-14T20:22:05+00:00",
+   "summary": "The country now seems poised to lose that designation: The Pan American Health Organization (PAHO), a group within the World Health Organization ...",
+   "domain": "nbcnews.com",
+   "inhoud": 4,
+   "score": 4
+  },
+  {
+   "title": "Microscopically detectable maternal schistosomiasis at delivery in Eastern Uganda",
+   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0006297",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-14T20:02:55+00:00",
+   "summary": "Affiliation: Department of Pediatrics and Child Health , Kampala International University, Ishaka, Uganda ... PLOS Global Public Health is a global forum ...",
+   "domain": "journals.plos.org",
+   "inhoud": 13,
+   "score": 16
+  },
+  {
+   "title": "U.S. Loses Measles-Elimination Status as Historic Resurgence Sickens Thousands - WSJ",
+   "url": "https://www.wsj.com/health/u-s-loses-measles-elimination-status-as-historic-resurgence-sickens-thousands-b95e8780",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-14T20:01:11+00:00",
+   "summary": "The Pan American Health Organization , an international health body, has ... The stories you may have missed from the world of luxury real estate.",
+   "domain": "wsj.com",
+   "inhoud": 11,
+   "score": 11
+  },
+  {
+   "title": "US Stands To Lose Measles Elimination Status As Multiple States Face The Worst ...",
    "url": "https://healthpolicy-watch.news/us-to-lose-measles-elimination-status/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-11-14T19:06:27+00:00",
-   "summary": "Plummeting vaccination rates have fueled a historic and prolonged wave of measles in the US – with the Pan American Health Organization expected to revoke the country’s elimination status it enjoyed since 2000. Experts told Health Policy Watch that the shifting vaccination landscape and persistent c",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-14T19:09:43+00:00",
+   "summary": "Experts told Health Policy Watch that the shifting vaccination landscape and persistent cases globally have fueled the worst outbreak since 1991.",
    "domain": "healthpolicy-watch.news",
-   "inhoud": 18,
-   "score": 22
+   "inhoud": 15,
+   "score": 21
+  },
+  {
+   "title": "Pharmacy Council of India calls for coordinated action to tackle antimicrobial resistance",
+   "url": "https://propnewstime.com/latestnewsstories/NDAyNDE=/pharmacy-council-of-india-calls-for-coordinated-action-to-tackle-antimicrobial-resistance",
+   "src": "Prop News Time",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-14T19:00:27+00:00",
+   "summary": "Pharmacy Council of India calls for coordinated action to tackle antimicrobial resistance Prop News Time",
+   "domain": "propnewstime.com",
+   "inhoud": 0,
+   "score": 2,
+   "gnews": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPa01wTVNKRGthYkpLUTRfLTJkLWtDenM0c3RjblpoR2hyUTJISHUzbHRZaFZ3LVBUNjd6OEkxYjdlX2wxaVJPZU9sVUMyemZ4ZGVuc0tBclhjR2gwdTMycTU4eHJFdTRzQThGaE00T1gxZ3dxWGM0NXAzMmFZNVIyVlRJVXd0SlY0bXRyd2JRYy16MHpBb0JZalJsZEJNUTRpaTlTWU8tQnFRMFdMdUZpako3SEpwUVJqSk4yakdrZ3p1N0RVSjNHY1JQOHFnUURsZWcwVFZ4YmU?oc=5"
+  },
+  {
+   "title": "US loses measles-free status as two more deaths reported | Health News - Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/14/measles-associated-deaths-reach-10-in-us-after-two-more-deaths-reported",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-14T18:25:44+00:00",
+   "summary": "Epidemiologists have told Al Jazeera that tracking “measles-associated” deaths has long been a standard used by the World Health Organization (WHO) ...",
+   "domain": "aljazeera.com",
+   "inhoud": 12,
+   "score": 17
+  },
+  {
+   "title": "As PA measles cases rise, U.S. loses elimination status: reports - WHYY",
+   "url": "https://whyy.org/articles/pennsylvania-measles-cases-outbreak-elimination-status/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-14T18:20:41+00:00",
+   "summary": "Scientists and public health experts say measles has regained a foothold in the U.S. as outbreaks like the one in Pennsylvania become more common.",
+   "domain": "whyy.org",
+   "inhoud": 13,
+   "score": 13
   },
   {
    "title": "SEAHEARTS: South-East Asia’s Success Rolling out Strategies to Accelerate Action on Diabetes and other NCDs",
@@ -402,16 +537,16 @@
    "score": 5
   },
   {
-   "title": "US Has Lost Measles Elimination Status, Global Health Authorities Say",
-   "url": "https://kffhealthnews.org/public-health/us-measles-elimination-status-lost-outbreaks-continuous-spread-year-paho-cdc/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
+   "title": "US has lost measles elimination status, global health authorities say - NPR",
+   "url": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
    "date": "2026-11-14T14:44:08+00:00",
-   "summary": "PAHO, an international group that oversees health in the Americas and works with the World Health Organization, based its assessment on two analyses: ...",
-   "domain": "kffhealthnews.org",
-   "inhoud": 14,
-   "score": 17
+   "summary": "PAHO, an international group that oversees health in the Americas and works with the World Health Organization , based its assessment on two analyses: ...",
+   "domain": "npr.org",
+   "inhoud": 19,
+   "score": 22
   },
   {
    "title": "Can Bundibugyo vaccines be made sterile without filtration? - Drug Discovery News",
@@ -462,6 +597,18 @@
    "score": 7
   },
   {
+   "title": "WHO issues first guidelines on type 1 diabetes for adults",
+   "url": "https://www.who.int/news/item/14-11-2026-who-issues-first-guidelines-on-type-1-diabetes-for-adults",
+   "src": "WHO News",
+   "feed": "WHO News",
+   "cat": "who",
+   "date": "2026-11-14T13:30:42+00:00",
+   "summary": "",
+   "domain": "who.int",
+   "inhoud": 10,
+   "score": 14
+  },
+  {
    "title": "US loses its measles elimination status as cases surge | wusa9.com",
    "url": "https://www.wusa9.com/article/news/nation-world/us-measles-elimination-status-forfeit/507-a415f887-20e1-4f1e-ab07-d355163c5f08",
    "src": "WHO Alert",
@@ -472,6 +619,18 @@
    "domain": "wusa9.com",
    "inhoud": 10,
    "score": 10
+  },
+  {
+   "title": "WHO DG Candidate Maria Neira Calls for Strategic Reforms to Rebuild Trust and Strengthen Global Health",
+   "url": "https://healthpolicy-watch.news/who-dg-candidate-maria-neira-calls-for-strategic-reforms-to-rebuild-trust-and-strengthen-global-health/",
+   "src": "Health Policy Watch",
+   "feed": "Health Policy Watch",
+   "cat": "policy",
+   "date": "2026-11-14T13:15:08+00:00",
+   "summary": "The World Health Organization (WHO) must rebuild public trust, protect its most important functions and resist across-the-board budget cuts as it confronts growing health threats and shrinking financial resources, according to Dr. Maria Neira, a candidate to become the agency’s next director-general",
+   "domain": "healthpolicy-watch.news",
+   "inhoud": 20,
+   "score": 24
   },
   {
    "title": "The Garbage Man: Bill Gates has earned billions investing in climate-polluting landfills",
@@ -486,15 +645,15 @@
    "score": 4
   },
   {
-   "title": "The Trump administration is diverting billions in health funding away from low-income ... - CNN",
-   "url": "https://www.cnn.com/2026/11/14/world/trump-administration-foreign-aid-global-health-diverted-intl",
+   "title": "The Trump administration is diverting billions in health funding away from low-income ... - KQ2",
+   "url": "https://www.kq2.com/cnn/cnn-world/2026/11/14/the-trump-administration-is-diverting-billions-in-health-funding-away-from-low-income-countries-defying-congress-plans/",
    "src": "Global Health",
    "feed": "Global Health",
    "cat": "global",
    "date": "2026-11-14T12:15:55+00:00",
-   "summary": "The Trump administration plans to redirect or withhold nearly all funding that Congress had slated for international family planning aid this year ...",
-   "domain": "cnn.com",
-   "inhoud": 7,
+   "summary": "The budget plans also involve an effort to move nearly a billion dollars into a global health innovation fund benefiting US corporations, while ...",
+   "domain": "kq2.com",
+   "inhoud": 4,
    "score": 7
   },
   {
@@ -520,18 +679,6 @@
    "domain": "gov.ca.gov",
    "inhoud": 10,
    "score": 13
-  },
-  {
-   "title": "As PA measles cases rise, U.S. could lose elimination status - WHYY",
-   "url": "https://whyy.org/articles/pennsylvania-measles-cases-outbreak-elimination-status/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-14T11:14:23+00:00",
-   "summary": "A scientific panel of the Pan America Health Organization, a branch of the World Health Organization , met this week. An announcement on the ...",
-   "domain": "whyy.org",
-   "inhoud": 10,
-   "score": 10
   },
   {
    "title": "EMA tightens EU contraceptive advice for Mounjaro users",
@@ -568,18 +715,6 @@
    "domain": "aljazeera.com",
    "inhoud": 5,
    "score": 10
-  },
-  {
-   "title": "US loses measles-free status as two more deaths reported | Health News - Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/11/14/measles-associated-deaths-reach-10-in-us-after-two-more-deaths-reported",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-14T09:21:21+00:00",
-   "summary": "The Pan American Health Organization (PAHO)'s decision to revoke ... World Health Organization (WHO) and the CDC. Measles elimination on the ...",
-   "domain": "aljazeera.com",
-   "inhoud": 8,
-   "score": 13
   },
   {
    "title": "Morrisonville Air Quality Index (AQI) and USA Air Pollution | IQAir Africa",
@@ -921,7 +1056,7 @@
    "gnews": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcUJpYUZPSzVfWURFYzAxSXI4QXcxZDYtUmRSWjVKQXgwZXU5RHppMjFDRm0xOUpxSkVhdFAwRnQzRW02UnBrLWROTUJ3eGh1T3dmUnBaczBHZUpCU2Q0dDZNM2MyQ3ptLW1fS0pkWU00N3JITFRMZHU1aDQzUU9FMEtBUEZyRm1uWXN3aFotdy1RQnFLU2NTWXg1cWRTRXdUZ09nVHBSU1FzWnFSSzJOZXlKdkpCUQ?oc=5"
   },
   {
-   "title": "Put health in the treaty”: youth delegates at the Global Model WHO 2026 adopt declaration on plastics and health",
+   "title": "Put health in the treaty: youth delegates at the Global Model WHO 2026 adopt declaration on plastics and health",
    "url": "https://www.who.int/news/item/13-11-2026-put-health-in-the-treaty---youth-delegates-at-the-global-model-who-2026-adopt-declaration-on-plastics-and-health",
    "src": "WHO News",
    "feed": "WHO News",
@@ -1776,6 +1911,19 @@
    "score": -1
   },
   {
+   "title": "WHO Director-General's closing remarks at the Ninth meeting of the Intergovernmental Working Group (IGWG) on the WHO Pandemic Agreement – 13 November 2026",
+   "url": "https://www.who.int/news-room/speeches/item/who-director-general-s-closing-remarks-at-the-ninth-meeting-of-the-intergovernmental-working-group-(igwg)-on-the-who-pandemic-agreement-13-november-2026",
+   "src": "World Health Organization (WHO)",
+   "feed": "Pandemic Agreement",
+   "cat": "pandemic",
+   "date": "2026-11-13T08:00:00+00:00",
+   "summary": "WHO Director-General's closing remarks at the Ninth meeting of the Intergovernmental Working Group (IGWG) on the WHO Pandemic Agreement – 13 November 2026 World Health Organization (WHO)",
+   "domain": "who.int",
+   "inhoud": 19,
+   "score": 27,
+   "gnews": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNUGtCQ2UzVFppQnU3OTJORXZJZ2NvYU9sckJ3TmQzWkF6cGNLWnF4WGdXY01aUmtrbHNwQlMwQVVuTVVOd2JXc1p5dXlmbkthRFVRUmpqM09yNGlGX2JrZE5HVDgzOU45bmktTThDdXhmZzE0YUJRRTlNTUZoZnhnYU1oU1BsNC1MNlJCOE1NdzhPenlCZVFIQkJxUHh0cVFuY0tYd0FRdmZxM0RDOTUyakdRWTdVS3FFLVpNT1UwM1R6VWNIdE1GdFZjaXlBWTVRWkVrUHN0a2l5bXlvSWpDRGVTOFFBNDhtdnNLODdzU2dESzFILTFjN3VHRE9NcmQtMVpvN3p2NEtfX1FXQUhMN1lEb0p1b2ZaWGp3X2pmV1VKQQ?oc=5"
+  },
+  {
    "title": "Tedros calls for protection of health facilities in Gaza - Chinadaily.com.cn",
    "url": "https://global.chinadaily.com.cn/a/202611/13/WS6af669dee4b03ebf8519c2f8.html",
    "src": "WHO Alert",
@@ -2543,6 +2691,20 @@
    "domain": "statnews.com",
    "inhoud": -6,
    "score": -5
+  },
+  {
+   "title": "Health Promoter and Community Engagement Manager - Ebola Emergency Pool - French proficiency mandatory",
+   "url": "https://reliefweb.int/job/4238156/health-promoter-and-community-engagement-manager-ebola-emergency-pool-french-proficiency-mandatory",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-12T15:30:54+00:00",
+   "summary": "Health Promoter and Community Engagement Manager - Ebola Emergency Pool - French proficiency mandatory ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -16,
+   "score": -12,
+   "gnews": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZnJoTENOWlRBVmxzTXVxNWRsQmpwZEhYMUdGUGQ5djdLWkdnRTNmRjA2MWlyTzRybExKdFI0RksycVJoWC05ZTZweUduSHFwU3VXc0hBMDA5bXlLYUlQYzZBcFVQbzYtb3Z4YndSQlRIeDZXcmxQbU5TUzdtT0tOYVpyRTVKYk1KSHZmUnVfczMtbkt4cnRVcE5ycFZ1c3dwUElPNExlb1Q3RkhSZEZoU1VPbkhGVDlvbHZtV3EzZXRmdUlEcEFjV0I5Y0w?oc=5"
   },
   {
    "title": "Turkey burns biodiesel to power COP31, despite push for electrification",
@@ -4066,20 +4228,6 @@
    "score": -1
   },
   {
-   "title": "Health Advisor on Health Information Systems",
-   "url": "https://reliefweb.int/job/4237959/health-advisor-health-information-systems",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-11-11T13:49:05+00:00",
-   "summary": "Health Advisor on Health Information Systems ReliefWeb",
-   "domain": "reliefweb.int",
-   "fallback": true,
-   "inhoud": -20,
-   "score": -16,
-   "gnews": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPbWE0MXY4LXVjVXR1NERSRDhVM0d1dlUzcXV5cGh5VW14YktGNXBrSUFnOElwaW9iRElXb0VqN1Rvc2V5Rl8wLWh3clhTYjhlT2pzanNSalhGSmRPbG53bTd2S2hxMTQ2d3dZeUZXTVhER2E0X0V0Qm4xYjNXQlVnMg?oc=5"
-  },
-  {
    "title": "Consultants’ strike in England is called off as union “pauses” action",
    "url": "http://www.bmj.com/content/395/bmj-2026-101431.short?rss=1",
    "src": "BMJ",
@@ -4150,6 +4298,20 @@
    "domain": "bmj.com",
    "inhoud": 0,
    "score": 3
+  },
+  {
+   "title": "Health Advisor on Health Information Systems",
+   "url": "https://reliefweb.int/job/4237959/health-advisor-health-information-systems",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-11T12:11:43+00:00",
+   "summary": "Health Advisor on Health Information Systems ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -20,
+   "score": -16,
+   "gnews": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPbWE0MXY4LXVjVXR1NERSRDhVM0d1dlUzcXV5cGh5VW14YktGNXBrSUFnOElwaW9iRElXb0VqN1Rvc2V5Rl8wLWh3clhTYjhlT2pzanNSalhGSmRPbG53bTd2S2hxMTQ2d3dZeUZXTVhER2E0X0V0Qm4xYjNXQlVnMg?oc=5"
   },
   {
    "title": "Slowing progress on hunger sparks EU debate on food aid as security",
@@ -6524,30 +6686,6 @@
    "score": -11
   },
   {
-   "title": "NHS data breaches: Attack victims’ families demand tougher rules for staff",
-   "url": "http://www.bmj.com/content/395/bmj-2026-101389.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-11-09T12:51:23+00:00",
-   "summary": "Families of the victims of high profile attacks whose loved ones had their medical records illegally accessed by NHS staff have demanded change.In a letter to health secretary Yvette Cooper, NHS England chief executive Jim Mackey, and culture secretary Lisa Nandy, signatories include relatives of th",
-   "domain": "bmj.com",
-   "inhoud": 0,
-   "score": 3
-  },
-  {
-   "title": "Devex Newswire: Another big global gathering, another bitter battle",
-   "url": "https://www.devex.com/news/devex-newswire-another-big-global-gathering-another-bitter-battle-113834",
-   "src": "Devex Global Health",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-11-09T12:31:32+00:00",
-   "summary": "COP31 kicks off today. Plus, we have details on a CEO's short-lived tenure and post-midterm power plays.",
-   "domain": "devex.com",
-   "inhoud": 0,
-   "score": 5
-  },
-  {
    "title": "Oman elected as Vice-Chair of Bureau of WHO Intergovernmental Working Group on Pandemic Agreement",
    "url": "https://timesofoman.com/article/178963-oman-elected-as-vice-chair-of-bureau-of-who-intergovernmental-working-group-on-pandemic-agreement",
    "src": "Times of Oman",
@@ -6559,118 +6697,6 @@
    "inhoud": 0,
    "score": 4,
    "gnews": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQ0tnOTJHc1lnWXZadjAycEtDVDB2VFpWQll1WjFBelRpZncwOGNIUXlSTE1XcWxDWFhzc3ZWN1JjeXBKa1lKbHg3SG16V2xyeVI0Wi1McV9pbUVFZ25rQTMyUVllQjd1WjJrV29oN3ItTjlNeWdrMUluUW5CblFIYUN3eURDV0lRdGFReXEyTTZTWXA0UkV6ajZuVjdyNUdzQ1g0VjRybXdESXZXanh2UXRPeHVEYXZRaUx3V3BOckxteXpzQlkwZDY5QzlaTlM0OGc?oc=5"
-  },
-  {
-   "title": "What we can learn from two pioneering female surgeons",
-   "url": "http://www.bmj.com/content/395/bmj-2026-101283.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-11-09T11:46:20+00:00",
-   "summary": "Women have contributed to surgery for decades, but their presence is often overlooked. As of 2020, only 34.8% of surgical trainees were female compared with 56.6% in the broader trainee population.1In March 2025, in honour of women’s history month, the King’s Health Partners’ grand round was dedicat",
-   "domain": "bmj.com",
-   "inhoud": 0,
-   "score": 3
-  },
-  {
-   "title": "‘Exceptional’ extreme temperatures to continue into next year, UN reports",
-   "url": "https://news.un.org/en/story/2026/11/1168760",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-11-09T11:30:41+00:00",
-   "summary": "‘Exceptional’ extreme temperatures to continue into next year, UN reports UN News",
-   "domain": "news.un.org",
-   "fallback": true,
-   "inhoud": 0,
-   "score": 5,
-   "gnews": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5reFh4bzZRTElpOGpFUEM3cHE3TUduUDJmdVFsTFgzUnIxQlBLUy0weTEyVWNXckxGRkFrQ3BTLWZ3WEwtc19jQ2hDMU9kUWpNWEE0d1VDcw?oc=5"
-  },
-  {
-   "title": "Practice Pointer: Community management of delirium",
-   "url": "http://www.bmj.com/content/395/bmj-2026-100817.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-11-09T10:41:19+00:00",
-   "summary": "What you need to knowDelirium can be diagnosed, investigated and managed safely in community settingsRecognition of delirium is informed by an acute change in the individual’s behaviour - this should be thought of as a vital sign that needs further investigation into the underlying cause(s)Effective",
-   "domain": "bmj.com",
-   "inhoud": 0,
-   "score": 3
-  },
-  {
-   "title": "Climate-health fund awards $225M in first year",
-   "url": "https://www.devex.com/news/climate-health-fund-awards-225m-in-first-year-113830",
-   "src": "Devex Global Health",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-11-09T10:22:46+00:00",
-   "summary": "The figure represents 75% of the $300 million initially pledged by the coalition, which was established at COP30 in Brazil last year.",
-   "domain": "devex.com",
-   "inhoud": 4,
-   "score": 9
-  },
-  {
-   "title": "New WHO policy options call for stronger integration of health and care workforce",
-   "url": "https://www.who.int/news/item/09-11-2026-new-who-policy-options-call-for-stronger-integration-of-health-and-care-workforce",
-   "src": "WHO News",
-   "feed": "WHO News",
-   "cat": "who",
-   "date": "2026-11-09T09:58:47+00:00",
-   "summary": "",
-   "domain": "who.int",
-   "inhoud": 6,
-   "score": 10
-  },
-  {
-   "title": "[Re-Ad] Capacity Building Specialist (Public Health) – Philippines",
-   "url": "https://reliefweb.int/job/4237469/re-ad-capacity-building-specialist-public-health-philippines",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-11-09T09:43:07+00:00",
-   "summary": "[Re-Ad] Capacity Building Specialist (Public Health) – Philippines ReliefWeb",
-   "domain": "reliefweb.int",
-   "fallback": true,
-   "inhoud": -20,
-   "score": -16,
-   "gnews": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPamlRSFREbUNJbzlHUmJxWGF1ZVQ1QVhXZDAya3FCYkExOVVfUklqX1NNcFdvV0EtN0ZIQlZSZlJEckNuLU4zSk50cWdnc1BDcXkwOTladS11dl9xUG9SUXdwZkxrbExQWHNaWXV5TUZOSUwyRFJ5RktTbmVIaFJENnh3Tk1yNDlwSmV1TGs4YWZrOHNEcXlVdFJ3?oc=5"
-  },
-  {
-   "title": "As Zimbabwe Expands Solar Power, Women No Longer Have to Give Birth by Candlelight",
-   "url": "https://healthpolicy-watch.news/as-zimbabwe-expands-solar-power-women-no-longer-have-to-give-birth-by-candlelight/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-11-09T09:38:55+00:00",
-   "summary": "HARARE, Zimbabwe – As she opened and shut the doors of four giant refrigerators inside a dispensary at Budiriro Polyclinic in the capital of Harare, the nurse beamed. Since the clinic became linked to solar power, critical medicines that need refrigeration are no longer at risk of spoiling when the ",
-   "domain": "healthpolicy-watch.news",
-   "inhoud": 0,
-   "score": 4
-  },
-  {
-   "title": "Opinion: STAT+: CVS’ split doesn’t fix its fundamental problem",
-   "url": "https://www.statnews.com/2026/11/09/cvs-health-split-pbm-conflict-examined-anthony-loiacono-judi-health/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-11-09T09:30:00+00:00",
-   "summary": "CVS’ split into two doesn’t fix its fundamental problem, writes Judi Health CEO A.J. Loiacono.",
-   "domain": "statnews.com",
-   "inhoud": -6,
-   "score": -5
-  },
-  {
-   "title": "Beyond Fauci: Gain-of-Function Research and the Biosecurity Governance Gap",
-   "url": "https://newsletter.genevahealthfiles.com/beyond-fauci-gain-of-function-research-and-the-biosecurity-governance-gap/",
-   "src": "Geneva Health Files",
-   "feed": "Geneva Health Files",
-   "cat": "policy",
-   "date": "2026-11-09T09:24:50+00:00",
-   "summary": "Newsletter Edition #174 [Treaty Talks] Subscribe Now! Readers, The watershed election results in the U.S. last week has redrawn the contours of global health politics potentially making space for less acrimonious engagement on these matters. (At least that is the hope as seen from International Gene",
-   "domain": "newsletter.genevahealthfiles.com",
-   "inhoud": 7,
-   "score": 11
   },
   {
    "title": "Doctors are using bacteria-killing viruses against superbugs that drugs cannot beat, and in a Belgian ser",
@@ -7280,7 +7306,7 @@
    "summary": "Is climate change propelling the rise of superbugs? PreventionWeb.net",
    "domain": "preventionweb.net",
    "inhoud": 8,
-   "score": 11,
+   "score": 10,
    "gnews": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdDdCVlNRTmJOWmtBZ0lhd25aVnZmV25BZVlrR1cxZDItRzBnUzFtWW5Xak1od2NDNVV4M0RWTl83TWxjOFRqekxDd2d3NG92NUVhWXI4bEJmYUFqWGJ4SmppTm1mcmI3MXhiVGl3WWJMZ1BTcnRaREVTVUxrM3FsMA?oc=5"
   },
   {
@@ -8919,32 +8945,6 @@
    "inhoud": 16,
    "score": 24,
    "gnews": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOYXRKTndCNnprUTFLejQtcURvT2l2akdIZEZTR0hmZF9BR3BOV3piUE9VQWhwVnQzMkx3ZmJlbVRyQmtEUHoyX01TN2NxTWtuQjBoUU11NVhWcVlnMXNMVkJGcUh5ME9GbE5DYnJ3cUVkdFVjRms0ejJ4cDFjVmRzbDdjMlhRa2ZMWnFLbzN3N3NpQkZ3ZUJFYnNsUnNZV0JQaFdqRFg1WTRDV2hyNnRfQ2Facll5QW5IM1J2ck5tZHc2Q0YzTUdUNVA4ZExkb1pPUlhLUkZNYkpfS2d4aEdRVEVpUnp2Sk5SZHMtZ2tycUQwMHVPUVNR?oc=5"
-  },
-  {
-   "title": "How Trachoma in El Salvador Was Eliminated",
-   "url": "https://borgenproject.org/trachoma-in-el-salvador/",
-   "src": "The Borgen Project",
-   "feed": "WHO NTDs",
-   "cat": "ntd",
-   "date": "2026-09-16T00:00:00+00:00",
-   "summary": "How Trachoma in El Salvador Was Eliminated The Borgen Project",
-   "domain": "borgenproject.org",
-   "score": 4,
-   "inhoud": 4,
-   "gnews": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE82clVmcXpQTEdvRUFEcV9LTkpXX0QtOGNXakVYMHFpSDZnMEtZZTZndTVlcmN2OVRFb2Y0QTVBaW9oS3NvUW95QlBVNFZRRE0taV9oTGdQZmFieEpxeWtJ?oc=5"
-  },
-  {
-   "title": "Strengthening health security through the implementation of International Health Regulations",
-   "url": "https://www.afro.who.int/countries/kenya/news/strengthening-health-security-through-implementation-international-health-regulations",
-   "src": "WHO | Regional Office for Africa",
-   "feed": "IHR amendments",
-   "cat": "pandemic",
-   "date": "2026-09-16T00:00:00+00:00",
-   "summary": "Strengthening health security through the implementation of International Health Regulations WHO | Regional Office for Africa",
-   "domain": "afro.who.int",
-   "score": 17,
-   "inhoud": 10,
-   "gnews": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPU1VCTklYUWNGZXBnSjFrVDlDSFppdGVCOUExckRpdzFDVHZVSDhkSlo5NU5MbnNpdnY0UDBFZnh6UFNPQW1Ra05PQWg2ODRnWlZqUTJxdmhWZDNxNzhVVmxRb3BfcEYySngzMGJTT2FiZXg0bC1kbS1aV3ozVGdtZnJKSnRhN2FoeEpYcWxnSXZMYndsdDdRUFlDYkdzVzVIamYtS3I0emh0bWV5V2FuQ1hVeEo1RGhfQzY2dkhiRm1heXJ1eHpkZGZzSQ?oc=5"
   }
  ]
 }
