@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T06:47:53+00:00",
+ "generated": "2026-11-15T14:51:59+00:00",
  "feeds_ok": 43,
  "feeds_tot": 43,
  "status": {
@@ -26,10 +26,11 @@
   },
   "UN News Health": {
    "ok": true,
-   "msg": "12 items",
+   "msg": "12 items (via kandidaat 2)",
    "cat": "who",
-   "via": 1,
-   "fallback": false
+   "via": 2,
+   "fallback": true,
+   "errors": "[1] ValueError: 0 entries"
   },
   "CIDRAP Public Health": {
    "ok": true,
@@ -61,7 +62,7 @@
   },
   "ReliefWeb Health": {
    "ok": true,
-   "msg": "10 items (via kandidaat 2)",
+   "msg": "11 items (via kandidaat 2)",
    "cat": "emerg",
    "via": 2,
    "fallback": true,
@@ -318,16 +319,89 @@
  },
  "items": [
   {
+   "title": "Drug-resistant infections linked to 4.7m deaths, WHO warns",
+   "url": "https://thesun.ng/drug-resistant-infections-linked-to-4-7m-deaths-who-warns/",
+   "src": "The Sun Nigeria",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-15T13:02:02+00:00",
+   "summary": "Drug-resistant infections linked to 4.7m deaths, WHO warns The Sun Nigeria",
+   "domain": "thesun.ng",
+   "inhoud": 6,
+   "score": 8,
+   "gnews": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNT2FGWHdtMTh4YTYwc3JaRUVqc1dzUW00RTZBYkExWG5LWHMycFVpak5BZ1NUbXpSTHpLazhadjlmelQ3TkUxb2xOSHV5aGtJeTB0cW1MUzZhTWZRX2VXanZuZU9MQjlsTVM0a2hlWm13VkVJXzFTa1ZaNm1EektaSVZn?oc=5"
+  },
+  {
+   "title": "'Fully preventable': US loses measles-free status after continued spread of the disease",
+   "url": "https://www.news24.com/world/fully-preventable-us-loses-measles-free-status-after-continued-spread-of-the-disease-20261114-0728",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-15T09:12:58+00:00",
+   "summary": "The Pan American Health Organisation has revoked the United ... The reported decision by the Americas branch of the World Health Organisation ...",
+   "domain": "news24.com",
+   "inhoud": 4,
+   "score": 7
+  },
+  {
+   "title": "Six months on, accessing hard-to-reach communities key to halting Ebola outbreak | WHO",
+   "url": "https://www.afro.who.int/countries/democratic-republic-of-congo/news/six-months-accessing-hard-reach-communities-key-halting-ebola-outbreak",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-15T08:24:03+00:00",
+   "summary": "World Health Organization — African Region · Donate. Health topics. All ... health zones in eight provinces. Contact follow-up remains below ...",
+   "domain": "afro.who.int",
+   "inhoud": 10,
+   "score": 17
+  },
+  {
+   "title": "U.S. loses measles elimination status as cases break records - The Japan Times",
+   "url": "https://www.japantimes.co.jp/news/2026/11/15/world/science-health/us-loses-measles-elimination-status/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-15T07:21:12+00:00",
+   "summary": "WORLD / Science & Health . U.S. loses measles ... The determination followed a review of the evidence by the Pan American Health Organization ...",
+   "domain": "japantimes.co.jp",
+   "inhoud": 10,
+   "score": 10
+  },
+  {
+   "title": "Brookston Air Quality Index (AQI) and USA Air Pollution | IQAir Bahrain",
+   "url": "https://www.iqair.com/bh/air-quality/usa/indiana/brookston",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-15T06:35:17+00:00",
+   "summary": "... World Health Organization annual PM2.5 guideline value. air quality map. Real-time Brookston air pollution map. Health recommendations. common ...",
+   "domain": "iqair.com",
+   "inhoud": 10,
+   "score": 10
+  },
+  {
    "title": "New Unitaid report charts a path to expand access to lifesaving newborn care",
    "url": "https://unitaid.org/news-blog/new-unitaid-report-charts-a-path-to-expand-access-to-lifesaving-newborn-care/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
    "date": "2026-11-15T06:02:45+00:00",
    "summary": "On 23 November at 14:00-15:30 CET, the World Health Organization and Unitaid will host a webinar bringing together newborn health experts to explore ...",
    "domain": "unitaid.org",
-   "inhoud": 9,
-   "score": 16
+   "inhoud": 6,
+   "score": 13
+  },
+  {
+   "title": "The U.S. Lost Its Measles Elimination Status — Here's What That Means For Public Health - HuffPost",
+   "url": "https://www.huffpost.com/entry/us-lost-measles-elimination-status-doctors_l_6af23fdde4b0779b5f33a1f4",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-15T03:22:58+00:00",
+   "summary": "... Health Organization, which is an agency within the World Health Organization . Advertisement. It isn't shocking. There were measles outbreaks in ...",
+   "domain": "huffpost.com",
+   "inhoud": 13,
+   "score": 13
   },
   {
    "title": "What to know about antimicrobial resistance in pet treatment",
@@ -813,18 +887,6 @@
    "score": 9
   },
   {
-   "title": "US loses measles-free status after continued spread of the disease, WSJ reports | Reuters",
-   "url": "https://www.reuters.com/world/us-loses-measles-free-status-after-continued-spread-disease-wsj-reports-2026-11-14/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-14T04:39:58+00:00",
-   "summary": "The international health body did not immediately respond to ‌a request from Reuters for comment on the report, which cited people familiar with ...",
-   "domain": "reuters.com",
-   "inhoud": 7,
-   "score": 12
-  },
-  {
    "title": "Awareness and attitudes towards decolonising global health: findings from an international survey of perioperative clinicians",
    "url": "http://gh.bmj.com/cgi/content/short/11/11/e024372?rss=1",
    "src": "BMJ Global Health",
@@ -895,6 +957,18 @@
    "domain": "gov.uk",
    "inhoud": 6,
    "score": 11
+  },
+  {
+   "title": "U.S. loses measles-free status after continued spread of the disease, WSJ reports",
+   "url": "https://www.spokesman.com/stories/2026/nov/14/us-loses-measles-free-status-after-continued-sprea/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-14T00:00:00+00:00",
+   "summary": "The reported decision by the Americas branch of the World Health Organization comes as the U.S. battles the highest number of measles cases it has ...",
+   "domain": "spokesman.com",
+   "inhoud": 4,
+   "score": 12
   },
   {
    "title": "The Trump administration is diverting billions in health funding away from low-income ... - CNN",
@@ -6587,78 +6661,6 @@
    "score": 5
   },
   {
-   "title": "Special edition: COP31 is about action, not agreements. Here’s what we’re tracking",
-   "url": "https://www.devex.com/news/special-edition-cop31-is-about-action-not-agreements-here-s-what-we-re-tracking-113826",
-   "src": "Devex Global Health",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-11-09T15:16:31+00:00",
-   "summary": "Negotiators in Antalya will wrestle over finance, adaptation, and just transition, while the nonunanimous \"Action Agenda\" tries to show what delivery looks like.",
-   "domain": "devex.com",
-   "inhoud": 0,
-   "score": 5
-  },
-  {
-   "title": "India vows “immediate” action against substandard medicines",
-   "url": "http://www.bmj.com/content/395/bmj-2026-101392.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-11-09T15:16:11+00:00",
-   "summary": "India’s drug regulators will be empowered to immediately suspend manufacturing licences for drugs that fail routine government quality checks, to tackle quality lapses in the country’s vast pharmaceutical industry.1The proposed rules come amid growing concerns over the quality of medicines manufactu",
-   "domain": "bmj.com",
-   "inhoud": 4,
-   "score": 7
-  },
-  {
-   "title": "[Articles] Cardiovascular outcomes with survodutide in adults with obesity at increased cardiovascular risk (SYNCHRONIZE-CVOT): a double-blind, randomised, placebo-controlled, phas",
-   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02140-9/fulltext?rss=yes",
-   "src": "The Lancet",
-   "feed": "The Lancet",
-   "cat": "journal",
-   "date": "2026-11-09T14:45:00+00:00",
-   "summary": "In participants with obesity with established cardiovascular disease or chronic kidney disease or at increased risk of cardiovascular disease, survodutide was not associated with increased risk for the primary composite endpoint of death from cardiovascular causes, non-fatal stroke, non-fatal myocar",
-   "domain": "thelancet.com",
-   "inhoud": -12,
-   "score": -11
-  },
-  {
-   "title": "STAT+: Gene therapy’s long-debated cancer risk materializes",
-   "url": "https://www.statnews.com/2026/11/09/biotech-news-gene-therapy-long-debated-cancer-risk-materializes/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-11-09T14:36:12+00:00",
-   "summary": "For years, gene therapy researchers debated whether the viruses they use to ferry replacement genes into cells could cause tumors. A small number of cases now offer strong evidence that…",
-   "domain": "statnews.com",
-   "inhoud": -14,
-   "score": -13
-  },
-  {
-   "title": "STAT+: Eli Lilly’s GLP-1 pill Foundayo helped alleviate sleep apnea in studies",
-   "url": "https://www.statnews.com/2026/11/09/eli-lilly-foundayo-sleep-apnea/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-11-09T14:30:00+00:00",
-   "summary": "Eli Lilly’s GLP-1 pill Foundayo helped alleviate sleep apnea in two late-stage studies, but it doesn’t appear as effective as Lilly’s injectable drug Zepbound.",
-   "domain": "statnews.com",
-   "inhoud": -6,
-   "score": -5
-  },
-  {
-   "title": "STAT+: Pharmalittle: We’re reading about a Novartis heart drug, BIO fighting a Trump program, and more",
-   "url": "https://www.statnews.com/pharmalot/2026/11/09/novartis-abandons-heart-drug-bio-fighting-trump-program/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-11-09T14:28:42+00:00",
-   "summary": "Novartis is largely abandoning a drug once considered a potential blockbuster after a study found it had little promise for preventing heart attacks and deaths",
-   "domain": "statnews.com",
-   "inhoud": -6,
-   "score": -5
-  },
-  {
    "title": "How an Ancient Peptide Could Help Fight Modern Superbugs",
    "url": "https://www.medscape.com/viewarticle/how-ancient-peptide-could-help-fight-modern-superbugs-2026a10016of",
    "src": "Medscape",
@@ -7301,7 +7303,7 @@
    "src": "PreventionWeb.net",
    "feed": "AMR policy & research",
    "cat": "amr",
-   "date": "2026-11-04T08:00:00+00:00",
+   "date": "2026-11-04T12:00:00+00:00",
    "summary": "Is climate change propelling the rise of superbugs? PreventionWeb.net",
    "domain": "preventionweb.net",
    "inhoud": 8,
