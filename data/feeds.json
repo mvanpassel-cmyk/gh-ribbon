@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T20:27:37+00:00",
+ "generated": "2026-11-16T01:08:44+00:00",
  "feeds_ok": 43,
  "feeds_tot": 43,
  "status": {
@@ -26,11 +26,10 @@
   },
   "UN News Health": {
    "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "msg": "12 items",
    "cat": "who",
-   "via": 2,
-   "fallback": true,
-   "errors": "[1] ValueError: 0 entries"
+   "via": 1,
+   "fallback": false
   },
   "CIDRAP Public Health": {
    "ok": true,
@@ -62,7 +61,7 @@
   },
   "ReliefWeb Health": {
    "ok": true,
-   "msg": "11 items (via kandidaat 2)",
+   "msg": "8 items (via kandidaat 2)",
    "cat": "emerg",
    "via": 2,
    "fallback": true,
@@ -194,7 +193,7 @@
   },
   "Uniting to Combat NTDs": {
    "ok": true,
-   "msg": "5 items",
+   "msg": "6 items",
    "cat": "ntd",
    "via": 1,
    "fallback": true
@@ -319,6 +318,91 @@
  },
  "items": [
   {
+   "title": "Measles outbreaks - LAist",
+   "url": "https://laist.com/brief/news/health/us-has-lost-measles-elimination-status-global-health-authorities-say",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-15T23:24:36+00:00",
+   "summary": "PAHO, an international group that oversees health in the Americas and works with the World Health Organization, based its assessment on two ...",
+   "domain": "laist.com",
+   "inhoud": 14,
+   "score": 14
+  },
+  {
+   "title": "Mount Sinai Researchers Study Advanced MRI to Locate Drug-Resistant Epilepsy Regions",
+   "url": "https://bioengineer.org/mount-sinai-researchers-study-advanced-mri-to-locate-drug-resistant-epilepsy-regions/",
+   "src": "Bioengineer.org",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-15T21:40:55+00:00",
+   "summary": "Mount Sinai Researchers Study Advanced MRI to Locate Drug-Resistant Epilepsy Regions Bioengineer.org",
+   "domain": "bioengineer.org",
+   "inhoud": 0,
+   "score": -4,
+   "gnews": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTF8td0FDcDdVRWkyakNqSkNQNXNxMWNDdGpWR01zeUMyR2J5VjJQTTRNbzNveTFfSS10bDBhQXliUnF3cDA1Zlk1NjE4cjlPUzZEeXl4NzdacHNwbEY5N2M4eXZmcmRmYkNidFp6WlFoZV9YNEFzQ2JIcm1tVW9DLW5HQmVwbWtuOHRya1hDbDN1c1gtczhMMjR2bDhzNmZ2RDktZFZ4TndoMXVNcEE?oc=5"
+  },
+  {
+   "title": "Children bearing heavy Ebola burden in DR Congo - Anadolu Ajansı",
+   "url": "https://www.aa.com.tr/en/africa/children-bearing-heavy-ebola-burden-in-dr-congo/4126045",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-15T21:01:05+00:00",
+   "summary": "7 in 10 children under 5 with confirmed Ebola have died, says World Health Organization | Anadolu.",
+   "domain": "aa.com.tr",
+   "inhoud": 4,
+   "score": 4
+  },
+  {
+   "title": "How did widespread vaccination lead to the eradication of smallpox? - Britannica",
+   "url": "https://www.britannica.com/science/How-did-widespread-vaccination-lead-to-the-eradication-of-smallpox",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-15T20:46:47+00:00",
+   "summary": "... World Health Organization launched an intensified global campaign to eliminate the disease. A critical strategy was \"ring vaccination,\" where health ...",
+   "domain": "britannica.com",
+   "inhoud": 7,
+   "score": 7
+  },
+  {
+   "title": "Universal Health (UHC) and Primary Health Care (PHC)—A complex dynamic endeavor. - EBSCO",
+   "url": "https://www.ebsco.com/articles/political-science/asn-155808613/universal-health-uhc-and-primary-health-care-phca-complex-dynamic-endeavor/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-15T20:26:39+00:00",
+   "summary": "Other topics include the efforts by the United Nations (UN), World Health Organization (WHO), and the World Bank in advancing UHC and PHC, the ...",
+   "domain": "ebsco.com",
+   "inhoud": 8,
+   "score": 8
+  },
+  {
+   "title": "Africa CDC says Ebola outbreak in DR Congo 'still not under control' - Al Jazeera",
+   "url": "https://www.aljazeera.com/amp/news/2026/11/15/africa-cdc-says-ebola-outbreak-in-dr-congo-still-not-under-control",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-15T20:08:48+00:00",
+   "summary": "“If we don't stop this outbreak now, it would be the worst Ebola outbreak that the world ... Earlier this month, the World Health Organization (WHO) ...",
+   "domain": "aljazeera.com",
+   "inhoud": 16,
+   "score": 21
+  },
+  {
+   "title": "Africa CDC says Ebola outbreak in DR Congo 'still not under control' - Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/15/africa-cdc-says-ebola-outbreak-in-dr-congo-still-not-under-control",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-15T20:08:46+00:00",
+   "summary": "Earlier this month, the World Health Organization (WHO) approved clinical trials of two new Ebola vaccines and said it expected results in early 2027.",
+   "domain": "aljazeera.com",
+   "inhoud": 18,
+   "score": 23
+  },
+  {
    "title": "New Orleans port sues owners of tanker involved in Mississippi crash - NPR",
    "url": "https://www.npr.org/2026/11/15/nx-s1-6041677/new-orleans-port-sues-miracle-mississippi-cruise-ship",
    "src": "Global Health",
@@ -354,6 +438,18 @@
    "inhoud": 8,
    "score": 10,
    "gnews": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYmoyckhGVXR1NUNEYTBRLUJIbDhhVDF6MjJERWhnbG01QldiRW5JSDM4RVhIMDBWRWo3ZGhSallDLWRORzV0RnRjZ3VfLWR1RHRQN1VuZlpJZzNUa2l6TUlxWjBnS0pFRm9ES3NkM0hONlhPbUhoZG5vaXBRWmFYZHNRSGhFZ21ZRlRVQ2ZHZ29mMWFVNUZaLUQ5WmxBbzRCZndvQ0lXZTJBWFJCZEx4YTI3bHk5NkwwX2RuSw?oc=5"
+  },
+  {
+   "title": "Santa Fe County funding for La Sala Crisis Triage Center uncertain",
+   "url": "https://www.santafenewmexican.com/news/local_news/santa-fe-county-funding-for-la-sala-crisis-triage-center-uncertain/article_62a5d3df-ea56-472a-b80e-6f155d245e8c.html",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-15T17:36:13+00:00",
+   "summary": "... health emergency . “Having an alternative that is specifically designed to address behavioral health crises has been an enormous step forward for ...",
+   "domain": "santafenewmexican.com",
+   "inhoud": 4,
+   "score": 4
   },
   {
    "title": "Document Analysis Reveals Outbreak Response Gaps Across Conflict-Affected Health Policies",
@@ -477,16 +573,16 @@
    "score": 7
   },
   {
-   "title": "Six months on, accessing hard-to-reach communities key to halting Ebola outbreak",
-   "url": "https://africacdc.org/news-item/six-months-on-accessing-hard-to-reach-communities-key-to-halting-ebola-outbreak/",
-   "src": "Africa CDC",
-   "feed": "Africa CDC",
-   "cat": "global",
+   "title": "Six months on, accessing hard-to-reach communities key to halting Ebola outbreak | WHO",
+   "url": "https://www.afro.who.int/countries/democratic-republic-of-congo/news/six-months-accessing-hard-reach-communities-key-halting-ebola-outbreak",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
    "date": "2026-11-15T08:24:03+00:00",
-   "summary": "15 November 2026 | Addis Ababa, Geneva, Kinshasa, New York, Rome Six months into the Ebola outbreak caused by Bundibugyo virus in the Democratic Republic of the Congo, significant progress has been made in bringing lifesaving services closer to affected communities, despite immense challenges. Howev",
-   "domain": "africacdc.org",
-   "inhoud": 12,
-   "score": 17
+   "summary": "Ethiopia hosts first Emergency Medical Teams global meeting in Africa ... health zones in eight provinces. Contact follow-up remains below target ...",
+   "domain": "afro.who.int",
+   "inhoud": 19,
+   "score": 26
   },
   {
    "title": "U.S. loses measles elimination status as cases break records - The Japan Times",
@@ -712,7 +808,7 @@
    "src": "Prop News Time",
    "feed": "AMR policy & research",
    "cat": "amr",
-   "date": "2026-11-14T19:02:15+00:00",
+   "date": "2026-11-14T19:02:16+00:00",
    "summary": "Pharmacy Council of India calls for coordinated action to tackle antimicrobial resistance Prop News Time",
    "domain": "propnewstime.com",
    "inhoud": 0,
@@ -862,6 +958,18 @@
    "domain": "washingtonpost.com",
    "inhoud": 4,
    "score": 7
+  },
+  {
+   "title": "WHO issues first guidelines on type 1 diabetes for adults",
+   "url": "https://www.who.int/news/item/14-11-2026-who-issues-first-guidelines-on-type-1-diabetes-for-adults",
+   "src": "WHO News",
+   "feed": "WHO News",
+   "cat": "who",
+   "date": "2026-11-14T13:30:42+00:00",
+   "summary": "",
+   "domain": "who.int",
+   "inhoud": 10,
+   "score": 14
   },
   {
    "title": "US loses its measles elimination status as cases surge | wusa9.com",
@@ -1078,18 +1186,6 @@
    "domain": "gov.uk",
    "inhoud": 6,
    "score": 11
-  },
-  {
-   "title": "WHO issues first guidelines on type 1 diabetes for adults",
-   "url": "https://www.who.int/news/item/14-11-2026-who-issues-first-guidelines-on-type-1-diabetes-for-adults",
-   "src": "WHO News",
-   "feed": "WHO News",
-   "cat": "who",
-   "date": "2026-11-14T00:00:00+00:00",
-   "summary": "",
-   "domain": "who.int",
-   "inhoud": 10,
-   "score": 16
   },
   {
    "title": "U.S. loses measles-free status after continued spread of the disease, WSJ reports",
@@ -1495,6 +1591,20 @@
    "domain": "devex.com",
    "inhoud": 0,
    "score": 5
+  },
+  {
+   "title": "Head of IT Operations - HQ",
+   "url": "https://reliefweb.int/job/4238290/head-it-operations-hq",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-13T17:20:28+00:00",
+   "summary": "Head of IT Operations - HQ ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -20,
+   "score": -16,
+   "gnews": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4wRk9iM01BVGROQUpqdldzTVBXaVQ2Sndxb2ROT2RveVJjYlcwOTQyZS10c0RzTXBjVFJzVDY4QmU5cW1GRGc0d2E5b21tRHFtMWdpSU5oVlBoZGNXQzQ3VzM3TzFpUQ?oc=5"
   },
   {
    "title": "Devex Career Hub: The changing role of US universities in preparing aid workers",
@@ -6029,6 +6139,20 @@
    "score": 5
   },
   {
+   "title": "Emergency Food Security and Nutrition Advisor",
+   "url": "https://reliefweb.int/job/4237721/emergency-food-security-and-nutrition-advisor",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-10T11:31:47+00:00",
+   "summary": "Emergency Food Security and Nutrition Advisor ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -20,
+   "score": -16,
+   "gnews": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZzRSanlCYzZRbDF0ajlTc2ptUk83NnFkNTVQQ1l1NW80alpSWDBOZi1ZZWdCRG0zRjNJVUVVczJsTTNjbXZPMjNGUjY4a1pqSWJsWF9IU1BLVm1VTVdlSXFyT3JJd3VFTEh5T19VWG0tM055b1ExMEdPU3otemd5ekg4Y2V0QQ?oc=5"
+  },
+  {
    "title": "Adulthood risk of non-communicable diseases associated with childhood and adolescent malnutrition in low- and middle-income countries: a systematic review of observational studies",
    "url": "http://gh.bmj.com/cgi/content/short/11/11/e019368?rss=1",
    "src": "BMJ Global Health",
@@ -6533,130 +6657,6 @@
    "domain": "bernama.com",
    "score": 6,
    "inhoud": 6
-  },
-  {
-   "title": "STAT+: Trump administration removes WuXi AppTec from its Chinese military list",
-   "url": "https://www.statnews.com/pharmalot/2026/11/09/trump-administration-removes-wuxi-apptec-from-its-chinese-military-list/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-11-09T20:51:50+00:00",
-   "summary": "The Trump administration has removed WuXi AppTec, a key partner for the pharma industry, from its list of “Chinese military companies” operating in the U.S.",
-   "domain": "statnews.com",
-   "inhoud": -6,
-   "score": -5
-  },
-  {
-   "title": "Syria reports 2 polio cases in Deir Ezzor governorate - CIDRAP - University of Minnesota",
-   "url": "https://www.cidrap.umn.edu/polio/syria-reports-2-polio-cases-deir-ezzor-governorate",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-09T20:36:17+00:00",
-   "summary": "According to the World Health Organization (WHO), Syria officials are strengthening vaccination and surveillance activities across the region and ...",
-   "domain": "cidrap.umn.edu",
-   "score": 14,
-   "inhoud": 8
-  },
-  {
-   "title": "Children among the dead as heavy rains flood tents and shelters in Gaza",
-   "url": "https://news.un.org/en/story/2026/11/1168766",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-11-09T20:29:41+00:00",
-   "summary": "Children among the dead as heavy rains flood tents and shelters in Gaza UN News",
-   "domain": "news.un.org",
-   "fallback": true,
-   "inhoud": 0,
-   "score": 5,
-   "gnews": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9mckpTbzlrdW55SmVad1p6T2x6ZWNxbmRNQkNMZVFESmRYb3dLUkROdFZfbk9feV9WWG1NQWtVLS1URUFSLUExQmdRbUlDeFB1WnVOM3VHQQ?oc=5"
-  },
-  {
-   "title": "MSF calls for broader access to ERVEBO vaccine during Ebola outbreak",
-   "url": "https://www.doctorswithoutborders.org/latest/msf-calls-broader-access-ervebo-vaccine-during-ebola-outbreak",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-09T19:39:30+00:00",
-   "summary": "MSF is urging the World Health Organization (WHO) Strategic Advisory Group of Experts on Immunization (SAGE) to lift restrictions limiting ERVEBO ...",
-   "domain": "doctorswithoutborders.org",
-   "score": 22,
-   "inhoud": 16
-  },
-  {
-   "title": "STAT+: Bill Ackman’s bold plan to transform brain research",
-   "url": "https://www.statnews.com/2026/11/09/bill-ackman-launches-new-brain-research-institute/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-11-09T19:21:55+00:00",
-   "summary": "Billionaire Bill Ackman as a bold plan to transform brain research, spurred by a tragic backstory.",
-   "domain": "statnews.com",
-   "inhoud": -6,
-   "score": -5
-  },
-  {
-   "title": "[Comment] Efinopegdutide: a step towards precision in MASH therapy?",
-   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02193-8/fulltext?rss=yes",
-   "src": "The Lancet",
-   "feed": "The Lancet",
-   "cat": "journal",
-   "date": "2026-11-09T18:00:02+00:00",
-   "summary": "The global impact of metabolic dysfunction-associated steatohepatitis (MASH) across diverse populations is significant. MASH cirrhosis has become a leading indication for liver transplantation and a primary driver of hepatocellular carcinoma. Advanced MASH fibrosis is associated with increased all-c",
-   "domain": "thelancet.com",
-   "inhoud": 0,
-   "score": 1
-  },
-  {
-   "title": "[Articles] Efficacy and safety of efinopegdutide in adults with metabolic dysfunction-associated steatohepatitis and stage 2–3 fibrosis: a phase 2b, randomised, placebo-controlled ",
-   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02043-X/fulltext?rss=yes",
-   "src": "The Lancet",
-   "feed": "The Lancet",
-   "cat": "journal",
-   "date": "2026-11-09T18:00:02+00:00",
-   "summary": "Treatment with efinopegdutide resulted in a significantly greater proportion of participants with MASH resolution without worsening of fibrosis compared with placebo. The 7 mg dose showed the most favourable benefit–risk profile, improving fibrosis by at least one stage without worsening steatohepat",
-   "domain": "thelancet.com",
-   "inhoud": -16,
-   "score": -15
-  },
-  {
-   "title": "‘Declarations Do Not Protect People’: COP31 Opens Under Pressure to Deliver Results Over Words",
-   "url": "https://healthpolicy-watch.news/declarations-do-not-protect-people-cop31-opens-under-pressure-to-deliver-results-over-words/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-11-09T17:56:42+00:00",
-   "summary": "ANTALYA – The 31st United Nations (UN) climate conference, COP31, got underway on Monday in the Turkish coastal city of Antalya, where some 100,000 people, including more than 90 heads of state and hundreds of ministers from nearly 200 countries, will gather over the next two weeks to decide what th",
-   "domain": "healthpolicy-watch.news",
-   "inhoud": 0,
-   "score": 4
-  },
-  {
-   "title": "STAT+: Hospitals win the midterms, and Chopping Very Strategically",
-   "url": "https://www.statnews.com/2026/11/09/midterm-elections-good-news-for-hospitals-cvs-breakup-explained/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-11-09T17:54:13+00:00",
-   "summary": "We explain the CVS breakup, and why Democrats' election victories are good news for hospitals.",
-   "domain": "statnews.com",
-   "inhoud": -6,
-   "score": -5
-  },
-  {
-   "title": "Director of Operations (f/x/m) – Brussels – MSF Belgium",
-   "url": "https://reliefweb.int/job/4237571/director-operations-fxm-brussels-msf-belgium",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-11-09T17:32:25+00:00",
-   "summary": "Director of Operations (f/x/m) – Brussels – MSF Belgium ReliefWeb",
-   "domain": "reliefweb.int",
-   "fallback": true,
-   "inhoud": -20,
-   "score": -16,
-   "gnews": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMnlRLW1fdWNKY2FfSzAyMlVyRWEtMEdWenl2UjhueFUxcndBT3hTbF9NV3NBaU1sMFZqYWtjd0xLUkFlTWlCR0k2eno0X3ZmbHFNOXhuUUhYdzdyZWprdGx0a1NhNVJsTXdkOF9DMm1hN3lnbnVHUUkwc0JxZVNKeTFudzI?oc=5"
   },
   {
    "title": "How an Ancient Peptide Could Help Fight Modern Superbugs",
