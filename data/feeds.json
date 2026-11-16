@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T01:08:44+00:00",
+ "generated": "2026-11-16T08:05:07+00:00",
  "feeds_ok": 43,
  "feeds_tot": 43,
  "status": {
@@ -26,10 +26,11 @@
   },
   "UN News Health": {
    "ok": true,
-   "msg": "12 items",
+   "msg": "12 items (via kandidaat 2)",
    "cat": "who",
-   "via": 1,
-   "fallback": false
+   "via": 2,
+   "fallback": true,
+   "errors": "[1] ValueError: 0 entries"
   },
   "CIDRAP Public Health": {
    "ok": true,
@@ -282,7 +283,7 @@
   },
   "Politico EU Health": {
    "ok": true,
-   "msg": "0 items (geen gezondheidsstukken dit uur)",
+   "msg": "1 items",
    "cat": "policy",
    "via": 1,
    "fallback": false
@@ -318,6 +319,90 @@
  },
  "items": [
   {
+   "title": "Loss of Demographic and Health Surveys Could Skew Global Maternal Mortality Tracking",
+   "url": "https://bioengineer.org/loss-of-demographic-and-health-surveys-could-skew-global-maternal-mortality-tracking/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-16T06:41:44+00:00",
+   "summary": "A statistical modelling study reveals that losing Demographic and Health Surveys data would distort global maternal mortality estimates and widen ...",
+   "domain": "bioengineer.org",
+   "inhoud": 4,
+   "score": -2
+  },
+  {
+   "title": "New international partnership invites global partners to join forces and unlock new financing ...",
+   "url": "https://reliefweb.int/report/world/new-international-partnership-invites-global-partners-join-forces-and-unlock-new-financing-sexual-and-reproductive-health-and-rights",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-16T05:58:16+00:00",
+   "summary": "At a time of growing opposition against gender equality, proposed global health reforms and of shrinking global funding, Denmark, Finland, ...",
+   "domain": "reliefweb.int",
+   "inhoud": 8,
+   "score": 14
+  },
+  {
+   "title": "Gates Foundation Reaffirms Commitment to Family Planning and Women's Health ...",
+   "url": "https://www.gatesfoundation.org/about/newsroom/press-releases/2026/11/family-planning-copenhagen",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-16T04:59:35+00:00",
+   "summary": "This pledge comes as governments, civil society, and philanthropic partners gather at the Copenhagen Summit to strengthen international cooperation on ...",
+   "domain": "gatesfoundation.org",
+   "inhoud": 4,
+   "score": 7
+  },
+  {
+   "title": "EU countries struggle to unite against US drug pricing pressure",
+   "url": "https://www.rapporteur.com/news/eu-countries-struggle-to-unite-against-us-drug-pricing-pressure/",
+   "src": "Rapporteur (ex-Euractiv)",
+   "feed": "Rapporteur (ex-Euractiv)",
+   "cat": "policy",
+   "date": "2026-11-16T03:00:40+00:00",
+   "summary": "Wary of Brussels’ wait-and-see approach, governments are debating who should speak for them",
+   "domain": "rapporteur.com",
+   "inhoud": 2,
+   "score": 7
+  },
+  {
+   "title": "Helping arms: German hospitals turn to robots to solve worker shortages",
+   "url": "https://www.rapporteur.com/news/helping-arms-german-hospitals-turn-to-robots-to-solve-worker-shortages/",
+   "src": "Rapporteur (ex-Euractiv)",
+   "feed": "Rapporteur (ex-Euractiv)",
+   "cat": "policy",
+   "date": "2026-11-16T03:00:15+00:00",
+   "summary": "They are still a bit slower than humans, but they don't need any breaks",
+   "domain": "rapporteur.com",
+   "inhoud": 0,
+   "score": 5
+  },
+  {
+   "title": "WHO declares El Niño a health emergency , step up response - Medical Buyer",
+   "url": "https://medicalbuyer.co.in/who-declares-el-nino-a-health-emergency-step-up-response/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-16T01:35:55+00:00",
+   "summary": "Some regions experience prolonged droughts and extreme heat, while others may face excessive rainfall, flooding and associated health emergencies .",
+   "domain": "medicalbuyer.co.in",
+   "inhoud": 6,
+   "score": 6
+  },
+  {
+   "title": "STAT+: Apple and OpenEvidence launch experimental health chat app",
+   "url": "https://www.statnews.com/2026/11/15/apple-openevidence-launch-health-chat-app-experiment-ai/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-11-16T01:25:43+00:00",
+   "summary": "Apple and OpenEvidence are launching a study based around an experimental AI-powered health chat app, hinting at possible new directions for both companies.",
+   "domain": "statnews.com",
+   "inhoud": -6,
+   "score": -5
+  },
+  {
    "title": "Measles outbreaks - LAist",
    "url": "https://laist.com/brief/news/health/us-has-lost-measles-elimination-status-global-health-authorities-say",
    "src": "Global Health",
@@ -328,6 +413,18 @@
    "domain": "laist.com",
    "inhoud": 14,
    "score": 14
+  },
+  {
+   "title": "Conflict and Displacement Hamper Efforts to Contain Ebola Outbreak in DRC - AfricaBrief",
+   "url": "https://africabrief.substack.com/p/conflict-and-displacement-hamper",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-15T21:41:44+00:00",
+   "summary": "15, 2026, by the World Health Organization (WHO) and its partners. Children account for more than a quarter of confirmed cases and one-third of ...",
+   "domain": "africabrief.substack.com",
+   "inhoud": 10,
+   "score": 10
   },
   {
    "title": "Mount Sinai Researchers Study Advanced MRI to Locate Drug-Resistant Epilepsy Regions",
@@ -476,18 +573,6 @@
    "score": 6
   },
   {
-   "title": "3000 recover from Ebola in DR Congo: WHO - Anadolu Ajansı",
-   "url": "https://www.aa.com.tr/en/health/3-000-recover-from-ebola-in-dr-congo-who/4125898",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-15T15:27:49+00:00",
-   "summary": "World Health Organization Director-General Tedros Ghebreyesus expressed deep gratitude to the nurses, doctors, community health workers, contact ...",
-   "domain": "aa.com.tr",
-   "inhoud": 10,
-   "score": 10
-  },
-  {
    "title": "STAT+: FDA rejects lung cancer treatment ivonescimab from Summit Therapeutics",
    "url": "https://www.statnews.com/2026/11/15/fda-rejects-ivonescimab-lung-cancer-treatment-summit-therapeutics/?utm_campaign=rss",
    "src": "STAT News",
@@ -545,7 +630,7 @@
    "summary": "... health authorities. In a joint statement issued Sunday, the World Health Organization (WHO) and humanitarian partners warned that 400 to 500 new ...",
    "domain": "english.news.cn",
    "inhoud": 12,
-   "score": 12
+   "score": 15
   },
   {
    "title": "Drug-resistant infections linked to 4.7m deaths, WHO warns",
@@ -571,18 +656,6 @@
    "domain": "news24.com",
    "inhoud": 4,
    "score": 7
-  },
-  {
-   "title": "Six months on, accessing hard-to-reach communities key to halting Ebola outbreak | WHO",
-   "url": "https://www.afro.who.int/countries/democratic-republic-of-congo/news/six-months-accessing-hard-reach-communities-key-halting-ebola-outbreak",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-11-15T08:24:03+00:00",
-   "summary": "Ethiopia hosts first Emergency Medical Teams global meeting in Africa ... health zones in eight provinces. Contact follow-up remains below target ...",
-   "domain": "afro.who.int",
-   "inhoud": 19,
-   "score": 26
   },
   {
    "title": "U.S. loses measles elimination status as cases break records - The Japan Times",
@@ -668,6 +741,30 @@
    "domain": "bbc.com",
    "inhoud": 10,
    "score": 15
+  },
+  {
+   "title": "3000 recover from Ebola in DR Congo: WHO - Anadolu Ajansı",
+   "url": "https://www.aa.com.tr/en/health/3-000-recover-from-ebola-in-dr-congo-who/4125898",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-15T00:00:00+00:00",
+   "summary": "WHO declared the Ebola outbreak caused by the Bundibugyo virus in Congo a public health emergency of international concern six months ago. Since ...",
+   "domain": "aa.com.tr",
+   "inhoud": 14,
+   "score": 14
+  },
+  {
+   "title": "Six months on, accessing hard-to-reach communities key to halting Ebola outbreak",
+   "url": "https://www.unicef.org/press-releases/six-months-accessing-hard-reach-communities-key-halting-ebola-outbreak",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-15T00:00:00+00:00",
+   "summary": "... health zones in eight provinces. Contact follow-up remains below target ... Emergency relief and response · Democratic Republic of the Congo ...",
+   "domain": "unicef.org",
+   "inhoud": 10,
+   "score": 26
   },
   {
    "title": "US has lost measles elimination status, global health authorities say - NPR",
@@ -2482,6 +2579,20 @@
    "domain": "chinadailyasia.com",
    "inhoud": 13,
    "score": 13
+  },
+  {
+   "title": "Statement of the Forty-sixth Meeting of the Polio IHR Emergency Committee (13 November 2026)",
+   "url": "https://reliefweb.int/report/world/statement-forty-sixth-meeting-polio-ihr-emergency-committee-13-november-2026",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-13T00:00:00+00:00",
+   "summary": "Statement of the Forty-sixth Meeting of the Polio IHR Emergency Committee (13 November 2026) ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": 14,
+   "score": 18,
+   "gnews": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbjNFak1kQ053RS16Umppam1TYXBDSS01QWl4RmtsZTh6aTVucTJJSld6aWtDYTZCNTdUQ0wwRHF0WXI5czB1TXZvejEzeGx3MnBJTXFvOWlycjBodjFyWDlSc0FWekluRjkyWENkX2ZUbmxpNV81a1l4M3lCSUc4NHNXTXJyaUF4cl9ZOC1DSF9sLXp3MjBfUjYzYXBLNlZWbGNtaXRicVVSVXN1OVVuUw?oc=5"
   },
   {
    "title": "WHO's next Director-General - The Lancet",
@@ -6536,30 +6647,6 @@
    "score": 24
   },
   {
-   "title": "80th World Health Assembly - Medicines for Malaria Venture",
-   "url": "https://www.mmv.org/events/80th-world-health-assembly",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-09T23:43:19+00:00",
-   "summary": "The World Health Assembly serves as the WHO's decision-making body, drawing delegations from every Member State to address a health agenda set by ...",
-   "domain": "mmv.org",
-   "score": 17,
-   "inhoud": 17
-  },
-  {
-   "title": "COP31 climate summit begins after disastrous year of extreme weather | PBS News",
-   "url": "https://www.pbs.org/newshour/science/cop31-climate-summit-begins-after-disastrous-year-of-extreme-weather",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-09T23:01:25+00:00",
-   "summary": "Or accept ongoing fossil fuel cost pain for families, firms and governments.\" \"The climate crisis is now a global health crisis of pandemic ...",
-   "domain": "pbs.org",
-   "score": 17,
-   "inhoud": 14
-  },
-  {
    "title": "Survey Detects Substantial Cutaneous Leishmaniasis and Skin Diseases in Rural Ethiopia",
    "url": "https://bioengineer.org/survey-detects-substantial-cutaneous-leishmaniasis-and-skin-diseases-in-rural-ethiopia/",
    "src": "Bioengineer.org",
@@ -6571,92 +6658,6 @@
    "inhoud": 0,
    "score": -4,
    "gnews": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbi1vVE1PZzJFZDZwSDgxV1Yyc2hpc2lpODVoN0k2b1ZMb01PdWVBWnRJU01wMmQ0U1g2WVRnX0F5OXkwckR6YldkQXZzblNhWnpFck40OVoway1XdnlTQ0FhN1NtZXF0SUlxZ3JfZTZvS3JLQlM2VjB6aG9KOVFCSHdJcHVVM3NlcXNGNldPNGRPaDFaeWFVb0l1WDNiYXVqaEN4T2ZyRTlNSF8zLXhvSA?oc=5"
-  },
-  {
-   "title": "STAT+: FDA approves novel Bayer drug to reduce recurrence of stroke",
-   "url": "https://www.statnews.com/2026/11/09/cardiovascular-stroke-recurrence-bayer-drug-fda-approval/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-11-09T22:28:43+00:00",
-   "summary": "Bayer's drug is the first in a novel class of medications designed to prevent blood clots without increasing risk of bleeding.",
-   "domain": "statnews.com",
-   "inhoud": -20,
-   "score": -19
-  },
-  {
-   "title": "HIMSS Global Health Equity Week asks who digital health is reaching - Healthcare IT News",
-   "url": "https://www.healthcareitnews.com/news/himss-global-health-equity-week-asks-who-digital-health-reaching",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-09T22:02:03+00:00",
-   "summary": "Who benefits when a health system introduces AI or expands virtual care? That question runs through HIMSS Global Health Equity Week, November 9-13 ...",
-   "domain": "healthcareitnews.com",
-   "score": 3,
-   "inhoud": 6
-  },
-  {
-   "title": "Call for Inputs – HRC65 Report (Special Rapporteur on Right to Health ) - ohchr",
-   "url": "https://www.ohchr.org/en/calls-for-input/2026/call-inputs-hrc65-report-special-rapporteur-right-health",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-09T21:56:08+00:00",
-   "summary": "... World Health Organization (WHO) Pandemic Agreement, including the PABS Annex, which remains under negotiation, and questions of implementation ...",
-   "domain": "ohchr.org",
-   "score": 12,
-   "inhoud": 12
-  },
-  {
-   "title": "At least 56 migrants die in weekend shipwrecks off Senegal and Greece",
-   "url": "https://news.un.org/en/story/2026/11/1168769",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-11-09T21:37:50+00:00",
-   "summary": "At least 56 migrants die in weekend shipwrecks off Senegal and Greece UN News",
-   "domain": "news.un.org",
-   "fallback": true,
-   "inhoud": 0,
-   "score": 5,
-   "gnews": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5HMDBkamxLTzU0RTV2S0Z3Sk5rSzlObGkyTVpyZWtIQTRzQ1RIV0Z1anBXZlVULWhfVmwxeW8zTUZWSUtMM1dnSEFycDZIQkoyYmxCaDZDdw?oc=5"
-  },
-  {
-   "title": "Wider use of Ervebo vaccine urged as DR Congo Ebola outbreak nears 11000 cases",
-   "url": "https://www.cidrap.umn.edu/viral-hemorrhagic-fever/wider-use-ervebo-vaccine-urged-dr-congo-ebola-outbreak-nears-11000-cases",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-09T21:36:27+00:00",
-   "summary": "MSF is urging the World Health Organization Strategic Advisory Group of Experts on Immunization to lift restrictions limiting Ervebo to research ...",
-   "domain": "cidrap.umn.edu",
-   "score": 22,
-   "inhoud": 16
-  },
-  {
-   "title": "Almost 1 in 4 Americans believe misinformation about cause of autism",
-   "url": "https://www.cidrap.umn.edu/childhood-vaccines/almost-1-4-americans-believe-misinformation-about-cause-autism",
-   "src": "CIDRAP Public Health",
-   "feed": "CIDRAP Public Health",
-   "cat": "promed",
-   "date": "2026-11-09T21:08:00+00:00",
-   "summary": "A large survey shows that most people understand that genes contribute to autism risk, but many still believe vaccines and Tylenol are factors.",
-   "domain": "cidrap.umn.edu",
-   "inhoud": 2,
-   "score": 4
-  },
-  {
-   "title": "El Nino Threatens To Worsen Disease Outbreaks, Heat Risks Into 2027: WMO Chief",
-   "url": "https://www.bernama.com/en/world/news.php?id=2632057",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-09T21:07:17+00:00",
-   "summary": "\"We are working with the World Health Organisation to translate the messaging from weather patterns to health impacts,\" she said. According to the ...",
-   "domain": "bernama.com",
-   "score": 6,
-   "inhoud": 6
   },
   {
    "title": "How an Ancient Peptide Could Help Fight Modern Superbugs",
