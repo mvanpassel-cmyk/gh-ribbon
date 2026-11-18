@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "note": "Past events of the World Calendar. Filled automatically from events.json; never pruned.",
   "events": [
     {"start": "2026-01-01", "cat": "eu", "title": "Cyprus takes over the EU Council presidency", "place": "EU", "status": "confirmed", "src": "https://www.consilium.europa.eu/en/council-eu/presidency-council-eu/"},
@@ -174,6 +174,7 @@
     {"start": "2026-11-11", "end": "2026-11-12", "cat": "summit", "title": "COP31 Leaders' Summit", "place": "Antalya, Türkiye", "note": "High-level segment within COP31", "status": "confirmed", "src": "https://unfccc.int/cop31/ifp"},
     {"start": "2026-11-12", "cat": "eu", "title": "European Political Community — 9th meeting", "place": "Dublin, Ireland", "status": "confirmed", "src": "https://irish-presidency.consilium.europa.eu/en/events/meeting-of-the-european-political-community-epc/"},
     {"start": "2026-11-13", "cat": "eu", "title": "Informal meeting of EU heads of state or government", "place": "Dublin, Ireland", "status": "confirmed", "src": "https://irish-presidency.consilium.europa.eu/en/events/informal-meeting-of-eu-heads-of-state-or-government/"},
-    {"start": "2026-11-15", "cat": "election", "title": "Cabo Verde — presidential election", "place": "Cabo Verde", "status": "confirmed", "src": "https://www.idea.int/democracytracker/elections-list"}
+    {"start": "2026-11-15", "cat": "election", "title": "Cabo Verde — presidential election", "place": "Cabo Verde", "status": "confirmed", "src": "https://www.idea.int/democracytracker/elections-list"},
+    {"start": "2026-11-16", "end": "2026-11-17", "cat": "gha", "title": "GHA reform — 4th Joint Task Force meeting", "place": "—", "note": "Interim report outlined to Member States on 20 Nov", "status": "confirmed", "src": "https://apps.who.int/gb/mspi/pdf_files/2026/10/Item1_30-10.pdf"}
   ]
 }
