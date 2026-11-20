@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T20:48:45+00:00",
+ "generated": "2026-11-20T02:25:28+00:00",
  "feeds_ok": 43,
  "feeds_tot": 43,
  "status": {
@@ -69,7 +69,7 @@
   },
   "Global Health": {
    "ok": true,
-   "msg": "11 items",
+   "msg": "12 items",
    "cat": "global",
    "via": 1,
    "fallback": false
@@ -282,7 +282,7 @@
   },
   "Politico EU Health": {
    "ok": true,
-   "msg": "2 items",
+   "msg": "1 items",
    "cat": "policy",
    "via": 1,
    "fallback": false
@@ -318,6 +318,187 @@
  },
  "items": [
   {
+   "title": "STAT+: Big drugmakers tell House committee they will halt clinical trials at some hospitals in China",
+   "url": "https://www.statnews.com/pharmalot/2026/11/19/china-pharma-biotech-clinical-trials-security-risk-patents-drug-development/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-11-20T02:25:13+00:00",
+   "summary": "Big drugmakers tell U.S. House committee they will halt clinical trials at some hospitals in China.",
+   "domain": "statnews.com",
+   "inhoud": -6,
+   "score": -5
+  },
+  {
+   "title": "[Comment] Seasonal mass vaccination for malaria control in west Africa",
+   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01870-2/fulltext?rss=yes",
+   "src": "The Lancet",
+   "feed": "The Lancet",
+   "cat": "journal",
+   "date": "2026-11-19T23:30:01+00:00",
+   "summary": "For over a decade, progress towards the elimination of malaria has slowed and funding has become constrained, creating an urgent need to layer available interventions to maximise impact. Recent advancements in malaria prevention include WHO's adoption of seasonal malaria chemoprevention (SMC) and pr",
+   "domain": "thelancet.com",
+   "inhoud": 15,
+   "score": 16
+  },
+  {
+   "title": "[Articles] Seasonal mass vaccination with R21/Matrix-M against malaria in The Gambia and Burkina Faso: an open-label, cluster-randomised, controlled trial",
+   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01562-X/fulltext?rss=yes",
+   "src": "The Lancet",
+   "feed": "The Lancet",
+   "cat": "journal",
+   "date": "2026-11-19T23:30:01+00:00",
+   "summary": "SMV with R21 reduced malaria prevalence in both settings. It could become an additional strategy for malaria control in endemic areas of seasonal transmission. In low-to-moderate transmission settings, the vaccine could accelerate progress towards elimination; in high-transmission areas it could fur",
+   "domain": "thelancet.com",
+   "inhoud": 4,
+   "score": 5
+  },
+  {
+   "title": "[Articles] Reproductive health in women in Britain from 2010 to 2024: findings from repeated, cross-sectional National Surveys of Sexual Attitudes and Lifestyles (Natsal)",
+   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01551-5/fulltext?rss=yes",
+   "src": "The Lancet",
+   "feed": "The Lancet",
+   "cat": "journal",
+   "date": "2026-11-19T23:30:01+00:00",
+   "summary": "The increase in women not intending to have children has major demographic implications and, alongside the persistent unmet need for effective contraception, underscores the importance of high-quality, easily accessible contraceptive services. The paucity of improvement in women's reproductive healt",
+   "domain": "thelancet.com",
+   "inhoud": -8,
+   "score": -7
+  },
+  {
+   "title": "[Review] Spontaneous coronary artery dissection: implications for women's health, clinical care, and future research",
+   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01485-6/fulltext?rss=yes",
+   "src": "The Lancet",
+   "feed": "The Lancet",
+   "cat": "journal",
+   "date": "2026-11-19T23:30:01+00:00",
+   "summary": "Spontaneous coronary artery dissection (SCAD) is an increasingly recognised cause of acute coronary syndromes, characterised by spontaneous separation of the layers of the coronary arterial wall. It predominantly affects younger women, and recent registry and imaging studies indicate that SCAD is mo",
+   "domain": "thelancet.com",
+   "inhoud": 0,
+   "score": 1
+  },
+  {
+   "title": "“Narco-Terrorism”: Key Challenge to a Global Drug Policy Based on Health and Human Rights",
+   "url": "https://www.hhrjournal.org/2026/11/19/narco-terrorism-key-challenge-to-a-global-drug-policy-based-on-health-and-human-rights/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-19T23:08:05+00:00",
+   "summary": "[22] Framing fentanyl, which is on the World Health Organization's Model List of Essential Medicines, as a security issue instead of a public health ...",
+   "domain": "hhrjournal.org",
+   "inhoud": 4,
+   "score": 4
+  },
+  {
+   "title": "Opinion: The U.S. lost measles elimination status. The next Congress should help restore it",
+   "url": "https://www.statnews.com/2026/11/19/measles-elimination-status-congress-should-prioritize-restoration/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-11-19T22:55:19+00:00",
+   "summary": "Infectious disease physician and STAT “ID Consult” columnist Krutika Kuppalli offers Congress a must-do list on measles.",
+   "domain": "statnews.com",
+   "inhoud": 10,
+   "score": 11
+  },
+  {
+   "title": "CDA urges dentists to prescribe antibiotics only when needed - Oral Health Group",
+   "url": "https://www.oralhealthgroup.com/dental-governance-regulations/cda-urges-dentists-to-prescribe-antibiotics-only-when-needed-during-world-amr-awareness-week-1004000370/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-19T22:25:58+00:00",
+   "summary": "The Canadian Dental Association highlights responsible antibiotic prescribing in dentistry during World AMR Awareness Week, Nov. 18–24.",
+   "domain": "oralhealthgroup.com",
+   "inhoud": 15,
+   "score": 15
+  },
+  {
+   "title": "Study raises doubts about combining vaccine, monoclonal antibody to protect against malaria",
+   "url": "https://www.statnews.com/2026/11/19/malaria-monoclonal-antibody-l9ls-vaccine-r21-infant-study-mali/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-11-19T22:20:00+00:00",
+   "summary": "A monoclonal antibody holds promise in preventing malaria, but researchers found it interfered with a new vaccine when used in babies.",
+   "domain": "statnews.com",
+   "inhoud": 8,
+   "score": 9
+  },
+  {
+   "title": "PAHO reports rising resistance to last-resort antibiotics in Latin America, Caribbean",
+   "url": "https://www.cidrap.umn.edu/antimicrobial-stewardship/paho-reports-rising-resistance-last-resort-antibiotics-latin-america",
+   "src": "CIDRAP Stewardship",
+   "feed": "CIDRAP Stewardship",
+   "cat": "amr",
+   "date": "2026-11-19T21:47:00+00:00",
+   "summary": "New surveillance data show resistance to carbapenem antibiotics is climbing in E coli and other bacterial pathogens.",
+   "domain": "cidrap.umn.edu",
+   "inhoud": 10,
+   "score": 12
+  },
+  {
+   "title": "One Health collaboration leads to potential targets against leishmaniasis, a parasitic disease",
+   "url": "https://medicalxpress.com/news/2026-11-health-collaboration-potential-leishmaniasis-parasitic.html",
+   "src": "Medical Xpress",
+   "feed": "NTD news",
+   "cat": "ntd",
+   "date": "2026-11-19T21:40:01+00:00",
+   "summary": "One Health collaboration leads to potential targets against leishmaniasis, a parasitic disease Medical Xpress",
+   "domain": "medicalxpress.com",
+   "inhoud": 6,
+   "score": 5,
+   "gnews": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOeU5DeTJ3dWxJekhzYXhhLXR0MFNnUTJJN0x3OFI4TXBKQmlmMEJPakpqZktsRzdXc1I2X2tfNGRxRkRnNGlSemFyTE9WbGF3RVkwamF4aHhpdTdvN3ZONm1oRGdzWUI3dV8yUklFbl84azhLTEppaTYtWmMtZDJ3TmJfTzhyYjhtZFJkOXllSWREQzhpejJIU1BaUWFyd1k?oc=5"
+  },
+  {
+   "title": "Measles Exposure Alert at Madison Hospital",
+   "url": "https://publichealthmdc.com/news/2026-11-19/measles-exposure-alert-at-madison-hospital",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-19T21:15:06+00:00",
+   "summary": "We are investigating a community measles exposure in Dane County at UnityPoint Health - Meriter Hospital Emergency Department that happened on ...",
+   "domain": "publichealthmdc.com",
+   "inhoud": 4,
+   "score": 4
+  },
+  {
+   "title": "Science Talk: The World Report on Promoting the Health of Refugees and Migrants",
+   "url": "https://unu.edu/inweh/event/science-talk-world-report-promoting-health-refugees-and-migrants",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-19T21:11:16+00:00",
+   "summary": "... Health (UNU-INWEH) and Technical Officer (Public Health and Migration) at the World Health Organization , will draw on global evidence from the World ...",
+   "domain": "unu.edu",
+   "inhoud": 5,
+   "score": 8
+  },
+  {
+   "title": "Is the World Growing Numb to Climate Change? | Think Global Health",
+   "url": "https://www.thinkglobalhealth.org/article/is-the-world-growing-numb-to-climate-change",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-19T20:44:50+00:00",
+   "summary": "Although the World Health Organization (WHO) and many advocates have made strides in integrating mental health into climate and health programming ...",
+   "domain": "thinkglobalhealth.org",
+   "inhoud": 16,
+   "score": 22
+  },
+  {
+   "title": "Vaccine hesitancy spills over to pet owners",
+   "url": "https://www.cidrap.umn.edu/rabies/vaccine-hesitancy-spills-over-pet-owners",
+   "src": "CIDRAP Public Health",
+   "feed": "CIDRAP Public Health",
+   "cat": "promed",
+   "date": "2026-11-19T20:39:00+00:00",
+   "summary": "Surveys indicate more people are wary of giving their pets vaccines. This is closely connected to how people feel about COVID-19 and the wellness industry.",
+   "domain": "cidrap.umn.edu",
+   "inhoud": 4,
+   "score": 6
+  },
+  {
    "title": "As WHO Director-General Forum Closes, Contenders Pitch Banks, Science And Discipline",
    "url": "https://healthpolicy-watch.news/who-dg-contenders-forum/",
    "src": "WHO Alert",
@@ -352,6 +533,18 @@
    "domain": "devex.com",
    "inhoud": 0,
    "score": 5
+  },
+  {
+   "title": "Stakeholders Convene to Advance Health Workforce Planning in Trinidad and Tobago with ...",
+   "url": "https://www.paho.org/en/news/19-11-2026-stakeholders-convene-advance-health-workforce-planning-trinidad-and-tobago-support",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-19T19:25:21+00:00",
+   "summary": "Port of Spain, 18 November 2026 ( PAHO) – The Pan American Health Organization/ World Health Organization (PAHO/WHO), in collaboration with the ...",
+   "domain": "paho.org",
+   "inhoud": 4,
+   "score": 11
   },
   {
    "title": "Quick takes: Cyclospora post-mortem, access to Ebola drug, changes to local health departments",
@@ -402,7 +595,7 @@
    "score": 4
   },
   {
-   "title": "AMOC Risks Running AMOK: Putting Europe into Deep Freeze and Disrupting Monsoon Patterns in Africa and Asia",
+   "title": "AMOC Risks Running AMOK: Putting Europe Into Deep Freeze and Disrupting Monsoon Patterns in Africa and Asia",
    "url": "https://healthpolicy-watch.news/amoc-risks-running-amok-cop31-atlantic-ocean/",
    "src": "Health Policy Watch",
    "feed": "Health Policy Watch",
@@ -498,16 +691,17 @@
    "score": -5
   },
   {
-   "title": "Europe Faces Threat from Drug-Resistant Infections, WHO Warns - EMJ",
+   "title": "Europe Faces Threat from Drug-Resistant Infections, WHO Warns",
    "url": "https://www.emjreviews.com/general-healthcare/news/europe-faces-threat-from-drug-resistant-infections-who-warns/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-19T16:23:50+00:00",
-   "summary": "Countries in the World Health Organization's European Region provided 2025 data from samples of klebsiella pneumoniae, a common hospital bacterium ...",
+   "src": "EMJ",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-19T16:19:01+00:00",
+   "summary": "Europe Faces Threat from Drug-Resistant Infections, WHO Warns EMJ",
    "domain": "emjreviews.com",
-   "inhoud": 5,
-   "score": 5
+   "inhoud": 6,
+   "score": 8,
+   "gnews": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQY0NrbDRncHZHU2ZLM2RFSUFTSE16VERia0p0QW1LUEM4czY3THdFTUVhbW5JdUlWejl1SzFNZ2M2Q1BNRzhqY3R3ZDY3djRqV290NlNSMzdCeEVybTZlR0I1SlJCZmVETG5QYnZBQUZQS3NibTUtSTgxRHJoQ25qS29sRmJBcFh4b0g2ZU9zeDZ2VmFVS2tMQ2I5V0dCbEFLbW5ZVk9wWGdwcEVyb3R2eGVR?oc=5"
   },
   {
    "title": "Climate Change and El Niño Intensify Fires in Southeast Asia, Affect Health Across Nations",
@@ -1003,6 +1197,20 @@
    "domain": "statnews.com",
    "inhoud": -6,
    "score": -5
+  },
+  {
+   "title": "Protection Assistant - 1 Tal Abyad, 1 Ras Al-Ayn",
+   "url": "https://reliefweb.int/job/4239023/protection-assistant-1-tal-abyad-1-ras-al-ayn",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-19T08:34:04+00:00",
+   "summary": "Protection Assistant - 1 Tal Abyad, 1 Ras Al-Ayn ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -20,
+   "score": -16,
+   "gnews": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOWE1qb1g1dUZ3a05zSzVQTlNMeWNxZTQ5VWUzN29pT1hNendTakI5QzltWl9DZTBLNEVxdC1YX1UxOEp6c0FmRDEyMXJjU2gwVzVfTzV3SUFsWTI0bEdhZGxQZTVlRExqMElvek8tZzVVTTFBckV5SHVlNTZJbmt1YS1adFJfQQ?oc=5"
   },
   {
    "title": "Why Measles Prevention Matters Now More Than Ever | Newswise",
@@ -2232,16 +2440,16 @@
   },
   {
    "title": "Novo Nordisk Foundation commits US$60 million to strengthen CARB-X efforts against antimicrobial resistance",
-   "url": "https://www.manilatimes.net/2026/11/18/tmt-newswire/globenewswire/novo-nordisk-foundation-commits-us60-million-to-strengthen-carb-x-efforts-against-antimicrobial-resistance/2472773",
-   "src": "The Manila Times",
+   "url": "https://novonordiskfonden.dk/en/news/novo-nordisk-foundation-commits-us60-million-to-strengthen-carb-x-efforts-against-antimicrobial-resistance/",
+   "src": "Novo Nordisk Fonden",
    "feed": "Antibiotic R&D (GARDP, CARB-X)",
    "cat": "amr",
    "date": "2026-11-18T06:04:01+00:00",
-   "summary": "Novo Nordisk Foundation commits US$60 million to strengthen CARB-X efforts against antimicrobial resistance The Manila Times",
-   "domain": "manilatimes.net",
+   "summary": "Novo Nordisk Foundation commits US$60 million to strengthen CARB-X efforts against antimicrobial resistance Novo Nordisk Fonden",
+   "domain": "novonordiskfonden.dk",
    "inhoud": 12,
    "score": 14,
-   "gnews": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOZEZJcjdxMnFsSVFBcmF4YXpaVFJZbGU5bi1OLUJBNFRnMTBMVjlIV3E0N0t5TUtuYk1NeVdKcVdEV1ZQQk5vX1h4ZFh4cVlSWjBDWmxtbk94Q1IxVi16MDFTZE8tOFZ6dzBMS1ZkWVlkYVU2NEY3cjJwTGlRTm45MWxHQ1dKSkNUOU5RUFN3UFNlODAwSnNfUk84Y21COFNYckJ5Q0NoN1pmR1VkQmRBX05ZRlZqQ1hWRXl3WVgyQnFtYWNpaC1SSl9VUk9uT21WSng2Ql9MRDBwaDJJUncyOWFnZ2dJcU5QdTVrOWQxdzNGV1dNYlVaZC00ZE9waWNCWG12NzB6VzhQbi020gGSAkFVX3lxTE91Unc0cUdFajVpMXN4Rm5TTmh0cHdUa3JxVU1YV2dMSzR2bkp2R29lNWtrZXl0ZmU0YTVGUHhEVUNvQm1ma0ltMVlsWFI0WTZUMGdfZ1FlZlRWMm9NWWdpYkNDRndMM2tvNFlubTNTRUNoanEydGJKZmpCZ2t3U1Vlb0ZEakRpcWVTb0g1a1pmSWdiZ0JPSE9SOHdkVFRqV0F2U3I1cC10YzNfTkx6NEw1aWp1UU9MekJHNm9DejlMQnBiZkhfQlZHY2JVVHA4Vm9KOS1jWVZRdWg5ek5XRHBDeXVvbG1aRWdzS0d0ZHFYMmNfOTRnOS1jWnZMblNjMjVyLVdENmhKV0NabEdCZ1pBWEE?oc=5"
+   "gnews": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOZ2VsVkZDWnpNNlZySElxTHRabXpLbVBWcnBNTy15clQ4Q19oM25JM3ZDRFNaX2QyOU9WbjNQdVZvNVd2UXZRVjZHdjZjQnN6SEg5aUlCcGhmZzVQRGoyY0hjVkM4VmFoZDNWc096aC1Ya3kwemxsNHFySEwtT0ZtRDczbGdyYWYzYTdYYm5pWFpud1RPZlBCenp0N0Q5bFUtM0dMNVpOMVZrdXdIbFQ2aGNaRXBRWURuVkJIajhHZ09hZUthR3FXR1FvTExJczZVa0czTG8zU3h3MHdW?oc=5"
   },
   {
    "title": "No time to lose to reverse the decline in childhood vaccination rates - Committees",
@@ -2254,6 +2462,19 @@
    "domain": "committees.parliament.uk",
    "inhoud": 8,
    "score": 8
+  },
+  {
+   "title": "Lecture On Conjunctivitis Classification, Angular Conjunctivitis, Ophthalmia Neonatorum, Trachoma",
+   "url": "https://youtu.be/1WNtXOXss_M",
+   "src": "YouTube",
+   "feed": "NTD news",
+   "cat": "ntd",
+   "date": "2026-11-18T05:14:47+00:00",
+   "summary": "Lecture On Conjunctivitis Classification, Angular Conjunctivitis, Ophthalmia Neonatorum, Trachoma YouTube",
+   "domain": "youtu.be",
+   "inhoud": 0,
+   "score": 2,
+   "gnews": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5lU2UxV0J0SWNUZFQ2SEJRU09XVnVBMnhJRGs3RzdNUURDazNlQjItTHJSQkFHZ09HWEotMHFZcnRjUQ?oc=5"
   },
   {
    "title": "Deadly drug-resistant infections are surging in European hospitals",
@@ -5639,18 +5860,6 @@
    "score": 10
   },
   {
-   "title": "Imported Malaria Cases in Vietnam Highlight Antimalarial Shortages During Elimination",
-   "url": "https://bioengineer.org/imported-malaria-cases-in-vietnam-highlight-antimalarial-shortages-during-elimination/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-14T23:14:39+00:00",
-   "summary": "While the World Health Organization recognises that the final phases of elimination and the prevention of re-establishment require locally adapted ...",
-   "domain": "bioengineer.org",
-   "inhoud": 8,
-   "score": 2
-  },
-  {
    "title": "‘A simple cut could become incurable’: The looming threat of drug-resistant infections",
    "url": "https://www.counterview.net/2026/11/a-simple-cut-could-become-incurable.html",
    "src": "Counterview",
@@ -5664,78 +5873,6 @@
    "gnews": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORDR2YXE1bFg0bGhQUTlURTRhMTUzM0IweFQ3amZSNWkydUlCRUdlTl9iNTdQTWxyS1h1SHlZbmdxRmYtT3hoSUc2V2tmQVhuSzI1UlFvVHJWRENUemJKd1hDV2lhZTVOQXY2Q2p0MEkxbHcyX3dGMGZzMTRXY3dSU1J3?oc=5"
   },
   {
-   "title": "Huge Crowds and Low Vaccination Rates Raise Measles Alarms as Pope Leo XIV Visits ...",
-   "url": "https://www.usnews.com/news/health-news/articles/2026-11-14/huge-crowds-and-low-vaccination-rates-raise-measles-alarms-as-pope-leo-xiv-visits-south-america",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-14T22:18:37+00:00",
-   "summary": "The Pan American Health Organization ... As of 2025, only Uruguay had achieved that number, according to data from the World Health Organization .",
-   "domain": "usnews.com",
-   "inhoud": 10,
-   "score": 13
-  },
-  {
-   "title": "Measles is back in the United States, WHO authorities say | Live Science",
-   "url": "https://www.livescience.com/health/viruses-infections-disease/measles-is-back-in-the-united-states-who-authorities-say",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-14T20:40:13+00:00",
-   "summary": "The Pan American Health Organization (PAHO), which is the regional office of the World Health Organization for the Americas, has reevaluated the ...",
-   "domain": "livescience.com",
-   "inhoud": 7,
-   "score": 7
-  },
-  {
-   "title": "U.S. measles deaths rise to 10 after new reports in Pennsylvania and Wisconsin",
-   "url": "https://www.nbcnews.com/health/health-news/us-measles-deaths-rise-10-new-reports-pennsylvania-wisconsin-rcna609245",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-14T20:22:05+00:00",
-   "summary": "The country now seems poised to lose that designation: The Pan American Health Organization (PAHO), a group within the World Health Organization ...",
-   "domain": "nbcnews.com",
-   "inhoud": 4,
-   "score": 4
-  },
-  {
-   "title": "Microscopically detectable maternal schistosomiasis at delivery in Eastern Uganda",
-   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0006297",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-14T20:02:55+00:00",
-   "summary": "Affiliation: Department of Pediatrics and Child Health , Kampala International University, Ishaka, Uganda ... PLOS Global Public Health is a global forum ...",
-   "domain": "journals.plos.org",
-   "inhoud": 13,
-   "score": 16
-  },
-  {
-   "title": "U.S. Loses Measles-Elimination Status as Historic Resurgence Sickens Thousands - WSJ",
-   "url": "https://www.wsj.com/health/u-s-loses-measles-elimination-status-as-historic-resurgence-sickens-thousands-b95e8780",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-14T20:01:11+00:00",
-   "summary": "The Pan American Health Organization , an international health body, has ... The stories you may have missed from the world of luxury real estate.",
-   "domain": "wsj.com",
-   "inhoud": 11,
-   "score": 11
-  },
-  {
-   "title": "US Stands to Lose Measles Elimination Status as Multiple States Face The Worst Outbreaks in Nearly Three Decades",
-   "url": "https://healthpolicy-watch.news/us-to-lose-measles-elimination-status/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-11-14T19:06:27+00:00",
-   "summary": "Plummeting vaccination rates have fueled a historic and prolonged wave of measles in the US – with the Pan American Health Organization expected to revoke the country’s elimination status it enjoyed since 2000. Experts told Health Policy Watch that the shifting vaccination landscape and persistent c",
-   "domain": "healthpolicy-watch.news",
-   "inhoud": 18,
-   "score": 22
-  },
-  {
    "title": "Pharmacy Council of India calls for coordinated action to tackle antimicrobial resistance",
    "url": "https://propnewstime.com/latestnewsstories/NDAyNDE=/pharmacy-council-of-india-calls-for-coordinated-action-to-tackle-antimicrobial-resistance",
    "src": "Prop News Time",
@@ -5747,114 +5884,6 @@
    "inhoud": 0,
    "score": 2,
    "gnews": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPa01wTVNKRGthYkpLUTRfLTJkLWtDenM0c3RjblpoR2hyUTJISHUzbHRZaFZ3LVBUNjd6OEkxYjdlX2wxaVJPZU9sVUMyemZ4ZGVuc0tBclhjR2gwdTMycTU4eHJFdTRzQThGaE00T1gxZ3dxWGM0NXAzMmFZNVIyVlRJVXd0SlY0bXRyd2JRYy16MHpBb0JZalJsZEJNUTRpaTlTWU8tQnFRMFdMdUZpako3SEpwUVJqSk4yakdrZ3p1N0RVSjNHY1JQOHFnUURsZWcwVFZ4YmU?oc=5"
-  },
-  {
-   "title": "US loses measles-free status as two more deaths reported | Health News - Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/11/14/measles-associated-deaths-reach-10-in-us-after-two-more-deaths-reported",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-14T18:25:44+00:00",
-   "summary": "Epidemiologists have told Al Jazeera that tracking “measles-associated” deaths has long been a standard used by the World Health Organization (WHO) ...",
-   "domain": "aljazeera.com",
-   "inhoud": 12,
-   "score": 17
-  },
-  {
-   "title": "As PA measles cases rise, U.S. loses elimination status: reports - WHYY",
-   "url": "https://whyy.org/articles/pennsylvania-measles-cases-outbreak-elimination-status/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-14T18:20:41+00:00",
-   "summary": "Scientists and public health experts say measles has regained a foothold in the U.S. as outbreaks like the one in Pennsylvania become more common.",
-   "domain": "whyy.org",
-   "inhoud": 13,
-   "score": 13
-  },
-  {
-   "title": "SEAHEARTS: South-East Asia’s Success Rolling out Strategies to Accelerate Action on Diabetes and other NCDs",
-   "url": "https://healthpolicy-watch.news/seahearts-south-east-asias-success-rolling-out-strategies-to-accelerate-action-on-diabetes-and-other-ncds/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-11-14T17:58:58+00:00",
-   "summary": "The SEAHEARTS initiative in WHO’s South-East Asia Region offers an outstanding example of how we can build health systems that address diabetes and other related conditions – worth special attention on World Diabetes Day, as we grapple with the growing number of people worldwide living with the cond",
-   "domain": "healthpolicy-watch.news",
-   "inhoud": 4,
-   "score": 8
-  },
-  {
-   "title": "Rep. Jonathan Jackson says US has 'turned its back on Africa'",
-   "url": "https://www.devex.com/news/rep-jonathan-jackson-says-us-has-turned-its-back-on-africa-113895",
-   "src": "Devex Global Health",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-11-14T16:38:22+00:00",
-   "summary": "At COP31 in Antalya, Turkey, the Illinois lawmaker said aid cuts and empty ambassador posts are costing Washington influence across Africa.",
-   "domain": "devex.com",
-   "inhoud": 0,
-   "score": 5
-  },
-  {
-   "title": "US loses measles-free status after continued spread of the disease: Report - CNA",
-   "url": "https://www.channelnewsasia.com/world/us-lose-measles-free-status-disease-transmission-6550971",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-14T16:23:31+00:00",
-   "summary": "The reported decision by the Americas branch of the World Health Organization comes as the US battles the highest number of measles cases it has ...",
-   "domain": "channelnewsasia.com",
-   "inhoud": 4,
-   "score": 4
-  },
-  {
-   "title": "WHO DON: Middle East respiratory syndrome coronavirus - Qatar - Avian Flu Diary",
-   "url": "https://afludiary.blogspot.com/2026/11/who-don-middle-east-respiratory.html",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-14T16:22:24+00:00",
-   "summary": "On 29 October 2026, the National International Health Regulations (IHR) ... Whether MERS-CoV will re-emerge as a global health threat remains ...",
-   "domain": "afludiary.blogspot.com",
-   "inhoud": 17,
-   "score": 17
-  },
-  {
-   "title": "The U.S. has lost measles elimination status. Here's what that means and who is most at risk.",
-   "url": "https://www.cbsnews.com/news/measles-elimination-status-united-states/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-14T16:16:07+00:00",
-   "summary": "The Pan American Health Organization is a regional office for the World Health Organization , covering North and South America. The agency is set ...",
-   "domain": "cbsnews.com",
-   "inhoud": 11,
-   "score": 11
-  },
-  {
-   "title": "'We’ll be back': US lawmakers make their case at COP31 without Trump",
-   "url": "https://www.devex.com/news/we-ll-be-back-us-lawmakers-make-their-case-at-cop31-without-trump-113896",
-   "src": "Devex Global Health",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-11-14T16:13:21+00:00",
-   "summary": "Governors, mayors, and a House delegation have arrived in Antalya, Turkey, promising to rebuild trust while at the same time warning that the president retains his veto pen.",
-   "domain": "devex.com",
-   "inhoud": 0,
-   "score": 5
-  },
-  {
-   "title": "Can Bundibugyo vaccines be made sterile without filtration? - Drug Discovery News",
-   "url": "https://www.drugdiscoverynews.com/can-bundibugyo-vaccines-be-made-sterile-without-filtration-17662",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-14T14:32:28+00:00",
-   "summary": "These findings underpin the global ambition set out by the World Health Organization (WHO) to eliminate cervical cancer as a public health problem.",
-   "domain": "drugdiscoverynews.com",
-   "inhoud": 7,
-   "score": 7
   },
   {
    "title": "New Antimicrobial Candidate Targets Drug-Resistant TB",
@@ -6175,6 +6204,19 @@
    "inhoud": 0,
    "score": -4,
    "gnews": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaUNmMWtvQWYzd1ludmk1NGg3UkdxMGdXMHVXdnRQMHlURnVMYS1zbEdGUFNIc0NtVnQ0cDk1QXJpSFBjdE1TVl9zdXRlSU9HZXBsTjlra2FiU2xwbEcyODJEVUpOTVE0bFU0U1YySm1ULWpsTlpxMHpFR0FRdXNyNUxpN3RhOUh3WXFxel8tMUtzMmpsa18zamlxbzZUMEd5US1kVTV0WmxYZkZFMTlSN0J6aW9IVzlpQlFTN0lPRGE?oc=5"
+  },
+  {
+   "title": "Thanzi partnership helps shapes research and policy on neglected tropical diseases and disease elimination",
+   "url": "https://www.york.ac.uk/che/news/news-2026/thanzi-glide/",
+   "src": "University of York",
+   "feed": "WHO NTDs",
+   "cat": "ntd",
+   "date": "2026-11-12T05:05:43+00:00",
+   "summary": "Thanzi partnership helps shapes research and policy on neglected tropical diseases and disease elimination University of York",
+   "domain": "york.ac.uk",
+   "inhoud": 0,
+   "score": 3,
+   "gnews": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4wdFRDb0RYaDNzLV9hR1pYSTd1bUhxaFJYTEU4WkZFQjl5bjZrV3p0eXNSZHEwbGhmdzhKRVNBU3hLODh1d0NKY3BFdTN4RkJBVElfeEtyRzNfTmxKUHNndHpPRS0xZw?oc=5"
   },
   {
    "title": "Tiny cracks and a nine-volt battery could help fight deadly superbugs",
@@ -6600,19 +6642,6 @@
    "score": 14
   },
   {
-   "title": "How regional partnerships are helping countries end neglected tropical disease threat",
-   "url": "https://www.afro.who.int/news/how-regional-partnerships-are-helping-countries-end-neglected-tropical-disease-threat",
-   "src": "WHO | Regional Office for Africa",
-   "feed": "WHO NTDs",
-   "cat": "ntd",
-   "date": "2026-11-10T12:10:21+00:00",
-   "summary": "How regional partnerships are helping countries end neglected tropical disease threat WHO | Regional Office for Africa",
-   "domain": "afro.who.int",
-   "inhoud": 4,
-   "score": 11,
-   "gnews": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNb0ozTGU4UjhVeFAybVl6OUtxc19McHJmVm9TTV9NeDhSUDhfYVNSRkVnYWthM2NHaktDZjJlY1Y4UkRubksxTnhkdTlwZE9YZmJtLVpzTEVpdkhuckJueUFJcG1heXlxY1UxcWNBNzB2dFhBR3RBamVJVUk0OFk4WnVoZzZtVVhxTDZscXFiT0VfTmJxc0tWXzc2aV9WaHJBTHlCWDViZWlmQmVHb0kyNzdpekZudw?oc=5"
-  },
-  {
    "title": "Why are some patients lying to their doctors to get antibiotics?",
    "url": "https://www.news-medical.net/news/20261110/Why-are-some-patients-lying-to-their-doctors-to-get-antibiotics.aspx",
    "src": "AMR Industry / news",
@@ -6636,6 +6665,19 @@
    "inhoud": 0,
    "score": 4,
    "gnews": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVXhCVUdudUFrMDQzX213WFMtd1lZY1NMaEVqNHZ5LUlqSXpzZk10czFHUlk3eE5ldlp4eVg3bVlqaVBLVzNhMV9UaUVOWlVvVGxpZExXaU1xRFY5YXB1dmcwWjZYZFB6S1Q4OVhRYlM0VWJVQmVfOWxCN2l1TGNGWVhOVFlITE9FUmVZ?oc=5"
+  },
+  {
+   "title": "How regional partnerships are helping countries end neglected tropical disease threat",
+   "url": "https://www.afro.who.int/news/how-regional-partnerships-are-helping-countries-end-neglected-tropical-disease-threat",
+   "src": "WHO | Regional Office for Africa",
+   "feed": "WHO NTDs",
+   "cat": "ntd",
+   "date": "2026-11-10T08:00:00+00:00",
+   "summary": "How regional partnerships are helping countries end neglected tropical disease threat WHO | Regional Office for Africa",
+   "domain": "afro.who.int",
+   "inhoud": 4,
+   "score": 11,
+   "gnews": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNb0ozTGU4UjhVeFAybVl6OUtxc19McHJmVm9TTV9NeDhSUDhfYVNSRkVnYWthM2NHaktDZjJlY1Y4UkRubksxTnhkdTlwZE9YZmJtLVpzTEVpdkhuckJueUFJcG1heXlxY1UxcWNBNzB2dFhBR3RBamVJVUk0OFk4WnVoZzZtVVhxTDZscXFiT0VfTmJxc0tWXzc2aV9WaHJBTHlCWDViZWlmQmVHb0kyNzdpekZudw?oc=5"
   },
   {
    "title": "WHO: 63 countries have eliminated at least one neglected tropical disease",
@@ -7111,6 +7153,19 @@
    "score": 6
   },
   {
+   "title": "WHO: 63 Countries Have Eliminated At Least One Neglected Tropical Disease By 2026; Why Dengue Remains A Concern",
+   "url": "https://www.healthandme.com/health-news/who-63-countries-have-eliminated-at-least-one-neglected-tropical-disease-by-2026-why-dengue-remains-a-concern-article-156468045",
+   "src": "Health and Me",
+   "feed": "WHO NTDs",
+   "cat": "ntd",
+   "date": "2026-11-05T08:00:00+00:00",
+   "summary": "WHO: 63 Countries Have Eliminated At Least One Neglected Tropical Disease By 2026; Why Dengue Remains A Concern Health and Me",
+   "domain": "healthandme.com",
+   "inhoud": 6,
+   "score": 9,
+   "gnews": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQcVYyNTJ6VUN3Vko4VjF6N250SE1SYTNTd3l0V1hKUFN4Y19TX0FXNW81M1pxalZDR2xIWURTX25mZlBTNWdpenNaN3laVlV5eEhZU3hEWFJZQ3VwYjlCZjV4NjJEY19reVNTaXhHTnVMT0xfaFZwaFlLNE95RzJiU2NuTHIyTndYeWdUWTZscHowUWo5WGswMXJ0RUxRQnFmM2JuZjVrdjdkT19MOEIzMHhuV0Nya3FRZGdsYjE2NUtGWm42blR3Q05tU3ZxVXRULXhPVzdFYzBzSlNySjlLcUNTZ3NyWGdFcXNkdi1Gc3FEdFJtMmdMdWEzTQ?oc=5"
+  },
+  {
    "title": "KNUST, DNDi collaborate to establish a lab to test some 100 molecules against schistosomiasis",
    "url": "https://gna.org.gh/2026/11/knust-dndi-collaborate-to-establish-a-lab-to-test-some-100-molecules-against-schistosomiasis/",
    "src": "Ghana News Agency",
@@ -7187,19 +7242,6 @@
    "score": 8,
    "inhoud": 6,
    "gnews": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYlpTMl84djlXTGlTaFNqN1JfeUpLTUhOY2VEVGhVSG5qc3VhSGljNDdMaXBOWFpCbEVyRGJqYWd3TVJ6SUtCOU5wU2cxXzAwbGdPUzdLcklDLTV1bkRRdVQ5RWYwWGpES1J0UXB3ODBDX2pFUjFwS3pGSHdIWEJDRkVXVV9Hd1hHQjEtd0FOWTVaX2lJWHUyTEYwVHVGNU9IcENJcGtFSFlWY2NfME9SZXhXT3N2cm5Q?oc=5"
-  },
-  {
-   "title": "WHO: 63 Countries Have Eliminated At Least One Neglected Tropical Disease By 2026; Why Dengue Remains A Concern",
-   "url": "https://www.healthandme.com/health-news/who-63-countries-have-eliminated-at-least-one-neglected-tropical-disease-by-2026-why-dengue-remains-a-concern-article-156468045",
-   "src": "Health and Me",
-   "feed": "NTD news",
-   "cat": "ntd",
-   "date": "2026-11-05T00:00:00+00:00",
-   "summary": "WHO: 63 Countries Have Eliminated At Least One Neglected Tropical Disease By 2026; Why Dengue Remains A Concern Health and Me",
-   "domain": "healthandme.com",
-   "score": 18,
-   "inhoud": 16,
-   "gnews": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQcVYyNTJ6VUN3Vko4VjF6N250SE1SYTNTd3l0V1hKUFN4Y19TX0FXNW81M1pxalZDR2xIWURTX25mZlBTNWdpenNaN3laVlV5eEhZU3hEWFJZQ3VwYjlCZjV4NjJEY19reVNTaXhHTnVMT0xfaFZwaFlLNE95RzJiU2NuTHIyTndYeWdUWTZscHowUWo5WGswMXJ0RUxRQnFmM2JuZjVrdjdkT19MOEIzMHhuV0Nya3FRZGdsYjE2NUtGWm42blR3Q05tU3ZxVXRULXhPVzdFYzBzSlNySjlLcUNTZ3NyWGdFcXNkdi1Gc3FEdFJtMmdMdWEzTQ?oc=5"
   },
   {
    "title": "Machines Join the Hunt for New Schistosomiasis Drugs",
@@ -7353,6 +7395,19 @@
    "gnews": "https://news.google.com/rss/articles/CBMib0FVX3lxTE10YVVTTnVHeFMzQmRNU3M3YmFIcWUyZC11c0UyeEF3MnVUekpYZzdzSlMxY3pDOXM3VDVEWm9xN1FPVWp0Ym1udC1KYjhEMERUWTRNVTJHRTdsZXB6NHFzUEc5LUNodWVfVXRlN1Y4cw?oc=5"
   },
   {
+   "title": "WHO highlights major progress as 63 nations report eliminating at least 1 neglected tropical disease",
+   "url": "https://www.cidrap.umn.edu/neglected-tropical-diseases/who-highlights-major-progress-63-nations-report-eliminating-least-1",
+   "src": "CIDRAP",
+   "feed": "WHO NTDs",
+   "cat": "ntd",
+   "date": "2026-11-04T08:00:00+00:00",
+   "summary": "WHO highlights major progress as 63 nations report eliminating at least 1 neglected tropical disease CIDRAP",
+   "domain": "cidrap.umn.edu",
+   "inhoud": 0,
+   "score": 6,
+   "gnews": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPaEFJeUV1c1hSZ09PLU5nY3h1ckxERFZxSzRRbHU5RklyRU51aS1kMElfb0Q5WDRFSFdBVWl1azA3X3U3ZFdoRTREQnVsU2RsNVZxQUFNNTl1VGc5dm5DdnZsLU52N1EyTW5ULXNrdndxTXNyTk1LcFdOeXluSHkycHM0anVMSUEwUWhQVzRxWHo4OTFDRTc4SExwVEV3dmhOMlFNcHVtZ3BFRVVYWFB2Y3ZidGF4dmh5LTZVd3g2WQ?oc=5"
+  },
+  {
    "title": "Updated Guidelines on Surgical Management of Drug-Resistant Epilepsy",
    "url": "https://www.neurologyadvisor.com/features/drug-resistant-epilepsy-surgical-management-guideline/",
    "src": "Neurology Advisor",
@@ -7364,6 +7419,19 @@
    "inhoud": 4,
    "score": 6,
    "gnews": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQV1ZpcmRCci1rTnIxbjE1NXlUVVZWSGgyN1FROXRoX0JFdjFtLXQ3NzlEajNteDZ0RHNvRmpNVWdqSU5xRnVQRkFFU2psTHBJTG5lTDZIdENOZVRVT1lhb0lxOGp3Mi1yZVlBbkR2VnRqNzhtSGp2VFQ2NmhpMF84MFVwLWV2bTZvZDkza21WakI1a2gwMENPa3hTcUc?oc=5"
+  },
+  {
+   "title": "WHO reports 'fragile' progress as 63 countries eliminate at least 1 neglected tropical disease",
+   "url": "https://www.aa.com.tr/en/health/who-reports-fragile-progress-as-63-countries-eliminate-at-least-1-neglected-tropical-disease/4111741",
+   "src": "Anadolu Ajansı",
+   "feed": "WHO NTDs",
+   "cat": "ntd",
+   "date": "2026-11-04T00:00:00+00:00",
+   "summary": "WHO reports 'fragile' progress as 63 countries eliminate at least 1 neglected tropical disease Anadolu Ajansı",
+   "domain": "aa.com.tr",
+   "inhoud": 6,
+   "score": 9,
+   "gnews": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcWU5RjQ5bTlsSlRLSjdDN2lmVmVKQ2VFSi1fX3puTm9scG41ZnRJTG44Q3BtSy1NdkFMOU5hX3llMzlGWnAtb3RtZUUwOTVaSVBzR1FfN18za1B0MC1VOVlmVUphR2p0MnB1MWxmWHZjWGY4OEhsZ0tDNkxUMHhTSXgxbzBxa1NlV3AyUUxTcGtsSUdIR3lrRzNoakFWTGN5TXlyM3JxaEJmQmszR2phUXhKVWJzZUdveHkzYjlzbTRQSE1SR2Y1NXFnV0E?oc=5"
   },
   {
    "title": "WHO hails progress against neglected tropical diseases",
@@ -7390,19 +7458,6 @@
    "inhoud": 6,
    "score": 11,
    "gnews": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQXzV3dkcyemtrbUdXOUprRGN1ZEU0bzFCWUl4NVpGQWg4ZWVTVTV2N1lfWHRGeURhYXdXbUxEbE1qNVZzRzJ1bXMwdTVaRlBKVmJ0SktqeTg4SVdUNWZXXzlXVHE3WWFSOUowNXB5TGExY0ljM3pkRG54UUZZcDNTRkFWeWJKeVp2NDlZcFd3VFNxU202dVk2WHhDZUc?oc=5"
-  },
-  {
-   "title": "WHO highlights major progress as 63 nations report eliminating at least 1 neglected tropical disease",
-   "url": "https://www.cidrap.umn.edu/neglected-tropical-diseases/who-highlights-major-progress-63-nations-report-eliminating-least-1",
-   "src": "CIDRAP",
-   "feed": "NTD news",
-   "cat": "ntd",
-   "date": "2026-11-04T00:00:00+00:00",
-   "summary": "WHO highlights major progress as 63 nations report eliminating at least 1 neglected tropical disease CIDRAP",
-   "domain": "cidrap.umn.edu",
-   "score": 11,
-   "inhoud": 6,
-   "gnews": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPaEFJeUV1c1hSZ09PLU5nY3h1ckxERFZxSzRRbHU5RklyRU51aS1kMElfb0Q5WDRFSFdBVWl1azA3X3U3ZFdoRTREQnVsU2RsNVZxQUFNNTl1VGc5dm5DdnZsLU52N1EyTW5ULXNrdndxTXNyTk1LcFdOeXluSHkycHM0anVMSUEwUWhQVzRxWHo4OTFDRTc4SExwVEV3dmhOMlFNcHVtZ3BFRVVYWFB2Y3ZidGF4dmh5LTZVd3g2WQ?oc=5"
   },
   {
    "title": "ENDPOINT: New Tests and Treatments for NTDs | LSTM",
@@ -7468,19 +7523,6 @@
    "score": 6,
    "inhoud": 4,
    "gnews": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdldINEU3VlpXdVA5ZVhwOTNqd1ZvcG9SM00zM0JPZVdPY0xBQm5pRVl5V2Z5cW5SUkJFU0FGVVRzcjZLX25URE1kVEM0RVRlQzA1MC1DYVB3bjZGMG1lZHM2NkRfQnBSMWQ1T1p4NENkMjhRZmw2ME53NUhZd2xGc1lqQ2NyX1hCUnNjMXlzT3A5ZlND?oc=5"
-  },
-  {
-   "title": "WHO reports 'fragile' progress as 63 countries eliminate at least 1 neglected tropical disease",
-   "url": "https://aa.com.tr/en/health/who-reports-fragile-progress-as-63-countries-eliminate-at-least-1-neglected-tropical-disease/4111741",
-   "src": "Anadolu Ajansı",
-   "feed": "WHO NTDs",
-   "cat": "ntd",
-   "date": "2026-11-04T00:00:00+00:00",
-   "summary": "WHO reports 'fragile' progress as 63 countries eliminate at least 1 neglected tropical disease Anadolu Ajansı",
-   "domain": "aa.com.tr",
-   "score": 9,
-   "inhoud": 6,
-   "gnews": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQbE50SjFmdDkwTElIRHZ6VlA0UXd4d21DdkpMS2E4NHZzQW8xa1o2Y3p4MnNFY3dvcTF5ekVCUEhYSFVwbnZmMHg2V3JVenNMWkJWcTRwMGdZSS1PY0doUHNtTkJBekxZZG9tX3llaTlFREtIQUMzYmhJdUZ1d2ZRcm5NdVVOQVczRWVlZmFjYTJjSjBXYkNmalJvMTVFYlBXUmxwOWpnMFo3YlNIT0p5YzAyTnhpSmZpTmM0ZnR6VmdoRTNfanJN?oc=5"
   },
   {
    "title": "Novel Bacteriophage Shows Potential to Control Drug-Resistant Bacillus cereus in Milk, Rice, Pork",
@@ -8836,30 +8878,6 @@
    "gnews": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMElTVkVhUFgybmJDaWJtTnVqVDVyNUp1ZV9iZ2RybWFoTXZ6eG5zMFJMV1Zlc3k4TzIzTkM4M25rLV9qT2g1bk1iYzVCY2NNNmt3UGtHcjhpVGZySzNHcUEzTUdkN25WTDl3ZThDUWlKMXlqZUw4bU4teTFLVVk1bUlYQlhQZFMzWWEyWkNheUFSNFdtMExNS2Ezc0lNVkRYOTRrZERJLVo?oc=5"
   },
   {
-   "title": "Study suggests sugar-rich foods amplify antibiotic disruption of the gut microbiome",
-   "url": "https://www.cidrap.umn.edu/antimicrobial-stewardship/study-suggests-sugar-rich-foods-amplify-antibiotic-disruption-gut",
-   "src": "CIDRAP Stewardship",
-   "feed": "CIDRAP Stewardship",
-   "cat": "amr",
-   "date": "2026-10-06T00:00:00+00:00",
-   "summary": "A study in blood cancer patients found that intake of foods with high sugar content was linked to less bacterial diversity in the gut.",
-   "domain": "cidrap.umn.edu",
-   "score": 6,
-   "inhoud": 4
-  },
-  {
-   "title": "Model tracks invisible C. diff transmission in hospital cancer units",
-   "url": "https://www.news-medical.net/news/20261006/Model-tracks-invisible-C-diff-transmission-in-hospital-cancer-units.aspx",
-   "src": "AMR Industry / news",
-   "feed": "AMR Industry / news",
-   "cat": "amr",
-   "date": "2026-10-06T00:00:00+00:00",
-   "summary": "In a new study, researchers modeled the transmission of Clostridioides difficile (C. diff) infections among patients in hospital cancer units.",
-   "domain": "news-medical.net",
-   "score": -1,
-   "inhoud": 0
-  },
-  {
    "title": "Winning the endgame against sleeping sickness: Efficacy profiling of acoziborole against African trypanosomes with the focus on Trypanosoma brucei rhodesiense",
    "url": "https://dndi.org/scientific-articles/2026/winning-the-endgame-against-sleeping-sickness-efficacy-profiling-of-acoziborole-against-african-trypanosomes-with-the-focus-on-trypanosoma-brucei-rhodesiense/",
    "src": "DNDi",
@@ -8974,19 +8992,6 @@
    "inhoud": 0,
    "score": 7,
    "gnews": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNM0JEY2pqZzYzRmU4dzhzNWd2d1FDWWJMdG1JZUdFZWQzZjk2a3FiT0xrdG1nczlNUHZmenl0SDRsTmNhMlFqdHM4MHJvMEtTTzFGcWl4VGRpOThXQlItNkp3YkpwYXdNTHg2TGtJZ2Zsc3M0VzNiS3p2aE5teTlfakNFN2tHSVQyQ1V3ODd1WFB0MTMwZ3VZ?oc=5"
-  },
-  {
-   "title": "Five Ways to Deliver on the Pandemic Agreement's Promises",
-   "url": "https://www.thinkglobalhealth.org/article/five-ways-to-deliver-on-the-pandemic-agreements-promises",
-   "src": "Think Global Health",
-   "feed": "Pandemic Agreement",
-   "cat": "pandemic",
-   "date": "2026-09-21T00:00:00+00:00",
-   "summary": "Five Ways to Deliver on the Pandemic Agreement's Promises Think Global Health",
-   "domain": "thinkglobalhealth.org",
-   "score": 11,
-   "inhoud": 4,
-   "gnews": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTW1FR3dGUjB5NjJ3N050ay1uS0tVTEpZSGdTa2QzTWVIdk9KZ2V2T3JBb0JzdDdtVUNlSWJOSGtXN1E1bHNiYklQaDBmekxkRGE0SDBZbkdoZExaMWpCODBieEp6LTMweG0zMEY2NjFXVnAxYm5ocmQ1UThCbThxWE9WMllicnA3ZkQwSzVyWEZ3ejdIUlVkd1o5QXNYYlk?oc=5"
   }
  ]
 }
