@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T09:25:28+00:00",
+ "generated": "2026-11-21T11:25:42+00:00",
  "feeds_ok": 62,
  "feeds_tot": 62,
  "status": {
@@ -26,11 +26,10 @@
   },
   "UN News Health": {
    "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "msg": "12 items",
    "cat": "who",
-   "via": 2,
-   "fallback": true,
-   "errors": "[1] ValueError: 0 entries"
+   "via": 1,
+   "fallback": false
   },
   "PAHO": {
    "ok": true,
@@ -48,7 +47,7 @@
   },
   "WHO Europe": {
    "ok": true,
-   "msg": "12 items",
+   "msg": "10 items",
    "cat": "who",
    "via": 1,
    "fallback": true
@@ -222,7 +221,7 @@
   },
   "Council of the EU (health)": {
    "ok": true,
-   "msg": "7 items",
+   "msg": "4 items",
    "cat": "eu",
    "via": 1,
    "fallback": true
@@ -415,7 +414,7 @@
   },
   "Politico EU Health": {
    "ok": true,
-   "msg": "0 items (geen gezondheidsstukken dit uur)",
+   "msg": "1 items",
    "cat": "policy",
    "via": 1,
    "fallback": false
@@ -457,6 +456,30 @@
   }
  },
  "items": [
+  {
+   "title": "Costa cuts proposed EU budget by €44B",
+   "url": "https://www.politico.eu/article/costa-cuts-proposed-eu-budget-by-44billion-euros/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+   "src": "Politico EU Health",
+   "feed": "Politico EU Health",
+   "cat": "policy",
+   "date": "2026-11-21T10:44:05+00:00",
+   "summary": "Brussels plans a tax on Big Tech to raise billions for the next budget cycle.",
+   "domain": "politico.eu",
+   "inhoud": 0,
+   "score": 5
+  },
+  {
+   "title": "Opinion: How Kennedy and MAHA could help stop measles",
+   "url": "https://www.statnews.com/2026/11/21/rfk-jr-maha-measles-outbreak-elimination-status-promote-mmr-vaccine/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-11-21T09:30:00+00:00",
+   "summary": "Kennedy and MAHA say they aren’t anti-vaccine. They can prove it by promoting the MMR vaccine, writes Brinda Adhikari.",
+   "domain": "statnews.com",
+   "inhoud": 8,
+   "score": 9
+  },
   {
    "title": "“My arms are the only place where I feel she is safe”",
    "url": "https://www.unfpa.org/stories/%E2%80%9Cmy-arms-are-only-place-where-i-feel-she-safe%E2%80%9D",
@@ -590,8 +613,20 @@
    "score": 18
   },
   {
+   "title": "From 11 to 24 Countries: Building a Global Network of High-Level Isolation Nurses | NETEC",
+   "url": "https://netec.org/2026/11/20/from-11-to-24-countries-building-a-global-network-of-high-level-isolation-nurses/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-21T08:28:07+00:00",
+   "summary": "Health Care Facility Viral Hemorrhagic Fever (VHF) Preparedness Checklist · Emergency Medical Services (EMS) Assessment Areas · Hospital Assessment ...",
+   "domain": "netec.org",
+   "inhoud": 4,
+   "score": 4
+  },
+  {
    "title": "WHO says only 22% of countries have funded and implemented antimicrobial resistance plans",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUmt5VUFlZG1lZFZXSmsxODZCMF9qVjBBV0kzSUJFNXpMeXJHWW5CMi1QUEF2VUphajhodzRFODcteGdobkFPVHEwbE9naU92RnQ3RHZVYkVWWE9ycFZRNWQ1eWF1UnRHQXRqYmwyRXJva3dmVGpzX3k5OFFaaFcybVBrZS1lZzFjbTZRNE1xam1vSElNOTkta2xTZXhwaGFGRDdQMW9qU2NwMlE1VVdZWXF1M0ZlUWxzNFE?oc=5",
+   "url": "https://www.itij.com/latest/news/who-says-only-22-countries-have-funded-and-implemented-antimicrobial-resistance-plans",
    "src": "ITIJ",
    "feed": "AMR policy & research",
    "cat": "amr",
@@ -599,7 +634,8 @@
    "summary": "WHO says only 22% of countries have funded and implemented antimicrobial resistance plans ITIJ",
    "domain": "itij.com",
    "inhoud": 8,
-   "score": 10
+   "score": 10,
+   "gnews": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUmt5VUFlZG1lZFZXSmsxODZCMF9qVjBBV0kzSUJFNXpMeXJHWW5CMi1QUEF2VUphajhodzRFODcteGdobkFPVHEwbE9naU92RnQ3RHZVYkVWWE9ycFZRNWQ1eWF1UnRHQXRqYmwyRXJva3dmVGpzX3k5OFFaaFcybVBrZS1lZzFjbTZRNE1xam1vSElNOTkta2xTZXhwaGFGRDdQMW9qU2NwMlE1VVdZWXF1M0ZlUWxzNFE?oc=5"
   },
   {
    "title": "Scientists intensify research into Bundibugyo Ebola strain amid Congo outbreak",
@@ -723,6 +759,20 @@
    "inhoud": 0,
    "score": 4,
    "lead": "https://news.un.org/en/story/2026/11/1168839"
+  },
+  {
+   "title": "Most South African Women with Genital Schistosomiasis Symptoms Prefer Biomedical Care",
+   "url": "https://bioengineer.org/most-south-african-women-with-genital-schistosomiasis-symptoms-prefer-biomedical-care/",
+   "src": "Bioengineer.org",
+   "feed": "NTD news",
+   "cat": "ntd",
+   "date": "2026-11-20T21:46:08+00:00",
+   "summary": "Most South African Women with Genital Schistosomiasis Symptoms Prefer Biomedical Care Bioengineer.org",
+   "domain": "bioengineer.org",
+   "inhoud": 0,
+   "score": -4,
+   "gnews": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNnZSZ2ZpMjJBb1FfM0E0bmF3dVhwZUM4cGpfNmtxRndlVnJfdFBsdzRDZGd2RGZpV0xwVUR5TFdBYTFGRmEwOVRVQk81OTZMX1R5WGdoMmN6bDVab2dlTzdOeUlyTjFnWGswNlpsTmtiUXNHd1BNYTlEX1Z4ZGhDaUF4RHhoOV9jLWxlVjIwUm1TY3dmaDlqaWhvYWoxaV8tSVByOGpSRm5RNVBsM3Vn?oc=5",
+   "lead": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007218"
   },
   {
    "title": "DOH-Orange Lifts Blue-Green Algae Health Alert for Willoughby Canal (East of Lake Conway)",
@@ -1258,7 +1308,15 @@
    "summary": "by Sinegugu Shongwe, Chester Kalinda, Khumbulani Hlongwana, Themba Ginindza Female Genital Schistosomiasis (FGS), a neglected manifestation of Schistosoma haematobium infection, affects 20–56 million women in sub-Saharan Africa and is associated with elevated HIV risk. In a Schistosoma haematobium-e",
    "domain": "journals.plos.org",
    "inhoud": 8,
-   "score": 11
+   "score": 11,
+   "also": [
+    {
+     "src": "Bioengineer.org",
+     "title": "Most South African Women with Genital Schistosomiasis Symptoms Prefer Biomedical Care",
+     "url": "https://bioengineer.org/most-south-african-women-with-genital-schistosomiasis-symptoms-prefer-biomedical-care/"
+    }
+   ],
+   "outlets": 2
   },
   {
    "title": "Understanding factors that influence time to surgery for hip fractures in South Africa: A qualitative study using the Model of Pathways to Treatment",
@@ -1348,7 +1406,7 @@
   },
   {
    "title": "MFF 2028-2034: Council agrees negotiating position on stronger civil protection mechanism and support for health preparedness",
-   "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNQ2NpZ2loMWpZbmgyLUxQYWc5LWl3S29walY1QjlwOG9tUGJyTnBIN3U4dld6REpkeUp6VTNyV05PRjUwLVNLbERIdWdkcUg4bnFhREh5bW1paHM2Vl9JRWloWGdkUTRaNWNITkdhRjd4YVF2cFREcDJqN2MwR3NwclRzczJtS2ZIb3dUZUdSWEVOUkppUlpOLWZhc3FYYU9DdzlwMXFEeU9jeEk4ZjJ1T3JQNkZxN0RNOXFVZlFwUWtuS2dBOVN5UEl3Mi14bUw3NEh2X0J6NGhOVXB2WkJEZ254SG1mZ2xBQWNrOFo2SUJPY3hBSEhDZlZhY01KRk1OZ1RnMjBfaThTcWozUGp0Qi1obzl5dC0xbGp3Rg?oc=5",
+   "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/20/mff-2028-2034-council-agrees-negotiating-position-on-stronger-civil-protection-mechanism-and-support-for-health-preparedness/",
    "src": "Council, European Union",
    "feed": "Council of the EU (health)",
    "cat": "eu",
@@ -1357,7 +1415,8 @@
    "domain": "consilium.europa.eu",
    "fallback": true,
    "inhoud": 0,
-   "score": 5
+   "score": 5,
+   "gnews": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNQ2NpZ2loMWpZbmgyLUxQYWc5LWl3S29walY1QjlwOG9tUGJyTnBIN3U4dld6REpkeUp6VTNyV05PRjUwLVNLbERIdWdkcUg4bnFhREh5bW1paHM2Vl9JRWloWGdkUTRaNWNITkdhRjd4YVF2cFREcDJqN2MwR3NwclRzczJtS2ZIb3dUZUdSWEVOUkppUlpOLWZhc3FYYU9DdzlwMXFEeU9jeEk4ZjJ1T3JQNkZxN0RNOXFVZlFwUWtuS2dBOVN5UEl3Mi14bUw3NEh2X0J6NGhOVXB2WkJEZ254SG1mZ2xBQWNrOFo2SUJPY3hBSEhDZlZhY01KRk1OZ1RnMjBfaThTcWozUGp0Qi1obzl5dC0xbGp3Rg?oc=5"
   },
   {
    "title": "Devex Newswire: Democrats unleashed — within limits",
@@ -1970,7 +2029,7 @@
   },
   {
    "title": "Two activists sprayed the EU Health Commissioner with a gray substance at a European cancer summit",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQLXdMWWlQRjZvQnIzbU5xTnV6V0F3YVV3SlJGVE5mQ0hLSnpvWWNZd3pEV3VmRjhhMVVUOVFGNDlHYkVDNGZQaXhrY01nSldSb05IUzVwaDhBanRPcDFkQUdlaDVjMmxRYjhfXzV4Y2djR25KNHJxNTg3c3VuYl9FVXhMNTVRZFBQQ3hXUGczeGI2cUlraHlBOF9LbVJnWDRIV20xZkh6MA?oc=5",
+   "url": "https://informat.ro/en/current-affairs/two-activists-threw-ash-at-eu-commissioner-oliver-varhelyi-149225",
    "src": "Informat.ro",
    "feed": "EU health policy",
    "cat": "eu",
@@ -1978,7 +2037,8 @@
    "summary": "Two activists sprayed the EU Health Commissioner with a gray substance at a European cancer summit Informat.ro",
    "domain": "informat.ro",
    "inhoud": 2,
-   "score": 5
+   "score": 5,
+   "gnews": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQLXdMWWlQRjZvQnIzbU5xTnV6V0F3YVV3SlJGVE5mQ0hLSnpvWWNZd3pEV3VmRjhhMVVUOVFGNDlHYkVDNGZQaXhrY01nSldSb05IUzVwaDhBanRPcDFkQUdlaDVjMmxRYjhfXzV4Y2djR25KNHJxNTg3c3VuYl9FVXhMNTVRZFBQQ3hXUGczeGI2cUlraHlBOF9LbVJnWDRIV20xZkh6MA?oc=5"
   },
   {
    "title": "How to watch the UK-EU summit like a pro",
@@ -2219,7 +2279,7 @@
   },
   {
    "title": "EU health chief pelted with 'ashes' by pesticide protesters",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQWHZDcTJieFhDX1RMdzlHRkJQWDhIVC0zeWpVNjdoZjE3OEo4RlFyTE95eWxYZFdWMUhFRFZDMjRCb1JfekxBdEJvcGdRNWFnNWdydGtYZ0tEZFlsWWVUMC02ai1rbVQ3Y2dwOTFnYmROV0g3Z2p2aExROTJuZDJySUFLWUxGdjRPTEtsWXVIUzZ2cHBYQ2ljTA?oc=5",
+   "url": "https://www.euronews.com/2026/11/19/eu-health-chief-pelted-with-ashes-by-pesticide-protesters",
    "src": "Euronews.com",
    "feed": "EU health policy",
    "cat": "eu",
@@ -2228,7 +2288,8 @@
    "domain": "euronews.com",
    "inhoud": 0,
    "score": 3,
-   "lead": "https://www.politico.eu/article/watch-eu-health-chief-has-ashes-thrown-over-him-in-protest-at-pesticide-rules/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication"
+   "gnews": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQWHZDcTJieFhDX1RMdzlHRkJQWDhIVC0zeWpVNjdoZjE3OEo4RlFyTE95eWxYZFdWMUhFRFZDMjRCb1JfekxBdEJvcGdRNWFnNWdydGtYZ0tEZFlsWWVUMC02ai1rbVQ3Y2dwOTFnYmROV0g3Z2p2aExROTJuZDJySUFLWUxGdjRPTEtsWXVIUzZ2cHBYQ2ljTA?oc=5",
+   "lead": "https://www.politico.eu/article/watch-eu-health-chief-has-ashes-thrown-over-him-in-protest-at-pesticide-rules/"
   },
   {
    "title": "Europe Faces Threat from Drug-Resistant Infections, WHO Warns",
@@ -2660,20 +2721,21 @@
   },
   {
    "title": "Watch: EU health chief has ‘ashes’ thrown over him in protest at pesticide rules",
-   "url": "https://www.politico.eu/article/watch-eu-health-chief-has-ashes-thrown-over-him-in-protest-at-pesticide-rules/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-   "src": "Politico EU Health",
-   "feed": "Politico EU Health",
-   "cat": "policy",
+   "url": "https://www.politico.eu/article/watch-eu-health-chief-has-ashes-thrown-over-him-in-protest-at-pesticide-rules/",
+   "src": "POLITICO.eu",
+   "feed": "EU health policy",
+   "cat": "eu",
    "date": "2026-11-19T11:29:00+00:00",
-   "summary": "Olivér Várhelyi was about to speak at a cancer summit when he had a grey substance thrown at him.",
+   "summary": "Watch: EU health chief has ‘ashes’ thrown over him in protest at pesticide rules POLITICO.eu",
    "domain": "politico.eu",
-   "inhoud": 1,
+   "inhoud": 0,
    "score": 6,
+   "gnews": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVHZ2ZzE3Q0h1em14SmJwOUl3QmhpMm90emxCZEVMYjZnT0tEWW5iMFhOTnU2Mk92UzJTS0RfeDhqaXBublg4cndPREtLNTY2Tm5sdzY3S3E4YzMyTG1xSzZQWjJXWnNoam9UNk9xUUJ5ajZfaFRIVVEzSVZqMEZCMFBWazd5R0hPeU1BWjVvV2FNSUpyOUpkRFRLNU1OaWdiUm92clkwZ29XU3MxLWMw?oc=5",
    "also": [
     {
      "src": "Euronews.com",
      "title": "EU health chief pelted with 'ashes' by pesticide protesters",
-     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQWHZDcTJieFhDX1RMdzlHRkJQWDhIVC0zeWpVNjdoZjE3OEo4RlFyTE95eWxYZFdWMUhFRFZDMjRCb1JfekxBdEJvcGdRNWFnNWdydGtYZ0tEZFlsWWVUMC02ai1rbVQ3Y2dwOTFnYmROV0g3Z2p2aExROTJuZDJySUFLWUxGdjRPTEtsWXVIUzZ2cHBYQ2ljTA?oc=5"
+     "url": "https://www.euronews.com/2026/11/19/eu-health-chief-pelted-with-ashes-by-pesticide-protesters"
     }
    ],
    "outlets": 2
@@ -3133,18 +3195,6 @@
    "score": 6
   },
   {
-   "title": "Are antibiotic developers catching up with European regulators?",
-   "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.46.2600528",
-   "src": "Eurosurveillance",
-   "feed": "Eurosurveillance",
-   "cat": "promed",
-   "date": "2026-11-19T00:00:00+00:00",
-   "summary": "The need to develop new antibiotics has been acknowledged as a clinical and public health priority for decades. To facilitate development of these critical medicines, the European Medicines Agency (EMA) provides several regulatory tools, including Scientific Advice (SA), the Priority Medicines (PRIM",
-   "domain": "eurosurveillance.org",
-   "inhoud": 9,
-   "score": 11
-  },
-  {
    "title": "Autochthonous dengue outbreak spreading from a holiday site to visitors’ places of residence, Tuscany, Italy, August to October 2026",
    "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.46.2600909",
    "src": "Eurosurveillance",
@@ -3155,6 +3205,18 @@
    "domain": "eurosurveillance.org",
    "inhoud": 10,
    "score": 12
+  },
+  {
+   "title": "Are antibiotic developers catching up with European regulators?",
+   "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.46.2600528",
+   "src": "Eurosurveillance",
+   "feed": "Eurosurveillance",
+   "cat": "promed",
+   "date": "2026-11-19T00:00:00+00:00",
+   "summary": "The need to develop new antibiotics has been acknowledged as a clinical and public health priority for decades. To facilitate development of these critical medicines, the European Medicines Agency (EMA) provides several regulatory tools, including Scientific Advice (SA), the Priority Medicines (PRIM",
+   "domain": "eurosurveillance.org",
+   "inhoud": 9,
+   "score": 11
   },
   {
    "title": "Detection of dengue virus in Aedes albopictus following imported dengue cases and absence of detections after vector control, Ticino Canton, Switzerland, August to September 2026",
@@ -3302,18 +3364,6 @@
    "domain": "healthpolicy-watch.news",
    "inhoud": 19,
    "score": 23
-  },
-  {
-   "title": "STAT+: NIH to move last group of its research chimps to a sanctuary",
-   "url": "https://www.statnews.com/pharmalot/2026/11/18/nih-to-move-last-group-of-research-chimps-to-sanctuary/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-11-18T20:29:14+00:00",
-   "summary": "The last chimpanzees owned by the U.S. government and still living in a laboratory will be moved to a sanctuary next year.",
-   "domain": "statnews.com",
-   "inhoud": -6,
-   "score": -5
   },
   {
    "title": "Urgent action needed as antibiotic-resistant bacteria spread across Europe",
@@ -3555,7 +3605,7 @@
   },
   {
    "title": "EU Moving Too Slowly to Tackle Health Risks From ‘Forever Chemicals,’ Auditors Say",
-   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE10OXNiX3JSMGJ6MHJvbjlmQmlUckxkcXVabW4tekhDRXI5ekl3UFMyWE5uYnBqYmpqNXY0cndkeld4MUhTUzNrd2pFNlBPVFFSdUdrVjdMWnpoUm12elZaVHM2MTZ4XzA5Y3R2UjB1dzk4SlRkZ1o1N2ZlMVlBdw?oc=5",
+   "url": "https://www.insurancejournal.com/news/international/2026/11/18/893035.htm",
    "src": "Insurance Journal",
    "feed": "EU health policy",
    "cat": "eu",
@@ -3563,7 +3613,8 @@
    "summary": "EU Moving Too Slowly to Tackle Health Risks From ‘Forever Chemicals,’ Auditors Say Insurance Journal",
    "domain": "insurancejournal.com",
    "inhoud": 0,
-   "score": 3
+   "score": 3,
+   "gnews": "https://news.google.com/rss/articles/CBMifkFVX3lxTE10OXNiX3JSMGJ6MHJvbjlmQmlUckxkcXVabW4tekhDRXI5ekl3UFMyWE5uYnBqYmpqNXY0cndkeld4MUhTUzNrd2pFNlBPVFFSdUdrVjdMWnpoUm12elZaVHM2MTZ4XzA5Y3R2UjB1dzk4SlRkZ1o1N2ZlMVlBdw?oc=5"
   },
   {
    "title": "FCDO admits: 'We have lost quite a bit of experience'",
@@ -3997,7 +4048,7 @@
   },
   {
    "title": "The proposed reform of the Medical Device Regulation and its implications for AI-enabled medical devices in the EU",
-   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5wZmVKUThyVGdvcm1LNjd4Y0oyTm9wQ29ZTElLdGhXSENfMGQyUWxRTjNhWDNHV1B5VmNJNlZRcVFaeXpzMkJPQlhXYkZlSzdZV1ZEcVpyX241XzZIQldn?oc=5",
+   "url": "https://www.nature.com/articles/s41746-026-03475-8",
    "src": "Nature",
    "feed": "EU health policy",
    "cat": "eu",
@@ -4005,7 +4056,8 @@
    "summary": "The proposed reform of the Medical Device Regulation and its implications for AI-enabled medical devices in the EU Nature",
    "domain": "nature.com",
    "inhoud": 4,
-   "score": 9
+   "score": 9,
+   "gnews": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5wZmVKUThyVGdvcm1LNjd4Y0oyTm9wQ29ZTElLdGhXSENfMGQyUWxRTjNhWDNHV1B5VmNJNlZRcVFaeXpzMkJPQlhXYkZlSzdZV1ZEcVpyX241XzZIQldn?oc=5"
   },
   {
    "title": "Menopause: workplace support should complement good healthcare",
@@ -4940,7 +4992,7 @@
   },
   {
    "title": "Commission launches first global alliance on climate and health research funding at COP31",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNRHN3di1VU0tNZ3A1d3RfLXU5SGM3QlVOd1lrSEZJSldNRzFuM1AzbjJBNTRLTFJUZUliWDdJMmhRMXRESnc4UF93aDRQdGRrT3R4ZkFBNC12bGVLTFRHbDk5Nm5EaVVZaVBoQWYyMzQxTmZ6cEJFaDhfNDdVeUY5eWxjSXlvX3JoZFcwR0NQVlRUNVNoTUZfd21ic2RNSnFpMTEtMkJVUzB6ckJvMERwdXdGX2hoTDE4aTNFUmJKcXlmY2N4eWxKdXJ5eTNfSklwZGlIUmxB?oc=5",
+   "url": "https://www.eureporter.co/environment/2026/11/17/commission-launches-first-global-alliance-on-climate-and-health-research-funding-at-cop31/",
    "src": "EU Reporter",
    "feed": "EU health policy",
    "cat": "eu",
@@ -4948,7 +5000,8 @@
    "summary": "Commission launches first global alliance on climate and health research funding at COP31 EU Reporter",
    "domain": "eureporter.co",
    "inhoud": 14,
-   "score": 17
+   "score": 17,
+   "gnews": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNRHN3di1VU0tNZ3A1d3RfLXU5SGM3QlVOd1lrSEZJSldNRzFuM1AzbjJBNTRLTFJUZUliWDdJMmhRMXRESnc4UF93aDRQdGRrT3R4ZkFBNC12bGVLTFRHbDk5Nm5EaVVZaVBoQWYyMzQxTmZ6cEJFaDhfNDdVeUY5eWxjSXlvX3JoZFcwR0NQVlRUNVNoTUZfd21ic2RNSnFpMTEtMkJVUzB6ckJvMERwdXdGX2hoTDE4aTNFUmJKcXlmY2N4eWxKdXJ5eTNfSklwZGlIUmxB?oc=5"
   },
   {
    "title": "Global Health Negotiations Proceed in the Backdrop of Elections at the WHO",
@@ -5415,8 +5468,7 @@
    "domain": "fixthenews.com",
    "inhoud": 4,
    "score": 6,
-   "gnews": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOc1JzRWY4Rnl6dEdFa3l6YWMwTm80MGR0cE1wMUVQVERDa1B0SDRQQmd3NXBMdUF6NVg2RjA0MTdSck03MXhJTWpSQm4zbGdhSWx6dGNmS0dsNl9ZTngtMy11M2ctdm9TZFQ1RWZMbmVJclphNlpIYUJwMERlc3BRNHRMRkF6ZHVUYlhmclNCeFdlb1JS?oc=5",
-   "lead": "https://www.who.int/news/item/16-11-2026-eritrea-eliminates-trachoma-a-major-public-health-milestone"
+   "gnews": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOc1JzRWY4Rnl6dEdFa3l6YWMwTm80MGR0cE1wMUVQVERDa1B0SDRQQmd3NXBMdUF6NVg2RjA0MTdSck03MXhJTWpSQm4zbGdhSWx6dGNmS0dsNl9ZTngtMy11M2ctdm9TZFQ1RWZMbmVJclphNlpIYUJwMERlc3BRNHRMRkF6ZHVUYlhmclNCeFdlb1JS?oc=5"
   },
   {
    "title": "DH Takes Multipronged Approach to Address Antimicrobial Resistance",
@@ -5682,17 +5734,17 @@
    "gnews": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPV1F2a0Zpa1J3VXVOQXVFeVkwUjRTbndlNDJPNGZqT1NLOF9SSUFHay1GTXVOOXhIenBFdGJsTHN1a0ZFZE85LW9jOGczWnBrX3Zyc0FZVko2OXBuTWxybmpjV2RsTGNZeUVoTU1kSVpGLWFUYnF3c1pFQzVWRUR3dlhYUHAyQXE4bmFJNm5NaEhsZzd4djlmcklfeGVQZGdJSWRWTWhXTE1rYXVuZkhHaVFWcGJTa3JJakFQeVdLLWtYQmVaNjJjUUFKbzc?oc=5"
   },
   {
-   "title": "Eritrea Eliminates Trachoma, WHO Confirms",
-   "url": "https://www.natureworldnews.com/articles/73875/20261116/who-confirms-eritrea-has-beaten-trachoma-worlds-leading-infectious-cause-blindness.htm",
-   "src": "Nature World News",
+   "title": "WHO confirms: Eritrea eliminates trachoma as a health problem",
+   "url": "https://denkstrom.org/en/goodnews/who-confirms-eritrea-eliminates-trachoma-as-health-problem/",
+   "src": "Denkstrom",
    "feed": "NTD news",
    "cat": "ntd",
    "date": "2026-11-16T16:23:23+00:00",
-   "summary": "Eritrea Eliminates Trachoma, WHO Confirms Nature World News",
-   "domain": "natureworldnews.com",
+   "summary": "WHO confirms: Eritrea eliminates trachoma as a health problem Denkstrom",
+   "domain": "denkstrom.org",
    "inhoud": 10,
    "score": 12,
-   "gnews": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNVGdtM3pTTUVlcFlnY3VpaUhyejI2YzMxTFpqNUdwTVVDYml5VE5BZVFnYXgtcU10M0VTT19vX0wyUjg4d2JGZWdSZzhRaVc2bXk4VzNueEMtZ01zd0Jna2JyMVRqVEt2OGE3TVVfSDl5RzZTLUQ5dmM4djVRaHdiVy1QUG4yUUhfREl4TnlvQkZsSl90aTBqZFU3TU95aGlmSFltVWlnaDJ2U1lxcXJpZENqSnZzY2xKR1FPN2xKeWdKMGEzdXhyQVFEdGNDZW4wR09OQ1doNVh2dw?oc=5",
+   "gnews": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPN29QUjFnOW45RzR0MkYyRzZwbDFDUldoOGJKREEwelFucGhYWXlhdnhFa0s2UTAyc28wRUk3aWZLM010Z1dVOWNqLWdBcW41aUNuZ3NDemxhbERfV1NhZWoyQVA5d01SVGUzQWQxVkNZSk1YX1FRZ3ctNlgydG04VEJya2VEMDh2T1VGSldlbzVCXzM1YmxKMQ?oc=5",
    "lead": "https://www.who.int/news/item/16-11-2026-eritrea-eliminates-trachoma-a-major-public-health-milestone"
   },
   {
@@ -5831,6 +5883,18 @@
    "score": 3
   },
   {
+   "title": "‘An unfulfilled plan helps no one’: Superbug plans have doubled, but few countries are delivering",
+   "url": "https://news.un.org/feed/view/en/story/2026/11/1168819",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-16T12:00:00+00:00",
+   "summary": "More countries are drawing up plans to tackle antimicrobial resistance (AMR), but major gaps in testing and treatment mean billions of people continue to be at risk, according to new data released by the World Health Organization (WHO) on Monday.",
+   "domain": "news.un.org",
+   "inhoud": 19,
+   "score": 26
+  },
+  {
    "title": "A systematic review of prediction models for tuberculosis infection and incident tuberculosis disease among adolescent and adult household contacts",
    "url": "http://gh.bmj.com/cgi/content/short/11/11/e020968?rss=1",
    "src": "BMJ Global Health",
@@ -5925,30 +5989,25 @@
    "summary": "",
    "domain": "who.int",
    "inhoud": 8,
-   "score": 13,
+   "score": 15,
    "also": [
+    {
+     "src": "Denkstrom",
+     "title": "WHO confirms: Eritrea eliminates trachoma as a health problem",
+     "url": "https://denkstrom.org/en/goodnews/who-confirms-eritrea-eliminates-trachoma-as-health-problem/"
+    },
     {
      "src": "Peoples Gazette Nigeria",
      "title": "WHO says Eritrea 11th African country to eliminate trachoma",
      "url": "https://gazettengr.com/who-says-eritrea-11th-african-country-to-eliminate-trachoma/"
     },
     {
-     "src": "Nature World News",
-     "title": "Eritrea Eliminates Trachoma, WHO Confirms",
-     "url": "https://www.natureworldnews.com/articles/73875/20261116/who-confirms-eritrea-has-beaten-trachoma-worlds-leading-infectious-cause-blindness.htm"
-    },
-    {
      "src": "Addis Standard",
      "title": "Daily_Brief: #Eritrea becomes 11th #African country to eliminate trachoma as public health problem",
      "url": "https://addisstandard.com/brief/n-61331/"
-    },
-    {
-     "src": "Fix The News",
-     "title": "Eritrea eliminates trachoma after two decades of sustained effort",
-     "url": "https://fixthenews.com/s/eritrea-eliminates-trachoma-after-two-decades-of-sustained-c24485"
     }
    ],
-   "outlets": 5
+   "outlets": 4
   },
   {
    "title": "[Exclusive]: Q&A With Budi Sadikin, WHO DG Candidate",
@@ -6000,7 +6059,7 @@
   },
   {
    "title": "Trump administration plans to divert or withhold most Congress-approved family-planning aid",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdjdsSHlrSlpFT0FMU25JeUFHb05RakNKNVpEclZHUlNHTmdKOFR2aXl1dmFFX0JvUUhDRHAyT29OU3J6Y2QyamRob1lSeTZZVFE3cC1kU1JfVFlEWjdTM05YblY1dklhc0gyY2ZrSnFMSmtXSHViM25GM01Cdl9wYjZ3eEllb3RpSmxlWEhn?oc=5",
+   "url": "https://mezha.net/eng/news/mezha-c1716b8d44c01103f04d625b_trump_administration_plans/",
    "src": "Mezha.net",
    "feed": "SRHR news",
    "cat": "srhr",
@@ -6008,7 +6067,8 @@
    "summary": "Trump administration plans to divert or withhold most Congress-approved family-planning aid Mezha.net",
    "domain": "mezha.net",
    "inhoud": 0,
-   "score": 2
+   "score": 2,
+   "gnews": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdjdsSHlrSlpFT0FMU25JeUFHb05RakNKNVpEclZHUlNHTmdKOFR2aXl1dmFFX0JvUUhDRHAyT29OU3J6Y2QyamRob1lSeTZZVFE3cC1kU1JfVFlEWjdTM05YblY1dklhc0gyY2ZrSnFMSmtXSHViM25GM01Cdl9wYjZ3eEllb3RpSmxlWEhn?oc=5"
   },
   {
    "title": "The Trump administration is diverting billions in health funding away from low-income countries, defying Congress’ plans",
@@ -6203,6 +6263,18 @@
    "domain": "unaids.org",
    "inhoud": 6,
    "score": 9
+  },
+  {
+   "title": "DR Congo Ebola outbreak: Unrest fuelled by armed groups holds back response",
+   "url": "https://news.un.org/feed/view/en/story/2026/11/1168797",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-13T12:00:00+00:00",
+   "summary": "The Ebola outbreak in the Democratic Republic of the Congo (DRC) continues to spread amid repeated and ongoing deadly attacks on civilians and frontline health workers by armed groups that are obstructing efforts to stop transmission, UN responders said on Friday.",
+   "domain": "news.un.org",
+   "inhoud": 11,
+   "score": 18
   },
   {
    "title": "Nothing Short of Radical Change: Task of the Next WHO Director-General [Guest Essay]",
@@ -6400,6 +6472,18 @@
    "domain": "msf.org",
    "inhoud": 2,
    "score": 4
+  },
+  {
+   "title": "Kenya begins countdown towards end of Ebola after last patient discharged",
+   "url": "https://news.un.org/feed/view/en/story/2026/11/1168790",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-12T12:00:00+00:00",
+   "summary": "Kenya began a 42-day countdown to the end of its Ebola outbreak on Thursday, a day after the last patient being treated for the disease went home and 11 people were released from quarantine.",
+   "domain": "news.un.org",
+   "inhoud": 9,
+   "score": 16
   },
   {
    "title": "[Correspondence] Toxic metals and the future of food safety",
@@ -6751,19 +6835,6 @@
    "score": 16
   },
   {
-   "title": "Nigeria Projects Lymphatic Filariasis Elimination Across Most Endemic Units by 2030",
-   "url": "https://bioengineer.org/nigeria-projects-lymphatic-filariasis-elimination-across-most-endemic-units-by-2030/",
-   "src": "Bioengineer.org",
-   "feed": "NTD news",
-   "cat": "ntd",
-   "date": "2026-11-11T04:10:28+00:00",
-   "summary": "Nigeria Projects Lymphatic Filariasis Elimination Across Most Endemic Units by 2030 Bioengineer.org",
-   "domain": "bioengineer.org",
-   "inhoud": 0,
-   "score": -4,
-   "gnews": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMDZkbEtlM2pQQXhULXhwd2lJNkFkUVpwVGxGXzFtaU00QkRrdHhyZlZ1V0tsa0VHRXY2enV3UXRJTk1TRUJvMHZ6WDI5S2I1bmtCbkZmU2txUWVUbUVWQTJka3ZWNE9Sd0JfX3RSalUxYTAxZElaOUl3UmxPU25LTEtJRTRmVzdodG83d1lYZVZ6cTFaRElJZWNwdzhINzh6Wi1SZUJfQV92dGF0?oc=5"
-  },
-  {
    "title": "[Comment] A digital intervention to strengthening parenting in Tanzania",
    "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02198-7/fulltext?rss=yes",
    "src": "The Lancet",
@@ -6860,6 +6931,42 @@
    "score": 14
   },
   {
+   "title": "World News in Brief: Ending cholera by 2030 ‘within reach’, Haiti displacement and hunger, US human rights review rescheduled",
+   "url": "https://news.un.org/feed/view/en/story/2026/11/1168782",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-10T12:00:00+00:00",
+   "summary": "Ending cholera as a public health threat by 2030 is within reach, as every cholera death can be prevented with tools that already exist, the World Health Organization (WHO) said on Tuesday.",
+   "domain": "news.un.org",
+   "inhoud": 9,
+   "score": 16
+  },
+  {
+   "title": "Ebola: IOM urges wider surveillance beyond formal routes in DR Congo",
+   "url": "https://news.un.org/feed/view/en/story/2026/11/1168781",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-10T12:00:00+00:00",
+   "summary": "Seventy-one confirmed Ebola cases have been detected along transit routes in the Democratic Republic of the Congo (DRC) since the outbreak began almost six months ago, the International Organization for Migration (IOM) said on Tuesday.",
+   "domain": "news.un.org",
+   "inhoud": 12,
+   "score": 19
+  },
+  {
+   "title": "When deaths go uncounted: WHO flags dangerous blind spots in Africa’s health data",
+   "url": "https://news.un.org/feed/view/en/story/2026/11/1168772",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-10T12:00:00+00:00",
+   "summary": "Quality health data can help authorities to identify emerging threats and take lifesaving action, but a new report reveals critical gaps in Africa’s health information systems.",
+   "domain": "news.un.org",
+   "inhoud": 6,
+   "score": 13
+  },
+  {
    "title": "Adulthood risk of non-communicable diseases associated with childhood and adolescent malnutrition in low- and middle-income countries: a systematic review of observational studies",
    "url": "http://gh.bmj.com/cgi/content/short/11/11/e019368?rss=1",
    "src": "BMJ Global Health",
@@ -6906,6 +7013,19 @@
    "domain": "news-medical.net",
    "inhoud": 8,
    "score": 7
+  },
+  {
+   "title": "WHO: 63 countries have eliminated at least one neglected tropical disease",
+   "url": "https://3news.com/news/health/who-63-countries-eliminate-neglected-tropical-disease",
+   "src": "3News",
+   "feed": "WHO NTDs",
+   "cat": "ntd",
+   "date": "2026-11-10T08:00:00+00:00",
+   "summary": "WHO: 63 countries have eliminated at least one neglected tropical disease 3News",
+   "domain": "3news.com",
+   "inhoud": 2,
+   "score": 5,
+   "gnews": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOY0otRXJoMEd4dTNRZ3FBSHV4MEp6bGNQOEZ5cDJMcXVrelpzV3JGR0Ezc1VmSExmdnVFWWo2WkVCZ2hnMVN6RDRxSHl4UXRwbVZPelEtb2s5R1RXcHlZTkROZncyUklsZUF1M1NaOUdTLXc3YkUtXzJVRlhCeGtLVm9WRjBqM1JlZUM0?oc=5"
   },
   {
    "title": "How regional partnerships are helping countries end neglected tropical disease threat",
@@ -7191,6 +7311,18 @@
    "score": 7
   },
   {
+   "title": "World News in Brief: Civilians killed in DR Congo, Ukrainians wrestle with return, Guterres calls out ‘normalisation’ of force",
+   "url": "https://news.un.org/feed/view/en/story/2026/11/1168757",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-06T12:00:00+00:00",
+   "summary": "At least 30 civilians were killed overnight on Thursday in Beni Territory, North Kivu in the Democratic Republic of the Congo, according to local sources cited by the UN aid coordination office (OCHA).",
+   "domain": "news.un.org",
+   "inhoud": 0,
+   "score": 7
+  },
+  {
    "title": "[Articles] Immunogenicity and safety of Sabin inactivated poliovirus vaccine in a sequential schedule with bivalent oral poliovirus vaccine in Nepal: a single-centre, double-blind,",
    "url": "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(26)00245-7/fulltext?rss=yes",
    "src": "Lancet Global Health",
@@ -7201,6 +7333,18 @@
    "domain": "thelancet.com",
    "inhoud": -4,
    "score": 0
+  },
+  {
+   "title": "Two new Ebola vaccines to join DR Congo clinical trial",
+   "url": "https://news.un.org/feed/view/en/story/2026/11/1168742",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-05T12:00:00+00:00",
+   "summary": "Two new Ebola vaccine candidates will be added to a clinical trial in the Democratic Republic of the Congo (DRC) as the country continues to battle a deadly outbreak caused by the Bundibugyo species of the virus.",
+   "domain": "news.un.org",
+   "inhoud": 11,
+   "score": 18
   },
   {
    "title": "[Exclusive] Q&A With WHO DG Candidate Gevorg Tamamyan",
@@ -7316,6 +7460,18 @@
    "score": 4
   },
   {
+   "title": "15 years of ‘almost no progress’ in getting young people moving: WHO",
+   "url": "https://news.un.org/feed/view/en/story/2026/11/1168736",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-04T12:00:00+00:00",
+   "summary": "One in four adolescents worldwide reported not getting at least 60 minutes of physical activity on any day in the previous week, according to new global estimates released by the World Health Organization (WHO) on Wednesday.",
+   "domain": "news.un.org",
+   "inhoud": 8,
+   "score": 15
+  },
+  {
    "title": "Integrated community-based HIV+NCD care in microfinance groups in Kenya: results from the Harambee cluster randomised trial",
    "url": "http://gh.bmj.com/cgi/content/short/11/11/e020130?rss=1",
    "src": "BMJ Global Health",
@@ -7354,6 +7510,20 @@
    "lead": "https://www.healthandme.com/health-news/who-63-countries-have-eliminated-at-least-one-neglected-tropical-disease-by-2026-why-dengue-remains-a-concern-article-156468045"
   },
   {
+   "title": "WHO reports 'fragile' progress as 63 countries eliminate at least 1 neglected tropical disease",
+   "url": "https://www.aa.com.tr/en/health/who-reports-fragile-progress-as-63-countries-eliminate-at-least-1-neglected-tropical-disease/4111741",
+   "src": "Anadolu Ajansı",
+   "feed": "WHO NTDs",
+   "cat": "ntd",
+   "date": "2026-11-04T08:00:00+00:00",
+   "summary": "WHO reports 'fragile' progress as 63 countries eliminate at least 1 neglected tropical disease Anadolu Ajansı",
+   "domain": "aa.com.tr",
+   "inhoud": 6,
+   "score": 9,
+   "gnews": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcWU5RjQ5bTlsSlRLSjdDN2lmVmVKQ2VFSi1fX3puTm9scG41ZnRJTG44Q3BtSy1NdkFMOU5hX3llMzlGWnAtb3RtZUUwOTVaSVBzR1FfN18za1B0MC1VOVlmVUphR2p0MnB1MWxmWHZjWGY4OEhsZ0tDNkxUMHhTSXgxbzBxa1NlV3AyUUxTcGtsSUdIR3lrRzNoakFWTGN5TXlyM3JxaEJmQmszR2phUXhKVWJzZUdveHkzYjlzbTRQSE1SR2Y1NXFnV0E?oc=5",
+   "lead": "https://www.healthandme.com/health-news/who-63-countries-have-eliminated-at-least-one-neglected-tropical-disease-by-2026-why-dengue-remains-a-concern-article-156468045"
+  },
+  {
    "title": "BHEKISISA CROSSWORD #22",
    "url": "https://bhekisisa.org/bhekisisa-crossword/2026-11-04-bhekisisa-crossword-22/",
    "src": "Bhekisisa",
@@ -7376,20 +7546,6 @@
    "domain": "bhekisisa.org",
    "inhoud": 0,
    "score": 2
-  },
-  {
-   "title": "WHO reports 'fragile' progress as 63 countries eliminate at least 1 neglected tropical disease",
-   "url": "https://www.aa.com.tr/en/health/who-reports-fragile-progress-as-63-countries-eliminate-at-least-1-neglected-tropical-disease/4111741",
-   "src": "Anadolu Ajansı",
-   "feed": "WHO NTDs",
-   "cat": "ntd",
-   "date": "2026-11-04T00:00:00+00:00",
-   "summary": "WHO reports 'fragile' progress as 63 countries eliminate at least 1 neglected tropical disease Anadolu Ajansı",
-   "domain": "aa.com.tr",
-   "inhoud": 6,
-   "score": 9,
-   "gnews": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcWU5RjQ5bTlsSlRLSjdDN2lmVmVKQ2VFSi1fX3puTm9scG41ZnRJTG44Q3BtSy1NdkFMOU5hX3llMzlGWnAtb3RtZUUwOTVaSVBzR1FfN18za1B0MC1VOVlmVUphR2p0MnB1MWxmWHZjWGY4OEhsZ0tDNkxUMHhTSXgxbzBxa1NlV3AyUUxTcGtsSUdIR3lrRzNoakFWTGN5TXlyM3JxaEJmQmszR2phUXhKVWJzZUdveHkzYjlzbTRQSE1SR2Y1NXFnV0E?oc=5",
-   "lead": "https://www.healthandme.com/health-news/who-63-countries-have-eliminated-at-least-one-neglected-tropical-disease-by-2026-why-dengue-remains-a-concern-article-156468045"
   },
   {
    "title": "Can New Delhi reconcile the global north and south?",
@@ -7522,6 +7678,18 @@
    "domain": "who.int",
    "inhoud": 8,
    "score": 16
+  },
+  {
+   "title": "Ethiopia: Violence in the north is pushing health system to the brink, WHO chief warns",
+   "url": "https://news.un.org/feed/view/en/story/2026/11/1168720",
+   "src": "UN News - Global perspective Human stories",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-02T12:00:00+00:00",
+   "summary": "The head of the World Health Organization (WHO) called on Monday for greater protection for civilians caught in conflict in northern Ethiopia following deadly drone strikes this past weekend.",
+   "domain": "news.un.org",
+   "inhoud": 10,
+   "score": 17
   },
   {
    "title": "No peace without accountability: mortality and public health in Sudans war",
