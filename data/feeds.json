@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T20:32:55+00:00",
+ "generated": "2026-11-21T02:29:05+00:00",
  "feeds_ok": 43,
  "feeds_tot": 43,
  "status": {
@@ -26,11 +26,10 @@
   },
   "UN News Health": {
    "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "msg": "12 items",
    "cat": "who",
-   "via": 2,
-   "fallback": true,
-   "errors": "[1] ValueError: 0 entries"
+   "via": 1,
+   "fallback": false
   },
   "CIDRAP Public Health": {
    "ok": true,
@@ -62,7 +61,7 @@
   },
   "ReliefWeb Health": {
    "ok": true,
-   "msg": "6 items (via kandidaat 2)",
+   "msg": "7 items (via kandidaat 2)",
    "cat": "emerg",
    "via": 2,
    "fallback": true,
@@ -319,6 +318,102 @@
  },
  "items": [
   {
+   "title": "STAT+: FDA rejects Capricor Therapeutics’ Duchenne therapy, a decision that was a long time coming",
+   "url": "https://www.statnews.com/2026/11/20/fda-rejects-capricor-duchenne-therapy/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-11-20T23:43:53+00:00",
+   "summary": "The FDA said it had rejected a cell therapy intended for patients with Duchenne muscular dystrophy developed by Capricor Therapeutics.",
+   "domain": "statnews.com",
+   "inhoud": -6,
+   "score": -5
+  },
+  {
+   "title": "[Correspondence] Health professionals cannot abandon their Palestinian colleagues",
+   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02088-X/fulltext?rss=yes",
+   "src": "The Lancet",
+   "feed": "The Lancet",
+   "cat": "journal",
+   "date": "2026-11-20T23:30:04+00:00",
+   "summary": "Global attention must be focused on the perilous situation facing health-care workers from Gaza and the West Bank in Israeli detention centres and the need, now more than ever, for health professional organisations to no longer remain silent.1",
+   "domain": "thelancet.com",
+   "inhoud": 1,
+   "score": 2
+  },
+  {
+   "title": "Maternal health R&D gaps: A test of African health system resilience - PATH",
+   "url": "https://www.path.org/our-impact/resources/maternal-health-rd-gaps-a-test-of-african-health-system-resilience/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-20T22:31:19+00:00",
+   "summary": "Sub-Saharan Africa accounts for 70% of global maternal deaths, yet R&D for these four conditions received just US$306 million between 2023 and 2025.",
+   "domain": "path.org",
+   "inhoud": 4,
+   "score": 4
+  },
+  {
+   "title": "COP31 Draft Deal Drops Fossil Fuels References as Final Session Goes Into Overtime",
+   "url": "https://healthpolicy-watch.news/cop31-draft-deal-drops-fossil-fuels-references-as-final-session-goes-into-overtime/",
+   "src": "Health Policy Watch",
+   "feed": "Health Policy Watch",
+   "cat": "policy",
+   "date": "2026-11-20T21:48:59+00:00",
+   "summary": "ANTALYA – The UN climate summit entered overtime as its 6pm Friday deadline came and went, with countries deadlocked over a new draft deal that strips out every mention of fossil fuels, places a big bet on untested carbon capture technology and turns the hosts’ flagship electricity goal into an opti",
+   "domain": "healthpolicy-watch.news",
+   "inhoud": 0,
+   "score": 4
+  },
+  {
+   "title": "DOH-Orange Lifts Blue-Green Algae Health Alert for Willoughby Canal (East of Lake Conway)",
+   "url": "https://orange.floridahealth.gov/2026/11/20/doh-orange-lifts-blue-green-algae-health-alert-for-willoughby-canal-east-of-lake/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-20T21:33:30+00:00",
+   "summary": "DOH-Orange Lifts Blue-Green Algae Health Alert for Willoughby Canal (East of Lake Conway) ... Emergency Preparedness and Response · Infectious Disease ...",
+   "domain": "orange.floridahealth.gov",
+   "inhoud": 5,
+   "score": 8
+  },
+  {
+   "title": "ICE detention of Princeton scientist rattles academia",
+   "url": "https://www.statnews.com/2026/11/20/princeton-researcher-eva-yi-xie-ice-detention-rattles-interational-scholars/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-11-20T21:19:27+00:00",
+   "summary": "A graduate student who is a scientific researcher at Princeton was detained by ICE while traveling home after presenting at a neuroscience conference.",
+   "domain": "statnews.com",
+   "inhoud": 0,
+   "score": 1
+  },
+  {
+   "title": "Illinois measles numbers remain below recent peak, while the U.S. loses elimination status",
+   "url": "https://capitolnewsillinois.com/news/illinois-measles-numbers-remain-below-recent-peak-while-the-u-s-loses-elimination-status/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-20T20:45:09+00:00",
+   "summary": "A World Health Organization branch finds uninterrupted measles spread nationwide over the last 12 months. Bernarda Malevska byBernarda Malevska.",
+   "domain": "capitolnewsillinois.com",
+   "inhoud": 10,
+   "score": 10
+  },
+  {
+   "title": "Uganda, South Sudan intensify efforts to keep Ebola out amid burgeoning DR Congo outbreak",
+   "url": "https://www.cidrap.umn.edu/ebola/uganda-south-sudan-intensify-efforts-keep-ebola-out-amid-burgeoning-dr-congo-outbreak",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-20T20:36:01+00:00",
+   "summary": "... World Health Organization –recommended treatment. Treatment outcomes were “highly positive,” with 95% successfully completing the regimen ...",
+   "domain": "cidrap.umn.edu",
+   "inhoud": 12,
+   "score": 18
+  },
+  {
    "title": "STAT+: Is MAHA’s think tank in the tank? Tax filings show low reserves",
    "url": "https://www.statnews.com/2026/11/20/maha-institute-tax-filings-rfk-jr-health-agenda-spending/?utm_campaign=rss",
    "src": "STAT News",
@@ -380,18 +475,6 @@
    "domain": "localmemphis.com",
    "inhoud": 4,
    "score": 4
-  },
-  {
-   "title": "The U.S. Measles Comeback in Five Charts | Think Global Health",
-   "url": "https://www.thinkglobalhealth.org/article/the-u-s-measles-comeback-in-five-charts",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-20T19:25:24+00:00",
-   "summary": "Think Global Health developed five charts to mark the current setback in U.S. and global public health history, and to trace how the country ...",
-   "domain": "thinkglobalhealth.org",
-   "inhoud": 4,
-   "score": 10
   },
   {
    "title": "Immunizing entire villages with a malaria vaccine significantly cut malaria in West Africa",
@@ -1321,6 +1404,20 @@
    "score": 9
   },
   {
+   "title": "The U.S. Measles Comeback in Five Charts",
+   "url": "https://www.thinkglobalhealth.org/article/the-u-s-measles-comeback-in-five-charts",
+   "src": "Think Global Health",
+   "feed": "Think Global Health",
+   "cat": "global",
+   "date": "2026-11-19T22:13:50+00:00",
+   "summary": "The U.S. Measles Comeback in Five Charts Think Global Health",
+   "domain": "thinkglobalhealth.org",
+   "fallback": true,
+   "inhoud": 10,
+   "score": 14,
+   "gnews": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPc18zT3U5UnJJUnMySzdCWkF4NHlZNXRrdDF5MEctZUlqUnJNeGpxUVlHU0drcnNqMk9fOS1rYVdyQ09FYWJHTWw1SjgxeXhZNU1WZlZyaTdFMTVCbjBXNC1NWWpkOWxfN2hoMVlNamxjT0d5MXBuNUprTHZyUEF0NHJUbmVvSUs1?oc=5"
+  },
+  {
    "title": "PAHO reports rising resistance to last-resort antibiotics in Latin America, Caribbean",
    "url": "https://www.cidrap.umn.edu/antimicrobial-stewardship/paho-reports-rising-resistance-last-resort-antibiotics-latin-america",
    "src": "CIDRAP Stewardship",
@@ -1995,6 +2092,20 @@
    "score": -13
   },
   {
+   "title": "Safety & Security, and Access Coordinator-National -Damascus",
+   "url": "https://reliefweb.int/job/4239090/safety-security-and-access-coordinator-national-damascus",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-19T11:38:23+00:00",
+   "summary": "Safety & Security, and Access Coordinator-National -Damascus ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -20,
+   "score": -16,
+   "gnews": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPR3E0R1FZWExBVVBLOHR4dWF6S2JmSFRSV1dxV015SmVTX1EtelZfS0RpRTZ6UDc5U3ltaFVtdTBzQ2pMTTk1bWFoWjZVTHF6bFkxZXdLWmdUdmZFTTdxcGRGWDdPWlZ4QUg3LUFoLXVzVkVEaF9FVEZtM2UwOHF1OEwzSGRxRGxVSVBJdjZYVVN0c0tl?oc=5"
+  },
+  {
    "title": "STAT+: In cancer drug development, the spotlight shifts onto Erasca’s KRAS-targeted treatment",
    "url": "https://www.statnews.com/2026/11/19/erasca-kras-targeted-treatment-new-data-pancreatic-cancer/?utm_campaign=rss",
    "src": "STAT News",
@@ -2349,7 +2460,7 @@
    "summary": "... World Health Organization . Last week a committee of experts assembled by the PAHO, called the RVC, met to review measles data for countries across ...",
    "domain": "arstechnica.com",
    "inhoud": 11,
-   "score": 11
+   "score": 16
   },
   {
    "title": "COVID-19 Amplified Pre-Existing Vulnerabilities in Zambia’s Neglected Tropical Disease Programmes",
@@ -3486,6 +3597,19 @@
    "inhoud": 4,
    "score": 6,
    "gnews": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObmxLek4wYlNmbEo3b0ItcWRjT2ZvVkw1YlFrTUZnYklnQkZwV2tSX2NGYUtDSDdERUlReVZnM3Z2QlNLWmFuVlI2R0R1TDdsbi1wblJQUldWN004cjBCNHZpOWtpQnlhSWp4YTBib2RMWW5UeXNpbHB3WnBVMVZUWTJOQjd0bUNNVTB2TldXWQ?oc=5"
+  },
+  {
+   "title": "Tackling antimicrobial resistance: Montenegro, the Republic of Moldova and Serbia make progress",
+   "url": "https://www.fao.org/europe/news/detail/tackling-antimicrobial-resistance--montenegro--the-republic-of-moldova-and-serbia-make-progress/en",
+   "src": "Food and Agriculture Organization",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-18T08:00:00+00:00",
+   "summary": "Tackling antimicrobial resistance: Montenegro, the Republic of Moldova and Serbia make progress Food and Agriculture Organization",
+   "domain": "fao.org",
+   "inhoud": 0,
+   "score": 6,
+   "gnews": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZ2xpcEtOQXY0LWpsbDVyUU1LTENvblZpMWlLdElIeW1CUWtEMUt5UExvbFZDNE1vWnl2Mmw4eHB0bjFCZmFtbFQ2WEY3NWdiS0J1anBndjRmVDFnWnVhUU5QdjV0bjBhX1Nkd2ZzTFllUjRkeVdNTUd4RDY2WHNRdGR1dFVyUjd6WGlOWXh5dnl6eTlEOWl4X2FCZkRCaWZDZ0t2YkRYZHlqTy1MS1pWZEFNa0xVNDFocXpTM2xaT19YX19ETS1iWUluWEhUWUlFMWMw?oc=5"
   },
   {
    "title": "Dangerous drug-resistant superbug is rapidly spreading in European hospitals - what is the situation in Ukraine",
@@ -5485,102 +5609,6 @@
    "gnews": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1iYk1kVmEtb2ljSXdTclQzR1Q4YlVwOUJHT1d4emd3QlJ4bzV0MHF1ZkxGbUxEZXAzRG1sdTV1Wk1aYVV4dU5XMmVwd3FwNktzeU1JZWcyZw?oc=5"
   },
   {
-   "title": "US braces for loss of measles elimination status amid worst outbreak in decades - The Hill",
-   "url": "https://thehill.com/policy/healthcare/6220031-us-braces-measles-elimination-status/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-16T19:07:44+00:00",
-   "summary": "Soon after the second Trump administration came into power, the U.S. withdrew from organizations such as the World Health Organization and Gavi, the ...",
-   "domain": "thehill.com",
-   "inhoud": 19,
-   "score": 19
-  },
-  {
-   "title": "WHO Director-General's opening remarks at the Member States briefing on prioritization and ...",
-   "url": "https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-member-states-briefing-on-prioritization-and-realignment-16-november-2026",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-16T19:06:35+00:00",
-   "summary": "I want to acknowledge plainly what this cost. Behind every number is a colleague who gave years of service to this Organization and to global health .",
-   "domain": "who.int",
-   "inhoud": 12,
-   "score": 19
-  },
-  {
-   "title": "Money Matters: Is the EU changing its funding approach?",
-   "url": "https://www.devex.com/news/money-matters-is-the-eu-changing-its-funding-approach-113902",
-   "src": "Devex Global Health",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-11-16T19:04:52+00:00",
-   "summary": "The latest funding news from COP, and how to fundraise from the ultra-rich.",
-   "domain": "devex.com",
-   "inhoud": 0,
-   "score": 5
-  },
-  {
-   "title": "STAT+: In a win for MAHA, FDA creates new regulatory category for the supplement NAC",
-   "url": "https://www.statnews.com/2026/11/16/fda-proposes-new-category-supplement-nac/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-11-16T18:54:06+00:00",
-   "summary": "The supplement NAC has been widely available for years, but exists in a legal gray area.",
-   "domain": "statnews.com",
-   "inhoud": -6,
-   "score": -5
-  },
-  {
-   "title": "US loses measles-free status after 26-year run, source says | Reuters",
-   "url": "https://www.reuters.com/world/us-loses-measles-free-status-after-26-year-run-source-says-2026-11-16/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-16T18:27:56+00:00",
-   "summary": "The decision by the Americas branch of the World Health Organization comes as the US battles the highest number of measles cases it has seen in more ...",
-   "domain": "reuters.com",
-   "inhoud": 4,
-   "score": 9
-  },
-  {
-   "title": "STAT+: Expert warns of battleground over global access to newer GLP-1 drugs for obesity",
-   "url": "https://www.statnews.com/pharmalot/2026/11/16/semaglutide-obesity-glp1-access-medicines-low-income-countries/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-11-16T18:18:25+00:00",
-   "summary": "How obesity medications may become the next big battleground over access to medicines in lower-income countries.",
-   "domain": "statnews.com",
-   "inhoud": -3,
-   "score": -2
-  },
-  {
-   "title": "UK hands Palantir two-year reprieve on NHS contract",
-   "url": "https://www.politico.eu/article/uk-hands-palantir-two-year-reprieve-on-nhs-contract/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-   "src": "Politico EU Health",
-   "feed": "Politico EU Health",
-   "cat": "policy",
-   "date": "2026-11-16T18:12:39+00:00",
-   "summary": "Health minister James Frith described the extension of Palantir's NHS contract as “a bridge, not the destination.”",
-   "domain": "politico.eu",
-   "inhoud": 0,
-   "score": 5
-  },
-  {
-   "title": "Special edition: COP31 enters final stretch with little progress on key climate issues",
-   "url": "https://www.devex.com/news/special-edition-cop31-enters-final-stretch-with-little-progress-on-key-climate-issues-113899",
-   "src": "Devex Global Health",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-11-16T17:48:10+00:00",
-   "summary": "A familiar gridlock hits Antalya while development banks face growing divisions, food systems talks stall, and U.S. Democrats make their presence felt.",
-   "domain": "devex.com",
-   "inhoud": 0,
-   "score": 5
-  },
-  {
    "title": "Eritrea becomes 11th African country to eliminate trachoma",
    "url": "https://gazettengr.com/eritrea-becomes-11th-african-country-to-eliminate-trachoma/",
    "src": "Peoples Gazette Nigeria",
@@ -5592,18 +5620,6 @@
    "inhoud": 4,
    "score": 6,
    "gnews": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQZGdNYUhEdVF3a1VySzhoQWhwbVMweVZuaXg3MEVjT3hvVmpvUkZjSjQzLVZEYW94bGNDcGtVU1c4bm9YUEUwdHIwS25KWlUtbFROS1Rqem5qMTB5Um5mNFV5N25DMTZfNTQwY3p5UkpCb3FXUklYSDI5NXN4NFpLVVJzRzNDNVVnc3c?oc=5"
-  },
-  {
-   "title": "STAT+: NIAID acting head John Powers III appointed as the permanent director",
-   "url": "https://www.statnews.com/2026/11/16/john-powers-appointed-niaid-director/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-11-16T17:47:11+00:00",
-   "summary": "The acting director of NIAID, John Powers III, will become the permanent director, the agency announced Monday.",
-   "domain": "statnews.com",
-   "inhoud": -6,
-   "score": -5
   },
   {
    "title": "WHO warns drug-resistant bacterial infections could cause over 39 million deaths by 205",
@@ -8981,19 +8997,6 @@
    "score": 9,
    "inhoud": 6,
    "gnews": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNN1R4WkpLQmF6elZ2WkMtOU81d01BR0tNejRSUFd5c0dObllFRzNNVTJDM3ZQT0xmQ0x4SHkwN05majY5cy1FQmxTY241SWRnY1N3WUFvSXZsQS1xeGI5Q09Kd0x1bGhuRG52OFRBTE9hNUNPcU83UVA3Y29wV2pKYlhpeE44S2R6bGVndW1CbURwaDJ1?oc=5"
-  },
-  {
-   "title": "WHO Highlights Pandemic Preparedness and Health Financing at UN General Assembly",
-   "url": "https://boldnewsonline.com/who-highlights-pandemic-preparedness-and-health-financing-at-un-general-assembly/",
-   "src": "boldnewsonline.com",
-   "feed": "Pandemic Fund & financing",
-   "cat": "pandemic",
-   "date": "2026-09-22T00:00:00+00:00",
-   "summary": "WHO Highlights Pandemic Preparedness and Health Financing at UN General Assembly boldnewsonline.com",
-   "domain": "boldnewsonline.com",
-   "score": 11,
-   "inhoud": 8,
-   "gnews": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWF9xRTRpdHdBWUF6eHdIMFA4am1qVFRIRTRFemdxeWZ3V01tbVVINjdBb2ViODJoYkN6NVBMUER2Qkp0cjZySFdLeVRrb2JaUThmejh4Q1JGSWtHSGp2RlhiSDBxZjczRlA0M0VuSE5NcVEwcDBlamw3ems3QUprZ2ZUdmFfeFRSdUFRdmtLM2ZRazhoRHVxNFhuSlNoTlZfWWlFUzhBbmN1YzYz?oc=5"
   }
  ]
 }
