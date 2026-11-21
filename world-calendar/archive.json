@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "note": "Past events of the World Calendar. Filled automatically from events.json; never pruned.",
   "events": [
     {"start": "2026-01-01", "cat": "eu", "title": "Cyprus takes over the EU Council presidency", "place": "EU", "status": "confirmed", "src": "https://www.consilium.europa.eu/en/council-eu/presidency-council-eu/"},
@@ -170,6 +170,7 @@
     {"start": "2026-11-05", "cat": "eu", "title": "Tweede Kamer — commissiedebat Mondiale gezondheid", "place": "Den Haag", "status": "confirmed", "src": "https://app.1848.nl/document/tkapi/597195"},
     {"start": "2026-11-07", "cat": "election", "title": "New Zealand — general election", "place": "New Zealand", "status": "confirmed", "src": "https://www.elections.nz/2026-general-election"},
     {"start": "2026-11-09", "end": "2026-11-11", "cat": "health", "title": "HSR2026 — 9th Global Symposium on Health Systems Research", "place": "Dubai, UAE", "status": "confirmed", "src": "https://www.infontd.org/events/hsr2026-9th-global-symposium-health-systems-research"},
+    {"start": "2026-11-09", "end": "2026-11-20", "cat": "summit", "title": "COP31 — UN Climate Change Conference", "place": "Antalya, Türkiye", "note": "World Leaders' Summit 11–12 Nov. Türkiye presides; Australia leads negotiations.", "status": "confirmed", "src": "https://en.wikipedia.org/wiki/2026_United_Nations_Climate_Change_Conference"},
     {"start": "2026-11-10", "end": "2026-11-12", "cat": "health", "title": "Geneva Health Forum", "place": "Geneva", "status": "confirmed", "src": "https://hifa.org/node/96858016"},
     {"start": "2026-11-11", "end": "2026-11-12", "cat": "summit", "title": "COP31 Leaders' Summit", "place": "Antalya, Türkiye", "note": "High-level segment within COP31", "status": "confirmed", "src": "https://unfccc.int/cop31/ifp"},
     {"start": "2026-11-12", "cat": "eu", "title": "European Political Community — 9th meeting", "place": "Dublin, Ireland", "status": "confirmed", "src": "https://irish-presidency.consilium.europa.eu/en/events/meeting-of-the-european-political-community-epc/"},
@@ -177,6 +178,7 @@
     {"start": "2026-11-15", "cat": "election", "title": "Cabo Verde — presidential election", "place": "Cabo Verde", "status": "confirmed", "src": "https://www.idea.int/democracytracker/elections-list"},
     {"start": "2026-11-16", "end": "2026-11-17", "cat": "gha", "title": "GHA reform — 4th Joint Task Force meeting", "place": "—", "note": "Interim report outlined to Member States on 20 Nov", "status": "confirmed", "src": "https://apps.who.int/gb/mspi/pdf_files/2026/10/Item1_30-10.pdf"},
     {"start": "2026-11-16", "end": "2026-11-18", "cat": "summit", "title": "49th ASEAN Summit and related summits", "place": "Manila, Philippines", "status": "confirmed", "src": "https://philstarlife.com/news-and-views/968280-palace-announces-nov-16-to-18-as-special-non-working-days-asean-summit"},
+    {"start": "2026-11-17", "end": "2026-11-20", "cat": "health", "title": "Union World Conference on Lung Health", "place": "Rio de Janeiro, Brazil", "status": "confirmed", "src": "https://worldlunghealth.org/"},
     {"start": "2026-11-18", "end": "2026-11-19", "cat": "summit", "title": "APEC Economic Leaders' Meeting", "place": "Shenzhen, China", "note": "Hosted by China.", "status": "confirmed", "src": "https://www.lg.gov.cn/english/news/latestnews/content/post_12588327.html", "country": "CN"},
     {"start": "2026-11-19", "cat": "health", "title": "WHO Director-General election — first candidates' forum", "place": "Geneva", "note": "Seven candidates; webcast", "status": "confirmed", "src": "https://www.who.int/news/item/29-10-2026-announcement-of-candidates-for-the-position-of-who-director-general"}
   ]
