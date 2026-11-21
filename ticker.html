@@ -11,7 +11,7 @@
 :root {
   --bg:#020905; --border:#1c2e1f; --accent:#3dff9a; --muted:#3a5240; --bright:#e8f5ee;
   --who:#29b6f6; --promed:#ffd740; --emerg:#ff7043; --global:#ab8eff;
-  --amr:#ff5c8a; --ntd:#8bc34a; --pandemic:#e040fb; --journal:#e53935; --policy:#ff8f00; --news:#26a69a;
+  --amr:#ff5c8a; --ntd:#8bc34a; --pandemic:#e040fb; --srhr:#f48fb1; --eu:#6f8cff; --journal:#e53935; --policy:#ff8f00; --news:#26a69a;
   --h: 58px;                       /* hoogte van de balk */
 }
 
@@ -57,6 +57,8 @@ body {
 .it[data-c="global"]  .pip { background:var(--global); }
 .it[data-c="amr"]     .pip { background:var(--amr); }
 .it[data-c="ntd"]     .pip { background:var(--ntd); }
+.it[data-c="srhr"]    .pip { background:var(--srhr); }
+.it[data-c="eu"]      .pip { background:var(--eu); }
 .it[data-c="pandemic"] .pip { background:var(--pandemic); }
 .it[data-c="journal"] .pip { background:var(--journal); }
 .it[data-c="policy"]  .pip { background:var(--policy); }
@@ -116,7 +118,7 @@ async function load() {
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
 
-    let items = data.items || [];
+    let items = (data.items || []).filter(i => !i.lead);   // één regel per verhaal
     if (ONLY.length) items = items.filter(i => ONLY.includes(i.cat));
     items = interleave(items).slice(0, 50);
 

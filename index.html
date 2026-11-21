@@ -31,6 +31,8 @@
   --amr:     #ff5c8a;
   --ntd:     #8bc34a;
   --pandemic:#e040fb;
+  --srhr:    #f48fb1;
+  --eu:      #6f8cff;
 }
 
 html, body { height: 100%; }
@@ -194,6 +196,25 @@ body.geen-ticker .ticker-wrap { display: none; }
 .card[data-c="pandemic"]::after { background:var(--pandemic); }
 .card[data-c="ntd"]      .badge { background:rgba(139,195,74,.13); color:var(--ntd); }
 .card[data-c="pandemic"] .badge { background:rgba(224,64,251,.13); color:var(--pandemic); }
+.fbtn[data-c="srhr"].on { border-color:var(--srhr); color:var(--srhr); background:rgba(244,143,177,.08); }
+.fbtn[data-c="eu"].on   { border-color:var(--eu);   color:var(--eu);   background:rgba(111,140,255,.08); }
+.fbtn[data-c="srhr"] .dot { background:var(--srhr); }
+.fbtn[data-c="eu"]   .dot { background:var(--eu); }
+.card[data-c="srhr"]::after { background:var(--srhr); }
+.card[data-c="eu"]::after   { background:var(--eu); }
+.card[data-c="srhr"] .badge { background:rgba(244,143,177,.13); color:var(--srhr); }
+.card[data-c="eu"]   .badge { background:rgba(111,140,255,.13); color:var(--eu); }
+
+/* Verhaal: andere outlets met hetzelfde nieuws, ingeklapt onder de kaart */
+.card-also { font-size:11px; color:var(--muted); cursor:pointer; align-self:flex-start;
+  border:1px solid var(--border); border-radius:2px; padding:2px 7px; letter-spacing:.03em; }
+.card-also:hover, .card-also.open { color:var(--accent); border-color:var(--accent); }
+.also-list { display:none; flex-direction:column; gap:5px; font-size:12px; line-height:1.4;
+  border-left:2px solid var(--border); padding-left:9px; }
+.also-list.open { display:flex; }
+.also-item { color:var(--text); cursor:pointer; }
+.also-item:hover { color:var(--bright); text-decoration:underline; }
+.also-item b { color:var(--muted); font-weight:400; font-style:italic; }
 
 .card-date  { font-size:11px; color:var(--muted); }
 .card-src   { font-size:12px; color:var(--muted); font-style:italic; }
@@ -317,6 +338,8 @@ footer {
   .card-src { font-size: 11px; }
   .card-title, .card.feat .card-title { font-size: 14.5px; line-height: 1.35; }
   .card-sum, .card-link { display: none; }
+  .card .card-also { order: 5; }
+  .card .also-list { order: 6; flex: 1 1 100%; }
 
   footer { padding: 10px 14px 16px; font-size: 11px; }
   .search-bar { padding: 8px 14px; }
@@ -361,6 +384,8 @@ footer {
   <button class="fbtn on" data-c="amr"    onclick="tog('amr')">   <span class="dot"></span>AMR</button>
   <button class="fbtn on" data-c="ntd"    onclick="tog('ntd')">   <span class="dot"></span>NTDs</button>
   <button class="fbtn on" data-c="pandemic" onclick="tog('pandemic')"><span class="dot"></span>Pandemic accord</button>
+  <button class="fbtn on" data-c="srhr"   onclick="tog('srhr')">  <span class="dot"></span>SRHR</button>
+  <button class="fbtn on" data-c="eu"     onclick="tog('eu')">    <span class="dot"></span>EU &amp; NL</button>
   <div class="filter-sep"></div>
   <span class="flbl">RSS:</span>
   <button class="fbtn on" data-c="journal" onclick="tog('journal')"><span class="dot"></span>Journals</button>
@@ -410,7 +435,7 @@ const DATA = 'data/feeds.json';
 
 let allItems = [];
 let feedStatus = {};
-let active = new Set(['who','promed','emerg','global','amr','ntd','pandemic','journal','policy','news']);
+let active = new Set(['who','promed','emerg','global','amr','ntd','pandemic','srhr','eu','journal','policy','news']);
 
 setInterval(() => {
   document.getElementById('clk').textContent =
@@ -534,7 +559,7 @@ function prioriteer(items) {
 
 const CAT_LABEL = {
   who:'WHO', promed:'OUTBREAKS', emerg:'EMERGENCY', global:'GLOBAL HEALTH',
-  amr:'AMR', ntd:'NTDs', pandemic:'PANDEMIC ACCORD', journal:'JOURNAL', policy:'POLICY', news:'NEWS'
+  amr:'AMR', ntd:'NTDs', pandemic:'PANDEMIC ACCORD', srhr:'SRHR', eu:'EU & NL', journal:'JOURNAL', policy:'POLICY', news:'NEWS'
 };
 
 function renderTicker(items) {
@@ -558,7 +583,7 @@ function renderCards() {
       `${visible.length}${visible.length === MAX_ZOEK ? '+' : ''} ${visible.length === 1 ? 'result' : 'results'} for “${zoekterm}”` +
       (archief === null ? ' — loading archive…' : ' (incl. archive)');
   } else {
-    const gefilterd = allItems.filter(i => active.has(i.cat));
+    const gefilterd = allItems.filter(i => active.has(i.cat) && !i.lead);   // leden van een verhaal zitten in de kaart
     visible = prioriteer(gefilterd);
     document.getElementById('cnt').textContent =
       toonAlles ? `${visible.length} items`
@@ -581,9 +606,36 @@ function renderCards() {
       <div class="card-src">${htmlesc(item.src)}${viaDomain(item) ? ` · <span class="card-via">via ${htmlesc(viaDomain(item))}</span>` : ''}</div>
       <div class="card-title">${htmlesc(item.title)}</div>
       ${item.summary ? `<div class="card-sum">${htmlesc(item.summary)}</div>` : ''}
+      ${alsoHtml(item)}
       <span class="card-link">Read more ↗</span>
     </a>`).join('');
 }
+
+// Andere outlets met hetzelfde verhaal. Geen <a> (een link in een link mag
+// niet): klikken gaat via de handler hieronder.
+function alsoHtml(item) {
+  const also = item.also || [];
+  if (!also.length) return '';
+  const n = also.length;
+  return `<span class="card-also" role="button" tabindex="0">+${n} other outlet${n === 1 ? '' : 's'} ▾</span>
+    <div class="also-list">${also.map(a =>
+      `<span class="also-item" role="link" tabindex="0" data-href="${esc(a.url)}"><b>${htmlesc(a.src)}</b> — ${htmlesc(a.title)}</span>`).join('')}</div>`;
+}
+function alsoKlik(e) {
+  const t = e.target.closest('.card-also, .also-item');
+  if (!t) return;
+  if (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ') return;
+  e.preventDefault(); e.stopPropagation();
+  if (t.classList.contains('card-also')) {
+    t.classList.toggle('open');
+    t.nextElementSibling.classList.toggle('open');
+    t.textContent = t.textContent.replace(/[▾▴]$/, t.classList.contains('open') ? '▴' : '▾');
+  } else if (t.dataset.href && t.dataset.href !== '#') {
+    window.open(t.dataset.href, '_blank', 'noopener,noreferrer');
+  }
+}
+document.getElementById('grid').addEventListener('click', alsoKlik);
+document.getElementById('grid').addEventListener('keydown', alsoKlik);
 
 // Statusregel onderaan: welke bronnen deden het bij de laatste harvest.
 function renderDiag(meta) {
@@ -622,7 +674,7 @@ async function loadAll() {
     feedStatus = data.status || {};
     allItems = data.items || [];
     renderCards();
-    renderTicker(prioriteer(allItems));
+    renderTicker(prioriteer(allItems.filter(i => !i.lead)));
     renderDiag(data);
     dot.className = 'live-dot';
     st.textContent = 'LIVE';

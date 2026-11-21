@@ -37,7 +37,10 @@ ARCHIVE_INDEX = ARCHIVE_DIR / "index.json"        # lijst van maanden; de pagina
 ARCHIVE_COLS  = ["seen_date", "published", "category", "source", "feed", "title", "url"]
 MAX_AGE_DAYS  = 21     # ouder dan dit valt uit de cache
 # Trage onderwerpen: hier verschijnt minder nieuws, dus items mogen langer blijven.
-MAX_AGE_PER_CAT = {"pandemic": 60, "ntd": 60, "amr": 45}
+MAX_AGE_PER_CAT = {"pandemic": 60, "ntd": 45, "amr": 30, "srhr": 45, "eu": 30}
+# AMR en NTDs vulden bijna de helft van de cache (21-11-2026: 304 van 700). Per
+# bron bewaren we hoogstens zoveel items, de nieuwste.
+MAX_IN_CACHE_PER_FEED = 30
 MAX_PER_FEED  = 12     # per bron meenemen
 MAX_TOTAL     = 700    # harde bovengrens op het bestand
 TIMEOUT       = 25
@@ -50,7 +53,7 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
 
 # ---------------------------------------------------------------------------
 # Feeds. cat moet overeenkomen met de filterknoppen in index.html:
-#   who | promed | emerg | global | amr | ntd | pandemic | journal | policy | news
+#   who | promed | emerg | global | amr | ntd | pandemic | srhr | eu | journal | policy | news
 # Een feed die blijft falen kun je gewoon uitcommentariëren.
 # ---------------------------------------------------------------------------
 def gnews(zoekterm: str) -> str:
@@ -90,6 +93,15 @@ FEEDS = [
     {"label": "UN News Health", "cat": "who", "urls": [
         "https://news.un.org/feed/subscribe/en/news/topic/health/feed/rss.xml",
         gnews("site:news.un.org health")]},
+    # WHO-regio's: Geneve domineerde; nu ook de Amerika's, Afrika en Europa.
+    {"label": "PAHO", "cat": "who", "urls": [
+        "https://www.paho.org/en/rss.xml",
+        gnews("site:paho.org")]},
+    {"label": "WHO Africa", "cat": "who", "urls": [
+        "https://www.afro.who.int/rss/featured-news.xml",
+        gnews("site:afro.who.int")]},
+    {"label": "WHO Europe", "cat": "who", "urls": [
+        gnews("site:who.int/europe")]},
 
     # --- Outbreak / surveillance --------------------------------------------
     # ProMED: geen feed meer sinds de nieuwe (betaalde) site; /feed/ geeft 404
@@ -106,6 +118,13 @@ FEEDS = [
          "url": "https://api.crossref.org/journals/1560-7917/works?sort=published&order=desc&rows=12"
                 "&select=DOI,title,published,issued,abstract"},
         gnews("site:eurosurveillance.org")]},
+    # One Health / H5N1: dierziekten komen eerst bij WOAH binnen.
+    {"label": "WOAH", "cat": "promed", "urls": [
+        "https://www.woah.org/en/feed/",
+        gnews("site:woah.org")]},
+    # BEACON (Boston University, open opvolger van ProMED) geprobeerd 21-11-2026:
+    # de site geeft 403 aan datacenter-IP's en Google News kent alleen de
+    # startpagina. Daarom (nog) niet.
 
     # --- Health emergencies ---------------------------------------------------
     {"label": "Health Emergency", "cat": "emerg", "urls": [
@@ -118,6 +137,10 @@ FEEDS = [
                 "&filter[field]=theme.name&filter[value]=Health"
                 "&fields[include][]=url_alias&fields[include][]=date.original&fields[include][]=source.shortname"},
         gnews("site:reliefweb.int health emergency")]},
+    # Gezondheidszorg in conflict (Gaza, Sudan, Oekraïne), aanvallen op zorg.
+    {"label": "MSF", "cat": "emerg", "urls": [
+        "https://www.msf.org/rss/all",
+        gnews("site:msf.org")]},
 
     # --- Global health ----------------------------------------------------------
     {"label": "Global Health", "cat": "global", "urls": [
@@ -143,6 +166,44 @@ FEEDS = [
     {"label": "Think Global Health", "cat": "global", "urls": [
         # Geen RSS meer (alle feed-adressen 404, gemeten 10-11-2026).
         gnews("site:thinkglobalhealth.org")]},
+    # De grote financiers. Gavi, Global Fund en CEPI hebben geen werkende RSS
+    # (404, gemeten 21-11-2026).
+    {"label": "Gavi / Global Fund / CEPI", "cat": "global", "urls": [
+        gnews('Gavi OR "Global Fund" OR CEPI OR Unitaid replenishment OR funding OR pledge')]},
+    {"label": "UNAIDS", "cat": "global", "urls": [
+        "https://www.unaids.org/en/rss.xml",
+        gnews("site:unaids.org")]},
+    {"label": "Lancet Countdown", "cat": "global", "urls": [
+        "https://www.lancetcountdown.org/feed/",
+        gnews('"Lancet Countdown" climate health')]},
+    {"label": "WHO financing & reform", "cat": "global", "urls": [
+        gnews('WHO withdrawal OR "WHO budget" OR "WHO reform" OR "Lusaka Agenda" OR "investment round" "World Health Organization"')]},
+    {"label": "Local manufacturing", "cat": "global", "urls": [
+        gnews('"vaccine manufacturing" Africa OR "local manufacturing" medicines OR "mRNA hub" OR "regional manufacturing" vaccines')]},
+
+    # --- SRHR ---------------------------------------------------------------------
+    # Nederlandse prioriteit; stond nergens in de ribbon.
+    {"label": "UNFPA", "cat": "srhr", "urls": [
+        "https://www.unfpa.org/rss.xml",              # geen datums: eerste keer gezien telt
+        gnews("site:unfpa.org")]},
+    {"label": "Guttmacher", "cat": "srhr", "urls": [
+        "https://www.guttmacher.org/rss.xml",
+        gnews("site:guttmacher.org")]},
+    {"label": "SRHR news", "cat": "srhr", "urls": [
+        gnews('"sexual and reproductive health" OR SRHR OR "global gag rule" OR "Mexico City policy" OR "family planning" funding OR "maternal mortality"')]},
+
+    # --- EU & NL ------------------------------------------------------------------
+    {"label": "EU health policy", "cat": "eu", "alleen_gezondheid": True, "urls": [
+        gnews('"European Commission" health OR HERA OR EU4Health OR "Global Health Resilience Initiative" OR "Team Europe" health OR "EU global health"')]},
+    {"label": "Council of the EU (health)", "cat": "eu", "alleen_gezondheid": True, "urls": [
+        # De persfeed van consilium.europa.eu heeft geen datums en geen tags.
+        gnews("site:consilium.europa.eu health")]},
+    {"label": "Rijksoverheid VWS", "cat": "eu", "urls": [
+        "https://feeds.rijksoverheid.nl/ministeries/ministerie-van-volksgezondheid-welzijn-en-sport/nieuws.rss",
+        gnews("site:rijksoverheid.nl volksgezondheid")]},
+    {"label": "RIVM", "cat": "eu", "urls": [
+        "https://www.rivm.nl/nieuws/rss.xml",
+        gnews("site:rivm.nl")]},
 
     # --- AMR ----------------------------------------------------------------------
     {"label": "CIDRAP Stewardship", "cat": "amr", "urls": [
@@ -204,6 +265,10 @@ FEEDS = [
     # --- Policy -----------------------------------------------------------------------------
     {"label": "Health Policy Watch", "cat": "policy", "urls": [
         "https://healthpolicy-watch.news/feed/"]},
+    # VS-financiering (PEPFAR, USAID, begrotingen): de beste tracker.
+    {"label": "KFF Global Health Policy", "cat": "policy", "urls": [
+        "https://www.kff.org/global-health-policy/feed/",
+        gnews("site:kff.org global health")]},
     {"label": "Geneva Health Files", "cat": "policy", "urls": [
         # Sinds maart 2026 op Ghost (newsletter.genevahealthfiles.com); Substack blokkeert.
         "https://newsletter.genevahealthfiles.com/rss/",
@@ -225,6 +290,10 @@ FEEDS = [
     {"label": "Devex Global Health", "cat": "news", "urls": [
         "https://www.devex.com/news/feed.rss",          # /news/feed zit achter een captcha
         gnews("site:devex.com global health")]},
+    # Partnerland Zuid-Afrika: hiv, tb, financiering.
+    {"label": "Bhekisisa", "cat": "news", "urls": [
+        "https://bhekisisa.org/feed/",
+        gnews("site:bhekisisa.org")]},
     # Gates Foundation Grand Challenges: geen eigen RSS, dus via Google News
     {"label": "Grand Challenges", "cat": "news", "urls": [
         gnews("site:grandchallenges.org"),
@@ -255,6 +324,11 @@ BRONGEWICHT = {
     "AMR policy & research": 2, "AMR global governance": 3, "Antibiotic R&D (GARDP, CARB-X)": 2, "ReAct": 3,
     "PLOS NTDs": 2, "NTD news": 2, "WHO NTDs": 3, "DNDi": 3, "Uniting to Combat NTDs": 3,
     "Pandemic Agreement": 4, "PABS / IGWG": 4, "IHR amendments": 3, "Pandemic Fund & financing": 3,
+    "PAHO": 3, "WHO Africa": 3, "WHO Europe": 3, "WOAH": 3, "MSF": 2,
+    "Gavi / Global Fund / CEPI": 3, "UNAIDS": 3, "Lancet Countdown": 3, "WHO financing & reform": 3,
+    "Local manufacturing": 2, "UNFPA": 3, "Guttmacher": 2, "SRHR news": 2,
+    "EU health policy": 3, "Council of the EU (health)": 3, "Rijksoverheid VWS": 3, "RIVM": 2,
+    "KFF Global Health Policy": 3, "Bhekisisa": 2,
 }
 
 # Trefwoorden en hun gewicht. Matching op hele woorden (meervoud-s mag), dus
@@ -269,7 +343,11 @@ TERMEN = {
         "neglected tropical", "NTD", "NTDs", "antimicrobial resistance", "AMR",
         # paraatheidsbeoordelingen (JEE, SPAR, PHEPA, IHR benchmarks): eigen tools in de toolbox
         "preparedness assessment", "PHEPA", "joint external evaluation", "JEE", "SPAR",
-        "states parties self-assessment", "IHR benchmark", "preparedness and response"],
+        "states parties self-assessment", "IHR benchmark", "preparedness and response",
+        # EU-mondiale gezondheid en de WHO-architectuur
+        "Global Health Resilience Initiative", "GHRI", "EU Global Health Strategy", "Lusaka Agenda",
+        "withdrawal from WHO", "withdraw from WHO", "withdrawal from the World Health Organization",
+        "mondiale gezondheid", "wereldgezondheid"],
     3: ["WHO", "world health organization", "Tedros", "director-general",
         "pandemic preparedness", "health security", "health emergency", "outbreak",
         "one health", "universal health coverage", "UHC", "health financing", "global health",
@@ -278,7 +356,22 @@ TERMEN = {
         "development aid", "official development assistance", "aid cuts", "funding cuts",
         "PEPFAR", "USAID", "State Department", "donor", "donors", "replenishment",
         "EU health", "health ministers", "EPSCO", "European Commission", "Council of the EU",
-        "G20", "G7", "UN General Assembly", "UNGA", "COP31", "heat-health"],
+        "G20", "G7", "UN General Assembly", "UNGA", "COP31", "heat-health",
+        # SRHR en vrouwengezondheid
+        "SRHR", "sexual and reproductive health", "reproductive health", "reproductive rights",
+        "family planning", "contraception", "contraceptive", "abortion", "maternal mortality",
+        "global gag rule", "Mexico City policy", "Mexico City Policy", "women's health", "gender equality",
+        "UNFPA", "female genital mutilation", "FGM",
+        # EU
+        "Team Europe", "Global Gateway", "DG SANTE", "EU4Health", "European Health Union",
+        # WHO-crisis en financiering
+        "WHO budget", "WHO reform", "WHO restructuring", "investment round", "assessed contributions",
+        "WHO withdrawal", "leaves WHO", "quits WHO",
+        # productie, toegang, conflict
+        "local manufacturing", "vaccine manufacturing", "regional manufacturing", "mRNA hub",
+        "technology transfer", "attacks on health care", "attacks on healthcare", "health workers killed",
+        "WOAH", "Lancet Countdown", "lenacapavir", "cancer vaccine", "malaria vaccine", "TB vaccine",
+        "tuberculosis vaccine", "new antibiotic", "antibioticaresistentie"],
     # klimaat telt pas echt in combinatie met gezondheid
     4: ["climate and health", "climate-health", "health and climate", "Health Day"],
     2: ["vaccine", "vaccination", "epidemic", "surveillance", "cholera", "mpox", "measles", "polio",
@@ -290,7 +383,11 @@ TERMEN = {
         "essential medicines", "substandard", "falsified", "medical countermeasures",
         "climate", "pandemic", "zoonotic", "funding", "funds", "aid", "financing", "civil society",
         "immunization", "immunisation", "malnutrition", "air pollution", "air quality", "tobacco",
-        "guidelines", "guidance", "maternal", "child health", "2030 Agenda", "SDG", "SDGs"],
+        "guidelines", "guidance", "maternal", "child health", "2030 Agenda", "SDG", "SDGs",
+        "noncommunicable", "non-communicable", "NCD", "NCDs", "mental health", "digital health",
+        "artificial intelligence", "AI", "misinformation", "disinformation", "infodemic",
+        "vaccine hesitancy", "anti-vaccine", "HIV prevention", "PrEP", "breakthrough", "first-ever",
+        "world first", "landmark", "One Health", "avian influenza", "Gaza", "Sudan", "conflict"],
     # internationale reikwijdte: daar gaat het om
     1: ["international", "worldwide", "cross-border", "multilateral", "countries", "regional",
         "United Nations", "UN", "African Union", "member states", "global", "ministers", "summit"],
@@ -360,7 +457,8 @@ GEZONDHEID_RE = re.compile(
     r"hospital|patient|clinic|drug|antibiot|antimicrob|superbug|malaria|tubercul|\bTB\b|\bHIV\b|aids\b|"
     r"ebola|cholera|polio|measles|mpox|dengue|marburg|influenza|\bflu\b|h5n1|\bNTDs?\b|leprosy|"
     r"leishmania|trachoma|schistosom|nutrition|malnutrition|mortality|surveillance|\bWHO\b|\bAMR\b|"
-    r"\bUHC\b|\bPABS\b|\bIHR\b|gavi|global fund|unaids|cepi|africa cdc|ecdc|nurses?|doctors?", re.I)
+    r"\bUHC\b|\bPABS\b|\bIHR\b|gavi|global fund|unaids|cepi|africa cdc|ecdc|nurses?|doctors?|"
+    r"reproductive|contracept|abortion|maternal|srhr|unfpa|\bmental|cancer|gezondheid|zorg|rivm", re.I)
 
 PARTNERS_BESTAND = pathlib.Path("partners.json")
 PARTNER_BONUS = 2      # nieuws over een partnerland, mits het ook inhoudelijk ergens over gaat
@@ -380,7 +478,7 @@ BIO_TITEL = re.compile(r"^(?:Dr\.? |Prof\.? )?[A-Z][a-z][\w.'’-]*(?: [A-Z][\w.
                        r"(?:MD|PhD|MPH|MSc|MS|DrPH|MBBS|FRCP|RN|PharmD|DVM)\b")
 VACATURE_WOORDEN = ["vacature", "we are hiring", "we're hiring", "job description",
                     "apply now", "call for applications", "position available", "job posting",
-                    "career opportunity", "postdoctoral position", "phd position"]
+                    "career opportunity", "postdoctoral position", "phd position", "major gifts"]
 BIO_WOORDEN = ["curriculum vitae", "biography", "faculty profile", "staff profile", "meet our", "about the author"]
 NIEUWS_OVER_PERSOON = ["director-general", "director general", "appointed", "appoints", "elected", "elects",
                        "nominated", "nominee", "named", "names", "new head", "takes office", "assumes", "steps down", "resigns",
@@ -504,7 +602,7 @@ def unwrap(url: str) -> str:
         q = urllib.parse.parse_qs(urllib.parse.urlparse(url).query)
         for key in ("url", "q"):
             if key in q and q[key][0].startswith("http"):
-                return q[key][0]
+                return q[key][0].rstrip("'\"")   # Alerts plakken soms een aanhalingsteken achter de link
     except Exception:
         pass
     return url
@@ -969,6 +1067,8 @@ def harvest(feed) -> tuple[list, dict]:
                     continue
                 if site and len(title.split()) < 5:
                     continue                      # 'Contact us', 'All Jobs', 'Our governance': pagina's, geen nieuws
+                if feed.get("alleen_gezondheid") and not GEZONDHEID_RE.search(title + " " + strip_html(e.get("summary") or "")):
+                    continue                      # brede bron (de hele Raad van de EU): alleen gezondheid
                 src = strip_html(bron_el) if bron_el else feed["label"]
                 item = {
                     "title":   title[:180],
@@ -1122,6 +1222,11 @@ def canon_url(url: str) -> str:
         p = urllib.parse.urlparse(url or "")
     except Exception:
         return url or ""
+    url = (url or "").rstrip("'\"")
+    try:
+        p = urllib.parse.urlparse(url)
+    except Exception:
+        return url
     host = host_van(url)
     if host == "news.google.com":
         return url                            # het pad is een ondoorzichtige id
@@ -1330,6 +1435,114 @@ def ontdubbel_op_titel(items: list, oudste: dict) -> list:
     return [g["item"] for g in groepen]
 
 
+# ---------------------------------------------------------------------------
+# Verhalen. Na het ontdubbelen per kop blijven er nog vaak tien outlets over
+# die hetzelfde nieuws brengen met een eigen kop ('US loses measles elimination
+# status' bij Guardian, ABC, NPR, CBC ...). Die bundelen we tot één verhaal: het
+# best scorende item wordt de kaart ("lead"), de rest gaat erin als "also".
+# Losser dan zelfde_bericht, maar alleen op woorden die iets zeggen: wat in
+# meer dan 1% van alle archiefkoppen staat (health, WHO, outbreak, 2026) telt
+# niet als gedeeld bewijs.
+# ---------------------------------------------------------------------------
+VERHAAL_DREMPEL   = 0.45   # gewogen woordoverlap, gedeeld door de kortste kop
+VERHAAL_MIN_EIGEN = 2      # minstens zoveel gedeelde, niet-algemene woorden
+VERHAAL_DAGEN     = 4      # verder uit elkaar is een ander moment
+VERHAAL_MAX_ALSO  = 12     # zoveel andere outlets bewaren we per kaart
+ALGEMEEN_AANDEEL  = 0.01
+
+
+def algemene_woorden() -> set:
+    tel, n = Counter(), 0
+    for row in archive_rows():
+        n += 1
+        tel.update(set(kopwoorden(row.get("title", ""), row.get("url", ""), row.get("source", ""))))
+    return {w for w, k in tel.items() if n and k / n >= ALGEMEEN_AANDEEL}
+
+
+def _datum(item):
+    try:
+        return datetime.fromisoformat(item.get("date") or "")
+    except Exception:
+        return None
+
+
+def bundel_verhalen(items: list, algemeen: set) -> list:
+    """Zet 'lead' (url van de kaart) op de leden en 'also'/'outlets' op de
+    kaart. Alles blijft in de lijst; de pagina verbergt de leden."""
+    import math
+    items = [{k: v for k, v in i.items() if k not in ("lead", "also", "outlets")} for i in items]
+    hs = [handtekening(i) for i in items]
+    ds = [_datum(i) for i in items]
+    df = Counter(w for h in hs for w in h["woorden"])
+    n = max(1, len(items))
+    idf = {w: math.log(n / k) for w, k in df.items()}
+    massa = [sum(idf[w] for w in h["woorden"]) for h in hs]
+
+    def zelfde_verhaal(a, b):
+        A, B = hs[a], hs[b]
+        if len(A["woorden"]) < 4 or len(B["woorden"]) < 4:
+            return False
+        if A["url"] == B["url"]:
+            return True
+        if A["uitgever"] and A["uitgever"] == B["uitgever"]:
+            return False                  # een reeks van één uitgever: aparte berichten
+        if A["getallen"] and B["getallen"] and not (A["getallen"] & B["getallen"]):
+            return False
+        if (A["woorden"] - B["woorden"]) & SLEUTELWOORDEN and (B["woorden"] - A["woorden"]) & SLEUTELWOORDEN:
+            return False                  # andere ziekte of ander land
+        if ds[a] and ds[b] and abs((ds[a] - ds[b]).total_seconds()) > VERHAAL_DAGEN * 86400:
+            return False
+        gedeeld = A["woorden"] & B["woorden"]
+        if sum(1 for w in gedeeld if w not in algemeen and not w.isdigit()) < VERHAAL_MIN_EIGEN:
+            return False
+        return sum(idf[w] for w in gedeeld) / max(1e-9, min(massa[a], massa[b])) >= VERHAAL_DREMPEL
+
+    ouder = list(range(len(items)))
+    def wortel(x):
+        while ouder[x] != x:
+            ouder[x] = ouder[ouder[x]]
+            x = ouder[x]
+        return x
+
+    index = {}
+    for k, h in enumerate(hs):
+        for w in h["woorden"]:
+            if w not in algemeen and not w.isdigit():
+                index.setdefault(w, []).append(k)
+    for k, h in enumerate(hs):
+        kandidaten = Counter(j for w in h["woorden"] if w in index for j in index[w] if j > k)
+        for j, aantal in kandidaten.items():
+            if aantal >= VERHAAL_MIN_EIGEN and wortel(j) != wortel(k) and zelfde_verhaal(k, j):
+                ouder[wortel(j)] = wortel(k)
+
+    groepen = {}
+    for k in range(len(items)):
+        groepen.setdefault(wortel(k), []).append(k)
+    for leden in groepen.values():
+        if len(leden) < 2:
+            continue
+        leden.sort(key=lambda k: ((items[k].get("score") or 0), kwaliteit(items[k])), reverse=True)
+        kaart = items[leden[0]]
+        uitgevers = {hs[leden[0]]["uitgever"]}
+        also = []
+        for k in leden[1:]:
+            items[k]["lead"] = kaart["url"]
+            if hs[k]["uitgever"] in uitgevers:
+                continue                  # dezelfde outlet twee keer hoeft niet in de lijst
+            uitgevers.add(hs[k]["uitgever"])
+            src = items[k].get("src") or ""
+            if not src or src == items[k].get("feed"):          # Alerts: de feednaam zegt niets
+                src = (items[k].get("domain") or host_van(items[k]["url"])).removeprefix("www.")
+            also.append({"src": src,
+                         "title": items[k].get("title", ""), "url": items[k]["url"]})
+        kaart["also"] = also[:VERHAAL_MAX_ALSO]
+        kaart["outlets"] = len(uitgevers)
+        # Wat veel outlets oppikken, weegt iets zwaarder. Score wordt elke run
+        # opnieuw berekend (herbeoordeel), dus dit stapelt niet.
+        kaart["score"] = (kaart.get("score") or 0) + (2 if len(uitgevers) >= 6 else 1 if len(uitgevers) >= 3 else 0)
+    return items
+
+
 def herbeoordeel(items: list) -> tuple[list, dict]:
     """Linkcheck en (her)score van elk item, ook van items uit vorige runs: zo
     werkt een nieuwe scoreregel meteen op de hele ribbon. Geeft (schoon, weg)."""
@@ -1374,6 +1587,12 @@ def main() -> int:
     vorige = load_previous()
     al_gezien = {i.get("url") for i in vorige}
     nu = datetime.now(timezone.utc)
+    # Feeds zonder datum (UNFPA): het moment van eerste waarneming telt, anders
+    # blijft zo'n item eeuwig in de cache.
+    vorige_datum = {i.get("url"): i.get("date") for i in vorige if i.get("date")}
+    for item in fresh:
+        if not item.get("date"):
+            item["date"] = vorige_datum.get(item.get("url")) or nu.isoformat(timespec="seconds")
     for item in fresh:
         d = item.get("date") or ""
         if item.get("url") in al_gezien or "T00:00:00" not in d:
@@ -1423,11 +1642,22 @@ def main() -> int:
 
     merged = [i for i in merged if recent(i)]
     merged.sort(key=lambda i: i.get("date") or "", reverse=True)
+    # Per bron een dak: een brede zoekopdracht mag de cache niet vullen.
+    per_feed = Counter()
+    merged_cap = []
+    for i in merged:                         # al op datum gesorteerd: de nieuwste blijven
+        per_feed[i.get("feed")] += 1
+        if per_feed[i.get("feed")] <= MAX_IN_CACHE_PER_FEED:
+            merged_cap.append(i)
+    merged = sorted(merged_cap, key=lambda i: i.get("date") or "", reverse=True)
     # De bovengrens mag de trage onderwerpen niet wegdrukken: die tellen apart.
     traag = [i for i in merged if i.get("cat") in MAX_AGE_PER_CAT]
     rest = [i for i in merged if i.get("cat") not in MAX_AGE_PER_CAT]
     merged = sorted(traag + rest[:max(0, MAX_TOTAL - len(traag))],
                     key=lambda i: i.get("date") or "", reverse=True)
+    merged = bundel_verhalen(merged, algemene_woorden())
+    print(f"  verhalen: {sum(1 for i in merged if i.get('also'))} kaarten bundelen "
+          f"{sum(1 for i in merged if i.get('lead'))} andere outlets")
 
     ok = sum(1 for v in status.values() if v["ok"])
     OUT.parent.mkdir(parents=True, exist_ok=True)
