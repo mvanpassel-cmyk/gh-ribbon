@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T19:30:02+00:00",
+ "generated": "2026-11-22T00:28:10+00:00",
  "feeds_ok": 62,
  "feeds_tot": 62,
  "status": {
@@ -90,7 +90,7 @@
   },
   "ReliefWeb Health": {
    "ok": true,
-   "msg": "8 items (via kandidaat 2)",
+   "msg": "9 items (via kandidaat 2)",
    "cat": "emerg",
    "via": 2,
    "fallback": true,
@@ -222,7 +222,7 @@
   },
   "Council of the EU (health)": {
    "ok": true,
-   "msg": "5 items",
+   "msg": "7 items",
    "cat": "eu",
    "via": 1,
    "fallback": true
@@ -450,13 +450,105 @@
   },
   "Grand Challenges": {
    "ok": true,
-   "msg": "9 items",
+   "msg": "7 items",
    "cat": "news",
    "via": 1,
    "fallback": true
   }
  },
  "items": [
+  {
+   "title": "Sen. Jeff Merkley: On climate, the focus should be on solutions - The Washington Post",
+   "url": "https://www.washingtonpost.com/opinions/2026/11/20/sen-jeff-merkley-evidence-climate-change-is-all-around-us/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-21T23:02:36+00:00",
+   "summary": "Climate change, D.C.'s Department of Buildings, plastic pollution and women's health, in readers' eyes ... global health care research and ...",
+   "domain": "washingtonpost.com",
+   "inhoud": 9,
+   "score": 12
+  },
+  {
+   "title": "Measles Comeback in the U.S. adds to global resurgence! | Tony's Thoughts",
+   "url": "https://apicciano.commons.gc.cuny.edu/2026/11/21/measles-comeback-in-the-u-s-adds-to-global-resurgence/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-21T20:50:54+00:00",
+   "summary": "The virus has also surged in several lower income countries, where malnutrition and limited health care put children at a much higher risk of dying ...",
+   "domain": "apicciano.commons.gc.cuny.edu",
+   "inhoud": 9,
+   "score": 12
+  },
+  {
+   "title": "THE OTHER SIDE: A MAGA measles mystery - The Berkshire Edge",
+   "url": "https://theberkshireedge.com/the-other-side-a-maga-measles-mystery/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-21T20:05:18+00:00",
+   "summary": "Vaccines prevent diseases, and being unvaccinated carries a risk. Last year, the World Health Organization ranked vaccine hesitancy, a 'reluctance or ...",
+   "domain": "theberkshireedge.com",
+   "inhoud": 8,
+   "score": 8
+  },
+  {
+   "title": "WHO Keeps Bundibugyo Ebola a Global Emergency - CASRAI",
+   "url": "https://casrai.org/news/who-keeps-bundibugyo-ebola-pheic-third-emergency-committee-2026",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-21T20:02:24+00:00",
+   "summary": "WHO keeps Bundibugyo Ebola a global health emergency as DR Congo cases pass 11,600. WHO's Director-General determined on 18 November that the ...",
+   "domain": "casrai.org",
+   "inhoud": 18,
+   "score": 18
+  },
+  {
+   "title": "Measles reaches Dane Co. after exposure at Madison's UnityPoint Health -Meriter Hospital ER",
+   "url": "https://www.wkow.com/news/top-stories/measles-reaches-dane-co-after-exposure-at-madisons-unitypoint-health-meriter-hospital-er/article_62882ad6-7e76-4038-9a8f-fe68d9f27f90.html",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-21T19:34:33+00:00",
+   "summary": "MADISON (WKOW) — Measles reached Dane County after someone who visited UnityPoint Health -Meriter Hospital's emergency room in Madison tested ...",
+   "domain": "wkow.com",
+   "inhoud": 4,
+   "score": 4,
+   "also": [
+    {
+     "src": "publichealthmdc.com",
+     "title": "Measles Exposure Alert at Madison Hospital",
+     "url": "https://publichealthmdc.com/news/2026-11-19/measles-exposure-alert-at-madison-hospital"
+    }
+   ],
+   "outlets": 2
+  },
+  {
+   "title": "Why can't we get rid of antibiotic resistance? - DW.com",
+   "url": "https://www.dw.com/en/getting-rid-of-antibiotic-resistance-challenges-and-possible-solutions/a-80010693",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-21T18:43:08+00:00",
+   "summary": "\"The threat is immense,\" said Jean Pierre Nyemazi, acting director of the World Health Organization's department of antimicrobial resistance, during a ...",
+   "domain": "dw.com",
+   "inhoud": 9,
+   "score": 14
+  },
+  {
+   "title": "Lacy Hubbard at BICC 2026: Cervical Cancer Elimination Lessons from Rwanda and Bangladesh",
+   "url": "https://oncodaily.com/voices/lacy-hubbard-cervical-cancer-637679",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-21T17:58:03+00:00",
+   "summary": "... Health invited us to support its national screening program. Today, half the country has reached the World Health Organization's 70% screening target.",
+   "domain": "oncodaily.com",
+   "inhoud": 4,
+   "score": -2
+  },
   {
    "title": "Why fossil fuel-producing countries are stalling this crucial climate report - The Conversation",
    "url": "https://theconversation.com/why-fossil-fuel-producing-countries-are-stalling-this-crucial-climate-report-296997",
@@ -482,18 +574,6 @@
    "score": 13
   },
   {
-   "title": "WHO Keeps Bundibugyo Ebola a Global Emergency - CASRAI",
-   "url": "https://casrai.org/news/who-keeps-bundibugyo-ebola-pheic-third-emergency-committee-2026",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-21T17:02:24+00:00",
-   "summary": "WHO keeps Bundibugyo Ebola a global health emergency as DR Congo cases pass 11,600. WHO's Director-General determined on 18 November that the ...",
-   "domain": "casrai.org",
-   "inhoud": 16,
-   "score": 16
-  },
-  {
    "title": "Sania Nishtar's Post - LinkedIn",
    "url": "https://www.linkedin.com/posts/dr-sania-nishtar_when-it-comes-to-global-health-and-development-activity-7529826226501234688-zeyS",
    "src": "Global Health",
@@ -516,6 +596,41 @@
    "domain": "npr.org",
    "inhoud": 4,
    "score": 7
+  },
+  {
+   "title": "Weekly Health Update | Zambia Starts Cholera Vaccine Plant; Eritrea Eliminates Trachoma",
+   "url": "https://www.ecofinagency.com/news-services/2111-61055-weekly-health-update-zambia-starts-cholera-vaccine-plant-eritrea-eliminates-trachoma",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-21T15:35:02+00:00",
+   "summary": "WHO and EDCTP Association Agree to Expand Medical Research in Africa. The World Health Organization's (WHO) Regional Office for Africa signed an ...",
+   "domain": "ecofinagency.com",
+   "inhoud": 17,
+   "score": 18,
+   "also": [
+    {
+     "src": "who.int",
+     "title": "Eritrea eliminates trachoma: a major public health milestone",
+     "url": "https://www.who.int/news/item/16-11-2026-eritrea-eliminates-trachoma-a-major-public-health-milestone"
+    },
+    {
+     "src": "Denkstrom",
+     "title": "WHO confirms: Eritrea eliminates trachoma as a health problem",
+     "url": "https://denkstrom.org/en/goodnews/who-confirms-eritrea-eliminates-trachoma-as-health-problem/"
+    },
+    {
+     "src": "Peoples Gazette Nigeria",
+     "title": "WHO says Eritrea 11th African country to eliminate trachoma",
+     "url": "https://gazettengr.com/who-says-eritrea-11th-african-country-to-eliminate-trachoma/"
+    },
+    {
+     "src": "Addis Standard",
+     "title": "Daily_Brief: #Eritrea becomes 11th #African country to eliminate trachoma as public health problem",
+     "url": "https://addisstandard.com/brief/n-61331/"
+    }
+   ],
+   "outlets": 5
   },
   {
    "title": "Ebola's Death Toll Tops 5,700. Can the Outbreak Be Contained? - TIME",
@@ -552,18 +667,6 @@
    "domain": "ny1.com",
    "inhoud": 4,
    "score": 4
-  },
-  {
-   "title": "WHO says only 22% of countries have funded and implemented antimicrobial resistance plans | ITIJ",
-   "url": "https://www.itij.com/latest/news/who-says-only-22-countries-have-funded-and-implemented-antimicrobial-resistance-plans",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-21T14:05:56+00:00",
-   "summary": "... World Health Organization (WHO). Out of 183 countries that responded to the Global Database for Tracking AMR self-assessment survey, 173 reported ...",
-   "domain": "itij.com",
-   "inhoud": 18,
-   "score": 18
   },
   {
    "title": "Ethiopia launches polio vaccination campaign to protect more than 11 million children: WHO deployed 28 staff to support the vaccination campaign",
@@ -615,6 +718,20 @@
    "score": 1
   },
   {
+   "title": "WHO confirms: Eritrea eliminates trachoma as a health problem",
+   "url": "https://denkstrom.org/en/goodnews/who-confirms-eritrea-eliminates-trachoma-as-health-problem/",
+   "src": "Denkstrom",
+   "feed": "NTD news",
+   "cat": "ntd",
+   "date": "2026-11-21T11:05:29+00:00",
+   "summary": "WHO confirms: Eritrea eliminates trachoma as a health problem Denkstrom",
+   "domain": "denkstrom.org",
+   "inhoud": 10,
+   "score": 12,
+   "gnews": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPN29QUjFnOW45RzR0MkYyRzZwbDFDUldoOGJKREEwelFucGhYWXlhdnhFa0s2UTAyc28wRUk3aWZLM010Z1dVOWNqLWdBcW41aUNuZ3NDemxhbERfV1NhZWoyQVA5d01SVGUzQWQxVkNZSk1YX1FRZ3ctNlgydG04VEJya2VEMDh2T1VGSldlbzVCXzM1YmxKMQ?oc=5",
+   "lead": "https://www.ecofinagency.com/news-services/2111-61055-weekly-health-update-zambia-starts-cholera-vaccine-plant-eritrea-eliminates-trachoma"
+  },
+  {
    "title": "Costa cuts proposed EU budget by €44B",
    "url": "https://www.politico.eu/article/costa-cuts-proposed-eu-budget-by-44billion-euros/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
    "src": "Politico EU Health",
@@ -639,8 +756,8 @@
    "score": 9
   },
   {
-   "title": "“My arms are the only place where I feel she is safe”",
-   "url": "https://www.unfpa.org/stories/%E2%80%9Cmy-arms-are-only-place-where-i-feel-she-safe%E2%80%9D",
+   "title": "Painting our futures: Murals with a message",
+   "url": "https://www.unfpa.org/stories/painting-our-futures-murals-message",
    "src": "UNFPA",
    "feed": "UNFPA",
    "cat": "srhr",
@@ -651,8 +768,8 @@
    "score": 3
   },
   {
-   "title": "Painting our futures: Murals with a message",
-   "url": "https://www.unfpa.org/stories/painting-our-futures-murals-message",
+   "title": "“My arms are the only place where I feel she is safe”",
+   "url": "https://www.unfpa.org/stories/%E2%80%9Cmy-arms-are-only-place-where-i-feel-she-safe%E2%80%9D",
    "src": "UNFPA",
    "feed": "UNFPA",
    "cat": "srhr",
@@ -711,18 +828,6 @@
    "score": 3
   },
   {
-   "title": "Stories of survival after the Nepal floods",
-   "url": "https://www.unfpa.org/stories/stories-survival-after-nepal-floods",
-   "src": "UNFPA",
-   "feed": "UNFPA",
-   "cat": "srhr",
-   "date": "2026-11-21T09:24:11+00:00",
-   "summary": "",
-   "domain": "unfpa.org",
-   "inhoud": 0,
-   "score": 3
-  },
-  {
    "title": "Everyone counts: Uzbekistan uses new tech and grassroots outreach in first census since its independence",
    "url": "https://www.unfpa.org/news/everyone-counts-uzbekistan-uses-new-tech-and-grassroots-outreach-first-census-its-independence",
    "src": "UNFPA",
@@ -730,6 +835,18 @@
    "cat": "srhr",
    "date": "2026-11-21T09:24:11+00:00",
    "summary": "UZBEKISTAN – “I’ve lived in Gelon all my life, and seen how our village has grown and changed over the years,” said Sharofiddin Xaknazarov. “Our village is far in the mountains, but we…",
+   "domain": "unfpa.org",
+   "inhoud": 0,
+   "score": 3
+  },
+  {
+   "title": "Stories of survival after the Nepal floods",
+   "url": "https://www.unfpa.org/stories/stories-survival-after-nepal-floods",
+   "src": "UNFPA",
+   "feed": "UNFPA",
+   "cat": "srhr",
+   "date": "2026-11-21T09:24:11+00:00",
+   "summary": "",
    "domain": "unfpa.org",
    "inhoud": 0,
    "score": 3
@@ -781,6 +898,19 @@
    "domain": "netec.org",
    "inhoud": 4,
    "score": 4
+  },
+  {
+   "title": "WHO says only 22% of countries have funded and implemented antimicrobial resistance plans",
+   "url": "https://www.itij.com/latest/news/who-says-only-22-countries-have-funded-and-implemented-antimicrobial-resistance-plans",
+   "src": "ITIJ",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-21T08:05:29+00:00",
+   "summary": "WHO says only 22% of countries have funded and implemented antimicrobial resistance plans ITIJ",
+   "domain": "itij.com",
+   "inhoud": 8,
+   "score": 10,
+   "gnews": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUmt5VUFlZG1lZFZXSmsxODZCMF9qVjBBV0kzSUJFNXpMeXJHWW5CMi1QUEF2VUphajhodzRFODcteGdobkFPVHEwbE9naU92RnQ3RHZVYkVWWE9ycFZRNWQ1eWF1UnRHQXRqYmwyRXJva3dmVGpzX3k5OFFaaFcybVBrZS1lZzFjbTZRNE1xam1vSElNOTkta2xTZXhwaGFGRDdQMW9qU2NwMlE1VVdZWXF1M0ZlUWxzNFE?oc=5"
   },
   {
    "title": "Scientists intensify research into Bundibugyo Ebola strain amid Congo outbreak",
@@ -1964,15 +2094,15 @@
   },
   {
    "title": "Illinois measles numbers remain below recent peak, while the U.S. loses elimination status",
-   "url": "https://www.illinoistimes.com/news/illinois-measles-numbers-remain-below-recent-peak-while-the-u-s-loses-elimination-status/",
+   "url": "https://www.wpsdlocal6.com/health/illinois-measles-numbers-remain-below-recent-peak-while-the-u-s-loses-elimination-status/article_7585f706-abcc-4495-97c8-985af6b4cf87.html",
    "src": "WHO Alert",
    "feed": "WHO Alert",
    "cat": "who",
    "date": "2026-11-20T00:00:00+00:00",
-   "summary": "The Pan American Health Organization, an arm of the World Health Organization , also removed Mexico and Bolivia from measles elimination status the ...",
-   "domain": "illinoistimes.com",
-   "inhoud": 10,
-   "score": 10,
+   "summary": "In the U.S., measles had been eliminated since 2000. The Pan American Health Organization, an arm of the World Health Organization , also removed ...",
+   "domain": "wpsdlocal6.com",
+   "inhoud": 12,
+   "score": 12,
    "lead": "https://news.northeastern.edu/2026/11/17/us-loses-measles-elimination-status/"
   },
   {
@@ -2147,7 +2277,8 @@
    "summary": "We are investigating a community measles exposure in Dane County at UnityPoint Health - Meriter Hospital Emergency Department that happened on ...",
    "domain": "publichealthmdc.com",
    "inhoud": 4,
-   "score": 4
+   "score": 4,
+   "lead": "https://www.wkow.com/news/top-stories/measles-reaches-dane-co-after-exposure-at-madisons-unitypoint-health-meriter-hospital-er/article_62882ad6-7e76-4038-9a8f-fe68d9f27f90.html"
   },
   {
    "title": "Science Talk: The World Report on Promoting the Health of Refugees and Migrants",
@@ -2509,18 +2640,6 @@
    "domain": "8am.media",
    "inhoud": 4,
    "score": 4
-  },
-  {
-   "title": "Type of mpox that just recently began spreading in the country is now in Denver metro area",
-   "url": "https://www.cbsnews.com/colorado/news/mpox-spreading-clade-i-colorado-denver-monkeypox/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-19T15:36:26+00:00",
-   "summary": "Near the end of 2022, the World Health Organization renamed the virus. Monkey Pox Vaccination Site Photo of an Mpox vaccination sign at a tent site at ...",
-   "domain": "cbsnews.com",
-   "inhoud": 6,
-   "score": 6
   },
   {
    "title": "Deputy Safety Advisor - Syria (national position)",
@@ -2891,18 +3010,6 @@
    "outlets": 2
   },
   {
-   "title": "Direct Relief Delivers 53 Tons of Medical Aid to Combat Record DRC Ebola Outbreak",
-   "url": "https://www.directrelief.org/2026/11/direct-relief-delivers-53-tons-of-medical-aid-to-combat-record-drc-ebola-outbreak/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-19T11:22:50+00:00",
-   "summary": "With more than 11,000 confirmed cases reported by the World Health Organization , insecurity in Ituri and North Kivu continues to challenge containment ...",
-   "domain": "directrelief.org",
-   "inhoud": 14,
-   "score": 17
-  },
-  {
    "title": "Shaping the future: the breast surgeon inspiring the next generation",
    "url": "http://www.bmj.com/content/395/bmj-2026-101476.short?rss=1",
    "src": "BMJ",
@@ -3176,18 +3283,6 @@
    "score": 6
   },
   {
-   "title": "Why Measles Prevention Matters Now More Than Ever | Newswise",
-   "url": "https://www.newswise.com/articles/why-measles-prevention-matters-now-more-than-ever",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-19T08:20:34+00:00",
-   "summary": "... World Health Organization . Now, measles is. ... The U.S. earned its measles elimination status in 2000 from the Pan American Agency, part of the World ...",
-   "domain": "newswise.com",
-   "inhoud": 8,
-   "score": 8
-  },
-  {
    "title": "Kenya, Tanzania and Zambia expand access to oral health services at primary care level",
    "url": "https://www.afro.who.int/countries/kenya/news/kenya-tanzania-and-zambia-expand-access-oral-health-services-primary-care-level",
    "src": "WHO Africa",
@@ -3323,18 +3418,6 @@
    "score": 6
   },
   {
-   "title": "Autochthonous dengue outbreak spreading from a holiday site to visitors’ places of residence, Tuscany, Italy, August to October 2026",
-   "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.46.2600909",
-   "src": "Eurosurveillance",
-   "feed": "Eurosurveillance",
-   "cat": "promed",
-   "date": "2026-11-19T00:00:00+00:00",
-   "summary": "Between August and October 2026, 49 autochthonous dengue cases were notified in Italy. Of these, 42 were exposed at a Tuscan coastal holiday site, and diagnosed after returning home, in 14 municipalities across seven provinces. Seven additional cases were identified, six in two areas where viraemic ",
-   "domain": "eurosurveillance.org",
-   "inhoud": 10,
-   "score": 12
-  },
-  {
    "title": "Are antibiotic developers catching up with European regulators?",
    "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.46.2600528",
    "src": "Eurosurveillance",
@@ -3345,6 +3428,18 @@
    "domain": "eurosurveillance.org",
    "inhoud": 9,
    "score": 11
+  },
+  {
+   "title": "Autochthonous dengue outbreak spreading from a holiday site to visitors’ places of residence, Tuscany, Italy, August to October 2026",
+   "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.46.2600909",
+   "src": "Eurosurveillance",
+   "feed": "Eurosurveillance",
+   "cat": "promed",
+   "date": "2026-11-19T00:00:00+00:00",
+   "summary": "Between August and October 2026, 49 autochthonous dengue cases were notified in Italy. Of these, 42 were exposed at a Tuscan coastal holiday site, and diagnosed after returning home, in 14 municipalities across seven provinces. Seven additional cases were identified, six in two areas where viraemic ",
+   "domain": "eurosurveillance.org",
+   "inhoud": 10,
+   "score": 12
   },
   {
    "title": "Detection of dengue virus in Aedes albopictus following imported dengue cases and absence of detections after vector control, Ticino Canton, Switzerland, August to September 2026",
@@ -4116,6 +4211,20 @@
    "score": 29
   },
   {
+   "title": "Public Health Medical Referent - Infectious Diseases (ID)",
+   "url": "https://reliefweb.int/job/4238869/public-health-medical-referent-infectious-diseases-id",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-18T11:00:45+00:00",
+   "summary": "Public Health Medical Referent - Infectious Diseases (ID) ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -20,
+   "score": -16,
+   "gnews": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQdGF0aUpBUlhnSU5OU19xNEZfTm84M3hqcnBZbE45RGdJWmo2UFprUEQ0ZHd6amRScFZ0cHFpWXZoMk0tdDBCdzBiSDl5el9YRXBTbFU4T2RTUDRyMkF5VWl5VlNmNm43NmZ3cXFRUVplNW1RODZqUVgyQ0o5TWRjT2JWTHhTbnM3WjEyNlVQSms?oc=5"
+  },
+  {
    "title": "Changing climate, other environmental factors can play role in spread of antimicrobial resistance",
    "url": "https://www.eea.europa.eu/en/newsroom/news/changing-climate-other-environmental-factors-can-play-role-in-spread-of-antimicrobial-resistance",
    "src": "European Environment Agency (EEA)",
@@ -4389,7 +4498,7 @@
    "inhoud": 4,
    "score": 6,
    "gnews": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1YbmdDN3dVTUF6VDdod2YtSTdOSGt5cG5DZVk3YXc4eF9DNHVoeEZKcGhBUkdJQkczUTJ1enRsRlQ2RHZtbFhWZXJ3MFF5LWc1dFE?oc=5",
-   "lead": "https://www.who.int/news/item/16-11-2026-eritrea-eliminates-trachoma-a-major-public-health-milestone"
+   "lead": "https://www.ecofinagency.com/news-services/2111-61055-weekly-health-update-zambia-starts-cholera-vaccine-plant-eritrea-eliminates-trachoma"
   },
   {
    "title": "Data Entry Operator (Syria - Homs)",
@@ -4443,6 +4552,20 @@
    "inhoud": 12,
    "score": 14,
    "gnews": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOZ2VsVkZDWnpNNlZySElxTHRabXpLbVBWcnBNTy15clQ4Q19oM25JM3ZDRFNaX2QyOU9WbjNQdVZvNVd2UXZRVjZHdjZjQnN6SEg5aUlCcGhmZzVQRGoyY0hjVkM4VmFoZDNWc096aC1Ya3kwemxsNHFySEwtT0ZtRDczbGdyYWYzYTdYYm5pWFpud1RPZlBCenp0N0Q5bFUtM0dMNVpOMVZrdXdIbFQ2aGNaRXBRWURuVkJIajhHZ09hZUthR3FXR1FvTExJczZVa0czTG8zU3h3MHdW?oc=5"
+  },
+  {
+   "title": "Senior Talent Acquisition Officer- (For Syrian National Only)Aleppo",
+   "url": "https://reliefweb.int/job/4238821/senior-talent-acquisition-officer-syrian-national-onlyaleppo",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-18T06:15:03+00:00",
+   "summary": "Senior Talent Acquisition Officer- (For Syrian National Only)Aleppo ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -26,
+   "score": -22,
+   "gnews": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNcFhIX0tQZHFwN1R1LVBNNW0zZ1Q5b1VpSjNxektPTXQ3M2cxOU0temhmOUFmaENqaXZfZWIxTnN4N0tKMFlwMnphNlBLUU50a2NsSHEzR2FxdkFGUW1BbWtVSHlnQ184MVY5QTRCUE1DeVo5eGlQdjRLTzlEZWZiRDEzZlRuTnNSYk9wdUYzcTlKbnBfTnFCRDR3?oc=5"
   },
   {
    "title": "WHO convenes African experts to strengthen tracking of sexual and reproductive health investment",
@@ -4609,14 +4732,14 @@
      "url": "http://www.bmj.com/content/395/bmj-2026-101505.short?rss=1"
     },
     {
+     "src": "wpsdlocal6.com",
+     "title": "Illinois measles numbers remain below recent peak, while the U.S. loses elimination status",
+     "url": "https://www.wpsdlocal6.com/health/illinois-measles-numbers-remain-below-recent-peak-while-the-u-s-loses-elimination-status/article_7585f706-abcc-4495-97c8-985af6b4cf87.html"
+    },
+    {
      "src": "statnews.com",
      "title": "Opinion: The U.S. lost measles elimination status. The next Congress should help restore it",
      "url": "https://www.statnews.com/2026/11/19/measles-elimination-status-congress-should-prioritize-restoration/?utm_campaign=rss"
-    },
-    {
-     "src": "illinoistimes.com",
-     "title": "Illinois measles numbers remain below recent peak, while the U.S. loses elimination status",
-     "url": "https://www.illinoistimes.com/news/illinois-measles-numbers-remain-below-recent-peak-while-the-u-s-loses-elimination-status/"
     },
     {
      "src": "thehill.com",
@@ -4827,7 +4950,7 @@
    "inhoud": 10,
    "score": 12,
    "gnews": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxONVJMdHA5QzZCM2xyWmFpZ2ZLMlJ1SnZkWW1jWXBfNGloejYwb2pNLWhPRmlFck1sVEotU1Z1QTVyUHJZZmJFTVhhRUVwdW5TVDFVQWhtLWxIM09tMnlMd0dqci1zM1hISzd4SHhqSUdPY203b2UtU0p1T3dYUWtVQU9pUWpGUXVvWklZ?oc=5",
-   "lead": "https://www.who.int/news/item/16-11-2026-eritrea-eliminates-trachoma-a-major-public-health-milestone"
+   "lead": "https://www.ecofinagency.com/news-services/2111-61055-weekly-health-update-zambia-starts-cholera-vaccine-plant-eritrea-eliminates-trachoma"
   },
   {
    "title": "Health Wins Key Mention in First COP31 Draft Decision Text",
@@ -5877,7 +6000,7 @@
    "inhoud": 4,
    "score": 6,
    "gnews": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQZGdNYUhEdVF3a1VySzhoQWhwbVMweVZuaXg3MEVjT3hvVmpvUkZjSjQzLVZEYW94bGNDcGtVU1c4bm9YUEUwdHIwS25KWlUtbFROS1Rqem5qMTB5Um5mNFV5N25DMTZfNTQwY3p5UkpCb3FXUklYSDI5NXN4NFpLVVJzRzNDNVVnc3c?oc=5",
-   "lead": "https://www.who.int/news/item/16-11-2026-eritrea-eliminates-trachoma-a-major-public-health-milestone"
+   "lead": "https://www.ecofinagency.com/news-services/2111-61055-weekly-health-update-zambia-starts-cholera-vaccine-plant-eritrea-eliminates-trachoma"
   },
   {
    "title": "WHO warns drug-resistant bacterial infections could cause over 39 million deaths by 205",
@@ -5904,20 +6027,6 @@
    "inhoud": 6,
    "score": 8,
    "gnews": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPV1F2a0Zpa1J3VXVOQXVFeVkwUjRTbndlNDJPNGZqT1NLOF9SSUFHay1GTXVOOXhIenBFdGJsTHN1a0ZFZE85LW9jOGczWnBrX3Zyc0FZVko2OXBuTWxybmpjV2RsTGNZeUVoTU1kSVpGLWFUYnF3c1pFQzVWRUR3dlhYUHAyQXE4bmFJNm5NaEhsZzd4djlmcklfeGVQZGdJSWRWTWhXTE1rYXVuZkhHaVFWcGJTa3JJakFQeVdLLWtYQmVaNjJjUUFKbzc?oc=5"
-  },
-  {
-   "title": "WHO confirms: Eritrea eliminates trachoma as a health problem",
-   "url": "https://denkstrom.org/en/goodnews/who-confirms-eritrea-eliminates-trachoma-as-health-problem/",
-   "src": "Denkstrom",
-   "feed": "NTD news",
-   "cat": "ntd",
-   "date": "2026-11-16T16:23:23+00:00",
-   "summary": "WHO confirms: Eritrea eliminates trachoma as a health problem Denkstrom",
-   "domain": "denkstrom.org",
-   "inhoud": 10,
-   "score": 12,
-   "gnews": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPN29QUjFnOW45RzR0MkYyRzZwbDFDUldoOGJKREEwelFucGhYWXlhdnhFa0s2UTAyc28wRUk3aWZLM010Z1dVOWNqLWdBcW41aUNuZ3NDemxhbERfV1NhZWoyQVA5d01SVGUzQWQxVkNZSk1YX1FRZ3ctNlgydG04VEJya2VEMDh2T1VGSldlbzVCXzM1YmxKMQ?oc=5",
-   "lead": "https://www.who.int/news/item/16-11-2026-eritrea-eliminates-trachoma-a-major-public-health-milestone"
   },
   {
    "title": "Outpacing Antimicrobial Resistance: The Next Generation of Detection, Prevention, and Treatment",
@@ -6187,25 +6296,8 @@
    "summary": "",
    "domain": "who.int",
    "inhoud": 8,
-   "score": 13,
-   "also": [
-    {
-     "src": "Denkstrom",
-     "title": "WHO confirms: Eritrea eliminates trachoma as a health problem",
-     "url": "https://denkstrom.org/en/goodnews/who-confirms-eritrea-eliminates-trachoma-as-health-problem/"
-    },
-    {
-     "src": "Peoples Gazette Nigeria",
-     "title": "WHO says Eritrea 11th African country to eliminate trachoma",
-     "url": "https://gazettengr.com/who-says-eritrea-11th-african-country-to-eliminate-trachoma/"
-    },
-    {
-     "src": "Addis Standard",
-     "title": "Daily_Brief: #Eritrea becomes 11th #African country to eliminate trachoma as public health problem",
-     "url": "https://addisstandard.com/brief/n-61331/"
-    }
-   ],
-   "outlets": 4
+   "score": 12,
+   "lead": "https://www.ecofinagency.com/news-services/2111-61055-weekly-health-update-zambia-starts-cholera-vaccine-plant-eritrea-eliminates-trachoma"
   },
   {
    "title": "[Exclusive]: Q&A With Budi Sadikin, WHO DG Candidate",
@@ -6218,6 +6310,20 @@
    "domain": "newsletter.genevahealthfiles.com",
    "inhoud": 12,
    "score": 16
+  },
+  {
+   "title": "HEROS 2.0 Director - United Kingdom of Great Britain and Northern Ireland",
+   "url": "https://reliefweb.int/job/4238220/heros-20-director",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-16T09:27:35+00:00",
+   "summary": "HEROS 2.0 Director - United Kingdom of Great Britain and Northern Ireland ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -20,
+   "score": -16,
+   "gnews": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE45MFE4ZzNidWVKWERDbkI3N21sOGxtOVJvOXVnLTJCMnhaakJVckVQbVM4LVFQdlFTMUtnQUxZSmhFaGhSTXRnVl9pMGdnWTVXLXpWRVh1M1lPUGhYR2VSUQ?oc=5"
   },
   {
    "title": "PODCAST | From HIV denialism to six-monthly jabs: Helen Rees on SA’s Aids journey",
@@ -7797,14 +7903,28 @@
    "title": "WHO chief urges countries to finalise pandemic agreement",
    "url": "https://realnewsmagazine.net/who-chief-urges-countries-to-finalise-pandemic-agreement/",
    "src": "Realnews Magazine",
-   "feed": "PABS / IGWG",
+   "feed": "Pandemic Agreement",
    "cat": "pandemic",
-   "date": "2026-11-03T00:00:00+00:00",
+   "date": "2026-11-03T08:00:00+00:00",
    "summary": "WHO chief urges countries to finalise pandemic agreement Realnews Magazine",
    "domain": "realnewsmagazine.net",
-   "inhoud": 8,
-   "score": 12,
+   "inhoud": 2,
+   "score": 6,
    "gnews": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNODUzWnpCWG9hZW16ZVNONnNmVnY1VzJta0t3dlN5MDh0ajk1NWpTQzUtTlBPX0NoaHRBTUVfRjUySlZMMVlvUm1fcnBvY2gwLXo2bjhTMmRnYkxTRTZSc1Y5YzRYbHpZeVl0N2k5Y2ZwOWMteE5DY0dJS182aEpIb3dtei1JVm1fdVkzYTJkdw?oc=5"
+  },
+  {
+   "title": "Arkansas Pushes Non-Evidence-Based Fertility Treatments As Doctors Fight Back",
+   "url": "https://www.thinkglobalhealth.org/article/101946",
+   "src": "Think Global Health",
+   "feed": "Think Global Health",
+   "cat": "global",
+   "date": "2026-11-03T08:00:00+00:00",
+   "summary": "Arkansas Pushes Non-Evidence-Based Fertility Treatments As Doctors Fight Back Think Global Health",
+   "domain": "thinkglobalhealth.org",
+   "fallback": true,
+   "inhoud": 4,
+   "score": 8,
+   "gnews": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9JSWx4ODVCZDF0UThrYkNzRkp5ZTZEWmc5dWpDZ0J6cUc3clVfdXFZZGR6UmhCOTlUNHMyb05ad3ZVUXVuTFRHaXN3T09fRmdydUZicmdzZzMwZGt0?oc=5"
   },
   {
    "title": "Global health security: Why NZ needs to re-engage",
@@ -7892,7 +8012,7 @@
    "title": "Seasoned French Diplomat Returns To Lead Pandemic Annex Talks",
    "url": "https://healthpolicy-watch.news/renowned-french-diplomat-returns-to-lead-pandemic-annex-talks/",
    "src": "Health Policy Watch",
-   "feed": "PABS / IGWG",
+   "feed": "Pandemic Agreement",
    "cat": "pandemic",
    "date": "2026-11-02T08:00:00+00:00",
    "summary": "Seasoned French Diplomat Returns To Lead Pandemic Annex Talks Health Policy Watch",
@@ -7900,6 +8020,45 @@
    "inhoud": 0,
    "score": 7,
    "gnews": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdXFDdTBtM0tIV3RweWJiTkNnNW9qRDJGay10NEVnQWxEczI5eXZwWjFWdkhzMFdQczB0TEtPT1ZIQjZIZld1bmlpNGI1ZkxLY3o2MWZzVlVCdXU0ZGNLa25rYnkwSmJfRlpxUEN2MldsbklrVzRoUlRmVl96LUVGTUhQc0sxRnFvZDhyaFhoTzVBZE0wSVAyY01n?oc=5"
+  },
+  {
+   "title": "WHO chief: Ebola outbreak shows urgent need for pandemic treaty",
+   "url": "https://www.euronews.com/2026/11/02/recent-virus-outbreaks-show-urgent-need-to-complete-pandemic-treaty-says-who-chief",
+   "src": "Euronews.com",
+   "feed": "Pandemic Agreement",
+   "cat": "pandemic",
+   "date": "2026-11-02T08:00:00+00:00",
+   "summary": "WHO chief: Ebola outbreak shows urgent need for pandemic treaty Euronews.com",
+   "domain": "euronews.com",
+   "inhoud": 20,
+   "score": 25,
+   "gnews": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNE5fNmV4VjgtWFoteDRqQzFZU1cyU09pUHRILVdhdXFtNm9UT0JYa01lOWpNcXhzbEp5VXZheThpY2tRUkVCTVV1UnA4ZFR1cEZ0amJGWGs5SmFBbnFCQjV0VWtKTXZRN2FBY1R2T0hIblpRY0x5MEVOZ2pJT3BxTXZpS3ZVNWl1UmIybnNnYjk0SFIyb3hoV0VaN2hIdXc5MGRWb0kyRkVXUVpwczlJRzlKZ0wzS01YZnc?oc=5",
+   "also": [
+    {
+     "src": "The Hindu",
+     "title": "Ebola reminder of urgent need to finish pandemic treaty: WHO chief",
+     "url": "https://www.thehindu.com/sci-tech/health/ebola-reminder-of-urgent-need-to-finish-pandemic-treaty-who-chief/article71656911.ece"
+    },
+    {
+     "src": "Yahoo News Singapore",
+     "title": "Recent virus outbreaks show urgent need to complete pandemic treaty, says WHO chief",
+     "url": "https://sg.news.yahoo.com/recent-virus-outbreaks-show-urgent-172445338.html"
+    }
+   ],
+   "outlets": 3
+  },
+  {
+   "title": "WHO Director-General's opening remarks at the Ninth meeting of the Intergovernmental Working Group (IGWG) on the WHO Pandemic Agreement – 2 November 2026",
+   "url": "https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-ninth-meeting-of-the-intergovernmental-working-group-(igwg)-on-the-who-pandemic-agreement-2-november-2026",
+   "src": "World Health Organization (WHO)",
+   "feed": "Pandemic Agreement",
+   "cat": "pandemic",
+   "date": "2026-11-02T08:00:00+00:00",
+   "summary": "WHO Director-General's opening remarks at the Ninth meeting of the Intergovernmental Working Group (IGWG) on the WHO Pandemic Agreement – 2 November 2026 World Health Organization (WHO)",
+   "domain": "who.int",
+   "inhoud": 19,
+   "score": 27,
+   "gnews": "https://news.google.com/rss/articles/CBMioAJBVV95cUxON3ZsNzhKT3N1ZkMwUkZZVFdHSVlMV1ZxT0REN1N1MWFFbEJXUU5FZUtGVWlFUnpqLXFKcWdxYl81QWFPbWdzb1hVLUpHNk5fOHVYSTdybzVpVi1za3RNb2tRZ0lKbzd2bVNtUUU5SlEtZWtLSnNESDhfWUxuT1JOZmZIa1pFcnMxWUVwMGl4SnUtNDQtcUpuRWk5X3F5WEtzUXFMMFk0M3NzX2QxVkFiT3ZPazlqNmgxbHlHb1ZxTHZPNFdKOU40ZnA2X1dPOHdpZWtUT3ZYT2dOWkp1M0lUWlloUXQ3dWFvWm9YQXU5R1FwRFEzUUFNWWwxalNEMHFNVjh5WENOWm55WGh6U283QXM2SkF5eWhyVVlPdWFLT1c?oc=5"
   },
   {
    "title": "Project to develop dengue treatment pre-selected by the Global Coalition for Local and Regional Production, Innovation, and Equitable Access",
@@ -7977,45 +8136,6 @@
    "inhoud": 16,
    "gnews": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPY1dDNkFrRWd4R05aSllQQjl2ZkpXek9iX3JuV05oaGJyVTgyWDNiRlVfODdiZWlRZnJuQ016OTJ3S0N6MGdJdl9IbFc4WlFXTDJKQVpsWkNhNEpXQ01Ed3FZS19tT0hnWllHcDBKRlo4aTcwbzc5cjN2SGZ5MUg0dA?oc=5",
    "lead": "https://www.euronews.com/2026/11/02/recent-virus-outbreaks-show-urgent-need-to-complete-pandemic-treaty-says-who-chief"
-  },
-  {
-   "title": "WHO chief: Ebola outbreak shows urgent need for pandemic treaty",
-   "url": "https://www.euronews.com/2026/11/02/recent-virus-outbreaks-show-urgent-need-to-complete-pandemic-treaty-says-who-chief",
-   "src": "Euronews.com",
-   "feed": "Pandemic Agreement",
-   "cat": "pandemic",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "WHO chief: Ebola outbreak shows urgent need for pandemic treaty Euronews.com",
-   "domain": "euronews.com",
-   "score": 25,
-   "inhoud": 20,
-   "gnews": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNE5fNmV4VjgtWFoteDRqQzFZU1cyU09pUHRILVdhdXFtNm9UT0JYa01lOWpNcXhzbEp5VXZheThpY2tRUkVCTVV1UnA4ZFR1cEZ0amJGWGs5SmFBbnFCQjV0VWtKTXZRN2FBY1R2T0hIblpRY0x5MEVOZ2pJT3BxTXZpS3ZVNWl1UmIybnNnYjk0SFIyb3hoV0VaN2hIdXc5MGRWb0kyRkVXUVpwczlJRzlKZ0wzS01YZnc?oc=5",
-   "also": [
-    {
-     "src": "The Hindu",
-     "title": "Ebola reminder of urgent need to finish pandemic treaty: WHO chief",
-     "url": "https://www.thehindu.com/sci-tech/health/ebola-reminder-of-urgent-need-to-finish-pandemic-treaty-who-chief/article71656911.ece"
-    },
-    {
-     "src": "Yahoo News Singapore",
-     "title": "Recent virus outbreaks show urgent need to complete pandemic treaty, says WHO chief",
-     "url": "https://sg.news.yahoo.com/recent-virus-outbreaks-show-urgent-172445338.html"
-    }
-   ],
-   "outlets": 3
-  },
-  {
-   "title": "WHO Director-General's opening remarks at the Ninth meeting of the Intergovernmental Working Group (IGWG) on the WHO Pandemic Agreement – 2 November 2026",
-   "url": "https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-ninth-meeting-of-the-intergovernmental-working-group-(igwg)-on-the-who-pandemic-agreement-2-november-2026",
-   "src": "World Health Organization (WHO)",
-   "feed": "Pandemic Agreement",
-   "cat": "pandemic",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "WHO Director-General's opening remarks at the Ninth meeting of the Intergovernmental Working Group (IGWG) on the WHO Pandemic Agreement – 2 November 2026 World Health Organization (WHO)",
-   "domain": "who.int",
-   "score": 27,
-   "inhoud": 19,
-   "gnews": "https://news.google.com/rss/articles/CBMioAJBVV95cUxON3ZsNzhKT3N1ZkMwUkZZVFdHSVlMV1ZxT0REN1N1MWFFbEJXUU5FZUtGVWlFUnpqLXFKcWdxYl81QWFPbWdzb1hVLUpHNk5fOHVYSTdybzVpVi1za3RNb2tRZ0lKbzd2bVNtUUU5SlEtZWtLSnNESDhfWUxuT1JOZmZIa1pFcnMxWUVwMGl4SnUtNDQtcUpuRWk5X3F5WEtzUXFMMFk0M3NzX2QxVkFiT3ZPazlqNmgxbHlHb1ZxTHZPNFdKOU40ZnA2X1dPOHdpZWtUT3ZYT2dOWkp1M0lUWlloUXQ3dWFvWm9YQXU5R1FwRFEzUUFNWWwxalNEMHFNVjh5WENOWm55WGh6U283QXM2SkF5eWhyVVlPdWFLT1c?oc=5"
   },
   {
    "title": "Anne-Claire Amprou to be considered for WHO group co-chair post — Health Policy Watch",
@@ -8251,19 +8371,6 @@
    "score": -13
   },
   {
-   "title": "Antimicrobial Resistance Threats Reports",
-   "url": "https://www.cdc.gov/antimicrobial-resistance/data-research/threats/index.html",
-   "src": "Centers for Disease Control and Prevention | CDC (.gov)",
-   "feed": "AMR policy & research",
-   "cat": "amr",
-   "date": "2026-10-26T07:00:00+00:00",
-   "summary": "Antimicrobial Resistance Threats Reports Centers for Disease Control and Prevention | CDC (.gov)",
-   "domain": "cdc.gov",
-   "inhoud": 0,
-   "score": 4,
-   "gnews": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNN1R0aWg0bjBTRjI1OWZzaUFCb3MzakJUcXRGdzUxSWlfM3BmallWWl9FbHJIQzBCU1Vkc0I3RXd4YkhFNHpyMXNYb01LZzlMRTZjajJsTGl1cWM3d3pMejJwZTU2OXgxWTZHZUlnUTdpOGZGTEtGc3FnODJuZ3BtdjJoNA?oc=5"
-  },
-  {
    "title": "Airborne ESKAPE bacteria pose severe risks to immunocompromised patients",
    "url": "https://www.news-medical.net/news/20261026/Airborne-ESKAPE-bacteria-pose-severe-risks-to-immunocompromised-patients.aspx",
    "src": "AMR Industry / news",
@@ -8281,11 +8388,11 @@
    "src": "The Guardian",
    "feed": "Pandemic Agreement",
    "cat": "pandemic",
-   "date": "2026-10-25T00:00:00+00:00",
+   "date": "2026-10-25T07:00:00+00:00",
    "summary": "Plague risks in Russia and a dangerous delay on WHO pandemic agreement | Letters The Guardian",
    "domain": "theguardian.com",
-   "score": 6,
    "inhoud": 0,
+   "score": 6,
    "gnews": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOb1N4MXZ3ZmhvOWh2eXN4eWo3WWs3UDQ5cVF3cEd0TnA2MFRNU3l5eXVLZlBRMjBHRGVlUnlIai1HUjBOMC1QQktFMnJkNktKQjZqaHVJU1JKcGl6NVNTdTVkb3dOaEhsVWsyZ3NYZlAyaTk1bEp6RnJfdklrSGhIQVFCUGVFYkVCR1NMU0JUQ1VHZWh2cENNRVljR2x6M3VJckJld28zbFZFdkdsRjhOWE9JczFnWGtOSHc?oc=5"
   },
   {
@@ -8448,6 +8555,19 @@
    "gnews": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZjV1ZTVtMVJkcS1odmxuMFdNWkdkZDZ2ZUcxNTNlTlZYRHdVN1NQWC1vT2pjb0J6N0VwM25NbGtPRGVyNERtdWlpbm5VVEpJNVRtWHdoNDlFX3Z1cnduT0pZMkdDeUxGLWhMN2RkOVk4THdxU25YMHhTMkw4eFlzQ0tPVjNNNG5NQUVGcDBkRDRkUndZQjVvT1FkUUxqdVdvVkgtYlFTaTM?oc=5"
   },
   {
+   "title": "UN Declaration On Pandemic Readiness May Head To General Assembly For Approval",
+   "url": "https://healthpolicy-watch.news/un-declaration-on-pandemic-readiness-appears-headed-for-approval-in-december/",
+   "src": "Health Policy Watch",
+   "feed": "Pandemic Agreement",
+   "cat": "pandemic",
+   "date": "2026-09-25T07:00:00+00:00",
+   "summary": "UN Declaration On Pandemic Readiness May Head To General Assembly For Approval Health Policy Watch",
+   "domain": "healthpolicy-watch.news",
+   "inhoud": 2,
+   "score": 9,
+   "gnews": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPeF9teHZEU2JlMXBiV1RjNllFenFfZi11dVM1dDNuNXktVjYxZjNtRGNFRlB4cFJNdEZfMFY3emRCcGJNY3QxdUJUbTJ3T0tIYTlyNXNqdXJOeGpFN2NqRkNRc1B3b05zcE5LcjZjWFpvMnE1bkZDQ3A5a05TdkVicXZHM3ByR3hkVEpRM1B3NzYxdnBQcFU5MzZIdnZlR3Y2em8yREFBTzVNN3dHcVE?oc=5"
+  },
+  {
    "title": "World leaders renew commitment to protect the world from future pandemics",
    "url": "https://www.who.int/news/item/25-09-2026-world-leaders-renew-commitment-to-protect-the-world-from-future-pandemics",
    "src": "World Health Organization (WHO)",
@@ -8459,19 +8579,6 @@
    "inhoud": 6,
    "score": 14,
    "gnews": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOV2pzclBSMzBSM05hS3lCRE1hNTMyVHNFUmxYYVpVakUtVllxUzBLYzJuR0NRRE5EeEtvaGVEbHJlWHpKNFdUMmZTT1lCNVRROGZXRFJzOFNLby1jQ3VEcGVaRnpKWGw2V29EM0g3RWxHTjdISWdBSW9FaTJIdEJ6Q1lWWTg5Ym81SWNSYUtTQ3RHeDgwUlM4S3ZTUUJycXpjQ1JfTkJjQ1FJd1dQRF8wTHhnWTc?oc=5"
-  },
-  {
-   "title": "Africa CDC, PAHO seek sustained financing for pandemic preparedness",
-   "url": "https://gazettengr.com/africa-cdc-paho-seek-sustained-financing-for-pandemic-preparedness/",
-   "src": "Peoples Gazette Nigeria",
-   "feed": "Pandemic Fund & financing",
-   "cat": "pandemic",
-   "date": "2026-09-23T00:00:00+00:00",
-   "summary": "Africa CDC, PAHO seek sustained financing for pandemic preparedness Peoples Gazette Nigeria",
-   "domain": "gazettengr.com",
-   "score": 9,
-   "inhoud": 6,
-   "gnews": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNN1R4WkpLQmF6elZ2WkMtOU81d01BR0tNejRSUFd5c0dObllFRzNNVTJDM3ZQT0xmQ0x4SHkwN05majY5cy1FQmxTY241SWRnY1N3WUFvSXZsQS1xeGI5Q09Kd0x1bGhuRG52OFRBTE9hNUNPcU83UVA3Y29wV2pKYlhpeE44S2R6bGVndW1CbURwaDJ1?oc=5"
   }
  ]
 }
