@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T00:28:10+00:00",
+ "generated": "2026-11-22T08:09:45+00:00",
  "feeds_ok": 62,
  "feeds_tot": 62,
  "status": {
@@ -90,7 +90,7 @@
   },
   "ReliefWeb Health": {
    "ok": true,
-   "msg": "9 items (via kandidaat 2)",
+   "msg": "10 items (via kandidaat 2)",
    "cat": "emerg",
    "via": 2,
    "fallback": true,
@@ -214,7 +214,7 @@
   },
   "EU health policy": {
    "ok": true,
-   "msg": "10 items",
+   "msg": "9 items",
    "cat": "eu",
    "via": 1,
    "fallback": false,
@@ -450,13 +450,98 @@
   },
   "Grand Challenges": {
    "ok": true,
-   "msg": "7 items",
+   "msg": "9 items",
    "cat": "news",
    "via": 1,
    "fallback": true
   }
  },
  "items": [
+  {
+   "title": "How measles spread across the world - Financial Times",
+   "url": "https://www.ft.com/content/a71192b7-708c-4bd4-abb6-31c82113794a?syn-25a6b1a6=1",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-22T06:31:41+00:00",
+   "summary": "... World Health Organization . The early 2000s saw a significant increase in first-dose coverage, peaking at around 86 per cent just before the start ...",
+   "domain": "ft.com",
+   "inhoud": 4,
+   "score": 9
+  },
+  {
+   "title": "Ebola outbreak update as of November 19",
+   "url": "https://outbreaknewstoday.substack.com/p/ebola-outbreak-update-as-of-november-6e6",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-22T05:54:31+00:00",
+   "summary": "Emerging Infectious Diseases and Global Health Security. Since the beginning of the outbreak, the DRC has recorded 11,723 confirmed cases ...",
+   "domain": "outbreaknewstoday.substack.com",
+   "inhoud": 13,
+   "score": 16
+  },
+  {
+   "title": "Israeli strike on vehicle in Gaza kills three, Gaza Health Ministry says - Reuters",
+   "url": "https://www.reuters.com/world/middle-east/israeli-strike-kills-three-vehicle-distributing-aid-gaza-witnesses-say-2026-11-21/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-22T05:47:39+00:00",
+   "summary": "Israeli forces hit a truck in Gaza on ​Saturday which witnesses said was carrying food and papers bearing the logo of ‌the World Central Kitchen ...",
+   "domain": "reuters.com",
+   "inhoud": 4,
+   "score": 9
+  },
+  {
+   "title": "After Canada, the U.S. loses measles elimination status - CTV News",
+   "url": "https://www.ctvnews.ca/health/article/measles-elimination-status-wiped-off-the-map-in-the-americas/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-22T05:02:34+00:00",
+   "summary": "International health officials say the highly contagious virus has spread for more than a year in the U.S., and now the country no longer meets ...",
+   "domain": "ctvnews.ca",
+   "inhoud": 11,
+   "score": 14,
+   "lead": "https://news.northeastern.edu/2026/11/17/us-loses-measles-elimination-status/"
+  },
+  {
+   "title": "How measles spread across the world - Financial Times",
+   "url": "https://www.ft.com/content/a71192b7-708c-4bd4-abb6-31c82113794a",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-22T05:01:16+00:00",
+   "summary": "Measles is spreading around the world , forcing governments and health systems to confront a deadly disease once regarded in richer nations as all ...",
+   "domain": "ft.com",
+   "inhoud": 4,
+   "score": 9
+  },
+  {
+   "title": "2nd International Conference on Plant Science and Molecular Biology 2026",
+   "url": "https://globalhealth.org/event/2nd-international-conference-on-plant-science-and-molecular-biology-2026/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-22T04:20:18+00:00",
+   "summary": "« World Conference on Gynecology & Women's Health (WCGWH-2026) · World Conference on Nursing and Primary Healthcare ».",
+   "domain": "globalhealth.org",
+   "inhoud": 5,
+   "score": 5
+  },
+  {
+   "title": "Young child dies in Virginia's first measles death of 2026 | Rock Hill Herald",
+   "url": "https://www.heraldonline.com/news/nation-world/national/article318195345.html",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-22T00:24:32+00:00",
+   "summary": "On the same day the child was reported sick in Charlottesville, the United States lost its measles-free status by the World Health Organization .",
+   "domain": "heraldonline.com",
+   "inhoud": 4,
+   "score": 4
+  },
   {
    "title": "Sen. Jeff Merkley: On climate, the focus should be on solutions - The Washington Post",
    "url": "https://www.washingtonpost.com/opinions/2026/11/20/sen-jeff-merkley-evidence-climate-change-is-all-around-us/",
@@ -756,8 +841,8 @@
    "score": 9
   },
   {
-   "title": "Painting our futures: Murals with a message",
-   "url": "https://www.unfpa.org/stories/painting-our-futures-murals-message",
+   "title": "“My arms are the only place where I feel she is safe”",
+   "url": "https://www.unfpa.org/stories/%E2%80%9Cmy-arms-are-only-place-where-i-feel-she-safe%E2%80%9D",
    "src": "UNFPA",
    "feed": "UNFPA",
    "cat": "srhr",
@@ -768,8 +853,8 @@
    "score": 3
   },
   {
-   "title": "“My arms are the only place where I feel she is safe”",
-   "url": "https://www.unfpa.org/stories/%E2%80%9Cmy-arms-are-only-place-where-i-feel-she-safe%E2%80%9D",
+   "title": "Painting our futures: Murals with a message",
+   "url": "https://www.unfpa.org/stories/painting-our-futures-murals-message",
    "src": "UNFPA",
    "feed": "UNFPA",
    "cat": "srhr",
@@ -828,18 +913,6 @@
    "score": 3
   },
   {
-   "title": "Everyone counts: Uzbekistan uses new tech and grassroots outreach in first census since its independence",
-   "url": "https://www.unfpa.org/news/everyone-counts-uzbekistan-uses-new-tech-and-grassroots-outreach-first-census-its-independence",
-   "src": "UNFPA",
-   "feed": "UNFPA",
-   "cat": "srhr",
-   "date": "2026-11-21T09:24:11+00:00",
-   "summary": "UZBEKISTAN – “I’ve lived in Gelon all my life, and seen how our village has grown and changed over the years,” said Sharofiddin Xaknazarov. “Our village is far in the mountains, but we…",
-   "domain": "unfpa.org",
-   "inhoud": 0,
-   "score": 3
-  },
-  {
    "title": "Stories of survival after the Nepal floods",
    "url": "https://www.unfpa.org/stories/stories-survival-after-nepal-floods",
    "src": "UNFPA",
@@ -847,6 +920,18 @@
    "cat": "srhr",
    "date": "2026-11-21T09:24:11+00:00",
    "summary": "",
+   "domain": "unfpa.org",
+   "inhoud": 0,
+   "score": 3
+  },
+  {
+   "title": "Everyone counts: Uzbekistan uses new tech and grassroots outreach in first census since its independence",
+   "url": "https://www.unfpa.org/news/everyone-counts-uzbekistan-uses-new-tech-and-grassroots-outreach-first-census-its-independence",
+   "src": "UNFPA",
+   "feed": "UNFPA",
+   "cat": "srhr",
+   "date": "2026-11-21T09:24:11+00:00",
+   "summary": "UZBEKISTAN – “I’ve lived in Gelon all my life, and seen how our village has grown and changed over the years,” said Sharofiddin Xaknazarov. “Our village is far in the mountains, but we…",
    "domain": "unfpa.org",
    "inhoud": 0,
    "score": 3
@@ -1109,6 +1194,20 @@
    "domain": "statnews.com",
    "inhoud": -6,
    "score": -5
+  },
+  {
+   "title": "‘You will not be alone’: General Assembly President tells Rohingya refugees after genocide ruling",
+   "url": "https://news.un.org/en/story/2026/11/1168853",
+   "src": "UN News",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-20T20:01:17+00:00",
+   "summary": "‘You will not be alone’: General Assembly President tells Rohingya refugees after genocide ruling UN News",
+   "domain": "news.un.org",
+   "fallback": true,
+   "inhoud": 0,
+   "score": 5,
+   "gnews": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5uU2xtNklMZ1dfMTh6bEYtRE10RnI5cXV5eENaelZORkZ2dHVYcDJKXzNhYXE1NzZzaExFaUZGaFRTZUowYzNRUHFHdk1kdXBvTkxpel9LYw?oc=5"
   },
   {
    "title": "Spatial Transcriptomics Identifies Key Immune Pathways in Human Leishmanin Skin Tests",
@@ -1719,6 +1818,20 @@
    "score": 5
   },
   {
+   "title": "Climate/Multi-Hazard Early Warning System /Hazard Advisory Expert MoEDM Damascus, Syria (Arabic Speaker)",
+   "url": "https://reliefweb.int/job/4239256/climatemulti-hazard-early-warning-system-hazard-advisory-expert-moedm-damascus-syria-arabic-speaker",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-20T12:23:01+00:00",
+   "summary": "Climate/Multi-Hazard Early Warning System /Hazard Advisory Expert MoEDM Damascus, Syria (Arabic Speaker) ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -20,
+   "score": -16,
+   "gnews": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPUDlfeWVaN0hrMWY1MGZFcWxMTjZYUlVSQTBpME9NNVJ2WXZvdG0tTlRrclBkZ2xEUTVvcjRxMFdSOC1QNm91RTNHSEo2Tnc5eEhBNkswMVU4WUQ4VC1uY1dkNmZvQi1qRk55WGtudDBKZGU4UkpCWnFPZ3JpV3VDUUk0S3JyU01uY2I3R3F6NXJVRGxmbVVXc1YzSGEwdkc4R0xaZjNodEpfS3VsN29mbXhWRGRhUU1RRXdlcVNwdWthZTNaRG9Jc1pGSXVRZw?oc=5"
+  },
+  {
    "title": "How Sierra Leone’s Triple Zero campaign is saving more mothers",
    "url": "https://www.devex.com/news/how-sierra-leone-s-triple-zero-campaign-is-saving-more-mothers-113915",
    "src": "Devex Global Health",
@@ -2093,6 +2206,20 @@
    "score": 4
   },
   {
+   "title": "Brussels: European Health Commissioner Sprayed with Ashes at Cancer Summit",
+   "url": "https://entrevue.fr/en/monde/europe/bruxelles-le-commissaire-europeen-a-la-sante-asperge-de-cendres-lors-dun/",
+   "src": "Entrevue.fr",
+   "feed": "EU health policy",
+   "cat": "eu",
+   "date": "2026-11-20T01:33:00+00:00",
+   "summary": "Brussels: European Health Commissioner Sprayed with Ashes at Cancer Summit Entrevue.fr",
+   "domain": "entrevue.fr",
+   "inhoud": 2,
+   "score": 5,
+   "gnews": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORGhHTG1qbnJ6TUZXWURNN19lb3FGcG1vMGpyLWpBQmNVZlQ4RXBQamRSWThUQ09XRGpjbGJ5Q2hMYzFNZWZxNGVScnpKR0lVaTRMTXRValV6bndFSFgwM3NqZ0hlazlRRjE5cDZkZmRwSHRFRWJhdWFJRzdXdTh4SllHSVhhS3NtXzRnX2RDU2xUSVdXbHF4cllCR3lNb0FDaUZqeFNfUGFnOFVQdGc?oc=5",
+   "lead": "https://informat.ro/en/current-affairs/two-activists-threw-ash-at-eu-commissioner-oliver-varhelyi-149225"
+  },
+  {
    "title": "Illinois measles numbers remain below recent peak, while the U.S. loses elimination status",
    "url": "https://www.wpsdlocal6.com/health/illinois-measles-numbers-remain-below-recent-peak-while-the-u-s-loses-elimination-status/article_7585f706-abcc-4495-97c8-985af6b4cf87.html",
    "src": "WHO Alert",
@@ -2327,7 +2454,15 @@
    "domain": "informat.ro",
    "inhoud": 2,
    "score": 5,
-   "gnews": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQLXdMWWlQRjZvQnIzbU5xTnV6V0F3YVV3SlJGVE5mQ0hLSnpvWWNZd3pEV3VmRjhhMVVUOVFGNDlHYkVDNGZQaXhrY01nSldSb05IUzVwaDhBanRPcDFkQUdlaDVjMmxRYjhfXzV4Y2djR25KNHJxNTg3c3VuYl9FVXhMNTVRZFBQQ3hXUGczeGI2cUlraHlBOF9LbVJnWDRIV20xZkh6MA?oc=5"
+   "gnews": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQLXdMWWlQRjZvQnIzbU5xTnV6V0F3YVV3SlJGVE5mQ0hLSnpvWWNZd3pEV3VmRjhhMVVUOVFGNDlHYkVDNGZQaXhrY01nSldSb05IUzVwaDhBanRPcDFkQUdlaDVjMmxRYjhfXzV4Y2djR25KNHJxNTg3c3VuYl9FVXhMNTVRZFBQQ3hXUGczeGI2cUlraHlBOF9LbVJnWDRIV20xZkh6MA?oc=5",
+   "also": [
+    {
+     "src": "Entrevue.fr",
+     "title": "Brussels: European Health Commissioner Sprayed with Ashes at Cancer Summit",
+     "url": "https://entrevue.fr/en/monde/europe/bruxelles-le-commissaire-europeen-a-la-sante-asperge-de-cendres-lors-dun/"
+    }
+   ],
+   "outlets": 2
   },
   {
    "title": "How to watch the UK-EU summit like a pro",
@@ -2618,36 +2753,12 @@
    "score": 1
   },
   {
-   "title": "The Bahamas strengthens clinical care for people with advanced HIV disease - PAHO/WHO",
-   "url": "https://www.paho.org/en/news/19-11-2026-bahamas-strengthens-clinical-care-people-advanced-hiv-disease",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-19T15:50:45+00:00",
-   "summary": "Nassau, The Bahamas, 18 November 2026 – The Pan American Health Organization/ World Health Organization (PAHO/WHO), in collaboration with the ...",
-   "domain": "paho.org",
-   "inhoud": 4,
-   "score": 11
-  },
-  {
-   "title": "WHO: Cases of Respiratory Infections and Measles Decline in Afghanistan | Hasht-e Subh",
-   "url": "https://8am.media/eng/who-cases-of-respiratory-infections-and-measles-decline-in-afghanistan/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-19T15:38:07+00:00",
-   "summary": "The World Health Organization (WHO) has reported a decline in cases of acute respiratory infections and measles in Afghanistan in October.",
-   "domain": "8am.media",
-   "inhoud": 4,
-   "score": 4
-  },
-  {
    "title": "Deputy Safety Advisor - Syria (national position)",
    "url": "https://reliefweb.int/job/4239130/deputy-safety-advisor-syria-national-position",
    "src": "ReliefWeb",
    "feed": "ReliefWeb Health",
    "cat": "emerg",
-   "date": "2026-11-19T15:31:58+00:00",
+   "date": "2026-11-19T15:29:13+00:00",
    "summary": "Deputy Safety Advisor - Syria (national position) ReliefWeb",
    "domain": "reliefweb.int",
    "fallback": true,
@@ -3418,18 +3529,6 @@
    "score": 6
   },
   {
-   "title": "Are antibiotic developers catching up with European regulators?",
-   "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.46.2600528",
-   "src": "Eurosurveillance",
-   "feed": "Eurosurveillance",
-   "cat": "promed",
-   "date": "2026-11-19T00:00:00+00:00",
-   "summary": "The need to develop new antibiotics has been acknowledged as a clinical and public health priority for decades. To facilitate development of these critical medicines, the European Medicines Agency (EMA) provides several regulatory tools, including Scientific Advice (SA), the Priority Medicines (PRIM",
-   "domain": "eurosurveillance.org",
-   "inhoud": 9,
-   "score": 11
-  },
-  {
    "title": "Autochthonous dengue outbreak spreading from a holiday site to visitors’ places of residence, Tuscany, Italy, August to October 2026",
    "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.46.2600909",
    "src": "Eurosurveillance",
@@ -3440,6 +3539,18 @@
    "domain": "eurosurveillance.org",
    "inhoud": 10,
    "score": 12
+  },
+  {
+   "title": "Are antibiotic developers catching up with European regulators?",
+   "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.46.2600528",
+   "src": "Eurosurveillance",
+   "feed": "Eurosurveillance",
+   "cat": "promed",
+   "date": "2026-11-19T00:00:00+00:00",
+   "summary": "The need to develop new antibiotics has been acknowledged as a clinical and public health priority for decades. To facilitate development of these critical medicines, the European Medicines Agency (EMA) provides several regulatory tools, including Scientific Advice (SA), the Priority Medicines (PRIM",
+   "domain": "eurosurveillance.org",
+   "inhoud": 9,
+   "score": 11
   },
   {
    "title": "Detection of dengue virus in Aedes albopictus following imported dengue cases and absence of detections after vector control, Ticino Canton, Switzerland, August to September 2026",
@@ -4717,6 +4828,11 @@
      "url": "https://www.theguardian.com/us-news/video/2026/nov/17/us-loses-measles-elimination-status-major-setback-for-us-public-health-video"
     },
     {
+     "src": "ctvnews.ca",
+     "title": "After Canada, the U.S. loses measles elimination status - CTV News",
+     "url": "https://www.ctvnews.ca/health/article/measles-elimination-status-wiped-off-the-map-in-the-americas/"
+    },
+    {
      "src": "udel.edu",
      "title": "What the U.S. Loss of Measles Elimination Status Means for Public Health | Media Expert Spotlight",
      "url": "https://www.udel.edu/faculty-staff/media-experts/spotlight?postid=12194"
@@ -4757,7 +4873,7 @@
      "url": "https://reason.com/2026/11/19/the-u-s-just-lost-its-measles-free-status-who-or-what-is-to-blame/"
     }
    ],
-   "outlets": 12
+   "outlets": 13
   },
   {
    "title": "Delonix Bioworks and A*STAR IDL Collaborate on Vaccines Against Drug-Resistant Klebsiella pneumoniae",
@@ -5899,18 +6015,6 @@
    "domain": "news-medical.net",
    "inhoud": 10,
    "score": 10
-  },
-  {
-   "title": "RHSC launches a new suite of resources to ensure continued SRHR access amidst ...",
-   "url": "https://rhsupplies.org/news-stories/pressroom/rhsc-launches-a-new-suite-of-resources-to-ensure-continued-srhr-access-amidst-changing-global-health-architecture/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-16T22:19:15+00:00",
-   "summary": "Before 2025, the USG was the largest bilateral donor for reproductive health globally , but under its new strategy no longer prioritizes funding for ...",
-   "domain": "rhsupplies.org",
-   "inhoud": 14,
-   "score": 14
   },
   {
    "title": "‘Peace begins in our hearts’: Children close Muscat forum with a message to the world",
@@ -7737,18 +7841,6 @@
    "domain": "thelancet.com",
    "inhoud": 0,
    "score": 4
-  },
-  {
-   "title": "15 years of ‘almost no progress’ in getting young people moving: WHO",
-   "url": "https://news.un.org/feed/view/en/story/2026/11/1168736",
-   "src": "UN News - Global perspective Human stories",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-11-04T12:00:00+00:00",
-   "summary": "One in four adolescents worldwide reported not getting at least 60 minutes of physical activity on any day in the previous week, according to new global estimates released by the World Health Organization (WHO) on Wednesday.",
-   "domain": "news.un.org",
-   "inhoud": 8,
-   "score": 15
   },
   {
    "title": "Integrated community-based HIV+NCD care in microfinance groups in Kenya: results from the Harambee cluster randomised trial",
