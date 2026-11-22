@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T08:09:45+00:00",
+ "generated": "2026-11-22T16:26:01+00:00",
  "feeds_ok": 62,
  "feeds_tot": 62,
  "status": {
@@ -26,11 +26,10 @@
   },
   "UN News Health": {
    "ok": true,
-   "msg": "12 items (via kandidaat 2)",
+   "msg": "12 items",
    "cat": "who",
-   "via": 2,
-   "fallback": true,
-   "errors": "[1] ValueError: 0 entries"
+   "via": 1,
+   "fallback": false
   },
   "PAHO": {
    "ok": true,
@@ -90,7 +89,7 @@
   },
   "ReliefWeb Health": {
    "ok": true,
-   "msg": "10 items (via kandidaat 2)",
+   "msg": "7 items (via kandidaat 2)",
    "cat": "emerg",
    "via": 2,
    "fallback": true,
@@ -282,7 +281,7 @@
   },
   "ReAct": {
    "ok": true,
-   "msg": "10 items",
+   "msg": "9 items",
    "cat": "amr",
    "via": 1,
    "fallback": true
@@ -415,7 +414,7 @@
   },
   "Politico EU Health": {
    "ok": true,
-   "msg": "1 items",
+   "msg": "0 items (geen gezondheidsstukken dit uur)",
    "cat": "policy",
    "via": 1,
    "fallback": false
@@ -458,6 +457,160 @@
  },
  "items": [
   {
+   "title": "Global climate summit collapses as countries fail to agree on moving away from fossil fuels | CNN",
+   "url": "https://www.cnn.com/2026/11/22/climate/cop31-summit-collapses-in-fossil-fuel-failure",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-22T15:48:57+00:00",
+   "summary": "... Health · Life, But Better · Fitness · Food · Sleep · Mindfulness · Relationships · CNN Underscored · Electronics · Fashion · Beauty · Health & Fitness ...",
+   "domain": "cnn.com",
+   "inhoud": 8,
+   "score": 8
+  },
+  {
+   "title": "Commission, Experts Seek Sustainable Domestic Funding For Family Planning",
+   "url": "https://leadership.ng/commission-experts-seek-sustainable-domestic-funding-for-family-planning/",
+   "src": "LEADERSHIP Newspapers",
+   "feed": "SRHR news",
+   "cat": "srhr",
+   "date": "2026-11-22T14:18:48+00:00",
+   "summary": "Commission, Experts Seek Sustainable Domestic Funding For Family Planning LEADERSHIP Newspapers",
+   "domain": "leadership.ng",
+   "inhoud": 0,
+   "score": 2,
+   "gnews": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOFBuam9kZzQzcjUya01IR0dHTFlkVGNnYWM5YlgyODh4UGFXVWRENnE5SllobVo4Tnh6NzluelctTXBweS1YamJiSkNGWXBwM2VWb2VLbTV4aEFEZWRzTDlZWU9uaHIxSVlua2IxV21RLWJPakR5MTBQZ3QxUnROMmMwVWNyRVBWazJHMXctYzMxVlRwY1Qtbkp6WQ?oc=5",
+   "also": [
+    {
+     "src": "News Agency of Nigeria",
+     "title": "Experts Demand More Funding, Accountability For Family Planning",
+     "url": "https://nannews.ng/experts-demand-more-funding-accountability-for-family-planning/"
+    }
+   ],
+   "outlets": 2
+  },
+  {
+   "title": "Disease Impacting the Congo: Treatment and Prevention - The Borgen Project",
+   "url": "https://borgenproject.org/disease-impacting-the-congo/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-22T13:56:01+00:00",
+   "summary": "The Ministry of Health and Population works with UNDP, the Global Fund and other partners to strengthen health services and eliminate TB nationally.",
+   "domain": "borgenproject.org",
+   "inhoud": 5,
+   "score": 2
+  },
+  {
+   "title": "One Invisible Toll Of War Is Worsening Drug-Resistant TB Crisis - OpEd - Eurasia Review",
+   "url": "https://www.eurasiareview.com/22112026-one-invisible-toll-of-war-is-worsening-drug-resistant-tb-crisis-oped/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-22T13:55:39+00:00",
+   "summary": "... globally in 2025 – as per latest WHO Global TB Report 2026. This is not ... Protecting healthcare workers, safeguarding health facilities ...",
+   "domain": "eurasiareview.com",
+   "inhoud": 7,
+   "score": 7
+  },
+  {
+   "title": "Four years after a ban, a pesticide still pollutes Swiss groundwater - SWI swissinfo.ch",
+   "url": "https://www.swissinfo.ch/eng/climate-adaptation/four-years-after-a-ban-a-pesticide-still-pollutes-swiss-groundwater/92408630",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-22T13:40:34+00:00",
+   "summary": "Global health · Geneva organisations · Global trade · Humanitarian aid · Swiss diplomacy · Neutrality · International cooperation · Latest stories. A ...",
+   "domain": "swissinfo.ch",
+   "inhoud": 5,
+   "score": 5
+  },
+  {
+   "title": "'We escaped with only our lives': Fighting to give birth in war-torn Yemen | UN News",
+   "url": "https://news.un.org/en/story/2026/11/1168851",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-22T13:03:02+00:00",
+   "summary": "... health agency. In Yemen, surges in conflict have displaced over 320,000 people since August – and more than 80,000 in October alone – while more ...",
+   "domain": "news.un.org",
+   "inhoud": 4,
+   "score": 11
+  },
+  {
+   "title": "Pelosi's pandemic proxy voting scheme in House ruled unconstitutional - Washington Times",
+   "url": "https://www.washingtontimes.com/news/2026/nov/21/pelosis-pandemic-proxy-voting-scheme-us-house-unconstitutional-court/",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-22T12:45:08+00:00",
+   "summary": "They were supposed to attest that they couldn't be present because of the health emergency . The practice ended up being abused. Some members used ...",
+   "domain": "washingtontimes.com",
+   "inhoud": 4,
+   "score": 4
+  },
+  {
+   "title": "Wisconsin issues health alert over multi-drug-resistant shigellosis",
+   "url": "https://outbreaknewstoday.substack.com/p/wisconsin-issues-health-alert-over",
+   "src": "Outbreak News Today",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-22T12:39:33+00:00",
+   "summary": "Wisconsin issues health alert over multi-drug-resistant shigellosis Outbreak News Today",
+   "domain": "outbreaknewstoday.substack.com",
+   "inhoud": 3,
+   "score": 5,
+   "gnews": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVlRFTjBtcWxrUU5OZVFVLVFGNnNpeXUtRnFZRi12UHpPSHN6OEkxY3ZNb2M2RFRQaHMtUmM4Tm9HR3ZQaUM5Z2tjbDZOcEg3QzVOVnFaZ2t2MTdhOFZHNHlqY0RaMkQ4SnpiYnYxRzNUOGxadTkydGw1X282d3VPUw?oc=5"
+  },
+  {
+   "title": "Gaza Health Ministry Warns of Meningitis Outbreak as Israeli Occupation Ramps Up Blockade",
+   "url": "https://qna.org.qa/en/News-Area/News/2026-11/22/gaza-health-ministry-warns-of-meningitis-outbreak-as-israeli-occupation-ramps-up-blockade",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-22T12:08:03+00:00",
+   "summary": "As such, the Ministry called on the international community, as well as UN and humanitarian organizations, particularly the World Health Organization ...",
+   "domain": "qna.org.qa",
+   "inhoud": 14,
+   "score": 14
+  },
+  {
+   "title": "Purpose | The Global Health Security Fund",
+   "url": "https://ghsfund.org/purpose/",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-22T12:07:46+00:00",
+   "summary": "The GHS Fund supports impact investment in global health security innovation. We are an innovation ecosystem dedicated to identifying and scaling ...",
+   "domain": "ghsfund.org",
+   "inhoud": 6,
+   "score": 6
+  },
+  {
+   "title": "UNAIDS mourns the passing of Nelson Musoba, Director General of the Uganda AIDS Commission",
+   "url": "https://www.unaids.org/en/resources/presscentre/pressreleaseandstatementarchive/2026/november/20261122_PS_musoba",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-22T11:16:10+00:00",
+   "summary": "“Dr Musoba's passing is a tremendous loss to Uganda's public health community and to all of us who had the privilege of working alongside him,” said ...",
+   "domain": "unaids.org",
+   "inhoud": 12,
+   "score": 19
+  },
+  {
+   "title": "What if global health's greatest innovation is staying power? - Devex",
+   "url": "https://www.devex.com/news/sponsored/what-if-global-health-s-greatest-innovation-is-staying-power-113805",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-22T07:57:03+00:00",
+   "summary": "This reality requires ministries of health and technical organizations, such as MCD Global Health ... World Health Organization , did the target change.”.",
+   "domain": "devex.com",
+   "inhoud": 8,
+   "score": 14
+  },
+  {
    "title": "How measles spread across the world - Financial Times",
    "url": "https://www.ft.com/content/a71192b7-708c-4bd4-abb6-31c82113794a?syn-25a6b1a6=1",
    "src": "WHO Alert",
@@ -468,6 +621,18 @@
    "domain": "ft.com",
    "inhoud": 4,
    "score": 9
+  },
+  {
+   "title": "The painkiller that could turn dengue deadly | The Daily Star",
+   "url": "https://www.thedailystar.net/health/news/the-painkiller-could-turn-dengue-deadly-4329851",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-22T06:16:45+00:00",
+   "summary": "... World Health Organization's goal of eliminating viral hepatitis as a public health threat by 2030. On the occasion, the National Liver Foundation ...",
+   "domain": "thedailystar.net",
+   "inhoud": 4,
+   "score": 4
   },
   {
    "title": "Ebola outbreak update as of November 19",
@@ -504,7 +669,7 @@
    "domain": "ctvnews.ca",
    "inhoud": 11,
    "score": 14,
-   "lead": "https://news.northeastern.edu/2026/11/17/us-loses-measles-elimination-status/"
+   "lead": "https://www.kff.org/quick-insights/a-step-back-for-u-s-public-health-the-u-s-is-likely-to-lose-its-measles-elimination-status/"
   },
   {
    "title": "How measles spread across the world - Financial Times",
@@ -529,6 +694,30 @@
    "domain": "globalhealth.org",
    "inhoud": 5,
    "score": 5
+  },
+  {
+   "title": "Child Stunting Declined in the DRC While Economic and Regional Inequalities Widened",
+   "url": "https://bioengineer.org/child-stunting-declined-in-the-drc-while-economic-and-regional-inequalities-widened/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-22T03:18:10+00:00",
+   "summary": "Every point estimate was computed alongside a 95 percent confidence interval using the World Health Organization's Health Equity Assessment Toolkit ...",
+   "domain": "bioengineer.org",
+   "inhoud": 5,
+   "score": -1
+  },
+  {
+   "title": "Ethiopia launches polio vaccination campaign to protect more than 11 million children - Zawya",
+   "url": "https://www.zawya.com/en/press-release/africa-press-releases/ethiopia-launches-polio-vaccination-campaign-to-protect-more-than-11-million-children-world-health-organization-who-deployed-28-staff-to-support-the-vaccination-campaign-2443001",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-22T01:42:12+00:00",
+   "summary": "The Government of Ethiopia, in collaboration with the World Health Organization (WHO), UNICEF, the Global Polio Eradication Initiative (GPEI) ...",
+   "domain": "zawya.com",
+   "inhoud": 11,
+   "score": 18
   },
   {
    "title": "Young child dies in Virginia's first measles death of 2026 | Rock Hill Herald",
@@ -752,18 +941,6 @@
    "domain": "ny1.com",
    "inhoud": 4,
    "score": 4
-  },
-  {
-   "title": "Ethiopia launches polio vaccination campaign to protect more than 11 million children: WHO deployed 28 staff to support the vaccination campaign",
-   "url": "https://www.afro.who.int/countries/ethiopia/news/ethiopia-launches-polio-vaccination-campaign-protect-more-11-million-children-who-deployed-28-staff",
-   "src": "WHO Africa",
-   "feed": "WHO Africa",
-   "cat": "who",
-   "date": "2026-11-21T13:39:42+00:00",
-   "summary": "Ethiopia launches polio vaccination campaign to protect more than 11 million children: WHO deployed 28 staff to support the vaccination campaign gebremichaela@… Sat, 21/11/2026 - 14:39 21 November 2026",
-   "domain": "afro.who.int",
-   "inhoud": 16,
-   "score": 19
   },
   {
    "title": "For three decades, Mamadou Camara has fought sleeping sickness in Guinea’s mangroves.",
@@ -1283,15 +1460,15 @@
    "score": 4
   },
   {
-   "title": "Scientists are learning more about the rare Ebola virus in Congo outbreak - Polity.org.za",
-   "url": "https://www.polity.org.za/article/scientists-are-learning-more-about-the-rare-ebola-virus-in-congo-outbreak-2026-11-20",
+   "title": "Analysis - Scientists are learning more about the rare Ebola virus in Congo outbreak",
+   "url": "https://sightmagazine.com.au/news/analysis-scientists-are-learning-more-about-the-rare-ebola-virus-in-congo-outbreak/",
    "src": "WHO Alert",
    "feed": "WHO Alert",
    "cat": "who",
    "date": "2026-11-20T18:30:31+00:00",
-   "summary": "... health|testing|vaccines|ebola|africa-cdc|medecins-sans-frontieres| world - health - organisation -organization|catherine-smallwood|daniel-bausch|jean ...",
-   "domain": "polity.org.za",
-   "inhoud": 12,
+   "summary": "... World Health Organization's Ebola emergency committee and visiting professor at the ⁠Geneva Graduate Institute ​in Switzerland. Catherine ...",
+   "domain": "sightmagazine.com.au",
+   "inhoud": 10,
    "score": 12
   },
   {
@@ -1305,7 +1482,7 @@
    "domain": "centredaily.com",
    "inhoud": 10,
    "score": 10,
-   "lead": "https://news.northeastern.edu/2026/11/17/us-loses-measles-elimination-status/"
+   "lead": "https://www.kff.org/quick-insights/a-step-back-for-u-s-public-health-the-u-s-is-likely-to-lose-its-measles-elimination-status/"
   },
   {
    "title": "From continental commitment to lasting national capability",
@@ -2000,6 +2177,20 @@
    "score": 1
   },
   {
+   "title": "National Facilitator for Sustainability and Transition Strategy Development",
+   "url": "https://reliefweb.int/job/4239225/national-facilitator-sustainability-and-transition-strategy-development",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-20T09:18:19+00:00",
+   "summary": "National Facilitator for Sustainability and Transition Strategy Development ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -20,
+   "score": -16,
+   "gnews": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSzJXaWdwTkRzakVjNjhZLXpJeFFHTTZOSmZsV1A3V0JodE1zcEhSVExhR1Fja2V6azdKVXd1WC05YXBNM045MlM2dFJfUy1ETU9EeTlLY1dROVQ0cUx2ZDhOX1JCZ3VKWm9Fc1lhLTRiS1VFZzhOY2ZZVHVDLXVhaG8wendNblB2VDF2UDd3dU9fNXFLeHNCU0pydjdFbVJ5bVdEeU5aU1A?oc=5"
+  },
+  {
    "title": "MCC CEO nominee Elliott Hulse testifies before the US Senate",
    "url": "https://www.devex.com/news/mcc-ceo-nominee-elliott-hulse-testifies-before-the-us-senate-113942",
    "src": "Devex Global Health",
@@ -2130,7 +2321,8 @@
    "domain": "nannews.ng",
    "inhoud": 0,
    "score": 2,
-   "gnews": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQa21YYi1UblhmNEtQcmlZOGtxQ1h2dFg4UWxqYVhGclA2QTBRUDZ2TDFSbHZaN2xObmcybWRlT1c4REt6UmJoYy1lRmptbDI5c29KYVBIcFV1OUVEY25fZ2ZoeWlfTGFmSEhEcm0xc3Z2NUJaU1JMZHhWQWVaSmozQ3E5N3dvRDhDd1E?oc=5"
+   "gnews": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQa21YYi1UblhmNEtQcmlZOGtxQ1h2dFg4UWxqYVhGclA2QTBRUDZ2TDFSbHZaN2xObmcybWRlT1c4REt6UmJoYy1lRmptbDI5c29KYVBIcFV1OUVEY25fZ2ZoeWlfTGFmSEhEcm0xc3Z2NUJaU1JMZHhWQWVaSmozQ3E5N3dvRDhDd1E?oc=5",
+   "lead": "https://leadership.ng/commission-experts-seek-sustainable-domestic-funding-for-family-planning/"
   },
   {
    "title": "Suboptimal vaccination rates trigger widespread measles outbreaks in the United States",
@@ -2230,7 +2422,7 @@
    "domain": "wpsdlocal6.com",
    "inhoud": 12,
    "score": 12,
-   "lead": "https://news.northeastern.edu/2026/11/17/us-loses-measles-elimination-status/"
+   "lead": "https://www.kff.org/quick-insights/a-step-back-for-u-s-public-health-the-u-s-is-likely-to-lose-its-measles-elimination-status/"
   },
   {
    "title": "STAT+: Big drugmakers tell House committee they will halt clinical trials at some hospitals in China",
@@ -2315,7 +2507,7 @@
    "domain": "statnews.com",
    "inhoud": 10,
    "score": 11,
-   "lead": "https://news.northeastern.edu/2026/11/17/us-loses-measles-elimination-status/"
+   "lead": "https://www.kff.org/quick-insights/a-step-back-for-u-s-public-health-the-u-s-is-likely-to-lose-its-measles-elimination-status/"
   },
   {
    "title": "CDA urges dentists to prescribe antibiotics only when needed - Oral Health Group",
@@ -2420,18 +2612,6 @@
    "score": 8
   },
   {
-   "title": "Is the World Growing Numb to Climate Change? | Think Global Health",
-   "url": "https://www.thinkglobalhealth.org/article/is-the-world-growing-numb-to-climate-change",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-19T20:44:50+00:00",
-   "summary": "Although the World Health Organization (WHO) and many advocates have made strides in integrating mental health into climate and health programming ...",
-   "domain": "thinkglobalhealth.org",
-   "inhoud": 18,
-   "score": 24
-  },
-  {
    "title": "Vaccine hesitancy spills over to pet owners",
    "url": "https://www.cidrap.umn.edu/rabies/vaccine-hesitancy-spills-over-pet-owners",
    "src": "CIDRAP Public Health",
@@ -2503,18 +2683,6 @@
    "score": 5
   },
   {
-   "title": "Stakeholders Convene to Advance Health Workforce Planning in Trinidad and Tobago with ...",
-   "url": "https://www.paho.org/en/news/19-11-2026-stakeholders-convene-advance-health-workforce-planning-trinidad-and-tobago-support",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-19T19:25:21+00:00",
-   "summary": "Port of Spain, 18 November 2026 ( PAHO) – The Pan American Health Organization/ World Health Organization (PAHO/WHO), in collaboration with the ...",
-   "domain": "paho.org",
-   "inhoud": 4,
-   "score": 11
-  },
-  {
    "title": "Quick takes: Cyclospora post-mortem, access to Ebola drug, changes to local health departments",
    "url": "https://www.cidrap.umn.edu/cyclospora/quick-takes-cyclospora-post-mortem-access-ebola-drug-changes-local-health-departments",
    "src": "CIDRAP Public Health",
@@ -2525,18 +2693,6 @@
    "domain": "cidrap.umn.edu",
    "inhoud": 9,
    "score": 11
-  },
-  {
-   "title": "Acute kidney injury and death in severe Plasmodium falciparum malaria - Research journals",
-   "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1004975",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-19T19:10:33+00:00",
-   "summary": "Acute kidney injury (AKI) has been thought to be rare in children and common in adults, based on the World Health Organization (WHO) definition which ...",
-   "domain": "journals.plos.org",
-   "inhoud": 4,
-   "score": 7
   },
   {
    "title": "As WHO Director-General Forum Closes, Contenders Pitch Banks, Science and Discipline",
@@ -2645,19 +2801,6 @@
    "score": 5
   },
   {
-   "title": "The U.S. just lost its measles-free status. Who—or what—is to blame? - Reason Magazine",
-   "url": "https://reason.com/2026/11/19/the-u-s-just-lost-its-measles-free-status-who-or-what-is-to-blame/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-19T17:00:09+00:00",
-   "summary": "On Tuesday, the Pan American Health Organization, an arm of the World Health Organization , announced that measles has resurged in the Americas.",
-   "domain": "reason.com",
-   "inhoud": 4,
-   "score": 4,
-   "lead": "https://news.northeastern.edu/2026/11/17/us-loses-measles-elimination-status/"
-  },
-  {
    "title": "STAT+: Peptide market poised to explode with new Hims and Noom launches",
    "url": "https://www.statnews.com/2026/11/19/hims-noom-enter-peptide-market-mainstream-products-health-risks/?utm_campaign=rss",
    "src": "STAT News",
@@ -2668,18 +2811,6 @@
    "domain": "statnews.com",
    "inhoud": -14,
    "score": -13
-  },
-  {
-   "title": "Hepatitis B vaccination and multiple sclerosis: update through a survey of the epidemiological studies",
-   "url": "https://www.jle.com/en/revues/jpc/doc/vaccin-contre-l-hepatite-b-et-sclerose-en-plaques-bilan-des-dernieres-etudes-epidemiologiques_14143/jle_article.dhtml",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-19T16:37:21+00:00",
-   "summary": "Universal strategy proposed by World Health Organization and supported by physicians and pharmacists is the only practical means of achieving global ...",
-   "domain": "jle.com",
-   "inhoud": 5,
-   "score": 5
   },
   {
    "title": "STAT+: MAHA PAC’s steakhouse spend",
@@ -3330,6 +3461,19 @@
    "score": 3
   },
   {
+   "title": "Gov. Otu’s Funding Commitment Earns UNFPA Commendation as 30 Health Workers Receive FP Training",
+   "url": "https://news.crossriverstate.gov.ng/gov-otus-funding-commitment-earns-unfpa-commendation-as-30-health-workers-receive-fp-training/",
+   "src": "Cross River State News",
+   "feed": "SRHR news",
+   "cat": "srhr",
+   "date": "2026-11-19T08:51:51+00:00",
+   "summary": "Gov. Otu’s Funding Commitment Earns UNFPA Commendation as 30 Health Workers Receive FP Training Cross River State News",
+   "domain": "news.crossriverstate.gov.ng",
+   "inhoud": 6,
+   "score": 8,
+   "gnews": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNZWVtak8tVUJNNW5rYm5iWmNjblNPZkN2ck10WFdlMHZfLWs5WUhlM0xCSmZzR0NHZ19VWkNjLXF4Nm40dGp4eGloMnRFT0ZWRmlmV0IzQVNHWWRNTzlHTFZMZXEwdjlPdG5BUVNma1JNczFFbDBXaVRvbW0wdkJwaGUwcWh2a3FBMmtvcGNXRWRLRjd2Vk1QLWUtM3l1Nkd2dG8yLWRfVDVyOVJXV20tVnQxRmVLRkxicFZjU0JFRDdDd3hCTkZhdERn?oc=5"
+  },
+  {
    "title": "Report: The burden of occupation in the West Bank",
    "url": "https://www.msf.org/report-burden-occupation-west-bank",
    "src": "MSF",
@@ -3529,18 +3673,6 @@
    "score": 6
   },
   {
-   "title": "Autochthonous dengue outbreak spreading from a holiday site to visitors’ places of residence, Tuscany, Italy, August to October 2026",
-   "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.46.2600909",
-   "src": "Eurosurveillance",
-   "feed": "Eurosurveillance",
-   "cat": "promed",
-   "date": "2026-11-19T00:00:00+00:00",
-   "summary": "Between August and October 2026, 49 autochthonous dengue cases were notified in Italy. Of these, 42 were exposed at a Tuscan coastal holiday site, and diagnosed after returning home, in 14 municipalities across seven provinces. Seven additional cases were identified, six in two areas where viraemic ",
-   "domain": "eurosurveillance.org",
-   "inhoud": 10,
-   "score": 12
-  },
-  {
    "title": "Are antibiotic developers catching up with European regulators?",
    "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.46.2600528",
    "src": "Eurosurveillance",
@@ -3551,6 +3683,18 @@
    "domain": "eurosurveillance.org",
    "inhoud": 9,
    "score": 11
+  },
+  {
+   "title": "Autochthonous dengue outbreak spreading from a holiday site to visitors’ places of residence, Tuscany, Italy, August to October 2026",
+   "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.46.2600909",
+   "src": "Eurosurveillance",
+   "feed": "Eurosurveillance",
+   "cat": "promed",
+   "date": "2026-11-19T00:00:00+00:00",
+   "summary": "Between August and October 2026, 49 autochthonous dengue cases were notified in Italy. Of these, 42 were exposed at a Tuscan coastal holiday site, and diagnosed after returning home, in 14 municipalities across seven provinces. Seven additional cases were identified, six in two areas where viraemic ",
+   "domain": "eurosurveillance.org",
+   "inhoud": 10,
+   "score": 12
   },
   {
    "title": "Detection of dengue virus in Aedes albopictus following imported dengue cases and absence of detections after vector control, Ticino Canton, Switzerland, August to September 2026",
@@ -3622,8 +3766,7 @@
    "summary": "This budget summary provides an analysis of global health funding amounts provided in the FY 2027 Senate State, Foreign Operations, and Related Programs (SFOPs) and Labor, Health and Human Services, Education, and Related Agencies (Labor HHS) appropriations bills and accompanying reports.",
    "domain": "kff.org",
    "inhoud": 2,
-   "score": 8,
-   "lead": "https://www.appropriations.senate.gov/news/majority/senate-appropriations-committee-releases-final-five-fy-2027-funding-bills"
+   "score": 8
   },
   {
    "title": "Family Planning Investment Impact Calculator",
@@ -3760,7 +3903,7 @@
    "domain": "udel.edu",
    "inhoud": 10,
    "score": 13,
-   "lead": "https://news.northeastern.edu/2026/11/17/us-loses-measles-elimination-status/"
+   "lead": "https://www.kff.org/quick-insights/a-step-back-for-u-s-public-health-the-u-s-is-likely-to-lose-its-measles-elimination-status/"
   },
   {
    "title": "COP31 deadlock persists as countries launch new ‘climate reality check’",
@@ -3812,18 +3955,6 @@
    "domain": "jmir.org",
    "inhoud": 4,
    "score": 4
-  },
-  {
-   "title": "Health Security and the UK's Official Development Assistance: Where Next? - King's College London",
-   "url": "https://www.kcl.ac.uk/health-security-and-the-uks-official-development-assistance-where-next",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-18T17:48:40+00:00",
-   "summary": "The UK university sector has been a significant recipient of UKRI, NIHR, and UKRI (GACD) global health funding over the last decade, funded through ...",
-   "domain": "kcl.ac.uk",
-   "inhoud": 14,
-   "score": 17
   },
   {
    "title": "Democrats blast Trump pick for watchdog office",
@@ -4193,7 +4324,7 @@
    "domain": "bmj.com",
    "inhoud": 10,
    "score": 13,
-   "lead": "https://news.northeastern.edu/2026/11/17/us-loses-measles-elimination-status/"
+   "lead": "https://www.kff.org/quick-insights/a-step-back-for-u-s-public-health-the-u-s-is-likely-to-lose-its-measles-elimination-status/"
   },
   {
    "title": "COP31: Global Fund for Coral Reefs announces $30 million to protect reefs in 22 countries",
@@ -4801,81 +4932,6 @@
    "score": 8
   },
   {
-   "title": "What Losing Measles Elimination Status Means for the US - Northeastern Global News",
-   "url": "https://news.northeastern.edu/2026/11/17/us-loses-measles-elimination-status/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-18T02:04:37+00:00",
-   "summary": "The Pan American Health Organization, or PAHO, the regional health watchdog arm of the United Nations and the World Health Organization for the ...",
-   "domain": "news.northeastern.edu",
-   "inhoud": 15,
-   "score": 20,
-   "also": [
-    {
-     "src": "kff.org",
-     "title": "The U.S. Lost Its Measles Elimination Status, Marking A Step Back for Public Health",
-     "url": "https://www.kff.org/quick-insights/a-step-back-for-u-s-public-health-the-u-s-is-likely-to-lose-its-measles-elimination-status/"
-    },
-    {
-     "src": "healthpolicy-watch.news",
-     "title": "United States, Mexico and Bolivia Lose Measles-Free Status",
-     "url": "https://healthpolicy-watch.news/three-countries-lose-measles-free-status/"
-    },
-    {
-     "src": "theguardian.com",
-     "title": "US loses measles elimination status, major setback for US public health – video - The Guardian",
-     "url": "https://www.theguardian.com/us-news/video/2026/nov/17/us-loses-measles-elimination-status-major-setback-for-us-public-health-video"
-    },
-    {
-     "src": "ctvnews.ca",
-     "title": "After Canada, the U.S. loses measles elimination status - CTV News",
-     "url": "https://www.ctvnews.ca/health/article/measles-elimination-status-wiped-off-the-map-in-the-americas/"
-    },
-    {
-     "src": "udel.edu",
-     "title": "What the U.S. Loss of Measles Elimination Status Means for Public Health | Media Expert Spotlight",
-     "url": "https://www.udel.edu/faculty-staff/media-experts/spotlight?postid=12194"
-    },
-    {
-     "src": "clickondetroit.com",
-     "title": "US loses its measles-free status. Here's how the Trump administration has responded to outbreaks",
-     "url": "https://www.clickondetroit.com/health/2026/11/17/measles-is-surging-in-the-us-heres-how-the-trump-administration-has-responded/"
-    },
-    {
-     "src": "bmj.com",
-     "title": "US loses measles elimination status as “once beaten” disease sweeps nation",
-     "url": "http://www.bmj.com/content/395/bmj-2026-101505.short?rss=1"
-    },
-    {
-     "src": "wpsdlocal6.com",
-     "title": "Illinois measles numbers remain below recent peak, while the U.S. loses elimination status",
-     "url": "https://www.wpsdlocal6.com/health/illinois-measles-numbers-remain-below-recent-peak-while-the-u-s-loses-elimination-status/article_7585f706-abcc-4495-97c8-985af6b4cf87.html"
-    },
-    {
-     "src": "statnews.com",
-     "title": "Opinion: The U.S. lost measles elimination status. The next Congress should help restore it",
-     "url": "https://www.statnews.com/2026/11/19/measles-elimination-status-congress-should-prioritize-restoration/?utm_campaign=rss"
-    },
-    {
-     "src": "thehill.com",
-     "title": "Democrats go after Trump administration over US losing measles elimination status",
-     "url": "https://thehill.com/policy/healthcare/6225550-democrats-criticize-trump-rfk-measles/"
-    },
-    {
-     "src": "centredaily.com",
-     "title": "Ohio measles cases up 700% from 2025 as US loses elimination status - Centre Daily Times",
-     "url": "https://www.centredaily.com/news/nation-world/national/article318177374.html"
-    },
-    {
-     "src": "reason.com",
-     "title": "The U.S. just lost its measles-free status. Who—or what—is to blame? - Reason Magazine",
-     "url": "https://reason.com/2026/11/19/the-u-s-just-lost-its-measles-free-status-who-or-what-is-to-blame/"
-    }
-   ],
-   "outlets": 13
-  },
-  {
    "title": "Delonix Bioworks and A*STAR IDL Collaborate on Vaccines Against Drug-Resistant Klebsiella pneumoniae",
    "url": "https://biopharmaapac.com/news/18/8688/delonix-bioworks-and-astar-idl-collaborate-on-vaccines-against-drug-resistant-klebsiella-pneumoniae.html",
    "src": "BioPharma APAC",
@@ -4898,8 +4954,7 @@
    "summary": "The foreign assistance budget bill for fiscal year 2027 released by the Senate would keep funding around $50 billion, and it has some key differences from the House version.",
    "domain": "devex.com",
    "inhoud": 0,
-   "score": 5,
-   "lead": "https://www.appropriations.senate.gov/news/majority/senate-appropriations-committee-releases-final-five-fy-2027-funding-bills"
+   "score": 5
   },
   {
    "title": "Deploying AI solutions in low-resource settings in maternal health",
@@ -4973,7 +5028,7 @@
    "domain": "clickondetroit.com",
    "inhoud": 13,
    "score": 13,
-   "lead": "https://news.northeastern.edu/2026/11/17/us-loses-measles-elimination-status/"
+   "lead": "https://healthpolicy-watch.news/three-countries-lose-measles-free-status/"
   },
   {
    "title": "Measles outbreak confirmed in southwest Michigan",
@@ -4986,19 +5041,6 @@
    "domain": "michiganpublic.org",
    "inhoud": 10,
    "score": 10
-  },
-  {
-   "title": "Democrats go after Trump administration over US losing measles elimination status",
-   "url": "https://thehill.com/policy/healthcare/6225550-democrats-criticize-trump-rfk-measles/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-17T22:12:45+00:00",
-   "summary": "Democratic lawmakers are going after the Trump administration after a global health organization announced the U.S. has officially lost its measles- ...",
-   "domain": "thehill.com",
-   "inhoud": 10,
-   "score": 10,
-   "lead": "https://news.northeastern.edu/2026/11/17/us-loses-measles-elimination-status/"
   },
   {
    "title": "A propos - WHO sounds the alarm on antimicrobial resistance threat",
@@ -5026,19 +5068,6 @@
    "score": 2,
    "gnews": "https://news.google.com/rss/articles/CBMipAFBVV95cUxONXloODRsY001VXJyaE5DWklUblJHX0RfaVRyc3IxQTMteXM1UmJpeXhlNjBqSFpzVkxMa0xocEE1di1zelJ4NEg4U25KYjlUc2NwTmUycnUxdTZrUXBTZk9KcEJwRzFUazdOdmV3OGhlNGc0WG1aWWVZZGFweVNjN2JxM1pFZXBZbDEtV1YxekZsU1dJTlZUekdqUWpZVGduMVFLcg?oc=5",
    "lead": "https://nannews.ng/trachoma-nigeria-cuts-at-risk-population-from-41m-to-under-5m-%E2%81%A0%E2%81%A0/"
-  },
-  {
-   "title": "US loses measles elimination status, major setback for US public health – video - The Guardian",
-   "url": "https://www.theguardian.com/us-news/video/2026/nov/17/us-loses-measles-elimination-status-major-setback-for-us-public-health-video",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-17T21:50:17+00:00",
-   "summary": "The US lost its measles elimination status, global health authorities have announced on Tuesday, an official recognition that the infectious ...",
-   "domain": "theguardian.com",
-   "inhoud": 10,
-   "score": 15,
-   "lead": "https://news.northeastern.edu/2026/11/17/us-loses-measles-elimination-status/"
   },
   {
    "title": "Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls",
@@ -5156,18 +5185,6 @@
    "score": 8
   },
   {
-   "title": "It's not just the U.S. Measles is roaring back around the globe | Science",
-   "url": "https://www.science.org/content/article/it-s-not-just-u-s-measles-roaring-back-around-globe",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-17T18:55:59+00:00",
-   "summary": "... global health expert at the London School of Hygiene and Tropical Medicine. One reason, he says, is government funding cuts to programs focused on ...",
-   "domain": "science.org",
-   "inhoud": 11,
-   "score": 16
-  },
-  {
    "title": "Trachoma: Nigeria Cuts At-risk Population From 41m To Under 5m ​‌‌‌​‍‌‍⁠⁠‍‍‍​⁠⁠⁠​​‌",
    "url": "https://nannews.ng/trachoma-nigeria-cuts-at-risk-population-from-41m-to-under-5m-%E2%81%A0%E2%81%A0/",
    "src": "News Agency of Nigeria",
@@ -5223,7 +5240,14 @@
    "domain": "healthpolicy-watch.news",
    "inhoud": 11,
    "score": 15,
-   "lead": "https://news.northeastern.edu/2026/11/17/us-loses-measles-elimination-status/"
+   "also": [
+    {
+     "src": "clickondetroit.com",
+     "title": "US loses its measles-free status. Here's how the Trump administration has responded to outbreaks",
+     "url": "https://www.clickondetroit.com/health/2026/11/17/measles-is-surging-in-the-us-heres-how-the-trump-administration-has-responded/"
+    }
+   ],
+   "outlets": 2
   },
   {
    "title": "Toxic Pollutants Threaten Reproductive Health But Ideological Rift Stalls Gender Action Plan at UN Chemicals Summit",
@@ -5285,8 +5309,40 @@
    "summary": "The loss of measles elimination status carries primarily symbolic weight, as the effect of rising cases and deaths is already clear, along with an ongoing heightened risk to vulnerable groups such as children and pregnant women. Still, it is a marker of how a combination of factors — COVID-19, incre",
    "domain": "kff.org",
    "inhoud": 10,
-   "score": 16,
-   "lead": "https://news.northeastern.edu/2026/11/17/us-loses-measles-elimination-status/"
+   "score": 18,
+   "also": [
+    {
+     "src": "ctvnews.ca",
+     "title": "After Canada, the U.S. loses measles elimination status - CTV News",
+     "url": "https://www.ctvnews.ca/health/article/measles-elimination-status-wiped-off-the-map-in-the-americas/"
+    },
+    {
+     "src": "udel.edu",
+     "title": "What the U.S. Loss of Measles Elimination Status Means for Public Health | Media Expert Spotlight",
+     "url": "https://www.udel.edu/faculty-staff/media-experts/spotlight?postid=12194"
+    },
+    {
+     "src": "bmj.com",
+     "title": "US loses measles elimination status as “once beaten” disease sweeps nation",
+     "url": "http://www.bmj.com/content/395/bmj-2026-101505.short?rss=1"
+    },
+    {
+     "src": "wpsdlocal6.com",
+     "title": "Illinois measles numbers remain below recent peak, while the U.S. loses elimination status",
+     "url": "https://www.wpsdlocal6.com/health/illinois-measles-numbers-remain-below-recent-peak-while-the-u-s-loses-elimination-status/article_7585f706-abcc-4495-97c8-985af6b4cf87.html"
+    },
+    {
+     "src": "statnews.com",
+     "title": "Opinion: The U.S. lost measles elimination status. The next Congress should help restore it",
+     "url": "https://www.statnews.com/2026/11/19/measles-elimination-status-congress-should-prioritize-restoration/?utm_campaign=rss"
+    },
+    {
+     "src": "centredaily.com",
+     "title": "Ohio measles cases up 700% from 2025 as US loses elimination status - Centre Daily Times",
+     "url": "https://www.centredaily.com/news/nation-world/national/article318177374.html"
+    }
+   ],
+   "outlets": 7
   },
   {
    "title": "An African Institution Will Not Be Put on Trial by Anonymous Sources and Politically Motivated Journalists",
@@ -5932,31 +5988,6 @@
    "score": 8
   },
   {
-   "title": "Senate Appropriations Committee Releases Final Five FY 2027 Funding Bills",
-   "url": "https://www.appropriations.senate.gov/news/majority/senate-appropriations-committee-releases-final-five-fy-2027-funding-bills",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-17T01:29:50+00:00",
-   "summary": "The bill also includes $4.6 billion above the President's Budget Request for life-saving global health funding for vaccines, maternal and child health ...",
-   "domain": "appropriations.senate.gov",
-   "inhoud": 10,
-   "score": 14,
-   "also": [
-    {
-     "src": "kff.org",
-     "title": "Senate Committee on Appropriations Releases FY 2027 Department of State, Foreign Operations, and Related Programs (SFOPs) and Labor, Health and Human Services, Education, and Relat",
-     "url": "https://www.kff.org/global-health-policy/senate-committee-on-appropriations-releases-fy-2027-department-of-state-foreign-operations-and-related-programs-sfops-and-labor-health-and-human-services-education-and-related-agencies-labor-h/"
-    },
-    {
-     "src": "devex.com",
-     "title": "Senate appropriations bill maintains foreign assistance funding amounts",
-     "url": "https://www.devex.com/news/senate-appropriations-bill-maintains-foreign-assistance-funding-amounts-113917"
-    }
-   ],
-   "outlets": 3
-  },
-  {
    "title": "Membranoproliferative Glomerulonephritis Associated With Renal Schistosomiasis in a Young Patient From Chad: A Report of a Rare Case",
    "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNR2NCcVdBQ1dTWjJDeU1CQ08zTUdOQUlnemMybjdlNjhhZWFMZVQwVWtETFBkbW90QzB0bkpsWVBOZE9FbmRZSXZJMWNNTFFOZE5iYlQ4MW1za19iWkVCbmZkQTRma0NzdlMxT2VaVzJoNExiM2xKdU1hWjA4bEt5V3JSRFRTR0R4OWQwTl82N2luNjRxc3hnSzJLS04yaTZ3bWJ0VFFOOXJkcW1ZcGtyTXVoYXdiTTllNnpleGwwMDZ2WFpTZy13ZU5TM3NfTXFpMmVkN2xMdGNoNkhiT2JVd2NkeXQwRzdlaVhNSmlBNlJLck9DLXF6Tzk1QUZWWFk?oc=5",
    "src": "Cureus",
@@ -5991,18 +6022,6 @@
    "domain": "thelancet.com",
    "inhoud": 0,
    "score": 1
-  },
-  {
-   "title": "The road to a World Health Organization global action plan on epilepsy and other ... - NCBI",
-   "url": "http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&dopt=Abstract&list_uids=33675058",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-16T23:27:29+00:00",
-   "summary": "This unique achievement is built on more than 2 decades of collaboration and effort, and heralds extraordinary opportunities to work toward a world ...",
-   "domain": "ncbi.nlm.nih.gov",
-   "inhoud": 6,
-   "score": 11
   },
   {
    "title": "Mobility data accurately predicts early spread of Congolese virus outbreak - News- Medical",
@@ -6378,19 +6397,6 @@
    "outlets": 2
   },
   {
-   "title": "Study Finds Genetic Links Between Drug-Resistant Foodborne Pathogens in Humans, Foods, Animals",
-   "url": "https://www.food-safety.com/articles/12015-study-finds-genetic-links-between-drug-resistant-foodborne-pathogens-in-humans-foods-animals",
-   "src": "Food Safety Magazine",
-   "feed": "AMR policy & research",
-   "cat": "amr",
-   "date": "2026-11-16T10:00:00+00:00",
-   "summary": "Study Finds Genetic Links Between Drug-Resistant Foodborne Pathogens in Humans, Foods, Animals Food Safety Magazine",
-   "domain": "food-safety.com",
-   "inhoud": 0,
-   "score": 2,
-   "gnews": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQaTloRW56bDY2RXFRa1pQQU5rSk5hSERkQWVjVGlXeFVRWmRxSzY5WlM3a1ZhZzNhbm5ZWXBnODFZQ0pDSm9MbXBjbk8tbFNOVUJCRTVNMmROQ09xWm5KX2huTEY4em9KSzVZWjBpUkRVb091Q2kxaXZXeDB1RjlSaUU1ci0yMmNVN01PNVRWMGJNUGNQS2UtVjhUeEVGOFc1MEViNFdSMjFXb3ZJdmpDMVJZOXhEbTA1WUcyQjltNURjQ1BacnhlOEdCYnVod2lE?oc=5"
-  },
-  {
    "title": "Eritrea eliminates trachoma: a major public health milestone",
    "url": "https://www.who.int/news/item/16-11-2026-eritrea-eliminates-trachoma-a-major-public-health-milestone",
    "src": "WHO News",
@@ -6400,7 +6406,7 @@
    "summary": "",
    "domain": "who.int",
    "inhoud": 8,
-   "score": 12,
+   "score": 14,
    "lead": "https://www.ecofinagency.com/news-services/2111-61055-weekly-health-update-zambia-starts-cholera-vaccine-plant-eritrea-eliminates-trachoma"
   },
   {
@@ -6679,13 +6685,13 @@
    "title": "Member States reiterate commitment to finalize Pandemic Agreement PABS Annex by May 2027",
    "url": "https://www.who.int/news/item/13-11-2026-member-states-reiterate-commitment-to-finalize-pandemic-agreement-pabs-annex-by-may-2027",
    "src": "World Health Organization (WHO)",
-   "feed": "Pandemic Agreement",
+   "feed": "PABS / IGWG",
    "cat": "pandemic",
    "date": "2026-11-13T08:00:00+00:00",
    "summary": "Member States reiterate commitment to finalize Pandemic Agreement PABS Annex by May 2027 World Health Organization (WHO)",
    "domain": "who.int",
-   "inhoud": 15,
-   "score": 23,
+   "inhoud": 8,
+   "score": 16,
    "gnews": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNNVpEV0t2V19NazQ2M2l1MXV3dVc5ODVrZURVNjNGMXZVcHhFSlJfQ3dHNzZIbHJ5ZVFtdk52MFBLd3pVM1VTQlFJdG1lYl8wUWdGX2UzUkt1U0VLejhFUU5ZcmZqcFBBQlp4eFlBanMzMnZrOXZ5NVl1aV96ZUNFUlduLUs0X3ktTHdlMkpuUEU5Q05ZWkV5OGNaeXFRV21lREptMjdBeVlJelZuYXN4R0s2MUhxTGstTGFMTU9xbWVXdnpWZThnNw?oc=5",
    "also": [
     {
@@ -6856,6 +6862,19 @@
    "domain": "journals.plos.org",
    "inhoud": -8,
    "score": -6
+  },
+  {
+   "title": "New Global Fund malaria mechanism gives GiveWell a say in what gets funded",
+   "url": "https://www.devex.com/news/new-global-fund-malaria-mechanism-gives-givewell-a-say-in-what-gets-funded-113840",
+   "src": "Devex",
+   "feed": "Gavi / Global Fund / CEPI",
+   "cat": "global",
+   "date": "2026-11-12T12:59:11+00:00",
+   "summary": "New Global Fund malaria mechanism gives GiveWell a say in what gets funded Devex",
+   "domain": "devex.com",
+   "inhoud": 4,
+   "score": 10,
+   "gnews": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSG0xWE5rREFjbkhyZHhXNlpyZUhsOFd0OEpxNFFtM1JiLXdWdXdsb3pGSGZHOGlSUF9iV1dGbFBYQ3dJZVdLRmxYaFlKRkd0QnFJUGFoVDdBWDdQazlIT1pmeDNEbHNGUE9lT2V0bmktWTdNT2pDZXRHdDRhVU9YMHlEU1VkTl9XZ2lpQjhTWXFsRjNPX3lEWlhjM2RZZnYzRFppNnlfMnBnNTNv?oc=5"
   },
   {
    "title": "Nine years of healing in Mosul",
@@ -7240,6 +7259,19 @@
    "domain": "paho.org",
    "inhoud": 0,
    "score": 3
+  },
+  {
+   "title": "Leveraging Gavi 6.0 for Women’s, Children’s and Adolescent Health",
+   "url": "https://pmnch.who.int/news-and-events/events/item/2026/12/01/partner-events/leveraging-gavi-6.0-for-women-s-children-s-and-adolescent-health",
+   "src": "Partnership for Maternal, Newborn and Child Health",
+   "feed": "Gavi / Global Fund / CEPI",
+   "cat": "global",
+   "date": "2026-11-10T18:26:23+00:00",
+   "summary": "Leveraging Gavi 6.0 for Women’s, Children’s and Adolescent Health Partnership for Maternal, Newborn and Child Health",
+   "domain": "pmnch.who.int",
+   "inhoud": 4,
+   "score": 11,
+   "gnews": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTHVBd3JGUVQ4UHBXLU1EcHROdkVMS1lUeVVkZjM3a3ZnQzF1czVGNnJqcDRFMFBUXzVPNjU5al82bHJqQkc0WE1pZkt6eGwwZmVMcEllc0RPd09WUkdFcU1oRWJNWXZSalRJYmwtRmdRWTlnZjF3bUNfd3BnU09CWDN4Zk04QlQyU1JlaXBhRVZ4UzhLdmpLcXFWLXlzMnNSbWMzeGlDUkpmamZHc1RTVy14MjNrWFotVUtkWDFrbzRXUnlvTHpyWm9hREhDWmFhWHNVdWtpZw?oc=5"
   },
   {
    "title": "What Does Democratic Control of Congress Mean for Global Health?",
@@ -7766,6 +7798,19 @@
     }
    ],
    "outlets": 3
+  },
+  {
+   "title": "National dialogue held to shape Nepal’s Global Fund Grant",
+   "url": "https://www.who.int/nepal/news/detail/05-11-2026-national-dialogue-held-to-shape-nepal-s-global-fund-grant",
+   "src": "World Health Organization (WHO)",
+   "feed": "Gavi / Global Fund / CEPI",
+   "cat": "global",
+   "date": "2026-11-05T08:00:00+00:00",
+   "summary": "National dialogue held to shape Nepal’s Global Fund Grant World Health Organization (WHO)",
+   "domain": "who.int",
+   "inhoud": 6,
+   "score": 13,
+   "gnews": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPbEdFTTRhWGJCRDdkanNTNmJlMkczTE1pd1VudDN4QVdVRFZZYjAtalVsQjBjT19PbkJsV3piV1FDbkZZN2JmVWJqYVptY1RxaVNhakFNcE43NUVtOFl1N2plZmtvMDBJeWN0NUxfdXpJMlhkMXRlaHVrMzNHZXJEdVQ5MG1hOERiN2p5SnBXQXVod1Q1RkZWcWo4eGV4YzlhWVd2SHllX2k2Zw?oc=5"
   },
   {
    "title": "Expert Takes on the Future of Global Health After the U.S. Midterm Election",
@@ -8486,18 +8531,6 @@
    "inhoud": 0,
    "score": 6,
    "gnews": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOb1N4MXZ3ZmhvOWh2eXN4eWo3WWs3UDQ5cVF3cEd0TnA2MFRNU3l5eXVLZlBRMjBHRGVlUnlIai1HUjBOMC1QQktFMnJkNktKQjZqaHVJU1JKcGl6NVNTdTVkb3dOaEhsVWsyZ3NYZlAyaTk1bEp6RnJfdklrSGhIQVFCUGVFYkVCR1NMU0JUQ1VHZWh2cENNRVljR2x6M3VJckJld28zbFZFdkdsRjhOWE9JczFnWGtOSHc?oc=5"
-  },
-  {
-   "title": "How Omics Technologies Are Transforming Biological Research and Drug Discovery",
-   "url": "https://www.news-medical.net/news/20261023/How-Omics-Technologies-Are-Transforming-Biological-Research-and-Drug-Discovery.aspx",
-   "src": "AMR Industry / news",
-   "feed": "AMR Industry / news",
-   "cat": "amr",
-   "date": "2026-10-23T13:55:00+00:00",
-   "summary": "Discover how omics is transforming life sciences with expert insights from Dr. Shi-Qi An on multiomics, single-cell research and drug discovery.",
-   "domain": "news-medical.net",
-   "inhoud": 0,
-   "score": -1
   },
   {
    "title": "New Guttmacher Analysis Shows that as Access to Telehealth Abortion Increased, Inter-State Travel for Abortion Decreased",
