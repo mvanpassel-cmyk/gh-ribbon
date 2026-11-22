@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T16:26:01+00:00",
+ "generated": "2026-11-22T22:33:56+00:00",
  "feeds_ok": 62,
  "feeds_tot": 62,
  "status": {
@@ -89,7 +89,7 @@
   },
   "ReliefWeb Health": {
    "ok": true,
-   "msg": "7 items (via kandidaat 2)",
+   "msg": "10 items (via kandidaat 2)",
    "cat": "emerg",
    "via": 2,
    "fallback": true,
@@ -213,7 +213,7 @@
   },
   "EU health policy": {
    "ok": true,
-   "msg": "9 items",
+   "msg": "8 items",
    "cat": "eu",
    "via": 1,
    "fallback": false,
@@ -221,7 +221,7 @@
   },
   "Council of the EU (health)": {
    "ok": true,
-   "msg": "7 items",
+   "msg": "8 items",
    "cat": "eu",
    "via": 1,
    "fallback": true
@@ -449,13 +449,87 @@
   },
   "Grand Challenges": {
    "ok": true,
-   "msg": "9 items",
+   "msg": "10 items",
    "cat": "news",
    "via": 1,
    "fallback": true
   }
  },
  "items": [
+  {
+   "title": "WHO Chief Says Fighting Near Congo Ebola Outbreak Area Disrupts Response Efforts",
+   "url": "https://www.usnews.com/news/world/articles/2026-11-22/who-chief-says-fighting-near-congo-ebola-outbreak-area-disrupts-response-efforts",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-22T20:24:34+00:00",
+   "summary": "Nov 22 (Reuters) - World Health ⁠ Organization ⁠chief Tedros Adhanom ⁠Ghebreyesus said on Sunday that heavy fighting ​near a hospital in Democratic ...",
+   "domain": "usnews.com",
+   "inhoud": 13,
+   "score": 24
+  },
+  {
+   "title": "Super El Niño Fails to Spur Action as COP31 Ends in Disaster - Gizmodo",
+   "url": "https://gizmodo.com/super-el-nino-fails-to-spur-action-as-cop31-ends-in-disaster-2000843655",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-22T20:18:56+00:00",
+   "summary": "The World Health Organization declared a state of emergency on the first day of COP31, citing not just heat but rainfall, wildfire smoke ...",
+   "domain": "gizmodo.com",
+   "inhoud": 6,
+   "score": 6
+  },
+  {
+   "title": "France arbovirus cases 2026 through November 16 - Outbreak News Today",
+   "url": "https://outbreaknewstoday.substack.com/p/france-arbovirus-cases-2026-through",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-22T18:55:07+00:00",
+   "summary": "Emerging Infectious Diseases and Global Health Security. 5 dengue episodes (no new episodes compared to the previous week) totaling 8 cases (1 to 2 ...",
+   "domain": "outbreaknewstoday.substack.com",
+   "inhoud": 11,
+   "score": 14
+  },
+  {
+   "title": "Are everyday household products harming your hormones? What a landmark UN report reveals - IOL",
+   "url": "https://iol.co.za/news/world/2026-11-22-are-everyday-household-products-harming-your-hormones-what-a-landmark-un-report-reveals/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-22T17:34:39+00:00",
+   "summary": "The report on \"endocrine-disrupting chemicals\" (EDCs) released by the United Nations Environment Programme and World Health Organization \" ...",
+   "domain": "iol.co.za",
+   "inhoud": 7,
+   "score": 10
+  },
+  {
+   "title": "Two Killed in Khan Younis as Health Ministry Warns of Epidemic Risk | - IMEMC News",
+   "url": "https://imemc.org/article/two-killed-in-khan-younis-as-health-ministry-warns-of-epidemic-risk/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-22T17:01:33+00:00",
+   "summary": "Support diagnosis and treatment: The World Health Organization , UNICEF, and health partners should strengthen the emergency response by providing ...",
+   "domain": "imemc.org",
+   "inhoud": 4,
+   "score": 4
+  },
+  {
+   "title": "AMR Awareness Week: Building an innovation-driven ‘iron dome’ against antimicrobial resistance",
+   "url": "https://www.downtoearth.org.in/health/amr-awareness-week-building-an-innovation-driven-iron-dome-against-antimicrobial-resistance",
+   "src": "Down To Earth",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-22T16:27:45+00:00",
+   "summary": "AMR Awareness Week: Building an innovation-driven ‘iron dome’ against antimicrobial resistance Down To Earth",
+   "domain": "downtoearth.org.in",
+   "inhoud": 10,
+   "score": 12,
+   "gnews": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSF9wZVF2djRtMVVNbnV4eWpoS3FKR05EUnNqOUtURmgwcnlaLVktbDE4YlVSbm9peE8zVHIxQkpfVVR1dFJtOGEyT3dKNjhZZkxPeG03cEF0Zks2RzhzM2lMU3RwRGZVQkZHRDBjLXBYZE5DUWtaeDRpVUp6akRmMk9OSXpadXpFXzIwajZMOHNfUHRBbjM4WjQxM3M1akN3MUFpWTRSa0p2bzJ3V3h5UHFJRGI0YllVQjI2b2ZYS1ZTYlpKQUcwRdIB1gFBVV95cUxOdWg4Wkh6QUltNUNtSm1nNDdib2NuS3pPYTg0dmtNa1RLOGg1RkpUSW9VaWFRNHBaMWtLVjJtVU9FNDhCdU91Zkw3R0wtSGdCTkxMejllaVM4RTFQTnZubVR3eHRzZWpYSWZCMVdMMWd4dTF1eENjb19qREQzWkNuSVlDME81dlFyZnF5aGV4aXBKZ0hyYVlMWnRYdEwzdFpka05KRWNkTDg0MWpLYzgwWDdXTnV5N3Rxd0FlS3dGWDNJdXN4ZU5JaWdmdE5rd2ZFR1pWbElR?oc=5",
+   "lead": "http://www.bmj.com/content/395/bmj-2026-101501.short?rss=1"
+  },
   {
    "title": "Global climate summit collapses as countries fail to agree on moving away from fossil fuels | CNN",
    "url": "https://www.cnn.com/2026/11/22/climate/cop31-summit-collapses-in-fossil-fuel-failure",
@@ -588,12 +662,12 @@
   },
   {
    "title": "UNAIDS mourns the passing of Nelson Musoba, Director General of the Uganda AIDS Commission",
-   "url": "https://www.unaids.org/en/resources/presscentre/pressreleaseandstatementarchive/2026/november/20261122_PS_musoba",
-   "src": "Global Health",
-   "feed": "Global Health",
+   "url": "http://www.unaids.org/en/resources/presscentre/pressreleaseandstatementarchive/2026/november/20261122_PS_musoba",
+   "src": "UNAIDS",
+   "feed": "UNAIDS",
    "cat": "global",
    "date": "2026-11-22T11:16:10+00:00",
-   "summary": "“Dr Musoba's passing is a tremendous loss to Uganda's public health community and to all of us who had the privilege of working alongside him,” said ...",
+   "summary": "UNAIDS mourns the passing of Nelson Musoba, Director General of the Uganda AIDS Commission UNAIDS is deeply saddened by the passing of Nelson Musoba, Director General of the Uganda AIDS Commission (UAC), a dedicated public health leader, valued partner and tireless advocate in Uganda's response to H",
    "domain": "unaids.org",
    "inhoud": 12,
    "score": 19
@@ -717,7 +791,8 @@
    "summary": "The Government of Ethiopia, in collaboration with the World Health Organization (WHO), UNICEF, the Global Polio Eradication Initiative (GPEI) ...",
    "domain": "zawya.com",
    "inhoud": 11,
-   "score": 18
+   "score": 11,
+   "lead": "https://www.afro.who.int/countries/ethiopia/news/ethiopia-launches-polio-vaccination-campaign-protect-more-11-million-children-who-deployed-28-staff"
   },
   {
    "title": "Young child dies in Virginia's first measles death of 2026 | Rock Hill Herald",
@@ -941,6 +1016,26 @@
    "domain": "ny1.com",
    "inhoud": 4,
    "score": 4
+  },
+  {
+   "title": "Ethiopia launches polio vaccination campaign to protect more than 11 million children: WHO deployed 28 staff to support the vaccination campaign",
+   "url": "https://www.afro.who.int/countries/ethiopia/news/ethiopia-launches-polio-vaccination-campaign-protect-more-11-million-children-who-deployed-28-staff",
+   "src": "WHO Africa",
+   "feed": "WHO Africa",
+   "cat": "who",
+   "date": "2026-11-21T13:39:42+00:00",
+   "summary": "Ethiopia launches polio vaccination campaign to protect more than 11 million children: WHO deployed 28 staff to support the vaccination campaign gebremichaela@… Sat, 21/11/2026 - 14:39 21 November 2026",
+   "domain": "afro.who.int",
+   "inhoud": 16,
+   "score": 19,
+   "also": [
+    {
+     "src": "zawya.com",
+     "title": "Ethiopia launches polio vaccination campaign to protect more than 11 million children - Zawya",
+     "url": "https://www.zawya.com/en/press-release/africa-press-releases/ethiopia-launches-polio-vaccination-campaign-to-protect-more-than-11-million-children-world-health-organization-who-deployed-28-staff-to-support-the-vaccination-campaign-2443001"
+    }
+   ],
+   "outlets": 2
   },
   {
    "title": "For three decades, Mamadou Camara has fought sleeping sickness in Guinea’s mangroves.",
@@ -1469,7 +1564,7 @@
    "summary": "... World Health Organization's Ebola emergency committee and visiting professor at the ⁠Geneva Graduate Institute ​in Switzerland. Catherine ...",
    "domain": "sightmagazine.com.au",
    "inhoud": 10,
-   "score": 12
+   "score": 10
   },
   {
    "title": "Ohio measles cases up 700% from 2025 as US loses elimination status - Centre Daily Times",
@@ -2078,7 +2173,15 @@
    "summary": "The latest antimicrobial resistance surveillance report for England, published in November, shows that although the pace of increase in resistance has slowed, more than 400 antibiotic resistant infections were reported every week in England in 2025.12 Older adults and people living in deprived commu",
    "domain": "bmj.com",
    "inhoud": 14,
-   "score": 17
+   "score": 17,
+   "also": [
+    {
+     "src": "Down To Earth",
+     "title": "AMR Awareness Week: Building an innovation-driven ‘iron dome’ against antimicrobial resistance",
+     "url": "https://www.downtoearth.org.in/health/amr-awareness-week-building-an-innovation-driven-iron-dome-against-antimicrobial-resistance"
+    }
+   ],
+   "outlets": 2
   },
   {
    "title": "How to make the most of your paediatric emergency department placement",
@@ -2213,6 +2316,20 @@
    "domain": "dailysabah.com",
    "inhoud": 12,
    "score": 12
+  },
+  {
+   "title": "Délégué Administration et finance (M/F/D) Madagascar - CDD - 40h (7045)",
+   "url": "https://reliefweb.int/job/4239215/delegue-administration-et-finance-mfd-madagascar-cdd-40h-7045",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-20T08:43:25+00:00",
+   "summary": "Délégué Administration et finance (M/F/D) Madagascar - CDD - 40h (7045) ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -20,
+   "score": -16,
+   "gnews": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQNDlBanpIb2V6ZmpmdVNMc2piZFpxaGl1MXh2RHhsaDVkd3FsTjZDdVBENjZGNXpYcjQxY1hTaUdxNHhyak1jYm1abzEwWjVKTnRkN3RadEVILVM2ajlnaFdoa0E1d0FySEphXzB0NE9FQ0FoWU9NbS1SZmtrUEp3ZTNJUnhlTVZreHd2bDMtejlGREh3VWF0NGhiVQ?oc=5"
   },
   {
    "title": "Letter | Congress must fund health workforce | Letters to the Editor | captimes.com",
@@ -2412,19 +2529,6 @@
    "lead": "https://informat.ro/en/current-affairs/two-activists-threw-ash-at-eu-commissioner-oliver-varhelyi-149225"
   },
   {
-   "title": "Illinois measles numbers remain below recent peak, while the U.S. loses elimination status",
-   "url": "https://www.wpsdlocal6.com/health/illinois-measles-numbers-remain-below-recent-peak-while-the-u-s-loses-elimination-status/article_7585f706-abcc-4495-97c8-985af6b4cf87.html",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-20T00:00:00+00:00",
-   "summary": "In the U.S., measles had been eliminated since 2000. The Pan American Health Organization, an arm of the World Health Organization , also removed ...",
-   "domain": "wpsdlocal6.com",
-   "inhoud": 12,
-   "score": 12,
-   "lead": "https://www.kff.org/quick-insights/a-step-back-for-u-s-public-health-the-u-s-is-likely-to-lose-its-measles-elimination-status/"
-  },
-  {
    "title": "STAT+: Big drugmakers tell House committee they will halt clinical trials at some hospitals in China",
    "url": "https://www.statnews.com/pharmalot/2026/11/19/china-pharma-biotech-clinical-trials-security-risk-patents-drug-development/?utm_campaign=rss",
    "src": "STAT News",
@@ -2485,18 +2589,6 @@
    "score": 7
   },
   {
-   "title": "“Narco-Terrorism”: Key Challenge to a Global Drug Policy Based on Health and Human Rights",
-   "url": "https://www.hhrjournal.org/2026/11/19/narco-terrorism-key-challenge-to-a-global-drug-policy-based-on-health-and-human-rights/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-19T23:08:05+00:00",
-   "summary": "[22] Framing fentanyl, which is on the World Health Organization's Model List of Essential Medicines, as a security issue instead of a public health ...",
-   "domain": "hhrjournal.org",
-   "inhoud": 4,
-   "score": 4
-  },
-  {
    "title": "Opinion: The U.S. lost measles elimination status. The next Congress should help restore it",
    "url": "https://www.statnews.com/2026/11/19/measles-elimination-status-congress-should-prioritize-restoration/?utm_campaign=rss",
    "src": "STAT News",
@@ -2508,18 +2600,6 @@
    "inhoud": 10,
    "score": 11,
    "lead": "https://www.kff.org/quick-insights/a-step-back-for-u-s-public-health-the-u-s-is-likely-to-lose-its-measles-elimination-status/"
-  },
-  {
-   "title": "CDA urges dentists to prescribe antibiotics only when needed - Oral Health Group",
-   "url": "https://www.oralhealthgroup.com/dental-governance-regulations/cda-urges-dentists-to-prescribe-antibiotics-only-when-needed-during-world-amr-awareness-week-1004000370/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-19T22:25:58+00:00",
-   "summary": "The Canadian Dental Association highlights responsible antibiotic prescribing in dentistry during World AMR Awareness Week, Nov. 18–24.",
-   "domain": "oralhealthgroup.com",
-   "inhoud": 15,
-   "score": 15
   },
   {
    "title": "Study raises doubts about combining vaccine, monoclonal antibody to protect against malaria",
@@ -2598,18 +2678,6 @@
    "inhoud": 4,
    "score": 4,
    "lead": "https://www.wkow.com/news/top-stories/measles-reaches-dane-co-after-exposure-at-madisons-unitypoint-health-meriter-hospital-er/article_62882ad6-7e76-4038-9a8f-fe68d9f27f90.html"
-  },
-  {
-   "title": "Science Talk: The World Report on Promoting the Health of Refugees and Migrants",
-   "url": "https://unu.edu/inweh/event/science-talk-world-report-promoting-health-refugees-and-migrants",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-19T21:11:16+00:00",
-   "summary": "... Health (UNU-INWEH) and Technical Officer (Public Health and Migration) at the World Health Organization , will draw on global evidence from the World ...",
-   "domain": "unu.edu",
-   "inhoud": 5,
-   "score": 8
   },
   {
    "title": "Vaccine hesitancy spills over to pet owners",
@@ -3673,18 +3741,6 @@
    "score": 6
   },
   {
-   "title": "Are antibiotic developers catching up with European regulators?",
-   "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.46.2600528",
-   "src": "Eurosurveillance",
-   "feed": "Eurosurveillance",
-   "cat": "promed",
-   "date": "2026-11-19T00:00:00+00:00",
-   "summary": "The need to develop new antibiotics has been acknowledged as a clinical and public health priority for decades. To facilitate development of these critical medicines, the European Medicines Agency (EMA) provides several regulatory tools, including Scientific Advice (SA), the Priority Medicines (PRIM",
-   "domain": "eurosurveillance.org",
-   "inhoud": 9,
-   "score": 11
-  },
-  {
    "title": "Autochthonous dengue outbreak spreading from a holiday site to visitors’ places of residence, Tuscany, Italy, August to October 2026",
    "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.46.2600909",
    "src": "Eurosurveillance",
@@ -3695,6 +3751,18 @@
    "domain": "eurosurveillance.org",
    "inhoud": 10,
    "score": 12
+  },
+  {
+   "title": "Are antibiotic developers catching up with European regulators?",
+   "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.46.2600528",
+   "src": "Eurosurveillance",
+   "feed": "Eurosurveillance",
+   "cat": "promed",
+   "date": "2026-11-19T00:00:00+00:00",
+   "summary": "The need to develop new antibiotics has been acknowledged as a clinical and public health priority for decades. To facilitate development of these critical medicines, the European Medicines Agency (EMA) provides several regulatory tools, including Scientific Advice (SA), the Priority Medicines (PRIM",
+   "domain": "eurosurveillance.org",
+   "inhoud": 9,
+   "score": 11
   },
   {
    "title": "Detection of dengue virus in Aedes albopictus following imported dengue cases and absence of detections after vector control, Ticino Canton, Switzerland, August to September 2026",
@@ -4288,6 +4356,20 @@
    "domain": "devex.com",
    "inhoud": 11,
    "score": 16
+  },
+  {
+   "title": "Call for Experts: Thematic Evaluation of Plan International Belgium’s 5-Year Programme (2022–2026)",
+   "url": "https://reliefweb.int/job/4238909/call-experts-thematic-evaluation-plan-international-belgiums-5-year-programme-2022-2026",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-18T13:42:21+00:00",
+   "summary": "Call for Experts: Thematic Evaluation of Plan International Belgium’s 5-Year Programme (2022–2026) ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -20,
+   "score": -16,
+   "gnews": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObHdVS3FPeWZ1M2tFaEhySmVjUTgxTTJ0a05QV1dyWXJzSDVuODlnT1VjZVRadm9RWHlXeVJLQ01UZ2szTmJBbjA5dzQ4b1hzX2tPU0ppQlIxR1FHYlpWcXNoWXNQTUJQcWZvTWVmb1kzSDRyRXRabU84V0RJMUtneHhUZnZVRHdoQkFWMXNweUxZY3NJdUdndnpjTEhkTG9xb0ZYUnZnTlNxZnBVVTRzb2FiV0k0RDBhOGk1eEln?oc=5"
   },
   {
    "title": "How AI is helping reinforce polio surveillance in Africa",
@@ -5028,7 +5110,7 @@
    "domain": "clickondetroit.com",
    "inhoud": 13,
    "score": 13,
-   "lead": "https://healthpolicy-watch.news/three-countries-lose-measles-free-status/"
+   "lead": "https://www.kff.org/quick-insights/a-step-back-for-u-s-public-health-the-u-s-is-likely-to-lose-its-measles-elimination-status/"
   },
   {
    "title": "Measles outbreak confirmed in southwest Michigan",
@@ -5240,14 +5322,7 @@
    "domain": "healthpolicy-watch.news",
    "inhoud": 11,
    "score": 15,
-   "also": [
-    {
-     "src": "clickondetroit.com",
-     "title": "US loses its measles-free status. Here's how the Trump administration has responded to outbreaks",
-     "url": "https://www.clickondetroit.com/health/2026/11/17/measles-is-surging-in-the-us-heres-how-the-trump-administration-has-responded/"
-    }
-   ],
-   "outlets": 2
+   "lead": "https://www.kff.org/quick-insights/a-step-back-for-u-s-public-health-the-u-s-is-likely-to-lose-its-measles-elimination-status/"
   },
   {
    "title": "Toxic Pollutants Threaten Reproductive Health But Ideological Rift Stalls Gender Action Plan at UN Chemicals Summit",
@@ -5312,6 +5387,11 @@
    "score": 18,
    "also": [
     {
+     "src": "healthpolicy-watch.news",
+     "title": "United States, Mexico and Bolivia Lose Measles-Free Status",
+     "url": "https://healthpolicy-watch.news/three-countries-lose-measles-free-status/"
+    },
+    {
      "src": "ctvnews.ca",
      "title": "After Canada, the U.S. loses measles elimination status - CTV News",
      "url": "https://www.ctvnews.ca/health/article/measles-elimination-status-wiped-off-the-map-in-the-americas/"
@@ -5322,14 +5402,14 @@
      "url": "https://www.udel.edu/faculty-staff/media-experts/spotlight?postid=12194"
     },
     {
+     "src": "clickondetroit.com",
+     "title": "US loses its measles-free status. Here's how the Trump administration has responded to outbreaks",
+     "url": "https://www.clickondetroit.com/health/2026/11/17/measles-is-surging-in-the-us-heres-how-the-trump-administration-has-responded/"
+    },
+    {
      "src": "bmj.com",
      "title": "US loses measles elimination status as “once beaten” disease sweeps nation",
      "url": "http://www.bmj.com/content/395/bmj-2026-101505.short?rss=1"
-    },
-    {
-     "src": "wpsdlocal6.com",
-     "title": "Illinois measles numbers remain below recent peak, while the U.S. loses elimination status",
-     "url": "https://www.wpsdlocal6.com/health/illinois-measles-numbers-remain-below-recent-peak-while-the-u-s-loses-elimination-status/article_7585f706-abcc-4495-97c8-985af6b4cf87.html"
     },
     {
      "src": "statnews.com",
@@ -5342,7 +5422,7 @@
      "url": "https://www.centredaily.com/news/nation-world/national/article318177374.html"
     }
    ],
-   "outlets": 7
+   "outlets": 8
   },
   {
    "title": "An African Institution Will Not Be Put on Trial by Anonymous Sources and Politically Motivated Journalists",
@@ -5555,6 +5635,20 @@
    "domain": "journals.plos.org",
    "inhoud": 1,
    "score": 4
+  },
+  {
+   "title": "BODMANDO'S CALL FOR REMOTE EVALUATION CONSULTANTS",
+   "url": "https://reliefweb.int/job/4238704/bodmandos-call-remote-evaluation-consultants",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-17T13:56:12+00:00",
+   "summary": "BODMANDO'S CALL FOR REMOTE EVALUATION CONSULTANTS ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -36,
+   "score": -32,
+   "gnews": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWTdQQUlmMS0zRHpOM1ZfSVJxUGlaMXc4SVA5Znd4US1jRnRfamF1NTZXa2JxSnRtQjRZQ0NPdk81ZjFJTlRYVUNyREhyNGQtNjBNMnBXSF9UY0d4QVdWSkRtRW4zbWhBd3IzaEh4RVFfN0E0ajhxYVdSRTZzVEhQV0t6Qng?oc=5"
   },
   {
    "title": "Winter rains deepen Gaza crisis amid restricted access and aid cuts",
@@ -6359,8 +6453,7 @@
    "domain": "newscord.org",
    "inhoud": 6,
    "score": 8,
-   "gnews": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPVzhra3Y5bkY2OHRlM3AwempqUnhzRlpYcUhKRmpzbVhiSFRuZkZVVVlhWDFubVhYRXVhbGpGWm42RXV2S1hrcXg0NUZkbkQ4bmdQOC1fLUlObE9jbG9ZSVlJUHU0dnZjY1hUeVcxY0VYUVJHZVBpaG53SGdJaExVdHNOc0FTQUJOcDFHSkhtTkwzdUF6N2g1NlpKc3BuRXRUS1hnZWk0ckJ3UmNPZzJkM3ZMMkRVNEk5WmhzQzhBYzEwY25IYndWUjVxLXJ6VUpacWRvbmtWV1hXRnpU?oc=5",
-   "lead": "https://www.aljazeera.com/news/2026/11/16/un-health-agency-sounds-alarm-on-antimicrobial-resistance-threat"
+   "gnews": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPVzhra3Y5bkY2OHRlM3AwempqUnhzRlpYcUhKRmpzbVhiSFRuZkZVVVlhWDFubVhYRXVhbGpGWm42RXV2S1hrcXg0NUZkbkQ4bmdQOC1fLUlObE9jbG9ZSVlJUHU0dnZjY1hUeVcxY0VYUVJHZVBpaG53SGdJaExVdHNOc0FTQUJOcDFHSkhtTkwzdUF6N2g1NlpKc3BuRXRUS1hnZWk0ckJ3UmNPZzJkM3ZMMkRVNEk5WmhzQzhBYzEwY25IYndWUjVxLXJ6VUpacWRvbmtWV1hXRnpU?oc=5"
   },
   {
    "title": "Urinary Schistosomiasis Affects Nearly Half of Displaced Children in Sudan Camp",
@@ -6374,27 +6467,6 @@
    "inhoud": 4,
    "score": 0,
    "gnews": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQYWJjS013dTBabzhIQjJrRmtVSXd5QUR2UFZpZHYzR0pHUmF0MzFXOEFLT3ZPSEp2TmRZUTB0cVhaWFFuWHJySWJNM1E5el9GNHl0VGRPZ19RNEh2TVo0b1dfc0JJNURTUzh5NHFtRmdrYUxxaXVvZ05FRnVoYXVxdW0xUWNBWm12VkRDTnl0Y1dWdUM1QjhzVU1OdWFRQU9VbE9NVUcxMA?oc=5"
-  },
-  {
-   "title": "Antimicrobial resistance could kill 39 million people over 25 years: WHO",
-   "url": "https://www.aljazeera.com/news/2026/11/16/un-health-agency-sounds-alarm-on-antimicrobial-resistance-threat",
-   "src": "Al Jazeera",
-   "feed": "AMR policy & research",
-   "cat": "amr",
-   "date": "2026-11-16T10:00:27+00:00",
-   "summary": "Antimicrobial resistance could kill 39 million people over 25 years: WHO Al Jazeera",
-   "domain": "aljazeera.com",
-   "inhoud": 6,
-   "score": 10,
-   "gnews": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbmdCb2FuNEFzM2tEQTlLT3dYS01wc19LT1FwcmJlak51X2lxcC01QWVORE54VVpJZjFHem9PZGlwS2ota1hFVDd2YjMzTEExVi1fVmJNenVua0QwTkRYanJtRHJpcHFTR1VvcFcyQk1VMzcwd2tIWXdoeF9NUmZ6bkhhOXk3YTJrRlo2bkYtRjVKQi1uNGYtVWpOUjFtWVpmaFlRTDZxSUVpUdIBrwFBVV95cUxOWGFVcEl4TFBLdkhhcjBUZUZGZkZJdk1EU2hiUmI2TGFlUUlxc2pLb2pXbFhnZ2pIdGx5TklMTXVFazFOekxSNDJvM0EzNzVGTHZKWUtVSUZ3THpHaUhoOEFoNGVlQ2ZsT012THc2cThwd21hVGhIZ0dudjNiTkxGbmlld2RFV0xJbzhXdmNfUGFGRHNMbFplYVRXZG56eWFOM1BkSWw1UnZ2S2xlQXpN?oc=5",
-   "also": [
-    {
-     "src": "NewsCord",
-     "title": "WHO Warns Antimicrobial Resistance Could Kill 39 Million Over 25 Years: 7 outlets compared",
-     "url": "https://newscord.org/article/who-warns-antimicrobial-resistance-could-kill-39-million-over-25-years--Story_20261116_Antimicrobialresista5e6a7a66"
-    }
-   ],
-   "outlets": 2
   },
   {
    "title": "Eritrea eliminates trachoma: a major public health milestone",
@@ -6478,7 +6550,7 @@
    "src": "CNN",
    "feed": "SRHR news",
    "cat": "srhr",
-   "date": "2026-11-14T12:05:27+00:00",
+   "date": "2026-11-14T08:00:00+00:00",
    "summary": "The Trump administration is diverting billions in health funding away from low-income countries, defying Congress’ plans CNN",
    "domain": "cnn.com",
    "inhoud": 2,
