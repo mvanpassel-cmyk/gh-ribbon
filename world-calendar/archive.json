@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "note": "Past events of the World Calendar. Filled automatically from events.json; never pruned.",
   "events": [
     {"start": "2026-01-01", "cat": "eu", "title": "Cyprus takes over the EU Council presidency", "place": "EU", "status": "confirmed", "src": "https://www.consilium.europa.eu/en/council-eu/presidency-council-eu/"},
@@ -181,6 +181,7 @@
     {"start": "2026-11-17", "end": "2026-11-20", "cat": "health", "title": "Union World Conference on Lung Health", "place": "Rio de Janeiro, Brazil", "status": "confirmed", "src": "https://worldlunghealth.org/"},
     {"start": "2026-11-18", "end": "2026-11-19", "cat": "summit", "title": "APEC Economic Leaders' Meeting", "place": "Shenzhen, China", "note": "Hosted by China.", "status": "confirmed", "src": "https://www.lg.gov.cn/english/news/latestnews/content/post_12588327.html", "country": "CN"},
     {"start": "2026-11-19", "cat": "health", "title": "WHO Director-General election — first candidates' forum", "place": "Geneva", "note": "Seven candidates; webcast", "status": "confirmed", "src": "https://www.who.int/news/item/29-10-2026-announcement-of-candidates-for-the-position-of-who-director-general"},
+    {"start": "2026-11-21", "cat": "partners", "title": "EU–Indonesia CEPA — formal signature", "place": "Indonesia / EU", "note": "EU Council authorised signature on 18 Nov; signing set for 21 Nov; entry into force aimed for 1 Jan 2027", "status": "confirmed", "src": "https://business-indonesia.org/news/indonesia-and-eu-confirm-signing-of-trade-agreement-on-21-november-2026", "country": "ID"},
     {"start": "2026-11-21", "cat": "partners", "title": "EU–Indonesia CEPA — formal signature targeted", "place": "Indonesia / EU", "note": "Indonesia targets 21 Nov signing; entry into force aimed for 1 Jan 2027", "status": "tentative", "src": "https://en.antaranews.com/news/440543/indonesia-targets-nov-21-signing-for-ieu-cepa-trade-pact-airlangga", "country": "ID"}
   ]
 }
