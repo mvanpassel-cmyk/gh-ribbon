@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T19:27:38+00:00",
+ "generated": "2026-11-26T02:57:02+00:00",
  "feeds_ok": 62,
  "feeds_tot": 62,
  "status": {
@@ -41,10 +41,11 @@
   },
   "WHO Africa": {
    "ok": true,
-   "msg": "12 items",
+   "msg": "4 items (via kandidaat 2)",
    "cat": "who",
-   "via": 1,
-   "fallback": false
+   "via": 2,
+   "fallback": true,
+   "errors": "[1] HTTPError: HTTP Error 502: Bad Gateway"
   },
   "WHO Europe": {
    "ok": true,
@@ -90,7 +91,7 @@
   },
   "ReliefWeb Health": {
    "ok": true,
-   "msg": "10 items (via kandidaat 2)",
+   "msg": "8 items (via kandidaat 2)",
    "cat": "emerg",
    "via": 2,
    "fallback": true,
@@ -222,7 +223,7 @@
   },
   "Council of the EU (health)": {
    "ok": true,
-   "msg": "9 items",
+   "msg": "10 items",
    "cat": "eu",
    "via": 1,
    "fallback": true
@@ -450,13 +451,277 @@
   },
   "Grand Challenges": {
    "ok": true,
-   "msg": "9 items",
+   "msg": "8 items",
    "cat": "news",
    "via": 1,
    "fallback": true
   }
  },
  "items": [
+  {
+   "title": "BHEKISISA CROSSWORD #24",
+   "url": "https://bhekisisa.org/bhekisisa-crossword/2026-11-26-bhekisisa-crossword-24/",
+   "src": "Bhekisisa",
+   "feed": "Bhekisisa",
+   "cat": "news",
+   "date": "2026-11-26T02:30:06+00:00",
+   "summary": "From health policy to the people behind the stories, our crossword takes you through Bhekisisa’s archive one clue at a time. How many can you solve without looking up the answers? The post BHEKISISA CROSSWORD #24 appeared first on Bhekisisa .",
+   "domain": "bhekisisa.org",
+   "inhoud": 0,
+   "score": 2
+  },
+  {
+   "title": "Can a protection order keep you safe? New data, a step-by-step guide and the myths even police believe",
+   "url": "https://bhekisisa.org/health-news-south-africa/2026-11-26-can-a-protection-order-keep-you-safe-new-data-a-step-by-step-guide-and-the-myths-even-police-believe/",
+   "src": "Bhekisisa",
+   "feed": "Bhekisisa",
+   "cat": "news",
+   "date": "2026-11-26T02:30:00+00:00",
+   "summary": "A new South African study shows that only about one in five women who had grounds to apply for a protection order did so. Use our interactive graphics to explore the numbers, find out how to get a protection order and discover which things even police officers and court officials sometimes get wrong",
+   "domain": "bhekisisa.org",
+   "inhoud": 0,
+   "score": 2
+  },
+  {
+   "title": "World AMR Awareness Week 2026 Puts Prevention First as Drug-Resistant Infections Keep Rising",
+   "url": "https://www.geneonline.com/world-amr-awareness-week-2026-puts-prevention-first-as-drug-resistant-infections-keep-rising/",
+   "src": "GeneOnline",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-26T02:18:24+00:00",
+   "summary": "World AMR Awareness Week 2026 Puts Prevention First as Drug-Resistant Infections Keep Rising GeneOnline",
+   "domain": "geneonline.com",
+   "inhoud": 10,
+   "score": 12,
+   "gnews": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaW1Xa1B6aGQ3MTZoQm5fQWUtTmVnLUN5VlNSZW5qOWZweVRFVjBtUzVGM3pJRGRfUHJOS1k0YlRpY0J2N2JPUV9BdXNYc21hOU52aUxodGg3U1ZaRER3RjRYZVNNMXduZllvWi1ud2dmS2ZUU19mcGlCVl9SbUV6QmZRT1dqUEFNV0xYOV81cm90X3VuV21xVVNUbUxMQ2dLNGtiV1hENWoxV2hiSThzOE9RSWdDa3JxVVZ1TQ?oc=5"
+  },
+  {
+   "title": "Electronic health record algorithm can identify drug-resistant epilepsy",
+   "url": "https://medicalxpress.com/news/2026-11-electronic-health-algorithm-drug-resistant.html",
+   "src": "Medical Xpress",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-26T01:40:06+00:00",
+   "summary": "Electronic health record algorithm can identify drug-resistant epilepsy Medical Xpress",
+   "domain": "medicalxpress.com",
+   "inhoud": 0,
+   "score": -1,
+   "gnews": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVDVPVnhOeUhMdGEtWC16QVkzSEV1bm5XQ1lrSFVYVTMwdHBtYW5ORlh1VHpTcEpmS2xDSWkycmEwWnp0VEpRS3pzalJOdUxOVFEzUnFublR2eU1XWFJfZjZYNWg2eS1KbEhER05RYzE1bGF2T2c5UlBtUDF6S080eWhrVW5TTnV6MDJsTHFsVQ?oc=5"
+  },
+  {
+   "title": "Are we ready for the next pandemic? - News | Duke Kunshan University",
+   "url": "https://news.dukekunshan.edu.cn/campus-news/are-we-ready-for-the-next-pandemic/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-26T01:35:28+00:00",
+   "summary": "Gina Samaan, regional emergency director at the World Health Organization ... health and director of the Global Health Research Center at DKU. A ...",
+   "domain": "news.dukekunshan.edu.cn",
+   "inhoud": 9,
+   "score": 12
+  },
+  {
+   "title": "The Race For The WHO's Top Job, And Botswana's Unexpected Contender - Forbes Africa",
+   "url": "https://www.forbesafrica.com/current-affairs/2026/11/25/africa-is-going-to-be-the-land-of-innovation-the-race-for-the-whos-top-job-and-botswanas-unexpected-contender",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-26T01:27:03+00:00",
+   "summary": "Following two terms at the helm, Dr Tedros Ghebreyesus's time as Director-General of the World Health Organization (WHO) is set to conclude next ...",
+   "domain": "forbesafrica.com",
+   "inhoud": 6,
+   "score": 6
+  },
+  {
+   "title": "PAHO calls for stronger surveillance amid increase in mpox cases in the Americas",
+   "url": "https://www.paho.org/en/news/25-11-2026-paho-calls-stronger-surveillance-amid-increase-mpox-cases-americas",
+   "src": "PAHO",
+   "feed": "PAHO",
+   "cat": "who",
+   "date": "2026-11-26T00:46:18+00:00",
+   "summary": "PAHO calls for stronger surveillance amid increase in mpox cases in the Americas Cristina Mitchell 25 Nov 2026",
+   "domain": "paho.org",
+   "inhoud": 8,
+   "score": 11
+  },
+  {
+   "title": "Poland's health spending and EU staff shortages",
+   "url": "https://ceo.com.pl/en/poland-health-spending-eu-staff-shortage-2026/",
+   "src": "CEO Magazyn",
+   "feed": "EU health policy",
+   "cat": "eu",
+   "date": "2026-11-25T23:37:09+00:00",
+   "summary": "Poland's health spending and EU staff shortages CEO Magazyn",
+   "domain": "ceo.com.pl",
+   "inhoud": 0,
+   "score": 3,
+   "gnews": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9jM2lIQlZlRDQwbFJxMTNKTGY0TE5jNTlUY1BXMGJ5SWlBQjFjaXRfaE5lLXhsLV94UXJvekoxZlZBaW41YXZFUlowMUMzd3RWTnF4V2d5UG93dUxXa2xTODFCTTg0VURlby1weEdWczJUOUE3U0JR?oc=5"
+  },
+  {
+   "title": "[Review] Myocardial injury with non-obstructive coronary arteries: diagnostic pathways and stratified treatment",
+   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01640-5/fulltext?rss=yes",
+   "src": "The Lancet",
+   "feed": "The Lancet",
+   "cat": "journal",
+   "date": "2026-11-25T23:30:01+00:00",
+   "summary": "Myocardial injury with non-obstructive coronary arteries (MINOCA), formerly known as myocardial infarction with non-obstructive coronary arteries, challenges the long-standing assumption that myocardial infarction is synonymous with obstructive coronary artery disease. Rather than a paradox, MINOCA ",
+   "domain": "thelancet.com",
+   "inhoud": 0,
+   "score": 1
+  },
+  {
+   "title": "USAID files go public, igniting a firestorm over disinformation work",
+   "url": "https://www.devex.com/news/usaid-files-go-public-igniting-a-firestorm-over-disinformation-work-113981",
+   "src": "Devex Global Health",
+   "feed": "Devex Global Health",
+   "cat": "news",
+   "date": "2026-11-25T22:09:10+00:00",
+   "summary": "The Trump administration says the 1.1GB release shows USAID was \"weaponized\" by previous administrations. Others aren't so sure.",
+   "domain": "devex.com",
+   "inhoud": 0,
+   "score": 5
+  },
+  {
+   "title": "Exclusive: Ex-Administrator Samantha Power responds to USAID file release",
+   "url": "https://www.devex.com/news/exclusive-ex-administrator-samantha-power-responds-to-usaid-file-release-113982",
+   "src": "Devex Global Health",
+   "feed": "Devex Global Health",
+   "cat": "news",
+   "date": "2026-11-25T21:37:57+00:00",
+   "summary": "USAID's last administrator told Devex that the recently released files were a \"baffling hodge-podge chosen by people who will do anything to avoid taking responsibility for their lethal mistakes.\"",
+   "domain": "devex.com",
+   "inhoud": 6,
+   "score": 11
+  },
+  {
+   "title": "Introducing the Global Health AI Benchmarks - The Agency Fund",
+   "url": "https://theagencyfund.substack.com/p/introducing-the-global-health-ai",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-25T21:31:30+00:00",
+   "summary": "Health organizations around the world now use AI to communicate with users, support health workers, and help doctors reply to patients. But efforts to ...",
+   "domain": "theagencyfund.substack.com",
+   "inhoud": 4,
+   "score": 4
+  },
+  {
+   "title": "Why Medicare’s 2027 physician pay changes worry some specialists",
+   "url": "https://www.statnews.com/2026/11/25/medicare-physician-fee-schedule-change-worry-some-specialists/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-11-25T21:28:53+00:00",
+   "summary": "Cuts to Medicare physician payment rates for certain same-day services could impact some specialists more than others.",
+   "domain": "statnews.com",
+   "inhoud": -6,
+   "score": -5
+  },
+  {
+   "title": "STAT+: FDA approves Cogent’s drug for rare stomach cancer",
+   "url": "https://www.statnews.com/2026/11/25/biotech-news-fda-approves-cogents-drug-for-rare-stomach-cancer/?utm_campaign=rss",
+   "src": "STAT News",
+   "feed": "STAT News",
+   "cat": "news",
+   "date": "2026-11-25T20:44:15+00:00",
+   "summary": "Cogent Biosciences won FDA clearance for its stomach cancer treatment, in combination with a much older drug from Pfizer called Sutent.",
+   "domain": "statnews.com",
+   "inhoud": -12,
+   "score": -11
+  },
+  {
+   "title": "New inhibitor restores antibiotic activity against drug-resistant bacteria",
+   "url": "https://phys.org/news/2026-11-inhibitor-antibiotic-drug-resistant-bacteria.html",
+   "src": "Phys.org",
+   "feed": "AMR policy & research",
+   "cat": "amr",
+   "date": "2026-11-25T20:40:09+00:00",
+   "summary": "New inhibitor restores antibiotic activity against drug-resistant bacteria Phys.org",
+   "domain": "phys.org",
+   "inhoud": 4,
+   "score": 6,
+   "gnews": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTUc3UGdWVzN2Skc5cTF3eUQzRG1lTTVrTHAyNm9lVF9SdWp6RXl0c2doM2ZRU0xTbXFXck9WNjRweGFGd3NGemk0bEE5U251Y2gyUURHMWN0RjRGbzV3OWh1UmpXZC0tb0ttUzZvSEJVbm5jRFVCQzF5R0xwSi1Oa3pHNU1QQQ?oc=5"
+  },
+  {
+   "title": "Why Philips Foundation stopped relying on grants alone",
+   "url": "https://www.devex.com/news/why-philips-foundation-stopped-relying-on-grants-alone-113938",
+   "src": "Devex Global Health",
+   "feed": "Devex Global Health",
+   "cat": "news",
+   "date": "2026-11-25T20:19:10+00:00",
+   "summary": "Grants still take about two-thirds of its budget. Head Bahaa Eddine Sarroukh explains why the corporate foundation now also invests in early-stage ventures, and what it looks for in grants.",
+   "domain": "devex.com",
+   "inhoud": 0,
+   "score": 5
+  },
+  {
+   "title": "South Africa's Biovac aims to dramatically increase vaccine production with help from an EU loan",
+   "url": "https://www.audacy.com/wccoradio/news/world/vaccines-pharma-south-africa-biovac-03f068779922eb1108403baf9872ae78",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-25T20:09:38+00:00",
+   "summary": "The World Health Organization reported more than 7,000 cholera deaths in Africa last year, the most in more than two decades. Cholera vaccination ...",
+   "domain": "audacy.com",
+   "inhoud": 10,
+   "score": 11
+  },
+  {
+   "title": "Progress in fighting malaria has slowed. These experts have ideas on how to kickstart it.",
+   "url": "https://hsph.harvard.edu/news/progress-in-fighting-malaria-has-slowed-these-experts-have-ideas-on-how-to-kickstart-it/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-25T20:07:21+00:00",
+   "summary": "Opening the event, Dyann Wirth, Richard Pearson Strong Professor of Infectious Diseases, noted that, according to the World Health Organization's most ...",
+   "domain": "hsph.harvard.edu",
+   "inhoud": 4,
+   "score": 7
+  },
+  {
+   "title": "Fort Hood Shooter Asks Judge to Delay His Execution by Firing Squad",
+   "url": "https://www.nytimes.com/2026/11/25/us/nidal-malik-hasan-fort-hood-execution-stay.html",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-25T19:45:23+00:00",
+   "summary": "State of Global Health Aid · Approval Rating. Advertisement. SKIP ... He expressed no remorse for his actions and told a military mental health ...",
+   "domain": "nytimes.com",
+   "inhoud": 4,
+   "score": 9
+  },
+  {
+   "title": "Low-cost, generic HIV prevention injection arrives in Africa",
+   "url": "https://www.devex.com/news/low-cost-generic-hiv-prevention-injection-arrives-in-africa-113978",
+   "src": "Devex Global Health",
+   "feed": "Devex Global Health",
+   "cat": "news",
+   "date": "2026-11-25T19:31:27+00:00",
+   "summary": "Both the Global Fund to Fight AIDS, Tuberculosis and Malaria and the Clinton Health Access Initiative have announced deliveries of the generic form of lenacapavir to Zambia.",
+   "domain": "devex.com",
+   "inhoud": 17,
+   "score": 22,
+   "also": [
+    {
+     "src": "reuters.com",
+     "title": "First generic HIV drug shipments arrive in Africa, Global Fund says | Reuters",
+     "url": "https://www.reuters.com/legal/litigation/first-generic-hiv-drug-shipments-arrive-africa-global-fund-says-2026-11-25/"
+    }
+   ],
+   "outlets": 2
+  },
+  {
+   "title": "Can AI solve poverty?",
+   "url": "https://www.devex.com/news/can-ai-solve-poverty-113955",
+   "src": "Devex Global Health",
+   "feed": "Devex Global Health",
+   "cat": "news",
+   "date": "2026-11-25T19:25:35+00:00",
+   "summary": "Opinion: AI can help to improve human lives — but responsibility cannot be outsourced to companies whose primary aim is profit.",
+   "domain": "devex.com",
+   "inhoud": 0,
+   "score": 5
+  },
   {
    "title": "Duke Global Mental Health Conference - UNC Gillings School of Public Health",
    "url": "https://sph.unc.edu/event/duke-global-mental-health-conference/",
@@ -470,34 +735,34 @@
    "score": 7
   },
   {
-   "title": "Fighting in eastern Congo forces Ebola workers to evacuate, threatening outbreak response",
-   "url": "https://www.wral.com/news/ap/ff189-fighting-in-eastern-congo-forces-ebola-workers-to-evacuate-threatening-outbreak-response/",
+   "title": "Fighting in Eastern Congo Forces Ebola Workers to Evacuate, Threatening Outbreak Response",
+   "url": "https://www.usnews.com/news/world/articles/2026-11-25/fighting-in-eastern-congo-forces-ebola-workers-to-evacuate-threatening-outbreak-response",
    "src": "WHO Alert",
    "feed": "WHO Alert",
    "cat": "who",
    "date": "2026-11-25T18:58:18+00:00",
-   "summary": "Catherine Smallwood, the World Health Organization's Ebola incident manager. Other WRAL Top Stories. Congo's Ebola outbreak has infected more than ...",
-   "domain": "wral.com",
+   "summary": "Catherine Smallwood, the World Health Organization's Ebola incident manager. Congo's Ebola outbreak has infected more than 11,700 people and ...",
+   "domain": "usnews.com",
    "inhoud": 10,
-   "score": 10,
-   "lead": "https://www.mercedsunstar.com/news/nation-world/world/article318255012.html"
+   "score": 13,
+   "lead": "https://www.reuters.com/world/africa/un-peacekeepers-evacuate-ebola-response-workers-trapped-by-fighting-eastern-2026-11-25/"
   },
   {
    "title": "UN peacekeepers evacuate Ebola response workers trapped by fighting in eastern Congo",
-   "url": "https://www.mercedsunstar.com/news/nation-world/world/article318255012.html",
+   "url": "https://www.reuters.com/world/africa/un-peacekeepers-evacuate-ebola-response-workers-trapped-by-fighting-eastern-2026-11-25/",
    "src": "WHO Alert",
    "feed": "WHO Alert",
    "cat": "who",
    "date": "2026-11-25T18:41:43+00:00",
-   "summary": "• World Health Organization chief Tedros Adhanom Ghebreyesus said heavy fighting near a hospital in Akwe had forced health workers and aid ...",
-   "domain": "mercedsunstar.com",
+   "summary": "World Health Organization chief Tedros ​Adhanom Ghebreyesus said heavy fighting near a hospital ​in Akwe had forced health workers and aid ...",
+   "domain": "reuters.com",
    "inhoud": 11,
-   "score": 14,
+   "score": 16,
    "also": [
     {
-     "src": "wral.com",
-     "title": "Fighting in eastern Congo forces Ebola workers to evacuate, threatening outbreak response",
-     "url": "https://www.wral.com/news/ap/ff189-fighting-in-eastern-congo-forces-ebola-workers-to-evacuate-threatening-outbreak-response/"
+     "src": "usnews.com",
+     "title": "Fighting in Eastern Congo Forces Ebola Workers to Evacuate, Threatening Outbreak Response",
+     "url": "https://www.usnews.com/news/world/articles/2026-11-25/fighting-in-eastern-congo-forces-ebola-workers-to-evacuate-threatening-outbreak-response"
     }
    ],
    "outlets": 2
@@ -568,7 +833,8 @@
    "summary": "A health official conducts a rapid HIV test during the launch of ... Nov 25 (Reuters) - The first shipments of generic lenacapavir have arrived in ...",
    "domain": "reuters.com",
    "inhoud": 13,
-   "score": 18
+   "score": 18,
+   "lead": "https://www.devex.com/news/low-cost-generic-hiv-prevention-injection-arrives-in-africa-113978"
   },
   {
    "title": "Born equal into unequal circumstances - RSE hosts forum on global health challenges",
@@ -946,6 +1212,20 @@
    "domain": "unaids.org",
    "inhoud": 0,
    "score": 3
+  },
+  {
+   "title": "Yemen war: Emergency aid chief calls for access to war-hit communities",
+   "url": "https://news.un.org/en/story/2026/11/1168872",
+   "src": "UN News",
+   "feed": "UN News Health",
+   "cat": "who",
+   "date": "2026-11-25T13:23:17+00:00",
+   "summary": "Yemen war: Emergency aid chief calls for access to war-hit communities UN News",
+   "domain": "news.un.org",
+   "fallback": true,
+   "inhoud": 0,
+   "score": 5,
+   "gnews": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5VSWM1aEJkZU9xdFBMb1czYUh1SWhvU2R4RUdyQmNKSG4yM21tcFZOdzdPTmdfOWZpaGc3QVVqNXRNWFdqWUNiT0ZQVUo2Wk5ETW8xQWpOYw?oc=5"
   },
   {
    "title": "RFK Jr. weighs in on plan to detonate toxic material in Iowa",
@@ -1333,6 +1613,19 @@
    "score": 7
   },
   {
+   "title": "Spleen Imaging Accurately Predicts Esophageal Varices in Schistosomiasis Portal Hypertension",
+   "url": "https://bioengineer.org/spleen-imaging-accurately-predicts-esophageal-varices-in-schistosomiasis-portal-hypertension/",
+   "src": "Bioengineer.org",
+   "feed": "NTD news",
+   "cat": "ntd",
+   "date": "2026-11-24T23:58:49+00:00",
+   "summary": "Spleen Imaging Accurately Predicts Esophageal Varices in Schistosomiasis Portal Hypertension Bioengineer.org",
+   "domain": "bioengineer.org",
+   "inhoud": 0,
+   "score": -4,
+   "gnews": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSGNTc3NoLUpSWmsxdlNHbGZYQnliYll0ODE2b1hpMkNiQ3lxbEJhMXBPLTFFYU16VG5Xa3dTUjYxUFpkc3ZrWUYzOXRQdWtRblNFQU14d19UakpST3FoNXNCYm1pODE0aGxDeFhXVmdsbl9FMVRTSXB0czJiV0hLblRTYzNSbnllOW0xdDRZZkZad0RTdTdEUHhkUEFxSThReU40N05nVldyaFVKVUREdERwRjQ0cVRD?oc=5"
+  },
+  {
    "title": "World Aids Day 2026 - PAHO/WHO | Pan American Health Organization",
    "url": "https://www.paho.org/en/campaigns/world-aids-day-2026",
    "src": "WHO Alert",
@@ -1605,6 +1898,20 @@
    "domain": "who.int",
    "inhoud": 24,
    "score": 32
+  },
+  {
+   "title": "Security & Liaison Officer, Aleppo, Syria",
+   "url": "https://reliefweb.int/job/4239815/security-liaison-officer-aleppo-syria",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-24T18:45:09+00:00",
+   "summary": "Security & Liaison Officer, Aleppo, Syria ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -20,
+   "score": -16,
+   "gnews": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5ZUWRFcnJRVFRBeVpfX2l6T3AzWGt5V3ZrVWlpRHFyR3ZWbmg2SDhWUW01UURlNkhmOEVWb2VGNWlYem9wT2ZEZVdvZ1BGNFBDbE1OQU91MTlpYjZnVVBoa0I1X0VJVERCSE9hbDhJOWhZVTdNa0RtYW1QVQ?oc=5"
   },
   {
    "title": "US reports three bird flu cases, one death in Washington state, WHO says | Reuters",
@@ -2100,6 +2407,20 @@
    "domain": "medicalxpress.com",
    "inhoud": 7,
    "score": 7
+  },
+  {
+   "title": "Improving inclusivity in UK clinical trials through good practice in the collection and use of ethnicity data: recommendations from the INCLUDED study",
+   "url": "http://ebm.bmj.com/cgi/content/short/31/6/414?rss=1",
+   "src": "BMJ Evidence-Based Medicine",
+   "feed": "BMJ",
+   "cat": "journal",
+   "date": "2026-11-24T13:24:30+00:00",
+   "summary": "Improving inclusivity in UK clinical trials through good practice in the collection and use of ethnicity data: recommendations from the INCLUDED study BMJ Evidence-Based Medicine",
+   "domain": "ebm.bmj.com",
+   "fallback": true,
+   "inhoud": 0,
+   "score": 3,
+   "gnews": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE83R0c1WndNbVZ5QzRZM2FlaFFIWVpZR281YWp2THdzeVZIRnppYkIwSjFZZ05tdW9sQ09DTU9PRmpYMFdGUTVUV1RWMFZCNlVDaFQ3ZmdtUHY1aTh5U2d0cw?oc=5"
   },
   {
    "title": "INTERVIEW: How ready is Europe for wartime health emergencies?",
@@ -2742,7 +3063,7 @@
    "summary": "... health indicators, while the US cites political motives. Advertisement. HAVANA: World Health Organization chief Tedros Adhanom Ghebreyesus called ...",
    "domain": "international.astroawani.com",
    "inhoud": 7,
-   "score": 16
+   "score": 7
   },
   {
    "title": "In the United States, more than 2.2 Million Women Relied on Fertility Awareness-Based Methods for Pregnancy Prevention in 2022-2023, Higher Than Earlier Estimates",
@@ -2900,6 +3221,20 @@
     }
    ],
    "outlets": 2
+  },
+  {
+   "title": "Former NIH scientist has over 30 papers retracted",
+   "url": "https://www.bmj.com/content/395/bmj-2026-101565",
+   "src": "The BMJ",
+   "feed": "BMJ",
+   "cat": "journal",
+   "date": "2026-11-23T17:54:04+00:00",
+   "summary": "Former NIH scientist has over 30 papers retracted The BMJ",
+   "domain": "bmj.com",
+   "fallback": true,
+   "inhoud": 0,
+   "score": 3,
+   "gnews": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB2Z1NMQ25lbmwxU21JWXF2MTQzeDVfeHk4Zy1tdlBSclpUeVMwVDFYTlNsa1RsMWlZcEg4UUxCSFZ2NXhqVXJ2TmQ2ZWMybVJSQnBOempTbkFudkU?oc=5"
   },
   {
    "title": "What Can WHO Director-General Candidates Offer Africa?",
@@ -3490,20 +3825,15 @@
    "summary": "Heavy fighting near a hospital in Ituri province in the Democratic Republic of the Congo (DRC) has disrupted the vital work of Ebola responders and forced emergency teams to take cover for more than 24 hours.",
    "domain": "news.un.org",
    "inhoud": 10,
-   "score": 18,
+   "score": 17,
    "also": [
     {
      "src": "aljazeera.com",
      "title": "WHO chief calls for peace amid heavy fighting in Ebola-hit DR Congo region - Al Jazeera",
      "url": "https://www.aljazeera.com/news/2026/11/23/who-chief-calls-for-peace-amid-heavy-fighting-in-ebola-hit-dr-congo-region"
-    },
-    {
-     "src": "punchng.com",
-     "title": "WHO chief pleads for peace in Ebola-hit DR Congo area - Punch Newspapers",
-     "url": "https://punchng.com/who-chief-pleads-for-peace-in-ebola-hit-dr-congo-area/?amp"
     }
    ],
-   "outlets": 3
+   "outlets": 2
   },
   {
    "title": "STAT+: Kymera Therapeutics reports mid-stage eczema trial success for would-be Dupixent rival",
@@ -3799,18 +4129,6 @@
    "score": 1
   },
   {
-   "title": "Devex Debrief: In this House we say SFOPS",
-   "url": "https://www.devex.com/news/devex-debrief-in-this-house-we-say-sfops-113891",
-   "src": "Devex Global Health",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-11-23T09:20:57+00:00",
-   "summary": "Florida Rep. Lois Frankel lays out her foreign aid priorities for when Democrats take control of the U.S. Congress next year.",
-   "domain": "devex.com",
-   "inhoud": 0,
-   "score": 5
-  },
-  {
    "title": "MSF condemns attacks against civilians and a health centre in Mali",
    "url": "https://www.msf.org/msf-condemns-attacks-against-civilians-and-health-centre-mali",
    "src": "MSF",
@@ -3986,18 +4304,6 @@
    "score": 9
   },
   {
-   "title": "WHO urges HPV vaccine for girls as young as four to fight cervical cancer",
-   "url": "https://www.scmp.com/posties/kids/steam-studio/article/3374318/who-urges-hpv-vaccine-girls-young-four-fight-cervical-cancer",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-22T23:34:20+00:00",
-   "summary": "The World Health Organization's vaccine experts have recommended that countries consider routine vaccination against HPV in girls as young as four.",
-   "domain": "scmp.com",
-   "inhoud": 7,
-   "score": 12
-  },
-  {
    "title": "What's in your workplace first aid kit? - Safety+ Health Magazine",
    "url": "https://www.safetyandhealthmagazine.com/whats-in-your-workplace-first-aid-kit/",
    "src": "Health Emergency",
@@ -4020,43 +4326,6 @@
    "domain": "bioengineer.org",
    "inhoud": 10,
    "score": 4
-  },
-  {
-   "title": "WHO chief pleads for peace in Ebola-hit DR Congo area - Punch Newspapers",
-   "url": "https://punchng.com/who-chief-pleads-for-peace-in-ebola-hit-dr-congo-area/?amp",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-22T20:43:17+00:00",
-   "summary": "The head of the World Health Organisation on Sunday pleaded for peace in the epicentre of the Democratic Republic of Congo's Ebola outbreak that ...",
-   "domain": "punchng.com",
-   "inhoud": 7,
-   "score": 7,
-   "lead": "https://news.un.org/feed/view/en/story/2026/11/1168858"
-  },
-  {
-   "title": "WHO Chief Says Fighting Near Congo Ebola Outbreak Area Disrupts Response Efforts",
-   "url": "https://www.usnews.com/news/world/articles/2026-11-22/who-chief-says-fighting-near-congo-ebola-outbreak-area-disrupts-response-efforts",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-22T20:24:34+00:00",
-   "summary": "Nov 22 (Reuters) - World Health ⁠ Organization ⁠chief Tedros Adhanom ⁠Ghebreyesus said on Sunday that heavy fighting ​near a hospital in Democratic ...",
-   "domain": "usnews.com",
-   "inhoud": 13,
-   "score": 16
-  },
-  {
-   "title": "Super El Niño Fails to Spur Action as COP31 Ends in Disaster - Gizmodo",
-   "url": "https://gizmodo.com/super-el-nino-fails-to-spur-action-as-cop31-ends-in-disaster-2000843655",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-22T20:18:56+00:00",
-   "summary": "The World Health Organization declared a state of emergency on the first day of COP31, citing not just heat but rainfall, wildfire smoke ...",
-   "domain": "gizmodo.com",
-   "inhoud": 6,
-   "score": 6
   },
   {
    "title": "France arbovirus cases 2026 through November 16 - Outbreak News Today",
@@ -4182,18 +4451,6 @@
    "score": 5
   },
   {
-   "title": "'We escaped with only our lives': Fighting to give birth in war-torn Yemen | UN News",
-   "url": "https://news.un.org/en/story/2026/11/1168851",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-22T13:03:02+00:00",
-   "summary": "... health agency. In Yemen, surges in conflict have displaced over 320,000 people since August – and more than 80,000 in October alone – while more ...",
-   "domain": "news.un.org",
-   "inhoud": 4,
-   "score": 11
-  },
-  {
    "title": "Pelosi's pandemic proxy voting scheme in House ruled unconstitutional - Washington Times",
    "url": "https://www.washingtontimes.com/news/2026/nov/21/pelosis-pandemic-proxy-voting-scheme-us-house-unconstitutional-court/",
    "src": "Health Emergency",
@@ -4217,18 +4474,6 @@
    "inhoud": 3,
    "score": 5,
    "gnews": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVlRFTjBtcWxrUU5OZVFVLVFGNnNpeXUtRnFZRi12UHpPSHN6OEkxY3ZNb2M2RFRQaHMtUmM4Tm9HR3ZQaUM5Z2tjbDZOcEg3QzVOVnFaZ2t2MTdhOFZHNHlqY0RaMkQ4SnpiYnYxRzNUOGxadTkydGw1X282d3VPUw?oc=5"
-  },
-  {
-   "title": "Purpose | The Global Health Security Fund",
-   "url": "https://ghsfund.org/purpose/",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-22T12:07:46+00:00",
-   "summary": "The GHS Fund supports impact investment in global health security innovation. We are an innovation ecosystem dedicated to identifying and scaling ...",
-   "domain": "ghsfund.org",
-   "inhoud": 6,
-   "score": 6
   },
   {
    "title": "UNAIDS mourns the passing of Nelson Musoba, Director General of the Uganda AIDS Commission",
@@ -4398,18 +4643,6 @@
    "domain": "politico.eu",
    "inhoud": 0,
    "score": 5
-  },
-  {
-   "title": "Opinion: How Kennedy and MAHA could help stop measles",
-   "url": "https://www.statnews.com/2026/11/21/rfk-jr-maha-measles-outbreak-elimination-status-promote-mmr-vaccine/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-11-21T09:30:00+00:00",
-   "summary": "Kennedy and MAHA say they aren’t anti-vaccine. They can prove it by promoting the MMR vaccine, writes Brinda Adhikari.",
-   "domain": "statnews.com",
-   "inhoud": 8,
-   "score": 9
   },
   {
    "title": "Painting our futures: Murals with a message",
@@ -4606,18 +4839,6 @@
    "gnews": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOcTROZmNNck94YmxGdjlacTREZnF0emRVQzEyUkV2QTZjZVBVVXV5czEwaFNjd2JOZEZRTGFUcW44Tm94YnhOS0NPbW5xS0VlZTYxUkdfMkRvc1JhcS1GcHZKUUFPbktCZXpiRlNXeUl6ei1ia0NhQlFkZGppSlo3X0hqaWkyQ0JfX2ViT191ejl3VHhxNDNudlluRQ?oc=5"
   },
   {
-   "title": "STAT+: FDA rejects Capricor Therapeutics’ Duchenne therapy, a decision that was a long time coming",
-   "url": "https://www.statnews.com/2026/11/20/fda-rejects-capricor-duchenne-therapy/?utm_campaign=rss",
-   "src": "STAT News",
-   "feed": "STAT News",
-   "cat": "news",
-   "date": "2026-11-20T23:43:53+00:00",
-   "summary": "The FDA said it had rejected a cell therapy intended for patients with Duchenne muscular dystrophy developed by Capricor Therapeutics.",
-   "domain": "statnews.com",
-   "inhoud": -6,
-   "score": -5
-  },
-  {
    "title": "[Correspondence] Health professionals cannot abandon their Palestinian colleagues",
    "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02088-X/fulltext?rss=yes",
    "src": "The Lancet",
@@ -4773,30 +4994,6 @@
    "gnews": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5TcUVoWk5HcFN0Q1JaVzdyZ19lbjctazJaVmZMV2xTU0s1c0VsV2cxZmQ3NmxiUVcxQVBEbnE0bzloTHhIWjVCZmJWdG5NZmNaZTYtbWxELWlWWTc3dUV4bkFrRlRBQzQzcV9PVmlaaXk3XzZ4aVNfNw?oc=5"
   },
   {
-   "title": "From continental commitment to lasting national capability",
-   "url": "https://www.devex.com/news/from-continental-commitment-to-lasting-national-capability-113871",
-   "src": "Devex Global Health",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-11-20T17:52:16+00:00",
-   "summary": "Africa’s path to two million professional community health workers by 2030 tests political will and lays the foundation for a safer, healthier and more self-reliant continent.",
-   "domain": "devex.com",
-   "inhoud": 0,
-   "score": 5
-  },
-  {
-   "title": "Devex Career Hub: How to get your grantmaking career off the ground",
-   "url": "https://www.devex.com/news/devex-career-hub-how-to-get-your-grantmaking-career-off-the-ground-113934",
-   "src": "Devex Global Health",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-11-20T17:04:03+00:00",
-   "summary": "Plus, we have insights into the most frequently advertised roles across global development.",
-   "domain": "devex.com",
-   "inhoud": 0,
-   "score": 5
-  },
-  {
    "title": "SNAP Emergency Allotment Expiration and Chronic and Severe Pain Among Low-Income Adults",
    "url": "https://jamanetwork.com/journals/jama-health-forum/fullarticle/2856940",
    "src": "Health Emergency",
@@ -4834,16 +5031,18 @@
    "gnews": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOenZpeDNqai14VTdGTFVhYTVEaTBLQmdCeXhIM0VMaE9rTnlaSzJ0NEY4VTYwQUNBS214cEZkdmlDS1VjZjJCc2M0U0Q2cjN3YnhBTnhFX3NwWFNjWld5U2lsNnpxZDFTandNSk1fTmMyUVRvcmwzamJ3bmlhMDk4R3Rmb1F1OVo4OFU3emQ3MTJ1RmNKeGZjckRVT3l6cUhyWlZuM3NuYVVCTTNtZFFOS1pIZFk?oc=5"
   },
   {
-   "title": "We need more, not less, ODA to implement our climate ambitions",
-   "url": "https://www.devex.com/news/we-need-more-not-less-oda-to-implement-our-climate-ambitions-113936",
-   "src": "Devex Global Health",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-11-20T16:15:51+00:00",
-   "summary": "Opinion: Moving toward a focus on implementation at the U.N. Climate Change Conference will be harder as official development assistance falls.",
-   "domain": "devex.com",
-   "inhoud": 0,
-   "score": 5
+   "title": "Emergency Health Project Manager - Ituri Province",
+   "url": "https://reliefweb.int/job/4239299/emergency-health-project-manager-ituri-province",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-20T16:11:39+00:00",
+   "summary": "Emergency Health Project Manager - Ituri Province ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -20,
+   "score": -16,
+   "gnews": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMG1POXRaaTZIeU5xZWVyRkdaSVFodGJRMGp1bXBGSU9mRlBSeEs3X0RMb2RSQS0wTldMWUNWRXNMSUNwaTlPb3JQSHY0eU1fVU50WThZNDZGeUh6NlhzdFNxdEFyUFljS0VXcG5Gb2wzZTBiWS1pVjA2MkNkenRRLW5mbnhaUmZt?oc=5"
   },
   {
    "title": "Roving IPC Focal Point - Ebola Treatment Center",
@@ -4946,18 +5145,6 @@
    "inhoud": 0,
    "score": 5,
    "gnews": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBwNzAwQ1ptUlpDdF9UZnVQNWJKMmdtenB5SHVqOTFqVlVkeGVCdm5QT2FKdXdIdGJ6UkdPeF94QXA4NVpERGprR2YyV05EalpvOW5QWTZLQQ?oc=5"
-  },
-  {
-   "title": "‘Electrification for what?’: Global south demands more of COP31 pledge",
-   "url": "https://www.devex.com/news/electrification-for-what-global-south-demands-more-of-cop31-pledge-113910",
-   "src": "Devex Global Health",
-   "feed": "Devex Global Health",
-   "cat": "news",
-   "date": "2026-11-20T14:50:04+00:00",
-   "summary": "Countries are backing Turkey’s push to increase electrification by 2035, but developing nations want guarantees that the transition will bring clean power, green industrialization, and the financing to make it happen.",
-   "domain": "devex.com",
-   "inhoud": 0,
-   "score": 5
   },
   {
    "title": "Belgium halved its trial approval times, now the delays come after approval [Partner Content]",
@@ -5193,13 +5380,14 @@
    "title": "MFF 2028-2034: Council agrees negotiating position on stronger civil protection mechanism and support for health preparedness",
    "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/20/mff-2028-2034-council-agrees-negotiating-position-on-stronger-civil-protection-mechanism-and-support-for-health-preparedness/",
    "src": "Council, European Union",
-   "feed": "EU health policy",
+   "feed": "Council of the EU (health)",
    "cat": "eu",
    "date": "2026-11-20T12:32:18+00:00",
    "summary": "MFF 2028-2034: Council agrees negotiating position on stronger civil protection mechanism and support for health preparedness Council, European Union",
    "domain": "consilium.europa.eu",
+   "fallback": true,
    "inhoud": 0,
-   "score": 7,
+   "score": 5,
    "gnews": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNQ2NpZ2loMWpZbmgyLUxQYWc5LWl3S29walY1QjlwOG9tUGJyTnBIN3U4dld6REpkeUp6VTNyV05PRjUwLVNLbERIdWdkcUg4bnFhREh5bW1paHM2Vl9JRWloWGdkUTRaNWNITkdhRjd4YVF2cFREcDJqN2MwR3NwclRzczJtS2ZIb3dUZUdSWEVOUkppUlpOLWZhc3FYYU9DdzlwMXFEeU9jeEk4ZjJ1T3JQNkZxN0RNOXFVZlFwUWtuS2dBOVN5UEl3Mi14bUw3NEh2X0J6NGhOVXB2WkJEZ254SG1mZ2xBQWNrOFo2SUJPY3hBSEhDZlZhY01KRk1OZ1RnMjBfaThTcWozUGp0Qi1obzl5dC0xbGp3Rg?oc=5"
   },
   {
@@ -5335,6 +5523,20 @@
    "domain": "medscape.com",
    "inhoud": 12,
    "score": 12
+  },
+  {
+   "title": "Call for Expression of Interest: DEC Middle East Humanitarian Appeal Post Appeal Review",
+   "url": "https://reliefweb.int/job/4239233/call-expression-interest-dec-middle-east-humanitarian-appeal-post-appeal-review",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-20T10:05:16+00:00",
+   "summary": "Call for Expression of Interest: DEC Middle East Humanitarian Appeal Post Appeal Review ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -20,
+   "score": -16,
+   "gnews": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbmE2Z1h3OTI4LTBWb2N0YkRkVFhsM3VwdXVjdzlzc3hEcHZBTlR1UWxmUEtRSmVmTXg4UkFoYUduc295aEFZdlpuUjlnM1ZIVW9DdXBXVUo5S0dWM2xHOTdwbnIzWjktYjV5Rm1wcElOeFF4VGhhV2ZTQW1nUUVrTF9JTXBaQjRBS3NIbnNxaHRoQ0YwVkxrVm5MdjBKc3ZkRzRUSEN3NXhFeTk4U3gwYkdIOA?oc=5"
   },
   {
    "title": "Building a stronger NHS: reinstate on-call duties",
@@ -5503,6 +5705,20 @@
    "score": 5,
    "gnews": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORGhHTG1qbnJ6TUZXWURNN19lb3FGcG1vMGpyLWpBQmNVZlQ4RXBQamRSWThUQ09XRGpjbGJ5Q2hMYzFNZWZxNGVScnpKR0lVaTRMTXRValV6bndFSFgwM3NqZ0hlazlRRjE5cDZkZmRwSHRFRWJhdWFJRzdXdTh4SllHSVhhS3NtXzRnX2RDU2xUSVdXbHF4cllCR3lNb0FDaUZqeFNfUGFnOFVQdGc?oc=5",
    "lead": "https://informat.ro/en/current-affairs/two-activists-threw-ash-at-eu-commissioner-oliver-varhelyi-149225"
+  },
+  {
+   "title": "MEAL Assistant - Deir Ezour",
+   "url": "https://reliefweb.int/job/4239171/meal-assistant-deir-ezour",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-20T00:05:26+00:00",
+   "summary": "MEAL Assistant - Deir Ezour ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -20,
+   "score": -16,
+   "gnews": "https://news.google.com/rss/articles/CBMia0FVX3lxTE45VGpmVjlPOTdVMHFfa3pJNUl6YTZEZGpxLW5vSGJoMFJHWkhYamYxak5zcUVBaFVzMnRpVVE5RVVKbTQxb1Z3cklQQUxhSlpQX1A0eXBJMDVxVFI0U0xFY2ZXMk9TbEhzcDNr?oc=5"
   },
   {
    "title": "Webinar: Expanding treatment options for gonorrhoea and strengthening global gonococcal antimicrobial resistance surveillance",
@@ -5937,20 +6153,6 @@
    "score": 4
   },
   {
-   "title": "Rage, rage against the science manipulation complex",
-   "url": "https://www.bmj.com/content/395/bmj-2026-101496",
-   "src": "The BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-11-19T13:56:28+00:00",
-   "summary": "Rage, rage against the science manipulation complex The BMJ",
-   "domain": "bmj.com",
-   "fallback": true,
-   "inhoud": 0,
-   "score": 3,
-   "gnews": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE43NmNrb2xjcExSTlhlS2Z1Y0JHU080NEllaDQ0Q1cwQThWOTVpSnNuUUluejhOSzVkNVpHRXVDMG1UajBSX3o0RUp3ZE4yN21jaWpkTjJINFczRWs?oc=5"
-  },
-  {
    "title": "Community Action Key to Tackling Antimicrobial Resistance",
    "url": "https://www.pharmacy.biz/antimicrobial-resistance-community-action/",
    "src": "Pharmacy Business",
@@ -5961,8 +6163,21 @@
    "domain": "pharmacy.biz",
    "inhoud": 0,
    "score": 2,
-   "gnews": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA1bzZGVXFJdTFPU0NmdjFUZTUwRWhBbU5NQ1FXWmVqRVlCcVJIcER1VkR6Z24zakFMTXl4aF9oRWxwTzB1LVgzUzBTZk1nRkZMQmFaQXNSSFRsb1lJM01yUU95bFVEb2M2U2ltTUgxT2NOekV0M0E?oc=5",
-   "lead": "https://www.fao.org/europe/news/detail/tackling-antimicrobial-resistance--montenegro--the-republic-of-moldova-and-serbia-make-progress/en"
+   "gnews": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA1bzZGVXFJdTFPU0NmdjFUZTUwRWhBbU5NQ1FXWmVqRVlCcVJIcER1VkR6Z24zakFMTXl4aF9oRWxwTzB1LVgzUzBTZk1nRkZMQmFaQXNSSFRsb1lJM01yUU95bFVEb2M2U2ltTUgxT2NOekV0M0E?oc=5"
+  },
+  {
+   "title": "Call for Proposals : Study on youth inclusion trajectories in Syria’s transition",
+   "url": "https://reliefweb.int/job/4239104/call-proposals-study-youth-inclusion-trajectories-syrias-transition",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-19T13:13:04+00:00",
+   "summary": "Call for Proposals : Study on youth inclusion trajectories in Syria’s transition ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -20,
+   "score": -16,
+   "gnews": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPeGhJRlJycjlXQ0NfTE9lTzVoSTBYUjFuTFk2eFUwdElPd1poVThjT1J3aXVOSElnczd6bldMSkxLSE50a0xISzRFdnFZamV2V2hLaGNaNGtHY3RwbDVfcGE4S0RZQl93Y0drUlVmdUdZNldCWEZBY001OHUwMjVpT0kxSDBFdk05MmV0SzY3bFpPSmVGTXpDLXVzbWRQTXZuN2VJ?oc=5"
   },
   {
    "title": "World’s top court finds Myanmar guilty of genocide against Rohingya",
@@ -6025,18 +6240,6 @@
    "domain": "healthpolicy-watch.news",
    "inhoud": 18,
    "score": 22
-  },
-  {
-   "title": "Martha’s rule might not help those most at risk in emergency departments",
-   "url": "http://www.bmj.com/content/395/bmj-2026-101507.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-11-19T12:16:19+00:00",
-   "summary": "In recent months, NHS England has issued mandates for national roll-outs of Martha’s rule in emergency departments and the National Paediatric Early Warning Scores for detecting deterioration of children in emergency departments.12 Emergency departments have unique risks and challenges, so Martha’s ",
-   "domain": "bmj.com",
-   "inhoud": 0,
-   "score": 3
   },
   {
    "title": "What African Countries Should Ask of Africa CDC’s Leadership",
@@ -6952,20 +7155,6 @@
    "score": 29
   },
   {
-   "title": "Public Health Medical Referent - Infectious Diseases (ID)",
-   "url": "https://reliefweb.int/job/4238869/public-health-medical-referent-infectious-diseases-id",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-11-18T11:00:45+00:00",
-   "summary": "Public Health Medical Referent - Infectious Diseases (ID) ReliefWeb",
-   "domain": "reliefweb.int",
-   "fallback": true,
-   "inhoud": -20,
-   "score": -16,
-   "gnews": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQdGF0aUpBUlhnSU5OU19xNEZfTm84M3hqcnBZbE45RGdJWmo2UFprUEQ0ZHd6amRScFZ0cHFpWXZoMk0tdDBCdzBiSDl5el9YRXBTbFU4T2RTUDRyMkF5VWl5VlNmNm43NmZ3cXFRUVplNW1RODZqUVgyQ0o5TWRjT2JWTHhTbnM3WjEyNlVQSms?oc=5"
-  },
-  {
    "title": "Antimicrobial resistance in Europe’s surface waters — closing an important gap in the One Health response",
    "url": "https://www.eea.europa.eu/en/analysis/publications/antimicrobial-resistance-in-europes-surface-waters",
    "src": "European Environment Agency (EEA)",
@@ -7003,34 +7192,6 @@
    "inhoud": 4,
    "score": 9,
    "gnews": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5wZmVKUThyVGdvcm1LNjd4Y0oyTm9wQ29ZTElLdGhXSENfMGQyUWxRTjNhWDNHV1B5VmNJNlZRcVFaeXpzMkJPQlhXYkZlSzdZV1ZEcVpyX241XzZIQldn?oc=5"
-  },
-  {
-   "title": "Midwife Activity Manager - Ebola Emergency Pool - Mandatory French proficiency",
-   "url": "https://reliefweb.int/job/4238859/midwife-activity-manager-ebola-emergency-pool-mandatory-french-proficiency",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-11-18T09:47:09+00:00",
-   "summary": "Midwife Activity Manager - Ebola Emergency Pool - Mandatory French proficiency ReliefWeb",
-   "domain": "reliefweb.int",
-   "fallback": true,
-   "inhoud": -16,
-   "score": -12,
-   "gnews": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQ05fZEM4OE9VWUs1NUJNT0VlNUhBQURuSENFM0FJb3VWdThFdmtBZmxtd2FZOU1ZRUxyTkFtcjMwcVZDNjYyU1NpYmVqWk95bnBsVU96VF9DVk81dGRST1NhLV9YMThvS1NBcnlEcGVBeWgyX1Z0US1DMjJ4bFFMVGJieERwY3E3eXlUbHROZ2pUd1FOckdRLUkwTWJzZEk4YU5tbVNlUVhzNHZ6?oc=5"
-  },
-  {
-   "title": "Regional Analyst - West & Central Africa region",
-   "url": "https://reliefweb.int/job/4238847/regional-analyst-west-central-africa-region",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-11-18T09:12:24+00:00",
-   "summary": "Regional Analyst - West & Central Africa region ReliefWeb",
-   "domain": "reliefweb.int",
-   "fallback": true,
-   "inhoud": -20,
-   "score": -16,
-   "gnews": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPUWUxVURjVFF1U1RXb09HeVdKU1BBODc1TUVaTVB1MW04eFc5YmE3Z0Y2NGdnVFFjUWtxZURnalcwb2hCUHJxbVZDYWYxZi1lVU1udEdibFN2REhQUUttbktMZmg1XzdSZ043RVYwajZJdS1UNWUyWDlLUHp6bUdhU1RHRQ?oc=5"
   },
   {
    "title": "People still need people: apps and AI won’t replace the human touch in mental health care",
@@ -7112,48 +7273,6 @@
    "gnews": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOTzhta2hHaGdVYy1NVmxPRkMtTXY1VzJnVWFKcERTSmRYYWJZMDFHV0JXQzB4YmZ4U1k0TW1DX1BkZC1EMXBfb1hMVXk4UDFEeGhLNTdYcDNDY3U5OEEzeTI2YWJUXzZCeENFYkoyZ1UxTjNzMDVQV01YbDdNOWNFRXRRUVU5V2E0Q1RSNWk2cXF5MlcxSFF6a29FTVRQQjlHMmlyM3p6UDlzM3k3YjUySk9OYTlKRWJadE1Canc4UFZRUU5TZllNTmxn?oc=5"
   },
   {
-   "title": "Tackling antimicrobial resistance: Montenegro, the Republic of Moldova and Serbia make progress",
-   "url": "https://www.fao.org/europe/news/detail/tackling-antimicrobial-resistance--montenegro--the-republic-of-moldova-and-serbia-make-progress/en",
-   "src": "Food and Agriculture Organization",
-   "feed": "AMR policy & research",
-   "cat": "amr",
-   "date": "2026-11-18T08:00:00+00:00",
-   "summary": "Tackling antimicrobial resistance: Montenegro, the Republic of Moldova and Serbia make progress Food and Agriculture Organization",
-   "domain": "fao.org",
-   "inhoud": 0,
-   "score": 6,
-   "gnews": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZ2xpcEtOQXY0LWpsbDVyUU1LTENvblZpMWlLdElIeW1CUWtEMUt5UExvbFZDNE1vWnl2Mmw4eHB0bjFCZmFtbFQ2WEY3NWdiS0J1anBndjRmVDFnWnVhUU5QdjV0bjBhX1Nkd2ZzTFllUjRkeVdNTUd4RDY2WHNRdGR1dFVyUjd6WGlOWXh5dnl6eTlEOWl4X2FCZkRCaWZDZ0t2YkRYZHlqTy1MS1pWZEFNa0xVNDFocXpTM2xaT19YX19ETS1iWUluWEhUWUlFMWMw?oc=5",
-   "also": [
-    {
-     "src": "Pharmacy Business",
-     "title": "Community Action Key to Tackling Antimicrobial Resistance",
-     "url": "https://www.pharmacy.biz/antimicrobial-resistance-community-action/"
-    }
-   ],
-   "outlets": 2
-  },
-  {
-   "title": "Dangerous drug-resistant superbug is rapidly spreading in European hospitals - what is the situation in Ukraine",
-   "url": "https://unn.ua/en/news/a-dangerous-drug-resistant-superbug-is-rapidly-spreading-in-european-hospitals-what-is-the-situation-in-ukraine",
-   "src": "Українські Національні Новини (УНН)",
-   "feed": "AMR policy & research",
-   "cat": "amr",
-   "date": "2026-11-18T07:54:18+00:00",
-   "summary": "Dangerous drug-resistant superbug is rapidly spreading in European hospitals - what is the situation in Ukraine Українські Національні Новини (УНН)",
-   "domain": "unn.ua",
-   "inhoud": 4,
-   "score": 6,
-   "gnews": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQaUNvcjh4enM0cjJaOUFON04xR3d6RFd3WkhsNS1XeVZQd28yNjRXN3RMdW5UMlhvLWI4VDVweXE2ZFQyd0J3aVVxSWE2UEtNa1d6RzluZ0NTRGNKUzlKTWp6cWp2dFBCNmlNeWswLVVIaEhPZG5iZ1lZMURKZXZnQXVhVHVscVpYTWd4Ymc3UjBUYkdDbHhWRnVTUWFhdFZMdDRxMklDOTFadjVONEFVZHplSTFBcmdrQWV5dENKV3JnLVVoVzVkRkJlVU03QW_SAc4BQVVfeXFMTm5WZVo0TnJ6T3ExWmNtS0JubnJQZHhuU3VxTTQ5ZlROamZRVk9vcXM0Wm9rZjhGSDk5SFhEa0p5R2hjSC1BWUdkdnZxYVlvX3Q3SldBWE96UzVQTEVxenRadkZUUlVOLXRFWUVXa1RzLUlIOWN4dGhfakVPZVFRQUQ0RVdfOGEzeWVob0lfWHA4UHZoUFY0R09peENmY25TYk54SGRjVVBIaExuamN6U2haVkoxOTlsT3d2WGVNbGcteDRCMjRDWmszV25hYkE?oc=5",
-   "also": [
-    {
-     "src": "POLITICO.eu",
-     "title": "Deadly drug-resistant infections are surging in European hospitals",
-     "url": "https://www.politico.eu/article/drug-resistant-infections-superbug-europe-hospitals/"
-    }
-   ],
-   "outlets": 2
-  },
-  {
    "title": "Daily_Brief: #Eritrea becomes 11th #African country to eliminate trachoma as public health problem",
    "url": "https://addisstandard.com/brief/n-61331/",
    "src": "Addis Standard",
@@ -7166,20 +7285,6 @@
    "score": 6,
    "gnews": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1YbmdDN3dVTUF6VDdod2YtSTdOSGt5cG5DZVk3YXc4eF9DNHVoeEZKcGhBUkdJQkczUTJ1enRsRlQ2RHZtbFhWZXJ3MFF5LWc1dFE?oc=5",
    "lead": "https://denkstrom.org/en/goodnews/who-confirms-eritrea-eliminates-trachoma-as-health-problem/"
-  },
-  {
-   "title": "Data Entry Operator (Syria - Homs)",
-   "url": "https://reliefweb.int/job/4238827/data-entry-operator-syria-homs",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-11-18T06:57:28+00:00",
-   "summary": "Data Entry Operator (Syria - Homs) ReliefWeb",
-   "domain": "reliefweb.int",
-   "fallback": true,
-   "inhoud": -20,
-   "score": -16,
-   "gnews": "https://news.google.com/rss/articles/CBMickFVX3lxTFAtcmdkczJTLTFaTV9ySGwyclVoZVJaamxIMm1xVTg1ems3WEZuTGlaa0Nzby1rWUlNYWEyZXV3cXpBZzJVdFVUd3VtbGJuUlBVdG9CYWJSbXFlR3lzY3ZOT2J5bF9TMHR3bGlvdDRFd0d3QQ?oc=5"
   },
   {
    "title": "Introducing roadmap for action on AI in health in the WHO European Region 2026–2033",
@@ -7209,20 +7314,6 @@
    "gnews": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOZ2VsVkZDWnpNNlZySElxTHRabXpLbVBWcnBNTy15clQ4Q19oM25JM3ZDRFNaX2QyOU9WbjNQdVZvNVd2UXZRVjZHdjZjQnN6SEg5aUlCcGhmZzVQRGoyY0hjVkM4VmFoZDNWc096aC1Ya3kwemxsNHFySEwtT0ZtRDczbGdyYWYzYTdYYm5pWFpud1RPZlBCenp0N0Q5bFUtM0dMNVpOMVZrdXdIbFQ2aGNaRXBRWURuVkJIajhHZ09hZUthR3FXR1FvTExJczZVa0czTG8zU3h3MHdW?oc=5"
   },
   {
-   "title": "Senior Talent Acquisition Officer- (For Syrian National Only)Aleppo",
-   "url": "https://reliefweb.int/job/4238821/senior-talent-acquisition-officer-syrian-national-onlyaleppo",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-11-18T06:15:03+00:00",
-   "summary": "Senior Talent Acquisition Officer- (For Syrian National Only)Aleppo ReliefWeb",
-   "domain": "reliefweb.int",
-   "fallback": true,
-   "inhoud": -26,
-   "score": -22,
-   "gnews": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNcFhIX0tQZHFwN1R1LVBNNW0zZ1Q5b1VpSjNxektPTXQ3M2cxOU0temhmOUFmaENqaXZfZWIxTnN4N0tKMFlwMnphNlBLUU50a2NsSHEzR2FxdkFGUW1BbWtVSHlnQ184MVY5QTRCUE1DeVo5eGlQdjRLTzlEZWZiRDEzZlRuTnNSYk9wdUYzcTlKbnBfTnFCRDR3?oc=5"
-  },
-  {
    "title": "WHO convenes African experts to strengthen tracking of sexual and reproductive health investment",
    "url": "https://www.afro.who.int/countries/united-republic-of-tanzania/news/who-convenes-african-experts-strengthen-tracking-sexual-and-reproductive-health-investment",
    "src": "WHO Africa",
@@ -7246,20 +7337,6 @@
    "inhoud": 0,
    "score": 2,
    "gnews": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5lU2UxV0J0SWNUZFQ2SEJRU09XVnVBMnhJRGs3RzdNUURDazNlQjItTHJSQkFHZ09HWEotMHFZcnRjUQ?oc=5"
-  },
-  {
-   "title": "Deadly drug-resistant infections are surging in European hospitals",
-   "url": "https://www.politico.eu/article/drug-resistant-infections-superbug-europe-hospitals/",
-   "src": "POLITICO.eu",
-   "feed": "AMR policy & research",
-   "cat": "amr",
-   "date": "2026-11-18T05:07:00+00:00",
-   "summary": "Deadly drug-resistant infections are surging in European hospitals POLITICO.eu",
-   "domain": "politico.eu",
-   "inhoud": 0,
-   "score": 5,
-   "gnews": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMEhPVWRqeUN3eE1hTlRINEJtaWlIWTBtVGhLTEFVUE5ua3JmR2pDaU80QU9PazZvRkt6TURQUWJNZmkzRDBOZzl5MzBFWW96UWgzVXBsLW1wYkJ3NEVKaGNlM3hJOGdPdDhGN1NQNnJZS1RLalFGQ1VxNk9SWEdHV3JJNTdiTV9TS3FQag?oc=5",
-   "lead": "https://unn.ua/en/news/a-dangerous-drug-resistant-superbug-is-rapidly-spreading-in-european-hospitals-what-is-the-situation-in-ukraine"
   },
   {
    "title": "Urgent action needed to safeguard the effectiveness of antibiotics",
@@ -7456,20 +7533,6 @@
    "domain": "cidrap.umn.edu",
    "inhoud": 0,
    "score": 2
-  },
-  {
-   "title": "World News in Brief: Ebola cases double in DR Congo, chemical exposure starts before birth, Türk concern over EU-Rwanda transfer plan",
-   "url": "https://news.un.org/en/story/2026/11/1168827",
-   "src": "UN News",
-   "feed": "UN News Health",
-   "cat": "who",
-   "date": "2026-11-17T19:38:18+00:00",
-   "summary": "World News in Brief: Ebola cases double in DR Congo, chemical exposure starts before birth, Türk concern over EU-Rwanda transfer plan UN News",
-   "domain": "news.un.org",
-   "fallback": true,
-   "inhoud": 5,
-   "score": 10,
-   "gnews": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5BTWZTYmx4RTFoNDhITjEyN3k1VUwyQ0xWN0c1eUh4Qk5TRlFodS1obi0zVk8xQ1YydmpTTVRxcE82Qm5lc0Q3VVVUcVZ0UG9UUlRTcElucw?oc=5"
   },
   {
    "title": "Chikungunya virus disease - Switzerland",
@@ -8221,19 +8284,6 @@
    "score": 11
   },
   {
-   "title": "Urinary Schistosomiasis Affects Nearly Half of Displaced Children in Sudan Camp",
-   "url": "https://bioengineer.org/urinary-schistosomiasis-affects-nearly-half-of-displaced-children-in-sudan-camp/",
-   "src": "Bioengineer.org",
-   "feed": "NTD news",
-   "cat": "ntd",
-   "date": "2026-11-16T10:41:08+00:00",
-   "summary": "Urinary Schistosomiasis Affects Nearly Half of Displaced Children in Sudan Camp Bioengineer.org",
-   "domain": "bioengineer.org",
-   "inhoud": 4,
-   "score": 0,
-   "gnews": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQYWJjS013dTBabzhIQjJrRmtVSXd5QUR2UFZpZHYzR0pHUmF0MzFXOEFLT3ZPSEp2TmRZUTB0cVhaWFFuWHJySWJNM1E5el9GNHl0VGRPZ19RNEh2TVo0b1dfc0JJNURTUzh5NHFtRmdrYUxxaXVvZ05FRnVoYXVxdW0xUWNBWm12VkRDTnl0Y1dWdUM1QjhzVU1OdWFRQU9VbE9NVUcxMA?oc=5"
-  },
-  {
    "title": "[Exclusive]: Q&A With Budi Sadikin, WHO DG Candidate",
    "url": "https://newsletter.genevahealthfiles.com/exclusive-q-a-with-budi-sadikin-who-dg-candidate/",
    "src": "Geneva Health Files",
@@ -8272,15 +8322,17 @@
   },
   {
    "title": "Six months on, accessing hard-to-reach communities key to halting Ebola outbreak",
-   "url": "https://africacdc.org/news-item/six-months-on-accessing-hard-to-reach-communities-key-to-halting-ebola-outbreak/",
-   "src": "Africa CDC",
-   "feed": "Africa CDC",
-   "cat": "global",
-   "date": "2026-11-15T08:24:03+00:00",
-   "summary": "15 November 2026 | Addis Ababa, Geneva, Kinshasa, New York, Rome Six months into the Ebola outbreak caused by Bundibugyo virus in the Democratic Republic of the Congo, significant progress has been made in bringing lifesaving services closer to affected communities, despite immense challenges. Howev",
-   "domain": "africacdc.org",
-   "inhoud": 12,
-   "score": 15
+   "url": "https://www.afro.who.int/countries/democratic-republic-of-congo/news/six-months-accessing-hard-reach-communities-key-halting-ebola-outbreak",
+   "src": "WHO | Regional Office for Africa",
+   "feed": "WHO Africa",
+   "cat": "who",
+   "date": "2026-11-15T08:00:00+00:00",
+   "summary": "Six months on, accessing hard-to-reach communities key to halting Ebola outbreak WHO | Regional Office for Africa",
+   "domain": "afro.who.int",
+   "fallback": true,
+   "inhoud": 14,
+   "score": 19,
+   "gnews": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUTRNWmRiRXF0RkVDOC0tZjF2ek5CSlFvaktDd2NFNm9YYVRFazNQYW5za2U0UUw3bG5LQkFWTTdkWDBxSWwxOEVhM1R0Nnl0X283azZKa05qRGJpeDF3aWNjd05RSjJuMDJENG93dERJYW52LU9WbVU1TXIzdGN1VGRlblNJVnlWTGpHRlpuRmpVYjlsWndmOEIyLW5xaWJwallxdHBFbWpGQzk0bmU4UTB6aFZOVFlLSVB0WF9LUGxqWDFtdTA2WURRbEs4aHkxazhOYlN3?oc=5"
   },
   {
    "title": "Trump administration plans to divert or withhold most Congress-approved family-planning aid",
@@ -8335,18 +8387,6 @@
    "score": 13
   },
   {
-   "title": "[Comment] Cangrelor for myocardial infarction-related cardiogenic shock",
-   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01152-9/fulltext?rss=yes",
-   "src": "The Lancet",
-   "feed": "The Lancet",
-   "cat": "journal",
-   "date": "2026-11-13T23:30:01+00:00",
-   "summary": "Acute myocardial infarction-related cardiogenic shock (AMI-CS) fosters a unique combination of opposing, competing thrombotic and haemorrhagic risk. Strategies to mitigate these crucial events represent an actionable target to reduce the high mortality that still burdens AMI-CS patients.1,2 With pri",
-   "domain": "thelancet.com",
-   "inhoud": 0,
-   "score": 1
-  },
-  {
    "title": "Employment, Social Policy, Health and Consumer Affairs Council (Social policy), 15 March 2027",
    "url": "https://www.consilium.europa.eu/en/meetings/epsco/2027/03/15/",
    "src": "Council, European Union",
@@ -8375,18 +8415,6 @@
    "lead": "https://www.who.int/news/item/13-11-2026-member-states-reiterate-commitment-to-finalize-pandemic-agreement-pabs-annex-by-may-2027"
   },
   {
-   "title": "The Advancing Global Health Annual Program Statement (AGH/APS) Mechanism: Supplementing the America First MOUs",
-   "url": "https://www.kff.org/global-health-policy/the-advancing-global-health-annual-program-statement-agh-aps-mechanism-supplementing-the-america-first-mous/",
-   "src": "KFF Global Health Policy",
-   "feed": "KFF Global Health Policy",
-   "cat": "policy",
-   "date": "2026-11-13T20:04:41+00:00",
-   "summary": "To shed greater light on U.S. global health efforts under the AFGHS, this analysis examines the Advancing Global Health APS (AGH/APS) award opportunities announced to date by looking at how funding may be directed across countries and selected areas of global health programming, painting a fuller pi",
-   "domain": "kff.org",
-   "inhoud": 3,
-   "score": 9
-  },
-  {
    "title": "African Negotiators Demand Legally Binding Pathogen Access Rules in WHO Pandemic Agreement",
    "url": "https://bioengineer.org/african-negotiators-demand-legally-binding-pathogen-access-rules-in-who-pandemic-agreement/",
    "src": "Bioengineer.org",
@@ -8398,42 +8426,6 @@
    "inhoud": 10,
    "score": 8,
    "gnews": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcUJpYUZPSzVfWURFYzAxSXI4QXcxZDYtUmRSWjVKQXgwZXU5RHppMjFDRm0xOUpxSkVhdFAwRnQzRW02UnBrLWROTUJ3eGh1T3dmUnBaczBHZUpCU2Q0dDZNM2MyQ3ptLW1fS0pkWU00N3JITFRMZHU1aDQzUU9FMEtBUEZyRm1uWXN3aFotdy1RQnFLU2NTWXg1cWRTRXdUZ09nVHBSU1FzWnFSSzJOZXlKdkpCUQ?oc=5"
-  },
-  {
-   "title": "Public university hospitals in the Americas to develop regional alliance to strengthen health systems",
-   "url": "https://www.paho.org/en/news/13-11-2026-public-university-hospitals-americas-develop-regional-alliance-strengthen-health",
-   "src": "PAHO",
-   "feed": "PAHO",
-   "cat": "who",
-   "date": "2026-11-13T19:36:20+00:00",
-   "summary": "Public university hospitals in the Americas to develop regional alliance to strengthen health systems Oscar Reyes 13 Nov 2026",
-   "domain": "paho.org",
-   "inhoud": 2,
-   "score": 5
-  },
-  {
-   "title": "Middle East respiratory syndrome (MERS) – Qatar",
-   "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON626",
-   "src": "WHO Disease Outbreak News",
-   "feed": "WHO Disease Outbreak News",
-   "cat": "who",
-   "date": "2026-11-13T19:00:00+00:00",
-   "summary": "On 29 October 2026, the National International Health Regulations (IHR) Focal Point of the State of Qatar notified the World Health Organization (WHO) of two laboratory-confirmed cases of Middle East respiratory syndrome (MERS). The cases were confirmed on 5 and 25 August 2026 and are the first MERS",
-   "domain": "who.int",
-   "inhoud": 17,
-   "score": 25
-  },
-  {
-   "title": "Shortages of diphtheria treatment put thousands of children at risk in Nigeria",
-   "url": "https://www.msf.org/shortages-diphtheria-treatment-put-thousands-children-risk-nigeria",
-   "src": "MSF",
-   "feed": "MSF",
-   "cat": "emerg",
-   "date": "2026-11-13T18:24:18+00:00",
-   "summary": "Thousands of children are at risk in northern Nigeria, as shortages of diphtheria antitoxin and low immunisation coverage fuel transmission of diphtheria.",
-   "domain": "msf.org",
-   "inhoud": 2,
-   "score": 4
   },
   {
    "title": "Funders form ‘first global alliance’ on climate and health research",
