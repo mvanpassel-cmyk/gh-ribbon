@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "note": "Past events of the World Calendar. Filled automatically from events.json; never pruned.",
   "events": [
     {"start": "2026-01-01", "cat": "eu", "title": "Cyprus takes over the EU Council presidency", "place": "EU", "status": "confirmed", "src": "https://www.consilium.europa.eu/en/council-eu/presidency-council-eu/"},
@@ -183,6 +183,7 @@
     {"start": "2026-11-18", "end": "2026-11-24", "cat": "amr", "title": "World AMR Awareness Week", "place": "Global", "status": "confirmed", "src": "https://www.woah.org/en/event/world-amr-awareness-week-2026/"},
     {"start": "2026-11-19", "cat": "health", "title": "WHO Director-General election — first candidates' forum", "place": "Geneva", "note": "Seven candidates; webcast", "status": "confirmed", "src": "https://www.who.int/news/item/29-10-2026-announcement-of-candidates-for-the-position-of-who-director-general"},
     {"start": "2026-11-21", "cat": "partners", "title": "EU–Indonesia CEPA — formal signature", "place": "Indonesia / EU", "note": "EU Council authorised signature on 18 Nov; signing set for 21 Nov; entry into force aimed for 1 Jan 2027", "status": "confirmed", "src": "https://business-indonesia.org/news/indonesia-and-eu-confirm-signing-of-trade-agreement-on-21-november-2026", "country": "ID"},
-    {"start": "2026-11-21", "cat": "partners", "title": "EU–Indonesia CEPA — formal signature targeted", "place": "Indonesia / EU", "note": "Indonesia targets 21 Nov signing; entry into force aimed for 1 Jan 2027", "status": "tentative", "src": "https://en.antaranews.com/news/440543/indonesia-targets-nov-21-signing-for-ieu-cepa-trade-pact-airlangga", "country": "ID"}
+    {"start": "2026-11-21", "cat": "partners", "title": "EU–Indonesia CEPA — formal signature targeted", "place": "Indonesia / EU", "note": "Indonesia targets 21 Nov signing; entry into force aimed for 1 Jan 2027", "status": "tentative", "src": "https://en.antaranews.com/news/440543/indonesia-targets-nov-21-signing-for-ieu-cepa-trade-pact-airlangga", "country": "ID"},
+    {"start": "2026-11-25", "cat": "eu", "title": "Tweede Kamer — commissiedebat EU-Gezondheidsraad", "place": "Den Haag", "note": "Ahead of EPSCO Health on 8 Dec", "status": "confirmed", "src": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A05494"}
   ]
 }
