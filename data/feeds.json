@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T22:28:16+00:00",
+ "generated": "2026-11-27T05:10:15+00:00",
  "feeds_ok": 62,
  "feeds_tot": 62,
  "status": {
@@ -48,7 +48,7 @@
   },
   "WHO Europe": {
    "ok": true,
-   "msg": "10 items",
+   "msg": "9 items",
    "cat": "who",
    "via": 1,
    "fallback": true
@@ -422,7 +422,7 @@
   },
   "Rapporteur (ex-Euractiv)": {
    "ok": true,
-   "msg": "10 items",
+   "msg": "8 items",
    "cat": "policy",
    "via": 1,
    "fallback": false
@@ -450,13 +450,133 @@
   },
   "Grand Challenges": {
    "ok": true,
-   "msg": "8 items",
+   "msg": "9 items",
    "cat": "news",
    "via": 1,
    "fallback": true
   }
  },
  "items": [
+  {
+   "title": "Spain’s right turn: What a PP-Vox government would mean for Madrid — and Brussels",
+   "url": "https://www.politico.eu/article/spain-right-turn-what-pp-vox-government-would-mean-for-madrid-brussels/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+   "src": "Politico EU Health",
+   "feed": "Politico EU Health",
+   "cat": "policy",
+   "date": "2026-11-27T03:00:00+00:00",
+   "summary": "A right-wing coalition in Spain following the Nov. 29 snap election would change the country’s stance on policy areas from data centers to bullfighting.",
+   "domain": "politico.eu",
+   "inhoud": 0,
+   "score": 5
+  },
+  {
+   "title": "Measles resurges worldwide despite shrinking viral genetic diversity - News-Medical",
+   "url": "https://www.news-medical.net/news/20261126/Measles-resurges-worldwide-despite-shrinking-viral-genetic-diversity.aspx",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-27T01:57:34+00:00",
+   "summary": "... World Health Organization (WHO) headquarters and regional offices, the Pan American Health Organization (PAHO), and the Pasteur Institute of Tunis ...",
+   "domain": "news-medical.net",
+   "inhoud": 9,
+   "score": 9
+  },
+  {
+   "title": "Gaza meningitis cases surge as collapsing infrastructure fuels health fears - Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/26/gaza-meningitis-cases-surge-as-collapsing-infrastructure-fuels-health-fears",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-27T01:26:05+00:00",
+   "summary": "The World Health Organization (WHO) has warned that limited laboratory capacity is making it difficult to distinguish between viral and bacterial ...",
+   "domain": "aljazeera.com",
+   "inhoud": 4,
+   "score": 9
+  },
+  {
+   "title": "International Summit on Infectious Diseases and Global Health (ISID-GH-2026)",
+   "url": "https://allconferencealert.net/eventdetails?id=101174258",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-27T00:27:10+00:00",
+   "summary": "Discover the International Summit on Infectious Diseases and Global Health (ISID-GH) to be held on 27th November 2026 in Durban, South Africa.",
+   "domain": "allconferencealert.net",
+   "inhoud": 4,
+   "score": 4
+  },
+  {
+   "title": "[Comment] World AIDS Day 2026: ending preventable deaths from advanced HIV disease",
+   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02310-X/fulltext?rss=yes",
+   "src": "The Lancet",
+   "feed": "The Lancet",
+   "cat": "journal",
+   "date": "2026-11-26T23:30:03+00:00",
+   "summary": "Despite major advances in antiretroviral therapy (ART) and global commitments to end AIDS by 2030, advanced HIV disease remains a major cause of early mortality, particularly among people with severe immunosuppression and opportunistic infections.1 A 2026 systematic review involving 313 362 adults a",
+   "domain": "thelancet.com",
+   "inhoud": 5,
+   "score": 6
+  },
+  {
+   "title": "[Comment] Oral therapies for psoriasis",
+   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02298-1/fulltext?rss=yes",
+   "src": "The Lancet",
+   "feed": "The Lancet",
+   "cat": "journal",
+   "date": "2026-11-26T23:30:03+00:00",
+   "summary": "Over the past 25 years, few areas of medicine have undergone a transformation as profound as the treatment of psoriasis. Once dependent on broadly acting systemic agents, treatment now includes therapies directed against tumour necrosis factor, IL-12 and IL-23, IL-17, and IL-23. These advances have ",
+   "domain": "thelancet.com",
+   "inhoud": 0,
+   "score": 1
+  },
+  {
+   "title": "[Comment] Treatment selection in mHSPC: lessons from the STOPCAP meta-analysis",
+   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01702-2/fulltext?rss=yes",
+   "src": "The Lancet",
+   "feed": "The Lancet",
+   "cat": "journal",
+   "date": "2026-11-26T23:30:03+00:00",
+   "summary": "Androgen receptor pathway inhibitors (ARPIs) have fundamentally transformed the treatment of metastatic hormone-sensitive prostate cancer (mHSPC). For most patients, androgen deprivation therapy (ADT) alone is no longer sufficient, as 13 randomised trials have consistently shown that intensifying tr",
+   "domain": "thelancet.com",
+   "inhoud": -12,
+   "score": -11
+  },
+  {
+   "title": "[Articles] Envudeucitinib in moderate-to-severe plaque psoriasis (ONWARD1 and ONWARD2): results from two replicate, multicentre, double-blinded, placebo-controlled and active compa",
+   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01649-1/fulltext?rss=yes",
+   "src": "The Lancet",
+   "feed": "The Lancet",
+   "cat": "journal",
+   "date": "2026-11-26T23:30:03+00:00",
+   "summary": "Envudeucitinib improved both skin signs and patient-reported outcomes, and maintained favourable tolerability, supporting its role as a promising oral treatment for patients with moderate-to-severe plaque psoriasis.",
+   "domain": "thelancet.com",
+   "inhoud": 0,
+   "score": 1
+  },
+  {
+   "title": "[Articles] Identifying which patients with metastatic hormone-sensitive prostate cancer benefit most from androgen receptor pathway inhibitors (STOPCAP): a systematic review and me",
+   "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01483-2/fulltext?rss=yes",
+   "src": "The Lancet",
+   "feed": "The Lancet",
+   "cat": "journal",
+   "date": "2026-11-26T23:30:03+00:00",
+   "summary": "Adding an ARPI to standard of care significantly improved overall survival for most patients with mHSPC. Although abiraterone improved cancer-specific survival for all, non-cancer mortality was increased among older patients. Further individual participant data are needed to fully assess the effects",
+   "domain": "thelancet.com",
+   "inhoud": -8,
+   "score": -7
+  },
+  {
+   "title": "WHO supports emergency services for 1.2 million people in southern Ukraine",
+   "url": "https://ukraine.un.org/en/326690-who-supports-emergency-services-12-million-people-southern-ukraine",
+   "src": "Health Emergency",
+   "feed": "Health Emergency",
+   "cat": "emerg",
+   "date": "2026-11-26T21:41:02+00:00",
+   "summary": "We are investing in better conditions for both patients and medical teams, while strengthening the resilience of essential health services for the ...",
+   "domain": "ukraine.un.org",
+   "inhoud": 6,
+   "score": 13
+  },
   {
    "title": "Colombia earthquake triggers surge in malaria cases - The Telegraph",
    "url": "https://www.telegraph.co.uk/global-health/science-and-disease/colombia-earthquake-triggers-surge-in-malaria-cases/",
@@ -470,14 +590,27 @@
    "score": 12
   },
   {
-   "title": "Global health , AI and longevity to headline WISH Summit in Doha",
-   "url": "https://qna.org.qa/en/News-Area/News/2026-11/26/global-health-ai-and-longevity-to-headline-wish-summit-in-doha",
+   "title": "Congo's Ebola Cases Top 12,000 as Fighting Forces Some Health Workers to Evacuate",
+   "url": "https://www.commondreams.org/news/ebola-congo-outbreak",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-26T21:17:32+00:00",
+   "summary": "The World Health Organization (WHO) said last Friday that \"no new cases have been reported from Kenya or Nigeria; and no new country has reported ...",
+   "domain": "commondreams.org",
+   "inhoud": 4,
+   "score": 4,
+   "lead": "https://www.reuters.com/world/africa/un-peacekeepers-evacuate-ebola-response-workers-trapped-by-fighting-eastern-2026-11-25/"
+  },
+  {
+   "title": "Global health , AI and longevity to headline WISH Summit in Doha - Fana News",
+   "url": "https://www.fananews.com/language/en/global-health-ai-and-longevity-to-headline-wish-summit-in-doha/",
    "src": "Global Health",
    "feed": "Global Health",
    "cat": "global",
    "date": "2026-11-26T20:53:02+00:00",
-   "summary": "Doha, November 26 (QNA) - The future of global healthcare , including advances in artificial intelligence, fertility treatments and longevity, ...",
-   "domain": "qna.org.qa",
+   "summary": "Doha, November 26 (QNA) – The future of global healthcare , including advances in artificial intelligence, fertility treatments and longevity, ...",
+   "domain": "fananews.com",
    "inhoud": 8,
    "score": 8
   },
@@ -555,18 +688,6 @@
    "score": 7
   },
   {
-   "title": "Gavi Deals Secures Access To Ebola Bundibugyo Candidate Vaccine - Should Trial Be Successful",
-   "url": "https://healthpolicy-watch.news/gavi-deals-secures-access-to-ebola-bundibugyo-candidate-vaccine-should-trial-be-successful/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-26T17:51:16+00:00",
-   "summary": "Should the candidate vaccine secure the necessary regulatory approvals and World Health Organization (WHO) policy recommendation following its ...",
-   "domain": "healthpolicy-watch.news",
-   "inhoud": 14,
-   "score": 20
-  },
-  {
    "title": "Decentralized Blood Spot Assays Reliably Track Trachoma Transmission in Regional Ethiopia",
    "url": "https://bioengineer.org/decentralized-blood-spot-assays-reliably-track-trachoma-transmission-in-regional-ethiopia/",
    "src": "Bioengineer.org",
@@ -592,18 +713,6 @@
    "score": 25
   },
   {
-   "title": "Four Of Seven WHO Director-General Contenders Have Yet To Disclose Campaign Financing",
-   "url": "https://healthpolicy-watch.news/who-dg-campaign-spending/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-26T16:58:32+00:00",
-   "summary": "Only two of seven candidates seeking to lead the World Health Organization (WHO) have filed official campaign spending reports with the ...",
-   "domain": "healthpolicy-watch.news",
-   "inhoud": 10,
-   "score": 16
-  },
-  {
    "title": "Ebola outbreak in Congo reaches 12000 cases as violence forces some responders to evacuate",
    "url": "https://www.washingtonpost.com/world/2026/11/26/congo-ebola-outbreak-violence/4c475fd2-e976-11f1-8db0-6f1e3c389e7c_story.html",
    "src": "WHO Alert",
@@ -615,6 +724,18 @@
    "inhoud": 10,
    "score": 13,
    "lead": "https://www.reuters.com/world/africa/un-peacekeepers-evacuate-ebola-response-workers-trapped-by-fighting-eastern-2026-11-25/"
+  },
+  {
+   "title": "Four of Seven WHO Director-General Contenders Have Yet to Disclose Campaign Financing",
+   "url": "https://healthpolicy-watch.news/who-dg-campaign-spending/",
+   "src": "Health Policy Watch",
+   "feed": "Health Policy Watch",
+   "cat": "policy",
+   "date": "2026-11-26T15:50:52+00:00",
+   "summary": "Two months ahead of January’s closed-door shortlisting vote, only Belgium and Spain have filed official campaign expenditure records for their candidates with WHO. While cross-regional contender Gevorg Tamamyan disclosed his budget to Health Policy Watch and two candidates pledged future filings, tw",
+   "domain": "healthpolicy-watch.news",
+   "inhoud": 17,
+   "score": 21
   },
   {
    "title": "EU Commission offers little in response to US drug pricing pressures",
@@ -739,6 +860,18 @@
    "score": -5
   },
   {
+   "title": "Gavi Deals Secures Access to Ebola Bundibugyo Candidate Vaccine – Should Trial be Successful",
+   "url": "https://healthpolicy-watch.news/gavi-deals-secures-access-to-ebola-bundibugyo-candidate-vaccine-should-trial-be-successful/",
+   "src": "Health Policy Watch",
+   "feed": "Health Policy Watch",
+   "cat": "policy",
+   "date": "2026-11-26T11:47:36+00:00",
+   "summary": "Gavi, the Vaccine Alliance, has provisionally secured up to 1.5 million doses of a candidate vaccine against Ebola Bundibugyo – subject to its successful clinical trial and regulatory approvals. Gavi signed an advance purchase agreement this week with the Serum Institute of India (SII) and Serum Lif",
+   "domain": "healthpolicy-watch.news",
+   "inhoud": 16,
+   "score": 20
+  },
+  {
    "title": "Public Health Perspective Urges Replacing Mexico City Policy Name With Global Gag Rule",
    "url": "https://bioengineer.org/public-health-perspective-urges-replacing-mexico-city-policy-name-with-global-gag-rule/",
    "src": "Bioengineer.org",
@@ -762,6 +895,20 @@
    "domain": "gh.bmj.com",
    "inhoud": -4,
    "score": -1
+  },
+  {
+   "title": "24266 Regional Human Resources Business Partner (P)",
+   "url": "https://reliefweb.int/job/4240132/24266-regional-human-resources-business-partner-p",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-26T11:16:38+00:00",
+   "summary": "24266 Regional Human Resources Business Partner (P) ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -20,
+   "score": -16,
+   "gnews": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPV2YzSjVZVHZIR1kwdHhveWRwalA4WDV1QlBYN1B3YlBaQ2NNaXZXaHBybXFMajNlODFlb2dvRUdYeGh3ejl5bTZkalgyM1otT1dpWGV6UnlQMHhkMVpJZUFhXzg0R2xuekhtZzQ0ek1tSkZjdmpHQlNWYzZOS0lJd0RzYjJQeW54SnFJ?oc=5"
   },
   {
    "title": "What's the status of the leadership races across the UN system?",
@@ -1228,9 +1375,14 @@
      "src": "usnews.com",
      "title": "Fighting in Eastern Congo Forces Ebola Workers to Evacuate, Threatening Outbreak Response",
      "url": "https://www.usnews.com/news/world/articles/2026-11-25/fighting-in-eastern-congo-forces-ebola-workers-to-evacuate-threatening-outbreak-response"
+    },
+    {
+     "src": "commondreams.org",
+     "title": "Congo's Ebola Cases Top 12,000 as Fighting Forces Some Health Workers to Evacuate",
+     "url": "https://www.commondreams.org/news/ebola-congo-outbreak"
     }
    ],
-   "outlets": 3
+   "outlets": 4
   },
   {
    "title": "South Africa's Biovac aims to dramatically increase vaccine production with help from an EU loan",
@@ -1906,6 +2058,20 @@
    "inhoud": 0,
    "score": 2,
    "gnews": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOUktGR3FjWF90NVgtQmNRYVpLV0hpZVd3UzB4bTBWVFhVRHp6NmhGSU5pQXh3d3ZXTjMzQ2t2VDg1dVZ5VWxmZU9oY3lXWExMQ0hwZDZxZWg4TTRtTG9LNk9rejV0ck9GRklNUXE1akJyZkl2M3FkclVzUTM3NzJpMWRBVEdqd1RobkdibW44eGt1M0NTTVpXRXpjdFFhc2o3TmJGaU9fVGl0VnpaemdzVDJubnNld0N2RzIwbEZhVDFvUVpxT201X0hhLTRoLVQ0Y2pFeW1TN3JoTXJ4TDlLaw?oc=5"
+  },
+  {
+   "title": "Climate Change and Health Consultant",
+   "url": "https://reliefweb.int/job/4239836/climate-change-and-health-consultant",
+   "src": "ReliefWeb",
+   "feed": "ReliefWeb Health",
+   "cat": "emerg",
+   "date": "2026-11-25T13:02:28+00:00",
+   "summary": "Climate Change and Health Consultant ReliefWeb",
+   "domain": "reliefweb.int",
+   "fallback": true,
+   "inhoud": -32,
+   "score": -28,
+   "gnews": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5UXzd2NzZJdm43NzlkRV9sdEZSa05rcDR6c0U4VGhxV0x1cHlCY1hlS1FMSWx5NGcyZzNTaVpFcXZHbFktdktyU2dnQnJidlhiX09KVVFUSzU3VTVSNDJqWVVleF9KcXctR2NpWUJ6VzVaOTVMU3dyVDl3?oc=5"
   },
   {
    "title": "Europe is embracing digital health, but do patients actually benefit?",
@@ -2652,16 +2818,21 @@
    "summary": "Health and safety at work: 8 August to become European day of remembrance for victims of accidents at work Council, European Union",
    "domain": "consilium.europa.eu",
    "inhoud": 0,
-   "score": 7,
+   "score": 8,
    "gnews": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNd2VhRjBVcEthMjNoV1Z0WXphVVlRSjhDTWI5R0NrdXFuVE5mOFk3MnBEdWtrdW01THpGRUJGSHhDbzByMGpHbEUybHdiTUhtczNocHplQkM2MHc3dHlSTDg0S2hpaEJnN25HMVpCbDBCbnoxY05qdkYwMnVEYTVyamcwdmtOVEpKaTBwbnpoREZGeFhzaktxRlF4OEZVcjlOZ2F6U1EzbjlMRDBNQmpXOEZ0LUpuejdxc205c0Zfa2pqbzU4TEJLa2VyZTBwQlVTbkFEaDJjbUh1ZFdFTXlmMDBfaXc0OVdQbXkwZE9MMUV3YjNZNEc1emNIQWpNX0F3Z0NB?oc=5",
    "also": [
+    {
+     "src": "The European Sting",
+     "title": "Health and safety at work: 8 August to become European day of remembrance for victims of accidents at work",
+     "url": "https://europeansting.com/2026/11/25/health-and-safety-at-work-8-august-to-become-european-day-of-remembrance-for-victims-of-accidents-at-work/"
+    },
     {
      "src": "The European Sting",
      "title": "Critical News & Insights on European Politics, Economy, Foreign Affairs, Business & Technology - europeansting.com Health and safety at work: 8 August to become European day of rem",
      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOR0lTZXpUMHZleVVWc0N5NEgtN01IT0hfbm04Y21qb1dNeFpkNklhVVNDYWxEM1dTMlRSOHA4dzM3MDBjcGhEckk0M1Zkakd5NGN2ZlFoT0Y1clVoVDdwYnYzZFQ1bjh6MEM0cGpwdlladmhQRElSQVI0N2ZzbVBUaVowUHY4T2xrbDhvbXdFakJlTjhZMWhES2lZbXE4RjhVVlBPeWIyLXItRjVBRWtNWGwwNko0VVZtc0NlSFA5M0tVdnVGVjBuSGlUSEdUMkxOQlE?oc=5"
     }
    ],
-   "outlets": 2
+   "outlets": 3
   },
   {
    "title": "Agenda item 7: Next PCB meetings",
@@ -3620,6 +3791,20 @@
    "score": 6
   },
   {
+   "title": "GP who saved Premier League footballer struck off for sexual relationship with patient",
+   "url": "https://www.bmj.com/content/395/bmj-2026-101566.full",
+   "src": "The BMJ",
+   "feed": "BMJ",
+   "cat": "journal",
+   "date": "2026-11-24T08:00:00+00:00",
+   "summary": "GP who saved Premier League footballer struck off for sexual relationship with patient The BMJ",
+   "domain": "bmj.com",
+   "fallback": true,
+   "inhoud": -32,
+   "score": -29,
+   "gnews": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5OZDFRekRRQWExUk9ndEpLOXZMY2NsRFYyYWpWdzZlVlZhczAwTlFvNVQ0MkxtWUdmd0VCMmJMR0tQUHJ2OF9BeWlqUklyRzh6cmtxdC1NdzhObGtzNDMyWXN3?oc=5"
+  },
+  {
    "title": "Dr. María Neira: The optimist who wants to lead WHO through crisis | Devex",
    "url": "https://www.devex.com/news/dr-maria-neira-the-optimist-who-wants-to-lead-who-through-crisis-113874",
    "src": "Global Health",
@@ -3732,16 +3917,18 @@
    "score": -11
   },
   {
-   "title": "WHO chief calls on US to lift oil blockade on Cuba, citing health impact | Awani International",
-   "url": "https://international.astroawani.com/global-news/who-chief-calls-us-lift-oil-blockade-cuba-citing-health-impact",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
+   "title": "Health and safety at work: 8 August to become European day of remembrance for victims of accidents at work",
+   "url": "https://europeansting.com/2026/11/25/health-and-safety-at-work-8-august-to-become-european-day-of-remembrance-for-victims-of-accidents-at-work/",
+   "src": "The European Sting",
+   "feed": "EU health policy",
+   "cat": "eu",
    "date": "2026-11-24T00:00:00+00:00",
-   "summary": "... health indicators, while the US cites political motives. Advertisement. HAVANA: World Health Organization chief Tedros Adhanom Ghebreyesus called ...",
-   "domain": "international.astroawani.com",
-   "inhoud": 7,
-   "score": 7
+   "summary": "Health and safety at work: 8 August to become European day of remembrance for victims of accidents at work The European Sting",
+   "domain": "europeansting.com",
+   "inhoud": 0,
+   "score": 5,
+   "gnews": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNQnZMN0xCNV83bDljZEotR01OOVF0MXk1VE9tbDlTWGczb1p4ejBWV2cxUWRjVTlKc1BubTNQZ19UVEphVURHSXFHbUFka2RGWGhPU3JOQXIxWUZ1N0lLQ082MEl3ak9URnNhcUdzbnlMWDNsaXhnMEc1bXlUT3pJSVJGZnlaRVE0S1FpNXdQQWhOMmpMa1VvS0ZlRmRPWkdUVTdTQ01EZlR0Mkp1YzlkWG1rMWFPemg5QjY1TkxxbEpXUTZkRlJ0V2JzMFd3dUphQU1MdVpqZDAwSW8?oc=5",
+   "lead": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/24/health-and-safety-at-work-8-august-to-become-european-day-of-remembrance-for-victims-of-accidents-at-work/"
   },
   {
    "title": "In the United States, more than 2.2 Million Women Relied on Fertility Awareness-Based Methods for Pregnancy Prevention in 2022-2023, Higher Than Earlier Estimates",
@@ -4571,16 +4758,16 @@
   },
   {
    "title": "WHO Pandemic Agreement: Forging a More Resilient Global Health System for Future Crises",
-   "url": "https://qna.org.qa/en/News-Area/News/2026-11/23/who-pandemic-agreement-forging-a-more-resilient-global-health-system-for-future-crises",
-   "src": "Qatar news agency",
+   "url": "https://www.fananews.com/language/en/who-pandemic-agreement-forging-a-more-resilient-global-health-system-for-future-crises/",
+   "src": "Fana News -",
    "feed": "PABS / IGWG",
    "cat": "pandemic",
    "date": "2026-11-23T09:52:54+00:00",
-   "summary": "WHO Pandemic Agreement: Forging a More Resilient Global Health System for Future Crises Qatar news agency",
-   "domain": "qna.org.qa",
+   "summary": "WHO Pandemic Agreement: Forging a More Resilient Global Health System for Future Crises Fana News -",
+   "domain": "fananews.com",
    "inhoud": 14,
    "score": 18,
-   "gnews": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQYmtFdWFiT1FodWFiQ1dUWXVGclJSV3Q4LXpsNU5QbmJvWWpiMmVtTTI2QkRMaWFjczlfTncwR0RBSW9hV2N0R0EzT0VSTF9INWVVaU5rVm5ObDFaZnFGVnpoYjhZcDFiaVg4dDFKOURrWDZ6b2lCTlpMUE9kQWlKVThYWXpnaV9FWF9wdm5JekRaZEJSYkROU0F0ZG9xQTFObGFpbmtqek1tR0xyRVFfWU45a2dsZ0JvQmpaM1RNdmtCd2d0ejFSOFF0a2M3LUk?oc=5"
+   "gnews": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPS0MwcDdsa2xjanREQ2pEZEFhc2xQOXJsUUd0UVY2WnJBeGw4eEs1cng0dTlLY0EzX3Q0NHVsaTZGbTYtMk05bS14VDdxQ3JMSC14RWg1X3RuejRYQXVJN0FVMzlXblBKS21BTWJzYTRHQW5sdE5mUlhHWXBRNVFEUFJpc21DdktoQTVmOU1JOHU0bENrWTUzeHBySmNzSUVrcmhZMmJHTnZiUmhaVk1aZC1DVU82enVTcWh3MWpkUXFsUQ?oc=5"
   },
   {
    "title": "The Political Economy of the DG Election at the World Health Organization: Updates from the First Candidates’ Forum",
@@ -4829,18 +5016,6 @@
    "score": 4
   },
   {
-   "title": "France arbovirus cases 2026 through November 16 - Outbreak News Today",
-   "url": "https://outbreaknewstoday.substack.com/p/france-arbovirus-cases-2026-through",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-22T18:55:07+00:00",
-   "summary": "Emerging Infectious Diseases and Global Health Security. 5 dengue episodes (no new episodes compared to the previous week) totaling 8 cases (1 to 2 ...",
-   "domain": "outbreaknewstoday.substack.com",
-   "inhoud": 11,
-   "score": 14
-  },
-  {
    "title": "AMR Awareness Week: Building an innovation-driven ‘iron dome’ against antimicrobial resistance",
    "url": "https://www.downtoearth.org.in/health/amr-awareness-week-building-an-innovation-driven-iron-dome-against-antimicrobial-resistance",
    "src": "Down To Earth",
@@ -5034,19 +5209,6 @@
    "domain": "afro.who.int",
    "inhoud": 16,
    "score": 19
-  },
-  {
-   "title": "Mamadou Camara helped beat the tsetse | Bill Gates",
-   "url": "https://www.gatesnotes.com/home/home-page-topic/reader/heroes-in-the-field-mamadou-camara",
-   "src": "Gates Notes",
-   "feed": "NTD news",
-   "cat": "ntd",
-   "date": "2026-11-21T13:30:16+00:00",
-   "summary": "Mamadou Camara helped beat the tsetse | Bill Gates Gates Notes",
-   "domain": "gatesnotes.com",
-   "inhoud": 0,
-   "score": 2,
-   "gnews": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOay1TM0tqZXR3dll5U25iYkZ3MHNNbXRxdFNMX05ORDUwYnhzMEVCMTVEMDdoV1VoczlDeGZ3QUViY0p2dzhNMUJmTE1ESUNpU0F4SldqR0RHVUNSb1E2aF9UQXBXMzFsZmE1TVpLaFZtWHYtMTB5YmRTcVFPZ3pNdUFOSmYzWjVrVVlyZVplb2wtbDQ?oc=5"
   },
   {
    "title": "AI smart glasses falsely claimed an ambulance was on its way during a medical emergency",
@@ -5278,6 +5440,19 @@
    "domain": "seychellesnewsagency.com",
    "inhoud": 6,
    "score": 6
+  },
+  {
+   "title": "Mamadou Camara helped beat the tsetse | Bill Gates",
+   "url": "https://www.gatesnotes.com/home/home-page-topic/reader/heroes-in-the-field-mamadou-camara",
+   "src": "Gates Notes",
+   "feed": "NTD news",
+   "cat": "ntd",
+   "date": "2026-11-21T00:00:00+00:00",
+   "summary": "Mamadou Camara helped beat the tsetse | Bill Gates Gates Notes",
+   "domain": "gatesnotes.com",
+   "inhoud": 0,
+   "score": 2,
+   "gnews": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOay1TM0tqZXR3dll5U25iYkZ3MHNNbXRxdFNMX05ORDUwYnhzMEVCMTVEMDdoV1VoczlDeGZ3QUViY0p2dzhNMUJmTE1ESUNpU0F4SldqR0RHVUNSb1E2aF9UQXBXMzFsZmE1TVpLaFZtWHYtMTB5YmRTcVFPZ3pNdUFOSmYzWjVrVVlyZVplb2wtbDQ?oc=5"
   },
   {
    "title": "For three decades, Mamadou Camara has fought sleeping sickness in Guinea’s mangroves.",
@@ -5834,13 +6009,14 @@
    "title": "MFF 2028-2034: Council agrees negotiating position on stronger civil protection mechanism and support for health preparedness",
    "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/20/mff-2028-2034-council-agrees-negotiating-position-on-stronger-civil-protection-mechanism-and-support-for-health-preparedness/",
    "src": "Council, European Union",
-   "feed": "EU health policy",
+   "feed": "Council of the EU (health)",
    "cat": "eu",
    "date": "2026-11-20T12:32:18+00:00",
    "summary": "MFF 2028-2034: Council agrees negotiating position on stronger civil protection mechanism and support for health preparedness Council, European Union",
    "domain": "consilium.europa.eu",
+   "fallback": true,
    "inhoud": 0,
-   "score": 7,
+   "score": 5,
    "gnews": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNQ2NpZ2loMWpZbmgyLUxQYWc5LWl3S29walY1QjlwOG9tUGJyTnBIN3U4dld6REpkeUp6VTNyV05PRjUwLVNLbERIdWdkcUg4bnFhREh5bW1paHM2Vl9JRWloWGdkUTRaNWNITkdhRjd4YVF2cFREcDJqN2MwR3NwclRzczJtS2ZIb3dUZUdSWEVOUkppUlpOLWZhc3FYYU9DdzlwMXFEeU9jeEk4ZjJ1T3JQNkZxN0RNOXFVZlFwUWtuS2dBOVN5UEl3Mi14bUw3NEh2X0J6NGhOVXB2WkJEZ254SG1mZ2xBQWNrOFo2SUJPY3hBSEhDZlZhY01KRk1OZ1RnMjBfaThTcWozUGp0Qi1obzl5dC0xbGp3Rg?oc=5"
   },
   {
@@ -5884,18 +6060,6 @@
    "inhoud": -36,
    "score": -32,
    "gnews": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNXQzdFFUdWl3ak9rWFpUZUpGYm84NzRwT2FacC0wQXl0VWUxZTFoM1VUenhOSlNsQjBqMWZCVm0xajhzQUJrR1NJVDNJdkgwYjFQVmhPSk1QY3pmUV9HSmJ3M09PVVA3d3NMYVFSb2tCWElnQjlFZmFiNjBIZDhmeHM3NFdRcWpJY0xxbExrSkQzb0hSLW9kNkVCaGo1Q0t0OXFYUDZnT0lMU1g4NzJ6QlZDNi1lN28?oc=5"
-  },
-  {
-   "title": "UK is “dangerously exposed” by reliance on international medical supply chains, committee warns",
-   "url": "http://www.bmj.com/content/395/bmj-2026-101531.short?rss=1",
-   "src": "BMJ",
-   "feed": "BMJ",
-   "cat": "journal",
-   "date": "2026-11-20T11:11:32+00:00",
-   "summary": "Reliance on international supply chains for essential medicines is leaving the UK “dangerously exposed,” the House of Lords National Resilience Committee has warned.In its report the committee found that current resilience plans for securing essential supplies of medicines, food, and other crucial i",
-   "domain": "bmj.com",
-   "inhoud": 4,
-   "score": 7
   },
   {
    "title": "The Biodiversity-Global Health Nexus: Implications for Access and Benefit Sharing",
@@ -6255,6 +6419,20 @@
    "inhoud": 4,
    "score": 4,
    "lead": "https://www.wkow.com/news/top-stories/measles-reaches-dane-co-after-exposure-at-madisons-unitypoint-health-meriter-hospital-er/article_62882ad6-7e76-4038-9a8f-fe68d9f27f90.html"
+  },
+  {
+   "title": "Is the World Growing Numb to Climate Change?",
+   "url": "https://www.thinkglobalhealth.org/article/is-the-world-growing-numb-to-climate-change",
+   "src": "Think Global Health",
+   "feed": "Think Global Health",
+   "cat": "global",
+   "date": "2026-11-19T20:44:50+00:00",
+   "summary": "Is the World Growing Numb to Climate Change? Think Global Health",
+   "domain": "thinkglobalhealth.org",
+   "fallback": true,
+   "inhoud": 8,
+   "score": 12,
+   "gnews": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSmY4QXlESkNFNjdNUFBYcXdBdENkNnZGQ0paN04xOWxjM2w3Zy1EQU9lZFpWNmhqcVg5Z0ZMSU4xRjdoYVlablphbkY3eW5VSDYtMV8zcnZpbU1MeW1hcmhNakVUSGpud0VqYng3Tk5mSWE5WHdFTUtzUzZIRl94Q3BPN0xBV2lzNEhlZGd3?oc=5"
   },
   {
    "title": "Vaccine hesitancy spills over to pet owners",
@@ -6812,34 +6990,6 @@
    "score": 7
   },
   {
-   "title": "Water Quality Assistant - 1 Hasaka, 1 Tal Abyad, 1 Ras Al-Ayn",
-   "url": "https://reliefweb.int/job/4239024/water-quality-assistant-1-hasaka-1-tal-abyad-1-ras-al-ayn",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-11-19T08:38:22+00:00",
-   "summary": "Water Quality Assistant - 1 Hasaka, 1 Tal Abyad, 1 Ras Al-Ayn ReliefWeb",
-   "domain": "reliefweb.int",
-   "fallback": true,
-   "inhoud": -20,
-   "score": -16,
-   "gnews": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNF8xT1VIaUI2UjRscExfVTR5Y2xlREY2S1lzYmhpNUhodWYwZkh0Qkx4SmhSWDlhZE5XVjduZ1FUTnZ3emxXemxfNnpzd0cyR0ZTTVV5eEF0aWJTeEZ5N3NZRTM1cEhGOTFSZjAwa2ZidkpubW1veDgxWUgyZEx4UzdhV19JV01ZY3JTZFJfRzZybE9kMmc?oc=5"
-  },
-  {
-   "title": "Protection Assistant - 1 Tal Abyad, 1 Ras Al-Ayn",
-   "url": "https://reliefweb.int/job/4239023/protection-assistant-1-tal-abyad-1-ras-al-ayn",
-   "src": "ReliefWeb",
-   "feed": "ReliefWeb Health",
-   "cat": "emerg",
-   "date": "2026-11-19T08:34:04+00:00",
-   "summary": "Protection Assistant - 1 Tal Abyad, 1 Ras Al-Ayn ReliefWeb",
-   "domain": "reliefweb.int",
-   "fallback": true,
-   "inhoud": -20,
-   "score": -16,
-   "gnews": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOWE1qb1g1dUZ3a05zSzVQTlNMeWNxZTQ5VWUzN29pT1hNendTakI5QzltWl9DZTBLNEVxdC1YX1UxOEp6c0FmRDEyMXJjU2gwVzVfTzV3SUFsWTI0bEdhZGxQZTVlRExqMElvek8tZzVVTTFBckV5SHVlNTZJbmt1YS1adFJfQQ?oc=5"
-  },
-  {
    "title": "Israeli occupation is eroding hope and mental health in the West Bank",
    "url": "https://www.msf.org/israeli-occupation-eroding-hope-and-mental-health-west-bank",
    "src": "MSF",
@@ -6963,18 +7113,6 @@
    "score": 6
   },
   {
-   "title": "Are antibiotic developers catching up with European regulators?",
-   "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.46.2600528",
-   "src": "Eurosurveillance",
-   "feed": "Eurosurveillance",
-   "cat": "promed",
-   "date": "2026-11-19T00:00:00+00:00",
-   "summary": "The need to develop new antibiotics has been acknowledged as a clinical and public health priority for decades. To facilitate development of these critical medicines, the European Medicines Agency (EMA) provides several regulatory tools, including Scientific Advice (SA), the Priority Medicines (PRIM",
-   "domain": "eurosurveillance.org",
-   "inhoud": 9,
-   "score": 11
-  },
-  {
    "title": "Autochthonous dengue outbreak spreading from a holiday site to visitors’ places of residence, Tuscany, Italy, August to October 2026",
    "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.46.2600909",
    "src": "Eurosurveillance",
@@ -6985,6 +7123,18 @@
    "domain": "eurosurveillance.org",
    "inhoud": 10,
    "score": 12
+  },
+  {
+   "title": "Are antibiotic developers catching up with European regulators?",
+   "url": "https://www.eurosurveillance.org/content/10.2807/1560-7917.es.2026.31.46.2600528",
+   "src": "Eurosurveillance",
+   "feed": "Eurosurveillance",
+   "cat": "promed",
+   "date": "2026-11-19T00:00:00+00:00",
+   "summary": "The need to develop new antibiotics has been acknowledged as a clinical and public health priority for decades. To facilitate development of these critical medicines, the European Medicines Agency (EMA) provides several regulatory tools, including Scientific Advice (SA), the Priority Medicines (PRIM",
+   "domain": "eurosurveillance.org",
+   "inhoud": 9,
+   "score": 11
   },
   {
    "title": "Detection of dengue virus in Aedes albopictus following imported dengue cases and absence of detections after vector control, Ticino Canton, Switzerland, August to September 2026",
@@ -7143,19 +7293,6 @@
    "inhoud": 0,
    "score": 2,
    "gnews": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVFF4eFNDeUFQZjRUVEdOd0pfM211MVZTTVRhSkJndXZna2FhQnp5TVZRQkZIa01zWElMeHFGRkVOYnJSWm1BSzBXak9HZ1VJUmZqc015TFRIY1JlTW41QmxELXpXVmJ2QkNrcTRuMFZsNFJrdjBhT3lrTFk2Y1dRSjl1amg1c2tUR05JZHFnUnlBSGdNeV9acFh6clhnQ0w2MXZXdzlYV2RDMTR1Mlp3?oc=5"
-  },
-  {
-   "title": "What the U.S. Loss of Measles Elimination Status Means for Public Health | Media Expert Spotlight",
-   "url": "https://www.udel.edu/faculty-staff/media-experts/spotlight?postid=12194",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-11-18T19:25:20+00:00",
-   "summary": "... health investment, epidemiology and emergency preparedness. To arrange an interview, visit Horney's webpage and click on the \"contact\" button ...",
-   "domain": "udel.edu",
-   "inhoud": 10,
-   "score": 13,
-   "lead": "https://www.kff.org/quick-insights/a-step-back-for-u-s-public-health-the-u-s-is-likely-to-lose-its-measles-elimination-status/"
   },
   {
    "title": "Antimicrobial resistance: Why pension funds matter in AMR",
@@ -7482,20 +7619,6 @@
    "score": 3
   },
   {
-   "title": "Resistance to key antibiotics is the norm for 2 common hospital bacteria in nearly half of reporting countries in the WHO European Region",
-   "url": "https://www.who.int/europe/news/item/18-11-2026-resistance-to-key-antibiotics-is-the-norm-for-2-common-hospital-bacteria-in-nearly-half-of-reporting-countries-in-the-who-european-region",
-   "src": "World Health Organization (WHO)",
-   "feed": "WHO Europe",
-   "cat": "who",
-   "date": "2026-11-18T08:41:17+00:00",
-   "summary": "Resistance to key antibiotics is the norm for 2 common hospital bacteria in nearly half of reporting countries in the WHO European Region World Health Organization (WHO)",
-   "domain": "who.int",
-   "fallback": true,
-   "inhoud": 19,
-   "score": 24,
-   "gnews": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOMU9mbDZONDlHSDFCWTJDWVNHaHl1bzV4QmppcmU4TG8yZDcwcGoxUHhxbV83dDdWNnp2SnpSUVYwVlYtcVpEVWZGcDc2SHZLTTZlSlV2YkdVMXRweUs1bGVLQWhqQ1hTcUFOU2RUcTV5dXhKb2oxSDFKMWo3eWxHSUJRRkdYcWpUdVdaOFpmeE5rZkVrNWdCSVJBZm5LZWNiZWpwWFRvak5vWmd4MFdsRUNrcmVmaTdzRC1xVzhKWkNpbTU2NVRTVTE5OElrX0tfMWl6QkV5WTdnVUgybThwMExJSjZ6NWd3QlpvQV9vVHRxekRyNGswSzgwSl8xZjJNczJQcjdmd0FmRHN0c193ZC00aw?oc=5"
-  },
-  {
    "title": "FG targets 16 LGAs in renewed push to eliminate Trachoma by 2030",
    "url": "https://blueprint.ng/fg-targets-16-lgas-in-renewed-push-to-eliminate-trachoma-by-2030/",
    "src": "Blueprint Newspapers",
@@ -7521,6 +7644,20 @@
    "inhoud": 2,
    "score": 7,
    "gnews": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOTzhta2hHaGdVYy1NVmxPRkMtTXY1VzJnVWFKcERTSmRYYWJZMDFHV0JXQzB4YmZ4U1k0TW1DX1BkZC1EMXBfb1hMVXk4UDFEeGhLNTdYcDNDY3U5OEEzeTI2YWJUXzZCeENFYkoyZ1UxTjNzMDVQV01YbDdNOWNFRXRRUVU5V2E0Q1RSNWk2cXF5MlcxSFF6a29FTVRQQjlHMmlyM3p6UDlzM3k3YjUySk9OYTlKRWJadE1Canc4UFZRUU5TZllNTmxn?oc=5"
+  },
+  {
+   "title": "Resistance to key antibiotics is the norm for 2 common hospital bacteria in nearly half of reporting countries in the WHO European Region",
+   "url": "https://www.who.int/europe/news/item/18-11-2026-resistance-to-key-antibiotics-is-the-norm-for-2-common-hospital-bacteria-in-nearly-half-of-reporting-countries-in-the-who-european-region",
+   "src": "World Health Organization (WHO)",
+   "feed": "WHO Europe",
+   "cat": "who",
+   "date": "2026-11-18T08:00:00+00:00",
+   "summary": "Resistance to key antibiotics is the norm for 2 common hospital bacteria in nearly half of reporting countries in the WHO European Region World Health Organization (WHO)",
+   "domain": "who.int",
+   "fallback": true,
+   "inhoud": 19,
+   "score": 24,
+   "gnews": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOMU9mbDZONDlHSDFCWTJDWVNHaHl1bzV4QmppcmU4TG8yZDcwcGoxUHhxbV83dDdWNnp2SnpSUVYwVlYtcVpEVWZGcDc2SHZLTTZlSlV2YkdVMXRweUs1bGVLQWhqQ1hTcUFOU2RUcTV5dXhKb2oxSDFKMWo3eWxHSUJRRkdYcWpUdVdaOFpmeE5rZkVrNWdCSVJBZm5LZWNiZWpwWFRvak5vWmd4MFdsRUNrcmVmaTdzRC1xVzhKWkNpbTU2NVRTVTE5OElrX0tfMWl6QkV5WTdnVUgybThwMExJSjZ6NWd3QlpvQV9vVHRxekRyNGswSzgwSl8xZjJNczJQcjdmd0FmRHN0c193ZC00aw?oc=5"
   },
   {
    "title": "Daily_Brief: #Eritrea becomes 11th #African country to eliminate trachoma as public health problem",
@@ -7873,15 +8010,7 @@
    "summary": "The loss of measles elimination status carries primarily symbolic weight, as the effect of rising cases and deaths is already clear, along with an ongoing heightened risk to vulnerable groups such as children and pregnant women. Still, it is a marker of how a combination of factors — COVID-19, incre",
    "domain": "kff.org",
    "inhoud": 10,
-   "score": 16,
-   "also": [
-    {
-     "src": "udel.edu",
-     "title": "What the U.S. Loss of Measles Elimination Status Means for Public Health | Media Expert Spotlight",
-     "url": "https://www.udel.edu/faculty-staff/media-experts/spotlight?postid=12194"
-    }
-   ],
-   "outlets": 2
+   "score": 16
   },
   {
    "title": "An African Institution Will Not Be Put on Trial by Anonymous Sources and Politically Motivated Journalists",
@@ -8006,42 +8135,6 @@
    "score": -5
   },
   {
-   "title": "Hand hygiene disparities between healthcare and non-healthcare students: Implications for cross-disciplinary public health education",
-   "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0007359",
-   "src": "PLOS Global Public Health",
-   "feed": "PLOS Global Public Health",
-   "cat": "journal",
-   "date": "2026-11-17T14:00:00+00:00",
-   "summary": "by Laia Selva-Pareja, Carla Camí, Judith Roca, Olga Masot, Xavier Gómez-Arbonés, Eva Barallat-Gimeno, Alba Torné-Ruiz, Elena Paraíso-Pueyo, Rosa-Mar Alzuria-Alós, Anna Espart Hand hygiene (HH) is a technique known worldwide to be effective in reducing the spread of communicable diseases. Despite wid",
-   "domain": "journals.plos.org",
-   "inhoud": 1,
-   "score": 4
-  },
-  {
-   "title": "Are WHO Member States Ready for Fundamental Change? From Institutional Survival to Global Health Leadership",
-   "url": "https://healthpolicy-watch.news/are-who-member-states-ready-for-fundamental-change/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-11-17T13:33:17+00:00",
-   "summary": "The election to lead the World Health Organization (WHO) offers an opportunity to rethink not simply who should lead the institution, but how it should exercise leadership in a world that has changed profoundly. The greatest challenge facing the next Director-General may be transforming an organizat",
-   "domain": "healthpolicy-watch.news",
-   "inhoud": 22,
-   "score": 26
-  },
-  {
-   "title": "WHO DG Candidate Gevorg Tamamyan Says Global Health Inequality Is Costing Lives",
-   "url": "https://healthpolicy-watch.news/who-dg-candidate-gevorg-tamamyan-says-global-health-inequality-is-costing-lives/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-11-17T13:15:37+00:00",
-   "summary": "Children with cancer in wealthy countries have survival rates of around 85 percent, while in parts of Africa, survival can fall to 20 percent or 30 percent, and sometimes even lower. For Dr. Gevorg Tamamyan, an Armenian paediatric oncologist seeking to become the next director-general of the World H",
-   "domain": "healthpolicy-watch.news",
-   "inhoud": 18,
-   "score": 22
-  },
-  {
    "title": "Calla Lily Clinical Care awarded Innovate UK grant to expand Callavid® platform for vaginal microbiome health",
    "url": "https://www.news-medical.net/news/20261117/Calla-Lily-Clinical-Care-awarded-Innovate-UK-grant-to-expand-Callavidc2ae-platform-for-vaginal-microbiome-health.aspx",
    "src": "AMR Industry / news",
@@ -8051,90 +8144,6 @@
    "summary": "Calla Lily Clinical Care, a clinical-stage women's health company, today announced it has been awarded a £700 k Innovate UK grant through its Growth Catalyst: Investor Partnerships program, which pairs grant funding with matched private investment.",
    "domain": "news-medical.net",
    "inhoud": 5,
-   "score": 4
-  },
-  {
-   "title": "Delegates Clash Over Hazardous Pesticide Metrics at UN Chemicals Summit",
-   "url": "https://healthpolicy-watch.news/un-chemicals-pesticide-health/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-11-17T11:45:52+00:00",
-   "summary": "African nations and health advocates clashed with agrochemical manufacturers at the opening of the UN Global Framework on Chemicals conference in Geneva on Monday over whether pesticide phase-outs will be strictly measured or left to voluntary pledges. Meanwhile, medical networks urged negotiators t",
-   "domain": "healthpolicy-watch.news",
-   "inhoud": 5,
-   "score": 9
-  },
-  {
-   "title": "Without Urgent Action, AMR Could Cause 39 million deaths by 2050",
-   "url": "https://healthpolicy-watch.news/without-urgent-action-amr-could-cause-39-million-deaths-by-2050/",
-   "src": "Health Policy Watch",
-   "feed": "Health Policy Watch",
-   "cat": "policy",
-   "date": "2026-11-17T11:40:13+00:00",
-   "summary": "Drug-resistant bacterial infections could cause up to 39 million deaths by 2050 without urgent action, according to the latest assessment released by the World Health Organization (WHO) on Monday. Globally, 183 countries have a plan in place to tackle antimicrobial resistance (AMR), but only 42 coun",
-   "domain": "healthpolicy-watch.news",
-   "inhoud": 24,
-   "score": 28
-  },
-  {
-   "title": "From dependency to sovereignty: What the International Conference on Public Health in Africa 2026 must deliver for Africa’s health security",
-   "url": "https://africacdc.org/news-item/from-dependency-to-sovereignty-what-the-international-conference-on-public-health-in-africa-2026-must-deliver-for-africas-health-security/",
-   "src": "Africa CDC",
-   "feed": "Africa CDC",
-   "cat": "global",
-   "date": "2026-11-17T11:09:34+00:00",
-   "summary": "In late November 2026, Addis Ababa will host the 5th International Conference on Public Health in Africa (CPHIA 2026), co-convened by the Africa Centres for Disease Control and Prevention (Africa CDC) and the Government of Ethiopia. Its theme, ‘Africa’s Health Security and Sovereignty: Transformatio",
-   "domain": "africacdc.org",
-   "inhoud": 13,
-   "score": 16
-  },
-  {
-   "title": "Governments make over 230 new pledges to prevent violence against children",
-   "url": "https://www.who.int/news/item/17-11-2026-governments-make-over-230-new-pledges-to-prevent-violence-against-children",
-   "src": "WHO News",
-   "feed": "WHO News",
-   "cat": "who",
-   "date": "2026-11-17T11:04:17+00:00",
-   "summary": "",
-   "domain": "who.int",
-   "inhoud": 0,
-   "score": 4
-  },
-  {
-   "title": "CPHIA 2026: African Leaders to Convene in Addis Ababa to Advance Health Security and Sovereignty",
-   "url": "https://africacdc.org/news-item/cphia-2026-african-leaders-to-convene-in-addis-ababa-to-advance-health-security-and-sovereignty/",
-   "src": "Africa CDC",
-   "feed": "Africa CDC",
-   "cat": "global",
-   "date": "2026-11-17T10:56:51+00:00",
-   "summary": "As external health financing declines and public health threats persist, Africa’s flagship public health conference will examine progress, confront remaining gaps and advance African-led solutions. Addis Ababa, Ethiopia, 10 November 2026: Africa is entering a defining period for its health security.",
-   "domain": "africacdc.org",
-   "inhoud": 13,
-   "score": 16
-  },
-  {
-   "title": "'Honestly, I cant even remember the last time someone taught me how to stitch: a qualitative training needs assessment for caesarean delivery providers in Tanzania",
-   "url": "http://gh.bmj.com/cgi/content/short/11/11/e021466?rss=1",
-   "src": "BMJ Global Health",
-   "feed": "BMJ Global Health",
-   "cat": "journal",
-   "date": "2026-11-17T10:54:12+00:00",
-   "summary": "",
-   "domain": "gh.bmj.com",
-   "inhoud": 0,
-   "score": 3
-  },
-  {
-   "title": "Leaders commit to accelerate action on obesity prevention and control",
-   "url": "https://www.who.int/news/item/17-11-2026-leaders-commit-to-accelerate-action-on-obesity-prevention-and-control",
-   "src": "WHO News",
-   "feed": "WHO News",
-   "cat": "who",
-   "date": "2026-11-17T10:00:00+00:00",
-   "summary": "",
-   "domain": "who.int",
-   "inhoud": 0,
    "score": 4
   },
   {
@@ -8148,18 +8157,6 @@
    "domain": "rivm.nl",
    "inhoud": 10,
    "score": 12
-  },
-  {
-   "title": "Evidence mounts that exposure to hormone-disrupting chemicals starts before birth: UNEP–WHO report",
-   "url": "https://www.who.int/news/item/17-11-2026-evidence-mounts-that-exposure-to-hormone-disrupting-chemicals-starts-before-birth--unep-who-report",
-   "src": "WHO News",
-   "feed": "WHO News",
-   "cat": "who",
-   "date": "2026-11-17T09:38:32+00:00",
-   "summary": "",
-   "domain": "who.int",
-   "inhoud": 6,
-   "score": 10
   },
   {
    "title": "UNICEF bid for better eye health for world’s children",
@@ -8900,7 +8897,15 @@
    "domain": "phcc.org.nz",
    "inhoud": 14,
    "score": 17,
-   "gnews": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUVc0Zzl4MzJqbHpQVjF3TlJIaXhlT2lrTDU2V3Y2MlpuT1pGOS03MVg4UVZzcUZidTJfdTEwV2RJak9HNTNqT05KQTJ1RzY3Y0tsN2FydVA0eEdhMHRGTEttdW1QVFNNbGNEUWRPMWtZSi1IdDFvLWRFWEpVT0xKYTJnNVc?oc=5"
+   "gnews": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUVc0Zzl4MzJqbHpQVjF3TlJIaXhlT2lrTDU2V3Y2MlpuT1pGOS03MVg4UVZzcUZidTJfdTEwV2RJak9HNTNqT05KQTJ1RzY3Y0tsN2FydVA0eEdhMHRGTEttdW1QVFNNbGNEUWRPMWtZSi1IdDFvLWRFWEpVT0xKYTJnNVc?oc=5",
+   "also": [
+    {
+     "src": "The Conversation",
+     "title": "NZ has retreated from global cooperation on health security. Can a new government change course?",
+     "url": "https://theconversation.com/nz-has-retreated-from-global-cooperation-on-health-security-can-a-new-government-change-course-295324"
+    }
+   ],
+   "outlets": 2
   },
   {
    "title": "WHO recalls pandemic treaty as Ebola kills more than 5,300 in Africa",
@@ -8931,7 +8936,7 @@
    "title": "Seasoned French Diplomat Returns To Lead Pandemic Annex Talks",
    "url": "https://healthpolicy-watch.news/renowned-french-diplomat-returns-to-lead-pandemic-annex-talks/",
    "src": "Health Policy Watch",
-   "feed": "Pandemic Agreement",
+   "feed": "PABS / IGWG",
    "cat": "pandemic",
    "date": "2026-11-02T08:00:00+00:00",
    "summary": "Seasoned French Diplomat Returns To Lead Pandemic Annex Talks Health Policy Watch",
@@ -9056,7 +9061,8 @@
    "domain": "theconversation.com",
    "inhoud": 8,
    "score": 13,
-   "gnews": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPMDZYODZmS00ycFBoVHhkUm55aEh6b2d0TTRJa3FnaXpXYWE2NS1hVExxV05PbnhLLUpibHBsNzQ3SS1iYWdDRWRqZVRlTklFendzVFZrNmI5Z2tFZlB1OEl5TWV5QVpwSnFkZGxURDh5a2R5SHJrTmZ2eGZmOURrMU05bTAyWUQ5ZWJVakZoeW40MXR3TDFjMHRYYXU1SzVYeGdlV05pRk1jUHRaYmstTk9Eck5heWxvcFlsaHVqWjd1cm5xUUp6WQ?oc=5"
+   "gnews": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPMDZYODZmS00ycFBoVHhkUm55aEh6b2d0TTRJa3FnaXpXYWE2NS1hVExxV05PbnhLLUpibHBsNzQ3SS1iYWdDRWRqZVRlTklFendzVFZrNmI5Z2tFZlB1OEl5TWV5QVpwSnFkZGxURDh5a2R5SHJrTmZ2eGZmOURrMU05bTAyWUQ5ZWJVakZoeW40MXR3TDFjMHRYYXU1SzVYeGdlV05pRk1jUHRaYmstTk9Eck5heWxvcFlsaHVqWjd1cm5xUUp6WQ?oc=5",
+   "lead": "https://www.phcc.org.nz/briefing/global-health-security-why-nz-needs-re-engage"
   },
   {
    "title": "India Pushes for Resilient Health Systems, Global Action on Pandemic Preparedness",
@@ -9131,6 +9137,19 @@
    "domain": "guttmacher.org",
    "inhoud": 10,
    "score": 12
+  },
+  {
+   "title": "State Department Issues Final Rule Implementing \"Mexico City Policy\" And Other Policy-Based Restrictions On Foreign Assistance Funding",
+   "url": "https://www.legal500.com/intelligence/united-states/government-public-sector/state-department-issues-final-rule-implementing-mexico-city-policy-and-other-policy-based-restrictions-on-foreign-assistance-funding",
+   "src": "Legal 500",
+   "feed": "SRHR news",
+   "cat": "srhr",
+   "date": "2026-10-29T14:08:44+00:00",
+   "summary": "State Department Issues Final Rule Implementing \"Mexico City Policy\" And Other Policy-Based Restrictions On Foreign Assistance Funding Legal 500",
+   "domain": "legal500.com",
+   "inhoud": 0,
+   "score": 2,
+   "gnews": "https://news.google.com/rss/articles/CBMiswJBVV95cUxQXzdMVnZCUmFpcGZrdWp4T1gteGFhd3J6bnByUWNCWUlhSDdVemt5R3lPMFRaSW91RndnODRGSFI1dlFCcFpwYnk5alNfLVI3SXU2VDVaOWpIalFfY2ZqdXZ3Q3NMUldVNzNYRTE1R0lUUUNLQUFRZXRqOFN0OFNWbDBuNHdneGQ5NkpwdDN1UGVxM0NFZzdtcldiRVdfSUE1MFR2WkMxazFBamttaW80ZHdfdzU4Vy1iSmNXZEhlNF9hc2ZWaWxRSUhFWnAtb2tZYnhBbXdYaXh5Mlg0cXNkTzIxMkRmeWFFbzB4YmRVQ1gyTVpvNmdZSEtaY2ppQ1cxZm5HUWR3RWpCUG1ZZjlqM01XT3kwbUVGUGZuYzRGYndPWnNIZ0t3NG5nQUNsUENGcGYw?oc=5"
   },
   {
    "title": "EU Commission opens 2027 Horizon Europe Health research calls",
