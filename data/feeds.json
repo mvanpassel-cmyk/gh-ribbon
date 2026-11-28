@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-27T23:36:50+00:00",
- "feeds_ok": 62,
+ "generated": "2026-11-28T08:14:23+00:00",
+ "feeds_ok": 39,
  "feeds_tot": 62,
  "status": {
   "WHO News": {
@@ -46,11 +46,9 @@
    "fallback": false
   },
   "WHO Europe": {
-   "ok": true,
-   "msg": "12 items",
-   "cat": "who",
-   "via": 1,
-   "fallback": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "who"
   },
   "CIDRAP Public Health": {
    "ok": true,
@@ -88,12 +86,9 @@
    "fallback": false
   },
   "ReliefWeb Health": {
-   "ok": true,
-   "msg": "7 items (via kandidaat 2)",
-   "cat": "emerg",
-   "via": 2,
-   "fallback": true,
-   "errors": "[1] ValueError: geen RELIEFWEB_APPNAME"
+   "ok": false,
+   "msg": "RuntimeError: [1] ValueError: geen RELIEFWEB_APPNAME | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "emerg"
   },
   "MSF": {
    "ok": true,
@@ -145,19 +140,14 @@
    "fallback": false
   },
   "Think Global Health": {
-   "ok": true,
-   "msg": "12 items",
-   "cat": "global",
-   "via": 1,
-   "fallback": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "global"
   },
   "Gavi / Global Fund / CEPI": {
-   "ok": true,
-   "msg": "12 items",
-   "cat": "global",
-   "via": 1,
-   "fallback": false,
-   "search": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "global"
   },
   "UNAIDS": {
    "ok": true,
@@ -174,20 +164,14 @@
    "fallback": false
   },
   "WHO financing & reform": {
-   "ok": true,
-   "msg": "12 items",
-   "cat": "global",
-   "via": 1,
-   "fallback": false,
-   "search": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "global"
   },
   "Local manufacturing": {
-   "ok": true,
-   "msg": "12 items",
-   "cat": "global",
-   "via": 1,
-   "fallback": false,
-   "search": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "global"
   },
   "UNFPA": {
    "ok": true,
@@ -204,35 +188,24 @@
    "fallback": false
   },
   "SRHR news": {
-   "ok": true,
-   "msg": "12 items",
-   "cat": "srhr",
-   "via": 1,
-   "fallback": false,
-   "search": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "srhr"
   },
   "EU health policy": {
-   "ok": true,
-   "msg": "12 items",
-   "cat": "eu",
-   "via": 1,
-   "fallback": false,
-   "search": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "eu"
   },
   "Council of the EU (health)": {
-   "ok": true,
-   "msg": "11 items",
-   "cat": "eu",
-   "via": 1,
-   "fallback": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "eu"
   },
   "Rijksoverheid VWS": {
-   "ok": true,
-   "msg": "1 items (via kandidaat 2)",
-   "cat": "eu",
-   "via": 2,
-   "fallback": true,
-   "errors": "[1] URLError: <urlopen error [Errno -2] Name or service not known>"
+   "ok": false,
+   "msg": "RuntimeError: [1] URLError: <urlopen error [Errno -2] Name or service not known> | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "eu"
   },
   "RIVM": {
    "ok": true,
@@ -256,35 +229,24 @@
    "fallback": false
   },
   "AMR policy & research": {
-   "ok": true,
-   "msg": "12 items",
-   "cat": "amr",
-   "via": 1,
-   "fallback": false,
-   "search": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "amr"
   },
   "AMR global governance": {
-   "ok": true,
-   "msg": "12 items",
-   "cat": "amr",
-   "via": 1,
-   "fallback": false,
-   "search": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "amr"
   },
   "Antibiotic R&D (GARDP, CARB-X)": {
-   "ok": true,
-   "msg": "12 items",
-   "cat": "amr",
-   "via": 1,
-   "fallback": false,
-   "search": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "amr"
   },
   "ReAct": {
-   "ok": true,
-   "msg": "10 items",
-   "cat": "amr",
-   "via": 1,
-   "fallback": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "amr"
   },
   "PLOS NTDs": {
    "ok": true,
@@ -294,20 +256,14 @@
    "fallback": false
   },
   "NTD news": {
-   "ok": true,
-   "msg": "12 items",
-   "cat": "ntd",
-   "via": 1,
-   "fallback": false,
-   "search": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "ntd"
   },
   "WHO NTDs": {
-   "ok": true,
-   "msg": "12 items",
-   "cat": "ntd",
-   "via": 1,
-   "fallback": false,
-   "search": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "ntd"
   },
   "DNDi": {
    "ok": true,
@@ -317,43 +273,29 @@
    "fallback": false
   },
   "Uniting to Combat NTDs": {
-   "ok": true,
-   "msg": "7 items",
-   "cat": "ntd",
-   "via": 1,
-   "fallback": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "ntd"
   },
   "Pandemic Agreement": {
-   "ok": true,
-   "msg": "12 items",
-   "cat": "pandemic",
-   "via": 1,
-   "fallback": false,
-   "search": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "pandemic"
   },
   "PABS / IGWG": {
-   "ok": true,
-   "msg": "12 items",
-   "cat": "pandemic",
-   "via": 1,
-   "fallback": false,
-   "search": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "pandemic"
   },
   "IHR amendments": {
-   "ok": true,
-   "msg": "12 items",
-   "cat": "pandemic",
-   "via": 1,
-   "fallback": false,
-   "search": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "pandemic"
   },
   "Pandemic Fund & financing": {
-   "ok": true,
-   "msg": "12 items",
-   "cat": "pandemic",
-   "via": 1,
-   "fallback": false,
-   "search": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "pandemic"
   },
   "The Lancet": {
    "ok": true,
@@ -370,12 +312,9 @@
    "fallback": false
   },
   "BMJ": {
-   "ok": true,
-   "msg": "12 items (via kandidaat 3)",
-   "cat": "journal",
-   "via": 3,
-   "fallback": true,
-   "errors": "[1] URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)> | [2] HTTPError: HTTP Error 404: Not Found"
+   "ok": false,
+   "msg": "RuntimeError: [1] URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)> | [2] HTTPError: HTTP Error 404: Not Found | [3] HTTPError: HTTP Err",
+   "cat": "journal"
   },
   "BMJ Global Health": {
    "ok": true,
@@ -448,14 +387,120 @@
    "fallback": false
   },
   "Grand Challenges": {
-   "ok": true,
-   "msg": "9 items",
-   "cat": "news",
-   "via": 1,
-   "fallback": true
+   "ok": false,
+   "msg": "RuntimeError: [1] HTTPError: HTTP Error 503: Service Unavailable | [2] HTTPError: HTTP Error 503: Service Unavailable",
+   "cat": "news"
   }
  },
  "items": [
+  {
+   "title": "Uganda starts mRNA Ebola vaccine trial in first for Africa - Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/28/uganda-starts-mrna-ebola-vaccine-trial-in-first-for-africa",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-28T07:32:41+00:00",
+   "summary": "... the World Health Organization and the DRC government. Advertisement. Emanuele Capobianco, Gavi's director of global health security, said he hoped ...",
+   "domain": "aljazeera.com",
+   "inhoud": 19,
+   "score": 24,
+   "also": [
+    {
+     "src": "afp.com",
+     "title": "mRNA Ebola vaccine trial launched in Uganda - AFP.com",
+     "url": "https://www.afp.com/en/mrna-ebola-vaccine-trial-launched-uganda"
+    }
+   ],
+   "outlets": 2
+  },
+  {
+   "title": "World Health Organisation Sounds Alarm As Global Fight Against Measles Falters - NDTV",
+   "url": "https://www.ndtv.com/health/world-health-organisation-sounds-alarm-as-global-fight-against-measles-falters-12386541",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-28T06:33:45+00:00",
+   "summary": "The World Health Organization sounded the alarm on measles Friday, warning that progress on elimination had stalled amid rising misinformation and ...",
+   "domain": "ndtv.com",
+   "inhoud": 10,
+   "score": 10,
+   "lead": "https://amp.scmp.com/news/world/article/3376102/who-sounds-alarm-measles-fight-falters-it-back"
+  },
+  {
+   "title": "Two killed in Israeli air strike on Doctors Without Borders building in Gaza - ABC News",
+   "url": "https://www.abc.net.au/news/2026-11-28/two-killed-israeli-air-strike-gaza-msf/107438266",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-28T06:33:09+00:00",
+   "summary": "The World Health Organization condemns attacks on health facilities after an Israeli air strike on an MSF building in Gaza killed two people.",
+   "domain": "abc.net.au",
+   "inhoud": 4,
+   "score": 7,
+   "lead": "https://www.aljazeera.com/news/2026/11/28/israeli-strike-on-doctors-without-borders-clinic-in-gaza-kills-two-staff"
+  },
+  {
+   "title": "Israeli strike on Doctors Without Borders clinic in Gaza kills two staff - Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/28/israeli-strike-on-doctors-without-borders-clinic-in-gaza-kills-two-staff",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-28T04:06:56+00:00",
+   "summary": "World Health Organization chief Tedros Adhanom Ghebreyesus called the attack “outrageous and unacceptable”. “Those risking their lives to save ...",
+   "domain": "aljazeera.com",
+   "inhoud": 7,
+   "score": 13,
+   "also": [
+    {
+     "src": "aa.com.tr",
+     "title": "Doctors Without Borders denounces Israeli strike on Gaza clinic - Anadolu Ajansı",
+     "url": "https://www.aa.com.tr/en/middle-east/doctors-without-borders-denounces-israeli-strike-on-gaza-clinic/4141089"
+    },
+    {
+     "src": "abc.net.au",
+     "title": "Two killed in Israeli air strike on Doctors Without Borders building in Gaza - ABC News",
+     "url": "https://www.abc.net.au/news/2026-11-28/two-killed-israeli-air-strike-gaza-msf/107438266"
+    }
+   ],
+   "outlets": 3
+  },
+  {
+   "title": "The Global Health Network's Post - LinkedIn",
+   "url": "https://www.linkedin.com/posts/the-global-health-network_antimicrobialresistance-amr-communityengagement-activity-7531757266480332800-NXu1",
+   "src": "Global Health",
+   "feed": "Global Health",
+   "cat": "global",
+   "date": "2026-11-28T03:23:35+00:00",
+   "summary": "Upcoming Mesh Webinar: Community Engagement and Antimicrobial Resistance (AMR) 2 December 2026 | 10:30–12:00 GMT Antimicrobial resistance ...",
+   "domain": "linkedin.com",
+   "inhoud": 10,
+   "score": 5
+  },
+  {
+   "title": "Doctors Without Borders denounces Israeli strike on Gaza clinic - Anadolu Ajansı",
+   "url": "https://www.aa.com.tr/en/middle-east/doctors-without-borders-denounces-israeli-strike-on-gaza-clinic/4141089",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-28T02:11:04+00:00",
+   "summary": "World Health Organization (WHO) Director Tedros Adhanom Ghebreyesus called the attack \"outrageous and unacceptable.\" Ghebreyesus extended WHO's ...",
+   "domain": "aa.com.tr",
+   "inhoud": 7,
+   "score": 7,
+   "lead": "https://www.aljazeera.com/news/2026/11/28/israeli-strike-on-doctors-without-borders-clinic-in-gaza-kills-two-staff"
+  },
+  {
+   "title": "WHO agrees to cooperate with Venezuela on vaccine production during Tedros's visit - EFE",
+   "url": "https://efe.com/english/economy/2026-11-28/who-agrees-to-cooperate-with-venezuela-on-vaccine-production-during-tedross-visit/",
+   "src": "WHO Alert",
+   "feed": "WHO Alert",
+   "cat": "who",
+   "date": "2026-11-28T00:05:01+00:00",
+   "summary": "... World Health Organization (WHO) Director-General Tedros Adhanom Ghebreyesus (center-left) on Friday at the Miraflores Palace in Caracas, Venezuela.",
+   "domain": "efe.com",
+   "inhoud": 13,
+   "score": 13
+  },
   {
    "title": "[Comment] The CAMS–Lancet Commission on reducing the burden of stroke in China: preventing stroke and reducing disability",
    "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02258-0/fulltext?rss=yes",
@@ -564,7 +609,15 @@
    "summary": "The World Health Organization sounded the alarm on measles on Friday, warning that progress on elimination had stalled amid rising misinformation ...",
    "domain": "amp.scmp.com",
    "inhoud": 10,
-   "score": 15
+   "score": 15,
+   "also": [
+    {
+     "src": "ndtv.com",
+     "title": "World Health Organisation Sounds Alarm As Global Fight Against Measles Falters - NDTV",
+     "url": "https://www.ndtv.com/health/world-health-organisation-sounds-alarm-as-global-fight-against-measles-falters-12386541"
+    }
+   ],
+   "outlets": 2
   },
   {
    "title": "Gavi secures up to $214M to restore malaria vaccine funding",
@@ -614,19 +667,8 @@
    "summary": "... World Health Organization (WHO). Two experimental vaccines are due to start testing on Monday in the outbreak's epicentre in eastern DRC, the WHO ...",
    "domain": "afp.com",
    "inhoud": 13,
-   "score": 13
-  },
-  {
-   "title": "One Health : Bridging Policy Silos And Treaty Deadlock Vital To Halt Zoonotic Threats From ...",
-   "url": "https://healthpolicy-watch.news/industrial-farming-one-health/",
-   "src": "Health Emergency",
-   "feed": "Health Emergency",
-   "cat": "emerg",
-   "date": "2026-11-27T17:52:57+00:00",
-   "summary": "While poultry producers urged public co-financing and emergency vaccines, health experts warned that intensive livestock incentives remain ...",
-   "domain": "healthpolicy-watch.news",
-   "inhoud": 18,
-   "score": 24
+   "score": 13,
+   "lead": "https://www.aljazeera.com/news/2026/11/28/uganda-starts-mrna-ebola-vaccine-trial-in-first-for-africa"
   },
   {
    "title": "Global Measles Vaccine Coverage Remains Fragile, Even as Global Deaths Hit Historic Low",
@@ -652,6 +694,18 @@
     }
    ],
    "outlets": 3
+  },
+  {
+   "title": "One Health: Bridging Policy Silos and Treaty Deadlock Vital to Halt Zoonotic Threats from Industrial Farming",
+   "url": "https://healthpolicy-watch.news/industrial-farming-one-health/",
+   "src": "Health Policy Watch",
+   "feed": "Health Policy Watch",
+   "cat": "policy",
+   "date": "2026-11-27T17:40:07+00:00",
+   "summary": "Policy fragmentation and an unresolved pandemic treaty impasse leave global health security vulnerable to emerging pathogens, experts warned at a Geneva Graduate Institute event on Thursday. Hosted by the Global Health Centre, discussions on operationalising One Health across food systems highlighte",
+   "domain": "healthpolicy-watch.news",
+   "inhoud": 28,
+   "score": 32
   },
   {
    "title": "Holiday mental health support - FOX Reno",
@@ -1025,7 +1079,7 @@
    "summary": "World AIDS Day 2026 - Statement by Winnie Byanyima, Executive Director of UNAIDS World AIDS Day 2026 is my last as Executive Director of UNAIDS. Today, we remember the nearly 45 million people we have lost to AIDS and we stand in solidarity with the 41 million people living with HIV and with the com",
    "domain": "unaids.org",
    "inhoud": 12,
-   "score": 17
+   "score": 15
   },
   {
    "title": "Hetero Among the First to Launch Generic Lenacapavir Globally for HIV Prevention, Begins ...",
@@ -1405,8 +1459,7 @@
    "summary": "The World Health Organization (WHO) said last Friday that \"no new cases have been reported from Kenya or Nigeria; and no new country has reported ...",
    "domain": "commondreams.org",
    "inhoud": 4,
-   "score": 4,
-   "lead": "https://www.reuters.com/world/africa/un-peacekeepers-evacuate-ebola-response-workers-trapped-by-fighting-eastern-2026-11-25/"
+   "score": 4
   },
   {
    "title": "Global health , AI and longevity to headline WISH Summit in Doha - Fana News",
@@ -1442,8 +1495,7 @@
    "summary": "... global health resilience. According to Mark MacNaughton, Biovac's Chief ... The World Health Organisation reported over 7,000 cholera-related ...",
    "domain": "europeaninterest.eu",
    "inhoud": 8,
-   "score": 8,
-   "lead": "https://www.audacy.com/wccoradio/news/world/vaccines-pharma-south-africa-biovac-03f068779922eb1108403baf9872ae78"
+   "score": 8
   },
   {
    "title": "Sierra Leone sees steep decline in maternal mortality, but barriers to care persist",
@@ -1543,8 +1595,7 @@
    "summary": "... World Health Organization's Ebola incident manager, said Wednesday. Smallwood said that about a dozen people, including two WHO personnel and ...",
    "domain": "washingtonpost.com",
    "inhoud": 10,
-   "score": 13,
-   "lead": "https://www.reuters.com/world/africa/un-peacekeepers-evacuate-ebola-response-workers-trapped-by-fighting-eastern-2026-11-25/"
+   "score": 13
   },
   {
    "title": "Four of Seven WHO Director-General Contenders Have Yet to Disclose Campaign Financing",
@@ -2032,18 +2083,6 @@
    "score": 11
   },
   {
-   "title": "Protecting Children from Air Pollution: Applying the social and behaviour change message ...",
-   "url": "https://reliefweb.int/report/world/protecting-children-air-pollution-applying-social-and-behaviour-change-message-guidance-reach-framework",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-26T00:29:02+00:00",
-   "summary": "... World Health Organization . Every day, almost 2,000 children under 5 years of age die from air-pollution-related causes, accounting for more than ...",
-   "domain": "reliefweb.int",
-   "inhoud": 4,
-   "score": 10
-  },
-  {
    "title": "WHO Rapid Risk Assessment - Arboviral diseases (Dengue, chikungunya and Zika), Global v1",
    "url": "https://www.who.int/publications/m/item/who-rapid-risk-assessment---arboviral-diseases-(dengue--chikungunya-and-zika)--global-v1",
    "src": "Health Emergency",
@@ -2241,19 +2280,6 @@
    "gnews": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTUc3UGdWVzN2Skc5cTF3eUQzRG1lTTVrTHAyNm9lVF9SdWp6RXl0c2doM2ZRU0xTbXFXck9WNjRweGFGd3NGemk0bEE5U251Y2gyUURHMWN0RjRGbzV3OWh1UmpXZC0tb0ttUzZvSEJVbm5jRFVCQzF5R0xwSi1Oa3pHNU1QQQ?oc=5"
   },
   {
-   "title": "Fighting in Eastern Congo Forces Ebola Workers to Evacuate, Threatening Outbreak Response",
-   "url": "https://www.usnews.com/news/world/articles/2026-11-25/fighting-in-eastern-congo-forces-ebola-workers-to-evacuate-threatening-outbreak-response",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-25T20:28:13+00:00",
-   "summary": "Catherine Smallwood, the World Health Organization's Ebola incident manager. Congo's Ebola outbreak has infected more than 11,700 people and ...",
-   "domain": "usnews.com",
-   "inhoud": 10,
-   "score": 13,
-   "lead": "https://www.reuters.com/world/africa/un-peacekeepers-evacuate-ebola-response-workers-trapped-by-fighting-eastern-2026-11-25/"
-  },
-  {
    "title": "Why Philips Foundation stopped relying on grants alone",
    "url": "https://www.devex.com/news/why-philips-foundation-stopped-relying-on-grants-alone-113938",
    "src": "Devex Global Health",
@@ -2264,68 +2290,6 @@
    "domain": "devex.com",
    "inhoud": 0,
    "score": 5
-  },
-  {
-   "title": "UN peacekeepers evacuate Ebola response workers trapped by fighting in eastern Congo",
-   "url": "https://www.reuters.com/world/africa/un-peacekeepers-evacuate-ebola-response-workers-trapped-by-fighting-eastern-2026-11-25/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-25T20:09:51+00:00",
-   "summary": "World Health Organization chief Tedros ​Adhanom Ghebreyesus said heavy fighting near a hospital ​in Akwe had forced health workers and aid ...",
-   "domain": "reuters.com",
-   "inhoud": 11,
-   "score": 17,
-   "also": [
-    {
-     "src": "washingtonpost.com",
-     "title": "Ebola outbreak in Congo reaches 12000 cases as violence forces some responders to evacuate",
-     "url": "https://www.washingtonpost.com/world/2026/11/26/congo-ebola-outbreak-violence/4c475fd2-e976-11f1-8db0-6f1e3c389e7c_story.html"
-    },
-    {
-     "src": "usnews.com",
-     "title": "Fighting in Eastern Congo Forces Ebola Workers to Evacuate, Threatening Outbreak Response",
-     "url": "https://www.usnews.com/news/world/articles/2026-11-25/fighting-in-eastern-congo-forces-ebola-workers-to-evacuate-threatening-outbreak-response"
-    },
-    {
-     "src": "commondreams.org",
-     "title": "Congo's Ebola Cases Top 12,000 as Fighting Forces Some Health Workers to Evacuate",
-     "url": "https://www.commondreams.org/news/ebola-congo-outbreak"
-    }
-   ],
-   "outlets": 4
-  },
-  {
-   "title": "South Africa's Biovac aims to dramatically increase vaccine production with help from an EU loan",
-   "url": "https://www.audacy.com/wccoradio/news/world/vaccines-pharma-south-africa-biovac-03f068779922eb1108403baf9872ae78",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-25T20:09:38+00:00",
-   "summary": "The World Health Organization reported more than 7,000 cholera deaths in Africa last year, the most in more than two decades. Cholera vaccination ...",
-   "domain": "audacy.com",
-   "inhoud": 10,
-   "score": 10,
-   "also": [
-    {
-     "src": "europeaninterest.eu",
-     "title": "South Africa's Biovac to boost its vaccine production with EU loan - European Interest",
-     "url": "https://www.europeaninterest.eu/south-africas-biovac-to-boost-its-vaccine-production-with-eu-loan/"
-    }
-   ],
-   "outlets": 2
-  },
-  {
-   "title": "Progress in fighting malaria has slowed. These experts have ideas on how to kickstart it.",
-   "url": "https://hsph.harvard.edu/news/progress-in-fighting-malaria-has-slowed-these-experts-have-ideas-on-how-to-kickstart-it/",
-   "src": "WHO Alert",
-   "feed": "WHO Alert",
-   "cat": "who",
-   "date": "2026-11-25T20:07:21+00:00",
-   "summary": "Opening the event, Dyann Wirth, Richard Pearson Strong Professor of Infectious Diseases, noted that, according to the World Health Organization's most ...",
-   "domain": "hsph.harvard.edu",
-   "inhoud": 4,
-   "score": 7
   },
   {
    "title": "Fort Hood Shooter Asks Judge to Delay His Execution by Firing Squad",
@@ -3152,6 +3116,18 @@
    "score": 19
   },
   {
+   "title": "WHO recommends new oral treatment option for gonorrhoea and reports new data on antimicrobial resistance",
+   "url": "https://www.who.int/news/item/25-11-2026-who-recommends-new-oral-treatment-option-for-gonorrhoea-and-reports-new-data-on-antimicrobial-resistance",
+   "src": "WHO News",
+   "feed": "WHO News",
+   "cat": "who",
+   "date": "2026-11-25T06:00:00+00:00",
+   "summary": "",
+   "domain": "who.int",
+   "inhoud": 16,
+   "score": 20
+  },
+  {
    "title": "US aid cuts are hitting Southeast Asia especially hard | Lowy Institute",
    "url": "https://www.lowyinstitute.org/the-interpreter/us-aid-cuts-are-hitting-southeast-asia-especially-hard",
    "src": "Global Health",
@@ -3272,18 +3248,6 @@
    "domain": "abc.net.au",
    "inhoud": 4,
    "score": 7
-  },
-  {
-   "title": "WHO recommends new oral treatment option for gonorrhoea and reports new data on antimicrobial resistance",
-   "url": "https://www.who.int/news/item/25-11-2026-who-recommends-new-oral-treatment-option-for-gonorrhoea-and-reports-new-data-on-antimicrobial-resistance",
-   "src": "WHO News",
-   "feed": "WHO News",
-   "cat": "who",
-   "date": "2026-11-25T00:00:00+00:00",
-   "summary": "",
-   "domain": "who.int",
-   "inhoud": 16,
-   "score": 20
   },
   {
    "title": "Spleen Imaging Accurately Predicts Esophageal Varices in Schistosomiasis Portal Hypertension",
@@ -4599,18 +4563,6 @@
    "gnews": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5OZDFRekRRQWExUk9ndEpLOXZMY2NsRFYyYWpWdzZlVlZhczAwTlFvNVQ0MkxtWUdmd0VCMmJMR0tQUHJ2OF9BeWlqUklyRzh6cmtxdC1NdzhObGtzNDMyWXN3?oc=5"
   },
   {
-   "title": "Dr. María Neira: The optimist who wants to lead WHO through crisis | Devex",
-   "url": "https://www.devex.com/news/dr-maria-neira-the-optimist-who-wants-to-lead-who-through-crisis-113874",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-24T07:58:13+00:00",
-   "summary": "María Neira spent nearly three decades at the World Health Organization before retiring in 2025. But, in her mind, she never really left. “I think ...",
-   "domain": "devex.com",
-   "inhoud": 9,
-   "score": 15
-  },
-  {
    "title": "STAT+: Sanofi to buy Insmed for $41B, picking up two lung disease medicines",
    "url": "https://www.statnews.com/2026/11/24/sanofi-insmed-acquisition-dupixent-rare-disease-inflammation/?utm_campaign=rss",
    "src": "STAT News",
@@ -4621,18 +4573,6 @@
    "domain": "statnews.com",
    "inhoud": -9,
    "score": -8
-  },
-  {
-   "title": "Failure of COP31 to reach agreement threatens global health – WHO - Premium Times",
-   "url": "https://www.premiumtimesng.com/health/health-news/927563-failure-of-cop31-to-reach-agreement-threatens-global-health-who.html",
-   "src": "Global Health",
-   "feed": "Global Health",
-   "cat": "global",
-   "date": "2026-11-24T07:45:54+00:00",
-   "summary": "The Director-General of the World Health Organisation (WHO), Tedros Ghebreyesus, has described the failure of the 31st United Nations Climate ...",
-   "domain": "premiumtimesng.com",
-   "inhoud": 21,
-   "score": 21
   },
   {
    "title": "CPHIA 2026 Opens with Focus on Health Sovereignty and Action",
@@ -8013,6 +7953,18 @@
    "gnews": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5wZmVKUThyVGdvcm1LNjd4Y0oyTm9wQ29ZTElLdGhXSENfMGQyUWxRTjNhWDNHV1B5VmNJNlZRcVFaeXpzMkJPQlhXYkZlSzdZV1ZEcVpyX241XzZIQldn?oc=5"
   },
   {
+   "title": "Stockholm welcomes scientific experts to ESCAIDE – Europe’s leading annual public health conference",
+   "url": "https://www.ecdc.europa.eu/en/news-events/stockholm-welcomes-scientific-experts-escaide-europes-leading-annual-public-health",
+   "src": "ECDC",
+   "feed": "ECDC",
+   "cat": "global",
+   "date": "2026-11-18T09:00:48+00:00",
+   "summary": "As new infectious disease threats emerge in an increasingly interconnected world, policymakers, public health professionals and researchers from across Europe and beyond are gathering in Stockholm this week for the 20th edition of the European Scientific Conference on Applied Infectious Disease Epid",
+   "domain": "ecdc.europa.eu",
+   "inhoud": 0,
+   "score": 3
+  },
+  {
    "title": "FG targets 16 LGAs in renewed push to eliminate Trachoma by 2030",
    "url": "https://blueprint.ng/fg-targets-16-lgas-in-renewed-push-to-eliminate-trachoma-by-2030/",
    "src": "Blueprint Newspapers",
@@ -9442,19 +9394,6 @@
    "score": 8,
    "inhoud": 2,
    "gnews": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNU242NkU4dVlNM0U4X2dfcDZvU19CQ3JNMHVpUEV3eWs3U2JmWUoyOVFVT1Q2WFdQdnZpUWJ6MVB5RVJjbHc4TmtYaEhoV1E4WnFPODR4aUZfRzh1MnJUSzNWWGR2TVZqT3RicTZSRDI4VURqa0N5alJ5Nzc4WU8xNnBlazB2MkNzNTFUWklYR21ycUpLODlUTU1kUEptVG9GSEEtSkdFNDTSAa8BQVVfeXFMUHdvTVFoQnNrNlNQbl9PaTVwTG81MkdlLXhyWXZQSDZTQlpnbHJpUjVrRUJZYTAybXZseFlSeGwyOW5nazFRTE54aVRCTW1FTGx0MldvcDk2Z29vbnAweXRfcXlTZ1lMbjV1d1lLeVFEYmFPdnB0UE44NFFUaE11dEZoV2l0bGtMcWRzVk1BZk92MVl3cHFyU3Nwd00xc3R3VFZWakY0VnpHNXlxRm9pWQ?oc=5"
-  },
-  {
-   "title": "Solomon Islands calls for predictable financing for pandemic preparedness",
-   "url": "https://www.postcourier.com.pg/solomon-islands-calls-for-predictable-financing-for-pandemic-preparedness/",
-   "src": "Post Courier",
-   "feed": "Pandemic Fund & financing",
-   "cat": "pandemic",
-   "date": "2026-09-29T07:00:00+00:00",
-   "summary": "Solomon Islands calls for predictable financing for pandemic preparedness Post Courier",
-   "domain": "postcourier.com.pg",
-   "inhoud": 0,
-   "score": 3,
-   "gnews": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZjV1ZTVtMVJkcS1odmxuMFdNWkdkZDZ2ZUcxNTNlTlZYRHdVN1NQWC1vT2pjb0J6N0VwM25NbGtPRGVyNERtdWlpbm5VVEpJNVRtWHdoNDlFX3Z1cnduT0pZMkdDeUxGLWhMN2RkOVk4THdxU25YMHhTMkw4eFlzQ0tPVjNNNG5NQUVGcDBkRDRkUndZQjVvT1FkUUxqdVdvVkgtYlFTaTM?oc=5"
   }
  ]
 }
